@@ -1,12 +1,8 @@
-/// <reference types="vite/client" />
-
-const mediaModules = import.meta.glob('../assets/pptx-media/*.{jpeg,jpg,png}', {
-  eager: true,
-  import: 'default',
-}) as Record<string, string>;
+const GITHUB_MEDIA_BASE =
+  'https://raw.githubusercontent.com/hasanenis/-gloo-group/refs/heads/main/src/assets/pptx-media';
 
 function media(name: string) {
-  return mediaModules[`../assets/pptx-media/${name}`];
+  return `${GITHUB_MEDIA_BASE}/${name}`;
 }
 
 export type ProjectStatus = 'completed' | 'current';
@@ -68,7 +64,7 @@ export const projects: ProjectRecord[] = [
     details: 'A major public housing contract delivered with secondary state body works and coordinated programme execution.',
     scope: 'Large-scale public housing with integrated construction support packages.',
     coverLines: ['Sidi Abdallah', 'Public Housing'],
-    images: [media('image11.jpeg'), media('image12.png'), media('image13.jpeg')],
+    images: [media('image11.jpeg'), media('image12.jpeg'), media('image13.jpeg')],
     sourceSlides: [5],
   },
   {
@@ -83,7 +79,7 @@ export const projects: ProjectRecord[] = [
     details: 'The programme combines villa construction packages with the roadworks and utility network systems needed for full site readiness.',
     scope: 'Residential villas plus roads, utility networks, and coordinated site infrastructure.',
     coverLines: ['Staoueli', '11/41 Villas'],
-    images: [media('image14.jpeg'), media('image15.png'), media('image16.jpeg')],
+    images: [media('image14.jpeg'), media('image15.jpeg'), media('image16.jpeg')],
     sourceSlides: [6],
   },
   {
@@ -113,7 +109,7 @@ export const projects: ProjectRecord[] = [
     details: 'A dense mixed-use residential complex combining housing blocks, underground parking, and coordinated structural support works.',
     scope: 'Five-block mixed real estate delivery with housing and two underground parking levels.',
     coverLines: ['Said Hamdine', 'Mixed Complex'],
-    images: [media('image22.png'), media('image4.png'), media('image5.jpeg'), media('image2.png')],
+    images: [media('image22.jpeg'), media('image4.jpeg'), media('image5.jpeg'), media('image2.jpeg')],
     sourceSlides: [8, 9],
   },
   {
@@ -128,7 +124,7 @@ export const projects: ProjectRecord[] = [
     details: 'A smaller-format residential package supported by site access, utility network coordination, and secondary works.',
     scope: 'Promotional villas delivered with road and network packages.',
     coverLines: ['Rouiba', '4 Villas'],
-    images: [media('image27.png'), media('image28.png'), media('image29.png'), media('image30.png')],
+    images: [media('image27.jpeg'), media('image28.jpeg'), media('image29.jpeg'), media('image30.jpeg')],
     sourceSlides: [10],
   },
   {
@@ -158,7 +154,7 @@ export const projects: ProjectRecord[] = [
     details: 'An ongoing mixed-use residential development that adds service spaces and basement parking to a high-density housing programme.',
     scope: 'Housing, commercial areas, services, roads, networks, and underground parking.',
     coverLines: ['Dely Brahim', '240 Housing'],
-    images: [media('image6.png'), media('image35.png'), media('image36.png')],
+    images: [media('image6.jpeg'), media('image35.jpeg'), media('image36.jpeg')],
     sourceSlides: [13],
   },
   {
@@ -188,7 +184,7 @@ export const projects: ProjectRecord[] = [
     details: 'An ongoing housing delivery combining rental-sale residential stock with commercial premises and concierge services.',
     scope: 'Housing completion with commercial-use premises and concierge support spaces.',
     coverLines: ['Reghaia', '250 Housing'],
-    images: [media('image43.jpeg'), media('image44.jpeg'), media('image45.jpeg'), media('image40.png')],
+    images: [media('image43.jpeg'), media('image44.jpeg'), media('image45.jpeg'), media('image40.jpeg')],
     sourceSlides: [15, 16],
   },
   {
@@ -203,18 +199,18 @@ export const projects: ProjectRecord[] = [
     details: 'A live mixed programme that combines residential delivery with commercial and professional premises in one coordinated site package.',
     scope: 'Housing, professional premises, commercial spaces, roads, and networks.',
     coverLines: ['Boudouaou', '70 + 10 Housing'],
-    images: [media('image46.jpeg'), media('image47.jpeg'), media('image48.png'), media('image49.png')],
+    images: [media('image46.jpeg'), media('image47.jpeg'), media('image48.jpeg'), media('image49.jpeg')],
     sourceSlides: [17, 18],
   },
 ];
 
 export const heroSlides = [
   {
-    image: media('image2.png'),
+    image: media('image2.jpeg'),
     caption: 'Said Hamdine',
   },
   {
-    image: media('image4.png'),
+    image: media('image4.jpeg'),
     caption: 'Said Hamdine',
   },
   {
@@ -222,11 +218,11 @@ export const heroSlides = [
     caption: 'Douira Centres',
   },
   {
-    image: media('image22.png'),
+    image: media('image22.jpeg'),
     caption: 'Said Hamdine',
   },
   {
-    image: media('image27.png'),
+    image: media('image27.jpeg'),
     caption: 'Rouiba Villas',
   },
 ];
