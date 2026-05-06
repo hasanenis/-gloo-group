@@ -1,0 +1,75 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { ChevronDown, Menu } from 'lucide-react';
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { Link } from 'react-router-dom';
+import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+
+export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // We want the header to change style as soon as we scroll down past the hero banner or into the About us section.
+      // Since Hero Banner is 100vh, we can change state around window.innerHeight - somewhat early.
+      if (window.scrollY > window.innerHeight - 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Entry animation
+  useGSAP(() => {
+    if (prefersReducedMotion) {
+      gsap.set(['.brand-logo', '.nav-menu a', '.mobile-menu'], { clearProps: 'all', opacity: 1, x: 0, y: 0 });
+      return;
+    }
+
+    const tl = gsap.timeline({ defaults: { ease: motionEase.smooth } });
+
+    gsap.set(['.brand-logo', '.nav-menu a', '.mobile-menu'], { opacity: 0 });
+    
+    tl.fromTo('.brand-logo', { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: motionDuration.section }, 0.2);
+    tl.fromTo('.nav-menu a', { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: motionDuration.hover, stagger: motionStagger.standard }, 0.6);
+    tl.fromTo('.mobile-menu', { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: motionDuration.hover }, 0.6);
+  }, { scope: headerRef, dependencies: [prefersReducedMotion] });
+
+  return (
+    <header 
+      ref={headerRef}
+      className={`fixed top-0 left-0 w-full z-50 px-8 xl:px-14 flex justify-between items-center font-sans transition-all duration-300 ${
+        isScrolled ? 'bg-white/85 text-black py-5 backdrop-blur-md shadow-[0_4px_18px_rgba(0,0,0,0.06)]' : 'bg-transparent text-white py-10'
+      }`}
+    >
+      <div className="brand-logo flex items-center select-none cursor-pointer lg:ml-[-10px]">
+        <Link to="/">
+          <img 
+            src={isScrolled ? "https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png" : "https://i.ibb.co/fY50LKcW/Chat-GPT-mage-5-May-2026-21-15-03-removebg-preview.png"} 
+            alt="Igloo Construction" 
+            className="h-[120px] md:h-[150px] lg:h-[180px] xl:h-[200px] w-auto object-contain transition-all duration-300 drop-shadow-sm origin-left -my-10 lg:-my-16"
+          />
+        </Link>
+      </div>
+      <nav className={`nav-menu hidden lg:flex items-center space-x-7 xl:space-x-10 text-[15px] xl:text-[16px] font-medium tracking-[0.01em] w-full justify-end pr-4 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>
+        <Link to="/" className={`hover:text-[#c22026] transition-colors`}>Home</Link>
+        <a href="#" className={`hover:text-[#c22026] transition-colors flex items-center gap-[4px]`}>About <ChevronDown className="w-[14px] h-[14px] mt-0.5" strokeWidth={2.5} /></a>
+        <Link to="/projects" className={`hover:text-[#c22026] transition-colors flex items-center gap-[4px]`}>Projects <ChevronDown className="w-[14px] h-[14px] mt-0.5" strokeWidth={2.5} /></Link>
+        <a href="#" className={`hover:text-[#c22026] transition-colors flex items-center gap-[4px]`}>Services <ChevronDown className="w-[14px] h-[14px] mt-0.5" strokeWidth={2.5} /></a>
+        <a href="#" className={`hover:text-[#c22026] transition-colors`}>Tenders</a>
+        <a href="#" className={`hover:text-[#c22026] transition-colors flex items-center gap-[4px]`}>Team <ChevronDown className="w-[14px] h-[14px] mt-0.5" strokeWidth={2.5} /></a>
+        <a href="#" className={`hover:text-[#c22026] transition-colors`}>Contact</a>
+      </nav>
+      {/* Mobile menu button */}
+      <button className={`mobile-menu lg:hidden hover:text-[#c22026] transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>
+        <Menu className="w-8 h-8" />
+      </button>
+    </header>
+  );
+}

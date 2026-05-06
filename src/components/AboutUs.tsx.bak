@@ -1,0 +1,157 @@
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+import ImageSlider from './ImageSlider';
+import { motionDuration, motionDurationFor, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function AboutUs() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const yearsRef = useRef<HTMLSpanElement>(null);
+  const projectsRef = useRef<HTMLSpanElement>(null);
+
+  useGSAP(() => {
+    if (!containerRef.current) return;
+    if (prefersReducedMotion) {
+      gsap.set(['.about-title', '.about-text', '.stats-image', '.stat-item'], { clearProps: 'all', opacity: 1, x: 0, y: 0 });
+      if (yearsRef.current) yearsRef.current.textContent = '33';
+      if (projectsRef.current) projectsRef.current.textContent = '600';
+      return;
+    }
+
+    // Timeline for text elements
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 75%", // starts when top of container hits 75% of viewport
+        once: true,
+      }
+    });
+
+    // Animate title and paragraphs
+    tl.fromTo('.about-title', 
+      { y: 40, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: motionDuration.slow, ease: motionEase.smooth }
+    )
+    .fromTo('.about-text', 
+      { y: 30, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: motionDuration.hero, stagger: motionStagger.loose, ease: motionEase.smooth },
+      "-=0.7"
+    );
+
+    // Timeline for the stats section
+    const statsTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.stats-section',
+        start: "top 85%",
+        once: true,
+      }
+    });
+
+    statsTl.fromTo('.stats-image', 
+      { y: 40, opacity: 0 }, 
+      { y: 0, opacity: 1, duration: motionDuration.slow, ease: motionEase.smooth }
+    )
+    .fromTo('.stat-item', 
+      { x: 30, opacity: 0 }, 
+      { x: 0, opacity: 1, duration: motionDuration.hero, stagger: 0.18, ease: motionEase.smooth },
+      "-=0.8" // start before image finishes
+    );
+
+    // Number counters
+    ScrollTrigger.create({
+      trigger: '.stats-section',
+      start: "top 85%",
+      once: true,
+      onEnter: () => {
+        // Animate Years (0 to 33)
+        if (yearsRef.current) {
+          gsap.to(yearsRef.current, {
+            innerHTML: 33,
+            duration: motionDurationFor(2.5),
+            snap: { innerHTML: 1 },
+            ease: motionEase.soft
+          });
+        }
+        
+        // Animate Projects (0 to 600)
+        if (projectsRef.current) {
+          gsap.to(projectsRef.current, {
+            innerHTML: 600,
+            duration: motionDurationFor(3),
+            snap: { innerHTML: 1 },
+            ease: motionEase.soft
+          });
+        }
+      }
+    });
+
+  }, { scope: containerRef, dependencies: [prefersReducedMotion] });
+
+  return (
+    <section 
+      ref={containerRef}
+      className="w-full bg-white px-8 md:px-14 py-20 md:py-32 xl:py-40 font-sans"
+    >
+      <div className="max-w-[1526px] mx-auto">
+        <div className="flex flex-col md:flex-row items-start px-2 mb-20 md:mb-32">
+          {/* Left Column: Title */}
+          <div className="w-full md:w-[35%] relative mb-12 md:mb-0 flex justify-between items-start pr-12 xl:pr-32">
+            <h2 className="about-title opacity-0 text-[34px] md:text-[42px] font-light text-[#c22026] leading-[1.1] tracking-[0.02em] pt-1">
+              About Us
+            </h2>
+          </div>
+
+          {/* Right Column: Content */}
+          <div className="w-full md:w-[65%] lg:w-[50%]">
+            <div className="flex flex-col space-y-7 text-[19px] md:text-[23px] leading-[1.62] text-black font-normal tracking-[-0.01em] max-w-[32rem] md:max-w-[36rem]">
+              <p className="about-text opacity-0">
+                Igloo Construction is an ISO-certified Tier 2 builder with over 30 years’ experience delivering commercial, institutional, and complex projects for long-term asset owners across France and Algeria.
+              </p>
+              <p className="about-text opacity-0">
+                We are a multi-award-winning France and Algeria construction company that is active across all sectors of the industry.
+              </p>
+              <p className="about-text opacity-0">
+                "We have built our reputation as a quality builder that places outstanding customer service at the heart of our business. We are motivated by delivering excellence for our clients."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats Section with Image */}
+        <div className="stats-section flex flex-col md:flex-row items-stretch gap-12 lg:gap-24 px-2">
+          {/* Image Left */}
+          <div className="stats-image opacity-0 w-full md:w-[60%] overflow-hidden">
+            <ImageSlider />
+          </div>
+          
+          {/* Stats Right */}
+          <div className="w-full md:w-[40%] flex flex-col justify-center space-y-16">
+            <div className="stat-item opacity-0">
+              <div className="text-[120px] md:text-[140px] font-bold text-[#c22026] leading-none mb-4 -ml-1 flex items-start">
+                <span ref={yearsRef}>0</span>
+                <span className="text-[80px] md:text-[100px] align-top leading-[0.8]">+</span>
+              </div>
+              <div className="text-[28px] md:text-[32px] font-light text-black pb-8 border-b border-black/80">
+                Years Experience
+              </div>
+            </div>
+            
+            <div className="stat-item opacity-0">
+              <div className="text-[120px] md:text-[140px] font-bold text-[#c22026] leading-none mb-4 -ml-1 flex items-start">
+                <span ref={projectsRef}>0</span>
+                <span className="text-[80px] md:text-[100px] align-top leading-[0.8]">+</span>
+              </div>
+              <div className="text-[28px] md:text-[32px] font-light text-black pb-8 border-b border-black/80">
+                Projects Built
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+/* Light Mode Canvas Overrides */
+.theme-light .content-canvas,
+.theme-light .project-2-canvas,
+.theme-light .project-3-canvas {
+  background-color: #fcfcfc !important;
+  color: #111 !important;
+}
+
+.theme-light .content-canvas .text-white,
+.theme-light .project-2-canvas .text-white,
+.theme-light .project-3-canvas .text-white {
+  color: #111 !important;
+}
+
+.theme-light .content-canvas .text-white\/70,
+.theme-light .project-2-canvas .text-white\/70,
+.theme-light .project-3-canvas .text-white\/70 {
+  color: #444 !important;
+}
+
+.theme-light .content-canvas .bg-\[\#0a0a0a\],
+.theme-light .content-canvas .bg-\[\#050505\],
+.theme-light .project-2-canvas .bg-\[\#050505\],
+.theme-light .project-3-canvas .bg-\[\#050505\] {
+  background-color: #f0f0f0 !important;
+}
+
+.theme-light .content-canvas .bg-black\/70,
+.theme-light .project-2-canvas .bg-black\/70,
+.theme-light .project-3-canvas .bg-black\/70 {
+  background-color: rgba(252, 252, 252, 0.95) !important;
+}
+
+.theme-light .content-canvas .bg-cover,
+.theme-light .project-2-canvas .bg-cover,
+.theme-light .project-3-canvas .bg-cover {
+  opacity: 0.05 !important;
+  mix-blend-mode: multiply;
+  filter: grayscale(1);
+}
