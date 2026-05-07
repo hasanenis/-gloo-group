@@ -48,7 +48,7 @@ export default function Projects() {
 
   useGSAP(() => {
     if (prefersReducedMotion) {
-      gsap.set(['.bg-image', '.top-header', '.title-serif', '.title-script', '.bottom-menu', '.full-menu', '.menu-item'], {
+      gsap.set(['.bg-image', '.top-header', '.title-serif', '.title-script', '.bottom-menu', '.full-menu', '.menu-item', '.scroll-cue', '.scroll-cue-shell', '.scroll-wheel', '.scroll-arrow'], {
         clearProps: 'all',
         opacity: 1,
         x: 0,
@@ -64,6 +64,10 @@ export default function Projects() {
     gsap.set(['.top-header', '.title-serif', '.title-script', '.bottom-menu'], { 
       y: 30, 
       opacity: 0 
+    });
+    gsap.set('.scroll-cue', {
+      y: 22,
+      opacity: 0
     });
 
     tl.to('.bg-image', {
@@ -94,7 +98,53 @@ export default function Projects() {
       opacity: 1,
       duration: motionDuration.hero,
       ease: motionEase.soft
+    }, '-=1.2')
+    .to('.scroll-cue', {
+      y: 0,
+      opacity: 1,
+      duration: motionDuration.hero,
+      ease: motionEase.soft
     }, '-=1.2');
+
+    gsap.timeline({
+      repeat: -1,
+      defaults: {
+        ease: 'power2.inOut'
+      }
+    })
+      .to('.scroll-cue-shell', {
+        y: 8,
+        duration: 1.2,
+        yoyo: true,
+        repeat: 1
+      }, 0)
+      .fromTo('.scroll-wheel',
+        { y: 0, opacity: 1 },
+        { y: 12, opacity: 0, duration: 0.9, ease: 'power2.in' },
+        0.15
+      )
+      .set('.scroll-wheel', { y: -4, opacity: 0 }, 1.08)
+      .to('.scroll-wheel', { y: 0, opacity: 1, duration: 0.28 }, 1.14)
+      .to('.scroll-arrow', {
+        y: 8,
+        opacity: 0.3,
+        stagger: 0.08,
+        duration: 0.45,
+        yoyo: true,
+        repeat: 1
+      }, 0.2);
+
+    gsap.to('.scroll-cue', {
+      opacity: 0,
+      y: -16,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.scroll-container',
+        start: 'top top',
+        end: '+=220',
+        scrub: true
+      }
+    });
 
     // Menu timeline
     gsap.set('.full-menu', { y: '100%', opacity: 0, pointerEvents: 'none' });
@@ -558,7 +608,20 @@ export default function Projects() {
                     </div>
                     <div className="w-full h-[1px] bg-black/10"></div>
                  </div>
-                       <span className="text-black/40 text-[8px] md:text-[9px] uppercase tracking-[0.15em] font-bold mt-2">Scroll to explore</span>
+
+                 <div className="scroll-cue mt-4 flex items-center gap-3 mix-blend-multiply">
+                    <div className="scroll-cue-shell relative flex h-14 w-10 items-start justify-center rounded-full border border-black/15 bg-white/60 pt-2 shadow-[0_10px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm">
+                       <div className="scroll-wheel h-3.5 w-1 rounded-full bg-[#e82a2e]"></div>
+                       <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[#e82a2e]">
+                          <ChevronDown className="scroll-arrow h-3.5 w-3.5" strokeWidth={2.2} />
+                          <ChevronDown className="scroll-arrow -mt-1.5 h-3.5 w-3.5 opacity-60" strokeWidth={2.2} />
+                       </div>
+                    </div>
+                    <div className="pt-1">
+                       <span className="block text-black/45 text-[8px] md:text-[9px] uppercase tracking-[0.22em] font-bold">Scroll to explore</span>
+                       <span className="block text-black/30 text-[9px] md:text-[10px] italic tracking-[0.04em] mt-1">Follow the project story downward</span>
+                    </div>
+                 </div>
               </div>
             )}
           </div>
