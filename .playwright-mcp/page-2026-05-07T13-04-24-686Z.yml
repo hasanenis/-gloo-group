@@ -1,0 +1,483 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - img "igloo Construction" [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e9]: Build.
+      - generic [ref=e11]: Above.
+      - generic [ref=e13]: Beyond.
+    - generic:
+      - img
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "Igloo Construction" [ref=e18] [cursor=pointer]:
+        - /url: /
+        - img "Igloo Construction" [ref=e19]
+      - navigation [ref=e20]:
+        - link "Home" [ref=e21] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: "#"
+          - text: About
+          - img [ref=e23]
+        - link "Projects" [ref=e25] [cursor=pointer]:
+          - /url: /projects
+          - text: Projects
+          - img [ref=e26]
+        - link "Services" [ref=e28] [cursor=pointer]:
+          - /url: "#"
+          - text: Services
+          - img [ref=e29]
+        - link "Tenders" [ref=e31] [cursor=pointer]:
+          - /url: "#"
+        - link "Team" [ref=e32] [cursor=pointer]:
+          - /url: "#"
+          - text: Team
+          - img [ref=e33]
+        - link "Contact" [ref=e35] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e37]:
+      - generic [ref=e54]:
+        - heading "L’empreinte de demain, pensée pour durer" [level=1] [ref=e55]:
+          - generic [ref=e57]: L’empreinte
+          - generic [ref=e59]: de
+          - generic [ref=e61]: demain,
+          - generic [ref=e63]: pensée
+          - generic [ref=e65]: pour
+          - generic [ref=e67]: durer
+        - paragraph [ref=e68]: Igloo shapes residential and mixed-use places with measured execution, architectural clarity, and a lasting sense of presence.
+      - generic [ref=e70]: SCROLL
+      - generic [ref=e72]:
+        - generic [ref=e73]: 1/5
+        - generic [ref=e74]: Said Hamdine
+        - generic [ref=e75]:
+          - button [ref=e76]:
+            - img [ref=e77]
+          - button [ref=e79]:
+            - img [ref=e80]
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - heading "About Us" [level=2] [ref=e87]
+        - generic [ref=e89]:
+          - paragraph [ref=e90]: Founded in 2018 in Ouled Fayet, Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.
+          - paragraph [ref=e91]: Our engineers, architects, site managers, and field teams work as one coordinated structure to deliver projects with precision, efficiency, and lasting quality.
+          - paragraph [ref=e92]: We create modern, durable, and functional spaces designed for people, businesses, and communities.
+      - generic [ref=e93]:
+        - generic [ref=e95]:
+          - img [ref=e96]
+          - generic [ref=e97]:
+            - button [ref=e98]:
+              - img [ref=e99]
+            - button [ref=e101]:
+              - img [ref=e102]
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: "0"
+              - generic [ref=e108]: +
+            - generic [ref=e109]: Years Active
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: "0"
+              - generic [ref=e113]: +
+            - generic [ref=e114]: Projects Featured
+    - generic [ref=e117]:
+      - generic [ref=e119]:
+        - heading "OUR PROJECTS" [level=2] [ref=e120]
+        - link "View All Projects" [ref=e121] [cursor=pointer]:
+          - /url: /projects
+      - generic [ref=e123]:
+        - link "300/500 Assisted Promotional Housing Completed 300/500 Assisted Promotional Housing Construction works for all secondary state bodies within the 300/500 assisted promotional housing programme in Douaouda." [ref=e124] [cursor=pointer]:
+          - /url: /projects#douaouda-300-500-housing
+          - img "300/500 Assisted Promotional Housing" [ref=e125]
+          - generic:
+            - generic: Completed
+            - heading "300/500 Assisted Promotional Housing" [level=3]
+            - paragraph: Construction works for all secondary state bodies within the 300/500 assisted promotional housing programme in Douaouda.
+        - link "200/1200 Promotional Public Housing Completed 200/1200 Promotional Public Housing Construction works for all secondary state bodies within the 200/1200 promotional public housing development in Sidi Abdallah - Mahalma." [ref=e126] [cursor=pointer]:
+          - /url: /projects#sidi-abdallah-200-1200-housing
+          - img "200/1200 Promotional Public Housing" [ref=e127]
+          - generic:
+            - generic: Completed
+            - heading "200/1200 Promotional Public Housing" [level=3]
+            - paragraph: Construction works for all secondary state bodies within the 200/1200 promotional public housing development in Sidi Abdallah - Mahalma.
+        - link "11/41 Villas and Network Works Completed 11/41 Villas and Network Works Construction work in all secondary state bodies, including various road and network works for the 11/41 villas project in Staoueli." [ref=e128] [cursor=pointer]:
+          - /url: /projects#staoueli-11-41-villas
+          - img "11/41 Villas and Network Works" [ref=e129]
+          - generic:
+            - generic: Completed
+            - heading "11/41 Villas and Network Works" [level=3]
+            - paragraph: Construction work in all secondary state bodies, including various road and network works for the 11/41 villas project in Staoueli.
+        - link "Commercial Centres for 2,500 Housing Units Completed Commercial Centres for 2,500 Housing Units Construction work in secondary state bodies for the commercial centres serving the 2,500 housing unit development in Douira, Algiers." [ref=e130] [cursor=pointer]:
+          - /url: /projects#douira-commercial-centers-2500-housing
+          - img "Commercial Centres for 2,500 Housing Units" [ref=e131]
+          - generic:
+            - generic: Completed
+            - heading "Commercial Centres for 2,500 Housing Units" [level=3]
+            - paragraph: Construction work in secondary state bodies for the commercial centres serving the 2,500 housing unit development in Douira, Algiers.
+        - link "Mixed Real Estate Complex with 202 Free Promotional Housing Completed Mixed Real Estate Complex with 202 Free Promotional Housing Construction work in all secondary state bodies for a mixed real estate complex of 5 blocks, 202 free promotional housing units, and 2 basement parking levels." [ref=e132] [cursor=pointer]:
+          - /url: /projects#said-hamdine-mixed-real-estate
+          - img "Mixed Real Estate Complex with 202 Free Promotional Housing" [ref=e133]
+          - generic:
+            - generic: Completed
+            - heading "Mixed Real Estate Complex with 202 Free Promotional Housing" [level=3]
+            - paragraph: Construction work in all secondary state bodies for a mixed real estate complex of 5 blocks, 202 free promotional housing units, and 2 basement parking levels.
+        - link "4 Promotional Villas and Network Works Completed 4 Promotional Villas and Network Works Construction work in all secondary state bodies, including various roads and network works for 4 promotional villas in Rouiba." [ref=e134] [cursor=pointer]:
+          - /url: /projects#rouiba-4-promotional-villas
+          - img "4 Promotional Villas and Network Works" [ref=e135]
+          - generic:
+            - generic: Completed
+            - heading "4 Promotional Villas and Network Works" [level=3]
+            - paragraph: Construction work in all secondary state bodies, including various roads and network works for 4 promotional villas in Rouiba.
+        - link "50 Free Promotional Housing Units Completed 50 Free Promotional Housing Units Structural works for 50 free promotional housing units in Sidi Benour, Algiers." [ref=e136] [cursor=pointer]:
+          - /url: /projects#sidi-benour-50-housing
+          - img "50 Free Promotional Housing Units" [ref=e137]
+          - generic:
+            - generic: Completed
+            - heading "50 Free Promotional Housing Units" [level=3]
+            - paragraph: Structural works for 50 free promotional housing units in Sidi Benour, Algiers.
+        - link "240 Free Promotional Housing with Commercial Areas Current 240 Free Promotional Housing with Commercial Areas Construction work in all secondary state bodies with roads and networks for 240 free promotional housing units with commercial areas, services, and underground parking." [ref=e138] [cursor=pointer]:
+          - /url: /projects#dely-brahim-240-housing
+          - img "240 Free Promotional Housing with Commercial Areas" [ref=e139]
+          - generic:
+            - generic: Current
+            - heading "240 Free Promotional Housing with Commercial Areas" [level=3]
+            - paragraph: Construction work in all secondary state bodies with roads and networks for 240 free promotional housing units with commercial areas, services, and underground parking.
+        - link "200 Assisted Housing and 38 Free Promotional Housing Units Current 200 Assisted Housing and 38 Free Promotional Housing Units Realisation of 200 assisted promotional housing units and 38 free promotional housing units with commercial premises, roads, and networks in Bas Mazagran." [ref=e140] [cursor=pointer]:
+          - /url: /projects#bas-mazagran-200-38-housing
+          - img "200 Assisted Housing and 38 Free Promotional Housing Units" [ref=e141]
+          - generic:
+            - generic: Current
+            - heading "200 Assisted Housing and 38 Free Promotional Housing Units" [level=3]
+            - paragraph: Realisation of 200 assisted promotional housing units and 38 free promotional housing units with commercial premises, roads, and networks in Bas Mazagran.
+        - link "250 Housing Units with Commercial Rental and Concierge Services Current 250 Housing Units with Commercial Rental and Concierge Services Construction work for the remaining 250 housing units intended for commercial rental sale, with premises for commercial use and concierge services at the Bouraada site in Reghaia." [ref=e142] [cursor=pointer]:
+          - /url: /projects#reghaia-bouraada-250-housing
+          - img "250 Housing Units with Commercial Rental and Concierge Services" [ref=e143]
+          - generic:
+            - generic: Current
+            - heading "250 Housing Units with Commercial Rental and Concierge Services" [level=3]
+            - paragraph: Construction work for the remaining 250 housing units intended for commercial rental sale, with premises for commercial use and concierge services at the Bouraada site in Reghaia.
+        - link "70 Assisted Housing and 10 Free Promotional Housing Units Current 70 Assisted Housing and 10 Free Promotional Housing Units Realisation of 70 assisted promotional housing units and 10 free promotional housing units with 10 professional and commercial premises, including roads and networks, in Boudouaou." [ref=e144] [cursor=pointer]:
+          - /url: /projects#boudouaou-70-10-housing
+          - img "70 Assisted Housing and 10 Free Promotional Housing Units" [ref=e145]
+          - generic:
+            - generic: Current
+            - heading "70 Assisted Housing and 10 Free Promotional Housing Units" [level=3]
+            - paragraph: Realisation of 70 assisted promotional housing units and 10 free promotional housing units with 10 professional and commercial premises, including roads and networks, in Boudouaou.
+    - generic [ref=e147]:
+      - generic:
+        - img
+      - heading "OUR TEAM" [level=2] [ref=e149]
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - generic:
+            - img "Adem Talay"
+          - generic [ref=e153]:
+            - heading "Adem Talay" [level=3] [ref=e154]
+            - paragraph [ref=e155]: CEO
+            - img [ref=e157] [cursor=pointer]
+        - generic [ref=e160]:
+          - generic:
+            - img "William Kissen"
+          - generic [ref=e161]:
+            - heading "William Kissen" [level=3] [ref=e162]
+            - paragraph [ref=e163]: Project Management
+            - img [ref=e165] [cursor=pointer]
+        - generic [ref=e168]:
+          - generic:
+            - img "Thijs Janssen"
+          - generic [ref=e169]:
+            - heading "Thijs Janssen" [level=3] [ref=e170]
+            - paragraph [ref=e171]: ass. Projectleider
+            - img [ref=e173] [cursor=pointer]
+        - generic [ref=e176]:
+          - generic:
+            - img "Peter Hermans"
+          - generic [ref=e177]:
+            - heading "Peter Hermans" [level=3] [ref=e178]
+            - paragraph [ref=e179]: Montage
+            - img [ref=e181] [cursor=pointer]
+        - generic [ref=e184]:
+          - generic:
+            - img "Marielle Moonen"
+          - generic [ref=e185]:
+            - heading "Marielle Moonen" [level=3] [ref=e186]
+            - paragraph [ref=e187]: Administratie
+            - img [ref=e189] [cursor=pointer]
+        - generic [ref=e192]:
+          - generic:
+            - img "Laura De Bruyn"
+          - generic [ref=e193]:
+            - heading "Laura De Bruyn" [level=3] [ref=e194]
+            - paragraph [ref=e195]: Marketing
+            - img [ref=e197] [cursor=pointer]
+    - generic [ref=e202]:
+      - heading "Client Testimonials" [level=2] [ref=e203]
+      - generic [ref=e204]:
+        - generic [ref=e205]:
+          - button "Jean-Pierre Laurent - Directeur Général - Groupe Bâtiment Frères" [ref=e206]:
+            - generic [ref=e207]: Jean-Pierre Laurent - Directeur Général - Groupe Bâtiment Frères
+            - img [ref=e209]
+          - paragraph [ref=e215]: "\"The Igloo Team truly excel in every aspect of their work and have delivered an exceptional level of quality throughout this build. Their integrity, unwavering commitment to safety, efficiency, and innovation without compromise instilled confidence and trust from day one. From initial discussions to project updates, they maintained open and transparent lines of communication and kept us well-informed along the way. Igloo is a builder you can rely on without question and we recommend them for any project, big or small.\""
+        - button "Sylvie Dubois - Architecte Principale - Studio Lumière Paris" [ref=e217]:
+          - generic [ref=e218]: Sylvie Dubois - Architecte Principale - Studio Lumière Paris
+          - img [ref=e220]
+        - button "Luc Martin - Directeur de la Construction - Châteaux & Domaines" [ref=e222]:
+          - generic [ref=e223]: Luc Martin - Directeur de la Construction - Châteaux & Domaines
+          - img [ref=e225]
+        - button "Amélie Lefèvre - Directrice de Projet Nationale - Colliers France" [ref=e227]:
+          - generic [ref=e228]: Amélie Lefèvre - Directrice de Projet Nationale - Colliers France
+          - img [ref=e230]
+        - button "Antoine Moreau - Gestionnaire de Portefeuille - Investissements Horizon" [ref=e232]:
+          - generic [ref=e233]: Antoine Moreau - Gestionnaire de Portefeuille - Investissements Horizon
+          - img [ref=e235]
+        - button "Camille Bernard - Présidente et Directrice Générale - Société Hôtelière de Lyon" [ref=e237]:
+          - generic [ref=e238]: Camille Bernard - Présidente et Directrice Générale - Société Hôtelière de Lyon
+          - img [ref=e240]
+        - button "Mathieu Girard - Responsable de Développement" [ref=e242]:
+          - generic [ref=e243]: Mathieu Girard - Responsable de Développement
+          - img [ref=e245]
+        - button "Julien Roux - Président Exécutif - Les Éditions Mont Blanc" [ref=e247]:
+          - generic [ref=e248]: Julien Roux - Président Exécutif - Les Éditions Mont Blanc
+          - img [ref=e250]
+    - generic [ref=e254]:
+      - generic [ref=e255]:
+        - img [ref=e257]
+        - generic [ref=e262]:
+          - generic [ref=e263]: "0"
+          - generic [ref=e264]: +
+        - generic [ref=e266]: Projects Built
+      - generic [ref=e267]:
+        - img [ref=e269]
+        - generic [ref=e272]:
+          - generic [ref=e273]: "0.0"
+          - generic [ref=e274]: "-Star"
+        - generic [ref=e276]: Gold iCIRT Rating
+      - generic [ref=e277]:
+        - img [ref=e279]
+        - generic [ref=e283]:
+          - generic [ref=e284]: $
+          - generic [ref=e285]: "0.0"
+          - generic [ref=e286]: B
+        - generic [ref=e288]: Combined Value
+      - generic [ref=e289]:
+        - img [ref=e291]
+        - generic [ref=e297]:
+          - generic [ref=e298]: "0"
+          - generic [ref=e299]: "%"
+        - generic [ref=e301]: Repeat Clientele
+      - generic [ref=e302]:
+        - img [ref=e304]
+        - generic [ref=e308]:
+          - generic [ref=e309]: "0"
+          - generic [ref=e310]: +
+        - generic [ref=e312]: Years of Excellence
+      - generic [ref=e313]:
+        - img [ref=e315]
+        - generic [ref=e321]:
+          - generic [ref=e322]: "0"
+          - generic [ref=e323]: +
+        - generic [ref=e325]: Igloo Staff
+      - generic [ref=e326]:
+        - img [ref=e328]
+        - generic [ref=e334]: "0"
+        - generic [ref=e336]: Office Locations (Sydney & Melbourne)
+      - generic [ref=e337]:
+        - img [ref=e339]
+        - generic [ref=e343]:
+          - generic [ref=e344]: $
+          - generic [ref=e345]: "0"
+        - generic [ref=e347]: No Bank Finance
+    - generic [ref=e350]:
+      - generic [ref=e351]:
+        - generic:
+          - img
+      - generic [ref=e353]:
+        - heading "Together to eternity" [level=2] [ref=e354]
+        - paragraph [ref=e355]: Our process is an ongoing cycle of innovation, quality, and trust. We push boundaries to deliver timeless structures that stand strong forever.
+        - generic [ref=e356]:
+          - generic [ref=e357] [cursor=pointer]: Phase 1
+          - generic [ref=e359] [cursor=pointer]: Phase 2
+          - generic [ref=e360] [cursor=pointer]: Phase 3
+          - generic [ref=e361] [cursor=pointer]: Phase 4
+        - generic [ref=e362]:
+          - generic [ref=e363]:
+            - heading "Endless Vision" [level=3] [ref=e364]
+            - paragraph [ref=e365]: Every project begins with a vision that looks beyond the present. We design structures with infinite possibilities, making sure the foundation is as strong as your aspirations.
+          - generic:
+            - heading "Continuous Innovation" [level=3]
+            - paragraph: Technology and engineering never stop evolving, and neither do we. We apply an endless cycle of modernization, using cutting-edge BIM and smart construction practices.
+          - generic:
+            - heading "Unbreakable Trust" [level=3]
+            - paragraph: Trust is a continuous loop. We maintain complete transparency throughout the lifecycle of the project, establishing bonds with our clients that last forever.
+          - generic:
+            - heading "Timeless Legacy" [level=3]
+            - paragraph: We don't just build for tomorrow; we build for eternity. Our commitment to sustainability ensures that our structures provide value for generations to come.
+        - generic [ref=e366]: keep scrolling
+    - generic [ref=e371]:
+      - generic [ref=e373]:
+        - iframe [ref=e375]:
+          - generic [active] [ref=f5e1]:
+            - generic "YouTube Video Oynatıcısı" [ref=f5e3]
+            - generic [ref=f5e5]:
+              - generic:
+                - generic:
+                  - button "Videoyu oynat" [ref=f5e10] [cursor=pointer]
+                  - button "Oynatıcı kontrollerini gizle" [ref=f5e12] [cursor=pointer]
+                  - generic [ref=f5e14]:
+                    - generic [ref=f5e19]:
+                      - generic [ref=f5e20]:
+                        - link "Placeholder Video" [ref=f5e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=ScMzIvxBSi4
+                        - link "BenMarquezTX" [ref=f5e22] [cursor=pointer]:
+                          - /url: /channel/UCyWUDJ1UZBfZZ4lmiidNp4A
+                          - generic [ref=f5e23]: BenMarquezTX
+                      - generic [ref=f5e24]:
+                        - button [ref=f5e25] [cursor=pointer]
+                        - generic [ref=f5e27]:
+                          - generic: BenMarquezTX
+                          - generic: 318 abone
+                    - generic [ref=f5e28]:
+                      - button "Paylaş" [ref=f5e31] [cursor=pointer]:
+                        - generic [ref=f5e35]:
+                          - img
+                      - link "YouTube'da izleyin" [ref=f5e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=ScMzIvxBSi4
+                        - generic [ref=f5e45]:
+                          - text: "İzlemek için:"
+                          - img [ref=f5e47]:
+                            - generic [ref=f5e49]:
+                              - img
+        - heading "Explore Our Projects Here" [level=2] [ref=e376]
+        - list [ref=e377]:
+          - listitem [ref=e378]:
+            - link "Paris Commercial Center Development" [ref=e379] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e380]:
+            - link "Algiers Infrastructure & Transport Projects" [ref=e381] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e382]:
+            - link "Lyon Residential Complex" [ref=e383] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e384]:
+            - link "Oran Industrial Facilities Refurbishment" [ref=e385] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e386]:
+        - iframe [ref=e388]:
+          
+        - heading "Decades of Award-Winning Construction Excellence" [level=2] [ref=e389]
+        - generic [ref=e390]:
+          - paragraph [ref=e391]: As a leading force in the construction sector, Igloo Construction delivers landmark projects across France and Algeria. Our cross-continental expertise bridges European engineering standards with dynamic infrastructural growth.
+          - paragraph [ref=e392]: Backed by top-tier safety and quality ratings, and fully certified under international ISO standards, we have successfully completed hundreds of transformative projects across diverse sectors in both regions.
+    - generic [ref=e395]:
+      - img "Igloo Construction" [ref=e398]
+      - generic [ref=e399]:
+        - generic [ref=e400]:
+          - heading "Quick Links" [level=3] [ref=e401]
+          - generic [ref=e402]:
+            - link "Resources" [ref=e403] [cursor=pointer]:
+              - /url: "#"
+            - link "News & Media" [ref=e404] [cursor=pointer]:
+              - /url: "#"
+            - link "Commercial" [ref=e405] [cursor=pointer]:
+              - /url: "#"
+            - link "Residential" [ref=e406] [cursor=pointer]:
+              - /url: "#"
+            - link "Construction" [ref=e407] [cursor=pointer]:
+              - /url: "#"
+            - link "Infrastructure" [ref=e408] [cursor=pointer]:
+              - /url: "#"
+            - link "People" [ref=e409] [cursor=pointer]:
+              - /url: "#"
+            - link "Brochures" [ref=e410] [cursor=pointer]:
+              - /url: "#"
+            - link "Heritage" [ref=e411] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e412]:
+          - heading "Conditions" [level=3] [ref=e413]
+          - generic [ref=e414]:
+            - link "Privacy Policy" [ref=e415] [cursor=pointer]:
+              - /url: "#"
+            - link "Legal" [ref=e416] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e417]:
+          - heading "Algiers" [level=3] [ref=e418]
+          - generic [ref=e419]:
+            - paragraph [ref=e420]: Level 4,
+            - paragraph [ref=e421]: Boulevard Colonel Bougara,
+            - paragraph [ref=e422]: El Biar, Algiers 16000
+            - paragraph [ref=e423]: "T: +213 21 90 22 45"
+        - generic [ref=e424]:
+          - heading "Paris" [level=3] [ref=e427]
+          - generic [ref=e428]:
+            - paragraph [ref=e429]: Suite G.04
+            - paragraph [ref=e430]: Avenue des Champs-Élysées
+            - paragraph [ref=e431]: 75008 Paris
+            - paragraph [ref=e432]: "T: +33 1 42 68 53 00"
+      - generic [ref=e433]:
+        - generic [ref=e434]:
+          - generic [ref=e435]:
+            - generic [ref=e436]:
+              - text: ISO 9001
+              - text: QUALITY
+              - generic [ref=e438]: SYSTEM
+            - generic [ref=e439]:
+              - text: Policy
+              - text: Certificate
+          - generic [ref=e440]:
+            - generic [ref=e441]:
+              - text: ISO 14001
+              - text: ENVIRON
+              - generic [ref=e443]: SYSTEM
+            - generic [ref=e444]:
+              - text: Policy
+              - text: Certificate
+          - generic [ref=e445]:
+            - generic [ref=e446]:
+              - text: ISO 45001
+              - text: OHS
+              - generic [ref=e448]: SYSTEM
+            - generic [ref=e449]:
+              - text: Policy
+              - text: Certificate
+          - generic [ref=e450]:
+            - generic [ref=e452]: A
+            - generic [ref=e454]: Certificate
+          - generic [ref=e455]:
+            - generic [ref=e456]: iCIRT
+            - generic [ref=e457]: ★★★★★
+            - generic [ref=e458]: LAST RATED SEP 2025
+          - generic [ref=e459]:
+            - generic [ref=e460]: NSCA
+            - generic [ref=e461]: Foundation
+            - generic [ref=e462]: BRONZE MEMBER 2024
+        - generic [ref=e463]:
+          - heading "Stay Connected" [level=3] [ref=e464]
+          - generic [ref=e465]:
+            - link [ref=e466] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e467]
+            - link [ref=e469] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e470]
+            - link [ref=e472] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e473]
+            - link [ref=e476] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e477]
+            - link [ref=e481] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e482]
+            - link [ref=e484] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e485]
+      - paragraph [ref=e489]: © 2026 Igloo Construction. All rights reserved. RC 16B1098634
+    - complementary:
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - img [ref=e494]
+          - generic [ref=e496]:
+            - paragraph [ref=e497]: Musteri Sunumu
+            - paragraph [ref=e498]: Açılış / İlk İzlenim
+        - button "Bilgi kutusunu genislet" [ref=e499]:
+          - img [ref=e500]

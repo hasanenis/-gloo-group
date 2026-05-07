@@ -65,6 +65,9 @@ export default function Projects() {
       y: 30, 
       opacity: 0 
     });
+    gsap.set('.content-canvas', {
+      opacity: 0.42
+    });
     gsap.set('.scroll-cue', {
       y: 22,
       opacity: 0
@@ -184,21 +187,34 @@ export default function Projects() {
       // === PROJECT 1 ===
       .to('.top-header', {
         x: '8vw',
-        opacity: 0,
         ease: 'power1.inOut',
-        duration: 1
+        duration: 1.35
       }, 0)
+      .to('.top-header', {
+        opacity: 0,
+        ease: 'power1.out',
+        duration: 1.9
+      }, 0.35)
       .to('.content-canvas', {
         x: '-50vw',
         ease: 'power1.inOut',
         duration: 2
       }, 0)
+      .to('.content-canvas', {
+        opacity: 1,
+        ease: 'power1.out',
+        duration: 1.85
+      }, 0.15)
       .to('.title-content', {
         x: '-60vw',
-        opacity: 0,
         ease: 'power1.inOut',
         duration: 2
       }, 0)
+      .to('.title-content', {
+        opacity: 0,
+        ease: 'power1.out',
+        duration: 2.25
+      }, 0.55)
       .to('.content-canvas', {
         x: '-100vw',
         ease: 'power1.inOut',
@@ -549,11 +565,6 @@ export default function Projects() {
               <div className="w-full flex justify-between items-start px-8 md:px-16 pointer-events-auto">
                  <div className="w-24 md:w-32 flex flex-col items-start shrink-0 pt-2 -ml-2 mix-blend-multiply opacity-90">
                     <img src="https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png" alt="igloo" className="w-full object-contain" />
-                    <div className="mt-4 ml-6 flex items-center gap-4 md:gap-5 text-[8px] md:text-[9px] tracking-[0.24em] font-medium uppercase whitespace-nowrap">
-                      <span className="text-[#e82a2e] font-bold">Commercial</span>
-                      <span className="text-black/20 font-light">|</span>
-                      <span className="text-black/45">Residential</span>
-                    </div>
                  </div>
                  
                  <div className="flex flex-col items-center">

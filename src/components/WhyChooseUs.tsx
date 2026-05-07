@@ -45,28 +45,33 @@ export default function WhyChooseUs() {
 
   // Update active step based on scroll
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest < 0.25) setActiveStep(0);
-    else if (latest < 0.5) setActiveStep(1);
-    else if (latest < 0.75) setActiveStep(2);
+    if (latest < (isDesktop ? 0.25 : 0.24)) setActiveStep(0);
+    else if (latest < (isDesktop ? 0.5 : 0.48)) setActiveStep(1);
+    else if (latest < (isDesktop ? 0.75 : 0.72)) setActiveStep(2);
     else setActiveStep(3);
   });
 
-  // Draw progression (finishes perfectly right before the end)
-  const drawProgress = useTransform(scrollYProgress, [0, 0.8], prefersReducedMotion ? [1.05, 1.05] : [0, 1.05]);
+  const drawStart = isDesktop ? 0.03 : 0;
+  const drawEnd = isDesktop ? 0.8 : 0.62;
+  const fillStart = isDesktop ? 0.8 : 0.62;
+  const fillEnd = isDesktop ? 1 : 0.82;
+
+  // Start drawing immediately on mobile so the pinned section doesn't open with a dead white gap.
+  const drawProgress = useTransform(scrollYProgress, [drawStart, drawEnd], prefersReducedMotion ? [1.05, 1.05] : [0, 1.05]);
   
   // Fade in original red fill when drawing reaches the end
-  const fillOpacity = useTransform(scrollYProgress, [0.8, 1], prefersReducedMotion ? [1, 1] : [0, 1]);
+  const fillOpacity = useTransform(scrollYProgress, [fillStart, fillEnd], prefersReducedMotion ? [1, 1] : [0, 1]);
   
   // Fade out black stroke just slightly at the very end
-  const strokeOpacity = useTransform(scrollYProgress, [0.8, 1], prefersReducedMotion ? [0, 0] : [1, 0]);
+  const strokeOpacity = useTransform(scrollYProgress, [fillStart, fillEnd], prefersReducedMotion ? [0, 0] : [1, 0]);
 
   return (
-    <section ref={containerRef} className="relative h-[400vh] bg-white text-black font-sans">
-      <div className="sticky top-0 h-screen w-full flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto px-6 overflow-hidden pt-20 lg:pt-28">
+    <section ref={containerRef} className="relative h-[260vh] lg:h-[400vh] bg-white text-black font-sans">
+      <div className="sticky top-0 h-screen w-full flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center max-w-7xl mx-auto px-6 overflow-hidden pt-20 lg:pt-28">
         
         {/* Animated Logo */}
-        <div className="w-full lg:w-1/2 h-[40%] lg:h-full flex items-center justify-center lg:justify-start relative">
-          <div className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px] lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] relative pointer-events-none lg:-ml-8 xl:-ml-16">
+        <div className="w-full lg:w-1/2 h-auto lg:h-full flex items-start justify-center lg:justify-start relative pt-2 sm:pt-4 lg:pt-0">
+          <div className="w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] md:w-[280px] md:h-[280px] lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] relative pointer-events-none lg:-ml-8 xl:-ml-16">
             <svg 
               width="100%" 
               height="100%" 
@@ -104,7 +109,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Right Side: Text & Tabs */}
-        <div className="w-full lg:w-1/2 h-[60%] lg:h-full flex flex-col justify-start lg:justify-center p-6 lg:p-0 lg:pl-12 xl:pl-16 relative z-10">
+        <div className="w-full lg:w-1/2 min-h-0 lg:h-full flex flex-col justify-start lg:justify-center p-6 pt-2 sm:pt-4 lg:p-0 lg:pl-12 xl:pl-16 relative z-10">
           <div className="max-w-xl mx-auto lg:mx-0 w-full relative z-10 bg-white/80 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0 rounded-2xl">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight text-black">
               Together to <span className="text-[#e82a2e]">eternity</span>

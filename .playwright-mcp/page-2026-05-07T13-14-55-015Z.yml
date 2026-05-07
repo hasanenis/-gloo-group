@@ -1,0 +1,296 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - link [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e7]
+    - button "DOUAOUDA HOUSING" [ref=e11] [cursor=pointer]:
+      - generic [ref=e16]: DOUAOUDA HOUSING
+    - link [ref=e21] [cursor=pointer]:
+      - /url: /contact
+      - img [ref=e22]
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e28]:
+        - generic:
+          - img "300/500 Assisted Promotional Housing"
+      - generic [ref=e29]:
+        - img "igloo" [ref=e31]
+        - generic [ref=e32]:
+          - heading "Igloo" [level=1] [ref=e33]
+          - generic [ref=e36]: Douaouda Housing
+      - generic:
+        - generic:
+          - heading "OUR" [level=2]
+          - heading "PROJECTS" [level=3]
+          - paragraph: Built to endure. Designed to inspire.
+          - paragraph: Explore the current showcase system with Douaouda Housing now placed into the original opening chapter.
+          - generic:
+            - generic:
+              - generic: "01"
+              - generic: / 03
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - img
+            - generic:
+              - generic: Scroll to explore
+              - generic: Follow the project story downward
+    - generic [ref=e38]:
+      - generic:
+        - generic:
+          - img "Left Pattern"
+        - generic:
+          - img "Right Pattern"
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - img "300/500 Assisted Promotional Housing" [ref=e45]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: "01"
+              - generic [ref=e49]: / 03
+            - generic [ref=e51]: Scroll to explore
+            - generic [ref=e53]: Project Overview
+            - heading "Douaouda Housing" [level=2] [ref=e55]:
+              - text: Douaouda
+              - text: Housing
+            - paragraph [ref=e56]: Construction works for all secondary state bodies within the 300/500 assisted promotional housing programme in Douaouda.
+          - generic [ref=e57]:
+            - img [ref=e60]
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - img [ref=e64]
+                - generic [ref=e67]: Location
+                - generic [ref=e68]: Douaouda, Algeria
+              - generic [ref=e70]:
+                - img [ref=e71]
+                - generic [ref=e75]: Type
+                - generic [ref=e76]:
+                  - text: 300/500 Assisted
+                  - text: Housing
+              - generic [ref=e78]:
+                - img [ref=e79]
+                - generic [ref=e81]: Completion
+                - generic [ref=e82]: Completed
+              - generic [ref=e84]:
+                - img [ref=e85]
+                - generic [ref=e90]: Scope
+                - generic [ref=e91]:
+                  - text: Secondary state body works,
+                  - text: housing delivery, site coordination
+          - generic [ref=e92]:
+            - generic [ref=e93]: “
+            - generic [ref=e94]:
+              - paragraph [ref=e95]:
+                - text: "\"We build more than structures—"
+                - text: we shape environments that inspire
+                - text: and endure."
+              - generic [ref=e96]: Igloo Construction
+          - img "Douaouda housing detail" [ref=e100]
+        - generic [ref=e101]:
+          - generic [ref=e102]: "02"
+          - generic [ref=e104]: PROJECT PHOTOS
+        - img "Douaouda project view 1" [ref=e106]
+        - img "Douaouda project view 2" [ref=e108]
+        - img "Douaouda project view 3" [ref=e110]
+        - img "Douaouda transition fragment" [ref=e115]
+        - paragraph [ref=e119]: "\"From coordinated site works to enduring residential delivery in Douaouda.\""
+        - generic [ref=e120]:
+          - generic [ref=e123]: â†“
+          - heading "SHAPING ENVIRONMENTS" [level=3] [ref=e124]:
+            - text: SHAPING
+            - text: ENVIRONMENTS
+          - paragraph [ref=e125]: Our projects are not mere interventions, they are a dialogue between history and future, form and function.
+          - generic [ref=e126]:
+            - generic [ref=e127]: +
+            - generic [ref=e128]:
+              - generic [ref=e129]: BUILT FOR CONTEXT.
+              - generic [ref=e130]: DESIGNED FOR LIFE.
+        - img "Douaouda housing detail" [ref=e135]
+        - img "Douaouda facade" [ref=e140]
+        - generic [ref=e141]:
+          - generic [ref=e144]: Materiality
+          - paragraph [ref=e145]: "\"The Douaouda programme combines coordinated building works, housing delivery, and controlled site execution.\""
+          - generic [ref=e146]: Igloo Archives
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - heading "Le Lieu Des Commencements" [level=3] [ref=e150]:
+              - text: Le Lieu Des
+              - text: Commencements
+            - paragraph [ref=e151]: The Douaouda housing programme brings together assisted promotional housing, coordinated site services, and disciplined execution across the full residential plot.
+          - img "Douaouda housing site" [ref=e153]
+        - generic [ref=e154]:
+          - img "Douaouda housing blocks" [ref=e156]
+          - generic [ref=e158]:
+            - generic [ref=e160]: Core Concept
+            - heading "Housing At Scale" [level=3] [ref=e162]:
+              - text: Housing
+              - text: At Scale
+            - paragraph [ref=e163]: Secondary state body works, structural coordination, and residential delivery are combined here into one continuous programme built for long-term occupancy.
+        - generic [ref=e165]:
+          - img "300/500 Assisted Promotional Housing" [ref=e166]
+          - generic [ref=e168]:
+            - generic [ref=e171]: Completed Project
+            - heading "Douaouda 300/500 Housing" [level=3] [ref=e172]:
+              - text: Douaouda
+              - text: 300/500 Housing
+            - paragraph [ref=e173]: Residential delivery with coordinated supporting works and site infrastructure.
+    - generic [ref=e177]:
+      - heading "02 - Completed Project" [level=4] [ref=e178]
+      - heading "Sidi Abdallah" [level=2] [ref=e180]
+      - heading "Public Housing" [level=3] [ref=e182]
+    - generic [ref=e183]:
+      - generic:
+        - generic:
+          - img "Left Pattern"
+        - generic:
+          - img "Right Pattern"
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - img "200/1200 Promotional Public Housing" [ref=e190]
+          - generic [ref=e191]:
+            - heading "Delivery Story" [level=3] [ref=e193]
+            - heading "Structured Delivery" [level=2] [ref=e194]:
+              - text: Structured
+              - text: Delivery
+            - paragraph [ref=e195]: A major public housing programme in Sidi Abdallah shaped as a disciplined delivery package, with coordinated state body works and a strong residential footprint.
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - heading "Programme Coordination" [level=3] [ref=e199]:
+              - text: Programme
+              - text: Coordination
+            - paragraph [ref=e200]: Secondary works, structural sequencing, and site-wide coordination come together here to support a substantial public housing operation at full scale.
+          - img "Sidi Abdallah structure" [ref=e205]
+        - generic [ref=e206]:
+          - img "Sidi Abdallah facade" [ref=e208]
+          - generic [ref=e209]:
+            - heading "Housing & Support Works" [level=3] [ref=e211]:
+              - text: Housing &
+              - text: Support Works
+            - paragraph [ref=e212]: The Sidi Abdallah programme balances housing density, supporting works, and delivery control in a way that reads clearly inside the existing showcase rhythm.
+        - generic [ref=e214]:
+          - img "200/1200 Promotional Public Housing" [ref=e215]
+          - generic [ref=e217]:
+            - generic [ref=e219]: Completed Project
+            - heading "Sidi Abdallah Public Housing" [level=3] [ref=e221]:
+              - text: Sidi Abdallah
+              - text: Public Housing
+            - paragraph [ref=e222]: Large-scale public housing with integrated construction support packages.
+    - generic [ref=e226]:
+      - heading "03 - Completed Project" [level=4] [ref=e227]
+      - heading "Staoueli" [level=2] [ref=e229]
+      - heading "11/41 Villas" [level=3] [ref=e231]
+    - generic [ref=e232]:
+      - generic:
+        - generic:
+          - img "Left Pattern"
+        - generic:
+          - img "Right Pattern"
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - img "11/41 Villas and Network Works" [ref=e239]
+          - generic [ref=e240]:
+            - heading "Villa Programme" [level=3] [ref=e242]
+            - heading "Roads & Networks" [level=2] [ref=e243]:
+              - text: Roads &
+              - text: Networks
+            - paragraph [ref=e244]: The Staoueli package combines villa construction with roads and network works, creating a cleaner, more complete residential site story for the showcase.
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - heading "Residential Readiness" [level=3] [ref=e248]:
+              - text: Residential
+              - text: Readiness
+            - paragraph [ref=e249]: The supporting network works are treated here as part of the built outcome itself, helping the full 11/41 villa programme read as one coordinated environment.
+          - img "Staoueli network works" [ref=e254]
+        - generic [ref=e255]:
+          - img "Staoueli villas" [ref=e257]
+          - generic [ref=e258]:
+            - heading "Villas & Infrastructure" [level=3] [ref=e260]:
+              - text: Villas &
+              - text: Infrastructure
+            - paragraph [ref=e261]: "Staoueli is framed here as a composed residential delivery: villas, roads, and network systems aligned under one practical construction sequence."
+        - generic [ref=e263]:
+          - img "11/41 Villas and Network Works" [ref=e264]
+          - generic [ref=e266]:
+            - generic [ref=e269]: Completed Project
+            - heading "Staoueli 11/41 Villas" [level=3] [ref=e270]:
+              - text: Staoueli
+              - text: 11/41 Villas
+            - paragraph [ref=e271]: Residential villas plus roads, utility networks, and coordinated site infrastructure.
+    - generic [ref=e275]:
+      - heading "04 - Completed Project" [level=4] [ref=e276]
+      - heading "Said Hamdine" [level=2] [ref=e278]
+      - heading "Mixed Complex" [level=3] [ref=e280]
+    - generic [ref=e281]:
+      - generic:
+        - generic:
+          - img "Left Pattern"
+        - generic:
+          - img "Right Pattern"
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - img "Mixed Real Estate Complex with 202 Free Promotional Housing" [ref=e288]
+          - generic [ref=e289]:
+            - heading "Mixed-Use Scale" [level=3] [ref=e291]
+            - heading "Residential With Retail" [level=2] [ref=e292]:
+              - text: Residential
+              - text: With Retail
+            - paragraph [ref=e293]: Said Hamdine brings housing, basement parking, and active street-level uses into one compact urban composition with a more premium finish language.
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - heading "Detail & Common Areas" [level=3] [ref=e297]:
+              - text: Detail &
+              - text: Common Areas
+            - paragraph [ref=e298]: The chapter shifts from exterior massing to crafted details, rooftop elements, and interior arrival zones that make the complex feel complete rather than purely structural.
+          - img "Said Hamdine skylight detail" [ref=e303]
+        - generic [ref=e304]:
+          - img "Said Hamdine lobby finish" [ref=e306]
+          - generic [ref=e307]:
+            - heading "Arrival & Interior Finish" [level=3] [ref=e309]:
+              - text: Arrival &
+              - text: Interior Finish
+            - paragraph [ref=e310]: Common areas, lobbies, and circulation points are treated as part of the architectural identity, giving this chapter a more polished and urban character.
+        - generic [ref=e312]:
+          - img "Mixed Real Estate Complex with 202 Free Promotional Housing" [ref=e313]
+          - generic [ref=e315]:
+            - generic [ref=e317]: Completed Project
+            - heading "Said Hamdine Mixed Complex" [level=3] [ref=e319]:
+              - text: Said Hamdine
+              - text: Mixed Complex
+            - paragraph [ref=e320]: Five-block mixed real estate delivery with housing and two underground parking levels.
+  - generic:
+    - generic:
+      - generic: IGLOO
+    - generic:
+      - img "Igloo"
+      - heading "Igloo" [level=2]
+      - paragraph: Project Showcase
+    - generic:
+      - generic:
+        - generic:
+          - generic: "â\x9d–"
+          - generic: Douaouda Housing
+          - generic: "â\x9d–"
+        - generic: Housing
+      - generic:
+        - generic:
+          - generic: "â\x9d–"
+          - generic: Sidi Abdallah
+          - generic: "â\x9d–"
+        - generic: Public Housing
+      - generic:
+        - generic:
+          - generic: "â\x9d–"
+          - generic: Staoueli Villas
+          - generic: "â\x9d–"
+        - generic: Villa Works
+      - generic:
+        - generic:
+          - generic: "â\x9d–"
+          - generic: Said Hamdine
+          - generic: "â\x9d–"
+        - generic: Mixed Complex
+    - generic:
+      - button "âœ•"
+      - generic: DOUAOUDA HOUSING
+      - button "âœ•"
