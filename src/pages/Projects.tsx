@@ -192,17 +192,21 @@ export default function Projects() {
         repeat: 1
       }, 0.1);
 
-    gsap.to('.scroll-cue-home', {
-      opacity: 0,
-      y: -16,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: '.scroll-container',
-        start: 'top top',
-        end: '+=900',
-        scrub: true
+    gsap.fromTo('.scroll-cue-home',
+      { opacity: 1, y: 0 },
+      {
+        opacity: 0,
+        y: -16,
+        ease: 'power2.out',
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: '.scroll-container',
+          start: 'top top',
+          end: '+=900',
+          scrub: true
+        }
       }
-    });
+    );
 
     // Project dropdown timeline
     gsap.set('.project-dropdown', { y: 18, opacity: 0, scale: 0.96, pointerEvents: 'none', transformOrigin: '50% 100%' });
