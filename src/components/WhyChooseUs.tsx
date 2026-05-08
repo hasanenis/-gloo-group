@@ -1,6 +1,10 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useLayoutEffect } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { usePrefersReducedMotion } from '../lib/motion';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const steps = [
   {
@@ -27,6 +31,7 @@ const steps = [
 
 export default function WhyChooseUs() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const pinRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -42,6 +47,29 @@ export default function WhyChooseUs() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useLayoutEffect(() => {
+    if (!isDesktop || prefersReducedMotion || !containerRef.current || !pinRef.current) {
+      return undefined;
+    }
+
+    const trigger = ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: 'top top',
+      end: 'bottom bottom',
+      pin: pinRef.current,
+      pinSpacing: false,
+      anticipatePin: 1,
+      invalidateOnRefresh: true,
+    });
+
+    ScrollTrigger.refresh();
+
+    return () => {
+      trigger.kill();
+      ScrollTrigger.refresh();
+    };
+  }, [isDesktop, prefersReducedMotion]);
 
   // Update active step based on scroll
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -67,7 +95,7 @@ export default function WhyChooseUs() {
 
   return (
     <section ref={containerRef} className="relative h-[260vh] lg:h-[400vh] bg-white text-black font-sans">
-      <div className="sticky top-0 h-screen w-full flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center max-w-7xl mx-auto px-6 overflow-hidden pt-20 lg:pt-28">
+      <div ref={pinRef} className="sticky top-0 h-screen w-full flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center max-w-7xl mx-auto px-6 overflow-hidden pt-20 lg:pt-28 lg:static">
         
         {/* Animated Logo */}
         <div className="w-full lg:w-1/2 h-auto lg:h-full flex items-start justify-center lg:justify-start relative pt-2 sm:pt-4 lg:pt-0">

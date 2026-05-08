@@ -3,17 +3,63 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Mail, Sun, Moon, ChevronDown, Leaf, Building2, HardHat, MapPin, Calendar } from 'lucide-react';
+import { Home, Mail, Sun, Moon, ChevronDown, ArrowUp, ArrowDown, Leaf, Building2, HardHat, MapPin, Calendar } from 'lucide-react';
 import { motionDuration, motionDurationFor, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
 import { projects } from '../data/projects';
 
 gsap.registerPlugin(ScrollTrigger);
 
+function ProjectStartCue({
+  index,
+  align = 'left',
+  className = '',
+}: {
+  index: string;
+  align?: 'left' | 'right';
+  className?: string;
+}) {
+  const isRight = align === 'right';
+
+  return (
+    <div className={`scroll-cue flex w-[16rem] md:w-[19rem] flex-col mix-blend-multiply ${isRight ? 'items-end text-right' : 'items-start text-left'} ${className}`}>
+      <div className={`flex w-full flex-col ${isRight ? 'items-end' : 'items-start'}`}>
+        <div className="flex items-end gap-1.5 mb-1">
+          <span className="text-black font-medium text-2xl md:text-3xl leading-none">{index}</span>
+          <span className="text-black/30 text-xs mb-[0.15rem] font-bold uppercase">/ 04</span>
+        </div>
+        <div className="w-full h-[1px] bg-black/10"></div>
+      </div>
+
+      <div className={`mt-4 flex items-center gap-3 ${isRight ? 'flex-row-reverse' : ''}`}>
+        <div className="scroll-cue-shell relative flex h-14 w-10 shrink-0 items-start justify-center rounded-full border border-black/15 bg-white/60 pt-2 shadow-[0_10px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm">
+          <div className="scroll-wheel h-3.5 w-1 rounded-full bg-[#e82a2e]"></div>
+          <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[#e82a2e]">
+            <ChevronDown className="scroll-arrow h-3.5 w-3.5" strokeWidth={2.2} />
+            <ChevronDown className="scroll-arrow -mt-1.5 h-3.5 w-3.5 opacity-60" strokeWidth={2.2} />
+          </div>
+        </div>
+
+        <div className={isRight ? 'text-right' : 'text-left'}>
+          <span className="block text-black/45 text-[8px] md:text-[9px] uppercase tracking-[0.22em] font-bold">Scroll to explore</span>
+          <span className="block text-black/30 text-[9px] md:text-[10px] italic tracking-[0.04em] mt-1">Scroll or use arrow keys</span>
+          <div className={`mt-2 flex items-center gap-1.5 ${isRight ? 'justify-end' : 'justify-start'}`} aria-hidden="true">
+            <span className="scroll-key flex h-6 w-6 items-center justify-center rounded-[6px] border border-black/10 bg-white/70 text-[#e82a2e] shadow-sm">
+              <ArrowUp className="h-3 w-3" strokeWidth={2.2} />
+            </span>
+            <span className="scroll-key flex h-6 w-6 items-center justify-center rounded-[6px] border border-black/10 bg-white/70 text-[#e82a2e] shadow-sm">
+              <ArrowDown className="h-3 w-3" strokeWidth={2.2} />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Projects() {
   const location = useLocation();
   const containerRef = useRef<HTMLDivElement>(null);
   const projectNameRef = useRef<HTMLSpanElement>(null);
-  const menuProjectNameRef = useRef<HTMLSpanElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLightMode, setIsLightMode] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -22,6 +68,7 @@ export default function Projects() {
   const secondProject = projects[1];
   const thirdProject = projects[2];
   const fourthProject = projects[4];
+  const showcasedProjects = [firstProject, secondProject, thirdProject, fourthProject];
 
   const getProjectIndexFromSlug = (slug: string) => {
     if (slug === firstProject.slug) return 0;
@@ -48,7 +95,7 @@ export default function Projects() {
 
   useGSAP(() => {
     if (prefersReducedMotion) {
-      gsap.set(['.bg-image', '.top-header', '.title-serif', '.title-script', '.bottom-menu', '.full-menu', '.menu-item', '.scroll-cue', '.scroll-cue-shell', '.scroll-wheel', '.scroll-arrow'], {
+      gsap.set(['.bg-image', '.top-header', '.title-serif', '.title-script', '.bottom-menu', '.scroll-cue', '.scroll-cue-shell', '.scroll-wheel', '.scroll-arrow', '.scroll-key'], {
         clearProps: 'all',
         opacity: 1,
         x: 0,
@@ -135,35 +182,53 @@ export default function Projects() {
         duration: 0.45,
         yoyo: true,
         repeat: 1
-      }, 0.2);
+      }, 0.2)
+      .to('.scroll-key', {
+        y: 5,
+        opacity: 0.55,
+        stagger: 0.12,
+        duration: 0.55,
+        yoyo: true,
+        repeat: 1
+      }, 0.1);
 
-    gsap.to('.scroll-cue', {
+    gsap.to('.scroll-cue-home', {
       opacity: 0,
       y: -16,
       ease: 'power2.out',
       scrollTrigger: {
         trigger: '.scroll-container',
         start: 'top top',
-        end: '+=220',
+        end: '+=900',
         scrub: true
       }
     });
 
-    // Menu timeline
-    gsap.set('.full-menu', { y: '100%', opacity: 0, pointerEvents: 'none' });
+    // Project dropdown timeline
+    gsap.set('.project-dropdown', { y: 18, opacity: 0, scale: 0.96, pointerEvents: 'none', transformOrigin: '50% 100%' });
+    gsap.set('.project-dropdown-item', { y: 10, opacity: 0 });
+    gsap.set('.project-menu-chevron', { rotate: 0 });
     menuTl.current = gsap.timeline({ paused: true })
-      .to('.full-menu', {
-        y: '0%',
+      .to('.project-dropdown', {
+        y: 0,
         opacity: 1,
+        scale: 1,
         pointerEvents: 'auto',
-        duration: motionDuration.section,
-        ease: motionEase.inOut
+        duration: motionDuration.hover,
+        ease: motionEase.soft
       })
-      .fromTo('.menu-item', 
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, stagger: motionStagger.standard, duration: motionDuration.hover, ease: motionEase.soft },
-        '-=0.4'
-      );
+      .to('.project-menu-chevron', {
+        rotate: 180,
+        duration: motionDuration.hover,
+        ease: motionEase.soft
+      }, 0)
+      .to('.project-dropdown-item', {
+        y: 0,
+        opacity: 1,
+        stagger: motionStagger.standard,
+        duration: motionDuration.hover,
+        ease: motionEase.soft
+      }, '-=0.18');
 
     // Scroll animation
     const scrollTl = gsap.timeline({
@@ -173,12 +238,11 @@ export default function Projects() {
         end: 'bottom bottom',
         scrub: 2.9,
         onUpdate: (self) => {
-          let currentProject = "DOUAOUDA HOUSING";
-          if (self.progress > 0.81) currentProject = "SAID HAMDINE";
-          else if (self.progress > 0.6) currentProject = "STAOUELI VILLAS";
-          else if (self.progress > 0.38) currentProject = "SIDI ABDALLAH";
+          let currentProject = firstProject.menuTitle;
+          if (self.progress > 0.81) currentProject = fourthProject.menuTitle;
+          else if (self.progress > 0.6) currentProject = thirdProject.menuTitle;
+          else if (self.progress > 0.38) currentProject = secondProject.menuTitle;
           if (projectNameRef.current) projectNameRef.current.innerText = currentProject;
-          if (menuProjectNameRef.current) menuProjectNameRef.current.innerText = currentProject;
         }
       }
     });
@@ -458,68 +522,122 @@ export default function Projects() {
     }
   }, [isLightMode]);
 
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (menuOpen || (event.target instanceof HTMLElement && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName))) {
+        return;
+      }
+
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
+        return;
+      }
+
+      event.preventDefault();
+      window.scrollBy({
+        top: window.innerHeight * (event.key === 'ArrowDown' ? 0.72 : -0.72),
+        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+      });
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [menuOpen, prefersReducedMotion]);
+
   return (
     <main className="bg-black text-white w-full relative scroll-container h-[10000vh]" ref={containerRef}>
       
       {/* Fixed Bottom Menu */}
-      <div className={`bottom-menu fixed bottom-0 left-1/2 -translate-x-1/2 w-full z-[40] pb-6 md:pb-10 px-4 pointer-events-auto flex items-center justify-center ${isLightMode ? 'max-w-[400px] md:max-w-[460px] gap-0' : 'max-w-[380px] md:max-w-[500px] gap-2'}`}>
+      <div className={`bottom-menu fixed bottom-0 left-1/2 -translate-x-1/2 w-full z-[40] pb-6 md:pb-10 px-4 pointer-events-auto flex items-center justify-center ${isLightMode ? 'max-w-[560px] md:max-w-[650px] gap-0' : 'max-w-[560px] md:max-w-[650px] gap-2'}`}>
+        <div
+          id="project-dropdown-menu"
+          aria-hidden={!menuOpen}
+          className={`project-dropdown absolute bottom-[calc(100%+12px)] left-4 right-4 md:left-1/2 md:right-auto md:w-[620px] md:-translate-x-1/2 bg-white/96 text-black backdrop-blur-2xl border border-black/10 rounded-[22px] shadow-[0_24px_70px_rgba(0,0,0,0.18)] overflow-hidden ${menuOpen ? 'opacity-100 pointer-events-auto translate-y-0 scale-100' : 'opacity-0 pointer-events-none translate-y-4 scale-[0.96]'}`}
+        >
+          <div className="flex items-center justify-between border-b border-black/10 px-5 py-4">
+            <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#e82a2e]">Project List</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/35">Select</span>
+          </div>
+          <div className="p-2">
+            {showcasedProjects.map((project, index) => (
+              <button
+                key={project.slug}
+                onClick={() => scrollToProject(index)}
+                tabIndex={menuOpen ? 0 : -1}
+                className="project-dropdown-item group w-full flex items-center gap-3 rounded-[16px] px-2.5 py-2.5 text-left transition-colors hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/40"
+              >
+                <span className="relative h-14 w-[74px] md:h-[64px] md:w-[96px] shrink-0 overflow-hidden rounded-[14px] bg-black/5 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]">
+                  <img
+                    src={project.images[0]}
+                    alt={project.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <span className="absolute left-2 top-2 flex h-6 min-w-6 items-center justify-center rounded-full border border-white/60 bg-white/90 px-1.5 text-[9px] font-bold text-black/60 shadow-sm group-hover:border-[#e82a2e]/30 group-hover:text-[#e82a2e]">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-[12px] md:text-[13px] font-bold uppercase tracking-[0.16em] text-black group-hover:text-[#e82a2e]">
+                    {project.menuTitle}
+                  </span>
+                  <span className="mt-1 block truncate text-[11px] text-black/45">
+                    {project.scope}
+                  </span>
+                </span>
+                <ChevronDown className="-rotate-90 h-4 w-4 shrink-0 text-black/25 transition-colors group-hover:text-[#e82a2e]" strokeWidth={2} />
+              </button>
+            ))}
+          </div>
+        </div>
         
         {isLightMode ? (
           <div className="flex items-center w-full bg-[#f9f9f9]/95 backdrop-blur-xl shadow-[0px_10px_30px_rgba(0,0,0,0.06)] rounded-full px-2 py-2 border border-black/5">
-             <Link to="/" className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center text-black hover:text-[#e82a2e] transition-colors shrink-0">
+             <Link to="/" className="h-10 md:h-11 px-3 md:px-5 flex items-center justify-center gap-2 text-black hover:text-[#e82a2e] transition-colors shrink-0 rounded-full">
                <Home className="w-[16px] h-[16px] md:w-[18px] md:h-[18px]" strokeWidth={1.5} />
+               <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Home</span>
              </Link>
              
              <div className="flex-1 px-2 border-l border-r border-black/10 mx-2">
                  <button 
-                  onClick={() => setMenuOpen(true)}
-                  className="w-full h-10 md:h-11 px-2 flex items-center justify-center gap-3 text-black transition-colors uppercase tracking-[0.1em] text-[8.5px] md:text-[10px] font-bold font-sans cursor-pointer hover:text-[#e82a2e]"
+                  onClick={() => setMenuOpen((open) => !open)}
+                  aria-expanded={menuOpen}
+                  aria-controls="project-dropdown-menu"
+                  className="w-full h-10 md:h-11 px-2 md:px-4 flex items-center justify-center gap-2 text-black transition-colors uppercase tracking-[0.1em] text-[8.5px] md:text-[10px] font-bold font-sans cursor-pointer hover:text-[#e82a2e] rounded-full hover:bg-black/[0.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/35"
                  >
-                    <div className="flex flex-col gap-[2px] md:gap-[2.5px] w-2.5 md:w-3 shrink-0 text-[#e82a2e]">
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                    </div>
-                    <span className="text-center whitespace-nowrap overflow-hidden text-ellipsis pt-[1px] text-[9px] md:text-[10px] tracking-[0.14em]" ref={projectNameRef}>DOUAOUDA HOUSING</span>
-                    <div className="flex flex-col gap-[2px] md:gap-[2.5px] w-2.5 md:w-3 shrink-0 text-[#e82a2e]">
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                      <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                    </div>
+                    <span className="hidden md:inline text-black/40 tracking-[0.16em]">Project:</span>
+                    <span className="text-center whitespace-nowrap overflow-hidden text-ellipsis pt-[1px] text-[9px] md:text-[10px] tracking-[0.14em]" ref={projectNameRef}>Douaouda Housing</span>
+                    <ChevronDown className="project-menu-chevron h-3.5 w-3.5 shrink-0 text-[#e82a2e]" strokeWidth={2.25} />
                  </button>
              </div>
 
-             <Link to="/contact" className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center text-black hover:text-[#e82a2e] transition-colors shrink-0">
+             <Link to="/contact" className="h-10 md:h-11 px-3 md:px-5 flex items-center justify-center gap-2 text-black hover:text-[#e82a2e] transition-colors shrink-0 rounded-full">
                <Mail className="w-[16px] h-[16px] md:w-[18px] md:h-[18px]" strokeWidth={1.5} />
+               <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Contact</span>
              </Link>
           </div>
         ) : (
           <>
-            <Link to="/" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 w-11 md:w-12 flex items-center justify-center hover:bg-black hover:text-[#e82a2e] transition-colors rounded-none shrink-0 cursor-pointer">
+            <Link to="/" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 px-4 md:px-5 flex items-center justify-center gap-2 hover:bg-black hover:text-[#e82a2e] transition-colors rounded-full shrink-0 cursor-pointer">
               <Home className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Home</span>
             </Link>
             
-            <div className="flex-1 w-full max-w-[220px] md:max-w-[320px]">
+            <div className="flex-1 w-full max-w-[300px] md:max-w-[380px]">
               <button 
-                onClick={() => setMenuOpen(true)}
-                className="bg-[#1a1a1a]/80 backdrop-blur-md text-[#e82a2e] shadow-2xl border border-white/10 w-full h-11 md:h-12 px-4 md:px-8 flex items-center justify-between hover:bg-black transition-colors uppercase tracking-[0.2em] text-[9px] md:text-xs font-bold font-sans rounded-none cursor-pointer"
+                onClick={() => setMenuOpen((open) => !open)}
+                aria-expanded={menuOpen}
+                aria-controls="project-dropdown-menu"
+                className="bg-[#1a1a1a]/80 backdrop-blur-md text-[#e82a2e] shadow-2xl border border-white/10 w-full h-11 md:h-12 px-4 md:px-6 flex items-center justify-center gap-2 hover:bg-black transition-colors uppercase tracking-[0.16em] text-[9px] md:text-xs font-bold font-sans rounded-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/45"
               >
-                <div className="flex flex-col gap-[2px] md:gap-[3px] w-3 md:w-4 shrink-0">
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                </div>
-                <span className="text-white text-center flex-1 px-2 whitespace-nowrap overflow-hidden text-ellipsis text-[9px] md:text-[11px] tracking-[0.16em]" ref={projectNameRef}>DOUAOUDA HOUSING</span>
-                <div className="flex flex-col gap-[2px] md:gap-[3px] w-3 md:w-4 shrink-0">
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                  <span className="w-full h-[1px] md:h-[1.5px] bg-current"></span>
-                </div>
+                <span className="hidden md:inline text-white/40 tracking-[0.16em]">Project:</span>
+                <span className="text-white text-center min-w-0 whitespace-nowrap overflow-hidden text-ellipsis text-[9px] md:text-[11px] tracking-[0.16em]" ref={projectNameRef}>Douaouda Housing</span>
+                <ChevronDown className="project-menu-chevron h-3.5 w-3.5 shrink-0" strokeWidth={2.25} />
               </button>
             </div>
 
-            <Link to="/contact" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 w-11 md:w-12 flex items-center justify-center hover:bg-black hover:text-[#e82a2e] transition-colors rounded-none shrink-0 cursor-pointer">
+            <Link to="/contact" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 px-4 md:px-5 flex items-center justify-center gap-2 hover:bg-black hover:text-[#e82a2e] transition-colors rounded-full shrink-0 cursor-pointer">
               <Mail className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Contact</span>
             </Link>
           </>
         )}
@@ -612,30 +730,13 @@ export default function Projects() {
                     Explore the current showcase system with Douaouda Housing now placed into the original opening chapter.
                  </p>
 
-                 <div className="flex flex-col w-full max-w-[14rem] md:max-w-[18rem] mix-blend-multiply mt-auto md:mt-0">
-                    <div className="flex items-end gap-1.5 mb-1">
-                       <span className="text-black font-medium text-2xl md:text-3xl leading-none">01</span>
-                       <span className="text-black/30 text-xs mb-[0.15rem] font-bold uppercase">/ 03</span>
-                    </div>
-                    <div className="w-full h-[1px] bg-black/10"></div>
-                 </div>
-
-                 <div className="scroll-cue mt-4 flex items-center gap-3 mix-blend-multiply">
-                    <div className="scroll-cue-shell relative flex h-14 w-10 items-start justify-center rounded-full border border-black/15 bg-white/60 pt-2 shadow-[0_10px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm">
-                       <div className="scroll-wheel h-3.5 w-1 rounded-full bg-[#e82a2e]"></div>
-                       <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[#e82a2e]">
-                          <ChevronDown className="scroll-arrow h-3.5 w-3.5" strokeWidth={2.2} />
-                          <ChevronDown className="scroll-arrow -mt-1.5 h-3.5 w-3.5 opacity-60" strokeWidth={2.2} />
-                       </div>
-                    </div>
-                    <div className="pt-1">
-                       <span className="block text-black/45 text-[8px] md:text-[9px] uppercase tracking-[0.22em] font-bold">Scroll to explore</span>
-                       <span className="block text-black/30 text-[9px] md:text-[10px] italic tracking-[0.04em] mt-1">Follow the project story downward</span>
-                    </div>
-                 </div>
               </div>
             )}
           </div>
+
+          {isLightMode && (
+            <ProjectStartCue index="01" className="scroll-cue-home absolute left-8 bottom-[10vh] z-20 md:left-24 md:bottom-[11vh]" />
+          )}
         </div>
 
         {/* Diagonal Scrolling Canvas -> Single Spread Canvas now */}
@@ -914,6 +1015,7 @@ export default function Projects() {
                 Public Housing
               </h3>
             </div>
+            <ProjectStartCue index="02" align="right" className="absolute bottom-[9vh] right-6 md:right-24 md:bottom-[10vh]" />
           </div>
         </div>
 
@@ -1024,6 +1126,7 @@ export default function Projects() {
                 11/41 Villas
               </h3>
             </div>
+            <ProjectStartCue index="03" className="absolute bottom-[9vh] left-6 md:left-24 md:bottom-[10vh]" />
           </div>
         </div>
 
@@ -1134,6 +1237,7 @@ export default function Projects() {
                 Mixed Complex
               </h3>
             </div>
+            <ProjectStartCue index="04" align="right" className="absolute bottom-[9vh] right-6 md:right-24 md:bottom-[10vh]" />
           </div>
         </div>
 
@@ -1227,7 +1331,7 @@ export default function Projects() {
       </div>
 
       {/* Full Screen Menu Overlay */}
-      <div className="full-menu fixed inset-0 z-[100] bg-[#1a1a1a] flex flex-col items-center justify-start pt-16 pb-12 px-6">
+      <div className="full-menu hidden">
         
         {/* Decorative background logo */}
         <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none overflow-hidden">
@@ -1304,7 +1408,7 @@ export default function Projects() {
           <button onClick={() => setMenuOpen(false)} className="text-white/50 hover:text-white transition-colors p-2 font-sans font-light text-xl mt-[-4px]">
             âœ•
           </button>
-          <span className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-white font-bold" ref={menuProjectNameRef}>DOUAOUDA HOUSING</span>
+          <span className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-white font-bold">DOUAOUDA HOUSING</span>
           <button onClick={() => setMenuOpen(false)} className="text-white/50 hover:text-white transition-colors p-2 font-sans font-light text-xl mt-[-4px]">
             âœ•
           </button>
