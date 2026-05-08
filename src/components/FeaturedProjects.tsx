@@ -41,7 +41,7 @@ const ProjectCard: React.FC<{ project: (typeof PROJECTS)[number] }> = ({ project
   return (
     <Link
       ref={cardRef}
-      to={`/projects#${project.slug}`}
+      to="/projects"
       className="relative w-[80vw] sm:w-[400px] lg:w-[480px] h-[60vh] min-h-[300px] max-h-[600px] overflow-hidden cursor-pointer group flex-shrink-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
