@@ -1,0 +1,47 @@
+{
+  "perf": {
+    "home": {
+      "domContentLoaded": 1427.199999999255,
+      "loadEvent": 9170.60000000149,
+      "transferKB": 16387,
+      "scriptKB": 419,
+      "resourceCount": 30
+    },
+    "projects": {
+      "domContentLoaded": 122,
+      "loadEvent": 6669.10000000149,
+      "transferKB": 42,
+      "scriptKB": 0,
+      "resourceCount": 15
+    },
+    "detail": {
+      "domContentLoaded": 107.80000000074506,
+      "loadEvent": 563.8000000007451,
+      "transferKB": 659,
+      "scriptKB": 0,
+      "resourceCount": 16
+    },
+    "statom": {
+      "domContentLoaded": 118,
+      "loadEvent": 16041.39999999851,
+      "transferKB": 1,
+      "scriptKB": 0,
+      "resourceCount": 16
+    }
+  },
+  "errors": {
+    "home": [
+      "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "projects": [
+      "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "detail": [
+      "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "statom": [
+      "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ]
+  }
+}

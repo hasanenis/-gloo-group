@@ -1,0 +1,63 @@
+{
+  "consoleErrors": {
+    "/": [
+      "[warning] Unrecognized feature: 'web-share'.",
+      "[warning] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[reqfail] https://bat-cms-media.s3.eu-central-1.amazonaws.com/videos/24_en-home-video.mp4 - net::ERR_ABORTED"
+    ],
+    "/projects": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "/projects/rahmania": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "/bat-demo/projects": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "/bat-demo/projects/rahmania": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ],
+    "/statom": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "/projects1": [
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+    ]
+  },
+  "bundle": [
+    {
+      "url": "/src/styles/bat-demo.css",
+      "size": 40473,
+      "status": 200
+    },
+    {
+      "url": "/node_modules/swiper/swiper.css",
+      "size": 6718,
+      "status": 200
+    },
+    {
+      "url": "/src/styles/statom.css",
+      "size": 3663,
+      "status": 200
+    },
+    {
+      "url": "/node_modules/lenis/dist/lenis.css",
+      "size": 1052,
+      "status": 200
+    },
+    {
+      "url": "/node_modules/swiper/modules/free-mode.css",
+      "size": 631,
+      "status": 200
+    }
+  ]
+}

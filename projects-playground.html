@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects Page — Premium / GSAP Playground</title>
+<style>
+  :root {
+    --bg: #0d0e11;
+    --panel: #15171c;
+    --panel-2: #1c1f26;
+    --line: #2a2e37;
+    --line-soft: #23262e;
+    --text: #e9eaee;
+    --text-dim: #9aa0ad;
+    --text-faint: #646b78;
+    --brand: #e2484c;
+    --good: #46c98b;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* ============ CONTROLS PANEL ============ */
+  .controls {
+    background: var(--panel);
+    border-right: 1px solid var(--line);
+    overflow-y: auto;
+    padding: 0 0 40px;
+  }
+  .controls::-webkit-scrollbar { width: 9px; }
+  .controls::-webkit-scrollbar-thumb { background: #2c3038; border-radius: 5px; }
+
+  .head {
+    position: sticky; top: 0; z-index: 5;
+    background: linear-gradient(180deg, var(--panel) 70%, rgba(21,23,28,0.0));
+    padding: 20px 22px 14px;
+  }
+  .head h1 {
+    font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase;
+    margin: 0 0 4px; font-weight: 700;
+  }
+  .head p { margin: 0; font-size: 11.5px; color: var(--text-faint); line-height: 1.5; }
+
+  .presets { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 22px 18px; }
+  .preset {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.04em;
+    padding: 7px 10px; border-radius: 7px; cursor: pointer;
+    background: var(--panel-2); color: var(--text-dim);
+    border: 1px solid var(--line); transition: all .15s;
+  }
+  .preset:hover { border-color: var(--brand); color: var(--text); }
+  .preset.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+  .group { padding: 6px 22px; }
+  .group + .group { border-top: 1px solid var(--line-soft); padding-top: 16px; margin-top: 4px; }
+  .group > h2 {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--text-faint); margin: 6px 0 14px; font-weight: 700;
+  }
+
+  .ctrl { margin-bottom: 16px; }
+  .ctrl .lbl { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 7px; }
+  .ctrl .lbl span:first-child { font-size: 12px; color: var(--text); }
+  .ctrl .val { font-family: var(--mono); font-size: 11px; color: var(--brand); }
+
+  input[type=range] {
+    -webkit-appearance: none; width: 100%; height: 3px; border-radius: 2px;
+    background: var(--line); outline: none; margin: 6px 0 2px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--text); cursor: pointer; border: 2px solid var(--panel);
+    box-shadow: 0 0 0 1px var(--line);
+  }
+  input[type=range]::-webkit-slider-thumb:hover { background: var(--brand); }
+
+  select {
+    width: 100%; background: var(--panel-2); color: var(--text);
+    border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px;
+    font-size: 12px; font-family: var(--sans); cursor: pointer; outline: none;
+  }
+  select:focus { border-color: var(--brand); }
+
+  .seg { display: flex; gap: 5px; flex-wrap: wrap; }
+  .seg button {
+    flex: 1 1 auto; min-width: 0; padding: 8px 6px; font-size: 11px; font-weight: 600;
+    background: var(--panel-2); color: var(--text-dim); border: 1px solid var(--line);
+    border-radius: 7px; cursor: pointer; transition: all .14s;
+  }
+  .seg button:hover { color: var(--text); }
+  .seg button.on { background: var(--text); color: #111; border-color: var(--text); }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .cardpick {
+    text-align: left; padding: 10px; background: var(--panel-2); border: 1px solid var(--line);
+    border-radius: 9px; cursor: pointer; transition: all .14s;
+  }
+  .cardpick:hover { border-color: #3a3f4a; }
+  .cardpick.on { border-color: var(--brand); background: #211a1c; }
+  .cardpick strong { display: block; font-size: 11.5px; margin-bottom: 3px; }
+  .cardpick em { font-style: normal; font-size: 10px; color: var(--text-faint); line-height: 1.35; display: block; }
+
+  .toggle { display: flex; align-items: center; justify-content: space-between; cursor: pointer; padding: 3px 0; }
+  .toggle span { font-size: 12px; }
+  .switch { width: 38px; height: 21px; border-radius: 12px; background: var(--line); position: relative; transition: background .18s; flex: 0 0 auto; }
+  .switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 17px; height: 17px; border-radius: 50%; background: var(--text-dim); transition: transform .18s, background .18s; }
+  .toggle.on .switch { background: var(--brand); }
+  .toggle.on .switch::after { transform: translateX(17px); background: #fff; }
+
+  .colorrow { display: flex; align-items: center; gap: 10px; }
+  .colorrow input[type=color] { width: 38px; height: 30px; border: 1px solid var(--line); border-radius: 7px; background: none; cursor: pointer; padding: 2px; }
+  .colorrow code { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+
+  /* ============ STAGE ============ */
+  .stage { display: flex; flex-direction: column; overflow: hidden; }
+  .stagebar {
+    display: flex; align-items: center; gap: 14px; padding: 11px 18px;
+    border-bottom: 1px solid var(--line); background: var(--panel); flex: 0 0 auto;
+  }
+  .stagebar .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .stagebar .title { font-size: 12px; color: var(--text-dim); }
+  .stagebar .spacer { flex: 1; }
+  .stagebar button {
+    font-size: 11px; font-weight: 600; padding: 7px 13px; border-radius: 7px; cursor: pointer;
+    background: var(--panel-2); color: var(--text); border: 1px solid var(--line); transition: all .14s;
+  }
+  .stagebar button:hover { border-color: var(--brand); }
+  .vp { display: flex; gap: 4px; }
+  .vp button.on { background: var(--text); color: #111; }
+
+  .viewport { flex: 1; overflow: hidden; display: flex; align-items: stretch; justify-content: center; padding: 18px; background:
+    radial-gradient(circle at 30% 20%, #16181d, var(--bg)); }
+  .frame {
+    width: 100%; max-width: 1100px; height: 100%; border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0,0,0,.5); position: relative;
+    transition: max-width .3s;
+  }
+  .frame.mobile { max-width: 390px; }
+
+  /* ============ PREVIEW (the actual mock projects page) ============ */
+  .pv {
+    --accent: #c22026;
+    --radius: 18px;
+    --overlay: 0.5;
+    --reveal-y: 50px;
+    --reveal-dur: 0.9s;
+    --reveal-ease: cubic-bezier(0.16,1,0.3,1);
+    --shadow: 0 30px 80px rgba(0,0,0,.45);
+    --hsize: 52px;
+    --tracking: -0.04em;
+    --imgfilter: none;
+    --imgfilter-hover: none;
+    height: 100%; overflow-y: auto; overflow-x: hidden;
+    background: #f3f0ea; color: #111; font-family: var(--sans);
+    scroll-behavior: smooth;
+  }
+  .pv.dark { background: #0b0b0d; color: #f4f2ee; }
+  .pv.mono { background: #ededeb; color: #141414; }
+  .pv::-webkit-scrollbar { width: 0; }
+
+  .pv-hero { padding: 64px 44px 30px; position: relative; }
+  .pv-kicker { font-size: 10px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; color: var(--accent); }
+  .pv-h1 {
+    font-size: var(--hsize); line-height: 0.86; letter-spacing: var(--tracking);
+    text-transform: uppercase; margin: 14px 0 0; font-weight: 800; font-family: Georgia, "Times New Roman", serif;
+  }
+  .pv.nouc .pv-h1, .pv.nouc .pcard h3 { text-transform: none; }
+  .pv-sub { max-width: 440px; margin: 18px 0 0; font-size: 13px; line-height: 1.7; opacity: .62; border-left: 2px solid var(--accent); padding-left: 14px; }
+
+  .pv-strip { display: flex; gap: 18px; align-items: center; padding: 16px 44px; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; opacity: .42; }
+  .pv-strip .ln { width: 1px; height: 13px; background: currentColor; opacity: .4; }
+
+  .pv-grid { padding: 14px 44px 70px; display: grid; gap: 22px; }
+  .pv-grid.cols-1 { grid-template-columns: 1fr; }
+  .pv-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+  .pv-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .frame.mobile .pv-grid { grid-template-columns: 1fr !important; }
+
+  /* horizontal pin layout */
+  .pv-grid.horiz {
+    display: flex; gap: 22px; overflow-x: auto; padding-bottom: 30px;
+    grid-template-columns: none; scroll-snap-type: x mandatory;
+  }
+  .pv-grid.horiz .pcard { flex: 0 0 64%; scroll-snap-align: start; }
+  .frame.mobile .pv-grid.horiz .pcard { flex: 0 0 88%; }
+  .pv-grid.horiz::-webkit-scrollbar { height: 5px; }
+  .pv-grid.horiz::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+  /* alternating chapter layout */
+  .pv-grid.chapters { grid-template-columns: 1fr; gap: 60px; }
+  .pv-grid.chapters .pcard { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 300px; }
+  .pv-grid.chapters .pcard:nth-child(even) .pmedia { order: 2; }
+  .pv-grid.chapters .pcard .pmeta { position: static; padding: 34px; display: flex; flex-direction: column; justify-content: center; background: rgba(0,0,0,0.02); }
+  .pv.dark .pv-grid.chapters .pcard .pmeta { background: rgba(255,255,255,0.03); }
+  .pv-grid.chapters .pcard h3 { color: inherit; }
+  .pv-grid.chapters .pcard p { color: inherit; opacity: .6; }
+  .pv-grid.chapters .pmedia { min-height: 280px; }
+  .frame.mobile .pv-grid.chapters .pcard { grid-template-columns: 1fr; }
+
+  .pcard {
+    position: relative; overflow: hidden; border-radius: var(--radius);
+    box-shadow: var(--shadow); cursor: pointer; background: #222;
+    /* reveal base state */
+    opacity: 0;
+    transition: opacity var(--reveal-dur) var(--reveal-ease),
+                transform var(--reveal-dur) var(--reveal-ease),
+                filter var(--reveal-dur) var(--reveal-ease),
+                clip-path var(--reveal-dur) var(--reveal-ease);
+    will-change: transform, opacity;
+  }
+  .pmedia { position: relative; overflow: hidden; aspect-ratio: 4/3.2; }
+  .pv-grid.horiz .pmedia { aspect-ratio: 4/4.4; }
+  .pimg {
+    position: absolute; inset: -8% 0; width: 100%; height: 116%; object-fit: cover;
+    filter: var(--imgfilter);
+    transition: transform .7s var(--reveal-ease), filter .6s ease;
+    will-change: transform;
+  }
+  .povl { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,calc(var(--overlay) + 0.25)), rgba(0,0,0,calc(var(--overlay) * 0.2)) 55%, transparent); transition: background .4s, transform .5s var(--reveal-ease); }
+
+  .ptag { position: absolute; top: 16px; left: 16px; display: flex; align-items: center; gap: 9px; font-size: 9px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,.85); z-index: 3; }
+  .ptag .bar { width: 22px; height: 1px; background: var(--accent); }
+
+  .pmeta { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px; z-index: 3; }
+  .pmeta .loc { font-size: 9.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+  .pv-grid:not(.chapters) .pmeta .loc { color: #ff6b6f; }
+  .pcard h3 { font-size: 23px; line-height: 0.96; letter-spacing: -0.03em; text-transform: uppercase; margin: 9px 0 0; color: #fff; font-family: Georgia, serif; font-weight: 700; }
+  .pcard p { margin: 11px 0 0; font-size: 12px; line-height: 1.55; color: rgba(255,255,255,.82); max-width: 90%; }
+  .pv-grid:not(.chapters) .pcard p { max-height: 0; opacity: 0; margin-top: 0; overflow: hidden; transition: all .45s var(--reveal-ease); }
+
+  .parrow { margin-top: 14px; display: inline-flex; align-items: center; gap: 7px; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #fff; opacity: .85; }
+  .pv-grid.chapters .parrow, .pv-grid.chapters .pcard h3 { color: inherit; }
+  .pv-grid.chapters .pcard .loc { color: var(--accent); }
+
+  /* hover effects */
+  .hov-zoom .pcard:hover .pimg { transform: scale(1.06); }
+  .hov-overlay .pcard:hover p { max-height: 80px; opacity: 1; margin-top: 11px; }
+  .hov-overlay .pcard:hover .povl { background: linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.3)); }
+  .hov-tilt .pcard { transition: transform .3s var(--reveal-ease), box-shadow .3s, opacity var(--reveal-dur) var(--reveal-ease); transform-style: preserve-3d; }
+  .hov-tilt .pcard:hover { transform: perspective(900px) rotateX(3deg) rotateY(-4deg) translateY(-6px); box-shadow: 0 40px 90px rgba(0,0,0,.5); }
+  .hov-gray .pimg { filter: var(--imgfilter); }
+  .hov-gray .pcard:hover .pimg { filter: var(--imgfilter-hover); transform: scale(1.04); }
+  .hov-spot .pcard::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,.16), transparent 55%); opacity: 0; transition: opacity .4s; z-index: 2; pointer-events: none; }
+  .hov-spot .pcard:hover::after { opacity: 1; }
+  .hov-spot .pcard:hover .pimg { transform: scale(1.05); }
+
+  /* reveal IN states — set per reveal type via data attr on .pv */
+  .pcard.in { opacity: 1; transform: none; clip-path: inset(0 0 0 0); filter: none; }
+  .pv[data-reveal="fadeup"] .pcard:not(.in) { transform: translateY(var(--reveal-y)); }
+  .pv[data-reveal="scale"] .pcard:not(.in) { transform: scale(0.9); }
+  .pv[data-reveal="blur"] .pcard:not(.in) { filter: blur(14px); transform: translateY(calc(var(--reveal-y) * 0.4)); }
+  .pv[data-reveal="clip"] .pcard:not(.in) { clip-path: inset(14% 8% 14% 8% round var(--radius)); transform: scale(1.04); }
+  .pv[data-reveal="curtain"] .pcard:not(.in) { clip-path: inset(0 0 100% 0); }
+  .pv[data-reveal="mask"] .pcard:not(.in) { clip-path: inset(0 100% 0 0); }
+
+  /* dock */
+  .pv-dock { position: sticky; bottom: 12px; margin: 0 44px 18px; padding: 12px 18px; border-radius: 12px;
+    background: rgba(255,255,255,.85); backdrop-filter: blur(12px); border: 1px solid rgba(0,0,0,.08);
+    display: flex; align-items: center; gap: 16px; box-shadow: 0 18px 45px rgba(0,0,0,.12); font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+  .pv.dark .pv-dock { background: rgba(20,20,24,.8); border-color: rgba(255,255,255,.1); color: #eee; }
+  .pv-dock .prog { flex: 1; height: 2px; background: rgba(0,0,0,.12); border-radius: 2px; overflow: hidden; }
+  .pv.dark .pv-dock .prog { background: rgba(255,255,255,.14); }
+  .pv-dock .prog i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .1s linear; }
+  .pv-dock.hidden { display: none; }
+
+  /* magnetic button demo */
+  .pv-magbtn { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; padding: 13px 22px; background: #111; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; border-radius: 6px; cursor: pointer; transition: transform .25s var(--reveal-ease), background .25s; }
+  .pv.dark .pv-magbtn { background: #fff; color: #111; }
+
+  /* ============ PROMPT ============ */
+  .promptwrap { border-top: 1px solid var(--line); background: var(--panel); flex: 0 0 auto; }
+  .promptbar { display: flex; align-items: center; padding: 10px 18px; gap: 12px; }
+  .promptbar h3 { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-faint); margin: 0; flex: 1; }
+  .copybtn { font-size: 11px; font-weight: 700; padding: 8px 16px; border-radius: 7px; cursor: pointer; background: var(--brand); color: #fff; border: none; transition: background .15s; }
+  .copybtn:hover { background: #c93a3e; }
+  .copybtn.done { background: var(--good); }
+  .prompt {
+    font-family: var(--mono); font-size: 11.5px; line-height: 1.65; color: var(--text-dim);
+    padding: 0 18px 16px; max-height: 150px; overflow-y: auto; white-space: pre-wrap;
+  }
+  .prompt::-webkit-scrollbar { width: 7px; }
+  .prompt::-webkit-scrollbar-thumb { background: #2c3038; border-radius: 4px; }
+  .prompt b { color: var(--text); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ============ CONTROLS ============ -->
+<div class="controls">
+  <div class="head">
+    <h1>Projects · Premium / GSAP</h1>
+    <p>Dial in the statom-style cinematic feel for your Projects page. Tune it, then copy the prompt back to Claude.</p>
+  </div>
+
+  <div class="presets" id="presets"></div>
+
+  <div class="group">
+    <h2>Layout</h2>
+    <div class="ctrl">
+      <div class="lbl"><span>Showcase structure</span></div>
+      <div class="cards" id="layoutCards"></div>
+    </div>
+    <div class="ctrl" id="colsCtrl">
+      <div class="lbl"><span>Grid columns</span><span class="val" id="colsVal">2</span></div>
+      <div class="seg" id="colsSeg"></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Motion · GSAP reveal</h2>
+    <div class="ctrl">
+      <div class="lbl"><span>Reveal animation</span></div>
+      <select id="reveal">
+        <option value="fadeup">Fade + slide up</option>
+        <option value="clip">Clip-path expand (cinematic)</option>
+        <option value="curtain">Curtain reveal (bottom-up)</option>
+        <option value="mask">Mask wipe (left→right)</option>
+        <option value="scale">Scale in</option>
+        <option value="blur">Blur in</option>
+      </select>
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Reveal distance</span><span class="val" id="ryVal">50px</span></div>
+      <input type="range" id="ry" min="0" max="120" value="50">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Duration</span><span class="val" id="durVal">0.9s</span></div>
+      <input type="range" id="dur" min="3" max="22" value="9">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Stagger</span><span class="val" id="stagVal">0.10s</span></div>
+      <input type="range" id="stag" min="0" max="24" value="10">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Easing curve</span></div>
+      <select id="ease">
+        <option value="expo.out|cubic-bezier(0.16,1,0.3,1)">expo.out — luxe deceleration</option>
+        <option value="power3.out|cubic-bezier(0.215,0.61,0.355,1)">power3.out — smooth</option>
+        <option value="power2.out|cubic-bezier(0.25,0.46,0.45,0.94)">power2.out — gentle</option>
+        <option value="power3.inOut|cubic-bezier(0.645,0.045,0.355,1)">power3.inOut — weighted</option>
+        <option value="back.out(1.7)|cubic-bezier(0.34,1.56,0.64,1)">back.out — slight overshoot</option>
+      </select>
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Parallax intensity</span><span class="val" id="paraVal">medium</span></div>
+      <input type="range" id="para" min="0" max="100" value="45">
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Interaction</h2>
+    <div class="ctrl">
+      <div class="lbl"><span>Card hover</span></div>
+      <select id="hover">
+        <option value="hov-zoom">Image zoom</option>
+        <option value="hov-overlay">Overlay slide + reveal copy</option>
+        <option value="hov-tilt">3D tilt</option>
+        <option value="hov-gray">Grayscale → colour</option>
+        <option value="hov-spot">Spotlight glow</option>
+      </select>
+    </div>
+    <div class="ctrl"><div class="toggle on" data-tg="magnetic"><span>Magnetic buttons</span><span class="switch"></span></div></div>
+    <div class="ctrl"><div class="toggle on" data-tg="pin"><span>Pinned horizontal scrub</span><span class="switch"></span></div></div>
+    <div class="ctrl"><div class="toggle on" data-tg="dock"><span>Scroll-progress dock</span><span class="switch"></span></div></div>
+  </div>
+
+  <div class="group">
+    <h2>Style</h2>
+    <div class="ctrl">
+      <div class="lbl"><span>Theme</span></div>
+      <div class="seg" id="themeSeg"></div>
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Accent colour</span></div>
+      <div class="colorrow"><input type="color" id="accent" value="#c22026"><code id="accentVal">#c22026</code></div>
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Corner radius</span><span class="val" id="radVal">18px</span></div>
+      <input type="range" id="rad" min="0" max="40" value="18">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Shadow depth</span><span class="val" id="shVal">elevated</span></div>
+      <input type="range" id="sh" min="0" max="100" value="60">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Image overlay</span><span class="val" id="ovVal">0.50</span></div>
+      <input type="range" id="ov" min="0" max="85" value="50">
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Typography</h2>
+    <div class="ctrl">
+      <div class="lbl"><span>Heading scale</span><span class="val" id="hsVal">52px</span></div>
+      <input type="range" id="hs" min="34" max="84" value="52">
+    </div>
+    <div class="ctrl">
+      <div class="lbl"><span>Letter spacing</span><span class="val" id="trVal">-0.04em</span></div>
+      <input type="range" id="tr" min="-8" max="4" value="-4">
+    </div>
+    <div class="ctrl"><div class="toggle on" data-tg="upper"><span>Uppercase headings</span><span class="switch"></span></div></div>
+  </div>
+</div>
+
+<!-- ============ STAGE ============ -->
+<div class="stage">
+  <div class="stagebar">
+    <div class="dot" id="accentDot" style="background:#c22026"></div>
+    <div class="title">Live preview — Projects page</div>
+    <div class="spacer"></div>
+    <div class="vp" id="vpSeg">
+      <button data-vp="desktop" class="on">Desktop</button>
+      <button data-vp="mobile">Mobile</button>
+    </div>
+    <button id="replay">↻ Replay reveal</button>
+  </div>
+
+  <div class="viewport">
+    <div class="frame" id="frame">
+      <div class="pv" id="pv" data-reveal="fadeup">
+        <div class="pv-hero">
+          <div class="pv-kicker">Built to endure · Designed to inspire</div>
+          <h1 class="pv-h1">Our<br>Projects</h1>
+          <p class="pv-sub">A premium project library shaped around live site imagery, cinematic scroll reveals, and editorial pacing.</p>
+          <div class="pv-magbtn" id="magbtn">Explore projects →</div>
+        </div>
+        <div class="pv-strip">
+          <span>Igloo Project Library</span><span class="ln"></span><span>06 Chapters</span><span class="ln"></span><span>GSAP Reveals</span>
+        </div>
+        <div class="pv-grid cols-2" id="grid"></div>
+        <div class="pv-dock" id="dock">
+          <span>Current chapter</span>
+          <div class="prog"><i id="prog"></i></div>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="promptwrap">
+    <div class="promptbar">
+      <h3>Prompt → paste back to Claude</h3>
+      <button class="copybtn" id="copy">Copy prompt</button>
+    </div>
+    <div class="prompt" id="prompt"></div>
+  </div>
+</div>
+
+<script>
+// ---------- project sample data ----------
+const SAMPLE = [
+  { t: "Maple<br>Heights", loc: "Reading, UK", tag: "Housing", img: "linear-gradient(135deg,#3a4a5c,#1f2933)", copy: "84 timber-frame homes delivered across a sloped 6-acre site." },
+  { t: "Crown<br>Quarter", loc: "Bristol, UK", tag: "Mixed Use", img: "linear-gradient(135deg,#5c4a3a,#2b211a)", copy: "Ground-floor retail beneath 120 residential units." },
+  { t: "Stone<br>Network", loc: "Leeds, UK", tag: "Infrastructure", img: "linear-gradient(135deg,#46525c,#23292e)", copy: "11km of access roads and service corridors." },
+  { t: "Birch<br>Villas", loc: "Oxford, UK", tag: "Villas", img: "linear-gradient(135deg,#6a5c46,#312a1f)", copy: "Six bespoke villas with landscaped grounds." },
+  { t: "Harbour<br>Walk", loc: "Cardiff, UK", tag: "Mixed Use", img: "linear-gradient(135deg,#3a5c54,#1a2b27)", copy: "Waterfront mixed-use regeneration scheme." },
+  { t: "Ridge<br>Estate", loc: "Bath, UK", tag: "Housing", img: "linear-gradient(135deg,#4a3a5c,#211a2b)", copy: "Phased delivery of 60 family homes." },
+];
+
+const EASE_LABELS = {};
+
+// ---------- state ----------
+const DEFAULTS = {
+  layout: "grid", cols: 2,
+  reveal: "fadeup", ry: 50, dur: 9, stag: 10,
+  ease: "expo.out|cubic-bezier(0.16,1,0.3,1)", para: 45,
+  hover: "hov-zoom", magnetic: true, pin: true, dock: true,
+  theme: "light", accent: "#c22026", rad: 18, sh: 60, ov: 50,
+  hs: 52, tr: -4, upper: true,
+};
+let state = { ...DEFAULTS };
+
+// ---------- presets ----------
+const PRESETS = {
+  "Statom Cinematic": { layout: "horiz", cols: 2, reveal: "clip", ry: 60, dur: 12, stag: 12, ease: "expo.out|cubic-bezier(0.16,1,0.3,1)", para: 70, hover: "hov-gray", magnetic: true, pin: true, dock: true, theme: "dark", accent: "#e2484c", rad: 4, sh: 80, ov: 55, hs: 68, tr: -5, upper: true },
+  "Editorial Light": { ...DEFAULTS, layout: "chapters", reveal: "fadeup", ease: "power3.out|cubic-bezier(0.215,0.61,0.355,1)", hover: "hov-zoom", rad: 22 },
+  "Bold Brutalist": { layout: "grid", cols: 3, reveal: "mask", ry: 0, dur: 7, stag: 6, ease: "power3.inOut|cubic-bezier(0.645,0.045,0.355,1)", para: 20, hover: "hov-overlay", magnetic: false, pin: false, dock: true, theme: "mono", accent: "#141414", rad: 0, sh: 30, ov: 35, hs: 78, tr: -6, upper: true },
+  "Soft Premium": { layout: "grid", cols: 2, reveal: "blur", ry: 40, dur: 11, stag: 11, ease: "power2.out|cubic-bezier(0.25,0.46,0.45,0.94)", para: 40, hover: "hov-tilt", magnetic: true, pin: false, dock: false, theme: "light", accent: "#b07a3c", rad: 28, sh: 70, ov: 45, hs: 50, tr: -3, upper: false },
+};
+
+const LAYOUTS = [
+  { k: "grid", n: "Editorial grid", d: "Clean card grid, scroll reveals" },
+  { k: "horiz", n: "Horizontal pin", d: "Statom-style scrub strip" },
+  { k: "chapters", n: "Alternating", d: "Full-bleed L/R chapters" },
+  { k: "cols-1", n: "Stacked", d: "Single tall column" },
+];
+
+// ---------- build controls ----------
+const $ = id => document.getElementById(id);
+const presetsEl = $("presets");
+Object.keys(PRESETS).forEach(name => {
+  const b = document.createElement("button");
+  b.className = "preset"; b.textContent = name;
+  b.onclick = () => { state = { ...DEFAULTS, ...PRESETS[name] }; syncControls(); apply(true); markPreset(name); };
+  presetsEl.appendChild(b);
+});
+function markPreset(name) {
+  document.querySelectorAll(".preset").forEach(p => p.classList.toggle("active", p.textContent === name));
+}
+
+const layoutEl = $("layoutCards");
+LAYOUTS.forEach(l => {
+  const b = document.createElement("button");
+  b.className = "cardpick"; b.dataset.k = l.k;
+  b.innerHTML = `<strong>${l.n}</strong><em>${l.d}</em>`;
+  b.onclick = () => { state.layout = l.k; if (l.k === "cols-1") state.cols = 1; syncControls(); apply(true); clearPreset(); };
+  layoutEl.appendChild(b);
+});
+
+const colsSeg = $("colsSeg");
+[1,2,3].forEach(c => {
+  const b = document.createElement("button"); b.textContent = c + " col"; b.dataset.c = c;
+  b.onclick = () => { state.cols = c; if (state.layout === "horiz" || state.layout === "chapters") state.layout = "grid"; syncControls(); apply(true); clearPreset(); };
+  colsSeg.appendChild(b);
+});
+
+const themeSeg = $("themeSeg");
+[["light","Editorial"],["dark","Cinematic"],["mono","Mono"]].forEach(([k,n]) => {
+  const b = document.createElement("button"); b.textContent = n; b.dataset.t = k;
+  b.onclick = () => { state.theme = k; if (k === "mono") state.accent = "#141414"; else if (k === "dark" && state.accent === "#c22026") state.accent = "#e2484c"; syncControls(); apply(); clearPreset(); };
+  themeSeg.appendChild(b);
+});
+
+function clearPreset(){ document.querySelectorAll(".preset").forEach(p => p.classList.remove("active")); }
+
+// sliders + selects
+function bindRange(id, key, fmt) {
+  $(id).oninput = e => { state[key] = +e.target.value; updateVals(); apply(); clearPreset(); };
+}
+bindRange("ry","ry"); bindRange("dur","dur"); bindRange("stag","stag");
+bindRange("para","para"); bindRange("rad","rad"); bindRange("sh","sh");
+bindRange("ov","ov"); bindRange("hs","hs"); bindRange("tr","tr");
+
+$("reveal").onchange = e => { state.reveal = e.target.value; apply(true); clearPreset(); };
+$("ease").onchange = e => { state.ease = e.target.value; apply(); clearPreset(); };
+$("hover").onchange = e => { state.hover = e.target.value; apply(); clearPreset(); };
+$("accent").oninput = e => { state.accent = e.target.value; apply(); clearPreset(); };
+
+document.querySelectorAll("[data-tg]").forEach(t => {
+  t.onclick = () => { const k = t.dataset.tg; state[k] = !state[k]; t.classList.toggle("on", state[k]); apply(); clearPreset(); };
+});
+
+// viewport
+document.querySelectorAll("#vpSeg button").forEach(b => {
+  b.onclick = () => { document.querySelectorAll("#vpSeg button").forEach(x=>x.classList.remove("on")); b.classList.add("on"); $("frame").classList.toggle("mobile", b.dataset.vp === "mobile"); };
+});
+$("replay").onclick = () => runReveal();
+
+// ---------- sync UI from state ----------
+function syncControls() {
+  $("reveal").value = state.reveal; $("ease").value = state.ease; $("hover").value = state.hover;
+  $("accent").value = state.accent;
+  ["ry","dur","stag","para","rad","sh","ov","hs","tr"].forEach(k => $(k).value = state[k]);
+  document.querySelectorAll("[data-tg]").forEach(t => t.classList.toggle("on", state[t.dataset.tg]));
+  document.querySelectorAll(".cardpick").forEach(c => c.classList.toggle("on", c.dataset.k === state.layout || (state.layout.startsWith("cols") && c.dataset.k === state.layout)));
+  document.querySelectorAll("#colsSeg button").forEach(b => b.classList.toggle("on", +b.dataset.c === state.cols));
+  document.querySelectorAll("#themeSeg button").forEach(b => b.classList.toggle("on", b.dataset.t === state.theme));
+  updateVals();
+}
+
+function updateVals() {
+  $("ryVal").textContent = state.ry + "px";
+  $("durVal").textContent = (state.dur/10).toFixed(2) + "s";
+  $("stagVal").textContent = (state.stag/100).toFixed(2) + "s";
+  $("paraVal").textContent = state.para < 25 ? "subtle" : state.para < 60 ? "medium" : "strong";
+  $("radVal").textContent = state.rad + "px";
+  $("shVal").textContent = state.sh < 25 ? "flat" : state.sh < 65 ? "elevated" : "dramatic";
+  $("ovVal").textContent = (state.ov/100).toFixed(2);
+  $("hsVal").textContent = state.hs + "px";
+  $("trVal").textContent = (state.tr/100).toFixed(2) + "em";
+  $("colsVal").textContent = state.cols;
+  $("accentVal").textContent = state.accent;
+}
+
+// ---------- render preview ----------
+const pv = $("pv"), grid = $("grid");
+function buildCards() {
+  grid.innerHTML = "";
+  const n = state.layout === "horiz" ? 6 : state.layout === "chapters" ? 4 : (state.cols === 3 ? 6 : state.cols === 1 ? 3 : 4);
+  for (let i = 0; i < n; i++) {
+    const p = SAMPLE[i % SAMPLE.length];
+    const card = document.createElement("div");
+    card.className = "pcard";
+    card.innerHTML = `
+      <div class="pmedia">
+        <div class="pimg" style="background:${p.img}"></div>
+        <div class="povl"></div>
+        <div class="ptag"><span>${String(i+1).padStart(2,'0')}</span><span class="bar"></span><span>${p.tag}</span></div>
+      </div>
+      <div class="pmeta">
+        <div class="loc">${p.loc}</div>
+        <h3>${p.t}</h3>
+        <p>${p.copy}</p>
+        <span class="parrow">Open project →</span>
+      </div>`;
+    grid.appendChild(card);
+  }
+}
+
+function apply(rebuild) {
+  // theme
+  pv.classList.toggle("dark", state.theme === "dark");
+  pv.classList.toggle("mono", state.theme === "mono");
+  pv.classList.toggle("nouc", !state.upper);
+
+  // layout classes
+  grid.className = "pv-grid";
+  if (state.layout === "horiz") grid.classList.add("horiz");
+  else if (state.layout === "chapters") grid.classList.add("chapters");
+  else grid.classList.add("cols-" + state.cols);
+
+  // hover
+  pv.className = pv.className.replace(/hov-\w+/g, "").trim();
+  pv.classList.add(state.hover);
+  // re-add structural classes stripped by regex (none are hov-) — safe
+
+  pv.dataset.reveal = state.reveal;
+
+  // css vars
+  const [easeName, easeCss] = state.ease.split("|");
+  const shadowMap = state.sh < 25 ? "0 8px 22px rgba(0,0,0,.18)" : state.sh < 65 ? "0 26px 60px rgba(0,0,0,.32)" : "0 44px 100px rgba(0,0,0,.55)";
+  const gray = state.hover === "hov-gray";
+  pv.style.setProperty("--accent", state.accent);
+  pv.style.setProperty("--radius", state.rad + "px");
+  pv.style.setProperty("--overlay", (state.ov/100).toString());
+  pv.style.setProperty("--reveal-y", state.ry + "px");
+  pv.style.setProperty("--reveal-dur", (state.dur/10) + "s");
+  pv.style.setProperty("--reveal-ease", easeCss);
+  pv.style.setProperty("--shadow", shadowMap);
+  pv.style.setProperty("--hsize", state.hs + "px");
+  pv.style.setProperty("--tracking", (state.tr/100) + "em");
+  pv.style.setProperty("--imgfilter", gray ? "grayscale(1) contrast(1.05)" : "none");
+  pv.style.setProperty("--imgfilter-hover", gray ? "grayscale(0)" : "none");
+
+  $("accentDot").style.background = state.accent;
+  $("magbtn").style.display = state.magnetic ? "inline-flex" : "none";
+  $("dock").classList.toggle("hidden", !state.dock);
+
+  if (rebuild || grid.children.length === 0) buildCards();
+  syncDots();
+  runReveal();
+  updatePrompt();
+}
+
+function syncDots() {
+  document.querySelectorAll(".cardpick").forEach(c => {
+    const on = c.dataset.k === state.layout || (state.layout === "cols-1" && c.dataset.k === "cols-1");
+    c.classList.toggle("on", on);
+  });
+  document.querySelectorAll("#colsSeg button").forEach(b => b.classList.toggle("on", +b.dataset.c === state.cols && (state.layout.startsWith("cols") || state.layout === "grid")));
+  document.querySelectorAll("#themeSeg button").forEach(b => b.classList.toggle("on", b.dataset.t === state.theme));
+}
+
+// ---------- reveal animation driver ----------
+function runReveal() {
+  const cards = [...grid.querySelectorAll(".pcard")];
+  cards.forEach(c => c.classList.remove("in"));
+  void grid.offsetWidth; // reflow
+  const stag = state.stag / 100;
+  cards.forEach((c, i) => {
+    c.style.transitionDelay = (i * stag) + "s";
+    requestAnimationFrame(() => requestAnimationFrame(() => c.classList.add("in")));
+  });
+}
+
+// parallax + progress on preview scroll
+pv.addEventListener("scroll", () => {
+  const max = pv.scrollHeight - pv.clientHeight;
+  const p = max > 0 ? pv.scrollTop / max : 0;
+  $("prog").style.width = (p*100) + "%";
+  const intensity = state.para / 100 * 26;
+  grid.querySelectorAll(".pimg").forEach((img, i) => {
+    const r = img.closest(".pcard").getBoundingClientRect();
+    const off = ((r.top + r.height/2) / pv.clientHeight - 0.5) * intensity;
+    img.style.transform = `translateY(${-off}px)` + (state.hover==="hov-gray"?"":"");
+  });
+});
+
+// magnetic button
+const magbtn = $("magbtn");
+magbtn.addEventListener("mousemove", e => {
+  if (!state.magnetic) return;
+  const r = magbtn.getBoundingClientRect();
+  magbtn.style.transform = `translate(${(e.clientX - r.left - r.width/2)*0.3}px, ${(e.clientY - r.top - r.height/2)*0.4}px)`;
+});
+magbtn.addEventListener("mouseleave", () => magbtn.style.transform = "translate(0,0)");
+
+// ---------- prompt ----------
+function updatePrompt() {
+  const [easeName] = state.ease.split("|");
+  const layoutName = { grid:`an editorial card grid (${state.cols} columns)`, horiz:"a pinned horizontal scroll strip with scrubbed motion (like statom.co.uk)", chapters:"full-bleed alternating left/right chapter blocks", "cols-1":"a single tall stacked column" }[state.layout];
+  const revealName = { fadeup:`fade + slide-up from ${state.ry}px`, clip:"a cinematic clip-path expand (insets opening outward)", curtain:"a bottom-up curtain reveal", mask:"a left-to-right mask wipe", scale:"a scale-in from 0.9", blur:"a blur-in" }[state.reveal];
+  const hoverName = { "hov-zoom":"the image slowly zooms", "hov-overlay":"the overlay slides up and the description fades in", "hov-tilt":"the card tilts in 3D toward the cursor", "hov-gray":"the image shifts from grayscale to full colour", "hov-spot":"a soft spotlight glow blooms over the image" }[state.hover];
+  const para = state.para < 25 ? "subtle" : state.para < 60 ? "medium-strength" : "strong";
+  const shadow = state.sh < 25 ? "flat, minimal shadows" : state.sh < 65 ? "elevated shadows" : "dramatic deep shadows";
+  const themeName = { light:"the light editorial cream theme", dark:"a dark cinematic theme", mono:"a high-contrast monochrome theme" }[state.theme];
+
+  const extras = [];
+  if (state.magnetic) extras.push("magnetic buttons that pull toward the cursor");
+  if (state.pin) extras.push("ScrollTrigger pin + scrub for the showcase strip");
+  if (state.dock) extras.push("a sticky bottom progress dock tied to scroll");
+  if (!state.upper) extras.push("sentence-case (not uppercase) headings");
+
+  let p = `Rework the Projects page (src/pages/Projects.tsx, and FeaturedProjects.tsx on the home page) into a premium, heavily GSAP-animated experience in the spirit of statom.co.uk/projects.\n\n`;
+  p += `<b>Layout:</b> present the projects as ${layoutName}, using ${themeName} with ${state.accent} as the accent colour, ${state.rad}px corner radius and ${shadow}.\n\n`;
+  p += `<b>Reveal (GSAP + ScrollTrigger):</b> cards enter with ${revealName} over ${(state.dur/10).toFixed(2)}s using ${easeName} easing, staggered ${(state.stag/100).toFixed(2)}s apart as each row scrolls into view. Add ${para} parallax on the project images (scrubbed against scroll).\n\n`;
+  p += `<b>Hover:</b> on hover, ${hoverName}.\n\n`;
+  if (extras.length) p += `<b>Also include:</b> ${extras.join(", ")}.\n\n`;
+  p += `<b>Typography:</b> serif display headings around ${state.hs}px with ${(state.tr/100).toFixed(2)}em tracking, ${state.upper?"uppercase":"sentence case"}.\n\n`;
+  p += `Reuse the existing motion tokens in src/lib/motion.ts (map the easing to motionEase, durations to motionDuration), keep useGSAP + the prefers-reduced-motion guard, and make it fully responsive (collapse to a single column on mobile).`;
+
+  $("prompt").innerHTML = p;
+}
+
+$("copy").onclick = () => {
+  const text = $("prompt").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const b = $("copy"); b.textContent = "Copied ✓"; b.classList.add("done");
+    setTimeout(() => { b.textContent = "Copy prompt"; b.classList.remove("done"); }, 1400);
+  });
+};
+
+// ---------- init ----------
+syncControls();
+apply(true);
+markPreset("Statom Cinematic"); // no-op highlight; default isn't a preset but show none active
+clearPreset();
+</script>
+</body>
+</html>

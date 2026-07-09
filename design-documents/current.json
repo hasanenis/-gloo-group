@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "draft": {
+    "id": "preset-2026-06-30T21-12-18-758Z",
+    "name": "Published Base",
+    "createdAt": "2026-06-30T21:12:18.758Z",
+    "updatedAt": "2026-07-01T09:59:13.830Z",
+    "overrides": [
+      {
+        "id": "route:/:home-hero-title",
+        "selector": "[data-edit-key=\"home-hero-title\"]",
+        "scope": "route",
+        "routeKey": "/",
+        "elementKind": "text",
+        "label": "Hero Title",
+        "editKey": "home-hero-title",
+        "adapterId": "hero-banner",
+        "parentId": "route:/:home-hero-shell",
+        "depth": 2,
+        "values": {
+          "desktop": {
+            "width": 1047
+          },
+          "tablet": {},
+          "mobile": {}
+        }
+      },
+      {
+        "id": "route:/projects:projects-card-image-boudouaou-70-10-housing",
+        "selector": "[data-edit-key=\"projects-card-image-boudouaou-70-10-housing\"]",
+        "scope": "route",
+        "routeKey": "/projects",
+        "elementKind": "container",
+        "label": "70 Assisted Housing and 10 Free Promotional Housing Units Project Image",
+        "editKey": "projects-card-image-boudouaou-70-10-housing",
+        "adapterId": "projects-demo",
+        "values": {
+          "desktop": {
+            "height": 502.65599999999995
+          }
+        }
+      }
+    ],
+    "tokens": {
+      "colors": {
+        "iglooRed": "#e1251b",
+        "iglooRedDark": "#c22026",
+        "iglooBlack": "#111111",
+        "iglooMuted": "rgba(17, 17, 17, 0.62)",
+        "surface": "#ffffff",
+        "surfaceAlt": "#f5f3ef",
+        "textStrong": "#111111"
+      },
+      "radius": {
+        "base": "8px",
+        "card": "8px"
+      },
+      "spacing": {
+        "section": "72px",
+        "content": "24px"
+      },
+      "typography": {
+        "sans": "var(--font-sans)",
+        "serif": "var(--font-serif)",
+        "nav": "var(--font-nav)"
+      },
+      "effects": {
+        "shadowSoft": "0 18px 40px rgba(0,0,0,0.12)"
+      }
+    }
+  },
+  "fallbackTokens": {
+    "colors": {
+      "iglooRed": "#e1251b",
+      "iglooRedDark": "#c22026",
+      "iglooBlack": "#111111",
+      "iglooMuted": "rgba(17, 17, 17, 0.62)",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f5f3ef",
+      "textStrong": "#111111"
+    },
+    "radius": {
+      "base": "8px",
+      "card": "8px"
+    },
+    "spacing": {
+      "section": "72px",
+      "content": "24px"
+    },
+    "typography": {
+      "sans": "var(--font-sans)",
+      "serif": "var(--font-serif)",
+      "nav": "var(--font-nav)"
+    },
+    "effects": {
+      "shadowSoft": "0 18px 40px rgba(0,0,0,0.12)"
+    }
+  }
+}

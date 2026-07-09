@@ -1,0 +1,23 @@
+- generic [ref=f5e2]:
+  - banner [ref=f5e3]:
+    - link "Igloo Construction" [ref=f5e5]:
+      - /url: /
+      - img "Igloo Construction" [ref=f5e6]
+    - button "EN" [ref=f5e8]:
+      - img [ref=f5e9]
+      - text: EN
+  - navigation "Mobile navigation" [ref=f5e13]:
+    - button "Home" [ref=f5e14]:
+      - img [ref=f5e15]
+      - generic [ref=f5e18]: Home
+    - button "Projects" [ref=f5e19]:
+      - img [ref=f5e20]
+      - generic [ref=f5e22]: Projects
+    - button "Open Igloo assistant" [ref=f5e23]:
+      - img [ref=f5e25]
+    - button "Services" [ref=f5e27]:
+      - img [ref=f5e28]
+      - generic [ref=f5e32]: Services
+    - button "More" [ref=f5e33]:
+      - img [ref=f5e34]
+      - generic [ref=f5e38]: More

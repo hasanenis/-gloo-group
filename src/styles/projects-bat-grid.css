@@ -1,0 +1,203 @@
+/*
+  Projects index — layout cloned from new.bat.archi/projects/
+  Measured at 1920px viewport:
+    header 81px · outer margin 36px (1.875vw) · gutter 18px (0.9375vw)
+    16-col grid · card spans repeat [4,6,6,10,6,6,6,4,6,10]
+    image box height 682.67px (35.556vw) for every card
+    row gap ~63px (3.28vw) · label 20.25px / 650 / lh 1.5
+    grid starts 173px from top · picture oversized 1.5x for parallax
+    hover/parallax easing: transform 1.2s cubic-bezier(0.72, 0, 0.01, 1)
+*/
+
+.pjx-page {
+  --pjx-margin: clamp(20px, 1.875vw, 48px);
+  --pjx-gutter: clamp(10px, 0.9375vw, 24px);
+  --pjx-row-gap: clamp(36px, 3.28vw, 84px);
+  /* same brand red as the detail pages (--simple-red) */
+  --pjx-accent: #c22026;
+  --pjx-surface: var(--igloo-surface);
+  --pjx-surface-soft: var(--igloo-surface-soft);
+  --pjx-text: var(--igloo-black);
+  --pjx-muted: var(--igloo-muted);
+  --pjx-border: var(--igloo-border);
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--pjx-text);
+  font-family: 'TWK Lausanne', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ── 16-column grid, BAT spans ──
+   Top padding clears the fixed <Header> (no topbar above it anymore). */
+.pjx-grid {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  column-gap: var(--pjx-gutter);
+  row-gap: var(--pjx-row-gap);
+  align-items: start;
+  padding: calc(112px + 24px) var(--pjx-margin) clamp(80px, 8vw, 160px);
+}
+
+@media (max-width: 679px) {
+  .pjx-grid {
+    padding-top: calc(84px + 16px);
+  }
+}
+
+.pjx-card {
+  grid-column: span 6;
+  min-width: 0;
+}
+
+.pjx-card[data-span='4'] {
+  grid-column: span 4;
+}
+
+.pjx-card[data-span='10'] {
+  grid-column: span 10;
+}
+
+.pjx-card__link {
+  display: block;
+  color: inherit;
+}
+
+/* Image box: fixed height for the whole row — widths vary, height doesn't */
+.pjx-card__image {
+  position: relative;
+  overflow: hidden;
+  height: 35.556vw;
+  background: var(--pjx-surface-soft);
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.55s cubic-bezier(0.65, 0, 0.15, 1);
+  transition-delay: var(--pjx-reveal-delay, 0ms);
+}
+
+.pjx-card.is-revealed .pjx-card__image {
+  clip-path: inset(0% 0 0 0);
+}
+
+/* Oversized parallax layer (bleeds 14% top/bottom, driven by scroll) */
+.pjx-card__parallax {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14%;
+  height: 128%;
+  will-change: transform;
+}
+
+.pjx-card__parallax img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.001);
+  transition: transform 1.2s cubic-bezier(0.72, 0, 0.01, 1);
+}
+
+.pjx-card__link:hover .pjx-card__parallax img,
+.pjx-card__link:focus-visible .pjx-card__parallax img {
+  transform: scale(1.06);
+}
+
+/* Label under image: title only, like the reference. Fades in just after
+   the image finishes growing, matching the reference's staggered reveal. */
+.pjx-card__label {
+  margin-top: clamp(10px, 0.73vw, 16px);
+  font-size: clamp(15px, 1.055vw, 24px);
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--pjx-text);
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    color 260ms ease,
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  transition-delay: calc(var(--pjx-reveal-delay, 0ms) + 700ms);
+}
+
+.pjx-card.is-revealed .pjx-card__label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pjx-card__link:hover .pjx-card__label {
+  color: var(--pjx-accent);
+}
+
+/* The outer article no longer translates/fades itself — the image clip-path
+   and label fade (above) carry the whole entrance, matching the reference
+   where cards hold position while only the picture grows into view. */
+.pjx-page .project-reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/* ── Tablet (matches BAT's ≤1279 source switch): 10-col grid ── */
+@media (max-width: 1279px) {
+  .pjx-grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-auto-flow: dense;
+  }
+
+  .pjx-card,
+  .pjx-card[data-span='4'] {
+    grid-column: span 5;
+  }
+
+  .pjx-card[data-span='10'] {
+    grid-column: span 10;
+  }
+
+  .pjx-card__image {
+    height: 46vw;
+  }
+}
+
+/* ── Mobile (BAT's ≤679 source switch): single column, portrait boxes ── */
+@media (max-width: 679px) {
+  .pjx-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pjx-card,
+  .pjx-card[data-span='4'],
+  .pjx-card[data-span='10'] {
+    grid-column: 1 / -1;
+  }
+
+  .pjx-card__image {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .pjx-card__label {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pjx-card__image {
+    clip-path: none;
+    transition: none;
+  }
+
+  .pjx-card__label {
+    opacity: 1;
+    transform: none;
+    transition: color 260ms ease;
+  }
+
+  .pjx-card__parallax {
+    top: 0;
+    height: 100%;
+    transform: none !important;
+  }
+
+  .pjx-card__parallax img {
+    transition: none;
+  }
+}

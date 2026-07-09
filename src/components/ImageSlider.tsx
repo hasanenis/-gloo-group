@@ -1,44 +1,108 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import { imageSliderImages } from '../data/projects';
+import { motionEase, usePrefersReducedMotion } from '../lib/motion';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const IMAGES = imageSliderImages;
+const HOLD_DURATION = 5.2;
+const TRANSITION_DURATION = 1.25;
 
-export default function ImageSlider() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+function getObjectPosition(image: string) {
+  if (image.includes('04-final-4')) return 'center 44%';
+  if (image.includes('01-final-1')) return 'center 42%';
+  return 'center center';
+}
 
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % IMAGES.length);
-  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + IMAGES.length) % IMAGES.length);
+type ImageSliderProps = {
+  className?: string;
+};
+
+export default function ImageSlider({ className = '' }: ImageSliderProps) {
+  const frameRef = useRef<HTMLDivElement>(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  useGSAP(() => {
+    const root = frameRef.current;
+    if (!root) return;
+
+    const slides = Array.from(root.querySelectorAll<HTMLImageElement>('[data-image-slide]'));
+    const parallaxLayer = root.querySelector<HTMLElement>('[data-image-parallax]');
+
+    if (!slides.length) return;
+
+    gsap.set(slides, { opacity: 0, scale: 1.08 });
+    gsap.set(slides[0], { opacity: 1, scale: prefersReducedMotion ? 1 : 1.04 });
+
+    if (prefersReducedMotion) {
+      gsap.set(parallaxLayer, { clearProps: 'transform' });
+      return;
+    }
+
+    const sliderTimeline = gsap.timeline({ repeat: -1, paused: true });
+
+    slides.forEach((slide, index) => {
+      const nextSlide = slides[(index + 1) % slides.length];
+      const position = index * HOLD_DURATION;
+      const transitionAt = position + HOLD_DURATION - TRANSITION_DURATION;
+
+      sliderTimeline
+        .to(slide, { scale: 1, duration: HOLD_DURATION, ease: 'none' }, position)
+        .to(nextSlide, { opacity: 1, duration: TRANSITION_DURATION, ease: motionEase.inOut }, transitionAt)
+        .fromTo(
+          nextSlide,
+          { scale: 1.08 },
+          { scale: 1.04, duration: TRANSITION_DURATION, ease: 'none', immediateRender: false },
+          transitionAt,
+        )
+        .to(slide, { opacity: 0, duration: TRANSITION_DURATION, ease: motionEase.inOut }, transitionAt);
+    });
+
+    if (parallaxLayer) {
+      gsap.fromTo(
+        parallaxLayer,
+        { yPercent: -4 },
+        {
+          yPercent: 4,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: root,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 0.8,
+          },
+        },
+      );
+    }
+
+    ScrollTrigger.create({
+      trigger: root,
+      start: 'top 85%',
+      once: true,
+      onEnter: () => sliderTimeline.play(0),
+    });
+  }, { scope: frameRef, dependencies: [prefersReducedMotion] });
 
   return (
-    <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-100 group">
-      <AnimatePresence>
-        <motion.img
-          key={currentIndex}
-          src={IMAGES[currentIndex]}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </AnimatePresence>
-
-      {/* Navigation Arrows at Bottom Right */}
-      <div className="absolute bottom-4 right-4 flex bg-white/90 backdrop-blur-sm z-10 transition-transform duration-500 ease-out shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
-        <button 
-          onClick={prevSlide}
-          className="w-10 h-10 bg-transparent hover:bg-gray-100 flex items-center justify-center text-black transition-colors group/btn"
-        >
-          <ArrowLeft strokeWidth={1.5} className="w-5 h-5 transform group-hover/btn:-translate-x-1 transition-transform duration-300" />
-        </button>
-        <button 
-          onClick={nextSlide}
-          className="w-10 h-10 bg-transparent hover:bg-gray-100 border-l border-gray-200 flex items-center justify-center text-black transition-colors group/btn"
-        >
-          <ArrowRight strokeWidth={1.5} className="w-5 h-5 transform group-hover/btn:translate-x-1 transition-transform duration-300" />
-        </button>
+    <div
+      ref={frameRef}
+      className={['relative aspect-[16/10] w-full overflow-hidden bg-[#ebe7df]', className].filter(Boolean).join(' ')}
+    >
+      <div data-image-parallax className="absolute inset-x-0 -inset-y-[6%]">
+        {IMAGES.map((image, index) => (
+          <img
+            key={image}
+            data-image-slide
+            src={image}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ opacity: index === 0 ? 1 : 0, objectPosition: getObjectPosition(image) }}
+          />
+        ))}
       </div>
     </div>
   );

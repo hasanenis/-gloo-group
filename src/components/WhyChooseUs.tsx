@@ -1,44 +1,58 @@
-import { useRef, useState, useEffect, useLayoutEffect } from 'react';
-import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { usePrefersReducedMotion } from '../lib/motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const steps = [
+const phases = [
   {
-    title: "Phase 1",
-    heading: "Endless Vision",
-    desc: "Every project begins with a vision that looks beyond the present. We design structures with infinite possibilities, making sure the foundation is as strong as your aspirations."
+    number: '01',
+    title: 'Foundation',
+    eyebrow: 'Built to begin.',
+    body: 'Every lasting structure starts with one deliberate decision. The first line is quiet, precise, and set with intent.',
   },
   {
-    title: "Phase 2",
-    heading: "Continuous Innovation",
-    desc: "Technology and engineering never stop evolving, and neither do we. We apply an endless cycle of modernization, using cutting-edge BIM and smart construction practices."
+    number: '02',
+    title: 'Structure',
+    eyebrow: 'Form takes hold.',
+    body: 'Systems, rhythm, and material logic begin to align. What starts as direction becomes something load-bearing and clear.',
   },
   {
-    title: "Phase 3",
-    heading: "Unbreakable Trust",
-    desc: "Trust is a continuous loop. We maintain complete transparency throughout the lifecycle of the project, establishing bonds with our clients that last forever."
+    number: '03',
+    title: 'Evolution',
+    eyebrow: 'Built to adapt.',
+    body: 'A project strengthens through refinement. It evolves with use, context, and the realities of the people it serves.',
   },
   {
-    title: "Phase 4",
-    heading: "Timeless Legacy",
-    desc: "We don't just build for tomorrow; we build for eternity. Our commitment to sustainability ensures that our structures provide value for generations to come."
-  }
-];
+    number: '04',
+    title: 'Legacy',
+    eyebrow: 'Beyond completion',
+    body: 'A project does not end when construction is complete. Its value continues through the people, places, and generations it serves.',
+  },
+] as const;
+
+const phaseThresholds = [0.24, 0.5, 0.76];
+const accent = '#8f1d1f';
+
+const getActivePhase = (progress: number) => {
+  if (progress < phaseThresholds[0]) return 0;
+  if (progress < phaseThresholds[1]) return 1;
+  if (progress < phaseThresholds[2]) return 2;
+  return 3;
+};
 
 export default function WhyChooseUs() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
   const pinRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"]
+    offset: ['start start', 'end end'],
   });
 
-  const [activeStep, setActiveStep] = useState(0);
+  const [activePhase, setActivePhase] = useState(0);
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
@@ -71,124 +85,119 @@ export default function WhyChooseUs() {
     };
   }, [isDesktop, prefersReducedMotion]);
 
-  // Update active step based on scroll
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest < (isDesktop ? 0.25 : 0.24)) setActiveStep(0);
-    else if (latest < (isDesktop ? 0.5 : 0.48)) setActiveStep(1);
-    else if (latest < (isDesktop ? 0.75 : 0.72)) setActiveStep(2);
-    else setActiveStep(3);
+  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+    setActivePhase(getActivePhase(latest));
   });
 
-  const drawStart = isDesktop ? 0.03 : 0;
-  const drawEnd = isDesktop ? 0.8 : 0.62;
-  const fillStart = isDesktop ? 0.8 : 0.62;
-  const fillEnd = isDesktop ? 1 : 0.82;
-
-  // Start drawing immediately on mobile so the pinned section doesn't open with a dead white gap.
-  const drawProgress = useTransform(scrollYProgress, [drawStart, drawEnd], prefersReducedMotion ? [1.05, 1.05] : [0, 1.05]);
-  
-  // Fade in original red fill when drawing reaches the end
-  const fillOpacity = useTransform(scrollYProgress, [fillStart, fillEnd], prefersReducedMotion ? [1, 1] : [0, 1]);
-  
-  // Fade out black stroke just slightly at the very end
-  const strokeOpacity = useTransform(scrollYProgress, [fillStart, fillEnd], prefersReducedMotion ? [0, 0] : [1, 0]);
+  const infinityLength = useTransform(scrollYProgress, [0.08, 0.58], prefersReducedMotion ? [1, 1] : [0, 1]);
+  const infinityFillOpacity = useTransform(scrollYProgress, [0.34, 0.72], prefersReducedMotion ? [1, 1] : [0, 1]);
+  const infinityStrokeOpacity = useTransform(scrollYProgress, [0.54, 0.78], prefersReducedMotion ? [0, 0] : [1, 0]);
 
   return (
-    <section ref={containerRef} className="relative h-[260vh] lg:h-[400vh] bg-white text-black font-sans">
-      <div ref={pinRef} className="sticky top-0 h-screen w-full flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center max-w-7xl mx-auto px-6 overflow-hidden pt-20 lg:pt-28 lg:static">
-        
-        {/* Animated Logo */}
-        <div className="w-full lg:w-1/2 h-auto lg:h-full flex items-start justify-center lg:justify-start relative pt-2 sm:pt-4 lg:pt-0">
-          <div className="w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] md:w-[280px] md:h-[280px] lg:w-[480px] lg:h-[480px] xl:w-[580px] xl:h-[580px] relative pointer-events-none lg:-ml-8 xl:-ml-16">
-            <svg 
-              width="100%" 
-              height="100%" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="drop-shadow-sm"
-            >
-              <defs>
-                 <linearGradient id="redGradInf" x1="0" y1="0" x2="1" y2="0">
-                   <stop offset="0%" stopColor="#b30000"/>
-                   <stop offset="50%" stopColor="#ff3333"/>
-                   <stop offset="100%" stopColor="#e82a2e"/>
-                 </linearGradient>
-              </defs>
+    <section
+      ref={containerRef}
+      className="relative bg-[#f7f6f2] font-sans text-[#161616] lg:h-[340vh]"
+    >
+      <div
+        ref={pinRef}
+        className="mx-auto flex min-h-screen w-full max-w-[1440px] flex-col justify-center px-6 py-20 md:px-10 lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(26rem,0.85fr)] lg:items-center lg:gap-14 lg:px-16 lg:py-0"
+      >
+        <div className="relative order-2 flex min-h-[24rem] items-center lg:order-1 lg:min-h-screen">
+          <div className="w-full">
+            <div className="mb-8 flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.28em] text-[#6f6a60] md:mb-10">
+              <span className="h-px w-12 bg-black/12" />
+              <span>Continuous Process</span>
+            </div>
 
-              {/* Animated stroke drawing */}
-              <motion.path 
-                d="M20.288 9.463a4.856 4.856 0 0 0-4.336-2.3 4.586 4.586 0 0 0-3.343 1.767c.071.116.148.226.212.347l.879 1.652.134-.254a2.71 2.71 0 0 1 2.206-1.519 2.845 2.845 0 1 1 0 5.686 2.708 2.708 0 0 1-2.205-1.518L13.131 12l-1.193-2.26a4.709 4.709 0 0 0-3.89-2.581 4.845 4.845 0 1 0 0 9.682 4.586 4.586 0 0 0 3.343-1.767c-.071-.116-.148-.226-.212-.347l-.879-1.656-.134.254a2.71 2.71 0 0 1-2.206 1.519 2.855 2.855 0 0 1-2.559-1.369 2.825 2.825 0 0 1 0-2.946 2.862 2.862 0 0 1 2.442-1.374h.121a2.708 2.708 0 0 1 2.205 1.518l.7 1.327 1.193 2.26a4.709 4.709 0 0 0 3.89 2.581h.209a4.846 4.846 0 0 0 4.127-7.378z" 
-                fill="transparent" 
-                stroke="#1a1a1a"
-                strokeWidth="0.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ pathLength: drawProgress, opacity: strokeOpacity }}
-              />
-              
-              {/* Red original fill that fades in at end */}
-              <motion.path 
-                d="M20.288 9.463a4.856 4.856 0 0 0-4.336-2.3 4.586 4.586 0 0 0-3.343 1.767c.071.116.148.226.212.347l.879 1.652.134-.254a2.71 2.71 0 0 1 2.206-1.519 2.845 2.845 0 1 1 0 5.686 2.708 2.708 0 0 1-2.205-1.518L13.131 12l-1.193-2.26a4.709 4.709 0 0 0-3.89-2.581 4.845 4.845 0 1 0 0 9.682 4.586 4.586 0 0 0 3.343-1.767c-.071-.116-.148-.226-.212-.347l-.879-1.656-.134.254a2.71 2.71 0 0 1-2.206 1.519 2.855 2.855 0 0 1-2.559-1.369 2.825 2.825 0 0 1 0-2.946 2.862 2.862 0 0 1 2.442-1.374h.121a2.708 2.708 0 0 1 2.205 1.518l.7 1.327 1.193 2.26a4.709 4.709 0 0 0 3.89 2.581h.209a4.846 4.846 0 0 0 4.127-7.378z" 
-                fill="url(#redGradInf)" 
-                style={{ opacity: fillOpacity }}
-              />
-            </svg>
+            <div className="relative h-[18rem] sm:h-[20rem] md:h-[23rem] lg:h-[28rem]">
+              <svg
+                viewBox="2 5 20 14"
+                className="h-full w-full overflow-hidden"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <motion.path
+                  d="M20.288 9.463a4.856 4.856 0 0 0-4.336-2.3 4.586 4.586 0 0 0-3.343 1.767c.071.116.148.226.212.347l.879 1.652.134-.254a2.71 2.71 0 0 1 2.206-1.519 2.845 2.845 0 1 1 0 5.686 2.708 2.708 0 0 1-2.205-1.518L13.131 12l-1.193-2.26a4.709 4.709 0 0 0-3.89-2.581 4.845 4.845 0 1 0 0 9.682 4.586 4.586 0 0 0 3.343-1.767c-.071-.116-.148-.226-.212-.347l-.879-1.656-.134.254a2.71 2.71 0 0 1-2.206 1.519 2.855 2.855 0 0 1-2.559-1.369 2.825 2.825 0 0 1 0-2.946 2.862 2.862 0 0 1 2.442-1.374h.121a2.708 2.708 0 0 1 2.205 1.518l.7 1.327 1.193 2.26a4.709 4.709 0 0 0 3.89 2.581h.209a4.846 4.846 0 0 0 4.127-7.378z"
+                  fill="#e82a2e"
+                  style={{ opacity: infinityFillOpacity }}
+                />
+                <motion.path
+                  d="M20.288 9.463a4.856 4.856 0 0 0-4.336-2.3 4.586 4.586 0 0 0-3.343 1.767c.071.116.148.226.212.347l.879 1.652.134-.254a2.71 2.71 0 0 1 2.206-1.519 2.845 2.845 0 1 1 0 5.686 2.708 2.708 0 0 1-2.205-1.518L13.131 12l-1.193-2.26a4.709 4.709 0 0 0-3.89-2.581 4.845 4.845 0 1 0 0 9.682 4.586 4.586 0 0 0 3.343-1.767c-.071-.116-.148-.226-.212-.347l-.879-1.656-.134.254a2.71 2.71 0 0 1-2.206 1.519 2.855 2.855 0 0 1-2.559-1.369 2.825 2.825 0 0 1 0-2.946 2.862 2.862 0 0 1 2.442-1.374h.121a2.708 2.708 0 0 1 2.205 1.518l.7 1.327 1.193 2.26a4.709 4.709 0 0 0 3.89 2.581h.209a4.846 4.846 0 0 0 4.127-7.378z"
+                  fill="transparent"
+                  stroke={accent}
+                  strokeWidth="0.22"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ pathLength: infinityLength, opacity: infinityStrokeOpacity }}
+                />
+              </svg>
+            </div>
+
+            <div className="mt-8 flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#8b8577]">
+              <span className="h-px w-10 bg-black/12" />
+              <span>Scroll to reveal the loop</span>
+            </div>
           </div>
         </div>
 
-        {/* Right Side: Text & Tabs */}
-        <div className="w-full lg:w-1/2 min-h-0 lg:h-full flex flex-col justify-start lg:justify-center p-6 pt-2 sm:pt-4 lg:p-0 lg:pl-12 xl:pl-16 relative z-10">
-          <div className="max-w-xl mx-auto lg:mx-0 w-full relative z-10 bg-white/80 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0 rounded-2xl">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight text-black">
-              Together to <span className="text-[#e82a2e]">eternity</span>
+        <div className="order-1 mb-14 flex flex-col justify-center lg:order-2 lg:mb-0 lg:min-h-screen">
+          <div className="max-w-[34rem]">
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.28em] text-[#8f1d1f]">
+              Designed to endure
+            </p>
+            <h2 className="font-sans text-[2.7rem] font-bold leading-[0.95] tracking-[-0.05em] text-[#111] sm:text-[3.6rem] lg:text-[4.85rem]">
+              Designed to endure.
             </h2>
-            <p className="text-gray-600 mb-6 sm:mb-10 text-base sm:text-lg">
-              Our process is an ongoing cycle of innovation, quality, and trust. We push boundaries to deliver timeless structures that stand strong forever.
+            <p className="mt-6 max-w-[31rem] text-base leading-8 text-[#5f6470] sm:text-lg">
+              From the first idea to the final structure, every stage is part of a continuous
+              process built to evolve, adapt, and remain.
             </p>
 
-            {/* Step Tabs */}
-            <div className="flex space-x-4 sm:space-x-8 mb-6 sm:mb-8 text-sm sm:text-base font-medium relative border-b border-gray-200">
-              {steps.map((step, i) => (
-                <div 
-                  key={i} 
-                  className={`pb-3 sm:pb-4 transition-colors duration-300 relative z-10 cursor-pointer ${activeStep >= i ? 'text-black font-bold' : 'text-gray-400 font-medium'}`}
-                  onClick={() => setActiveStep(i)}
+            <div className="mt-10 flex items-center gap-4 border-t border-black/10 pt-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#595349]">
+              {phases.map((phase, index) => (
+                <div
+                  key={phase.number}
+                  className={`transition-colors duration-300 ${
+                    activePhase === index ? 'text-[#111]' : 'text-black/28'
+                  }`}
                 >
-                  {step.title}
-                  {activeStep === i && (
-                    <motion.div 
-                      layoutId="activeTabIndicator"
-                      className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e82a2e]"
-                    />
-                  )}
+                  {phase.number}
                 </div>
               ))}
             </div>
 
-            {/* Step Content */}
-            <div className="relative h-48 sm:h-44 md:h-48 overflow-hidden">
-              {steps.map((step, i) => (
-                <motion.div 
-                  key={i} 
-                  className="absolute top-0 left-0 w-full"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: activeStep === i ? 1 : 0, y: activeStep === i ? 0 : 20 }}
-                  transition={{ duration: prefersReducedMotion ? 0.01 : 0.5 }}
-                  style={{ pointerEvents: activeStep === i ? 'auto' : 'none' }}
+            <div className="relative mt-8 min-h-[17rem] sm:min-h-[15rem]">
+              {phases.map((phase, index) => (
+                <motion.div
+                  key={phase.number}
+                  className="absolute inset-0"
+                  initial={false}
+                  animate={{
+                    opacity: activePhase === index ? 1 : 0,
+                    y: activePhase === index ? 0 : 18,
+                  }}
+                  transition={{ duration: prefersReducedMotion ? 0.01 : 0.45, ease: 'easeOut' }}
+                  style={{ pointerEvents: activePhase === index ? 'auto' : 'none' }}
                 >
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-black">
-                    {step.heading}
-                  </h3>
-                  <p className="text-gray-600 leading-[1.72] text-sm sm:text-base md:text-lg font-normal max-w-[34rem]">
-                    {step.desc}
+                  <div className="flex items-start gap-5">
+                    <div className="text-[3rem] font-light leading-none tracking-[-0.08em] text-[#d6d0c4] sm:text-[3.75rem]">
+                      {phase.number}
+                    </div>
+                    <div className="pt-1">
+                      <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-[#8f1d1f]">
+                        {phase.eyebrow}
+                      </p>
+                      <h3 className="mt-3 font-serif text-[2rem] uppercase leading-[0.95] tracking-[-0.04em] text-[#111] sm:text-[2.8rem]">
+                        {phase.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="mt-6 max-w-[30rem] text-[15px] leading-8 text-[#60656f] sm:text-base">
+                    {phase.body}
                   </p>
                 </motion.div>
               ))}
-            </div>
-            
-            <div className="mt-2 text-gray-400 text-xs sm:text-sm flex items-center gap-2">
-              <span className="w-8 h-[1px] bg-gray-300"></span>
-              keep scrolling
             </div>
           </div>
         </div>

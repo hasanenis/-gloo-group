@@ -1,0 +1,3108 @@
+{
+  "name": "desktop-1440",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "consoleErrors": [],
+  "failed": [],
+  "mediaFailures": 6,
+  "sections": [
+    {
+      "index": 0,
+      "tag": "header",
+      "title": "Home About Projects Contact EN",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "rect": {
+        "y": 0,
+        "h": 122,
+        "w": 1440
+      }
+    },
+    {
+      "index": 1,
+      "tag": "section",
+      "title": "Building for Algeria. Built to last.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 0,
+        "h": 1000,
+        "w": 1440
+      }
+    },
+    {
+      "index": 2,
+      "tag": "section",
+      "title": "We build the framework for durable everyday life.",
+      "backgroundColor": "rgb(13, 13, 13)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 1000,
+        "h": 835,
+        "w": 1440
+      }
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "title": "BUILT EVIDENCE, NOT PROMISES.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 1835,
+        "h": 1071,
+        "w": 1440
+      }
+    },
+    {
+      "index": 4,
+      "tag": "section",
+      "title": "BUILT EVIDENCE, NOT PROMISES.",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 1835,
+        "h": 1071,
+        "w": 1440
+      }
+    },
+    {
+      "index": 5,
+      "tag": "header",
+      "title": "BUILT EVIDENCE, NOT PROMISES.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 1947,
+        "h": 135,
+        "w": 1328
+      }
+    },
+    {
+      "index": 6,
+      "tag": "section",
+      "title": "FROM FIRST COORDINATION TO HANDOVER.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 2906,
+        "h": 728,
+        "w": 1440
+      }
+    },
+    {
+      "index": 7,
+      "tag": "section",
+      "title": "FROM FIRST COORDINATION TO HANDOVER.",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 2906,
+        "h": 728,
+        "w": 1440
+      }
+    },
+    {
+      "index": 8,
+      "tag": "header",
+      "title": "FROM FIRST COORDINATION TO HANDOVER.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 3018,
+        "h": 176,
+        "w": 1328
+      }
+    },
+    {
+      "index": 9,
+      "tag": "section",
+      "title": "A qualified construction structure based in Algiers.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 3633,
+        "h": 1128,
+        "w": 1440
+      }
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "title": "A qualified construction structure based in Algiers.",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 3633,
+        "h": 1128,
+        "w": 1440
+      }
+    },
+    {
+      "index": 11,
+      "tag": "section",
+      "title": "Algeria & Beyond",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 4761,
+        "h": 1381,
+        "w": 1440
+      }
+    },
+    {
+      "index": 12,
+      "tag": "section",
+      "title": "Algeria & Beyond",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 4761,
+        "h": 1381,
+        "w": 1440
+      }
+    },
+    {
+      "index": 13,
+      "tag": "section",
+      "title": "Let’s discuss the next durable programme.",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(17, 17, 17)",
+      "rect": {
+        "y": 6142,
+        "h": 802,
+        "w": 1440
+      }
+    },
+    {
+      "index": 14,
+      "tag": "footer",
+      "title": "Let’s discuss the next durable programme.",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "color": "rgba(255, 255, 255, 0.74)",
+      "rect": {
+        "y": 6142,
+        "h": 802,
+        "w": 1440
+      }
+    }
+  ],
+  "palette": {
+    "textColors": [
+      {
+        "value": "rgb(17, 17, 17)",
+        "count": 293
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 106
+      },
+      {
+        "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.72)",
+        "count": 81
+      },
+      {
+        "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+        "count": 44
+      },
+      {
+        "value": "rgb(194, 32, 38)",
+        "count": 26
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 20
+      },
+      {
+        "value": "rgb(232, 42, 46)",
+        "count": 14
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.58)",
+        "count": 12
+      },
+      {
+        "value": "oklab(0 0 0 / 0.5)",
+        "count": 10
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.74)",
+        "count": 10
+      },
+      {
+        "value": "oklab(0 0 0 / 0.58)",
+        "count": 9
+      },
+      {
+        "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.62)",
+        "count": 5
+      },
+      {
+        "value": "oklab(0 0 0 / 0.45)",
+        "count": 5
+      },
+      {
+        "value": "oklab(0 0 0 / 0.32)",
+        "count": 5
+      },
+      {
+        "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.42)",
+        "count": 4
+      },
+      {
+        "value": "rgb(225, 37, 27)",
+        "count": 4
+      },
+      {
+        "value": "oklab(0 0 0 / 0.56)",
+        "count": 3
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.38)",
+        "count": 3
+      }
+    ],
+    "backgrounds": [
+      {
+        "value": "rgb(194, 32, 38)",
+        "count": 17
+      },
+      {
+        "value": "rgb(232, 42, 46)",
+        "count": 12
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 11
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 10
+      },
+      {
+        "value": "rgb(245, 243, 239)",
+        "count": 2
+      },
+      {
+        "value": "rgb(250, 249, 244)",
+        "count": 1
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.86)",
+        "count": 1
+      },
+      {
+        "value": "rgb(13, 13, 13)",
+        "count": 1
+      },
+      {
+        "value": "rgb(247, 246, 241)",
+        "count": 1
+      },
+      {
+        "value": "rgb(251, 250, 246)",
+        "count": 1
+      },
+      {
+        "value": "rgb(10, 10, 10)",
+        "count": 1
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.03)",
+        "count": 1
+      }
+    ]
+  },
+  "typographySamples": [
+    {
+      "tag": "a",
+      "text": "Home",
+      "textLength": 4,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1049,
+        "y": 47,
+        "w": 44,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "textLength": 5,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1117,
+        "y": 47,
+        "w": 44,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "Projects",
+      "textLength": 8,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1185,
+        "y": 47,
+        "w": 61,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "Contact",
+      "textLength": 7,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1269,
+        "y": 47,
+        "w": 57,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "button",
+      "text": "EN",
+      "textLength": 2,
+      "className": "locale-menu inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] transition-colors border-white/20 bg-transparen",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "600",
+      "letterSpacing": "0.88px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 1342,
+        "y": 46,
+        "w": 58,
+        "h": 31
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "h1",
+      "text": "Building for Algeria. Built to last.",
+      "textLength": 36,
+      "className": "max-w-[13ch] overflow-hidden font-sans text-[2.5rem] font-semibold leading-[0.98] tracking-normal text-white sm:text-[3.35rem] md:text-[4.35rem] lg:text-[5.4rem]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "oklch(0.21 0.006 285.885)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 20,
+        "y": 277,
+        "w": 642,
+        "h": 254
+      },
+      "inViewport": true,
+      "contrast": null
+    },
+    {
+      "tag": "p",
+      "text": "Residential and mixed-use programmes delivered with engineering control, site discipline and long-term construction qual",
+      "textLength": 139,
+      "className": "subtitle mt-6 max-w-[43rem] pr-4 text-[15px] font-normal leading-[1.7] tracking-normal text-white/86 opacity-0 drop-shadow-sm md:text-[18px]",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.86)",
+      "backgroundColor": "oklch(0.21 0.006 285.885)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "18px",
+      "lineHeight": "30.6px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 20,
+        "y": 555,
+        "w": 688,
+        "h": 61
+      },
+      "inViewport": true,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "Explore projects",
+      "textLength": 16,
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(194, 32, 38)",
+      "ownBackground": "rgb(194, 32, 38)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 20,
+        "y": 649,
+        "w": 173,
+        "h": 44
+      },
+      "inViewport": true,
+      "contrast": 5.95
+    },
+    {
+      "tag": "a",
+      "text": "Contact team",
+      "textLength": 12,
+      "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+      "ownBackground": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 205,
+        "y": 649,
+        "w": 134,
+        "h": 44
+      },
+      "inViewport": true,
+      "contrast": null
+    },
+    {
+      "tag": "h2",
+      "text": "We build the framework for durable everyday life.",
+      "textLength": 49,
+      "className": "manifesto-words max-w-[15ch] font-sans text-[2.55rem] font-semibold leading-[1.02] tracking-normal text-white sm:text-[3.15rem] md:text-[4.2rem] lg:text-[5.15rem]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(13, 13, 13)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "82.4px",
+      "lineHeight": "84.048px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 1224,
+        "w": 706,
+        "h": 336
+      },
+      "inViewport": false,
+      "contrast": 19.44
+    },
+    {
+      "tag": "h2",
+      "text": "BUILT EVIDENCE, NOT PROMISES.",
+      "textLength": 29,
+      "className": "text-[clamp(1.9rem,3vw,3.1rem)] font-light uppercase leading-[0.95] tracking-[0.04em] text-[#c22026]",
+      "color": "rgb(194, 32, 38)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "43.2px",
+      "lineHeight": "41.04px",
+      "fontWeight": "300",
+      "letterSpacing": "1.728px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 2010,
+        "w": 700,
+        "h": 41
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "p",
+      "text": "A portfolio of housing, villas, commercial premises, roads and networks, shown through real project scope and location p",
+      "textLength": 125,
+      "className": "max-w-2xl text-sm leading-relaxed md:text-[15px] text-[color:var(--igloo-muted)]",
+      "color": "rgba(17, 17, 17, 0.62)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24.375px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 2059,
+        "w": 672,
+        "h": 49
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "a",
+      "text": "See all projects",
+      "textLength": 16,
+      "className": "inline-flex items-center justify-center gap-2 rounded-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/40 ",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(255, 255, 255)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1269,
+        "y": 2072,
+        "w": 115,
+        "h": 36
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED DOUAOUDA 300/500 Assisted Promotional Housing Assisted promotional housing in Douaouda with professional premi",
+      "textLength": 170,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "300/500 Assisted Promotional Housing",
+      "textLength": 36,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 88,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Assisted promotional housing in Douaouda with professional premises, exterior works and TCE delivery.",
+      "textLength": 101,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 88,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED SIDI ABDALLAH - MAHALMA 200/1200 Promotional Public Housing Public promotional housing in Sidi Abdallah with R",
+      "textLength": 183,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 584,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "200/1200 Promotional Public Housing",
+      "textLength": 35,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 616,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Public promotional housing in Sidi Abdallah with R+9 buildings and commercial/professional premises.",
+      "textLength": 100,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 616,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED STAOUELI 11/41 Villas and Network Works Standing villa delivery at Les Pastorales with secondary trades, roads",
+      "textLength": 155,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1112,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "11/41 Villas and Network Works",
+      "textLength": 30,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1144,
+        "y": 2555,
+        "w": 401,
+        "h": 29
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Standing villa delivery at Les Pastorales with secondary trades, roads and utility networks.",
+      "textLength": 92,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1144,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED DOUIRA, ALGIERS Rahmania Commercial Centres Two commercial centres serving a 2,500-home residential programme ",
+      "textLength": 152,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1640,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "Rahmania Commercial Centres",
+      "textLength": 27,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1672,
+        "y": 2555,
+        "w": 401,
+        "h": 29
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Two commercial centres serving a 2,500-home residential programme in Douira, Algiers.",
+      "textLength": 85,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1672,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED SAID HAMDINE, BIR MOURAD RAIS, ALGIERS Mixed Real Estate Complex with 202 Free Promotional Housing Five reside",
+      "textLength": 225,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2168,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "textLength": 59,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2200,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Five residential blocks, 202 free promotional units, commercial levels and two basement parking floors.",
+      "textLength": 103,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2200,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED ROUIBA 4 Promotional Villas and Network Works Four promotional villas in Rouiba delivered with TCE, VRD and ex",
+      "textLength": 151,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2696,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "4 Promotional Villas and Network Works",
+      "textLength": 38,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2728,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "Four promotional villas in Rouiba delivered with TCE, VRD and exterior site works.",
+      "textLength": 82,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 2728,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "COMPLETED SIDI BENOUR, ALGIERS 50 Free Promotional Housing Units High-rise R+13 residential delivery within the Sidi Ben",
+      "textLength": 167,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3224,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "50 Free Promotional Housing Units",
+      "textLength": 33,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3256,
+        "y": 2555,
+        "w": 401,
+        "h": 29
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "High-rise R+13 residential delivery within the Sidi Benour promotional housing programme.",
+      "textLength": 89,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3256,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "CURRENT DELY BRAHIM, ALGIERS 240 Free Promotional Housing with Commercial Areas A 240-unit vertical residential programm",
+      "textLength": 191,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3752,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "240 Free Promotional Housing with Commercial Areas",
+      "textLength": 50,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3784,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "A 240-unit vertical residential programme with commercial areas, services and underground parking.",
+      "textLength": 98,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 3784,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "CURRENT BAS MAZAGRAN, MOSTAGANEM 200 Assisted Housing and 38 Free Promotional Housing Units A seven-block Mostaganem pro",
+      "textLength": 213,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4280,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "200 Assisted Housing and 38 Free Promotional Housing Units",
+      "textLength": 58,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4312,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "A seven-block Mostaganem programme combining assisted and free promotional housing with commercial premises.",
+      "textLength": 108,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4312,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "CURRENT BOURAADA SITE, REGHAIA, ALGIERS PROVINCE 250 Housing Units with Commercial Rental and Concierge Services A 250-u",
+      "textLength": 224,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4808,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "250 Housing Units with Commercial Rental and Concierge Services",
+      "textLength": 63,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4840,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "A 250-unit Reghaia programme with commercial premises, concierge spaces and multi-block execution.",
+      "textLength": 98,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 4840,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "CURRENT BOUDOUAOU, BOUMERDES 70 Assisted Housing and 10 Free Promotional Housing Units A Boumerdes programme of 70 assis",
+      "textLength": 205,
+      "className": "group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black",
+      "color": "rgb(17, 17, 17)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgb(0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 5336,
+        "y": 2130,
+        "w": 500,
+        "h": 580
+      },
+      "inViewport": false,
+      "contrast": 18.88
+    },
+    {
+      "tag": "h3",
+      "text": "70 Assisted Housing and 10 Free Promotional Housing Units",
+      "textLength": 57,
+      "className": "mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "28.8px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 5368,
+        "y": 2526,
+        "w": 401,
+        "h": 58
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "p",
+      "text": "A Boumerdes programme of 70 assisted and 10 free promotional units with commercial/professional premises.",
+      "textLength": 105,
+      "className": "line-clamp-3 text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 5368,
+        "y": 2596,
+        "w": 436,
+        "h": 46
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h2",
+      "text": "FROM FIRST COORDINATION TO HANDOVER.",
+      "textLength": 36,
+      "className": "text-[clamp(1.9rem,3vw,3.1rem)] font-light uppercase leading-[0.95] tracking-[0.04em] text-[#c22026]",
+      "color": "rgb(194, 32, 38)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "43.2px",
+      "lineHeight": "41.04px",
+      "fontWeight": "300",
+      "letterSpacing": "1.728px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 3081,
+        "w": 768,
+        "h": 82
+      },
+      "inViewport": false,
+      "contrast": 5.5
+    },
+    {
+      "tag": "p",
+      "text": "A clear technical structure keeps each programme moving through planning, engineering control, site execution and final ",
+      "textLength": 129,
+      "className": "max-w-2xl text-sm leading-relaxed md:text-[15px] text-[color:var(--igloo-muted)]",
+      "color": "rgba(17, 17, 17, 0.62)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24.375px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 3172,
+        "w": 672,
+        "h": 49
+      },
+      "inViewport": false,
+      "contrast": 17.45
+    },
+    {
+      "tag": "h3",
+      "text": "Pre-construction coordination",
+      "textLength": 29,
+      "className": "text-[18px] font-semibold leading-tight text-black md:text-[20px]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "25px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 77,
+        "y": 3373,
+        "w": 214,
+        "h": 50
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Scope, programme requirements, quantities and site constraints are aligned before work moves on site.",
+      "textLength": 101,
+      "className": "mt-4 text-[14px] leading-[1.7] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 77,
+        "y": 3439,
+        "w": 214,
+        "h": 95
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Engineering & TCE control",
+      "textLength": 25,
+      "className": "text-[18px] font-semibold leading-tight text-black md:text-[20px]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "25px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 345,
+        "y": 3373,
+        "w": 214,
+        "h": 50
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Engineers, architects and technical managers coordinate secondary trades, structures, MEP, roads and networks.",
+      "textLength": 110,
+      "className": "mt-4 text-[14px] leading-[1.7] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 345,
+        "y": 3439,
+        "w": 214,
+        "h": 95
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Site execution",
+      "textLength": 14,
+      "className": "text-[18px] font-semibold leading-tight text-black md:text-[20px]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "25px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 613,
+        "y": 3373,
+        "w": 214,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Construction managers and site teams organise daily progress, trade sequencing and material movement.",
+      "textLength": 101,
+      "className": "mt-4 text-[14px] leading-[1.7] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 613,
+        "y": 3414,
+        "w": 214,
+        "h": 95
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Quality, safety & schedule monitoring",
+      "textLength": 37,
+      "className": "text-[18px] font-semibold leading-tight text-black md:text-[20px]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "25px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 881,
+        "y": 3373,
+        "w": 214,
+        "h": 50
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Delivery is tracked against technical requirements, safety rules, finish quality and contractual milestones.",
+      "textLength": 108,
+      "className": "mt-4 text-[14px] leading-[1.7] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 881,
+        "y": 3439,
+        "w": 214,
+        "h": 95
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Handover & aftercare",
+      "textLength": 20,
+      "className": "text-[18px] font-semibold leading-tight text-black md:text-[20px]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "20px",
+      "lineHeight": "25px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1149,
+        "y": 3373,
+        "w": 214,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Final works are closed with practical readiness, documentation and attention to the long-term use of each place.",
+      "textLength": 112,
+      "className": "mt-4 text-[14px] leading-[1.7] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1149,
+        "y": 3414,
+        "w": 214,
+        "h": 95
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Certified contractor",
+      "textLength": 20,
+      "className": "text-[15px] font-semibold leading-snug text-black",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "20.625px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 77,
+        "y": 4483,
+        "w": 183,
+        "h": 21
+      },
+      "inViewport": false,
+      "contrast": 19.41
+    },
+    {
+      "tag": "p",
+      "text": "Professional Qualification and Classification Certificate, Category 6.",
+      "textLength": 70,
+      "className": "mt-3 text-[13px] leading-[1.65] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "21.45px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 77,
+        "y": 4515,
+        "w": 183,
+        "h": 64
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Qualified team structure",
+      "textLength": 24,
+      "className": "text-[15px] font-semibold leading-snug text-black",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "20.625px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 314,
+        "y": 4483,
+        "w": 183,
+        "h": 21
+      },
+      "inViewport": false,
+      "contrast": 19.41
+    },
+    {
+      "tag": "p",
+      "text": "Building manager, three engineers, two architects, construction managers, HR, accountant, buyer and site teams.",
+      "textLength": 111,
+      "className": "mt-3 text-[13px] leading-[1.65] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "21.45px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 314,
+        "y": 4515,
+        "w": 183,
+        "h": 107
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "h3",
+      "text": "Residential and mixed-use focus",
+      "textLength": 31,
+      "className": "text-[15px] font-semibold leading-snug text-black",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "20.625px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 551,
+        "y": 4483,
+        "w": 183,
+        "h": 41
+      },
+      "inViewport": false,
+      "contrast": 19.41
+    },
+    {
+      "tag": "p",
+      "text": "Housing, villas, commercial premises, roads, networks, services and exterior works.",
+      "textLength": 83,
+      "className": "mt-3 text-[13px] leading-[1.65] text-black/58",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(247, 246, 241)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "21.45px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 551,
+        "y": 4536,
+        "w": 183,
+        "h": 64
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "p",
+      "text": "PROJECT FOOTPRINT",
+      "textLength": 17,
+      "className": "mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#c22026]",
+      "color": "rgb(194, 32, 38)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "700",
+      "letterSpacing": "2.42px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 4898,
+        "w": 884,
+        "h": 17
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "h2",
+      "text": "Algeria & Beyond",
+      "textLength": 16,
+      "className": "text-[2.35rem] font-semibold leading-none tracking-normal text-black md:text-[4rem]",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "64px",
+      "lineHeight": "64px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 4927,
+        "w": 884,
+        "h": 64
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Eleven project locations across four highlighted wilayas, with a dense Algiers delivery belt and active reach toward Mos",
+      "textLength": 142,
+      "className": "max-w-[42rem] text-[15px] leading-[1.75] text-black/58 md:text-[16px]",
+      "color": "oklab(0 0 0 / 0.58)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "28px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 972,
+        "y": 4907,
+        "w": 412,
+        "h": 84
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "All locations11",
+      "textLength": 15,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-[#c22026]",
+      "color": "rgb(194, 32, 38)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 56,
+        "y": 5060,
+        "w": 90,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "button",
+      "text": "West Algiers / Tipaza5",
+      "textLength": 22,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-black/50 hover:text-black/75",
+      "color": "oklab(0 0 0 / 0.5)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 170,
+        "y": 5060,
+        "w": 136,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "Central Algiers2",
+      "textLength": 16,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-black/50 hover:text-black/75",
+      "color": "oklab(0 0 0 / 0.5)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 330,
+        "y": 5060,
+        "w": 98,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "East Algiers / Boumerdes2",
+      "textLength": 25,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-black/50 hover:text-black/75",
+      "color": "oklab(0 0 0 / 0.5)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 452,
+        "y": 5060,
+        "w": 160,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "Mostaganem1",
+      "textLength": 11,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-black/50 hover:text-black/75",
+      "color": "oklab(0 0 0 / 0.5)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 636,
+        "y": 5060,
+        "w": 89,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "Boumerdes1",
+      "textLength": 10,
+      "className": "relative pb-3 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/35 text-black/50 hover:text-black/75",
+      "color": "oklab(0 0 0 / 0.5)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 749,
+        "y": 5060,
+        "w": 79,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "button",
+      "text": "10",
+      "textLength": 2,
+      "className": "absolute z-10 flex h-8 w-8 -translate-x-1/2 -translate-y-full items-center justify-center rounded-full border-2 border-white bg-[#c22026] text-[11px] font-bold text-white shadow-[0",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(194, 32, 38)",
+      "ownBackground": "rgb(194, 32, 38)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 560,
+        "y": 5194,
+        "w": 32,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "button",
+      "text": "11",
+      "textLength": 2,
+      "className": "absolute z-10 flex h-8 w-8 -translate-x-1/2 -translate-y-full items-center justify-center rounded-full border-2 border-white bg-[#c22026] text-[11px] font-bold text-white shadow-[0",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(194, 32, 38)",
+      "ownBackground": "rgb(194, 32, 38)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 562,
+        "y": 5194,
+        "w": 32,
+        "h": 32
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "p",
+      "text": "SELECTED PROJECT",
+      "textLength": 16,
+      "className": "mb-4 text-[11px] font-bold uppercase tracking-[0.20em] text-[#c22026]",
+      "color": "rgb(194, 32, 38)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "700",
+      "letterSpacing": "2.2px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 1029,
+        "y": 5157,
+        "w": 330,
+        "h": 17
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "h3",
+      "text": "Douaouda Housing",
+      "textLength": 16,
+      "className": "mb-1.5 text-[24px] font-semibold leading-tight tracking-normal text-black",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "30px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1029,
+        "y": 5190,
+        "w": 330,
+        "h": 30
+      },
+      "inViewport": false,
+      "contrast": 21
+    },
+    {
+      "tag": "p",
+      "text": "Douaouda · Tipaza",
+      "textLength": 17,
+      "className": "mb-4 text-[14px] text-black/45",
+      "color": "oklab(0 0 0 / 0.45)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1029,
+        "y": 5226,
+        "w": 330,
+        "h": 21
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "p",
+      "text": "Assisted promotional housing in Douaouda with professional premises, exterior works and TCE delivery.",
+      "textLength": 101,
+      "className": "mb-5 text-[14px] leading-relaxed text-black/68",
+      "color": "oklab(0 0 0 / 0.68)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22.75px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1029,
+        "y": 5263,
+        "w": 330,
+        "h": 68
+      },
+      "inViewport": false,
+      "contrast": null
+    },
+    {
+      "tag": "a",
+      "text": "Open project",
+      "textLength": 12,
+      "className": "mt-auto flex items-center justify-center gap-2 rounded-md bg-[#c22026] px-5 py-3 text-[14px] font-semibold text-white transition-colors hover:bg-[#a81b21]",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(194, 32, 38)",
+      "ownBackground": "rgb(194, 32, 38)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "21px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1029,
+        "y": 5658,
+        "w": 330,
+        "h": 45
+      },
+      "inViewport": false,
+      "contrast": 5.95
+    },
+    {
+      "tag": "h2",
+      "text": "Let’s discuss the next durable programme.",
+      "textLength": 41,
+      "className": "app-footer__headline",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "\"Playfair Display\", serif",
+      "fontSize": "69.12px",
+      "lineHeight": "67.7376px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 30,
+        "y": 6321,
+        "w": 804,
+        "h": 135
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "p",
+      "text": "Speak with an Algiers-based team experienced in residential, mixed-use, roads, networks and coordinated site delivery.",
+      "textLength": 118,
+      "className": "app-footer__lead",
+      "color": "rgba(255, 255, 255, 0.62)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "27.75px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 30,
+        "y": 6474,
+        "w": 760,
+        "h": 56
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "EMAIL IGLOO",
+      "textLength": 11,
+      "className": "app-footer__cta-link",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(255, 255, 255, 0.03)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "700",
+      "letterSpacing": "1.82px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 899,
+        "y": 6384,
+        "w": 486,
+        "h": 54
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "a",
+      "text": "CALL ALGERIA OFFICE",
+      "textLength": 19,
+      "className": "app-footer__cta-link",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(255, 255, 255, 0.03)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "700",
+      "letterSpacing": "1.82px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 899,
+        "y": 6451,
+        "w": 486,
+        "h": 54
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "h3",
+      "text": "OFFICE",
+      "textLength": 6,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 30,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "textLength": 7,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 499,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    },
+    {
+      "tag": "a",
+      "text": "+213 542 819 461",
+      "textLength": 16,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 499,
+        "y": 6634,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "+90 542 479 5700",
+      "textLength": 16,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 499,
+        "y": 6669,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "medatalay@gmail.com",
+      "textLength": 19,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 499,
+        "y": 6704,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "h3",
+      "text": "NAVIGATION",
+      "textLength": 10,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "textLength": 4,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6634,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "Company",
+      "textLength": 7,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6669,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "Projects",
+      "textLength": 8,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6704,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "Proof",
+      "textLength": 5,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6739,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "Process",
+      "textLength": 7,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6775,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "a",
+      "text": "Contact",
+      "textLength": 7,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.58)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "25.2px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6810,
+        "w": 441,
+        "h": 25
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "p",
+      "text": "© 2026 Igloo Construction. All rights reserved.",
+      "textLength": 47,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.38)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "18px",
+      "fontWeight": "400",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 30,
+        "y": 6898,
+        "w": 268,
+        "h": 18
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    },
+    {
+      "tag": "p",
+      "text": "Ouled Fayet, Algiers · Category 6 certified contractor · Residential and mixed-use delivery",
+      "textLength": 91,
+      "className": "",
+      "color": "rgba(255, 255, 255, 0.38)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "18px",
+      "fontWeight": "400",
+      "letterSpacing": "0.48px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 897,
+        "y": 6898,
+        "w": 513,
+        "h": 18
+      },
+      "inViewport": false,
+      "contrast": 19.8
+    }
+  ],
+  "contrastRisks": [
+    {
+      "tag": "a",
+      "text": "EMAIL IGLOO",
+      "textLength": 11,
+      "className": "app-footer__cta-link",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(255, 255, 255, 0.03)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "700",
+      "letterSpacing": "1.82px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 899,
+        "y": 6384,
+        "w": 486,
+        "h": 54
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "a",
+      "text": "CALL ALGERIA OFFICE",
+      "textLength": 19,
+      "className": "app-footer__cta-link",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(255, 255, 255, 0.03)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "19.5px",
+      "fontWeight": "700",
+      "letterSpacing": "1.82px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 899,
+        "y": 6451,
+        "w": 486,
+        "h": 54
+      },
+      "inViewport": false,
+      "contrast": 1
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "textLength": 4,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1049,
+        "y": 47,
+        "w": 44,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "textLength": 5,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1117,
+        "y": 47,
+        "w": 44,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "Projects",
+      "textLength": 8,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1185,
+        "y": 47,
+        "w": 61,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "a",
+      "text": "Contact",
+      "textLength": 7,
+      "className": "relative inline-flex items-center gap-[4px] pb-1",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0.16px",
+      "textTransform": "none",
+      "opacity": "1",
+      "rect": {
+        "x": 1269,
+        "y": 47,
+        "w": 57,
+        "h": 28
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "button",
+      "text": "EN",
+      "textLength": 2,
+      "className": "locale-menu inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] transition-colors border-white/20 bg-transparen",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(250, 249, 244)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16.5px",
+      "fontWeight": "600",
+      "letterSpacing": "0.88px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 1342,
+        "y": 46,
+        "w": 58,
+        "h": 31
+      },
+      "inViewport": true,
+      "contrast": 1.05
+    },
+    {
+      "tag": "h3",
+      "text": "OFFICE",
+      "textLength": 6,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 30,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "textLength": 7,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 499,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    },
+    {
+      "tag": "h3",
+      "text": "NAVIGATION",
+      "textLength": 10,
+      "className": "app-footer__heading",
+      "color": "rgb(225, 37, 27)",
+      "backgroundColor": "rgb(10, 10, 10)",
+      "ownBackground": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Roboto, \"Helvetica Neue\", \"Arial Nova\", Arial, sans-serif",
+      "fontSize": "10px",
+      "lineHeight": "15px",
+      "fontWeight": "700",
+      "letterSpacing": "2.4px",
+      "textTransform": "uppercase",
+      "opacity": "1",
+      "rect": {
+        "x": 969,
+        "y": 6619,
+        "w": 441,
+        "h": 15
+      },
+      "inViewport": false,
+      "contrast": 4.23
+    }
+  ],
+  "oversized": [
+    {
+      "text": "Building for Algeria. Built to last.",
+      "tag": "h1",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 277,
+        "w": 642,
+        "h": 254
+      }
+    },
+    {
+      "text": "Building",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 267,
+        "w": 338,
+        "h": 104
+      }
+    },
+    {
+      "text": "Building",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 277,
+        "w": 316,
+        "h": 85
+      }
+    },
+    {
+      "text": "for",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 358,
+        "y": 267,
+        "w": 111,
+        "h": 104
+      }
+    },
+    {
+      "text": "for",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 358,
+        "y": 277,
+        "w": 111,
+        "h": 85
+      }
+    },
+    {
+      "text": "Algeria.",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 352,
+        "w": 322,
+        "h": 104
+      }
+    },
+    {
+      "text": "Algeria.",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 362,
+        "w": 300,
+        "h": 85
+      }
+    },
+    {
+      "text": "Built",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 342,
+        "y": 352,
+        "w": 198,
+        "h": 104
+      }
+    },
+    {
+      "text": "Built",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 342,
+        "y": 362,
+        "w": 177,
+        "h": 85
+      }
+    },
+    {
+      "text": "to",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 540,
+        "y": 352,
+        "w": 77,
+        "h": 104
+      }
+    },
+    {
+      "text": "to",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 540,
+        "y": 362,
+        "w": 77,
+        "h": 85
+      }
+    },
+    {
+      "text": "last.",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 437,
+        "w": 167,
+        "h": 104
+      }
+    },
+    {
+      "text": "last.",
+      "tag": "span",
+      "fontSize": "86.4px",
+      "lineHeight": "84.672px",
+      "rect": {
+        "x": 20,
+        "y": 447,
+        "w": 167,
+        "h": 85
+      }
+    },
+    {
+      "text": "We build the framework for durable everyday life.",
+      "tag": "h2",
+      "fontSize": "82.4px",
+      "lineHeight": "84.048px",
+      "rect": {
+        "x": 56,
+        "y": 1224,
+        "w": 706,
+        "h": 336
+      }
+    },
+    {
+      "text": "Algeria & Beyond",
+      "tag": "h2",
+      "fontSize": "64px",
+      "lineHeight": "64px",
+      "rect": {
+        "x": 56,
+        "y": 4927,
+        "w": 884,
+        "h": 64
+      }
+    },
+    {
+      "text": "Let’s discuss the next durable programme.",
+      "tag": "h2",
+      "fontSize": "69.12px",
+      "lineHeight": "67.7376px",
+      "rect": {
+        "x": 30,
+        "y": 6321,
+        "w": 804,
+        "h": 135
+      }
+    }
+  ]
+}

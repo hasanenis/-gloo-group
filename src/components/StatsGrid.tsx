@@ -1,82 +1,62 @@
 import React, { useRef } from 'react';
-import { Building2, Presentation, Award, MapPinned, Star, RefreshCcw, HardHat, Wallet } from 'lucide-react';
+import { Building2, Award, MapPinned, HardHat } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { motionDuration, motionDurationFor, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+import { useLocale } from '../i18n';
+import { Card } from './ui/card';
+import { SectionHeader } from './ui/section-header';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const STATS = [
+type StatItem = {
+  id: number;
+  icon: typeof Award;
+  value: number;
+  decimals: number;
+  label: { en: string; fr: string };
+  prefix?: string;
+  suffix?: string;
+};
+
+const STATS: StatItem[] = [
   {
     id: 1,
-    icon: Building2,
-    value: 600,
+    icon: Award,
+    value: 8,
     decimals: 0,
-    suffix: "+",
-    label: "Projects Built"
+    suffix: '+',
+    label: { en: 'Years of experience', fr: "Années d’expérience" },
   },
   {
     id: 2,
-    icon: Star,
-    value: 4.5,
-    decimals: 1,
-    suffix: "-Star",
-    label: "Gold iCIRT Rating"
+    icon: Building2,
+    value: 11,
+    decimals: 0,
+    label: { en: 'Projects in portfolio', fr: 'Projets au portefeuille' },
   },
   {
     id: 3,
-    icon: Presentation,
-    prefix: "$",
-    value: 2.5,
-    decimals: 1,
-    suffix: "B",
-    label: "Combined Value"
+    icon: HardHat,
+    value: 2500,
+    decimals: 0,
+    suffix: '+',
+    label: { en: 'Housing units delivered', fr: 'Logements livrés' },
   },
   {
     id: 4,
-    icon: RefreshCcw,
-    value: 90,
-    decimals: 0,
-    suffix: "%",
-    label: "Repeat Clientele"
-  },
-  {
-    id: 5,
-    icon: Award,
-    value: 33,
-    decimals: 0,
-    suffix: "+",
-    label: "Years of Excellence"
-  },
-  {
-    id: 6,
-    icon: HardHat,
-    value: 130,
-    decimals: 0,
-    suffix: "+",
-    label: "Igloo Staff"
-  },
-  {
-    id: 7,
     icon: MapPinned,
-    value: 2,
+    value: 4,
     decimals: 0,
-    label: "Office Locations (Sydney & Melbourne)"
+    label: { en: 'Wilayas covered', fr: 'Wilayas couvertes' },
   },
-  {
-    id: 8,
-    icon: Wallet,
-    prefix: "$",
-    value: 0,
-    decimals: 0,
-    label: "No Bank Finance"
-  }
 ];
 
 export default function StatsGrid() {
   const containerRef = useRef<HTMLElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const { locale } = useLocale();
 
   useGSAP(() => {
     if (!containerRef.current) return;
@@ -87,92 +67,91 @@ export default function StatsGrid() {
       });
       return;
     }
-    
-    // Entrance animation for items
-    gsap.fromTo('.stat-item', 
+
+    gsap.fromTo(
+      '.stat-item',
       { opacity: 0, y: 50 },
-      { 
-        opacity: 1, 
-        y: 0, 
-        duration: motionDuration.section, 
-        stagger: motionStagger.standard, 
+      {
+        opacity: 1,
+        y: 0,
+        duration: motionDuration.section,
+        stagger: motionStagger.standard,
         ease: motionEase.smooth,
         scrollTrigger: {
           trigger: containerRef.current,
           start: 'top 80%',
-          once: true
-        }
-      }
+          once: true,
+        },
+      },
     );
 
-    // Number counter animation
     const statItems = gsap.utils.toArray<HTMLElement>('.stat-val');
     statItems.forEach((item, index) => {
-      const target = parseFloat(item.getAttribute('data-val') || "0");
-      const decimals = parseInt(item.getAttribute('data-decimals') || "0");
-      
+      const target = parseFloat(item.getAttribute('data-val') || '0');
+      const decimals = parseInt(item.getAttribute('data-decimals') || '0', 10);
+
       const obj = { val: 0 };
-      
+
       gsap.to(obj, {
         val: target,
         duration: motionDurationFor(2),
         ease: motionEase.smooth,
-        delay: index * 0.1, // sync with stagger
+        delay: index * 0.1,
         scrollTrigger: {
           trigger: containerRef.current,
           start: 'top 80%',
-          once: true
+          once: true,
         },
         onUpdate: () => {
           item.innerText = obj.val.toFixed(decimals);
-        }
+        },
       });
     });
   }, { scope: containerRef, dependencies: [prefersReducedMotion] });
 
   return (
-    <section ref={containerRef} className="py-16 md:py-24 bg-white w-full font-sans">
-      <div className="max-w-[1440px] mx-auto px-8 md:px-14">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 xl:gap-x-24 gap-y-10 md:gap-y-12">
+    <section ref={containerRef} className="w-full bg-white px-8 py-16 font-sans md:px-14 md:py-20">
+      <div className="mx-auto max-w-[1440px]">
+        <SectionHeader
+          className="mb-10 md:mb-14"
+          eyebrowLabel={locale === 'fr' ? 'Performance' : 'Performance'}
+          title={locale === 'fr' ? 'Chiffres clés' : 'Key figures'}
+          description={
+            locale === 'fr'
+              ? 'Une lecture rapide de la portée du travail et du rythme de livraison de l’entreprise.'
+              : 'A quick read on delivery scope and the pace of the business.'
+          }
+        />
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:gap-5">
           {STATS.map((stat) => {
             const Icon = stat.icon;
+
             return (
-              <div key={stat.id} className="stat-item flex items-center border-b border-[#c22026] pb-5 opacity-0">
-                {/* Icon */}
-                <div className="w-[70px] md:w-[90px] flex justify-start text-black/60 shrink-0">
-                  <Icon strokeWidth={0.7} className="w-[45px] h-[45px] md:w-[55px] md:h-[55px]" />
+              <Card
+                key={stat.id}
+                padding="compact"
+                className="stat-item flex items-start gap-4 opacity-0"
+              >
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-sm bg-black/5 text-black/60">
+                  <Icon strokeWidth={1.4} className="h-6 w-6" />
                 </div>
-                
-                {/* Value */}
-                <div className="w-[140px] md:w-[180px] flex items-start shrink-0">
-                  <span className="text-[34px] md:text-[44px] font-medium text-[#c22026] leading-none flex items-start -mt-1">
-                    {stat.prefix && (
-                      <span className="text-[20px] md:text-[24px] font-medium mt-1 mr-0.5 leading-none">
-                        {stat.prefix}
+
+                <div className="min-w-0 flex-1">
+                  <div className="mb-1 flex items-baseline gap-1.5">
+                    <span className="text-[34px] font-medium leading-none text-[#c22026] md:text-[44px]">
+                      {stat.prefix && <span className="mr-0.5 text-[20px] md:text-[24px]">{stat.prefix}</span>}
+                      <span className="stat-val" data-val={stat.value} data-decimals={stat.decimals}>
+                        0
                       </span>
-                    )}
-                    <span 
-                      className="stat-val" 
-                      data-val={stat.value} 
-                      data-decimals={stat.decimals}
-                    >
-                      0
+                      {stat.suffix && <span className="ml-0.5 text-[20px] md:text-[24px]">{stat.suffix}</span>}
                     </span>
-                    {stat.suffix && (
-                      <span className="text-[20px] md:text-[24px] font-medium mt-1.5 ml-0.5 leading-none">
-                        {stat.suffix}
-                      </span>
-                    )}
+                  </div>
+                  <span className="block max-w-[20ch] text-[15px] font-medium leading-snug text-black md:text-[17px]">
+                    {stat.label[locale]}
                   </span>
                 </div>
-                
-                {/* Label */}
-                <div className="flex-1 flex items-center pr-4">
-                  <span className="text-[16px] md:text-[18px] font-medium text-black leading-snug">
-                    {stat.label}
-                  </span>
-                </div>
-              </div>
+              </Card>
             );
           })}
         </div>

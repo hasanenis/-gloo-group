@@ -1,0 +1,62 @@
+{
+  "title": "Igloo Construction",
+  "sectionCount": 9,
+  "bodyHeight": 6109,
+  "h1": "L’empreintededemain,penséepourdurer",
+  "sections": [
+    {
+      "index": 1,
+      "id": "",
+      "guide": "hero",
+      "height": 900
+    },
+    {
+      "index": 2,
+      "id": "",
+      "guide": "",
+      "height": 558
+    },
+    {
+      "index": 3,
+      "id": "featured-projects",
+      "guide": "projects",
+      "height": 962
+    },
+    {
+      "index": 4,
+      "id": "proof",
+      "guide": "",
+      "height": 962
+    },
+    {
+      "index": 5,
+      "id": "about",
+      "guide": "about",
+      "height": 1505
+    },
+    {
+      "index": 6,
+      "id": "",
+      "guide": "",
+      "height": 1505
+    },
+    {
+      "index": 7,
+      "id": "",
+      "guide": "stats",
+      "height": 706
+    },
+    {
+      "index": 8,
+      "id": "",
+      "guide": "",
+      "height": 706
+    },
+    {
+      "index": 9,
+      "id": "contact",
+      "guide": "footer",
+      "height": 1388
+    }
+  ]
+}

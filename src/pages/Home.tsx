@@ -1,105 +1,73 @@
-import React from 'react';
-import Header from '../components/Header';
-import AboutUs from '../components/AboutUs';
+import { lazy, Suspense, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import HeroBanner from '../components/HeroBanner';
-import StaffSlider from '../components/StaffSlider';
-import FeaturedProjects from '../components/FeaturedProjects';
-import Testimonials from '../components/Testimonials';
-import StatsGrid from '../components/StatsGrid';
-import WhyChooseUs from '../components/WhyChooseUs';
-import VideoSection from '../components/VideoSection';
-import Footer from '../components/Footer';
-import ClientGuideOverlay from '../components/ClientGuideOverlay';
+import HomeMechanicalBackdrop from '../components/HomeMechanicalBackdrop';
+import { useLenis } from '../components/SmoothScrollProvider';
 
-const homeGuideSections = [
-  {
-    id: 'hero',
-    label: 'Açılış / İlk İzlenim',
-    purpose: 'Markanın ilk saniyede güçlü, profesyonel ve güven veren bir izlenim bırakmasını sağlar.',
-    behavior: 'Büyük görsel, net başlık ve hareketli giriş efektleriyle ziyaretçiyi sayfaya çeker ve markanın tonunu hemen hissettirir.',
-  },
-  {
-    id: 'about',
-    label: 'Hakkımızda',
-    purpose: 'Firmanın kim olduğunu, yaklaşımını ve neden farklı olduğunu kısa sürede anlatır.',
-    behavior: 'Kurumsal metin ve düzenli içerik akışıyla ziyaretçiye güven verir; satış baskısı yapmadan marka karakterini açıklar.',
-  },
-  {
-    id: 'projects',
-    label: 'Our Projects',
-    purpose: 'Firmanın iş kalitesini ve tasarım seviyesini gerçek proje örnekleriyle görünür hale getirir.',
-    behavior: 'Yatay akan proje kartları ziyaretçiyi aktif biçimde içeriğe dahil eder ve her projeyi premium bir vitrin gibi sunar.',
-  },
-  {
-    id: 'team',
-    label: 'Ekip / Kadro',
-    purpose: 'Markanın arkasında gerçek bir ekip olduğunu göstererek güveni insan yüzleri üzerinden güçlendirir.',
-    behavior: 'Kaydırmalı ekip alanı sayfaya hareket katar ve markayı daha erişilebilir, daha samimi gösterir.',
-  },
-  {
-    id: 'testimonials',
-    label: 'Yorumlar / Sosyal Kanıt',
-    purpose: 'Potansiyel müşterinin karar vermesini kolaylaştırmak için güven unsuru üretir.',
-    behavior: 'Müşteri görüşleri veya referans anlatıları, ziyaretçinin “bu ekip daha önce de iyi iş çıkarmış” hissine girmesini sağlar.',
-  },
-  {
-    id: 'stats',
-    label: 'Rakamlarla Güç',
-    purpose: 'Markanın deneyimini ve ölçeğini hızlı okunabilen verilerle destekler.',
-    behavior: 'Sayısal istatistikler, uzun açıklama okumadan başarıyı birkaç saniyede anlaşılır hale getirir.',
-  },
-  {
-    id: 'why-us',
-    label: 'Infinity / Together to eternity',
-    purpose: 'Markanın süreç yaklaşımını, vizyonunu ve uzun vadeli güven vaadini daha editoryal bir anlatımla sunar.',
-    behavior: 'Scroll ilerledikçe değişen faz yapısı ve infinity görseli, firmanın çalışma modelini klasik metinden daha etkileyici şekilde açıklar.',
-  },
-  {
-    id: 'video',
-    label: 'Video Anlatım',
-    purpose: 'Markayı daha canlı, daha çağdaş ve daha ikna edici göstermeyi amaçlar.',
-    behavior: 'Video alanı hareket, atmosfer ve iş detayını bir araya getirir; ziyaretçinin sayfada daha uzun kalmasına yardımcı olur.',
-  },
-  {
-    id: 'footer',
-    label: 'Kapanış / İletişim',
-    purpose: 'Sayfa sonunda ziyaretçiyi net bir sonraki adıma yönlendirir.',
-    behavior: 'İletişim, bağlantılar ve son bilgi alanı sayesinde kullanıcı ister teklif ister detay bilgi için kolayca aksiyona geçer.',
-  },
-] as const;
+const FeaturedProjects = lazy(() => import('../components/FeaturedProjects'));
+const DeliveryProcessSection = lazy(() => import('../components/DeliveryProcessSection'));
+const AboutUs = lazy(() => import('../components/AboutUs'));
+const ProjectFootprintSection = lazy(() => import('../components/ProjectFootprintSection'));
+const Footer = lazy(() => import('../components/Footer'));
+
+function SectionFallback({ className = '', minHeight = '20rem' }: { className?: string; minHeight?: string }) {
+  return <div aria-hidden="true" className={className} style={{ minHeight }} />;
+}
 
 export default function Home() {
+  const location = useLocation();
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const target = document.querySelector(location.hash);
+    if (!target) return;
+
+    const timer = window.setTimeout(() => {
+      const headerOffset = window.innerWidth < 1024 ? -110 : -140;
+      if (lenis) {
+        lenis.scrollTo(target as HTMLElement, { offset: headerOffset });
+      } else {
+        const top = target.getBoundingClientRect().top + window.scrollY + headerOffset;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
+    }, 250);
+
+    return () => window.clearTimeout(timer);
+  }, [lenis, location.hash]);
+
   return (
-    <main className="relative">
-      <Header />
+    <main className="relative isolate overflow-x-hidden">
+      <HomeMechanicalBackdrop />
       <section data-guide-section="hero">
         <HeroBanner />
       </section>
-      <section data-guide-section="about">
-        <AboutUs />
+      <section id="about" data-guide-section="about" className="bg-white">
+        <Suspense fallback={<SectionFallback className="bg-white" minHeight="42rem" />}>
+          <AboutUs />
+        </Suspense>
       </section>
-      <section data-guide-section="projects" className="overflow-x-hidden">
-        <FeaturedProjects />
+      <section id="featured-projects" data-guide-section="projects" className="overflow-x-hidden">
+        <Suspense fallback={<SectionFallback className="bg-white" minHeight="34rem" />}>
+          <FeaturedProjects />
+        </Suspense>
       </section>
-      <section data-guide-section="team">
-        <StaffSlider />
+      <section data-guide-section="process">
+        <Suspense fallback={<SectionFallback className="bg-[#f7f6f1]" minHeight="28rem" />}>
+          <DeliveryProcessSection />
+        </Suspense>
       </section>
-      <section data-guide-section="testimonials">
-        <Testimonials />
+      <section data-guide-section="footprint">
+        <Suspense fallback={<SectionFallback className="bg-white" minHeight="36rem" />}>
+          <ProjectFootprintSection />
+        </Suspense>
       </section>
-      <section data-guide-section="stats">
-        <StatsGrid />
+      <section id="contact" data-guide-section="footer">
+        <Suspense fallback={<SectionFallback className="bg-white" minHeight="24rem" />}>
+          <Footer />
+        </Suspense>
       </section>
-      <section data-guide-section="why-us">
-        <WhyChooseUs />
-      </section>
-      <section data-guide-section="video">
-        <VideoSection />
-      </section>
-      <section data-guide-section="footer">
-        <Footer />
-      </section>
-      <ClientGuideOverlay items={homeGuideSections} />
     </main>
   );
 }

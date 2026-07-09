@@ -1,1425 +1,623 @@
-import React, { useRef, useState, useEffect, useLayoutEffect } from 'react';
+import React, {
+  startTransition,
+  useDeferredValue,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Mail, Sun, Moon, ChevronDown, ArrowUp, ArrowDown, Leaf, Building2, HardHat, MapPin, Calendar } from 'lucide-react';
-import { motionDuration, motionDurationFor, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
-import { projects } from '../data/projects';
+import { ArrowUpRight, Home, Mail, MapPin, Search } from 'lucide-react';
+import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+import { projects, type ProjectRecord } from '../data/projects';
+import { useLenis } from '../components/SmoothScrollProvider';
+import { useLocale, type Locale } from '../i18n';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function ProjectStartCue({
-  index,
-  align = 'left',
-  className = '',
-}: {
-  index: string;
-  align?: 'left' | 'right';
-  className?: string;
-}) {
-  const isRight = align === 'right';
+const inferCategory = (project: ProjectRecord, locale: Locale) => {
+  const text = `${project.title} ${project.scope} ${project.menuTitle}`.toLowerCase();
+  if (text.includes('villa')) return locale === 'fr' ? 'Villas' : 'Villas';
+  if (text.includes('commercial') || text.includes('mixed')) return locale === 'fr' ? 'Usage mixte' : 'Mixed Use';
+  if (text.includes('network') || text.includes('road')) return locale === 'fr' ? 'Infrastructure' : 'Infrastructure';
+  return locale === 'fr' ? 'Logement' : 'Housing';
+};
+
+const projectStatuses = [
+  { key: 'all', label: { en: 'All', fr: 'Tous' } },
+  { key: 'completed', label: { en: 'Completed', fr: 'Achevés' } },
+  { key: 'current', label: { en: 'Current', fr: 'En cours' } },
+] as const;
+
+type ProjectFilterKey = (typeof projectStatuses)[number]['key'];
+
+/* ─── Card: Infinity-style — image above, title + hr + tags below ─── */
+function ProjectCard({ project, index, locale }: { project: ProjectRecord; index: number; locale: Locale }) {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  const handleMouseEnter = () => {
+    if (!imgRef.current || prefersReducedMotion) return;
+    gsap.to(imgRef.current, { scale: 1.055, duration: 0.55, ease: 'power2.out' });
+  };
+
+  const handleMouseLeave = () => {
+    if (!imgRef.current || prefersReducedMotion) return;
+    gsap.to(imgRef.current, { scale: 1, duration: 0.55, ease: 'power2.out' });
+  };
 
   return (
-    <div className={`scroll-cue flex w-[16rem] md:w-[19rem] flex-col mix-blend-multiply ${isRight ? 'items-end text-right' : 'items-start text-left'} ${className}`}>
-      <div className={`flex w-full flex-col ${isRight ? 'items-end' : 'items-start'}`}>
-        <div className="flex items-end gap-1.5 mb-1">
-          <span className="text-black font-medium text-2xl md:text-3xl leading-none">{index}</span>
-          <span className="text-black/30 text-xs mb-[0.15rem] font-bold uppercase">/ 04</span>
-        </div>
-        <div className="w-full h-[1px] bg-black/10"></div>
+    <a
+      href={`#${project.slug}`}
+      data-project-card
+      className="project-card group flex flex-col items-start w-full"
+    >
+      {/* Image — cursor expands here */}
+      <div
+        className="overflow-hidden w-full aspect-[4/3] bg-[#e8e4dc] relative"
+        data-cursor-card
+        data-cursor-label="VIEW"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <img
+          ref={imgRef}
+          src={project.images[0]}
+          alt={project.title}
+          className="h-full w-full object-cover will-change-transform"
+        />
       </div>
 
-      <div className={`mt-4 flex items-center gap-3 ${isRight ? 'flex-row-reverse' : ''}`}>
-        <div className="scroll-cue-shell relative flex h-14 w-10 shrink-0 items-start justify-center rounded-full border border-black/15 bg-white/60 pt-2 shadow-[0_10px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm">
-          <div className="scroll-wheel h-3.5 w-1 rounded-full bg-[#e82a2e]"></div>
-          <div className="absolute -bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[#e82a2e]">
-            <ChevronDown className="scroll-arrow h-3.5 w-3.5" strokeWidth={2.2} />
-            <ChevronDown className="scroll-arrow -mt-1.5 h-3.5 w-3.5 opacity-60" strokeWidth={2.2} />
-          </div>
-        </div>
-
-        <div className={isRight ? 'text-right' : 'text-left'}>
-          <span className="block text-black/45 text-[8px] md:text-[9px] uppercase tracking-[0.22em] font-bold">Scroll to explore</span>
-          <span className="block text-black/30 text-[9px] md:text-[10px] italic tracking-[0.04em] mt-1">Scroll or use arrow keys</span>
-          <div className={`mt-2 flex items-center gap-1.5 ${isRight ? 'justify-end' : 'justify-start'}`} aria-hidden="true">
-            <span className="scroll-key flex h-6 w-6 items-center justify-center rounded-[6px] border border-black/10 bg-white/70 text-[#e82a2e] shadow-sm">
-              <ArrowUp className="h-3 w-3" strokeWidth={2.2} />
-            </span>
-            <span className="scroll-key flex h-6 w-6 items-center justify-center rounded-[6px] border border-black/10 bg-white/70 text-[#e82a2e] shadow-sm">
-              <ArrowDown className="h-3 w-3" strokeWidth={2.2} />
-            </span>
-          </div>
+      {/* Info block */}
+      <div className="w-full pt-4 pb-8">
+        <h3 className="text-2xl leading-[1.2] text-[#c22026] transition-colors group-hover:text-[#9a1a1e] md:text-3xl">
+          {project.title}
+        </h3>
+        <hr className="mt-2 mb-3 border-black/12" />
+        <div className="flex items-center justify-between gap-4">
+          <span className="text-[11px] text-black/55">
+            {inferCategory(project, locale)}, {project.location}
+          </span>
+          <span className="text-[11px] font-medium text-black underline-offset-2 transition-colors group-hover:text-[#c22026]">
+            {locale === 'fr' ? 'Lire la suite' : 'Read More'}
+          </span>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
+/* ─── Chapter: full-screen detail row — unchanged ─── */
+function ProjectChapter({
+  project,
+  index,
+  isActive,
+  locale,
+}: {
+  project: ProjectRecord;
+  index: number;
+  isActive: boolean;
+  locale: Locale;
+}) {
+  const reverse = index % 2 === 1;
+
+  return (
+    <article
+      id={project.slug}
+      data-project-row
+      className="project-row relative grid min-h-[100dvh] items-center gap-10 border-t border-black/10 px-6 py-16 md:grid-cols-12 md:px-12 lg:px-20"
+    >
+      <div className={`project-copy relative z-10 md:col-span-4 ${reverse ? 'md:col-start-8' : ''}`}>
+        <div className="mb-6 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#c22026]">
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <span className="h-px w-10 bg-[#c22026]/50" />
+          <span>{project.chapterLabel}</span>
+        </div>
+
+        <h2 className="font-serif text-[2.7rem] uppercase leading-[0.92] tracking-[-0.06em] text-[#111] md:text-[4.4rem]">
+          {project.coverLines[0]}
+          <br />
+          {project.coverLines[1]}
+        </h2>
+
+        <p className="mt-6 max-w-md text-sm leading-7 text-black/62 md:text-base">
+          {project.summary}
+        </p>
+
+        <div className="mt-8 grid gap-3 border-y border-black/10 py-5 text-[11px] uppercase tracking-[0.18em] text-black/52">
+          <span className="flex items-center gap-2">
+            <MapPin className="h-4 w-4 text-[#c22026]" strokeWidth={2} />
+            {project.location}
+          </span>
+          <span>{project.scope}</span>
+        </div>
+
+        <div className="mt-8 flex items-center gap-4">
+          <a
+            href={`#${project.slug}`}
+            className="inline-flex items-center gap-2 border border-black/15 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#111] transition-colors duration-300 hover:border-[#c22026] hover:text-[#c22026]"
+          >
+            {locale === 'fr' ? 'Voir le chapitre' : 'View Chapter'}
+            <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
+          </a>
+          <span className="text-[11px] uppercase tracking-[0.2em] text-black/35">
+            {project.status === 'current'
+              ? locale === 'fr' ? 'Livraison en cours' : 'Live Delivery'
+              : locale === 'fr' ? 'Livraison achevée' : 'Completed Delivery'}
+          </span>
+        </div>
+      </div>
+
+      <div className={`project-media relative md:col-span-7 ${reverse ? 'md:col-start-1 md:row-start-1' : 'md:col-start-6'}`}>
+        <div className="relative overflow-hidden rounded-[2rem] bg-[#f5f3ef] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+          <div
+            className="parallax-media aspect-[4/5] overflow-hidden md:aspect-[5/4]"
+            data-cursor-card
+            data-cursor-label="CHAPTER"
+          >
+            <img src={project.images[0]} alt={project.title} className="h-full w-full object-cover" />
+          </div>
+
+          <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-6 bg-gradient-to-t from-black/65 via-black/15 to-transparent px-6 py-6 md:px-8">
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/62">
+                {project.menuTitle}
+              </p>
+              <p className="mt-2 max-w-sm text-sm leading-6 text-white/88">
+                {project.details}
+              </p>
+            </div>
+            <div
+              className={`hidden h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm md:flex ${
+                isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-60'
+              } transition-all duration-500`}
+            >
+              <ArrowUpRight className="h-5 w-5" strokeWidth={2} />
+            </div>
+          </div>
+        </div>
+
+        <div className={`project-detail-card absolute -bottom-10 ${reverse ? 'left-6 md:left-auto md:right-10' : 'right-6 md:right-auto md:left-10'} w-[18rem] max-w-[calc(100%-3rem)] border border-black/10 bg-white/92 p-5 backdrop-blur-md shadow-[0_18px_48px_rgba(0,0,0,0.1)]`}>
+          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#c22026]">{locale === 'fr' ? 'Périmètre du projet' : 'Project Scope'}</p>
+          <p className="mt-3 text-sm leading-6 text-black/70">{project.scope}</p>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+/* ─── Page ─── */
 export default function Projects() {
   const location = useLocation();
+  const lenis = useLenis();
+  const { locale } = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
-  const projectNameRef = useRef<HTMLSpanElement>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(true);
+  const gridRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const menuTl = useRef<gsap.core.Timeline>();
-  const firstProject = projects[0];
-  const secondProject = projects[1];
-  const thirdProject = projects[2];
-  const fourthProject = projects[4];
-  const showcasedProjects = [firstProject, secondProject, thirdProject, fourthProject];
 
-  const getProjectIndexFromSlug = (slug: string) => {
-    if (slug === firstProject.slug) return 0;
-    if (slug === secondProject.slug) return 1;
-    if (slug === thirdProject.slug) return 2;
-    if (slug === fourthProject.slug) return 3;
-    return 0;
-  };
+  const [activeFilter, setActiveFilter] = useState<ProjectFilterKey>('all');
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [activePreviewSlug, setActivePreviewSlug] = useState(projects[0]?.slug ?? '');
+  const deferredSearchQuery = useDeferredValue(searchQuery);
 
-  const getProjectProgress = (index: number) => {
-    if (index === 1) return 30.5 / 79;
-    if (index === 2) return 47.5 / 79;
-    if (index === 3) return 64.5 / 79;
-    return 0;
-  };
+  const projectCategories = useMemo(
+    () => ['All', ...Array.from(new Set(projects.map((p) => inferCategory(p, locale))))],
+    [locale],
+  );
 
-  const goToProject = (index: number, behavior: ScrollBehavior = 'smooth') => {
-    const scrollHeight = document.body.scrollHeight - window.innerHeight;
-    window.scrollTo({
-      top: scrollHeight * getProjectProgress(index),
-      behavior,
+  const visibleProjects = useMemo(() => {
+    const normalized = deferredSearchQuery.trim().toLowerCase();
+    return projects.filter((project) => {
+      const filterMatch = activeFilter === 'all' || project.status === activeFilter;
+      const categoryMatch = activeCategory === 'All' || inferCategory(project, locale) === activeCategory;
+      const textMatch =
+        normalized.length === 0 ||
+        [project.title, project.menuTitle, project.location, project.summary, project.scope]
+          .join(' ')
+          .toLowerCase()
+          .includes(normalized);
+      return filterMatch && categoryMatch && textMatch;
     });
-  };
+  }, [activeCategory, activeFilter, deferredSearchQuery, locale]);
 
-  useGSAP(() => {
-    if (prefersReducedMotion) {
-      gsap.set(['.bg-image', '.top-header', '.title-serif', '.title-script', '.bottom-menu', '.scroll-cue', '.scroll-cue-shell', '.scroll-wheel', '.scroll-arrow', '.scroll-key'], {
-        clearProps: 'all',
-        opacity: 1,
-        x: 0,
-        y: 0,
-        scale: 1,
-      });
-      return;
-    }
+  // Reset category selection when the locale changes so the localized labels stay in sync.
+  useEffect(() => {
+    setActiveCategory('All');
+  }, [locale]);
 
-    const tl = gsap.timeline();
-
-    gsap.set('.bg-image', { scale: 1.1 });
-    gsap.set(['.top-header', '.title-serif', '.title-script', '.bottom-menu'], { 
-      y: 30, 
-      opacity: 0 
-    });
-    gsap.set('.content-canvas', {
-      opacity: 0.42
-    });
-    gsap.set('.scroll-cue', {
-      y: 22,
-      opacity: 0
-    });
-
-    tl.to('.bg-image', {
-      scale: 1,
-      duration: motionDurationFor(2.6),
-      ease: motionEase.soft
-    })
-    .to('.top-header', {
-      y: 0,
-      opacity: 1,
-      duration: motionDuration.hero,
-      ease: motionEase.soft
-    }, '-=2.5')
-    .to('.title-serif', {
-      y: 0,
-      opacity: 1,
-      duration: motionDuration.slow,
-      ease: motionEase.smooth
-    }, '-=2.0')
-    .to('.title-script', {
-      y: 0,
-      opacity: 1,
-      duration: motionDuration.slow,
-      ease: motionEase.smooth
-    }, '-=1.6')
-    .to('.bottom-menu', {
-      y: 0,
-      opacity: 1,
-      duration: motionDuration.hero,
-      ease: motionEase.soft
-    }, '-=1.2')
-    .to('.scroll-cue', {
-      y: 0,
-      opacity: 1,
-      duration: motionDuration.hero,
-      ease: motionEase.soft
-    }, '-=1.2');
-
-    gsap.timeline({
-      repeat: -1,
-      defaults: {
-        ease: 'power2.inOut'
-      }
-    })
-      .to('.scroll-cue-shell', {
-        y: 8,
-        duration: 1.2,
-        yoyo: true,
-        repeat: 1
-      }, 0)
-      .fromTo('.scroll-wheel',
-        { y: 0, opacity: 1 },
-        { y: 12, opacity: 0, duration: 0.9, ease: 'power2.in' },
-        0.15
-      )
-      .set('.scroll-wheel', { y: -4, opacity: 0 }, 1.08)
-      .to('.scroll-wheel', { y: 0, opacity: 1, duration: 0.28 }, 1.14)
-      .to('.scroll-arrow', {
-        y: 8,
-        opacity: 0.3,
-        stagger: 0.08,
-        duration: 0.45,
-        yoyo: true,
-        repeat: 1
-      }, 0.2)
-      .to('.scroll-key', {
-        y: 5,
-        opacity: 0.55,
-        stagger: 0.12,
-        duration: 0.55,
-        yoyo: true,
-        repeat: 1
-      }, 0.1);
-
-    gsap.fromTo('.scroll-cue-home',
-      { opacity: 1, y: 0 },
-      {
-        opacity: 0,
-        y: -16,
-        ease: 'power2.out',
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: '.scroll-container',
-          start: 'top top',
-          end: '+=900',
-          scrub: true
-        }
-      }
-    );
-
-    // Project dropdown timeline
-    gsap.set('.project-dropdown', { y: 18, opacity: 0, scale: 0.96, pointerEvents: 'none', transformOrigin: '50% 100%' });
-    gsap.set('.project-dropdown-item', { y: 10, opacity: 0 });
-    gsap.set('.project-menu-chevron', { rotate: 0 });
-    menuTl.current = gsap.timeline({ paused: true })
-      .to('.project-dropdown', {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        pointerEvents: 'auto',
-        duration: motionDuration.hover,
-        ease: motionEase.soft
-      })
-      .to('.project-menu-chevron', {
-        rotate: 180,
-        duration: motionDuration.hover,
-        ease: motionEase.soft
-      }, 0)
-      .to('.project-dropdown-item', {
-        y: 0,
-        opacity: 1,
-        stagger: motionStagger.standard,
-        duration: motionDuration.hover,
-        ease: motionEase.soft
-      }, '-=0.18');
-
-    // Scroll animation
-    const scrollTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.scroll-container',
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 2.9,
-        onUpdate: (self) => {
-          let currentProject = firstProject.menuTitle;
-          if (self.progress > 0.81) currentProject = fourthProject.menuTitle;
-          else if (self.progress > 0.6) currentProject = thirdProject.menuTitle;
-          else if (self.progress > 0.38) currentProject = secondProject.menuTitle;
-          if (projectNameRef.current) projectNameRef.current.innerText = currentProject;
-        }
-      }
-    });
-
-    scrollTl
-      // === PROJECT 1 ===
-      .to('.top-header', {
-        x: '8vw',
-        ease: 'power1.inOut',
-        duration: 1.35
-      }, 0)
-      .to('.top-header', {
-        opacity: 0,
-        ease: 'power1.out',
-        duration: 1.9
-      }, 0.35)
-      .to('.content-canvas', {
-        x: '-50vw',
-        ease: 'power1.inOut',
-        duration: 2
-      }, 0)
-      .to('.content-canvas', {
-        opacity: 1,
-        ease: 'power1.out',
-        duration: 1.85
-      }, 0.15)
-      .to('.title-content', {
-        x: '-60vw',
-        ease: 'power1.inOut',
-        duration: 2
-      }, 0)
-      .to('.title-content', {
-        opacity: 0,
-        ease: 'power1.out',
-        duration: 2.25
-      }, 0.55)
-      .to('.content-canvas', {
-        x: '-100vw',
-        ease: 'power1.inOut',
-        duration: 2
-      }, 2)
-      // Paris Commercial Element Animations (replaces diagonal scroll)
-      .fromTo('.p-anim-redline', { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 1, ease: 'power2.out' }, 2.5)
-      .fromTo('.p-anim-title', { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 1.5, ease: 'power3.out' }, 2.8)
-      .fromTo('.p-anim-stat', { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 1, ease: 'power2.out' }, 3.2)
-      .fromTo('.p-anim-quote', { x: -30, opacity: 0 }, { x: 0, opacity: 1, duration: 1.5, ease: 'power2.out' }, 3.5)
-      .fromTo('.p-anim-img', { scale: 1.05, opacity: 0 }, { scale: 1, opacity: 1, duration: 2, ease: 'power2.out' }, 3.8)
-      .fromTo('.p-anim-green', { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 1.5, ease: 'power2.out' }, 4)
-
-      .to('.diagonal-container', {
-        x: '-80vw',
-        y: '-80vh',
-        ease: 'none',
-        duration: 2.28
-      }, 5)
-      .to('.diagonal-container', {
-        x: '-280vw',
-        y: '-80vh',
-        ease: 'none',
-        duration: 5.72
-      }, 7.28)
-      .to('.project-photos-header', {
-        x: '200vw',
-        ease: 'none',
-        duration: 5.72
-      }, 7.28)
-      .to('.diagonal-container', {
-        x: '-500vw',
-        y: '-300vh',
-        ease: 'none',
-        duration: 6.29
-      }, 13.0)
-      .to('.diagonal-container', {
-        x: '-700vw',
-        ease: 'none',
-        duration: 5.71
-      }, 19.29)
-
-      // PAUSE on P1 ending slide
-      .to('.panel-1-final-img', {
-        scale: 1.035,
-        ease: 'none',
-        duration: 3
-      }, 25.0)
-
-      // === TRANSITION P1 -> P2 ===
-      .to('.content-canvas', {
-        x: '-200vw', // slide out to left
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 28.0) // 0.5s pause after P1 ends
-      .to('.project-2-cover', {
-        x: '-100vw', // slide in from right
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 28.0)
-      
-      // === PROJECT 2 (AlgÃ©rie Tower) ===
-      .to('.project-2-canvas', {
-        x: '50vw', // slide in from left
-        ease: 'power2.inOut',
-        duration: 1.85
-      }, 31.0) // 0.5s pause after cover slides in
-      .to('.project-2-cover-title', {
-        x: '60vw',
-        opacity: 0,
-        ease: 'power2.inOut',
-        duration: 1.35
-      }, 31.0)
-      .to('.project-2-canvas', {
-        x: '100vw', // fully cover
-        ease: 'power2.inOut',
-        duration: 1.5
-      }, 32.5) // ends at 34.0
-
-      .to('.project-2-diagonal', {
-        x: '120vw', // move content right
-        y: '-120vh',
-        ease: 'none',
-        duration: 4
-      }, 34.0)
-      .to('.project-2-diagonal', {
-        x: '220vw', // further right
-        ease: 'none',
-        duration: 4
-      }, 38.0) // ends at 42.0
-
-      // PAUSE on P2 ending slide
-      .to('.panel-2-final-img', {
-        scale: 1.035,
-        ease: 'none',
-        duration: 3
-      }, 42.0)
-      
-      // === TRANSITION P2 -> P3 ===
-      .to('.project-2-canvas', {
-        x: '200vw', // slide out to right
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 45.0) // 0.5s pause after P2 ends
-      .to('.project-3-cover', {
-        x: '100vw', // slide in from left (starting at -100vw)
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 45.0)
-      
-      // === PROJECT 3 (Lyon Complex) ===
-      .to('.project-3-canvas', {
-        x: '-50vw', // slide in from right (starting at 100vw)
-        ease: 'power2.inOut',
-        duration: 1.85
-      }, 48.0) // 0.5s pause on P3 cover
-      .to('.project-3-cover-title', {
-        x: '-60vw',
-        opacity: 0,
-        ease: 'power2.inOut',
-        duration: 1.35
-      }, 48.0)
-      .to('.project-3-canvas', {
-        x: '-100vw', // fully cover
-        ease: 'power2.inOut',
-        duration: 1.5
-      }, 49.5) // ends at 51.0
-
-      .to('.project-3-diagonal', {
-        x: '-120vw', // move content left
-        y: '-120vh',
-        ease: 'none',
-        duration: 4
-      }, 51.0)
-      .to('.project-3-diagonal', {
-        x: '-220vw', // further left
-        ease: 'none',
-        duration: 4
-      }, 55.0) // ends at 59.0
-
-      // PAUSE on P3 ending slide
-      .to('.panel-3-final-img', {
-        scale: 1.035,
-        ease: 'none',
-        duration: 3
-      }, 59.0)
-
-      // === TRANSITION P3 -> P4 ===
-      .to('.project-3-canvas', {
-        x: '-200vw',
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 62.0)
-      .to('.project-4-cover', {
-        x: '-100vw',
-        ease: 'power2.inOut',
-        duration: 2.2
-      }, 62.0)
-
-      // === PROJECT 4 (Said Hamdine) ===
-      .to('.project-4-canvas', {
-        x: '50vw',
-        ease: 'power2.inOut',
-        duration: 1.85
-      }, 65.0)
-      .to('.project-4-cover-title', {
-        x: '60vw',
-        opacity: 0,
-        ease: 'power2.inOut',
-        duration: 1.35
-      }, 65.0)
-      .to('.project-4-canvas', {
-        x: '100vw',
-        ease: 'power2.inOut',
-        duration: 1.5
-      }, 66.5)
-      .to('.project-4-diagonal', {
-        x: '120vw',
-        y: '-120vh',
-        ease: 'none',
-        duration: 4
-      }, 68.0)
-      .to('.project-4-diagonal', {
-        x: '220vw',
-        ease: 'none',
-        duration: 4
-      }, 72.0)
-      .to('.panel-4-final-img', {
-        scale: 1.035,
-        ease: 'none',
-        duration: 3
-      }, 76.0); // ends at 79.0
-
-  }, { scope: containerRef, dependencies: [prefersReducedMotion] });
+  const activePreviewProject =
+    visibleProjects.find((p) => p.slug === activePreviewSlug) ?? visibleProjects[0] ?? projects[0];
 
   useEffect(() => {
-    if (prefersReducedMotion) return;
-    if (menuOpen) {
-      menuTl.current?.play();
-    } else {
-      menuTl.current?.reverse();
+    if (!visibleProjects.some((p) => p.slug === activePreviewSlug)) {
+      setActivePreviewSlug(visibleProjects[0]?.slug ?? projects[0]?.slug ?? '');
     }
-  }, [menuOpen, prefersReducedMotion]);
-
-  const scrollToProject = (index: number) => {
-    setMenuOpen(false);
-    
-    // We delay the scroll by a small amount to allow the menu animation to start closing
-    setTimeout(() => {
-      goToProject(index, prefersReducedMotion ? 'auto' : 'smooth');
-    }, 400); 
-  };
+  }, [activePreviewSlug, visibleProjects]);
 
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-
     const slug = location.hash.replace('#', '');
-    const behavior = prefersReducedMotion ? 'auto' : 'auto';
-
-    const syncScroll = () => {
-      if (!slug) {
-        window.scrollTo({ top: 0, behavior });
-        return;
+    if (!slug) {
+      if (lenis) {
+        lenis.scrollTo(0, { immediate: true, force: true });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'auto' });
       }
-
-      goToProject(getProjectIndexFromSlug(slug), behavior);
-    };
-
-    syncScroll();
-
-    return undefined;
-  }, [location.key, location.hash, prefersReducedMotion]);
-
-  useEffect(() => {
-    if (isLightMode) {
-      document.documentElement.classList.add('theme-light');
-    } else {
-      document.documentElement.classList.remove('theme-light');
+      return;
     }
-  }, [isLightMode]);
+    const target = document.getElementById(slug);
+    if (!target) return;
+    requestAnimationFrame(() => {
+      if (lenis && !prefersReducedMotion) {
+        lenis.scrollTo(target, { offset: -90 });
+      } else {
+        target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+      }
+    });
+  }, [lenis, location.hash, location.key, prefersReducedMotion, visibleProjects.length]);
 
+  /* Re-animate grid on filter change */
   useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (menuOpen || (event.target instanceof HTMLElement && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName))) {
-        return;
+    if (prefersReducedMotion) return;
+    const cards = gridRef.current?.querySelectorAll<HTMLElement>('[data-project-card]');
+    if (!cards?.length) return;
+    gsap.fromTo(
+      cards,
+      { opacity: 0, y: 32, scale: 0.97 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: motionDuration.section,
+        ease: motionEase.soft,
+        stagger: 0.055,
+        overwrite: 'auto',
+      },
+    );
+  }, [activeCategory, activeFilter, deferredSearchQuery, prefersReducedMotion, visibleProjects]);
+
+  useGSAP(() => {
+    ScrollTrigger.getAll().forEach((t) => t.kill());
+
+    if (prefersReducedMotion) {
+      gsap.set(
+        '[data-hero-line], .project-row, .project-copy, .project-media, .project-detail-card, .project-dock',
+        { clearProps: 'all', opacity: 1, y: 0, x: 0 },
+      );
+      return;
+    }
+
+    /* Hero reveal */
+    gsap
+      .timeline()
+      .fromTo(
+        '[data-hero-line]',
+        { yPercent: 115, opacity: 0 },
+        {
+          yPercent: 0,
+          opacity: 1,
+          duration: motionDuration.hero,
+          stagger: motionStagger.tight,
+          ease: motionEase.expo,
+        },
+        0,
+      )
+      .fromTo(
+        '.hero-sub, .hero-search, .hero-categories, .hero-count',
+        { opacity: 0, y: 22 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motionDuration.section,
+          stagger: 0.07,
+          ease: motionEase.soft,
+        },
+        0.4,
+      );
+
+    /* Grid cards scroll reveal */
+    gsap.utils.toArray<HTMLElement>('[data-project-card]').forEach((card, i) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 44 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motionDuration.section,
+          ease: motionEase.soft,
+          delay: i * 0.04,
+          scrollTrigger: { trigger: card, start: 'top 86%' },
+        },
+      );
+    });
+
+    /* Chapter rows */
+    gsap.utils.toArray<HTMLElement>('.project-row').forEach((row) => {
+      const copy = row.querySelector('.project-copy');
+      const media = row.querySelector('.project-media');
+      const detail = row.querySelector('.project-detail-card');
+      const mediaInner = row.querySelector('.parallax-media img');
+      const slug = row.id;
+
+      gsap.fromTo(
+        [copy, media],
+        { opacity: 0, y: 60 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motionDuration.hero,
+          stagger: 0.12,
+          ease: motionEase.soft,
+          scrollTrigger: { trigger: row, start: 'top 75%' },
+        },
+      );
+
+      if (detail) {
+        gsap.fromTo(
+          detail,
+          { opacity: 0, y: 24 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: motionDuration.section,
+            ease: motionEase.soft,
+            scrollTrigger: { trigger: row, start: 'top 68%' },
+          },
+        );
       }
 
-      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
-        return;
+      if (mediaInner) {
+        gsap.fromTo(
+          mediaInner,
+          { yPercent: -6, scale: 1.08 },
+          {
+            yPercent: 6,
+            scale: 1,
+            ease: 'none',
+            scrollTrigger: { trigger: row, start: 'top bottom', end: 'bottom top', scrub: true },
+          },
+        );
       }
 
-      event.preventDefault();
-      window.scrollBy({
-        top: window.innerHeight * (event.key === 'ArrowDown' ? 0.72 : -0.72),
-        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+      ScrollTrigger.create({
+        trigger: row,
+        start: 'top center',
+        end: 'bottom center',
+        onEnter: () => setActivePreviewSlug(slug),
+        onEnterBack: () => setActivePreviewSlug(slug),
       });
-    };
+    });
 
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [menuOpen, prefersReducedMotion]);
+    /* Dock progress */
+    gsap.to('.project-dock-progress', {
+      scaleX: 1,
+      ease: 'none',
+      transformOrigin: 'left center',
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+      },
+    });
+  }, { scope: containerRef, dependencies: [prefersReducedMotion, visibleProjects] });
 
   return (
-    <main className="bg-black text-white w-full relative scroll-container h-[10000vh]" ref={containerRef}>
-      
-      {/* Fixed Bottom Menu */}
-      <div className={`bottom-menu fixed bottom-0 left-1/2 -translate-x-1/2 w-full z-[40] pb-6 md:pb-10 px-4 pointer-events-auto flex items-center justify-center ${isLightMode ? 'max-w-[560px] md:max-w-[650px] gap-0' : 'max-w-[560px] md:max-w-[650px] gap-2'}`}>
-        <div
-          id="project-dropdown-menu"
-          aria-hidden={!menuOpen}
-          className={`project-dropdown absolute bottom-[calc(100%+12px)] left-4 right-4 md:left-1/2 md:right-auto md:w-[620px] md:-translate-x-1/2 bg-white/96 text-black backdrop-blur-2xl border border-black/10 rounded-[22px] shadow-[0_24px_70px_rgba(0,0,0,0.18)] overflow-hidden ${menuOpen ? 'opacity-100 pointer-events-auto translate-y-0 scale-100' : 'opacity-0 pointer-events-none translate-y-4 scale-[0.96]'}`}
-        >
-          <div className="flex items-center justify-between border-b border-black/10 px-5 py-4">
-            <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#e82a2e]">Project List</span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/35">Select</span>
-          </div>
-          <div className="p-2">
-            {showcasedProjects.map((project, index) => (
-              <button
-                key={project.slug}
-                onClick={() => scrollToProject(index)}
-                tabIndex={menuOpen ? 0 : -1}
-                className="project-dropdown-item group w-full flex items-center gap-3 rounded-[16px] px-2.5 py-2.5 text-left transition-colors hover:bg-[#f3f3f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/40"
+    <main ref={containerRef} className="min-h-screen overflow-x-hidden bg-white text-[#111]">
+
+      {/* ── Fixed nav ── */}
+      {/* ── Hero — 2-col split ── */}
+      <section className="relative overflow-hidden border-b border-black/8 bg-white px-6 pt-36 pb-16 md:px-12 md:pt-44 md:pb-24 lg:px-20">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-end">
+
+          {/* Left: giant red title */}
+          <div>
+            <div className="overflow-hidden">
+              <p
+                data-hero-line
+                className="font-serif text-[18vw] uppercase leading-[0.85] tracking-[-0.06em] text-[#c22026] md:text-[7.5rem] lg:text-[10rem]"
               >
-                <span className="relative h-14 w-[74px] md:h-[64px] md:w-[96px] shrink-0 overflow-hidden rounded-[14px] bg-black/5 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]">
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <span className="absolute left-2 top-2 flex h-6 min-w-6 items-center justify-center rounded-full border border-white/60 bg-white/90 px-1.5 text-[9px] font-bold text-black/60 shadow-sm group-hover:border-[#e82a2e]/30 group-hover:text-[#e82a2e]">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate text-[12px] md:text-[13px] font-bold uppercase tracking-[0.16em] text-black group-hover:text-[#e82a2e]">
-                    {project.menuTitle}
-                  </span>
-                  <span className="mt-1 block truncate text-[11px] text-black/45">
-                    {project.scope}
-                  </span>
-                </span>
-                <ChevronDown className="-rotate-90 h-4 w-4 shrink-0 text-black/25 transition-colors group-hover:text-[#e82a2e]" strokeWidth={2} />
+                {locale === 'fr' ? 'Nos' : 'Our'}
+              </p>
+            </div>
+            <div className="overflow-hidden">
+              <p
+                data-hero-line
+                className="font-serif text-[18vw] uppercase leading-[0.85] tracking-[-0.06em] text-[#c22026] md:text-[7.5rem] lg:text-[10rem]"
+              >
+                {locale === 'fr' ? 'Projets' : 'Projects'}
+              </p>
+            </div>
+          </div>
+
+          {/* Right: description */}
+          <div className="hero-sub lg:pb-4">
+            <p className="text-base leading-8 text-black/62 md:text-lg md:leading-9">
+              {locale === 'fr' ? (
+                <>
+                  Nous réalisons des programmes résidentiels et à usage mixte dans toute l'Algérie.
+                  Nos secteurs couvrent le{' '}
+                  <strong className="font-semibold text-black/82">logement</strong>, les{' '}
+                  <strong className="font-semibold text-black/82">villas</strong>, l'{' '}
+                  <strong className="font-semibold text-black/82">usage mixte</strong> et les{' '}
+                  <strong className="font-semibold text-black/82">infrastructures</strong> — chaque projet
+                  conçu pour durer et pensé pour inspirer.
+                </>
+              ) : (
+                <>
+                  We deliver residential and mixed-use programmes across Algeria.
+                  Our sectors include{' '}
+                  <strong className="font-semibold text-black/82">Housing</strong>,{' '}
+                  <strong className="font-semibold text-black/82">Villas</strong>,{' '}
+                  <strong className="font-semibold text-black/82">Mixed Use</strong>, and{' '}
+                  <strong className="font-semibold text-black/82">Infrastructure</strong> — each project
+                  built to endure and designed to inspire.
+                </>
+              )}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="#projects-grid"
+                className="inline-flex items-center gap-2 bg-[#111] px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-[#c22026]"
+              >
+                {locale === 'fr' ? 'Parcourir les projets' : 'Browse Projects'}
+                <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-black/15 px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
+              >
+                {locale === 'fr' ? 'Contact' : 'Contact'}
+                <Mail className="h-4 w-4" strokeWidth={2} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Sticky filter bar ── */}
+      <section
+        id="projects-grid"
+        className="sticky top-[84px] z-40 border-b border-black/8 bg-white/95 px-6 py-4 backdrop-blur-md md:top-[92px] md:px-12 lg:px-20"
+      >
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+          {/* Search */}
+          <label className="hero-search group flex max-w-xs items-center gap-2 border-b border-black/15 pb-1 transition-colors focus-within:border-[#c22026]">
+            <Search className="h-3.5 w-3.5 shrink-0 text-black/35 transition-colors group-focus-within:text-[#c22026]" strokeWidth={2} />
+            <input
+              value={searchQuery}
+              onChange={(e) => startTransition(() => setSearchQuery(e.target.value))}
+              placeholder={locale === 'fr' ? 'Rechercher des projets…' : 'Search projects...'}
+              className="w-full bg-transparent text-sm text-[#111] outline-none placeholder:text-black/30"
+            />
+          </label>
+
+          {/* Category + status pills */}
+          <div className="hero-categories flex flex-wrap items-center gap-2">
+            {projectCategories.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => startTransition(() => setActiveCategory(cat))}
+                className={`border px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
+                  cat === activeCategory
+                    ? 'border-[#c22026] bg-[#c22026] text-white'
+                    : 'border-black/12 text-black/62 hover:border-[#c22026] hover:text-[#c22026]'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+            <span className="hidden h-4 w-px bg-black/12 md:block" />
+            {projectStatuses.map((s) => (
+              <button
+                key={s.key}
+                type="button"
+                onClick={() => startTransition(() => setActiveFilter(s.key))}
+                className={`border px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
+                  s.key === activeFilter
+                    ? 'border-[#111] bg-[#111] text-white'
+                    : 'border-black/12 text-black/62 hover:border-[#c22026] hover:text-[#c22026]'
+                }`}
+              >
+                {s.label[locale]}
               </button>
             ))}
           </div>
-        </div>
-        
-        {isLightMode ? (
-          <div className="flex items-center w-full bg-[#f9f9f9]/95 backdrop-blur-xl shadow-[0px_10px_30px_rgba(0,0,0,0.06)] rounded-full px-2 py-2 border border-black/5">
-             <Link to="/" className="h-10 md:h-11 px-3 md:px-5 flex items-center justify-center gap-2 text-black hover:text-[#e82a2e] transition-colors shrink-0 rounded-full">
-               <Home className="w-[16px] h-[16px] md:w-[18px] md:h-[18px]" strokeWidth={1.5} />
-               <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Home</span>
-             </Link>
-             
-             <div className="flex-1 px-2 border-l border-r border-black/10 mx-2">
-                 <button 
-                  onClick={() => setMenuOpen((open) => !open)}
-                  aria-expanded={menuOpen}
-                  aria-controls="project-dropdown-menu"
-                  className="w-full h-10 md:h-11 px-2 md:px-4 flex items-center justify-center gap-2 text-black transition-colors uppercase tracking-[0.1em] text-[8.5px] md:text-[10px] font-bold font-sans cursor-pointer hover:text-[#e82a2e] rounded-full hover:bg-black/[0.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/35"
-                 >
-                    <span className="hidden md:inline text-black/40 tracking-[0.16em]">Project:</span>
-                    <span className="text-center whitespace-nowrap overflow-hidden text-ellipsis pt-[1px] text-[9px] md:text-[10px] tracking-[0.14em]" ref={projectNameRef}>Douaouda Housing</span>
-                    <ChevronDown className="project-menu-chevron h-3.5 w-3.5 shrink-0 text-[#e82a2e]" strokeWidth={2.25} />
-                 </button>
-             </div>
 
-             <Link to="/contact" className="h-10 md:h-11 px-3 md:px-5 flex items-center justify-center gap-2 text-black hover:text-[#e82a2e] transition-colors shrink-0 rounded-full">
-               <Mail className="w-[16px] h-[16px] md:w-[18px] md:h-[18px]" strokeWidth={1.5} />
-               <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Contact</span>
-             </Link>
+          <span className="hero-count text-[10px] font-bold uppercase tracking-[0.24em] text-black/38 md:ml-auto md:shrink-0">
+            {visibleProjects.length} {visibleProjects.length === 1 ? (locale === 'fr' ? 'Projet' : 'Project') : (locale === 'fr' ? 'Projets' : 'Projects')}
+          </span>
+        </div>
+      </section>
+
+      {/* ── 3-column project grid ── */}
+      <section className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
+        {visibleProjects.length > 0 ? (
+          <div ref={gridRef} className="grid gap-x-8 gap-y-0 sm:grid-cols-2 lg:grid-cols-3">
+            {visibleProjects.map((project, index) => (
+              <React.Fragment key={project.slug}>
+                <ProjectCard project={project} index={index} locale={locale} />
+              </React.Fragment>
+            ))}
           </div>
         ) : (
-          <>
-            <Link to="/" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 px-4 md:px-5 flex items-center justify-center gap-2 hover:bg-black hover:text-[#e82a2e] transition-colors rounded-full shrink-0 cursor-pointer">
-              <Home className="w-4 h-4 md:w-5 md:h-5" />
-              <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Home</span>
-            </Link>
-            
-            <div className="flex-1 w-full max-w-[300px] md:max-w-[380px]">
-              <button 
-                onClick={() => setMenuOpen((open) => !open)}
-                aria-expanded={menuOpen}
-                aria-controls="project-dropdown-menu"
-                className="bg-[#1a1a1a]/80 backdrop-blur-md text-[#e82a2e] shadow-2xl border border-white/10 w-full h-11 md:h-12 px-4 md:px-6 flex items-center justify-center gap-2 hover:bg-black transition-colors uppercase tracking-[0.16em] text-[9px] md:text-xs font-bold font-sans rounded-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e82a2e]/45"
-              >
-                <span className="hidden md:inline text-white/40 tracking-[0.16em]">Project:</span>
-                <span className="text-white text-center min-w-0 whitespace-nowrap overflow-hidden text-ellipsis text-[9px] md:text-[11px] tracking-[0.16em]" ref={projectNameRef}>Douaouda Housing</span>
-                <ChevronDown className="project-menu-chevron h-3.5 w-3.5 shrink-0" strokeWidth={2.25} />
-              </button>
-            </div>
-
-            <Link to="/contact" className="bg-[#1a1a1a]/80 backdrop-blur-md text-white shadow-2xl border border-white/10 h-11 md:h-12 px-4 md:px-5 flex items-center justify-center gap-2 hover:bg-black hover:text-[#e82a2e] transition-colors rounded-full shrink-0 cursor-pointer">
-              <Mail className="w-4 h-4 md:w-5 md:h-5" />
-              <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-[0.16em]">Contact</span>
-            </Link>
-          </>
+          <div className="py-32 text-center">
+            <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-[#c22026]">{locale === 'fr' ? 'Aucun résultat' : 'No Match'}</p>
+            <h2 className="mt-5 font-serif text-4xl uppercase tracking-[-0.05em] text-[#111]">
+              {locale === 'fr' ? 'Aucun projet trouvé' : 'No projects found'}
+            </h2>
+            <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-black/62">
+              {locale === 'fr' ? 'Essayez un autre mot-clé ou ajustez le filtre ci-dessus.' : 'Try a different keyword or adjust the filter above.'}
+            </p>
+          </div>
         )}
+      </section>
+
+      {/* ── Section divider ── */}
+      <div className="border-t border-black/8 px-6 py-6 md:px-12 lg:px-20">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-[10px] font-bold uppercase tracking-[0.26em] text-black/30">
+          <span>{locale === 'fr' ? 'Igloo Construction · Bibliothèque de chapitres' : 'Igloo Construction · Chapter Library'}</span>
+          <span>{locale === 'fr' ? `${visibleProjects.length} chapitres détaillés ci-dessous` : `${visibleProjects.length} detailed chapters below`}</span>
+        </div>
       </div>
 
-      <div className="w-full h-[100dvh] overflow-hidden sticky top-0">
-      
-        <div className="relative w-full h-full">
-          {/* Background Image */}
-          <div className="bg-image absolute inset-0 z-0 overflow-hidden">
-            {isLightMode ? (
-              <div className="absolute inset-0 z-10 bg-[#f8f9fa]">
-                 <div className="absolute top-0 right-0 w-full md:w-[75%] h-full pointer-events-none opacity-90">
-                    <div className="absolute top-0 bottom-0 left-0 w-[60vw] md:w-[45vw] bg-gradient-to-r from-[#f8f9fa] via-[#f8f9fa]/95 to-transparent z-10"></div>
-                    <img src={firstProject.images[0]} className="w-full h-full object-cover object-right md:object-left mix-blend-multiply" alt={firstProject.title}/>
-                 </div>
-              </div>
-            ) : (
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://infinityconstructions.com.au/wp-content/uploads/2023/11/infinity-home-banner-01.webp")' }}>
-                <div className="absolute inset-0 bg-black/50"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30"></div>
-              </div>
-            )}
+      {/* ── Full-screen chapter detail rows ── */}
+      <section id="projects-library" className="relative bg-[#f3f0ea]">
+        {visibleProjects.map((project, index) => (
+          <React.Fragment key={project.slug}>
+            <ProjectChapter
+              project={project}
+              index={index}
+              isActive={activePreviewProject.slug === project.slug}
+              locale={locale}
+            />
+          </React.Fragment>
+        ))}
+      </section>
+
+      {/* ── Fixed bottom dock ── */}
+      <div className="project-dock pointer-events-none fixed inset-x-0 bottom-4 z-[70] px-4 md:px-8">
+        <div className="pointer-events-auto mx-auto flex max-w-6xl flex-col gap-4 border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_45px_rgba(0,0,0,0.08)] backdrop-blur-xl md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-4">
+            <Link
+              to="/"
+              className="inline-flex h-11 w-11 items-center justify-center border border-black/10 text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
+            >
+              <Home className="h-4 w-4" strokeWidth={2} />
+            </Link>
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-black/42">{locale === 'fr' ? 'Chapitre actuel' : 'Current Chapter'}</p>
+              <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111]">
+                {activePreviewProject.menuTitle}
+              </p>
+            </div>
           </div>
 
-          {/* Top Header */}
-          <div className={`top-header absolute top-0 left-0 w-full flex flex-col items-center pointer-events-none transition-opacity duration-300 ${isLightMode ? 'z-30 pt-6 md:pt-10' : 'z-10 pt-8 opacity-0'}`}>
-            {!isLightMode ? (
-              <>
-                <div className="w-full border-t border-b border-white/20 py-4 flex justify-between items-center px-6 md:px-24 max-w-7xl">
-                  <span className="text-[9px] md:text-xs tracking-[0.2em] uppercase text-white/80">Housing</span>
-                  <h1 className="font-serif text-3xl md:text-5xl tracking-[0.15em] text-white px-4 md:px-8 uppercase">Igloo</h1>
-                  <span className="text-[9px] md:text-xs tracking-[0.2em] uppercase text-white/80">Programme</span>
-                </div>
-                
-                <div className="mt-4 flex items-center gap-4">
-                  <span className="text-[#e82a2e] text-sm">â–</span>
-                  <span className="text-[10px] tracking-[0.2em] uppercase bg-white text-black px-4 py-1 font-bold">Douaouda Housing</span>
-                  <span className="text-[#e82a2e] text-sm">â–</span>
-                </div>
-              </>
-            ) : (
-              <div className="w-full flex justify-between items-start px-8 md:px-16 pointer-events-auto">
-                 <div className="w-24 md:w-32 flex flex-col items-start shrink-0 pt-2 -ml-2 mix-blend-multiply opacity-90">
-                    <img src="https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png" alt="igloo" className="w-full object-contain" />
-                 </div>
-                 
-                 <div className="flex flex-col items-center">
-                    <h1 className="font-serif text-[1.75rem] md:text-[2.2rem] tracking-[0.2em] text-black uppercase mb-3 mr-[-0.2em] font-medium">Igloo</h1>
-                    <div className="flex items-center gap-3">
-                       <div className="w-1.5 h-1.5 bg-[#e82a2e] rotate-45 border border-[#e82a2e]/20 outline outline-1 outline-offset-[1px] outline-black/5"></div>
-                       <div className="bg-[#fcfcfc] border border-black/5 shadow-[0px_2px_8px_rgba(0,0,0,0.04)] px-5 py-[5px]">
-                        <span className="text-[7.5px] md:text-[8.5px] tracking-[0.2em] uppercase font-bold text-black" style={{ wordSpacing: "1px" }}>{firstProject.menuTitle}</span>
-                       </div>
-                       <div className="w-1.5 h-1.5 bg-[#e82a2e] rotate-45 border border-[#e82a2e]/20 outline outline-1 outline-offset-[1px] outline-black/5"></div>
-                    </div>
-                 </div>
-
-                 <div className="w-24 md:w-32 flex justify-end shrink-0 pointer-events-auto">
-                 </div>
-              </div>
-            )}
+          <div className="min-w-0 flex-1 px-0 md:px-10">
+            <div className="h-px overflow-hidden bg-black/10">
+              <div className="project-dock-progress h-full w-full origin-left scale-x-0 bg-[#c22026]" />
+            </div>
           </div>
 
-          {/* Center Text Overlays */}
-          <div className="title-content relative z-10 flex flex-col justify-center w-full h-full pointer-events-none transition-transform px-8 md:px-20">
-            {!isLightMode ? (
-              <div className="text-center relative mt-12 md:mt-0 mx-auto">
-                <h2 className="title-serif font-serif text-[15vw] xl:text-[220px] leading-none text-white tracking-[0.05em] drop-shadow-2xl opacity-0 uppercase">
-                  Igloo
-                </h2>
-                <h3 className="title-script font-script text-[22vw] xl:text-[280px] leading-none text-[#e82a2e] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap mt-8 opacity-0 z-20 drop-shadow-lg transform -rotate-2">
-                  Our Projects
-                </h3>
-              </div>
-            ) : (
-              <div className="flex flex-col items-start justify-center h-full max-w-xl text-black mt-16 md:mt-24 md:pl-4">
-                 <h2 className="font-serif text-[4rem] md:text-[5.5rem] lg:text-[6.5rem] leading-[0.85] text-[#111] font-normal mb-0 tracking-tight ml-[-2px]">
-                    OUR
-                 </h2>
-                 <h3 className="font-serif text-[4rem] md:text-[5.5rem] lg:text-[6.5rem] leading-[0.85] text-[#111] font-normal mb-8 tracking-tight ml-[-2px]">
-                    PROJECTS
-                 </h3>
-
-                 <p className="text-[#e82a2e] font-sans font-bold tracking-[0.1em] text-[9.5px] md:text-[10px] uppercase mb-5 md:mb-8">
-                    Built to endure. Designed to inspire.
-                 </p>
-
-                 <p className="text-[#333] font-sans text-xs md:text-sm leading-relaxed md:leading-[1.7em] max-w-[20rem] md:max-w-[24rem] mb-16 md:mb-24 mix-blend-multiply font-medium">
-                    Explore the current showcase system with Douaouda Housing now placed into the original opening chapter.
-                 </p>
-
-              </div>
-            )}
-          </div>
-
-          {isLightMode && (
-            <ProjectStartCue index="01" className="scroll-cue-home absolute left-8 bottom-[10vh] z-20 md:left-24 md:bottom-[11vh]" />
-          )}
+          <a
+            href="/contact"
+            data-cursor-card
+            data-cursor-label="CONTACT"
+            className="inline-flex items-center justify-center gap-2 border border-black/10 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
+          >
+            <Mail className="h-4 w-4" strokeWidth={2} />
+            Contact
+          </a>
         </div>
-
-        {/* Diagonal Scrolling Canvas -> Single Spread Canvas now */}
-        <div className="content-canvas absolute top-0 left-[100vw] w-[100vw] h-[100dvh] text-black z-20 overflow-hidden bg-white">
-          {/* Background Split Images requested by user */}
-          <div className="absolute inset-0 pointer-events-none flex">
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/cKq8kTsV/sol.png" alt="Left Pattern" className="w-full h-full object-cover object-right" />
-            </div>
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/4RgvQW9q/sa.png" alt="Right Pattern" className="w-full h-full object-cover object-left" />
-            </div>
-          </div>
-          {/* White layer with 60% opacity */}
-          <div className="absolute inset-0 pointer-events-none bg-white/60"></div>
-          {/* Grain texture overlay */}
-          <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")' }}></div>
-
-          <div className="diagonal-container absolute top-0 left-0 w-[900vw] h-[500vh]">
-            {/* Block 1 */}
-            <div className="absolute top-0 left-0 w-[100vw] h-[100dvh] overflow-hidden">
-              {/* Left Main Image - Diagonally Cut */}
-              <div 
-                className="absolute top-0 left-0 w-[55vw] h-[60vh] p-anim-img opacity-0"
-              >
-                {/* Image Decorators */}
-                <div className="absolute top-8 -right-8 w-16 h-16 border-t border-r border-[#e82a2e] z-0"></div>
-                <div className="absolute -bottom-8 left-12 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                
-                <div className="w-full h-full overflow-hidden shadow-[10px_10px_30px_rgba(0,0,0,0.15)] relative z-10" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                    <img src={firstProject.images[0]} className="w-full h-full object-cover" alt={firstProject.title} />
-                </div>
-                {/* Decorative Red rectangle */}
-                <div className="absolute -bottom-4 right-12 w-24 h-1 bg-[#e82a2e] p-anim-redline z-20"></div>
-              </div>
-
-              {/* Right Title Section */}
-              <div className="absolute top-[18vh] left-[62vw] flex flex-col items-start w-[32vw]">
-                 <div className="flex items-end gap-1 mb-2 p-anim-title opacity-0">
-                    <span className="text-[#888] font-light text-2xl leading-none">01</span>
-                    <span className="text-[#bbb] text-[10px] mb-[2px] font-bold uppercase">/ 03</span>
-                 </div>
-                 <div className="w-48 h-[1px] bg-black/10 mb-2 p-anim-title opacity-0"></div>
-                 <span className="text-[#aaa] text-[9px] uppercase tracking-[0.15em] font-bold mb-14 p-anim-title opacity-0">Scroll to explore</span>
-
-                 <div className="flex items-center gap-4 mb-4 p-anim-title opacity-0">
-                    <span className="text-[#e82a2e] text-[10px] font-bold tracking-[0.2em] uppercase">Project Overview</span>
-                    <div className="w-8 h-[1px] bg-[#e82a2e]"></div>
-                 </div>
-
-                 <h2 className="font-sans text-5xl lg:text-[4rem] font-black text-[#111] uppercase leading-[0.95] tracking-tight mb-8 p-anim-title opacity-0">
-                    Douaouda<br/>Housing
-                 </h2>
-
-                 <p className="text-[#555] text-xs lg:text-[13px] leading-relaxed max-w-[24vw] font-medium p-anim-title opacity-0">
-                    {firstProject.summary}
-                 </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="absolute top-[65vh] left-[6vw] flex items-center">
-                 {/* Decorative Red Line/Dot */}
-                 <div className="relative h-20 w-[1px] bg-[#e82a2e]/30 mr-[4vw] flex flex-col items-center p-anim-stat opacity-0">
-                    <div className="absolute -top-1 w-2 h-2 rounded-full bg-[#e82a2e]"></div>
-                    <ChevronDown className="absolute -bottom-2 text-[#e82a2e] w-3 h-3" strokeWidth={3} />
-                 </div>
-
-                 <div className="flex gap-8 lg:gap-14">
-                    <div className="flex flex-col gap-1.5 p-anim-stat opacity-0">
-                       <MapPin className="text-[#e82a2e] w-5 h-5 mb-1" strokeWidth={1.5} />
-                       <span className="text-[#e82a2e] text-[9px] uppercase font-bold tracking-widest">Location</span>
-                       <span className="text-[#222] text-[11px] font-semibold">Douaouda, Algeria</span>
-                    </div>
-                    <div className="w-[1px] h-12 bg-black/10 self-center p-anim-stat opacity-0"></div>
-                    <div className="flex flex-col gap-1.5 p-anim-stat opacity-0">
-                       <Building2 className="text-[#e82a2e] w-5 h-5 mb-1" strokeWidth={1.5} />
-                       <span className="text-[#e82a2e] text-[9px] uppercase font-bold tracking-widest">Type</span>
-                       <span className="text-[#222] text-[11px] font-semibold">300/500 Assisted<br/>Housing</span>
-                    </div>
-                    <div className="w-[1px] h-12 bg-black/10 self-center p-anim-stat opacity-0"></div>
-                    <div className="flex flex-col gap-1.5 p-anim-stat opacity-0">
-                       <Calendar className="text-[#e82a2e] w-5 h-5 mb-1" strokeWidth={1.5} />
-                       <span className="text-[#e82a2e] text-[9px] uppercase font-bold tracking-widest">Completion</span>
-                       <span className="text-[#222] text-[11px] font-semibold">Completed</span>
-                    </div>
-                    <div className="w-[1px] h-12 bg-black/10 self-center p-anim-stat opacity-0"></div>
-                    <div className="flex flex-col gap-1.5 w-44 p-anim-stat opacity-0">
-                       <HardHat className="text-[#e82a2e] w-5 h-5 mb-1" strokeWidth={1.5} />
-                       <span className="text-[#e82a2e] text-[9px] uppercase font-bold tracking-widest">Scope</span>
-                       <span className="text-[#222] text-[11px] font-semibold">Secondary state body works,<br/>housing delivery, site coordination</span>
-                    </div>
-                 </div>
-              </div>
-
-              {/* Bottom Quote & Sub-images */}
-              <div className="absolute bottom-[4vh] left-[6vw] flex gap-4 w-[25vw] p-anim-quote opacity-0">
-                <div className="text-[#e82a2e] font-sans font-black text-[3.5rem] leading-[0.8] mt-1 pt-1">“</div>
-                 <div className="flex flex-col gap-4">
-                    <p className="text-[#444] font-serif text-[13px] leading-relaxed italic">
-                      "We build more than structures—<br/>we shape environments that inspire<br/>and endure."
-                    </p>
-                    <span className="text-[#e82a2e] text-[8px] font-bold uppercase tracking-[0.15em]">Igloo Construction</span>
-                 </div>
-              </div>
-
-              {/* Bottom Right Image */}
-              <div 
-                className="absolute right-0 bottom-0 w-[18vw] h-[28vh] p-anim-img opacity-0 relative"
-              >
-                  <div className="absolute -top-4 -left-4 w-8 h-8 border-t border-l border-[#e82a2e] z-0"></div>
-                  <div className="w-full h-full overflow-hidden relative z-10" style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)' }}>
-                     <img src={firstProject.images[1]} className="w-full h-full object-cover" alt="Douaouda housing detail" />
-                  </div>
-              </div>
-            </div>
-
-            {/* Block 2: Diagonal entry 1 */}
-            <div className="project-photos-header absolute top-[80vh] left-[80vw] w-[100vw] flex items-center gap-8 pl-12 pt-12 z-50">
-                 <div className="text-8xl font-serif text-[#111] opacity-10 leading-none tracking-tighter">02</div>
-                 <div className="w-1/3 h-[1px] bg-[#e82a2e]"></div>
-                 <span className="shrink-0 text-[#e82a2e] uppercase tracking-[0.3em] font-bold text-[10px] mt-2">PROJECT PHOTOS</span>
-            </div>
-
-            {/* Project Photos Horizontal Scroll */}
-            <div className="absolute top-[100vh] left-[120vw] w-[45vw] h-[60vh] shadow-xl z-20">
-                 <img src={firstProject.images[2]} className="w-full h-full object-cover" alt="Douaouda project view 1" />
-            </div>
-            
-            <div className="absolute top-[100vh] left-[180vw] w-[45vw] h-[60vh] shadow-xl z-10 transition-transform hover:scale-105 gap-5">
-                 <img src={firstProject.images[0]} className="w-full h-full object-cover" alt="Douaouda project view 2" />
-            </div>
-
-            <div className="absolute top-[100vh] left-[240vw] w-[45vw] h-[60vh] shadow-xl z-30 transition-transform hover:scale-105">
-                 <img src={firstProject.images[1]} className="w-full h-full object-cover" alt="Douaouda project view 3" />
-            </div>
-
-            <div className="absolute top-[100vh] left-[300vw] w-[20vw] h-[50vh] shadow-[0_20px_40px_rgba(0,0,0,0.08)] relative">
-                <div className="absolute -top-4 -right-4 w-8 h-8 border-t border-r border-[#e82a2e] z-0"></div>
-                <div className="absolute -bottom-4 -left-4 w-8 h-8 border-b border-l border-[#e82a2e] z-0"></div>
-                <div className="w-full h-full overflow-hidden relative z-10" style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)' }}>
-                  <img src={firstProject.images[2]} className="w-full h-full object-cover grayscale mix-blend-multiply opacity-50" alt="Douaouda transition fragment" />
-                </div>
-            </div>
-
-            <div className="absolute top-[125vh] left-[325vw] flex flex-col justify-center max-w-[20vw]">
-               <div className="w-8 h-8 rounded-full border border-[#e82a2e] flex items-center justify-center mb-6">
-                  <div className="w-1.5 h-1.5 bg-[#e82a2e] rounded-full"></div>
-               </div>
-               <p className="text-[#555] font-serif italic text-lg leading-relaxed">
-                  "From coordinated site works to enduring residential delivery in Douaouda."
-               </p>
-            </div>
-
-            {/* Block 3: Diagonal entry 2 */}
-            <div className="absolute top-[180vh] left-[365vw] w-[30vw] flex flex-col z-10">
-               {/* UI decorators based on image */}
-               <div className="absolute -top-6 -left-6 w-8 h-8 border-t border-l border-[#e82a2e]"></div>
-               <div className="absolute -bottom-16 -left-6 w-[1px] h-32 bg-[#e82a2e]"></div>
-               <div className="absolute -bottom-16 -left-[26px] text-[#e82a2e] text-[8px]">â†“</div>
-               
-               <h3 className="font-sans font-black text-6xl uppercase tracking-tighter text-[#111] mb-6 leading-[0.9]">SHAPING<br/>ENVIRONMENTS</h3>
-               <p className="text-[#555] text-lg leading-relaxed font-serif max-w-sm mb-16">
-                  Our projects are not mere interventions, they are a dialogue between history and future, form and function.
-               </p>
-
-               <div className="flex items-start gap-3">
-                  <div className="text-[#e82a2e] font-light text-xl mt-[-6px]">+</div>
-                  <div className="flex flex-col">
-                     <span className="font-mono text-[10px] text-[#555] tracking-widest uppercase">BUILT FOR CONTEXT.</span>
-                     <span className="font-mono text-[10px] text-[#555] tracking-widest uppercase border-b border-[#ccc] pb-1">DESIGNED FOR LIFE.</span>
-                  </div>
-               </div>
-            </div>
-
-            <div className="absolute top-[165vh] left-[400vw] w-[35vw] h-[50vh]">
-                {/* Image Decorators */}
-                <div className="absolute -top-6 right-0 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                <div className="absolute -bottom-6 -left-6 w-12 h-12 border-b border-l border-[#e82a2e] z-0"></div>
-                
-                <div className="w-full h-full overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] z-10 relative" style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%)' }}>
-                    <img src={firstProject.images[0]} className="w-full h-full object-cover" alt="Douaouda housing detail" />
-                </div>
-            </div>
-
-            {/* Block 3.5: Diagonal entry 3 */}
-            <div className="absolute top-[230vh] left-[435vw] w-[45vw] h-[65vh]">
-                <div className="absolute -bottom-8 -right-8 w-16 h-16 border-b border-r border-[#e82a2e] z-0"></div>
-                <div className="absolute -top-8 left-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                
-                <div className="w-full h-full overflow-hidden shadow-2xl relative z-10" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                    <img src={firstProject.images[1]} className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply" alt="Douaouda facade" />
-                </div>
-            </div>
-
-            <div className="absolute top-[260vh] left-[490vw] w-[25vw] flex flex-col pt-4 z-10 bg-[#f8f9fa] p-8 !bg-opacity-80 backdrop-blur-sm">
-               <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-[1px] bg-[#e82a2e]"></div>
-                  <span className="text-[#e82a2e] text-[11px] font-bold tracking-[0.2em] uppercase">Materiality</span>
-               </div>
-               <p className="text-[#333] text-2xl font-serif italic mb-6 leading-relaxed">
-                  "The Douaouda programme combines coordinated building works, housing delivery, and controlled site execution."
-               </p>
-               <span className="font-mono text-xs text-[#999] uppercase tracking-widest">Igloo Archives</span>
-            </div>
-
-            {/* Block 4: Le Lieu Des Commencements (End of diagonal) */}
-            <div className="absolute top-[300vh] left-[500vw] w-[100vw] h-[100vh] flex flex-col md:flex-row gap-12 items-center justify-center px-12">
-              <div className="w-full md:w-[25vw] shrink-0">
-                <div className="border-b-[1.5px] border-[#e82a2e] mb-6 text-left pb-4">
-                  <h3 className="font-sans font-bold text-2xl md:text-3xl uppercase tracking-wider text-[#111]">Le Lieu Des<br/>Commencements</h3>
-                </div>
-                <p className="text-[#555] text-sm md:text-base leading-relaxed font-serif text-justify font-medium">The Douaouda housing programme brings together assisted promotional housing, coordinated site services, and disciplined execution across the full residential plot.</p>
-              </div>
-              <div className="w-full md:w-[30vw] h-[40vh] md:h-[60vh] overflow-hidden relative shrink-0 shadow-2xl">
-                <img src={firstProject.images[2]} className="w-full h-full object-cover" alt="Douaouda housing site" />
-              </div>
-            </div>
-
-            {/* Horizontal Panel 1 */}
-            <div className="absolute top-[300vh] left-[600vw] w-[100vw] h-[100vh] flex flex-col md:flex-row items-center justify-center p-0 md:p-12 gap-12">
-               <div className="w-full md:w-[60vw] h-[50vh] md:h-[80vh] shrink-0 overflow-hidden shadow-xl clip-path-slant relative">
-                  <img src={firstProject.images[0]} className="w-full h-full object-cover" alt="Douaouda housing blocks" />
-                  <div className="absolute inset-0 bg-black/10"></div>
-               </div>
-               <div className="w-full md:w-[30vw] flex flex-col justify-center text-left">
-                  <div className="flex items-center gap-4 mb-4">
-                     <span className="text-[#e82a2e] text-[10px] font-bold tracking-[0.2em] uppercase">Core Concept</span>
-                     <div className="w-8 h-[1px] bg-[#e82a2e]"></div>
-                  </div>
-                  <h3 className="font-sans font-black text-3xl md:text-5xl uppercase tracking-tight text-[#111] mb-6 leading-none">Housing<br/>At Scale</h3>
-                  <p className="text-[#555] text-sm md:text-lg leading-relaxed font-serif text-justify">
-                    Secondary state body works, structural coordination, and residential delivery are combined here into one continuous programme built for long-term occupancy.
-                  </p>
-               </div>
-            </div>
-
-            {/* Horizontal Panel 2 */}
-            <div className="absolute top-[300vh] left-[700vw] w-[100vw] h-[100vh] flex justify-center items-center p-12">
-               <div className="w-full h-[80vh] relative overflow-hidden shadow-2xl">
-                  <img src={firstProject.images[2]} className="w-full h-full object-cover panel-1-final-img origin-center" alt={firstProject.title} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent"></div>
-                  <div className="absolute left-8 right-8 bottom-8 md:left-12 md:right-auto md:bottom-12 md:max-w-[32rem] bg-white/88 backdrop-blur-md border border-white/60 shadow-[0_20px_60px_rgba(0,0,0,0.18)] px-6 py-5 md:px-8 md:py-7">
-                     <div className="flex items-center gap-3 mb-3">
-                        <span className="w-10 h-px bg-[#e82a2e]"></span>
-                        <span className="text-[#e82a2e] font-bold uppercase tracking-[0.28em] text-[10px] md:text-xs">{firstProject.chapterLabel} Project</span>
-                     </div>
-                     <h3 className="font-serif text-[#111] text-3xl md:text-5xl leading-[0.9] uppercase tracking-tight">
-                       {firstProject.coverLines[0]}<br />{firstProject.coverLines[1]}
-                     </h3>
-                     <p className="mt-4 text-[#444] text-xs md:text-sm leading-relaxed font-medium max-w-[28rem]">
-                       {firstProject.scope}
-                     </p>
-                  </div>
-               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 2 Cover */}
-        <div className="project-2-cover absolute top-0 left-[100vw] w-full h-full z-10 bg-white">
-          <div 
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-multiply"
-            style={{ backgroundImage: `url("${secondProject.images[0]}")` }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent z-0"></div>
-          
-          <div className="project-2-cover-title relative z-10 w-full h-full flex flex-col justify-center px-4 md:px-20 text-right md:text-left md:items-end">
-            <h4 className="text-[#e82a2e] font-sans font-bold tracking-[0.3em] text-xs md:text-sm uppercase mb-4 md:mb-8 mr-1 md:mr-12">02 - Completed Project</h4>
-            <div className="overflow-hidden">
-              <h2 className="font-serif text-[4rem] text-4xl md:text-[8rem] lg:text-[10rem] font-normal text-[#111] uppercase leading-[0.85] tracking-tighter mr-2 md:mr-8">
-                Sidi Abdallah
-              </h2>
-            </div>
-            <div className="overflow-hidden">
-              <h3 className="font-serif text-[3rem] md:text-[6rem] lg:text-[8rem] font-normal text-[#333] uppercase leading-[0.85] tracking-tight mr-4 md:mr-0">
-                Public Housing
-              </h3>
-            </div>
-            <ProjectStartCue index="02" align="right" className="absolute bottom-[9vh] right-6 md:right-24 md:bottom-[10vh]" />
-          </div>
-        </div>
-
-        {/* Project 2 Canvas */}
-        <div className="project-2-canvas absolute top-0 left-[-100vw] w-[100vw] h-[100dvh] bg-white text-black z-20 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none flex">
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/cKq8kTsV/sol.png" alt="Left Pattern" className="w-full h-full object-cover object-right" />
-            </div>
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/4RgvQW9q/sa.png" alt="Right Pattern" className="w-full h-full object-cover object-left" />
-            </div>
-          </div>
-          <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")' }}></div>
-
-          <div className="project-2-diagonal absolute top-0 right-0 w-[500vw] h-[400vh] flex">
-             {/* Block 1 */}
-             <div className="absolute top-[10vh] right-[10vw] w-[80vw] md:w-[60vw] flex flex-col md:flex-row-reverse gap-12 items-start text-right">
-                <div className="w-full md:w-[35vw] h-[50vh] md:h-[70vh] relative shrink-0">
-                    <div className="absolute -top-6 -right-6 w-12 h-12 border-t border-r border-[#e82a2e] z-0"></div>
-                    <div className="absolute -bottom-6 right-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                    
-                    <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                       <img src={secondProject.images[0]} className="w-full h-full object-cover" alt={secondProject.title} />
-                    </div>
-                </div>
-                <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                   <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/30 py-2 mb-6">
-                      <h3 className="font-sans font-bold text-xl md:text-2xl uppercase tracking-widest text-[#e82a2e]">Delivery Story</h3>
-                   </div>
-                   <h2 className="font-serif text-3xl md:text-5xl text-[#111] mb-6 leading-tight uppercase font-black">Structured<br/>Delivery</h2>
-                   <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify" style={{textAlignLast: "right"}}>A major public housing programme in Sidi Abdallah shaped as a disciplined delivery package, with coordinated state body works and a strong residential footprint.</p>
-                </div>
-             </div>
-
-             {/* Block 2 */}
-             <div className="absolute top-[70vh] right-[70vw] w-[80vw] md:w-[60vw] flex flex-col-reverse md:flex-row-reverse gap-12 items-start text-right">
-                 <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                   <div className="border-b-[1.5px] border-[#e82a2e]/30 pb-4 mb-6">
-                      <h3 className="font-sans font-bold text-2xl md:text-3xl uppercase tracking-wider text-[#111]">Programme<br/>Coordination</h3>
-                   </div>
-                   <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify" style={{textAlignLast: "right"}}>Secondary works, structural sequencing, and site-wide coordination come together here to support a substantial public housing operation at full scale.</p>
-                 </div>
-                 <div className="w-full md:w-[30vw] h-[40vh] md:h-[60vh] relative shrink-0">
-                    <div className="absolute -bottom-6 -left-6 w-12 h-12 border-b border-l border-[#e82a2e] z-0"></div>
-                    <div className="absolute -top-6 left-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                    
-                    <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                       <img src={secondProject.images[1]} className="w-full h-full object-cover" alt="Sidi Abdallah structure" />
-                    </div>
-                 </div>
-             </div>
-
-             {/* Horizontal Panel 1 */}
-             <div className="absolute top-[120vh] right-[120vw] w-[100vw] h-[100vh] flex flex-col md:flex-row-reverse items-center gap-0">
-                 <div className="w-full md:w-[60vw] h-[50vh] md:h-[100vh] shrink-0 border-l border-white/20 overflow-hidden shadow-2xl z-10">
-                    <img src={secondProject.images[2]} className="w-full h-full object-cover" alt="Sidi Abdallah facade" />
-                 </div>
-                 <div className="w-full md:w-[40vw] h-[50vh] md:h-[100vh] flex flex-col justify-center text-right px-8 md:px-16 bg-[#f8f9fa] shadow-[-10px_0_30px_rgba(0,0,0,0.05)] z-20">
-                    <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/20 py-4 mb-4 md:mb-8">
-                       <h3 className="font-sans font-black text-2xl md:text-5xl uppercase tracking-widest text-[#111]">Housing &<br/>Support Works</h3>
-                    </div>
-                    <p className="text-[#555] font-medium text-sm md:text-xl leading-relaxed font-serif text-justify" style={{textAlignLast: "right"}}>
-                      The Sidi Abdallah programme balances housing density, supporting works, and delivery control in a way that reads clearly inside the existing showcase rhythm.
-                    </p>
-                 </div>
-             </div>
-
-             {/* Horizontal Panel 2 */}
-             <div className="absolute top-[120vh] right-[220vw] w-[100vw] h-[100vh] flex justify-center items-center">
-                 <div className="w-full h-[80vh] relative overflow-hidden shadow-2xl">
-                    <img src={secondProject.images[2]} className="w-full h-full object-cover panel-2-final-img origin-center" alt={secondProject.title} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-white/10"></div>
-                    <div className="absolute left-8 right-8 bottom-8 md:right-12 md:left-auto md:bottom-12 md:max-w-[30rem] bg-[#f8f6f2]/88 backdrop-blur-md border border-white/60 shadow-[0_20px_60px_rgba(0,0,0,0.16)] px-6 py-5 md:px-8 md:py-7 text-right">
-                       <div className="flex items-center justify-end gap-3 mb-3">
-                          <span className="text-[#e82a2e] font-bold uppercase tracking-[0.28em] text-[10px] md:text-xs">{secondProject.chapterLabel} Project</span>
-                          <span className="w-10 h-px bg-[#e82a2e]"></span>
-                       </div>
-                       <h3 className="font-serif text-[#111] text-3xl md:text-5xl leading-[0.9] uppercase tracking-tight">
-                         {secondProject.coverLines[0]}<br />{secondProject.coverLines[1]}
-                       </h3>
-                       <p className="mt-4 text-[#444] text-xs md:text-sm leading-relaxed font-medium">
-                         {secondProject.scope}
-                       </p>
-                    </div>
-                 </div>
-             </div>
-          </div>
-        </div>
-
-        {/* Project 3 Cover */}
-        <div className="project-3-cover absolute top-0 left-[-100vw] w-full h-full z-[15] bg-white">
-          <div 
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-multiply"
-            style={{ backgroundImage: `url("${thirdProject.images[0]}")` }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-l from-white/90 via-white/50 to-transparent z-0"></div>
-          
-          <div className="project-3-cover-title relative z-10 w-full h-full flex flex-col justify-center px-4 md:px-20 text-left md:items-start">
-            <h4 className="text-[#e82a2e] font-sans font-bold tracking-[0.3em] text-xs md:text-sm uppercase mb-4 md:mb-8 ml-1 md:ml-12">03 - Completed Project</h4>
-            <div className="overflow-hidden w-full text-left">
-              <h2 className="font-serif text-[4rem] text-4xl md:text-[8rem] lg:text-[10rem] font-normal text-[#111] uppercase leading-[0.85] tracking-tighter ml-2 md:ml-8">
-                Staoueli
-              </h2>
-            </div>
-            <div className="overflow-hidden w-full text-left">
-              <h3 className="font-serif text-[3rem] md:text-[6rem] lg:text-[8rem] font-normal text-[#333] uppercase leading-[0.85] tracking-tight ml-4 md:ml-0">
-                11/41 Villas
-              </h3>
-            </div>
-            <ProjectStartCue index="03" className="absolute bottom-[9vh] left-6 md:left-24 md:bottom-[10vh]" />
-          </div>
-        </div>
-
-        {/* Project 3 Canvas */}
-        <div className="project-3-canvas absolute top-0 left-[100vw] w-[100vw] h-[100dvh] bg-white text-black z-30 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none flex">
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/cKq8kTsV/sol.png" alt="Left Pattern" className="w-full h-full object-cover object-right" />
-            </div>
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/4RgvQW9q/sa.png" alt="Right Pattern" className="w-full h-full object-cover object-left" />
-            </div>
-          </div>
-          <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")' }}></div>
-
-          <div className="project-3-diagonal absolute top-0 left-0 w-[500vw] h-[400vh] flex">
-            {/* Block 1 */}
-            <div className="absolute top-[10vh] left-[10vw] w-[80vw] md:w-[60vw] flex flex-col md:flex-row gap-12 items-start">
-              <div className="w-full md:w-[35vw] h-[50vh] md:h-[70vh] relative shrink-0">
-                <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b border-r border-[#e82a2e] z-0"></div>
-                <div className="absolute -top-6 left-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                
-                <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                  <img src={thirdProject.images[0]} className="w-full h-full object-cover" alt={thirdProject.title} />
-                </div>
-              </div>
-              <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/30 py-2 mb-6 text-left">
-                  <h3 className="font-sans font-bold text-xl md:text-2xl uppercase tracking-widest text-[#e82a2e]">Villa Programme</h3>
-                </div>
-                <h2 className="font-serif text-3xl md:text-5xl text-[#111] mb-6 leading-tight uppercase font-black text-left">Roads &<br/>Networks</h2>
-                <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify">The Staoueli package combines villa construction with roads and network works, creating a cleaner, more complete residential site story for the showcase.</p>
-              </div>
-            </div>
-
-            {/* Block 2 */}
-            <div className="absolute top-[70vh] left-[70vw] w-[80vw] md:w-[60vw] flex flex-col-reverse md:flex-row gap-12 items-start">
-              <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                <div className="border-b-[1.5px] border-[#e82a2e]/30 pb-4 mb-6 text-left">
-                  <h3 className="font-sans font-bold text-2xl md:text-3xl uppercase tracking-wider text-[#111]">Residential<br/>Readiness</h3>
-                </div>
-                <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify">The supporting network works are treated here as part of the built outcome itself, helping the full 11/41 villa programme read as one coordinated environment.</p>
-              </div>
-              <div className="w-full md:w-[30vw] h-[40vh] md:h-[60vh] relative shrink-0">
-                <div className="absolute -top-6 -left-6 w-12 h-12 border-t border-l border-[#e82a2e] z-0"></div>
-                <div className="absolute -bottom-6 right-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-                
-                <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                  <img src={thirdProject.images[1]} className="w-full h-full object-cover" alt="Staoueli network works" />
-                </div>
-              </div>
-            </div>
-
-            {/* Horizontal Panel 1 */}
-            <div className="absolute top-[120vh] left-[120vw] w-[100vw] h-[100vh] flex flex-col md:flex-row items-center gap-0">
-               <div className="w-full md:w-[60vw] h-[50vh] md:h-[100vh] shrink-0 border-r border-[#8b181c] overflow-hidden shadow-2xl z-10">
-                  <img src={thirdProject.images[2]} className="w-full h-full object-cover" alt="Staoueli villas" />
-               </div>
-               <div className="w-full md:w-[40vw] h-[50vh] md:h-[100vh] flex flex-col justify-center text-left px-8 md:px-16 bg-[#f8f9fa] shadow-[-10px_0_30px_rgba(0,0,0,0.05)] z-20">
-                  <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/20 py-4 mb-4 md:mb-8">
-                    <h3 className="font-sans font-black text-2xl md:text-5xl uppercase tracking-widest text-[#111]">Villas &<br/>Infrastructure</h3>
-                  </div>
-                  <p className="text-[#555] font-medium text-sm md:text-xl leading-relaxed font-serif text-justify">
-                    Staoueli is framed here as a composed residential delivery: villas, roads, and network systems aligned under one practical construction sequence.
-                  </p>
-               </div>
-            </div>
-
-            {/* Horizontal Panel 2 */}
-            <div className="absolute top-[120vh] left-[220vw] w-[100vw] h-[100vh] flex justify-center items-center">
-               <div className="w-full h-[80vh] relative overflow-hidden shadow-2xl">
-                  <img src={thirdProject.images[2]} className="w-full h-full object-cover panel-3-final-img origin-center" alt={thirdProject.title} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-                  <div className="absolute left-8 right-8 bottom-8 md:left-12 md:right-auto md:bottom-12 md:max-w-[31rem] bg-white/88 backdrop-blur-md border border-white/60 shadow-[0_20px_60px_rgba(0,0,0,0.16)] px-6 py-5 md:px-8 md:py-7">
-                     <div className="flex items-center gap-3 mb-3">
-                        <span className="w-10 h-px bg-[#e82a2e]"></span>
-                        <span className="text-[#e82a2e] font-bold uppercase tracking-[0.28em] text-[10px] md:text-xs">{thirdProject.chapterLabel} Project</span>
-                     </div>
-                     <h3 className="font-serif text-[#111] text-3xl md:text-5xl leading-[0.9] uppercase tracking-tight">
-                       {thirdProject.coverLines[0]}<br />{thirdProject.coverLines[1]}
-                     </h3>
-                     <p className="mt-4 text-[#444] text-xs md:text-sm leading-relaxed font-medium max-w-[28rem]">
-                       {thirdProject.scope}
-                     </p>
-                  </div>
-               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 4 Cover */}
-        <div className="project-4-cover absolute top-0 left-[100vw] w-full h-full z-[35] bg-white">
-          <div
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-multiply"
-            style={{ backgroundImage: `url("${fourthProject.images[0]}")` }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent z-0"></div>
-
-          <div className="project-4-cover-title relative z-10 w-full h-full flex flex-col justify-center px-4 md:px-20 text-right md:text-left md:items-end">
-            <h4 className="text-[#e82a2e] font-sans font-bold tracking-[0.3em] text-xs md:text-sm uppercase mb-4 md:mb-8 mr-1 md:mr-12">04 - Completed Project</h4>
-            <div className="overflow-hidden">
-              <h2 className="font-serif text-[4rem] text-4xl md:text-[8rem] lg:text-[10rem] font-normal text-[#111] uppercase leading-[0.85] tracking-tighter mr-2 md:mr-8">
-                Said Hamdine
-              </h2>
-            </div>
-            <div className="overflow-hidden">
-              <h3 className="font-serif text-[3rem] md:text-[6rem] lg:text-[8rem] font-normal text-[#333] uppercase leading-[0.85] tracking-tight mr-4 md:mr-0">
-                Mixed Complex
-              </h3>
-            </div>
-            <ProjectStartCue index="04" align="right" className="absolute bottom-[9vh] right-6 md:right-24 md:bottom-[10vh]" />
-          </div>
-        </div>
-
-        {/* Project 4 Canvas */}
-        <div className="project-4-canvas absolute top-0 left-[-100vw] w-[100vw] h-[100dvh] bg-white text-black z-40 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none flex">
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/cKq8kTsV/sol.png" alt="Left Pattern" className="w-full h-full object-cover object-right" />
-            </div>
-            <div className="w-1/2 h-full">
-              <img src="https://i.ibb.co/4RgvQW9q/sa.png" alt="Right Pattern" className="w-full h-full object-cover object-left" />
-            </div>
-          </div>
-          <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")' }}></div>
-
-          <div className="project-4-diagonal absolute top-0 right-0 w-[500vw] h-[400vh] flex">
-            <div className="absolute top-[10vh] right-[10vw] w-[80vw] md:w-[60vw] flex flex-col md:flex-row-reverse gap-12 items-start text-right">
-              <div className="w-full md:w-[35vw] h-[50vh] md:h-[70vh] relative shrink-0">
-                <div className="absolute -top-6 -right-6 w-12 h-12 border-t border-r border-[#e82a2e] z-0"></div>
-                <div className="absolute -bottom-6 right-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-
-                <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                  <img src={fourthProject.images[0]} className="w-full h-full object-cover" alt={fourthProject.title} />
-                </div>
-              </div>
-              <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/30 py-2 mb-6">
-                  <h3 className="font-sans font-bold text-xl md:text-2xl uppercase tracking-widest text-[#e82a2e]">Mixed-Use Scale</h3>
-                </div>
-                <h2 className="font-serif text-3xl md:text-5xl text-[#111] mb-6 leading-tight uppercase font-black">Residential<br/>With Retail</h2>
-                <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify" style={{ textAlignLast: "right" }}>
-                  Said Hamdine brings housing, basement parking, and active street-level uses into one compact urban composition with a more premium finish language.
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute top-[70vh] right-[70vw] w-[80vw] md:w-[60vw] flex flex-col-reverse md:flex-row-reverse gap-12 items-start text-right">
-              <div className="w-full md:w-[25vw] shrink-0 pt-8">
-                <div className="border-b-[1.5px] border-[#e82a2e]/30 pb-4 mb-6">
-                  <h3 className="font-sans font-bold text-2xl md:text-3xl uppercase tracking-wider text-[#111]">Detail &<br/>Common Areas</h3>
-                </div>
-                <p className="text-[#333] font-medium text-sm md:text-base leading-relaxed font-serif text-justify" style={{ textAlignLast: "right" }}>
-                  The chapter shifts from exterior massing to crafted details, rooftop elements, and interior arrival zones that make the complex feel complete rather than purely structural.
-                </p>
-              </div>
-              <div className="w-full md:w-[30vw] h-[40vh] md:h-[60vh] relative shrink-0">
-                <div className="absolute -bottom-6 -left-6 w-12 h-12 border-b border-l border-[#e82a2e] z-0"></div>
-                <div className="absolute -top-6 left-8 w-[1px] h-16 bg-[#e82a2e] z-0"></div>
-
-                <div className="w-full h-full overflow-hidden relative z-10 shadow-xl" style={{ clipPath: 'polygon(8% 0, 100% 0, 100% 88%, 92% 100%, 0 100%, 0 12%)' }}>
-                  <img src={fourthProject.images[1]} className="w-full h-full object-cover" alt="Said Hamdine skylight detail" />
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute top-[120vh] right-[120vw] w-[100vw] h-[100vh] flex flex-col md:flex-row-reverse items-center gap-0">
-              <div className="w-full md:w-[60vw] h-[50vh] md:h-[100vh] shrink-0 border-l border-white/20 overflow-hidden shadow-2xl z-10">
-                <img src={fourthProject.images[2]} className="w-full h-full object-cover" alt="Said Hamdine lobby finish" />
-              </div>
-              <div className="w-full md:w-[40vw] h-[50vh] md:h-[100vh] flex flex-col justify-center text-right px-8 md:px-16 bg-[#f8f9fa] shadow-[-10px_0_30px_rgba(0,0,0,0.05)] z-20">
-                <div className="border-b-[1.5px] border-t-[1.5px] border-[#e82a2e]/20 py-4 mb-4 md:mb-8">
-                  <h3 className="font-sans font-black text-2xl md:text-5xl uppercase tracking-widest text-[#111]">Arrival &<br/>Interior Finish</h3>
-                </div>
-                <p className="text-[#555] font-medium text-sm md:text-xl leading-relaxed font-serif text-justify" style={{ textAlignLast: "right" }}>
-                  Common areas, lobbies, and circulation points are treated as part of the architectural identity, giving this chapter a more polished and urban character.
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute top-[120vh] right-[220vw] w-[100vw] h-[100vh] flex justify-center items-center">
-              <div className="w-full h-[80vh] relative overflow-hidden shadow-2xl">
-                <img src={fourthProject.images[3]} className="w-full h-full object-cover panel-4-final-img origin-center" alt={fourthProject.title} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div>
-                <div className="absolute left-8 right-8 bottom-8 md:right-12 md:left-auto md:bottom-12 md:max-w-[30rem] bg-[#f8f6f2]/88 backdrop-blur-md border border-white/60 shadow-[0_20px_60px_rgba(0,0,0,0.16)] px-6 py-5 md:px-8 md:py-7 text-right">
-                  <div className="flex items-center justify-end gap-3 mb-3">
-                    <span className="text-[#e82a2e] font-bold uppercase tracking-[0.28em] text-[10px] md:text-xs">{fourthProject.chapterLabel} Project</span>
-                    <span className="w-10 h-px bg-[#e82a2e]"></span>
-                  </div>
-                  <h3 className="font-serif text-[#111] text-3xl md:text-5xl leading-[0.9] uppercase tracking-tight">
-                    {fourthProject.coverLines[0]}<br />{fourthProject.coverLines[1]}
-                  </h3>
-                  <p className="mt-4 text-[#444] text-xs md:text-sm leading-relaxed font-medium">
-                    {fourthProject.scope}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      {/* Full Screen Menu Overlay */}
-      <div className="full-menu hidden">
-        
-        {/* Decorative background logo */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none overflow-hidden">
-           <span className="font-serif text-[40vw] text-white whitespace-nowrap">IGLOO</span>
-        </div>
-
-        {/* Logo / Header inside menu */}
-        <div className="menu-item relative z-10 flex flex-col items-center mb-10 md:mb-12 shrink-0">
-          <img 
-            src="https://i.ibb.co/fY50LKcW/Chat-GPT-mage-5-May-2026-21-15-03-removebg-preview.png" 
-            alt="Igloo" 
-            className="h-10 md:h-12 object-contain mb-4 filter brightness-0 invert"
-          />
-          <h2 className="font-serif text-2xl md:text-3xl tracking-[0.2em] text-white uppercase text-center">
-            Igloo
-          </h2>
-          <p className="font-script text-xl md:text-2xl text-[#e82a2e] mt-2 md:mt-3 italic">
-            Project Showcase
-          </p>
-          <div className="w-12 h-px bg-[#e82a2e] mt-6"></div>
-        </div>
-
-        {/* Menu Links */}
-        <div className="relative z-10 flex flex-col items-center gap-6 md:gap-8 w-full max-w-2xl shrink-0 overflow-visible">
-          
-          <div className="menu-item flex flex-col items-center group cursor-pointer" onClick={() => scrollToProject(0)}>
-            <div className="flex items-center gap-4 mb-2 md:mb-3 text-[#e82a2e]">
-              <span className="text-sm opacity-100 group-hover:opacity-100 transition-opacity">â–</span>
-              <span className="text-white text-[10px] md:text-[12px] tracking-[0.3em] font-bold uppercase transition-colors group-hover:text-[#e82a2e]">Douaouda Housing</span>
-              <span className="text-sm opacity-100 group-hover:opacity-100 transition-opacity">â–</span>
-            </div>
-            <span className="text-white text-lg md:text-2xl font-serif tracking-widest uppercase transition-colors relative">
-              <span className="border-b border-white/50 group-hover:border-[#e82a2e] pb-1">Housing</span>
-            </span>
-          </div>
-
-          <div className="menu-item flex flex-col items-center group cursor-pointer" onClick={() => scrollToProject(1)}>
-             <div className="flex items-center gap-4 mb-2 md:mb-3 text-[#e82a2e]">
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-               <span className="text-white/50 text-[10px] md:text-[12px] tracking-[0.3em] font-bold uppercase transition-colors group-hover:text-[#e82a2e]">Sidi Abdallah</span>
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-             </div>
-             <span className="text-white/70 text-lg md:text-2xl font-serif tracking-widest uppercase group-hover:text-white transition-colors relative">
-               <span className="border-b border-transparent group-hover:border-[#e82a2e] pb-1">Public Housing</span>
-             </span>
-          </div>
-
-          <div className="menu-item flex flex-col items-center group cursor-pointer" onClick={() => scrollToProject(2)}>
-             <div className="flex items-center gap-4 mb-2 md:mb-3 text-[#e82a2e]">
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-               <span className="text-white/50 text-[10px] md:text-[12px] tracking-[0.3em] font-bold uppercase transition-colors group-hover:text-[#e82a2e]">Staoueli Villas</span>
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-             </div>
-             <span className="text-white/70 text-lg md:text-2xl font-serif tracking-widest uppercase group-hover:text-white transition-colors relative">
-               <span className="border-b border-transparent group-hover:border-[#e82a2e] pb-1">Villa Works</span>
-             </span>
-          </div>
-
-          <div className="menu-item flex flex-col items-center group cursor-pointer" onClick={() => scrollToProject(3)}>
-             <div className="flex items-center gap-4 mb-2 md:mb-3 text-[#e82a2e]">
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-               <span className="text-white/50 text-[10px] md:text-[12px] tracking-[0.3em] font-bold uppercase transition-colors group-hover:text-[#e82a2e]">Said Hamdine</span>
-               <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity">â–</span>
-             </div>
-             <span className="text-white/70 text-lg md:text-2xl font-serif tracking-widest uppercase group-hover:text-white transition-colors relative">
-               <span className="border-b border-transparent group-hover:border-[#e82a2e] pb-1">Mixed Complex</span>
-             </span>
-          </div>
-
-        </div>
-
-        {/* Close Button at bottom */}
-        <div className="menu-item relative z-10 w-full max-w-[320px] mt-auto border-t border-b border-white/10 flex justify-between items-center py-3">
-          <button onClick={() => setMenuOpen(false)} className="text-white/50 hover:text-white transition-colors p-2 font-sans font-light text-xl mt-[-4px]">
-            âœ•
-          </button>
-          <span className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-white font-bold">DOUAOUDA HOUSING</span>
-          <button onClick={() => setMenuOpen(false)} className="text-white/50 hover:text-white transition-colors p-2 font-sans font-light text-xl mt-[-4px]">
-            âœ•
-          </button>
-        </div>
-
-      </div>
-
     </main>
   );
 }

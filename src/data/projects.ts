@@ -21,6 +21,13 @@ export type ProjectRecord = {
   coverLines: [string, string];
   images: string[];
   sourceSlides: number[];
+  /* Optional detail-page fields (used by ProjectDetail; fall back to sensible defaults). */
+  formOfContract?: string;
+  client?: string;
+  architect?: string;
+  repeatOrNew?: string;
+  highlights?: string[];
+  capability?: string;
 };
 
 export const companyProfile = {
@@ -29,11 +36,30 @@ export const companyProfile = {
   phones: ['+213 542 819 461', '+90 542 479 5700'],
   email: 'medatalay@gmail.com',
   foundedYear: 2018,
-  overview: [
-    'Founded in 2018 in Ouled Fayet, Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.',
-    'Our engineers, architects, site managers, and field teams work as one coordinated structure to deliver projects with precision, efficiency, and lasting quality.',
-    'We create modern, durable, and functional spaces designed for people, businesses, and communities.',
-  ],
+  classificationBadge: {
+    en: 'Category 6',
+    fr: 'Catégorie 6',
+  },
+  qualificationStatement: {
+    en: 'Professional Qualification and Classification Certificate',
+    fr: 'Certificat de qualification et de classification professionnelles',
+  },
+  teamStructure: {
+    en: 'Qualified building manager, three engineers, two architects, construction managers, HR manager, accountant, buyer, and site staff.',
+    fr: 'Chef de projet bâtiment qualifié, trois ingénieurs, deux architectes, conducteurs de travaux, responsable RH, comptable, acheteur et équipes de chantier.',
+  },
+  overview: {
+    en: [
+      'Founded in 2018 in Ouled Fayet, Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.',
+      'Our engineers, architects, site managers, and field teams work as one coordinated structure to deliver projects with precision, efficiency, and lasting quality.',
+      'We create modern, durable, and functional spaces designed for people, businesses, and communities.',
+    ],
+    fr: [
+      'Fondée en 2018 à Ouled Fayet, Alger, SARL Igloo Yapi Construction est spécialisée dans les programmes résidentiels et à usage mixte, dirigée par l\'ingénieur civil Adem Talay.',
+      'Nos ingénieurs, architectes, conducteurs de travaux et équipes de chantier forment une structure coordonnée pour livrer des projets avec précision, efficacité et qualité durable.',
+      'Nous créons des espaces modernes, durables et fonctionnels, pensés pour les personnes, les entreprises et les communautés.',
+    ],
+  },
 };
 
 export const projects: ProjectRecord[] = [
@@ -84,16 +110,16 @@ export const projects: ProjectRecord[] = [
   },
   {
     id: 4,
-    slug: 'douira-commercial-centers-2500-housing',
-    title: 'Commercial Centres for 2,500 Housing Units',
-    menuTitle: 'Douira Centres',
+    slug: 'rahmania',
+    title: 'Rahmania Commercial Centres',
+    menuTitle: 'Rahmania',
     chapterLabel: 'Completed',
     location: 'Douira, Algiers',
     status: 'completed',
-    summary: 'Construction work in secondary state bodies for the commercial centres serving the 2,500 housing unit development in Douira, Algiers.',
-    details: 'A retail and services package designed to support a major housing programme with integrated commercial destinations.',
-    scope: 'Commercial centre construction coordinated with a major residential masterplan.',
-    coverLines: ['Douira', 'Commercial Centres'],
+    summary: "Two commercial centres completed as part of Douira's 2,500-home residential development.",
+    details: 'A coordinated retail and services package designed to support everyday life across a major residential district.',
+    scope: 'Two commercial centres with retail, service spaces, circulation, and finishing works integrated into a larger housing masterplan.',
+    coverLines: ['Commercial Centres', 'Douira'],
     images: [media('image17.jpeg'), media('image19.jpeg'), media('image20.jpeg'), media('image21.jpeg')],
     sourceSlides: [7],
   },
@@ -215,7 +241,7 @@ export const heroSlides = [
   },
   {
     image: media('image21.jpeg'),
-    caption: 'Douira Centres',
+    caption: 'Rahmania',
   },
   {
     image: media('image22.jpeg'),
@@ -229,4 +255,10 @@ export const heroSlides = [
 
 export const homeProjectCards = projects;
 
-export const imageSliderImages = heroSlides.map((slide) => slide.image);
+export const imageSliderImages = [
+  '/homepage/company-profile-showcase.png',
+  '/projects/dely-brahim-240-housing/04-final-4.webp',
+  '/projects/dely-brahim-240-housing/01-final-1.webp',
+  '/projects/dely-brahim-240-housing/03-final-3.webp',
+  '/projects/dely-brahim-240-housing/02-final-2.webp',
+];

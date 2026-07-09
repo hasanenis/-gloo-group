@@ -39,30 +39,34 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
   useGSAP(() => {
     if (prefersReducedMotion) return;
 
+    gsap.set('.intro-igloo-lockup', {
+      autoAlpha: 1,
+      display: 'flex',
+    });
     gsap.set('.intro-logo-image', {
       y: 28,
       scale: 0.96,
-      opacity: 0,
+      autoAlpha: 0,
       filter: 'blur(4px)',
     });
     gsap.set('.intro-igloo-line', {
       scaleX: 0,
-      opacity: 0,
+      autoAlpha: 0,
       transformOrigin: '50% 50%',
     });
     gsap.set('.intro-tag-build, .intro-tag-above', {
       yPercent: -115,
-      opacity: 0,
+      autoAlpha: 0,
     });
     gsap.set('.intro-tag-beyond', {
       yPercent: 115,
-      opacity: 0,
+      autoAlpha: 0,
     });
     gsap.set('.intro-tag-shell', {
-      opacity: 0,
+      autoAlpha: 0,
     });
     gsap.set('.intro-tag-dot', {
-      opacity: 0,
+      autoAlpha: 0,
       scale: 0.8,
     });
 
@@ -71,61 +75,60 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
     tl.to('.intro-logo-image', {
       y: 0,
       scale: 1,
-      opacity: 1,
+      autoAlpha: 1,
       filter: 'blur(0px)',
       duration: 1.3,
       ease: 'power3.out',
     })
       .to('.intro-igloo-line', {
         scaleX: 1,
-        opacity: 1,
+        autoAlpha: 1,
         duration: 0.7,
         ease: 'power2.out',
       }, '-=0.4')
       .to({}, { duration: 1.25 })
       .to('.intro-igloo-lockup', {
         y: -42,
-        opacity: 0,
-        duration: 0.95,
+        autoAlpha: 0,
+        duration: 0.82,
         ease: 'power3.inOut',
       })
-      .to('.intro-tag-shell', {
-        opacity: 1,
-        duration: 0.24,
-      }, '-=0.28')
+      .set('.intro-igloo-lockup', { display: 'none' })
+      .to({}, { duration: 0.22 })
+      .set('.intro-tag-shell', { autoAlpha: 1 })
       .to('.intro-tag-dot', {
-        opacity: 1,
+        autoAlpha: 1,
         scale: 1,
         duration: 0.4,
         ease: 'power2.out',
-      }, '-=0.1')
+      })
       .to('.intro-tag-build', {
         yPercent: 0,
-        opacity: 1,
+        autoAlpha: 1,
         duration: 0.9,
         ease: 'power4.out',
       }, '-=0.1')
       .to('.intro-tag-above', {
         yPercent: 0,
-        opacity: 1,
+        autoAlpha: 1,
         duration: 0.9,
         ease: 'power4.out',
       }, '-=0.7')
       .to('.intro-tag-beyond', {
         yPercent: 0,
-        opacity: 1,
+        autoAlpha: 1,
         duration: 0.98,
         ease: 'power4.out',
       }, '-=0.76')
       .to({}, { duration: 0.55 })
       .to('.intro-tag-shell', {
         y: -10,
-        opacity: 0,
+        autoAlpha: 0,
         duration: 0.75,
         ease: 'power2.out',
       })
       .to('.intro-tag-dot', {
-        opacity: 0,
+        autoAlpha: 0,
         scale: 0.92,
         duration: 0.75,
         ease: 'power2.out',
@@ -152,15 +155,15 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
           <div className="intro-igloo-line h-px w-28 bg-white/22 md:w-40" />
         </div>
 
-        <div className="intro-tag-shell absolute left-[3.8vw] top-1/2 -translate-y-1/2 flex w-auto max-w-none items-center justify-start gap-[0.14em] font-sans text-[clamp(2.7rem,7vw,5.8rem)] font-[350] tracking-[-0.05em] text-white md:left-[3.6vw] md:gap-[0.16em]">
+        <div className="intro-tag-shell absolute inset-x-5 top-1/2 flex w-[calc(100vw-2.5rem)] -translate-y-1/2 flex-col items-start justify-center gap-1 font-sans text-[clamp(3rem,15vw,4.75rem)] font-[350] leading-[0.88] tracking-normal text-white md:left-[3.6vw] md:right-auto md:w-auto md:max-w-none md:flex-row md:items-center md:justify-start md:gap-[0.16em] md:text-[clamp(2.7rem,7vw,5.8rem)] md:leading-none">
           <div className="overflow-hidden leading-none">
-            <span className="intro-tag-build inline-block">Build.</span>
+            <span className="intro-tag-build inline-block">Bâtir.</span>
           </div>
           <div className="overflow-hidden leading-none">
-            <span className="intro-tag-above inline-block">Above.</span>
+            <span className="intro-tag-above inline-block">Plus haut.</span>
           </div>
           <div className="overflow-hidden leading-none">
-            <span className="intro-tag-beyond inline-block text-[#ff3b30]">Beyond.</span>
+            <span className="intro-tag-beyond inline-block text-[#ff3b30]">Plus loin.</span>
           </div>
         </div>
 

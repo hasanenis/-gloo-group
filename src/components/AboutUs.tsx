@@ -1,140 +1,135 @@
-import React, { useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
+import { Building2, ShieldCheck, UsersRound } from 'lucide-react';
 import ImageSlider from './ImageSlider';
-import {
-  motionDuration,
-  motionDurationFor,
-  motionEase,
-  motionStagger,
-  usePrefersReducedMotion,
-} from '../lib/motion';
-import { companyProfile, projects } from '../data/projects';
+import { homepageContent, localize } from '../data/homepageContent';
+import { useLocale } from '../i18n';
+import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
 
-gsap.registerPlugin(ScrollTrigger);
+const PROOF_ICONS = [ShieldCheck, UsersRound, Building2];
 
 export default function AboutUs() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
-  const yearsRef = useRef<HTMLSpanElement>(null);
-  const projectsRef = useRef<HTMLSpanElement>(null);
-  const yearsActive = new Date().getFullYear() - companyProfile.foundedYear;
+  const containerRef = useRef<HTMLElement>(null);
+  const { locale } = useLocale();
+  const content = homepageContent.about;
+  const titleLines = localize(content.title, locale)
+    .replace(/\s+/g, ' ')
+    .split('. ')
+    .filter(Boolean)
+    .map((line, index, lines) => (index < lines.length - 1 ? `${line}.` : line));
 
-  useGSAP(() => {
-    if (!containerRef.current) return;
-    if (prefersReducedMotion) {
-      gsap.set(['.about-title', '.about-text', '.stats-image', '.stat-item'], { clearProps: 'all', opacity: 1, x: 0, y: 0 });
-      if (yearsRef.current) yearsRef.current.textContent = `${yearsActive}`;
-      if (projectsRef.current) projectsRef.current.textContent = `${projects.length}`;
-      return;
-    }
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: 'top 75%',
-        once: true,
-      },
-    });
-
-    tl.fromTo('.about-title', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: motionDuration.slow, ease: motionEase.smooth })
-      .fromTo(
-        '.about-text',
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: motionDuration.hero, stagger: motionStagger.loose, ease: motionEase.smooth },
-        '-=0.7',
-      );
-
-    const statsTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.stats-section',
-        start: 'top 85%',
-        once: true,
-      },
-    });
-
-    statsTl
-      .fromTo('.stats-image', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: motionDuration.slow, ease: motionEase.smooth })
-      .fromTo(
-        '.stat-item',
-        { x: 30, opacity: 0 },
-        { x: 0, opacity: 1, duration: motionDuration.hero, stagger: 0.18, ease: motionEase.smooth },
-        '-=0.8',
-      );
-
-    ScrollTrigger.create({
-      trigger: '.stats-section',
-      start: 'top 85%',
-      once: true,
-      onEnter: () => {
-        if (yearsRef.current) {
-          gsap.to(yearsRef.current, {
-            innerHTML: yearsActive,
-            duration: motionDurationFor(2.2),
-            snap: { innerHTML: 1 },
-            ease: motionEase.soft,
-          });
-        }
-
-        if (projectsRef.current) {
-          gsap.to(projectsRef.current, {
-            innerHTML: projects.length,
-            duration: motionDurationFor(2.4),
-            snap: { innerHTML: 1 },
-            ease: motionEase.soft,
-          });
-        }
-      },
-    });
-  }, { scope: containerRef, dependencies: [prefersReducedMotion, yearsActive] });
+  useHomeTextReveal(containerRef, [locale]);
 
   return (
-    <section ref={containerRef} className="w-full bg-white px-8 md:px-14 py-20 md:py-32 xl:py-40 font-sans">
-      <div className="max-w-[1526px] mx-auto">
-        <div className="flex flex-col md:flex-row items-center px-2 mb-20 md:mb-32">
-          <div className="w-full md:w-[35%] relative mb-12 md:mb-0 flex justify-between items-start pr-12 xl:pr-24">
-            <h2 className="about-title opacity-0 text-[34px] md:text-[42px] font-light text-[#c22026] leading-[1.1] tracking-[0.02em] pt-1">
-              About Us
-            </h2>
-          </div>
+    <section
+      ref={containerRef}
+      className="relative w-full overflow-hidden bg-white px-5 pt-6 pb-14 font-sans text-black md:px-10 md:pt-8 md:pb-20 xl:px-16 xl:pt-10 xl:pb-20"
+      aria-label="Company profile"
+    >
+      <div className="relative z-30 mx-auto max-w-[1600px]">
+        <div className="grid gap-10 border-y border-black/[0.09] py-6 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,0.86fr)] lg:gap-0 lg:py-0">
+          <div className="flex min-h-[380px] flex-col justify-start lg:border-r lg:border-black/[0.09] lg:py-12 lg:pr-12 xl:pr-[4.5rem]">
+            <div
+              className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#c22026] md:text-[13px]"
+              data-home-text-reveal
+              data-home-text-reveal-mode="block"
+            >
+              {localize(content.eyebrow, locale)}
+            </div>
 
-          <div className="w-full md:w-[65%] lg:w-[50%] md:pl-4 lg:pl-8">
-            <div className="flex flex-col space-y-7 text-[18px] md:text-[21px] leading-[1.62] text-black font-normal tracking-[-0.01em] max-w-[32rem] md:max-w-[34rem]">
-              {companyProfile.overview.map((paragraph) => (
-                <p key={paragraph} className="about-text opacity-0">
-                  {paragraph}
+            <h2
+              className="mt-6 max-w-[40rem] font-serif text-[clamp(2.8rem,4.2vw,4.1rem)] font-semibold leading-[0.96] tracking-normal text-black md:mt-8"
+            >
+              {titleLines.map((line, index) => (
+                <span
+                  key={line}
+                  className="block"
+                  data-home-text-reveal
+                  data-home-text-reveal-mode="line"
+                  data-home-text-reveal-start="top 84%"
+                  data-home-text-reveal-delay={String(index * 0.1)}
+                >
+                  {line}
+                </span>
+              ))}
+            </h2>
+
+            <div className="mt-6 h-px w-16 bg-[#c22026]" aria-hidden="true" />
+
+            <div className="mt-6 max-w-[62ch] space-y-7 text-[17px] leading-[1.75] text-black/64 md:text-[19px]">
+              {content.paragraphs.map((paragraph) => (
+                <p
+                  key={paragraph.en}
+                  data-home-text-reveal
+                  data-home-text-reveal-start="top 88%"
+                >
+                  {localize(paragraph, locale)}
                 </p>
               ))}
             </div>
           </div>
+
+          <div className="flex min-h-[380px] flex-col justify-start lg:py-12 lg:pl-12 xl:pl-[4.5rem]">
+            <div className="mb-5 flex items-center gap-6 text-[14px] leading-relaxed text-black/66 md:text-[15px]">
+              <ShieldCheck className="h-6 w-6 shrink-0 text-[#c22026]" strokeWidth={1.7} />
+              <span
+                data-home-text-reveal
+                data-home-text-reveal-mode="block"
+              >
+                {localize(content.credential, locale)}
+              </span>
+            </div>
+
+            <div className="profile-image">
+              <ImageSlider />
+            </div>
+          </div>
         </div>
 
-        <div className="stats-section flex flex-col md:flex-row items-stretch gap-12 lg:gap-24 px-2">
-          <div className="stats-image opacity-0 w-full md:w-[60%] overflow-hidden">
-            <ImageSlider />
+        <div className="grid border-b border-black/[0.09] py-10 lg:grid-cols-2 lg:py-12">
+          <div className="grid gap-y-8 sm:grid-cols-3 lg:border-r lg:border-black/[0.09] lg:pr-10 xl:pr-16">
+            {content.metrics.map((metric) => (
+              <div
+                key={metric.value}
+                className="sm:px-8 sm:first:pl-0 sm:last:pr-0 sm:[&:not(:last-child)]:border-r sm:[&:not(:last-child)]:border-black/[0.12]"
+              >
+                <div
+                  className="font-serif text-[42px] font-medium leading-none text-[#c22026] md:text-[48px]"
+                  data-home-text-reveal
+                  data-home-text-reveal-mode="block"
+                >
+                  {metric.value}
+                </div>
+                <div
+                  className="mt-5 max-w-[18ch] text-[12px] font-bold uppercase leading-[1.45] tracking-[0.18em] text-black/62"
+                  data-home-text-reveal
+                  data-home-text-reveal-mode="line"
+                >
+                  {localize(metric.label, locale)}
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="w-full md:w-[40%] flex flex-col justify-center space-y-16">
-            <div className="stat-item opacity-0">
-              <div className="text-[120px] md:text-[140px] font-bold text-[#c22026] leading-none mb-4 -ml-1 flex items-start">
-                <span ref={yearsRef}>0</span>
-                <span className="text-[80px] md:text-[100px] align-top leading-[0.8]">+</span>
-              </div>
-              <div className="text-[28px] md:text-[32px] font-light text-black pb-8 border-b border-black/80">
-                Years Active
-              </div>
-            </div>
+          <div className="mt-10 grid gap-y-8 sm:grid-cols-3 lg:mt-0 lg:pl-10 xl:pl-16">
+            {content.proofs.map((proof, index) => {
+              const Icon = PROOF_ICONS[index] ?? ShieldCheck;
 
-            <div className="stat-item opacity-0">
-              <div className="text-[120px] md:text-[140px] font-bold text-[#c22026] leading-none mb-4 -ml-1 flex items-start">
-                <span ref={projectsRef}>0</span>
-                <span className="text-[80px] md:text-[100px] align-top leading-[0.8]">+</span>
-              </div>
-              <div className="text-[28px] md:text-[32px] font-light text-black pb-8 border-b border-black/80">
-                Projects Featured
-              </div>
-            </div>
+              return (
+                <div
+                  key={proof.title.en}
+                  className="flex flex-col items-start sm:px-8 sm:first:pl-0 sm:last:pr-0 sm:[&:not(:last-child)]:border-r sm:[&:not(:last-child)]:border-black/[0.12] lg:items-center lg:text-center"
+                >
+                  <Icon className="h-9 w-9 text-[#c22026]" strokeWidth={1.45} />
+                  <h3
+                    className="mt-6 max-w-[18ch] text-[15px] font-medium leading-snug text-black md:text-[16px]"
+                    data-home-text-reveal
+                    data-home-text-reveal-start="top 88%"
+                  >
+                    {localize(proof.title, locale)}
+                  </h3>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

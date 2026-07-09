@@ -1,0 +1,110 @@
+{
+  "video": "C:\\Users\\hasan\\Videos\\Screen Recordings\\Screen Recording 2026-07-01 160653.mp4",
+  "size_bytes": 6048021,
+  "meta": {
+    "plugin": "ffmpeg",
+    "nframes": Infinity,
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "audio_codec": "aac",
+    "fps": 30.0,
+    "source_size": [
+      1910,
+      934
+    ],
+    "size": [
+      1910,
+      934
+    ],
+    "rotate": 0,
+    "duration": 7.3
+  },
+  "fps": 30.0,
+  "duration": 7.3,
+  "nframes": 216,
+  "sample_count": 30,
+  "contact_sheet": "C:\\Users\\hasan\\Documents\\igloo-construction\\.codex-video-analysis\\contact_sheet.png",
+  "diff_peaks": [
+    [
+      1.25,
+      58.94502258300781
+    ],
+    [
+      3.75,
+      27.792438507080078
+    ],
+    [
+      5.0,
+      26.962385177612305
+    ],
+    [
+      1.0,
+      23.777006149291992
+    ],
+    [
+      1.5,
+      23.775270462036133
+    ],
+    [
+      5.75,
+      21.566936492919922
+    ],
+    [
+      5.5,
+      20.86072540283203
+    ],
+    [
+      6.0,
+      20.43190574645996
+    ],
+    [
+      5.25,
+      18.082368850708008
+    ],
+    [
+      1.75,
+      14.530671119689941
+    ],
+    [
+      3.5,
+      12.283950805664062
+    ],
+    [
+      4.75,
+      11.261573791503906
+    ]
+  ],
+  "sample_times": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5,
+    3.75,
+    4.0,
+    4.25,
+    4.5,
+    4.75,
+    5.0,
+    5.25,
+    5.5,
+    5.75,
+    6.0,
+    6.25,
+    6.5,
+    6.75,
+    7.0,
+    7.25
+  ]
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "query": "Douaouda, Algeria",
+    "count": 1,
+    "display_name": "Douaouda ⴷⵡⴰⵡⴷⴰ دواودة, Béni Kerouane, Daïra Fouka, تيبازة Tipaza ⵜⵉⵒⴰⵣⴰ, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.6737396",
+    "lon": "2.7900902",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.3602803386784236
+  },
+  {
+    "query": "Sidi Abdallah Mahalma, Algiers, Algeria",
+    "count": 0,
+    "display_name": "",
+    "lat": "",
+    "lon": "",
+    "class": "",
+    "type": "",
+    "importance": null
+  },
+  {
+    "query": "Staoueli, Algiers, Algeria",
+    "count": 1,
+    "display_name": "Staoueli ⵙⵜⴰⵡⴰⵍⵉ سطاوالي, Zeralda ⵣⵉⵔⴰⵍⴷⴰ زرالدة, الجزائر ⴷⵣⴰⵢⴻⵔ, 16000, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.7532755",
+    "lon": "2.8881822",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.42488189173487034
+  },
+  {
+    "query": "Douira, Algiers, Algeria",
+    "count": 3,
+    "display_name": "Branchement vers Douira, Douera ⴷⵡⵉⵔⴰ دويرة, Draria, الجزائر ⴷⵣⴰⵢⴻⵔ, 16000, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.6916716",
+    "lon": "2.9384967",
+    "class": "highway",
+    "type": "motorway",
+    "importance": 0.05341143282215607
+  },
+  {
+    "query": "Said Hamdine, Bir Mourad Rais, Algiers, Algeria",
+    "count": 2,
+    "display_name": "Said Hamdine سعيد حمدين, Bir Mourad Raïs ⴱⵉⵔ ⵎⵓⵔⴰⴷ ⵔⴰⵢⵙ بئر مراد رايس, Bir Mourad Raïs, الجزائر ⴷⵣⴰⵢⴻⵔ, 16000, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.7350939",
+    "lon": "3.0314241",
+    "class": "place",
+    "type": "suburb",
+    "importance": 0.1467447661554894
+  },
+  {
+    "query": "Rouiba, Algiers, Algeria",
+    "count": 2,
+    "display_name": "Rouiba ⵔⵡⵉⴱⴰ الرويبة, Rouiba, الجزائر ⴷⵣⴰⵢⴻⵔ, 16000, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.7364237",
+    "lon": "3.2826417",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.4322290442816154
+  },
+  {
+    "query": "Sidi Benour, Algiers, Algeria",
+    "count": 0,
+    "display_name": "",
+    "lat": "",
+    "lon": "",
+    "class": "",
+    "type": "",
+    "importance": null
+  },
+  {
+    "query": "Dely Brahim, Algiers, Algeria",
+    "count": 1,
+    "display_name": "Dély Brahim ⴷⴻⵍⵉ ⴱⵔⴰⵀⵉⵎ دالي إبراھيم, Daïra de Chéraga, الجزائر ⴷⵣⴰⵢⴻⵔ, 16000, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.7516098",
+    "lon": "2.9825732",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.4122803330194641
+  },
+  {
+    "query": "Bas Mazagran, Mostaganem, Algeria",
+    "count": 0,
+    "display_name": "",
+    "lat": "",
+    "lon": "",
+    "class": "",
+    "type": "",
+    "importance": null
+  },
+  {
+    "query": "Bouraada Site, Reghaia, Algiers, Algeria",
+    "count": 0,
+    "display_name": "",
+    "lat": "",
+    "lon": "",
+    "class": "",
+    "type": "",
+    "importance": null
+  },
+  {
+    "query": "Boudouaou, Boumerdes, Algeria",
+    "count": 1,
+    "display_name": "Boudouaou ⴱⵓⴷⵡⴰⵡ بودواو, Daïra Boudouaou, بومرداس Boumerdès ⴱⵓⵎⴻⵔⴷⴰⵙ, 35400, ⵍⵣⵣⴰⵢⴻⵔ الجزائر",
+    "lat": "36.7271127",
+    "lon": "3.4085912",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.39727265900251174
+  }
+]
