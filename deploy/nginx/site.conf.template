@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name {{DOMAIN}} {{WWW_DOMAIN}};
+
+    root /var/www/{{SITE_SLUG}}/current/dist;
+    index index.html;
+
+    access_log /var/log/nginx/{{SITE_SLUG}}.access.log;
+    error_log /var/log/nginx/{{SITE_SLUG}}.error.log;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    location = /favicon.ico {
+        log_not_found off;
+        access_log off;
+    }
+}
