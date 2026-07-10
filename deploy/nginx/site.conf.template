@@ -9,9 +9,12 @@ server {
     access_log /var/log/nginx/{{SITE_SLUG}}.access.log;
     error_log /var/log/nginx/{{SITE_SLUG}}.error.log;
 
-    # React Router — tüm bilinmeyen path'lar index.html'e
+    # React Router — tüm bilinmeyen path'lar index.html'e.
+    # Not: $uri/ kasıtlı olarak yok — public/projects/<slug>/ gibi statik
+    # varlık klasörleri React route'larıyla (ör. /projects/<slug>) aynı ada
+    # sahip; $uri/ denemesi o klasörü bulup index.html'siz 403 dönüyordu.
     location / {
-        try_files $uri $uri/ /index.html;
+        try_files $uri /index.html;
     }
 
     # Statik varlıklar — uzun süreli cache, immutable
