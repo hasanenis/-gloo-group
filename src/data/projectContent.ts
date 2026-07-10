@@ -1,5 +1,6 @@
 import { projects, type ProjectRecord } from './projects';
 import { generatedProjectContent } from './projectContent.generated';
+import type { Locale } from '../i18n';
 
 export type LocalizedText = { en: string; fr: string };
 export type LocalizedList = { title: LocalizedText; items: LocalizedText[] };
@@ -89,8 +90,11 @@ export function getProjectContent(project: ProjectRecord) {
   return fallbackContent(project);
 }
 
-export function localized(value: LocalizedText, locale: 'en' | 'fr') {
-  return value[locale];
+export function localized(value: LocalizedText, locale: Locale) {
+  // Project content is currently authored in en/fr only; for locales
+  // without authored content (dz/tr) fall back to English so the page
+  // still renders rather than showing undefined.
+  return value[locale] ?? value.en;
 }
 
 export const projectContentBySlug: ProjectContentBySlug = Object.fromEntries(

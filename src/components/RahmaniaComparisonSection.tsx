@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
 import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+import type { Locale } from '../i18n';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +29,7 @@ type CinematicCopy = {
 };
 
 const copyByLocale: Record<'en' | 'fr', CinematicCopy> = {
+  // Note: authored in en/fr only. For dz/tr we fall back to English (see below).
   en: {
     eyebrow: 'Rahmania / Douira',
     title: 'Commerce, services and everyday life brought together at the heart of a growing neighbourhood.',
@@ -73,7 +75,7 @@ const copyByLocale: Record<'en' | 'fr', CinematicCopy> = {
 };
 
 type RahmaniaCinematicSectionProps = {
-  locale: 'en' | 'fr';
+  locale: Locale;
   backgroundImage: string;
   beforeImage: string;
   afterImage: string;
@@ -99,7 +101,8 @@ export default function RahmaniaComparisonSection({
 }: RahmaniaCinematicSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const copy = copyByLocale[locale];
+  // Authored content exists for en/fr only; for dz/tr fall back to English.
+  const copy = copyByLocale[locale === 'fr' ? 'fr' : 'en'];
 
   useGSAP(
     () => {

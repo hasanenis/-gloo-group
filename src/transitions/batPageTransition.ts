@@ -1,5 +1,12 @@
-import type { BatHeroTransitionLayout } from "./batHeroGeometry";
+import type { BatHeroTransitionGeometry, BatHeroTransitionLayout } from "./batHeroGeometry";
 import { getBatHeroTransitionGeometry } from "./batHeroGeometry";
+
+type BatPageTransitionImageSettings = {
+  fit?: "cover" | "contain";
+  positionX?: number;
+  positionY?: number;
+  scale?: number;
+};
 
 type BatPageTransitionOptions = {
   targetPath: string;
@@ -9,6 +16,8 @@ type BatPageTransitionOptions = {
    */
   variant?: "hero" | "plain";
   imageSrc?: string;
+  /** Matches the destination hero's manual crop so the handoff doesn't jump. */
+  imageSettings?: BatPageTransitionImageSettings;
   reducedMotion?: boolean;
   lenis?: {
     stop?: () => void;
@@ -59,7 +68,19 @@ function getTransitionLayout(targetPath: string): BatHeroTransitionLayout {
   return /^\/projects\/[^/]+\/?$/.test(pathname) ? "project-detail" : "bat-demo";
 }
 
-function createTransitionLayer(imageSrc: string | undefined, targetPath: string) {
+function applyGeometryVars(layer: HTMLDivElement, geometry: BatHeroTransitionGeometry) {
+  layer.style.setProperty("--bat-transition-overscan", `${geometry.overscan}%`);
+  layer.style.setProperty("--bat-transition-hero-height", `${geometry.heroHeight}px`);
+  layer.style.setProperty("--bat-transition-overscan-px", `${geometry.overscanPx}px`);
+  layer.style.setProperty("--bat-transition-image-height", `${geometry.imageHeight}px`);
+  layer.style.setProperty("--bat-transition-y", `${geometry.imageTranslateY}px`);
+}
+
+function createTransitionLayer(
+  imageSrc: string | undefined,
+  targetPath: string,
+  imageSettings?: BatPageTransitionImageSettings,
+) {
   const geometry = getBatHeroTransitionGeometry(
     window.innerWidth,
     window.innerHeight,
@@ -68,17 +89,17 @@ function createTransitionLayer(imageSrc: string | undefined, targetPath: string)
   const layer = document.createElement("div");
   layer.className = "bat-page-transition";
   layer.setAttribute("aria-hidden", "true");
-  layer.style.setProperty("--bat-transition-overscan", `${geometry.overscan}%`);
-  layer.style.setProperty("--bat-transition-hero-height", `${geometry.heroHeight}px`);
-  layer.style.setProperty("--bat-transition-overscan-px", `${geometry.overscanPx}px`);
-  layer.style.setProperty("--bat-transition-image-height", `${geometry.imageHeight}px`);
-  layer.style.setProperty("--bat-transition-y", `${geometry.imageTranslateY}px`);
+  applyGeometryVars(layer, geometry);
 
   const image = document.createElement("img");
   image.className = "bat-page-transition__image";
   image.decoding = "async";
   image.alt = "";
   if (imageSrc) image.src = imageSrc;
+  if (imageSettings?.fit) image.style.objectFit = imageSettings.fit;
+  if (imageSettings?.positionX != null || imageSettings?.positionY != null) {
+    image.style.objectPosition = `${imageSettings.positionX ?? 50}% ${imageSettings.positionY ?? 50}%`;
+  }
 
   const veil = document.createElement("div");
   veil.className = "bat-page-transition__veil";
@@ -153,6 +174,7 @@ export async function runBatPageTransition({
   targetPath,
   variant = "hero",
   imageSrc,
+  imageSettings,
   reducedMotion,
   lenis,
   navigate,
@@ -219,7 +241,8 @@ export async function runBatPageTransition({
 
   await preloadImage(imageSrc);
 
-  const { layer, geometry } = createTransitionLayer(imageSrc, targetPath);
+  const { layer, geometry } = createTransitionLayer(imageSrc, targetPath, imageSettings);
+  const manualScale = imageSettings?.scale ?? 1;
 
   const rise = layer.animate(
     [
@@ -250,10 +273,10 @@ export async function runBatPageTransition({
   const image = layer.querySelector<HTMLImageElement>(".bat-page-transition__image");
   const finalImageY = geometry.imageTranslateY;
   const startImageY = finalImageY + geometry.imageHeight * 0.08;
-  const imageDrift = image?.animate(
+  let imageDrift = image?.animate(
     [
-      { transform: `translate3d(0, ${startImageY}px, 0) scale(1.08)` },
-      { transform: `translate3d(0, ${finalImageY}px, 0) scale(1)` },
+      { transform: `translate3d(0, ${startImageY}px, 0) scale(${1.08 * manualScale})` },
+      { transform: `translate3d(0, ${finalImageY}px, 0) scale(${manualScale})` },
     ],
     {
       duration: 1900,
@@ -266,6 +289,46 @@ export async function runBatPageTransition({
   navigate(targetPath);
   forceScrollTop(lenis);
   afterNavigate?.();
+
+  // Mobile browsers collapse/expand the address bar between the source page
+  // (mid-scroll, bar often hidden) and the destination hero landing at the
+  // top (bar visible again), so the pre-navigation geometry can be stale by
+  // the time the real 100svh hero settles. Re-measure once layout has had a
+  // beat to catch up and ease the still-running drift toward the corrected
+  // target instead of letting it settle on the wrong crop.
+  await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+  await wait(90);
+
+  const settledGeometry = getBatHeroTransitionGeometry(
+    window.innerWidth,
+    window.innerHeight,
+    { layout: getTransitionLayout(targetPath) },
+  );
+
+  if (image && Math.abs(settledGeometry.imageHeight - geometry.imageHeight) > 1) {
+    applyGeometryVars(layer, settledGeometry);
+
+    const correctedFinalY = settledGeometry.imageTranslateY;
+    try {
+      imageDrift?.commitStyles();
+    } catch {
+      // commitStyles isn't supported everywhere — the animation still
+      // finishes toward its original (slightly stale) target below.
+    }
+    imageDrift?.cancel();
+
+    imageDrift = image.animate(
+      [
+        { transform: image.style.transform || `translate3d(0, ${finalImageY}px, 0) scale(${manualScale})` },
+        { transform: `translate3d(0, ${correctedFinalY}px, 0) scale(${manualScale})` },
+      ],
+      {
+        duration: 520,
+        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+        fill: "forwards",
+      },
+    );
+  }
 
   await rise.finished.catch(() => undefined);
   await imageDrift?.finished.catch(() => undefined);

@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { Link, useLocation } from 'react-router-dom';
 import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { useLocale } from '../i18n';
+import { useLocale, LOCALE_CODES, LOCALE_LABELS } from '../i18n';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -121,7 +121,7 @@ function LocaleMenu({ isScrolled }: { isScrolled: boolean }) {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-[9rem] shadow-none">
-        {(['en', 'fr'] as const).map((option) => (
+        {LOCALE_CODES.map((option) => (
           <DropdownMenuItem
             key={option}
             onSelect={(event) => {
@@ -130,7 +130,7 @@ function LocaleMenu({ isScrolled }: { isScrolled: boolean }) {
             }}
             className={locale === option ? 'bg-[color:var(--igloo-surface-soft)] font-semibold' : ''}
           >
-            {option.toUpperCase()}
+            {LOCALE_LABELS[option]}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

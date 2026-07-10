@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useLenis } from '../components/SmoothScrollProvider';
 import { projects } from '../data/projects';
 import { getProjectHeroImage } from '../data/projectHeroImage';
+import { getManualProjectHeroSettings } from '../data/manualProjectImages';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { runBatPageTransition } from '../transitions/batPageTransition';
 
@@ -31,14 +32,25 @@ function isProjectDetailPath(pathname: string) {
   return /^\/(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname);
 }
 
-function getProjectTransitionImage(pathname: string) {
+function resolveTransitionProject(pathname: string) {
   const projectMatch = pathname.match(/^\/(?:bat-demo\/)?projects\/([^/]+)\/?$/);
   if (!projectMatch) return undefined;
 
   const slug = decodeSlug(projectMatch[1]);
   const canonicalSlug = slug === 'douira-commercial-centers-2500-housing' ? 'rahmania' : slug;
-  const project = projects.find((item) => item.slug === canonicalSlug);
+  return projects.find((item) => item.slug === canonicalSlug);
+}
+
+function getProjectTransitionImage(pathname: string) {
+  const project = resolveTransitionProject(pathname);
   return project ? getProjectHeroImage(project).src : undefined;
+}
+
+// The transition overlay needs the same crop the real hero lands on, or the
+// handoff visibly jumps the moment the overlay fades away.
+function getProjectTransitionImageSettings(pathname: string) {
+  const project = resolveTransitionProject(pathname);
+  return project ? getManualProjectHeroSettings(project.slug) : undefined;
 }
 
 /**
@@ -84,6 +96,9 @@ export function useSiteNavigate() {
         variant: isProjectDetail ? 'hero' : 'plain',
         imageSrc: isProjectDetail
           ? imageSrc ?? getProjectTransitionImage(targetPathname)
+          : undefined,
+        imageSettings: isProjectDetail
+          ? getProjectTransitionImageSettings(targetPathname)
           : undefined,
         reducedMotion: prefersReducedMotion,
         lenis,

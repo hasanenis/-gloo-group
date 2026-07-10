@@ -359,7 +359,9 @@ export default function ProjectDetail() {
   const infoEyebrow = editorial?.infoEyebrow ?? rahmaniaInfoEyebrow;
   const infoMetricLabel = editorial?.metricLabel ?? rahmaniaInfoMetricLabel;
   const infoCtaLabel = editorial?.ctaLabel ?? rahmaniaCtaLabel;
-  const infoMetricCaptionLines = editorial?.metricCaptionLines[locale] ?? rahmaniaMetricCaptionLines;
+  // Authored in en/fr only; fall back to English for dz/tr.
+  const metricKey = locale === 'fr' ? 'fr' : 'en';
+  const infoMetricCaptionLines = editorial?.metricCaptionLines[metricKey] ?? rahmaniaMetricCaptionLines;
 
   useEffect(() => {
     if (slug && canonicalSlug && slug !== canonicalSlug) {

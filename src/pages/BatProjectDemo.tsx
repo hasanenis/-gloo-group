@@ -20,7 +20,7 @@ import { gsap } from "gsap";
 import Draggable from "gsap/Draggable";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { LocaleToggle, useLocale } from "../i18n";
+import { LocaleToggle, useLocale, type Locale } from "../i18n";
 import { companyProfile, projects } from "../data/projects";
 import {
   buildBatProjectPageModel,
@@ -149,7 +149,7 @@ function getHeroImageParallaxRange() {
   return getBatHeroParallaxRange();
 }
 
-function getJoHouseFacts(locale: "en" | "fr") {
+function getJoHouseFacts(locale: Locale) {
   return locale === "fr"
     ? [
         { label: "Typologie", value: "Maison individuelle" },
@@ -574,7 +574,7 @@ function DemoMenu({
   onScrollTo,
 }: {
   open: boolean;
-  locale: "en" | "fr";
+  locale: Locale;
   onClose: () => void;
   onNavigate: (to: string) => void;
   onScrollTo: (id: string) => void;
@@ -741,7 +741,7 @@ function DemoFooter({
   onNavigate,
 }: {
   projectSlug: string;
-  locale: "en" | "fr";
+  locale: Locale;
   onNavigate: (to: string) => void;
 }) {
   const { t } = useLocale();

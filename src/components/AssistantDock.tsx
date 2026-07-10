@@ -127,7 +127,7 @@ const SEARCH_STOPWORDS = new Set([
 const buildAssistantContent = (
   emailHref: string,
   phoneHref: string,
-): Record<Locale, AssistantContent> => ({
+): { en: AssistantContent; fr: AssistantContent; dz?: AssistantContent; tr?: AssistantContent } => ({
   en: {
     labels: {
       title: 'Igloo Assistant',
@@ -994,7 +994,7 @@ export default function AssistantDock() {
   const phoneHref = `tel:${officePhone.replace(/\s/g, '')}`;
   const emailHref = `mailto:${companyProfile.email}`;
   const assistantContent = useMemo(
-    () => buildAssistantContent(emailHref, phoneHref)[locale],
+    () => buildAssistantContent(emailHref, phoneHref)[locale] ?? buildAssistantContent(emailHref, phoneHref).en,
     [emailHref, locale, phoneHref],
   );
   const { labels, topics, answers } = assistantContent;

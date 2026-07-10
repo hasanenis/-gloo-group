@@ -1,6 +1,16 @@
 import type { Locale } from '../i18n';
 
-export type HomepageText = Record<Locale, string>;
+/**
+ * Localized homepage/about/contact copy. English and French are always
+ * authored; Algerian Arabic (dz) and Turkish (tr) are optional and fall
+ * back to English when absent (see `homepageText()` helper).
+ */
+export type HomepageText = { en: string; fr: string; dz?: string; tr?: string };
+
+/** Resolve a HomepageText value for the active locale, falling back to English. */
+export function homepageText(value: HomepageText, locale: Locale): string {
+  return value[locale] ?? value.en;
+}
 
 export type HomepageMetric = {
   value: string;
@@ -330,6 +340,6 @@ export const homepageProjectProofs: Record<string, HomepageText> = {
   },
 };
 
-export function localize(value: HomepageText, locale: Locale) {
-  return value[locale];
+export function localize(value: HomepageText, locale: Locale): string {
+  return value[locale] ?? value.en;
 }
