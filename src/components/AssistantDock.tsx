@@ -472,7 +472,7 @@ const buildAssistantContent = (
         topicId: 'company',
         label: 'Who is Igloo?',
         answer:
-          'SARL Igloo Yapi Construction is based in Ouled Fayet, Algiers and works on residential, mixed-use, road, network, and coordinated site delivery.',
+          'SARL Igloo Yapi Construction is based in Bir Khadem, Algiers and works on residential, mixed-use, road, network, and coordinated site delivery.',
         nextStep:
           'Clients can review the company section or send a request for a project discussion.',
         actions: [
@@ -868,7 +868,7 @@ const buildAssistantContent = (
         topicId: 'company',
         label: 'Qui est Igloo ?',
         answer:
-          'SARL Igloo Yapi Construction est basée à Ouled Fayet, Alger, et intervient sur résidentiel, mixte, routes, réseaux et chantiers coordonnés.',
+          'SARL Igloo Yapi Construction est basée à Bir Khadem, Alger, et intervient sur résidentiel, mixte, routes, réseaux et chantiers coordonnés.',
         nextStep:
           'Les clients peuvent consulter la section entreprise ou demander une discussion projet.',
         actions: [

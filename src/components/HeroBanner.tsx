@@ -262,12 +262,12 @@ export default function HeroBanner() {
             <img
               src={HERO_POSTER}
               alt=""
-              className="absolute inset-0 h-full w-full object-cover object-[78%_50%] sm:object-center"
+              className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
             />
           ) : (
             <video
               ref={videoRef}
-              className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[78%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}
+              className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}
               src={HERO_VIDEO_URL}
               poster={HERO_POSTER}
               autoPlay

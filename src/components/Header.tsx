@@ -18,7 +18,7 @@ import {
  *  (e.g. the projects listing, which opens on a white filter bar) forces the
  *  solid state immediately since there's no dark backdrop to sit on. */
 function hasHeroBackdrop(pathname: string) {
-  return pathname === '/' || pathname === '/about' || pathname === '/contact' || pathname === '/projects1' || pathname.startsWith('/projects/');
+  return pathname === '/' || pathname === '/projects1' || pathname.startsWith('/projects/');
 }
 
 function NavUnderlineItem({

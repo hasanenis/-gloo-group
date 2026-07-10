@@ -178,26 +178,3 @@
     font-size: 17px;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .pjx-card__image {
-    clip-path: none;
-    transition: none;
-  }
-
-  .pjx-card__label {
-    opacity: 1;
-    transform: none;
-    transition: color 260ms ease;
-  }
-
-  .pjx-card__parallax {
-    top: 0;
-    height: 100%;
-    transform: none !important;
-  }
-
-  .pjx-card__parallax img {
-    transition: none;
-  }
-}

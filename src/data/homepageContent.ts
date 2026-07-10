@@ -70,7 +70,7 @@ export const homepageContent = {
       {
         value: '2018',
         label: { en: 'founded in Algiers', fr: 'création à Alger' },
-        detail: { en: 'Ouled Fayet operational base', fr: 'base opérationnelle à Ouled Fayet' },
+        detail: { en: 'Bir Khadem operational base', fr: 'base opérationnelle à Bir Khadem' },
       },
       {
         value: '11',
@@ -174,8 +174,8 @@ export const homepageContent = {
     },
     paragraphs: [
       {
-        en: 'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction works from Ouled Fayet, Algiers, on residential and mixed-use programmes across Algeria.',
-        fr: 'Fondée en 2018 et dirigée par l’ingénieur en génie civil Adem Talay, SARL Igloo Yapi Construction intervient depuis Ouled Fayet, Alger, sur des programmes résidentiels et mixtes en Algérie.',
+        en: 'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction works from Bir Khadem, Algiers, on residential and mixed-use programmes across Algeria.',
+        fr: 'Fondée en 2018 et dirigée par l’ingénieur en génie civil Adem Talay, SARL Igloo Yapi Construction intervient depuis Bir Khadem, Alger, sur des programmes résidentiels et mixtes en Algérie.',
       },
       {
         en: 'The company holds a Professional Qualification and Classification Certificate, Category 6, and operates with a qualified building manager, engineers, architects, construction managers and site staff.',
@@ -277,8 +277,8 @@ export const homepageContent = {
       fr: 'Appeler le bureau Algérie',
     },
     proofLine: {
-      en: 'Ouled Fayet, Algiers · Category 6 certified contractor · Residential and mixed-use delivery',
-      fr: 'Ouled Fayet, Alger · Entreprise certifiée catégorie 6 · Réalisation résidentielle et mixte',
+      en: 'Bir Khadem, Algiers · Category 6 certified contractor · Residential and mixed-use delivery',
+      fr: 'Bir Khadem, Alger · Entreprise certifiée catégorie 6 · Réalisation résidentielle et mixte',
     },
   },
 };

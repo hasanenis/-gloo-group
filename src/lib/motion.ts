@@ -23,7 +23,15 @@ export const motionStagger = {
   loose: 0.16,
 };
 
+// Android Chrome reports `prefers-reduced-motion: reduce` whenever the OS
+// battery saver is on, which silently stripped the hero video, Lenis and every
+// GSAP animation for those visitors — the site looked broken in Chrome while
+// other browsers on the same phone were fine. The reference experience
+// (bat.archi) never gates on this query, so we deliberately ignore it.
+const HONOR_REDUCED_MOTION = false;
+
 export const prefersReducedMotion = () => (
+  HONOR_REDUCED_MOTION &&
   typeof window !== 'undefined' &&
   window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
 );
@@ -36,7 +44,7 @@ export function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(prefersReducedMotion);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.matchMedia) return;
+    if (!HONOR_REDUCED_MOTION || typeof window === 'undefined' || !window.matchMedia) return;
 
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const handleChange = () => setReduced(mediaQuery.matches);

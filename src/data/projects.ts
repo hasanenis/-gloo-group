@@ -32,7 +32,7 @@ export type ProjectRecord = {
 
 export const companyProfile = {
   name: 'SARL Igloo Yapi Construction',
-  address: '9 National Route 142, Section 01, GP 235, Ground Floor, Ouled Fayet, Algiers',
+  address: 'N° 8, Rue Krouch Slimane, Closan JeanLot n° 1-31, RDC, Bir Khadem – Alger',
   phones: ['+213 542 819 461', '+90 542 479 5700'],
   email: 'medatalay@gmail.com',
   foundedYear: 2018,
@@ -50,12 +50,12 @@ export const companyProfile = {
   },
   overview: {
     en: [
-      'Founded in 2018 in Ouled Fayet, Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.',
+      'Founded in 2018 in Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.',
       'Our engineers, architects, site managers, and field teams work as one coordinated structure to deliver projects with precision, efficiency, and lasting quality.',
       'We create modern, durable, and functional spaces designed for people, businesses, and communities.',
     ],
     fr: [
-      'Fondée en 2018 à Ouled Fayet, Alger, SARL Igloo Yapi Construction est spécialisée dans les programmes résidentiels et à usage mixte, dirigée par l\'ingénieur civil Adem Talay.',
+      'Fondée en 2018 à Alger, SARL Igloo Yapi Construction est spécialisée dans les programmes résidentiels et à usage mixte, dirigée par l\'ingénieur civil Adem Talay.',
       'Nos ingénieurs, architectes, conducteurs de travaux et équipes de chantier forment une structure coordonnée pour livrer des projets avec précision, efficacité et qualité durable.',
       'Nous créons des espaces modernes, durables et fonctionnels, pensés pour les personnes, les entreprises et les communautés.',
     ],

@@ -107,7 +107,7 @@ const RAHMANIA_DUO_LEFT_IMAGE: ProjectImage = {
   ),
   caption: localValue(
     'Interior circulation and staircase finishes in the Douira commercial centre.',
-    'Circulation intérieure et finitions d escalier dans le centre commercial de Douira.',
+    "Circulation intérieure et finitions d'escalier dans le centre commercial de Douira.",
   ),
 };
 
@@ -115,11 +115,11 @@ const RAHMANIA_DUO_RIGHT_IMAGE: ProjectImage = {
   src: '/projects/douira-commercial-centers-2500-housing/13-whatsapp-image-2025-11-12-at-15-19-49.webp',
   alt: localValue(
     'Modern interior stair hall in the Douira commercial centre.',
-    'Hall d escalier moderne dans le centre commercial de Douira.',
+    "Hall d'escalier moderne dans le centre commercial de Douira.",
   ),
   caption: localValue(
     'Completed staircase hall serving the commercial centre levels.',
-    'Hall d escalier achevé desservant les niveaux du centre commercial.',
+    "Hall d'escalier achevé desservant les niveaux du centre commercial.",
   ),
 };
 
@@ -338,7 +338,7 @@ export default function ProjectDetail() {
   );
   const rahmaniaColumnsDetail = localValue(
     'The façades pair large glazed surfaces with decorative screen elements that give the buildings their identity. Inside, circulation is organised around a central staircase, and a pyramidal glass skylight draws natural light down through the retail levels.',
-    "Les façades associent de larges surfaces vitrées à des éléments décoratifs qui signent l identité des batiments. A l'intérieur, la circulation s articule autour d'un escalier central, et une verrière pyramidale en verre diffuse la lumière naturelle à travers les niveaux commerciaux.",
+    "Les façades associent de larges surfaces vitrées à des éléments décoratifs qui signent l'identité des bâtiments. À l'intérieur, la circulation s'articule autour d'un escalier central, et une verrière pyramidale en verre diffuse la lumière naturelle à travers les niveaux commerciaux.",
   );
   const rahmaniaInfoTopline = localValue('OUR IMPACT', 'NOTRE IMPACT');
   const rahmaniaInfoEyebrow = localValue('PROXIMITY SERVICES', 'SERVICES DE PROXIMITÉ');

@@ -83,7 +83,7 @@ body {
   }
 }
 
-@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+@media (pointer: fine) {
   html.custom-cursor-enabled,
   html.custom-cursor-enabled body,
   html.custom-cursor-enabled *,
@@ -93,17 +93,9 @@ body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+/* Note: no global prefers-reduced-motion kill switch here on purpose —
+   Android Chrome flips that query on whenever battery saver is active,
+   which froze every animation and looked like a broken site. */
 
 /* Project card scroll-reveal — driven by IntersectionObserver attaching .is-revealed */
 .project-reveal {
@@ -766,14 +758,6 @@ body {
 @media (min-width: 1024px) {
   .assistant-panel--more {
     display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .project-reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
   }
 }
 

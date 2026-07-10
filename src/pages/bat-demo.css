@@ -1367,17 +1367,3 @@ html.bat-demo-custom-cursor * {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.62);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .bat-demo-zoom-overlay,
-  .bat-demo-zoom-overlay__inner,
-  .bat-demo-zoom-overlay__image,
-  .bat-demo-zoom-overlay__shade,
-  .bat-demo-zoom-overlay__pretitle,
-  .bat-demo-zoom-overlay__title-line > span,
-  .bat-demo-zoom-overlay__info,
-  .bat-demo-zoom-overlay__fact {
-    animation-duration: 1ms !important;
-    animation-delay: 0ms !important;
-  }
-}
