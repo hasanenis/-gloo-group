@@ -1,0 +1,41 @@
+defaults:
+  source_locale: en
+  target_locales: [fr, dz, tr]
+  locales_dir: config/locales
+  state_dir: .i18n-state
+
+  provider: openai
+  translate:
+    model: gpt-5-mini
+    batch_size: 40
+  quality:
+    model: gpt-5-mini
+    terminology: business
+    british_spellings: false
+
+  context: "Igloo Construction marketing site for Algeria-based residential, mixed-use, roads, networks, and project portfolio pages."
+  placeholder_style: "{name}, %s, HTML tags"
+  glossary:
+    Igloo: "Brand name; never translate"
+    SARL Igloo Yapi Construction: "Company legal name; never translate"
+    LPA: "Logement Promotionnel Aidé; keep abbreviation"
+    LPL: "Logement Promotionnel Libre; keep abbreviation"
+    TCE: "Tous Corps d'Etat; keep abbreviation"
+    VRD: "Voirie et Réseaux Divers; keep abbreviation"
+    wilaya: "Algerian province; keep as wilaya when natural"
+  language_guides:
+    fr: "Use polished Algerian French for a construction company. Keep technical abbreviations such as TCE, VRD, LPA, and LPL."
+    dz: "Translate into Algerian Arabic Darja in Arabic script. Keep the tone professional but locally natural. Keep project names, locations, numbers, TCE, VRD, LPA, and LPL unchanged when appropriate."
+    tr: "Translate into natural Turkish for a professional construction company. Use inşaat, konut, altyapı, şantiye, teslim, and karma kullanım consistently."
+
+  validators:
+    missing: true
+    outdated: true
+    duplicate_values: false
+    manual_edits: false
+
+  strict:
+    strict: [missing, outdated]
+    strict_all: [missing, outdated]
+
+packages: []

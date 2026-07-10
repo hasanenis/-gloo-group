@@ -137,15 +137,15 @@ export default function Footer() {
               <a href="/" onClick={navigateTo('/')} data-home-text-reveal data-home-text-reveal-mode="block">{t('home')}</a>
               <a href="/about" onClick={navigateTo('/about')} data-home-text-reveal data-home-text-reveal-mode="block">{t('company')}</a>
               <a href="/projects" onClick={navigateTo('/projects')} data-home-text-reveal data-home-text-reveal-mode="block">{t('projects')}</a>
-              <a href="/#proof" onClick={navigateTo('/#proof')} data-home-text-reveal data-home-text-reveal-mode="block">{locale === 'fr' ? 'Preuves' : 'Proof'}</a>
-              <a href="/#services" onClick={navigateTo('/#services')} data-home-text-reveal data-home-text-reveal-mode="block">{locale === 'fr' ? 'Processus' : 'Process'}</a>
+              <a href="/#proof" onClick={navigateTo('/#proof')} data-home-text-reveal data-home-text-reveal-mode="block">{localize({ en: 'Proof', fr: 'Preuves', dz: 'الدليل', tr: 'Kanıt' }, locale)}</a>
+              <a href="/#services" onClick={navigateTo('/#services')} data-home-text-reveal data-home-text-reveal-mode="block">{localize({ en: 'Process', fr: 'Processus', dz: 'المراحل', tr: 'Süreç' }, locale)}</a>
               <a href="/contact" onClick={navigateTo('/contact')} data-home-text-reveal data-home-text-reveal-mode="block">{t('contact')}</a>
             </div>
           </div>
         </div>
 
         <div className="app-footer__bottom">
-          <p data-home-text-reveal data-home-text-reveal-mode="block">© 2026 Igloo Construction. {locale === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</p>
+          <p data-home-text-reveal data-home-text-reveal-mode="block">© 2026 Igloo Construction. {localize({ en: 'All rights reserved.', fr: 'Tous droits réservés.', dz: 'كل الحقوق محفوظة.', tr: 'Tüm hakları saklıdır.' }, locale)}</p>
           <p data-home-text-reveal data-home-text-reveal-start="top 88%">{localize(content.proofLine, locale)}</p>
         </div>
       </div>

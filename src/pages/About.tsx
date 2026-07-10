@@ -3,7 +3,7 @@ import { ArrowRight, BadgeCheck, Building2, MapPin, UsersRound } from 'lucide-re
 import { Link } from 'react-router-dom';
 import { companyProfile, projects, type ProjectRecord } from '../data/projects';
 import { localize, type HomepageText } from '../data/homepageContent';
-import { useLocale, type Locale } from '../i18n';
+import { pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 
 const Footer = lazy(() => import('../components/Footer'));
 
@@ -94,49 +94,65 @@ const showcaseProjects = showcaseDefinitions.flatMap<ShowcaseItem>((item) => {
   return project ? [{ project, image: item.image }] : [];
 });
 
+const copyFor = (locale: Locale, value: LocalizedString) => pickLocaleText(locale, value);
+
 function getCopy(locale: Locale) {
   return {
-    eyebrow: locale === 'fr' ? 'Entreprise' : 'Company',
-    heroLead:
-      locale === 'fr'
-        ? 'Entreprise de construction basee a Bir Khadem, specialisee dans les programmes residentiels, mixtes, les voiries et les reseaux en Algerie.'
-        : 'An Algiers-based construction company delivering residential, mixed-use, road and network works across Algeria.',
-    contact: locale === 'fr' ? 'Contacter l equipe' : 'Contact the team',
-    imageCaption:
-      locale === 'fr'
-        ? 'Complexe immobilier mixte, Said Hamdine, Alger'
-        : 'Mixed real estate complex, Said Hamdine, Algiers',
-    profileLabel: locale === 'fr' ? 'Profil entreprise' : 'Company profile',
-    profileTitle:
-      locale === 'fr'
-        ? 'Une structure technique organisee autour du chantier.'
-        : 'A technical team organised around the work on site.',
-    profileParagraphs:
-      locale === 'fr'
-        ? [
-            'Fondee en 2018 et dirigee par l ingenieur civil Adem Talay, SARL Igloo Yapi Construction realise des projets de batiment dans un cadre technique et reglementaire clair.',
-            'Ingenieurs, architectes, conducteurs de travaux, achats et equipes de chantier travaillent comme une seule structure, de la preparation jusqu a la livraison.',
-          ]
-        : [
-            'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction delivers building projects within a clear technical and regulatory framework.',
-            'Engineers, architects, construction managers, procurement and site teams work as one structure, from preparation through handover.',
-          ],
-    qualificationLabel: locale === 'fr' ? 'Qualification' : 'Qualification',
-    teamLabel: locale === 'fr' ? 'Structure de l equipe' : 'Team structure',
-    capabilitiesLabel: locale === 'fr' ? 'Domaines d intervention' : 'What we deliver',
-    capabilitiesTitle:
-      locale === 'fr'
-        ? 'Le perimetre est defini par le projet, pas par une liste generique de services.'
-        : 'The scope is defined by the project, not a generic list of services.',
-    exampleProject: locale === 'fr' ? 'Projet de reference' : 'Reference project',
-    workLabel: locale === 'fr' ? 'Travaux selectionnes' : 'Selected work',
-    workTitle:
-      locale === 'fr'
-        ? 'Des projets livres et des chantiers en cours.'
-        : 'Completed projects and work currently on site.',
-    completed: locale === 'fr' ? 'Livre' : 'Completed',
-    current: locale === 'fr' ? 'En cours' : 'In progress',
-    allProjects: locale === 'fr' ? 'Voir tous les projets' : 'View all projects',
+    eyebrow: copyFor(locale, { en: 'Company', fr: 'Entreprise', dz: 'الشركة', tr: 'Kurumsal' }),
+    heroLead: copyFor(locale, {
+      en: 'An Algiers-based construction company delivering residential, mixed-use, road and network works across Algeria.',
+      fr: 'Entreprise de construction basée à Bir Khadem, spécialisée dans les programmes résidentiels, mixtes, les voiries et les réseaux en Algérie.',
+      dz: 'شركة بناء مقرها في بئر خادم، تنجز برامج سكنية ومختلطة، طرقات وشبكات عبر الجزائر.',
+      tr: 'Cezayir merkezli, konut, karma kullanım, yol ve altyapı işleri teslim eden bir inşaat şirketi.',
+    }),
+    contact: copyFor(locale, { en: 'Contact the team', fr: 'Contacter l’équipe', dz: 'تواصل مع الفريق', tr: 'Ekiple iletişime geç' }),
+    imageCaption: copyFor(locale, {
+      en: 'Mixed real estate complex, Said Hamdine, Algiers',
+      fr: 'Complexe immobilier mixte, Saïd Hamdine, Alger',
+      dz: 'مجمع عقاري مختلط، سعيد حمدين، الجزائر',
+      tr: 'Karma gayrimenkul kompleksi, Said Hamdine, Cezayir',
+    }),
+    profileLabel: copyFor(locale, { en: 'Company profile', fr: 'Profil entreprise', dz: 'تعريف بالشركة', tr: 'Şirket profili' }),
+    profileTitle: copyFor(locale, {
+      en: 'A technical team organised around the work on site.',
+      fr: 'Une structure technique organisée autour du chantier.',
+      dz: 'فريق تقني منظم حول خدمة الورشة.',
+      tr: 'Şantiye işleyişi etrafında organize olmuş teknik ekip.',
+    }),
+    profileParagraphs: [
+      copyFor(locale, {
+        en: 'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction delivers building projects within a clear technical and regulatory framework.',
+        fr: 'Fondée en 2018 et dirigée par l’ingénieur civil Adem Talay, SARL Igloo Yapi Construction réalise des projets de bâtiment dans un cadre technique et réglementaire clair.',
+        dz: 'تأسست في 2018 وتسيرها المهندس المدني آدم تالاي، SARL Igloo Yapi Construction تنجز مشاريع بناء بإطار تقني وتنظيمي واضح.',
+        tr: '2018’de kurulan ve inşaat mühendisi Adem Talay tarafından yönetilen SARL Igloo Yapi Construction, net teknik ve yasal çerçevede yapı projeleri teslim eder.',
+      }),
+      copyFor(locale, {
+        en: 'Engineers, architects, construction managers, procurement and site teams work as one structure, from preparation through handover.',
+        fr: 'Ingénieurs, architectes, conducteurs de travaux, achats et équipes de chantier travaillent comme une seule structure, de la préparation jusqu’à la livraison.',
+        dz: 'المهندسين، المعماريين، مسؤولي الأشغال، الشراء وفرق الورشة يخدمو كهيكل واحد من التحضير حتى التسليم.',
+        tr: 'Mühendisler, mimarlar, saha şefleri, satın alma ve şantiye ekipleri hazırlıktan teslime kadar tek yapı gibi çalışır.',
+      }),
+    ],
+    qualificationLabel: copyFor(locale, { en: 'Qualification', fr: 'Qualification', dz: 'التأهيل', tr: 'Yeterlilik' }),
+    teamLabel: copyFor(locale, { en: 'Team structure', fr: 'Structure de l’équipe', dz: 'هيكلة الفريق', tr: 'Ekip yapısı' }),
+    capabilitiesLabel: copyFor(locale, { en: 'What we deliver', fr: 'Domaines d’intervention', dz: 'وش نقدمو', tr: 'Teslim ettiğimiz işler' }),
+    capabilitiesTitle: copyFor(locale, {
+      en: 'The scope is defined by the project, not a generic list of services.',
+      fr: 'Le périmètre est défini par le projet, pas par une liste générique de services.',
+      dz: 'نطاق الخدمة يتحدد حسب المشروع، ماشي بقائمة خدمات عامة.',
+      tr: 'Kapsamı genel bir hizmet listesi değil, projenin kendisi belirler.',
+    }),
+    exampleProject: copyFor(locale, { en: 'Reference project', fr: 'Projet de référence', dz: 'مشروع مرجعي', tr: 'Referans proje' }),
+    workLabel: copyFor(locale, { en: 'Selected work', fr: 'Travaux sélectionnés', dz: 'أعمال مختارة', tr: 'Seçili işler' }),
+    workTitle: copyFor(locale, {
+      en: 'Completed projects and work currently on site.',
+      fr: 'Des projets livrés et des chantiers en cours.',
+      dz: 'مشاريع تسلمت وورشات مازالت خدامة.',
+      tr: 'Tamamlanan projeler ve sahada devam eden işler.',
+    }),
+    completed: copyFor(locale, { en: 'Completed', fr: 'Livré', dz: 'مكمّل', tr: 'Tamamlandı' }),
+    current: copyFor(locale, { en: 'In progress', fr: 'En cours', dz: 'في طور الإنجاز', tr: 'Devam ediyor' }),
+    allProjects: copyFor(locale, { en: 'View all projects', fr: 'Voir tous les projets', dz: 'شوف كل المشاريع', tr: 'Tüm projeleri görüntüle' }),
   };
 }
 

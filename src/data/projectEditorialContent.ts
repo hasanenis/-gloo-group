@@ -30,7 +30,6 @@ export type ProjectEditorialContent = {
   infoEyebrow: LocalizedText;
   infoHeading: LocalizedText;
   infoParagraph: LocalizedText;
-  ctaLabel: LocalizedText;
   scopeItems: ProjectEditorialScopeItem[];
 };
 
@@ -92,7 +91,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The operation turns a large LPA brief into a complete residential setting: apartment blocks, professional premises, roads, exterior areas and technical networks are coordinated so the site works as a coherent neighbourhood.',
       'L operation transforme un programme LPA d envergure en cadre residentiel complet: blocs d habitation, locaux professionnels, voiries, espaces exterieurs et reseaux techniques sont coordonnes pour former un quartier coherent.',
     ),
-    ctaLabel: text('SEE THE SITE', 'VOIR LE SITE'),
     scopeItems: [
       item('home', '300/500 assisted promotional housing units', '300/500 logements promotionnels aides'),
       item('building', 'R+8 residential blocks with F3 and F4 layouts', 'Blocs R+8 avec logements F3 et F4'),
@@ -148,7 +146,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'Inside the Sidi Abdallah development, Igloo coordinated the secondary works that turn structure into usable housing: finishes, waterproofing, joinery, MEP trades and commercial premises are brought into one operational rhythm.',
       'Au sein du developpement de Sidi Abdallah, Igloo a coordonne les corps secondaires qui transforment la structure en logements utilisables: finitions, etancheite, menuiseries, lots MEP et locaux commerciaux suivent un meme rythme operationnel.',
     ),
-    ctaLabel: text('SEE THE BUILDINGS', 'VOIR LES BATIMENTS'),
     scopeItems: [
       item('home', '200 LPP homes delivered in a 1,200-home programme', '200 logements LPP livres dans un programme de 1200 logements'),
       item('building', 'R+9 buildings with F3 and F4 homes', 'Batiments R+9 avec logements F3 et F4'),
@@ -204,7 +201,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The project demonstrates Igloo capacity on residential standing work: reinforced-concrete structures, networks, exterior arrangements and facade finishes come together to give the villas privacy, access and long-term quality.',
       'Le projet montre la capacite d Igloo sur l habitat de standing: structures en beton arme, reseaux, amenagements exterieurs et finitions de facade donnent aux villas intimite, accessibilite et qualite durable.',
     ),
-    ctaLabel: text('SEE THE VILLAS', 'VOIR LES VILLAS'),
     scopeItems: [
       item('villa', '11 R+2 villas delivered inside Les Pastorales', '11 villas R+2 livrees aux Pastorales'),
       item('network', 'VRD, water, electricity and exterior networks', 'VRD, eau, electricite et reseaux exterieurs'),
@@ -261,7 +257,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The two centres form an attractive hub of activity inside the residential programme. Their layout favours accessibility, functional spaces and user comfort, adding to the urban quality and economic life of the Douira district.',
       'Les deux centres forment un pole d activites attractif au sein du programme residentiel. Leur conception favorise l accessibilite, la fonctionnalite des espaces et le confort des usagers, en renforcant la qualite urbaine et la vie economique de Douira.',
     ),
-    ctaLabel: text('SEE THE CENTRES', 'VOIR LES CENTRES'),
     scopeItems: [
       item('commerce', 'Complete secondary works package (CES)', 'Corps d etat secondaires complets (CES)'),
       item('building', 'Reinforced concrete structure and glazed facades', 'Structure en beton arme et facades vitrees'),
@@ -318,7 +313,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The project demonstrates how mixed-use delivery depends on coordination: residential circulation, commercial frontage, parking levels, structure and exterior works all need to land together for the complex to feel legible and usable.',
       'Le projet montre combien la realisation mixte depend de la coordination: circulations residentielles, facades commerciales, niveaux de parking, structure et amenagements exterieurs doivent converger pour rendre l ensemble lisible et utilisable.',
     ),
-    ctaLabel: text('SEE THE COMPLEX', 'VOIR LE COMPLEXE'),
     scopeItems: [
       item('building', 'Five-block mixed real-estate delivery', 'Realisation immobiliere mixte de cinq blocs'),
       item('home', '202 free promotional housing units', '202 logements promotionnels libres'),
@@ -374,7 +368,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The Rouiba operation ties construction quality to the surrounding works: roads, utility networks, access points, exterior arrangements and facade finishes all support the everyday comfort of the villas.',
       'L operation de Rouiba relie la qualite de construction aux ouvrages qui l entourent: voiries, reseaux, points d acces, amenagements exterieurs et finitions de facade accompagnent le confort quotidien des villas.',
     ),
-    ctaLabel: text('SEE THE VILLAS', 'VOIR LES VILLAS'),
     scopeItems: [
       item('villa', '4 free promotional villas', '4 villas promotionnelles libres'),
       item('network', 'VRD, vehicle access and pedestrian access', 'VRD, acces vehicules et acces pietons'),
@@ -430,7 +423,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The Sidi Benour project highlights Igloo ability to deliver a high-rise housing sequence: reinforced concrete, exterior networks, MEP systems, facade work and circulation are coordinated to create a functional residence.',
       'Le projet de Sidi Benour met en avant la capacite d Igloo a livrer une sequence de logements en hauteur: beton arme, reseaux exterieurs, systemes MEP, facades et circulations sont coordonnes pour former une residence fonctionnelle.',
     ),
-    ctaLabel: text('SEE THE RESIDENCE', 'VOIR LA RESIDENCE'),
     scopeItems: [
       item('home', '50 homes delivered within a 362-home programme', '50 logements realises dans un programme de 362 logements'),
       item('building', 'R+13 residential building', 'Immeuble residentiel R+13'),
@@ -486,7 +478,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'Dely Brahim demands the precision of a large vertical project: secondary trades, technical systems, facade openings, commercial areas and parking access are coordinated so the tower can support daily life at scale.',
       'Dely Brahim exige la precision d un grand projet vertical: corps secondaires, systemes techniques, ouvertures de facade, surfaces commerciales et acces parking sont coordonnes pour accompagner la vie quotidienne a grande echelle.',
     ),
-    ctaLabel: text('SEE THE TOWER', 'VOIR LA TOUR'),
     scopeItems: [
       item('building', '33-storey residential tower', 'Tour residentielle de 33 etages'),
       item('home', '240 homes with F3, F4 and F5 layouts', '240 logements avec typologies F3, F4 et F5'),
@@ -542,7 +533,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'The Mostaganem project balances assisted and free promotional units with shops, networks and exterior spaces. Igloo scope ties the seven blocks to roads, utilities, parking and pedestrian movement so the ensemble can function as a complete residential district.',
       'Le projet de Mostaganem equilibre logements aides et logements libres avec commerces, reseaux et espaces exterieurs. La portee d Igloo relie les sept blocs aux voiries, utilites, parkings et cheminements pour former un quartier residentiel complet.',
     ),
-    ctaLabel: text('SEE THE BLOCKS', 'VOIR LES BLOCS'),
     scopeItems: [
       item('home', '238 homes across assisted and free promotional programmes', '238 logements entre programmes aides et libres'),
       item('building', 'Seven R+5 and R+9 residential blocks', 'Sept blocs residentiels R+5 et R+9'),
@@ -598,7 +588,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'Reghaia is defined by practical residential completion: facade works, interior finishes, MEP systems, commercial premises, concierge spaces, access routes and exterior areas are coordinated into one finished environment.',
       'Reghaia se definit par un achevement residentiel concret: facades, finitions interieures, systemes MEP, locaux commerciaux, conciergeries, acces et espaces exterieurs sont coordonnes dans un environnement fini.',
     ),
-    ctaLabel: text('SEE THE RESIDENCE', 'VOIR LA RESIDENCE'),
     scopeItems: [
       item('home', '250 rent-to-own housing units', '250 logements en formule location-vente'),
       item('building', 'Seven R+9 residential blocks', 'Sept blocs residentiels R+9'),
@@ -654,7 +643,6 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
       'Boudouaou stands out through its balance: assisted and free promotional housing, professional premises, varied block heights and tertiary networks are coordinated so the development supports both homes and local activity.',
       'Boudouaou se distingue par son equilibre: logements aides et libres, locaux professionnels, hauteurs de blocs variees et reseaux tertiaires sont coordonnes pour soutenir a la fois l habitat et l activite locale.',
     ),
-    ctaLabel: text('SEE THE BLOCKS', 'VOIR LES BLOCS'),
     scopeItems: [
       item('home', '80 homes, including 70 LPA and 10 LPL units', '80 logements, dont 70 LPA et 10 LPL'),
       item('building', 'Three blocks with R+8 and R+5 typologies', 'Trois blocs avec typologies R+8 et R+5'),

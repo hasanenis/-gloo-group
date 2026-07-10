@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import {
-  ArrowDown,
   ArrowLeft,
   ArrowRight,
   Building2,
@@ -35,7 +34,7 @@ import {
   type ResolvedManualImageSettings,
 } from '../data/manualProjectImages';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { useLocale } from '../i18n';
+import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
 import { usePrefersReducedMotion } from '../lib/motion';
 import RahmaniaComparisonSection from '../components/RahmaniaComparisonSection';
 import Footer from '../components/Footer';
@@ -53,10 +52,14 @@ const LEGACY_PROJECT_SLUGS: Record<string, string> = {
   'douira-commercial-centers-2500-housing': 'rahmania',
 };
 
-type LocalizedValue = { en: string; fr: string };
+type LocalizedValue = LocalizedString;
 
-function localValue(en: string, fr = en): LocalizedValue {
-  return { en, fr };
+function localValue(en: string, fr = en, dz?: string, tr?: string): LocalizedValue {
+  return { en, fr, dz, tr };
+}
+
+function copyFor(locale: Parameters<typeof pickLocaleText>[0], value: LocalizedString) {
+  return pickLocaleText(locale, value);
 }
 
 const editorialIconMap: Record<ProjectEditorialIcon, LucideIcon> = {
@@ -340,14 +343,15 @@ export default function ProjectDetail() {
     'The façades pair large glazed surfaces with decorative screen elements that give the buildings their identity. Inside, circulation is organised around a central staircase, and a pyramidal glass skylight draws natural light down through the retail levels.',
     "Les façades associent de larges surfaces vitrées à des éléments décoratifs qui signent l'identité des bâtiments. À l'intérieur, la circulation s'articule autour d'un escalier central, et une verrière pyramidale en verre diffuse la lumière naturelle à travers les niveaux commerciaux.",
   );
-  const rahmaniaInfoTopline = localValue('OUR IMPACT', 'NOTRE IMPACT');
+  const rahmaniaInfoTopline = localValue('OUR IMPACT', 'NOTRE IMPACT', 'الأثر تاعنا', 'ETKİMİZ');
   const rahmaniaInfoEyebrow = localValue('PROXIMITY SERVICES', 'SERVICES DE PROXIMITÉ');
-  const rahmaniaInfoMetricLabel = localValue('HOMES', 'LOGEMENTS');
-  const rahmaniaCtaLabel = localValue('SEE THE CENTRES', 'VOIR LES CENTRES');
-  const rahmaniaMetricCaptionLines =
-    locale === 'fr'
-      ? ['DANS UN QUARTIER', 'RÉSIDENTIEL STRUCTURE', 'ET DYNAMIQUE']
-      : ['IN A THRIVING', 'MASTERPLANNED', 'NEIGHBOURHOOD'];
+  const rahmaniaInfoMetricLabel = localValue('HOMES', 'LOGEMENTS', 'سكن', 'KONUT');
+  const rahmaniaMetricCaptionLines = {
+    en: ['IN A THRIVING', 'MASTERPLANNED', 'NEIGHBOURHOOD'],
+    fr: ['DANS UN QUARTIER', 'RÉSIDENTIEL STRUCTURÉ', 'ET DYNAMIQUE'],
+    dz: ['في حي', 'سكني منظم', 'ونشيط'],
+    tr: ['CANLI', 'PLANLI BİR', 'MAHALLEDE'],
+  }[locale];
   const editorialColumns = editorial?.columns ?? [rahmaniaColumnsIntro, rahmaniaColumnsDetail];
   const infoGraphicSrc = (project ? getManualProjectImage(project.slug, 'info')?.src : undefined)
     ?? (isDouaouda
@@ -358,10 +362,10 @@ export default function ProjectDetail() {
   const infoTopline = editorial?.infoTopline ?? rahmaniaInfoTopline;
   const infoEyebrow = editorial?.infoEyebrow ?? rahmaniaInfoEyebrow;
   const infoMetricLabel = editorial?.metricLabel ?? rahmaniaInfoMetricLabel;
-  const infoCtaLabel = editorial?.ctaLabel ?? rahmaniaCtaLabel;
-  // Authored in en/fr only; fall back to English for dz/tr.
   const metricKey = locale === 'fr' ? 'fr' : 'en';
-  const infoMetricCaptionLines = editorial?.metricCaptionLines[metricKey] ?? rahmaniaMetricCaptionLines;
+  const infoMetricCaptionLines = (locale === 'dz' || locale === 'tr')
+    ? rahmaniaMetricCaptionLines
+    : editorial?.metricCaptionLines[metricKey] ?? rahmaniaMetricCaptionLines;
 
   useEffect(() => {
     if (slug && canonicalSlug && slug !== canonicalSlug) {
@@ -528,7 +532,7 @@ export default function ProjectDetail() {
   if (!project || !content || !batModel || !heroImage || !firstImage || !squareImage || !wideImage) {
     return (
       <main className="igloo-editorial-missing">
-        <p>{locale === 'fr' ? 'Projet introuvable' : 'Project not found'}</p>
+        <p>{copyFor(locale, { en: 'Project not found', fr: 'Projet introuvable', dz: 'المشروع ما تلقاش', tr: 'Proje bulunamadı' })}</p>
         <Link to="/projects">{t('allProjects')}</Link>
       </main>
     );
@@ -591,7 +595,7 @@ export default function ProjectDetail() {
             <div className="bat-demo-hero__info">
               <div className="bat-demo-hero__meta-row">
                 <div className="bat-demo-hero__tab">
-                  <span>{locale === 'fr' ? 'Informations projet' : 'Project info'}</span>
+                  <span>{copyFor(locale, { en: 'Project info', fr: 'Informations projet', dz: 'معلومات المشروع', tr: 'Proje bilgileri' })}</span>
                 </div>
               </div>
 
@@ -690,18 +694,6 @@ export default function ProjectDetail() {
                 </div>
               </div>
 
-              <button
-                type="button"
-                className="igloo-simple-info__cta"
-                onClick={() => {
-                  document.querySelector('.igloo-simple-panorama')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-              >
-                <span className="igloo-simple-info__cta-icon" aria-hidden="true">
-                  <ArrowDown className="h-4 w-4" strokeWidth={2} />
-                </span>
-                <span className="igloo-simple-info__cta-label">{tr(infoCtaLabel)}</span>
-              </button>
             </div>
 
             <div className="igloo-simple-info__detail">
@@ -733,13 +725,13 @@ export default function ProjectDetail() {
       {relatedProjects.length > 0 && (
         <section className="igloo-simple-related" aria-label="Related projects">
           <div className="igloo-simple-related__head">
-            <p>{locale === 'fr' ? 'Voir aussi' : 'More work'}</p>
-            <h2>{locale === 'fr' ? 'Projets lies' : 'Related projects'}</h2>
+            <p>{copyFor(locale, { en: 'More work', fr: 'Voir aussi', dz: 'مشاريع أخرى', tr: 'Diğer projeler' })}</p>
+            <h2>{copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'İlgili projeler' })}</h2>
           </div>
           <CardCarousel
             items={relatedProjects}
             getKey={(related) => related.slug}
-            ariaLabel={locale === 'fr' ? 'Projets lies' : 'Related projects'}
+            ariaLabel={copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'İlgili projeler' })}
             spaceBetween={26}
             slideClassName="!w-[280px] sm:!w-[320px] md:!w-[360px]"
             renderItem={(related) => {

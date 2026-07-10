@@ -2,7 +2,7 @@ import { lazy, Suspense, type ComponentType, type FormEvent } from 'react';
 import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { companyProfile } from '../data/projects';
 import { localize, type HomepageText } from '../data/homepageContent';
-import { useLocale, type Locale } from '../i18n';
+import { pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 
 const Footer = lazy(() => import('../components/Footer'));
 const OfficeLocationMap = lazy(() => import('../components/OfficeLocationMap'));
@@ -43,41 +43,61 @@ const channels: Channel[] = [
   },
 ];
 
+const copyFor = (locale: Locale, value: LocalizedString) => pickLocaleText(locale, value);
+
 function getCopy(locale: Locale) {
   return {
-    eyebrow: locale === 'fr' ? 'Contact' : 'Contact',
-    title: locale === 'fr' ? 'Parlons de votre projet.' : 'Start a project conversation.',
-    lead:
-      locale === 'fr'
-        ? 'Contactez directement l equipe Igloo a Bir Khadem. Envoyez la localisation, le programme et les documents disponibles; nous orienterons la demande vers la bonne personne.'
-        : 'Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the right person.',
-    officeLabel: locale === 'fr' ? 'Bureau de Bir Khadem' : 'Bir Khadem office',
-    officeTitle: locale === 'fr' ? 'Notre adresse a Alger.' : 'Our address in Algiers.',
-    openMaps: locale === 'fr' ? 'Ouvrir dans Maps' : 'Open in Maps',
-    callOffice: locale === 'fr' ? 'Appeler le bureau' : 'Call the office',
-    mapLabel: locale === 'fr' ? 'Carte du bureau Igloo a Bir Khadem' : 'Map of the Igloo office in Bir Khadem',
-    briefLabel: locale === 'fr' ? 'Demande projet' : 'Project enquiry',
-    briefTitle: locale === 'fr' ? 'Preparez un email clair.' : 'Prepare a clear project email.',
-    briefLead:
-      locale === 'fr'
-        ? 'Trois champs suffisent. Le bouton ouvre votre application email avec un message deja structure; rien n est envoye automatiquement.'
-        : 'Three fields are enough. The button opens your email app with a structured draft; nothing is sent automatically.',
-    includeLabel: locale === 'fr' ? 'Informations utiles' : 'Useful information',
-    includeItems:
-      locale === 'fr'
-        ? ['Localisation du projet', 'Type de programme', 'Phase actuelle', 'Plans ou photos disponibles']
-        : ['Project location', 'Programme type', 'Current stage', 'Available drawings or photos'],
-    name: locale === 'fr' ? 'Nom' : 'Name',
-    replyTo: locale === 'fr' ? 'Telephone ou email' : 'Phone or email',
-    message: locale === 'fr' ? 'Resume du projet' : 'Project summary',
-    namePlaceholder: locale === 'fr' ? 'Votre nom' : 'Your name',
+    eyebrow: copyFor(locale, { en: 'Contact', fr: 'Contact', dz: 'اتصال', tr: 'İletişim' }),
+    title: copyFor(locale, {
+      en: 'Start a project conversation.',
+      fr: 'Parlons de votre projet.',
+      dz: 'خلينا نحكيو على مشروعك.',
+      tr: 'Projenizi konuşmaya başlayalım.',
+    }),
+    lead: copyFor(locale, {
+      en: 'Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the right person.',
+      fr: 'Contactez directement l’équipe Igloo à Bir Khadem. Envoyez la localisation, le programme et les documents disponibles; nous orienterons la demande vers la bonne personne.',
+      dz: 'تواصل مباشرة مع فريق Igloo في بئر خادم. ابعث الموقع، نوع البرنامج والوثائق المتوفرة؛ نوجهو الطلب للشخص المناسب.',
+      tr: 'Bir Khadem’deki Igloo ekibiyle doğrudan konuşun. Konum, program ve mevcut belgeleri gönderin; talebi doğru kişiye yönlendirelim.',
+    }),
+    officeLabel: copyFor(locale, { en: 'Bir Khadem office', fr: 'Bureau de Bir Khadem', dz: 'مكتب بئر خادم', tr: 'Bir Khadem ofisi' }),
+    officeTitle: copyFor(locale, { en: 'Our address in Algiers.', fr: 'Notre adresse à Alger.', dz: 'عنواننا في الجزائر العاصمة.', tr: 'Cezayir’deki adresimiz.' }),
+    openMaps: copyFor(locale, { en: 'Open in Maps', fr: 'Ouvrir dans Maps', dz: 'افتح في الخرائط', tr: 'Haritalarda aç' }),
+    callOffice: copyFor(locale, { en: 'Call the office', fr: 'Appeler le bureau', dz: 'عيّط للمكتب', tr: 'Ofisi ara' }),
+    mapLabel: copyFor(locale, {
+      en: 'Map of the Igloo office in Bir Khadem',
+      fr: 'Carte du bureau Igloo à Bir Khadem',
+      dz: 'خريطة مكتب Igloo في بئر خادم',
+      tr: 'Bir Khadem’deki Igloo ofisinin haritası',
+    }),
+    briefLabel: copyFor(locale, { en: 'Project enquiry', fr: 'Demande projet', dz: 'طلب مشروع', tr: 'Proje talebi' }),
+    briefTitle: copyFor(locale, { en: 'Prepare a clear project email.', fr: 'Préparez un email clair.', dz: 'حضّر إيميل واضح للمشروع.', tr: 'Net bir proje e-postası hazırlayın.' }),
+    briefLead: copyFor(locale, {
+      en: 'Three fields are enough. The button opens your email app with a structured draft; nothing is sent automatically.',
+      fr: 'Trois champs suffisent. Le bouton ouvre votre application email avec un message déjà structuré; rien n’est envoyé automatiquement.',
+      dz: 'ثلاث خانات يكفيو. الزر يفتح تطبيق الإيميل برسالة منظمة؛ ما يتبعت والو تلقائياً.',
+      tr: 'Üç alan yeterli. Buton e-posta uygulamanızda düzenli bir taslak açar; hiçbir şey otomatik gönderilmez.',
+    }),
+    includeLabel: copyFor(locale, { en: 'Useful information', fr: 'Informations utiles', dz: 'معلومات مفيدة', tr: 'Faydalı bilgiler' }),
+    includeItems: [
+      copyFor(locale, { en: 'Project location', fr: 'Localisation du projet', dz: 'موقع المشروع', tr: 'Proje konumu' }),
+      copyFor(locale, { en: 'Programme type', fr: 'Type de programme', dz: 'نوع البرنامج', tr: 'Program tipi' }),
+      copyFor(locale, { en: 'Current stage', fr: 'Phase actuelle', dz: 'المرحلة الحالية', tr: 'Mevcut aşama' }),
+      copyFor(locale, { en: 'Available drawings or photos', fr: 'Plans ou photos disponibles', dz: 'المخططات ولا الصور المتوفرة', tr: 'Mevcut çizimler veya fotoğraflar' }),
+    ],
+    name: copyFor(locale, { en: 'Name', fr: 'Nom', dz: 'الاسم', tr: 'Ad' }),
+    replyTo: copyFor(locale, { en: 'Phone or email', fr: 'Téléphone ou email', dz: 'الهاتف ولا الإيميل', tr: 'Telefon veya e-posta' }),
+    message: copyFor(locale, { en: 'Project summary', fr: 'Résumé du projet', dz: 'ملخّص المشروع', tr: 'Proje özeti' }),
+    namePlaceholder: copyFor(locale, { en: 'Your name', fr: 'Votre nom', dz: 'اسمك', tr: 'Adınız' }),
     replyPlaceholder: '+213 ... / name@email.com',
-    messagePlaceholder:
-      locale === 'fr'
-        ? 'Localisation, programme, surface, phase et documents disponibles...'
-        : 'Location, programme, area, current stage and available documents...',
-    prepareEmail: locale === 'fr' ? 'Preparer l email' : 'Prepare email',
-    emailSubject: locale === 'fr' ? 'Nouvelle demande projet Igloo' : 'New Igloo project enquiry',
+    messagePlaceholder: copyFor(locale, {
+      en: 'Location, programme, area, current stage and available documents...',
+      fr: 'Localisation, programme, surface, phase et documents disponibles...',
+      dz: 'الموقع، البرنامج، المساحة، المرحلة والوثائق المتوفرة...',
+      tr: 'Konum, program, alan, mevcut aşama ve belgeler...',
+    }),
+    prepareEmail: copyFor(locale, { en: 'Prepare email', fr: 'Préparer l’email', dz: 'حضّر الإيميل', tr: 'E-posta hazırla' }),
+    emailSubject: copyFor(locale, { en: 'New Igloo project enquiry', fr: 'Nouvelle demande projet Igloo', dz: 'طلب مشروع جديد Igloo', tr: 'Yeni Igloo proje talebi' }),
   };
 }
 

@@ -211,7 +211,10 @@ export default function Header() {
   const solidHeaderClass = 'bg-[color:var(--igloo-header-bg)] py-2 text-[color:var(--igloo-header-text)] shadow-none';
   const overlayHeaderClass = 'bg-transparent py-2.5 text-white shadow-none backdrop-blur-0';
   const navToneClass = isScrolled ? 'text-[color:var(--igloo-header-text)]' : 'text-white';
-  const logoSrc = isScrolled
+  // About and Contact open on white editorial surfaces. Keep their wordmark
+  // dark even while the shared header is settling after a route transition.
+  const useDarkLogo = isScrolled || location.pathname === '/about' || location.pathname === '/contact';
+  const logoSrc = useDarkLogo
     ? 'https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png'
     : 'https://i.ibb.co/fY50LKcW/Chat-GPT-mage-5-May-2026-21-15-03-removebg-preview.png';
 

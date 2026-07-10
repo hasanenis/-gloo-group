@@ -30,7 +30,7 @@ type Dictionary = Record<Locale, Record<string, string>>;
 
 const STORAGE_KEY = 'igloo:locale';
 
-const dictionary: Dictionary = {
+export const dictionary: Dictionary = {
   en: {
     home: 'Home', projects: 'Projects', company: 'Company', services: 'Services', tenders: 'Tenders', contact: 'Contact',
     scroll: 'Scroll', projectOverview: 'Project overview', projectDetails: 'Details & location',
@@ -200,7 +200,7 @@ const TR_TERMS: Record<string, string> = {
   programme: 'program',
   programmes: 'programlar',
   residential: 'konut',
-  mixed-use: 'karma kullanım',
+  'mixed-use': 'karma kullanım',
   Algeria: 'Cezayir',
   Algiers: 'Cezayir',
   office: 'ofis',
@@ -231,7 +231,7 @@ const DZ_TERMS: Record<string, string> = {
   programme: 'برنامج',
   programmes: 'برامج',
   residential: 'سكني',
-  mixed-use: 'استعمال مختلط',
+  'mixed-use': 'استعمال مختلط',
   Algeria: 'الجزائر',
   Algiers: 'الجزائر العاصمة',
   office: 'مكتب',

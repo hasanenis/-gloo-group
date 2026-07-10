@@ -1,4 +1,4 @@
-import type { Locale } from '../i18n';
+import { pickLocaleText, type Locale } from '../i18n';
 
 /**
  * Localized homepage/about/contact copy. English and French are always
@@ -9,7 +9,7 @@ export type HomepageText = { en: string; fr: string; dz?: string; tr?: string };
 
 /** Resolve a HomepageText value for the active locale, falling back to English. */
 export function homepageText(value: HomepageText, locale: Locale): string {
-  return value[locale] ?? value.en;
+  return pickLocaleText(locale, value);
 }
 
 export type HomepageMetric = {
@@ -341,5 +341,5 @@ export const homepageProjectProofs: Record<string, HomepageText> = {
 };
 
 export function localize(value: HomepageText, locale: Locale): string {
-  return value[locale] ?? value.en;
+  return pickLocaleText(locale, value);
 }

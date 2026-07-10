@@ -7,7 +7,7 @@ import { homeProjectCards } from '../data/projects';
 import { localized } from '../data/projectContent';
 import { homepageContent, homepageProjectProofs, localize as localizeHome } from '../data/homepageContent';
 import { getProjectHeroImage } from '../data/projectHeroImage';
-import { useLocale } from '../i18n';
+import { pickLocaleText, useLocale } from '../i18n';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
 import { Button } from './ui/button';
@@ -25,7 +25,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   const goTo = useSiteNavigate();
   const image = getProjectHeroImage(project);
   const proof = homepageProjectProofs[project.slug];
-  const cardTitle = locale === 'fr' ? project.menuTitle : project.title;
+  const cardTitle = pickLocaleText(locale, { en: project.title, fr: project.menuTitle });
 
   const handleMouseEnter = () => {
     if (!cardRef.current || prefersReducedMotion) return;
@@ -79,7 +79,9 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
             data-home-text-reveal
             data-home-text-reveal-mode="block"
           >
-            {locale === 'fr' ? (project.status === 'current' ? 'En cours' : 'Livré') : project.chapterLabel}
+            {project.status === 'current'
+              ? pickLocaleText(locale, { en: 'Current', fr: 'En cours', dz: 'في طور الإنجاز', tr: 'Devam ediyor' })
+              : pickLocaleText(locale, { en: 'Completed', fr: 'Livré', dz: 'مكمّل', tr: 'Tamamlandı' })}
           </span>
           <span className="h-1 w-1 rotate-45 bg-[#e82a2e]" />
           <span className="inline-flex items-center gap-1.5">
@@ -162,7 +164,7 @@ export default function FeaturedProjects() {
         <CardCarousel
           items={PROJECTS}
           getKey={(project) => String(project.id)}
-          ariaLabel={locale === 'fr' ? 'Projets à la une' : 'Featured projects'}
+          ariaLabel={pickLocaleText(locale, { en: 'Featured projects', fr: 'Projets à la une', dz: 'مشاريع مختارة', tr: 'Öne çıkan projeler' })}
           spaceBetween={28}
           trackClassName="!px-8 md:!px-14 !pb-2"
           slideClassName="!w-[82vw] sm:!w-[410px] lg:!w-[500px]"

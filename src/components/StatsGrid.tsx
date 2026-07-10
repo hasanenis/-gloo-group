@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { motionDuration, motionDurationFor, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
-import { useLocale } from '../i18n';
+import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
 import { Card } from './ui/card';
 import { SectionHeader } from './ui/section-header';
 
@@ -15,7 +15,7 @@ type StatItem = {
   icon: typeof Award;
   value: number;
   decimals: number;
-  label: { en: string; fr: string };
+  label: LocalizedString;
   prefix?: string;
   suffix?: string;
 };
@@ -114,12 +114,15 @@ export default function StatsGrid() {
       <div className="mx-auto max-w-[1440px]">
         <SectionHeader
           className="mb-10 md:mb-14"
-          eyebrowLabel={locale === 'fr' ? 'Performance' : 'Performance'}
-          title={locale === 'fr' ? 'Chiffres clés' : 'Key figures'}
+          eyebrowLabel={pickLocaleText(locale, { en: 'Performance', fr: 'Performance', dz: 'الأداء', tr: 'Performans' })}
+          title={pickLocaleText(locale, { en: 'Key figures', fr: 'Chiffres clés', dz: 'أرقام مهمة', tr: 'Temel rakamlar' })}
           description={
-            locale === 'fr'
-              ? 'Une lecture rapide de la portée du travail et du rythme de livraison de l’entreprise.'
-              : 'A quick read on delivery scope and the pace of the business.'
+            pickLocaleText(locale, {
+              en: 'A quick read on delivery scope and the pace of the business.',
+              fr: 'Une lecture rapide de la portée du travail et du rythme de livraison de l’entreprise.',
+              dz: 'نظرة سريعة على نطاق الخدمة وريتم التسليم تاع الشركة.',
+              tr: 'Teslim kapsamı ve şirketin iş temposu hakkında hızlı bir okuma.',
+            })
           }
         />
 
@@ -148,7 +151,7 @@ export default function StatsGrid() {
                     </span>
                   </div>
                   <span className="block max-w-[20ch] text-[15px] font-medium leading-snug text-black md:text-[17px]">
-                    {stat.label[locale]}
+                    {pickLocaleText(locale, stat.label)}
                   </span>
                 </div>
               </Card>

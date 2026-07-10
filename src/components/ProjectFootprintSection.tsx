@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Map as MapIcon, MapPin, Route } from 'lucide-react';
-import { useLocale } from '../i18n';
+import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { homepageContent, homepageProjectProofs, localize } from '../data/homepageContent';
 import { projectMapPoints, type ProjectMapPoint } from '../data/projectMap';

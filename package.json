@@ -15,6 +15,7 @@
     "analyze:images": "tsx scripts/analyze-project-images.ts",
     "analyze:images:all": "tsx scripts/analyze-project-images.ts --all",
     "build:project-content": "tsx scripts/build-project-content.ts",
+    "export:locallingo": "tsx scripts/export-locallingo-locales.ts",
     "catalog:images": "tsx scripts/catalog-project-assets.ts",
     "select:images": "tsx scripts/write-project-image-selection-report.ts",
     "organize:images": "npm run build:project-content -- --skip-maps && npm run select:images && npm run catalog:images",
