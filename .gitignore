@@ -14,3 +14,7 @@ project-*.json
 
 # Generated, review-only machine-translation candidates.
 artifacts/translation-drafts/
+
+# Raw/unused source material, not referenced by the app.
+İgloo project data/
+public/Upscaled/
