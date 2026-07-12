@@ -49,6 +49,22 @@ bash deploy/update-site.sh igloogroupe
 bash deploy/update-site.sh leosclothes
 ```
 
+## Auto-deploy on push
+
+`deploy/auto-deploy.sh <site-slug>` checks `origin/main` and, only if there's
+a new commit, runs `update-site.sh`. It's meant to run on a schedule via cron
+so pushes to `main` go live without a manual SSH step.
+
+Install once per site on the server:
+
+```bash
+crontab -e
+# add:
+*/2 * * * * /var/www/igloogroupe/current/deploy/auto-deploy.sh igloogroupe >> /var/log/igloogroupe-auto-deploy.log 2>&1
+```
+
+Logs land in `/var/log/<site-slug>-auto-deploy.log`.
+
 ## Notes
 
 - The Nginx template includes `try_files ... /index.html` so React Router routes keep working on refresh.
