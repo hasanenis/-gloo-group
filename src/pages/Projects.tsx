@@ -1,4 +1,4 @@
-import React, {
+﻿import React, {
   startTransition,
   useDeferredValue,
   useEffect,
@@ -12,24 +12,32 @@ import { useGSAP } from '@gsap/react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowUpRight, Home, Mail, MapPin, Search } from 'lucide-react';
 import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
-import { projects, type ProjectRecord } from '../data/projects';
+import {
+  localizedProjectScope,
+  localizedProjectShortTitle,
+  localizedProjectStatus,
+  localizedProjectSummary,
+  localizedProjectTitle,
+  projects,
+  type ProjectRecord,
+} from '../data/projects';
 import { useLenis } from '../components/SmoothScrollProvider';
-import { useLocale, type Locale } from '../i18n';
+import { pickLocaleText, useLocale, type Locale } from '../i18n';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const inferCategory = (project: ProjectRecord, locale: Locale) => {
-  const text = `${project.title} ${project.scope} ${project.menuTitle}`.toLowerCase();
-  if (text.includes('villa')) return locale === 'fr' ? 'Villas' : 'Villas';
-  if (text.includes('commercial') || text.includes('mixed')) return locale === 'fr' ? 'Usage mixte' : 'Mixed Use';
-  if (text.includes('network') || text.includes('road')) return locale === 'fr' ? 'Infrastructure' : 'Infrastructure';
-  return locale === 'fr' ? 'Logement' : 'Housing';
+  const text = `${localizedProjectTitle(project, locale)} ${localizedProjectScope(project, locale)} ${localizedProjectShortTitle(project, locale)}`.toLowerCase();
+  if (text.includes('villa')) return pickLocaleText(locale, { en: 'Villas', fr: 'Villas', dz: 'فيلات', tr: 'Villalar' });
+  if (text.includes('commercial') || text.includes('mixed')) return pickLocaleText(locale, { en: 'Mixed Use', fr: 'Usage mixte', dz: 'استعمال مختلط', tr: 'Karma kullanım' });
+  if (text.includes('network') || text.includes('road')) return pickLocaleText(locale, { en: 'Infrastructure', fr: 'Infrastructure', dz: 'بنية تحتية', tr: 'Altyapı' });
+  return pickLocaleText(locale, { en: 'Housing', fr: 'Logement', dz: 'سكنات', tr: 'Konut' });
 };
 
 const projectStatuses = [
-  { key: 'all', label: { en: 'All', fr: 'Tous' } },
-  { key: 'completed', label: { en: 'Completed', fr: 'Achevés' } },
-  { key: 'current', label: { en: 'Current', fr: 'En cours' } },
+  { key: 'all', label: { en: 'All', fr: 'Tous', dz: 'الكل', tr: 'Tümü' } },
+  { key: 'completed', label: { en: 'Completed', fr: 'Achevés', dz: 'مكمّلة', tr: 'Tamamlandı' } },
+  { key: 'current', label: { en: 'Current', fr: 'En cours', dz: 'في طور الإنجاز', tr: 'Devam ediyor' } },
 ] as const;
 
 type ProjectFilterKey = (typeof projectStatuses)[number]['key'];
@@ -66,7 +74,7 @@ function ProjectCard({ project, index, locale }: { project: ProjectRecord; index
         <img
           ref={imgRef}
           src={project.images[0]}
-          alt={project.title}
+          alt={localizedProjectTitle(project, locale)}
           className="h-full w-full object-cover will-change-transform"
         />
       </div>
@@ -74,7 +82,7 @@ function ProjectCard({ project, index, locale }: { project: ProjectRecord; index
       {/* Info block */}
       <div className="w-full pt-4 pb-8">
         <h3 className="text-2xl leading-[1.2] text-[#c22026] transition-colors group-hover:text-[#9a1a1e] md:text-3xl">
-          {project.title}
+          {localizedProjectTitle(project, locale)}
         </h3>
         <hr className="mt-2 mb-3 border-black/12" />
         <div className="flex items-center justify-between gap-4">
@@ -82,7 +90,7 @@ function ProjectCard({ project, index, locale }: { project: ProjectRecord; index
             {inferCategory(project, locale)}, {project.location}
           </span>
           <span className="text-[11px] font-medium text-black underline-offset-2 transition-colors group-hover:text-[#c22026]">
-            {locale === 'fr' ? 'Lire la suite' : 'Read More'}
+            {pickLocaleText(locale, { en: 'Read more', fr: 'Lire la suite', dz: 'اقرأ أكثر', tr: 'Devamını oku' })}
           </span>
         </div>
       </div>
@@ -114,17 +122,15 @@ function ProjectChapter({
         <div className="mb-6 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#c22026]">
           <span>{String(index + 1).padStart(2, '0')}</span>
           <span className="h-px w-10 bg-[#c22026]/50" />
-          <span>{project.chapterLabel}</span>
+          <span>{localizedProjectStatus(project, locale)}</span>
         </div>
 
-        <h2 className="font-serif text-[2.7rem] uppercase leading-[0.92] tracking-[-0.06em] text-[#111] md:text-[4.4rem]">
-          {project.coverLines[0]}
-          <br />
-          {project.coverLines[1]}
+        <h2 className="font-serif text-[2.7rem] uppercase leading-[0.92] tracking-[-0.04em] text-[#111] md:text-[4.4rem]">
+          {localizedProjectTitle(project, locale)}
         </h2>
 
         <p className="mt-6 max-w-md text-sm leading-7 text-black/62 md:text-base">
-          {project.summary}
+          {localizedProjectSummary(project, locale)}
         </p>
 
         <div className="mt-8 grid gap-3 border-y border-black/10 py-5 text-[11px] uppercase tracking-[0.18em] text-black/52">
@@ -132,7 +138,7 @@ function ProjectChapter({
             <MapPin className="h-4 w-4 text-[#c22026]" strokeWidth={2} />
             {project.location}
           </span>
-          <span>{project.scope}</span>
+          <span>{localizedProjectScope(project, locale)}</span>
         </div>
 
         <div className="mt-8 flex items-center gap-4">
@@ -140,13 +146,11 @@ function ProjectChapter({
             href={`#${project.slug}`}
             className="inline-flex items-center gap-2 border border-black/15 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#111] transition-colors duration-300 hover:border-[#c22026] hover:text-[#c22026]"
           >
-            {locale === 'fr' ? 'Voir le chapitre' : 'View Chapter'}
+            {pickLocaleText(locale, { en: 'View chapter', fr: 'Voir le chapitre', dz: 'شوف الفصل', tr: 'Bölümü gör' })}
             <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
           </a>
           <span className="text-[11px] uppercase tracking-[0.2em] text-black/35">
-            {project.status === 'current'
-              ? locale === 'fr' ? 'Livraison en cours' : 'Live Delivery'
-              : locale === 'fr' ? 'Livraison achevée' : 'Completed Delivery'}
+            {project.status === 'current' ? pickLocaleText(locale, { en: 'Live delivery', fr: 'Livraison en cours', dz: 'تسليم جاري', tr: 'Devam eden teslim' }) : pickLocaleText(locale, { en: 'Completed delivery', fr: 'Livraison achevée', dz: 'تسليم مكتمل', tr: 'Tamamlanan teslim' })}
           </span>
         </div>
       </div>
@@ -158,16 +162,16 @@ function ProjectChapter({
             data-cursor-card
             data-cursor-label="CHAPTER"
           >
-            <img src={project.images[0]} alt={project.title} className="h-full w-full object-cover" />
+            <img src={project.images[0]} alt={localizedProjectTitle(project, locale)} className="h-full w-full object-cover" />
           </div>
 
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-6 bg-gradient-to-t from-black/65 via-black/15 to-transparent px-6 py-6 md:px-8">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/62">
-                {project.menuTitle}
+                {localizedProjectShortTitle(project, locale)}
               </p>
               <p className="mt-2 max-w-sm text-sm leading-6 text-white/88">
-                {project.details}
+                {localizedProjectSummary(project, locale)}
               </p>
             </div>
             <div
@@ -181,8 +185,8 @@ function ProjectChapter({
         </div>
 
         <div className={`project-detail-card absolute -bottom-10 ${reverse ? 'left-6 md:left-auto md:right-10' : 'right-6 md:right-auto md:left-10'} w-[18rem] max-w-[calc(100%-3rem)] border border-black/10 bg-white/92 p-5 backdrop-blur-md shadow-[0_18px_48px_rgba(0,0,0,0.1)]`}>
-          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#c22026]">{locale === 'fr' ? 'Périmètre du projet' : 'Project Scope'}</p>
-          <p className="mt-3 text-sm leading-6 text-black/70">{project.scope}</p>
+          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#c22026]">{pickLocaleText(locale, { en: 'Project scope', fr: 'Périmètre du projet', dz: 'نطاق المشروع', tr: 'Proje kapsamı' })}</p>
+          <p className="mt-3 text-sm leading-6 text-black/70">{localizedProjectScope(project, locale)}</p>
         </div>
       </div>
     </article>
@@ -423,7 +427,7 @@ export default function Projects() {
                 data-hero-line
                 className="font-serif text-[18vw] uppercase leading-[0.85] tracking-[-0.06em] text-[#c22026] md:text-[7.5rem] lg:text-[10rem]"
               >
-                {locale === 'fr' ? 'Nos' : 'Our'}
+                {pickLocaleText(locale, { en: 'Our', fr: 'Nos', dz: 'مشاريعنا', tr: 'Bizim' })}
               </p>
             </div>
             <div className="overflow-hidden">
@@ -431,7 +435,7 @@ export default function Projects() {
                 data-hero-line
                 className="font-serif text-[18vw] uppercase leading-[0.85] tracking-[-0.06em] text-[#c22026] md:text-[7.5rem] lg:text-[10rem]"
               >
-                {locale === 'fr' ? 'Projets' : 'Projects'}
+                {pickLocaleText(locale, { en: 'Projects', fr: 'Projets', dz: 'المشاريع', tr: 'Projeler' })}
               </p>
             </div>
           </div>
@@ -448,6 +452,23 @@ export default function Projects() {
                   <strong className="font-semibold text-black/82">usage mixte</strong> et les{' '}
                   <strong className="font-semibold text-black/82">infrastructures</strong> — chaque projet
                   conçu pour durer et pensé pour inspirer.
+                </>
+              ) : locale === 'ar-DZ' ? (
+                <>
+                  ننجزو برامج سكنية ومختلطة عبر الجزائر. مجالاتنا تشمل{' '}
+                  <strong className="font-semibold text-black/82">السكن</strong>،{' '}
+                  <strong className="font-semibold text-black/82">الفيلات</strong>،{' '}
+                  <strong className="font-semibold text-black/82">الاستعمال المختلط</strong> و{' '}
+                  <strong className="font-semibold text-black/82">البنية التحتية</strong>، وكل مشروع مبني باش يدوم.
+                </>
+              ) : locale === 'tr' ? (
+                <>
+                  Cezayir'in farklı kentlerinde konut ve karma kullanım projeleri yürütüyoruz.
+                  Çalışmalarımız{' '}
+                  <strong className="font-semibold text-black/82">konut</strong>,{' '}
+                  <strong className="font-semibold text-black/82">villa</strong>,{' '}
+                  <strong className="font-semibold text-black/82">karma kullanım</strong> ve{' '}
+                  <strong className="font-semibold text-black/82">altyapı</strong> işlerini kapsar; her yapıyı uzun ömürlü olacak şekilde planlarız.
                 </>
               ) : (
                 <>
@@ -466,14 +487,14 @@ export default function Projects() {
                 href="#projects-grid"
                 className="inline-flex items-center gap-2 bg-[#111] px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-[#c22026]"
               >
-                {locale === 'fr' ? 'Parcourir les projets' : 'Browse Projects'}
+                {pickLocaleText(locale, { en: 'Browse projects', fr: 'Parcourir les projets', dz: 'تصفح المشاريع', tr: 'Projeleri incele' })}
                 <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
               </a>
               <a
                 href="/contact"
                 className="inline-flex items-center gap-2 border border-black/15 px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
               >
-                {locale === 'fr' ? 'Contact' : 'Contact'}
+                {pickLocaleText(locale, { en: 'Contact', fr: 'Contact', dz: 'اتصال', tr: 'İletişim' })}
                 <Mail className="h-4 w-4" strokeWidth={2} />
               </a>
             </div>
@@ -494,7 +515,7 @@ export default function Projects() {
             <input
               value={searchQuery}
               onChange={(e) => startTransition(() => setSearchQuery(e.target.value))}
-              placeholder={locale === 'fr' ? 'Rechercher des projets…' : 'Search projects...'}
+              placeholder={pickLocaleText(locale, { en: 'Search projects...', fr: 'Rechercher des projets...', dz: 'ابحث في المشاريع...', tr: 'Projelerde ara...' })}
               className="w-full bg-transparent text-sm text-[#111] outline-none placeholder:text-black/30"
             />
           </label>
@@ -512,7 +533,7 @@ export default function Projects() {
                     : 'border-black/12 text-black/62 hover:border-[#c22026] hover:text-[#c22026]'
                 }`}
               >
-                {cat}
+                {cat === 'All' ? pickLocaleText(locale, { en: 'All', fr: 'Tous', dz: 'الكل', tr: 'Tümü' }) : cat}
               </button>
             ))}
             <span className="hidden h-4 w-px bg-black/12 md:block" />
@@ -527,13 +548,15 @@ export default function Projects() {
                     : 'border-black/12 text-black/62 hover:border-[#c22026] hover:text-[#c22026]'
                 }`}
               >
-                {s.label[locale]}
+                {pickLocaleText(locale, s.label)}
               </button>
             ))}
           </div>
 
           <span className="hero-count text-[10px] font-bold uppercase tracking-[0.24em] text-black/38 md:ml-auto md:shrink-0">
-            {visibleProjects.length} {visibleProjects.length === 1 ? (locale === 'fr' ? 'Projet' : 'Project') : (locale === 'fr' ? 'Projets' : 'Projects')}
+            {visibleProjects.length} {visibleProjects.length === 1
+              ? pickLocaleText(locale, { en: 'project', fr: 'projet', dz: 'مشروع', tr: 'proje' })
+              : pickLocaleText(locale, { en: 'projects', fr: 'projets', dz: 'مشاريع', tr: 'proje' })}
           </span>
         </div>
       </section>
@@ -550,12 +573,12 @@ export default function Projects() {
           </div>
         ) : (
           <div className="py-32 text-center">
-            <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-[#c22026]">{locale === 'fr' ? 'Aucun résultat' : 'No Match'}</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.26em] text-[#c22026]">{pickLocaleText(locale, { en: 'No match', fr: 'Aucun resultat', dz: 'ما كاين حتى نتيجة', tr: 'Eşleşme yok' })}</p>
             <h2 className="mt-5 font-serif text-4xl uppercase tracking-[-0.05em] text-[#111]">
-              {locale === 'fr' ? 'Aucun projet trouvé' : 'No projects found'}
+              {pickLocaleText(locale, { en: 'No projects found', fr: 'Aucun projet trouvé', dz: 'ما لقينا حتى مشروع', tr: 'Proje bulunamadı' })}
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-black/62">
-              {locale === 'fr' ? 'Essayez un autre mot-clé ou ajustez le filtre ci-dessus.' : 'Try a different keyword or adjust the filter above.'}
+              {pickLocaleText(locale, { en: 'Try a different keyword or adjust the filter above.', fr: 'Essayez un autre mot-cle ou ajustez le filtre ci-dessus.', dz: 'جرب كلمة أخرى ولا بدل الفلتر الفوق.', tr: 'Başka bir anahtar kelime deneyin veya yukarıdaki filtreyi değiştirin.' })}
             </p>
           </div>
         )}
@@ -564,8 +587,13 @@ export default function Projects() {
       {/* ── Section divider ── */}
       <div className="border-t border-black/8 px-6 py-6 md:px-12 lg:px-20">
         <div className="flex flex-wrap items-center justify-between gap-4 text-[10px] font-bold uppercase tracking-[0.26em] text-black/30">
-          <span>{locale === 'fr' ? 'Igloo Construction · Bibliothèque de chapitres' : 'Igloo Construction · Chapter Library'}</span>
-          <span>{locale === 'fr' ? `${visibleProjects.length} chapitres détaillés ci-dessous` : `${visibleProjects.length} detailed chapters below`}</span>
+          <span>{pickLocaleText(locale, { en: 'Igloo Construction · Chapter library', fr: 'Igloo Construction · Bibliotheque de chapitres', dz: 'Igloo Construction · مكتبة الفصول', tr: 'Igloo Construction · Bölüm kitaplığı' })}</span>
+          <span>{pickLocaleText(locale, {
+            en: `${visibleProjects.length} detailed chapters below`,
+            fr: `${visibleProjects.length} chapitres détaillés ci-dessous`,
+            dz: `${visibleProjects.length} فصول مفصلة تحت`,
+            tr: `Aşağıda ${visibleProjects.length} ayrıntılı bölüm`,
+          })}</span>
         </div>
       </div>
 
@@ -594,9 +622,9 @@ export default function Projects() {
               <Home className="h-4 w-4" strokeWidth={2} />
             </Link>
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-black/42">{locale === 'fr' ? 'Chapitre actuel' : 'Current Chapter'}</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-black/42">{pickLocaleText(locale, { en: 'Current chapter', fr: 'Chapitre actuel', dz: 'الفصل الحالي', tr: 'Geçerli bölüm' })}</p>
               <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111]">
-                {activePreviewProject.menuTitle}
+                {localizedProjectShortTitle(activePreviewProject, locale)}
               </p>
             </div>
           </div>
@@ -610,14 +638,15 @@ export default function Projects() {
           <a
             href="/contact"
             data-cursor-card
-            data-cursor-label="CONTACT"
+            data-cursor-label={pickLocaleText(locale, { en: 'CONTACT', fr: 'CONTACT', dz: 'اتصال', tr: 'İLETİŞİM' })}
             className="inline-flex items-center justify-center gap-2 border border-black/10 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
           >
             <Mail className="h-4 w-4" strokeWidth={2} />
-            Contact
+            {pickLocaleText(locale, { en: 'Contact', fr: 'Contact', dz: 'اتصال', tr: 'İletişim' })}
           </a>
         </div>
       </div>
     </main>
   );
 }
+

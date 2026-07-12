@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgzoai3-target-tr-projects-index",
+  "pageId": "projects-index",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:21:52.453Z",
+  "status": "pass",
+  "issues": []
+}

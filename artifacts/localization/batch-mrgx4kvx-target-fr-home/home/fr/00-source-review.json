@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgx4kvx-target-fr-home",
+  "pageId": "home",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T22:10:33.870Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

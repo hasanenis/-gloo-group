@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh18any-target-ar-DZ-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-12T00:05:25.582Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Rahmania Commercial Centres | Douira, Algiers",
+      "draft": "مراكز الرحمانية التجارية | دويرة، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "التنفيذ الفني والأعمال الثانوية لمركزين تجاريين ضمن المشروع السكني الذي يضم 2500 وحدة سكنية في دويرة، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Rahmania Commercial Centres | Douira, Algiers",
+      "draft": "مراكز الرحمانية التجارية | دويرة، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "التنفيذ الفني والأعمال الثانوية لمركزين تجاريين ضمن المشروع السكني الذي يضم 2500 وحدة سكنية في دويرة، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "rahmania",
+      "draft": "الرحمانية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "Rahmania Commercial Centres",
+      "draft": "مراكز الرحمانية التجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE INFRASTRUCTURE",
+      "draft": "بنية تحتية متعددة الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of the complete secondary works package for two commercial centres, completed in 2025 within the 2,500-home residential development in Douira.",
+      "draft": "تسليم الحزمة الكاملة للأعمال الثانوية لمركزين تجاريين، والمُنجزة في عام 2025 ضمن المشروع السكني في \"دويرة\" الذي يضم 2500 وحدة سكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services.",
+      "draft": "مركزان تجاريان ضمن مشروع \"دويرة\" السكني (الذي يضم 2500 وحدة سكنية)، مجهّزان لاستيعاب متاجر الحي والخدمات اليومية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "SARL Igloo Yapi Construction executed the complete secondary works package (corps d'état secondaires - CES) for both commercial structures. The scope of work transformed the raw reinforced concrete frames into fully fitted, functional retail environments designed to accommodate local merchants and public services.",
+      "draft": "تولت شركة \"Igloo Yapi Construction\" تنفيذ حزمة الأعمال الثانوية (CES) بالكامل لكلا المبنيين التجاريين؛ حيث أدى نطاق العمل إلى تحويل الهياكل الخرسانية المسلحة الخام إلى مساحات تجارية مجهزة بالكامل وعملية، صُممت لتلبية احتياجات التجار المحليين وتقديم الخدمات العامة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The building envelopes feature extensive glazed curtain walling integrated with decorative architectural screens. Internally, vertical circulation is anchored by a central staircase, while a structural pyramid glass skylight provides natural daylighting across the retail floor plates.",
+      "draft": "تتميز واجهات المبنى بأنظمة واسعة النطاق من الجدران الستائرية الزجاجية المدمجة مع حواجز معمارية زخرفية. أما من الداخل، فتتمحور حركة التنقل الرأسي حول درج مركزي، بينما توفر نافذة سقفية هرمية هيكلية من الزجاج إضاءة طبيعية تغمر مساحات طوابق البيع بالتجزئة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "Completed in 2025, the project was delivered on schedule, with all secondary trades coordinated to meet modern commercial building standards.",
+      "draft": "أُنجز المشروع وسُلِّم في الموعد المحدد عام 2025، مع تنسيق كافة الأعمال التخصصية الثانوية لتلبية معايير المباني التجارية الحديثة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "التنفيذ الفني والأعمال الثانوية لمركزين تجاريين ضمن المشروع السكني الذي يضم 2500 وحدة سكنية في دويرة، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Typology",
+      "draft": "تصنيف المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Commercial Centres",
+      "draft": "المراكز التجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Typology",
+      "draft": "تصنيف المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Commercial Centres",
+      "draft": "المراكز التجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douira, Algiers",
+      "draft": "دويرة، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Scope of Works",
+      "draft": "نطاق الأعمال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "Secondary works package (CES)",
+      "draft": "حزمة الأعمال الثانوية (CES)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Context",
+      "draft": "السياق",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2,500-home residential programme",
+      "draft": "برنامج سكني يضم 2500 وحدة سكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Type",
+      "draft": "نوع العقد",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Execution",
+      "draft": "التنفيذ",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "Complete secondary works package (CES)",
+      "draft": "حزمة الأعمال الثانوية المتكاملة (CES)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Glazed facade installation and architectural screens",
+      "draft": "تركيب الواجهات الزجاجية والحواجز المعمارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Central vertical circulation and structural pyramid skylight",
+      "draft": "نظام حركة رأسية مركزي ونافذة سقفية هرمية إنشائية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Delivered in 2025, on schedule and to standard",
+      "draft": "يُنجز في عام 2025، في الموعد المحدد ووفقاً للمعايير",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the Rahmania Commercial Centres project?",
+      "draft": "ما هو نطاق مشروع مراكز الرحمانية التجارية؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "Secondary works for two commercial centres, completed in 2025 within Douira's 2,500-home residential programme.",
+      "draft": "أعمال ثانوية لمركزين تجاريين، تُنجز في عام 2025 ضمن برنامج \"دويرة\" السكني المكون من 2500 وحدة سكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What technical works were executed by the contractor?",
+      "draft": "ما هي الأعمال الفنية التي نفذها المقاول؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "SARL Igloo Yapi Construction managed the fit-out of the reinforced concrete structures, including interior partitions, finishes, glazed facades, central staircases, and the installation of a structural pyramid glass skylight.",
+      "draft": "تولت شركة \"إغلو يابي للإنشاءات\" (SARL Igloo Yapi Construction) إدارة أعمال التجهيز والتشطيب للمنشآت الخرسانية المسلحة، بما في ذلك القواطع الداخلية، والتشطيبات، والواجهات الزجاجية، والسلالم المركزية، وتركيب نافذة سقفية هرمية زجاجية ذات هيكل إنشائي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "When was the commercial development completed?",
+      "draft": "متى اكتمل التطوير التجاري؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services.",
+      "draft": "مركزان تجاريان ضمن مشروع \"دويرة\" السكني (الذي يضم 2500 وحدة سكنية)، مجهّزان لاستيعاب متاجر الحي والخدمات اليومية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition.",
+      "draft": "منظر داخلي لوحدة تجارية مكتملة التجهيز، تتميز بأرضيات مبلطة وجدران بيضاء وإضاءة سقفية مدمجة، وتُرى من خلال فاصل زجاجي بإطار أسود.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes.",
+      "draft": "المساحة الداخلية المنجزة لوحدة تجارية، تظهر فيها الواجهات الزجاجية الداخلية والتشطيبات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Exterior view of the completed three-storey commercial building with dark grey cladding panels and copper-toned trim, situated adjacent to residential blocks.",
+      "draft": "مشهد خارجي لمبنى تجاري مكتمل مكون من ثلاثة طوابق، يتميز بألواح تكسية رمادية داكنة وحواف بلون نحاسي، ويقع بمحاذاة مجمعات سكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Completed commercial centre facade integrated within the residential development.",
+      "draft": "واجهة المركز التجاري المنجزة والمدمجة ضمن المشروع السكني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "الردهة الداخلية للمركز التجاري، وتُظهر سلماً خرسانياً متعدد المستويات مزوداً بدرابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية كبيرة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "ردهة مركزية ونواة الحركة الرأسية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building.",
+      "draft": "سلم منحنٍ بدرجات من الجرانيت الرمادي ودرابزين من الفولاذ المقاوم للصدأ في الردهة الرئيسية للمبنى التجاري.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Granite-clad curved staircase detail.",
+      "draft": "تفاصيل سلم منحني مكسو بالجرانيت.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Two curved concrete staircases with protective wrapping on the metal handrails during the interior finishing phase.",
+      "draft": "سلّمان خرسانيان منحنيان مع تغليف واقٍ للدرابزين المعدني أثناء مرحلة التشطيبات الداخلية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Staircase installation and interior finishing works.",
+      "draft": "أعمال تركيب السلالم والتشطيبات الداخلية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre.",
+      "draft": "نافذة سقفية زجاجية هرمية الشكل ذات إطار معدني داكن، مُثبَّتة على السطح المكسو بالبلاط للمركز التجاري.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace.",
+      "draft": "منور زجاجي هرمي إنشائي على شرفة السطح.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "الردهة الداخلية للمركز التجاري، وتُظهر سلماً خرسانياً متعدد المستويات مزوداً بدرابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية كبيرة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "ردهة مركزية ونواة الحركة الرأسية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre.",
+      "draft": "نافذة سقفية زجاجية هرمية الشكل ذات إطار معدني داكن، مُثبَّتة على السطح المكسو بالبلاط للمركز التجاري.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace.",
+      "draft": "منور زجاجي هرمي إنشائي على شرفة السطح.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A newly installed glass pyramid skylight on a flat roof, with residential buildings visible in the background.",
+      "draft": "نافذة سقفية زجاجية هرمية الشكل مُركَّبة حديثاً على سطح مستوٍ، مع ظهور مبانٍ سكنية في الخلفية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Skylight installation on the commercial centre roof.",
+      "draft": "تركيب نافذة سقفية في المركز التجاري.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades.",
+      "draft": "ردهة تجارية واسعة تضم سلمين منحنيين متماثلين بدرجات من الجرانيت الداكن، مع تغليف بلاستيكي واقٍ على الدرابزين المعدني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out.",
+      "draft": "سلّمان منحنيان متماثلان في الردهة الرئيسية أثناء مرحلة التشطيبات النهائية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building.",
+      "draft": "سلم منحنٍ بدرجات من الجرانيت الرمادي ودرابزين من الفولاذ المقاوم للصدأ في الردهة الرئيسية للمبنى التجاري.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Granite-clad curved staircase detail.",
+      "draft": "تفاصيل سلم منحني مكسو بالجرانيت.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Close-up of the glass pyramid skylight structure on the tiled roof terrace, with residential blocks in the background.",
+      "draft": "لقطة مقربة لهيكل النافذة السقفية الزجاجية الهرمية الشكل على شرفة السطح المبلطة، مع ظهور مبانٍ سكنية في الخلفية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Roof terrace skylight detail.",
+      "draft": "تفاصيل النافذة السقفية لشرفة السطح.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "External view of the commercial centre with its glass pyramid roof, positioned between multi-storey residential buildings.",
+      "draft": "مشهد خارجي للمركز التجاري بسقفه الهرمي الزجاجي، الواقع بين مبانٍ سكنية متعددة الطوابق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Commercial centre integrated within the Douira residential development.",
+      "draft": "مركز تجاري مدمج ضمن مشروع \"دويرة\" السكني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades.",
+      "draft": "ردهة تجارية واسعة تضم سلمين منحنيين متماثلين بدرجات من الجرانيت الداكن، مع تغليف بلاستيكي واقٍ على الدرابزين المعدني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out.",
+      "draft": "سلّمان منحنيان متماثلان في الردهة الرئيسية أثناء مرحلة التشطيبات النهائية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "الردهة الداخلية للمركز التجاري، وتُظهر سلماً خرسانياً متعدد المستويات مزوداً بدرابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية كبيرة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "ردهة مركزية ونواة الحركة الرأسية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition.",
+      "draft": "منظر داخلي لوحدة تجارية مكتملة التجهيز، تتميز بأرضيات مبلطة وجدران بيضاء وإضاءة سقفية مدمجة، وتُرى من خلال فاصل زجاجي بإطار أسود.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes.",
+      "draft": "المساحة الداخلية المنجزة لوحدة تجارية، تظهر فيها الواجهات الزجاجية الداخلية والتشطيبات.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

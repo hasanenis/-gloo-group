@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrgz6g0o-target-fr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:07:59.867Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content",
+      "severity": "blocker",
+      "type": "project-override",
+      "message": "Required project fact is missing: terrain en forte pente ; 01 sous-sol parking et 03 entre-sols commerces avec mezzanine"
+    }
+  ]
+}

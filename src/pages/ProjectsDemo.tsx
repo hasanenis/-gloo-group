@@ -2,11 +2,12 @@ import { useEffect, useLayoutEffect, useRef, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { projects } from '../data/projects';
+import { localizedProjectCardTitle, projects } from '../data/projects';
 import { getProjectHeroImage } from '../data/projectHeroImage';
+import { localized } from '../data/projectContent';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { usePrefersReducedMotion } from '../lib/motion';
-import { useLocale } from '../i18n';
+import { pickLocaleText, useLocale } from '../i18n';
 import Footer from '../components/Footer';
 import '../styles/projects-bat-grid.css';
 
@@ -101,7 +102,7 @@ export default function ProjectsDemo() {
 
   return (
     <main ref={rootRef} className="pjx-page">
-      <h1 className="sr-only">{locale === 'fr' ? 'Projets Igloo Construction' : 'Igloo Construction projects'}</h1>
+      <h1 className="sr-only">{pickLocaleText(locale, { en: 'Igloo Construction projects', fr: 'Projets Igloo Construction', dz: 'مشاريع Igloo Construction', tr: 'Igloo Construction projeleri' })}</h1>
 
       {/* 16-col BAT grid — projects only, no filter bar */}
       <div ref={gridRef} className="pjx-grid">
@@ -142,14 +143,14 @@ export default function ProjectsDemo() {
                   <div className="pjx-card__parallax" data-pjx-parallax>
                     <img
                       src={heroImage.src}
-                      alt={(heroImage.alt[locale] || heroImage.alt.en || project.title)}
+                      alt={localized(heroImage.alt, locale)}
                       loading={index < 3 ? 'eager' : 'lazy'}
                       decoding="async"
                     />
                   </div>
                 </div>
 
-                <h2 className="pjx-card__label">{project.title}</h2>
+                <h2 className="pjx-card__label">{localizedProjectCardTitle(project, locale)}</h2>
               </Link>
             </article>
           );

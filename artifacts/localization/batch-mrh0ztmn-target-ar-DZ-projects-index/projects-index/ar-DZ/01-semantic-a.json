@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrh0ztmn-target-ar-DZ-projects-index",
+  "pageId": "projects-index",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:58:50.199Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "المشاريع | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "محفظة تضم مشاريع سكنية، وفيلات، ومنشآت تجارية، وشبكات طرق ومرافق (VRD) تم إنجازها في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "المشاريع | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "محفظة تضم مشاريع سكنية، وفيلات، ومنشآت تجارية، وشبكات طرق ومرافق (VRD) تم إنجازها في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Projects",
+      "draft": "المشاريع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "A portfolio built on delivery.",
+      "draft": "محفظة أعمال قائمة على الإنجاز.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Our completed works encompass residential programmes, villas, commercial premises, and roads and utility networks (VRD) executed across Algeria.",
+      "draft": "تشمل أعمالنا المنجزة مشاريع سكنية، وفيلات، ومنشآت تجارية، بالإضافة إلى شبكات الطرق والمرافق (VRD) التي تم تنفيذها في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

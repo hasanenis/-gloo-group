@@ -1,0 +1,10 @@
+{
+  "jobId": "20260712-35flash-home-retry",
+  "pageId": "home",
+  "locale": "en",
+  "sourceRevision": "v1-e5551402",
+  "generatedAt": "2026-07-11T21:42:50.804Z",
+  "status": "pass",
+  "issues": [],
+  "note": "Human review is required for any semantic enrichment flagged here."
+}

@@ -1,0 +1,24 @@
+{
+  "jobId": "batch-mrh143oj-target-ar-DZ-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-12T00:02:09.868Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1|content.faq.3.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    },
+    {
+      "id": "content.description.1|content.faq.3.question",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

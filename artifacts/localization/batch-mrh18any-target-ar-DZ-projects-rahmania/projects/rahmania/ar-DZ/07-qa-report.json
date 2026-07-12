@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh18any-target-ar-DZ-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-12T00:05:25.582Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

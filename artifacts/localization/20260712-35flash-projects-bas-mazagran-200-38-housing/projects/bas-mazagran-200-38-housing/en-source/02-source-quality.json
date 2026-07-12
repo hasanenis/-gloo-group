@@ -1,0 +1,31 @@
+{
+  "jobId": "20260712-35flash-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "locale": "en",
+  "sourceRevision": "v1-3be930e9",
+  "generatedAt": "2026-07-11T21:40:45.216Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "seo.socialDescription",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.0.question",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

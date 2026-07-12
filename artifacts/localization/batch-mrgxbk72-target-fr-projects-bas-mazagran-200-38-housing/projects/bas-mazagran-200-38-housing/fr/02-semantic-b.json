@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrgxbk72-target-fr-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-11T22:15:59.226Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Bas Mazagran | 200 logements aidés et 38 logements promotionnels libres"
+    },
+    {
+      "id": "seo.description",
+      "text": "Réalisation technique du projet résidentiel de 238 logements à Bas Mazagran, Mostaganem, comprenant 200 logements aidés (LPA) et 38 logements promotionnels libres. Projet balnéaire actuellement en phase de livraison."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Bas Mazagran | 200 logements aidés et 38 logements promotionnels libres"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Réalisation technique du projet résidentiel de 238 logements à Bas Mazagran, Mostaganem, comprenant 200 logements aidés (LPA) et 38 logements promotionnels libres. Projet balnéaire actuellement en phase de livraison."
+    },
+    {
+      "id": "content.slug",
+      "text": "bas-mazagran-200-38-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "200 logements aidés et 38 logements promotionnels libres, Bas Mazagran"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "PROJET RÉSIDENTIEL"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Situé à Bas Mazagran, Mostaganem, ce projet résidentiel comprend sept blocs structuraux totalisant 200 logements aidés (LPA) et 38 logements promotionnels libres, intégrés avec des locaux commerciaux au rez-de-chaussée. Ce projet balnéaire est actuellement en phase de livraison."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Le projet optimise la densité verticale à travers son volume structurel et l'articulation de ses façades, intégrant des accès piétons dédiés ainsi que les travaux de voirie et réseaux divers (VRD) pour viabiliser l'emprise résidentielle."
+    },
+    {
+      "id": "content.description.0",
+      "text": "La configuration architecturale répartit les 238 appartements sur sept blocs en béton armé, conçus selon un schéma de quatre logements par palier afin d'optimiser les circulations intérieures et l'efficacité de la structure."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Le programme de construction progresse dans sa phase de second œuvre, se concentrant sur les travaux de finition, le remplissage de la maçonnerie de façade, les installations techniques intérieures et l'achèvement des voiries et réseaux divers (VRD)."
+    },
+    {
+      "id": "content.authority",
+      "text": "OFFICE DE PROMOTION ET DE GESTION IMMOBILIÈRE (OPGI)"
+    },
+    {
+      "id": "content.seo",
+      "text": "Spécifications techniques, avancement des travaux et détails de chantier des 200 logements aidés (LPA) et 38 logements promotionnels libres à Bas Mazagran, Mostaganem."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Maître d'ouvrage"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "OPGI"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "Logements aidés et promotionnels"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Logements aidés et promotionnels"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Localisation"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Bas Mazagran, Mostaganem"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Programme"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "200 logements aidés (LPA) et 38 logements promotionnels libres"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Blocs"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "7 blocs (R+5 à R+9)"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Statut"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "En cours"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Programme du projet"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "238 logements programmatiques répartis entre segments aidé (LPA) et promotionnel libre"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Sept blocs en béton armé allant d'un rez-de-chaussée plus 5 étages à un rez-de-chaussée plus 9 étages (R+5 à R+9)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Locaux commerciaux au rez-de-chaussée"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "Travaux intégrés de voirie et réseaux divers (VRD) et accès piétons"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "Contexte de localisation"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "Zone littorale de Bas Mazagran, Mostaganem (projet balnéaire actuellement en phase de livraison)"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "En quoi consiste le projet des 200 logements aidés et 38 logements promotionnels libres ?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Ce projet comprend 200 unités de logement aidé (LPA) et 38 unités de logement promotionnel libre, réparties sur sept blocs structuraux intégrant des locaux commerciaux au rez-de-chaussée."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Quelle est la configuration structurelle des blocs ?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Le projet prévoit la réalisation spatiale et structurelle de 238 appartements distincts répartis sur sept blocs, maintenant un ratio d'aménagement de quatre logements par palier."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Qui est le maître d'ouvrage de ce projet résidentiel ?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Le projet est réalisé pour le compte de l'Office de Promotion et de Gestion Immobilière (OPGI) afin de répondre aux besoins en logements de la région."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "Quel est l'état d'avancement actuel des travaux de construction ?"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "Le chantier est actuellement en cours, les interventions se concentrant sur le second œuvre, la maçonnerie de façade et la réalisation des voiries et réseaux divers (VRD) pour ce projet balnéaire actuellement en phase de livraison."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Vue de plusieurs bâtiments résidentiels de plusieurs étages en cours de construction, montrant les structures en béton armé et le remplissage en briques rouges, sous un ciel bleu dégagé avec un piéton au premier plan."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Réalisation structurelle des blocs résidentiels montrant l'ossature en béton armé et le remplissage en maçonnerie."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Vue d'ensemble d'un chantier de construction avec plusieurs structures de logements en béton à différents stades d'avancement, des attentes de ferraillage dépassant des sommets, et une grande grue à tour bleue sur la gauche sous un ciel bleu clair. Des matériaux de construction sont répartis sur le sol en terre."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Grue à tour en activité durant la réalisation de la structure des blocs résidentiels du R+5 au R+9."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Vue d'un chantier de construction avec d'importants monticules de terre marron au premier plan, deux grues (une à tour, une mobile) en activité, et des bâtiments en cours de construction à l'arrière-plan sous un ciel couvert."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Travaux de terrassement et préparation de l'infrastructure sur l'ensemble de l'emprise du projet."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Vue aérienne d'un chantier de construction montrant une grande excavatrice grise HIDROMEK creusant dans une large fosse d'excavation sablonneuse. Deux camions-bennes orange sont garés à proximité, dont l'un chargé de terre. En arrière-plan, un bâtiment en béton en construction est visible, ainsi que des immeubles résidentiels et des collines au loin. Deux ouvriers du bâtiment sont présents près des camions."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Opérations d'excavation et de nivellement du site pour les fondations des sept blocs."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Une excavatrice dotée d'un grand godet creuse une tranchée profonde dans un sol sablonneux. Deux ouvriers du bâtiment se tiennent près de la tranchée pour observer l'opération. Un autre opérateur est visible dans la cabine de l'engin. Un mur en béton surmonté de fil de fer barbelé figure à l'arrière-plan."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Excavation de tranchées pour la pose des réseaux divers enterrés."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Deux ouvriers près d'un camion pick-up blanc chargé de matériaux de construction sur un terrain en terre, avec une grande grue à tour bleue et des bâtiments de plusieurs étages en construction à l'arrière-plan sous un ciel partiellement nuageux."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Logistique des matériaux sur site et livraison des composants du second œuvre."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Vue de plusieurs bâtiments résidentiels de plusieurs étages en cours de construction, montrant les structures en béton armé et le remplissage en briques rouges, sous un ciel bleu dégagé avec un piéton au premier plan."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Avancement de la maçonnerie extérieure et des structures porteuses des logements."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Une excavatrice et deux camions-bennes sur un chantier de construction sablonneux, avec un bâtiment en béton partiellement construit à l'arrière-plan sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Engins de terrassement préparant la topographie du site pour les voiries et réseaux divers (VRD)."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Une excavatrice et des camions-bennes sur un chantier de construction avec une fosse excavée et un bâtiment en béton partiellement construit, sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Excavation initiale des fondations et travaux d'infrastructure."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Vue de plusieurs bâtiments résidentiels de plusieurs étages en cours de construction, montrant les structures en béton armé et le remplissage en briques rouges, sous un ciel bleu dégagé avec un piéton au premier plan."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Modulation des façades et remplissage en maçonnerie sur les blocs de plusieurs étages."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Vue d'ensemble d'un chantier de construction avec plusieurs structures de logements en béton à différents stades d'avancement, des attentes de ferraillage dépassant des sommets, et une grande grue à tour bleue sur la gauche sous un ciel bleu clair. Des matériaux de construction sont répartis sur le sol en terre."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Érection de la structure des sept blocs durant la phase de coulage du béton."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Une excavatrice avec l'inscription 'HIDROMEK' visible sur son bras creuse une tranchée profonde dans un sol sablonneux. Deux ouvriers se trouvent dans la tranchée, et un autre ouvrier en t-shirt rouge se tient près de l'engin. Un mur en béton avec du fil de fer barbelé est visible à l'arrière-plan."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Travaux de génie civil et ouverture de tranchées pour le raccordement aux réseaux."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Un camion pick-up blanc JMC chargé de sacs de matériaux de construction, avec deux hommes à côté, sur un chantier de construction en terre. À l'arrière-plan, une grande grue à tour bleue et plusieurs bâtiments de plusieurs étages en construction sont visibles sous un ciel partiellement nuageux."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Livraison des matériaux de finition sur les secteurs de construction actifs."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Vue de plusieurs bâtiments résidentiels de plusieurs étages en cours de construction, montrant les structures en béton armé et le remplissage en briques rouges, sous un ciel bleu dégagé avec un piéton au premier plan."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Exécution de la maçonnerie extérieure et réservation des baies."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Vue d'ensemble d'un chantier de construction avec plusieurs structures de logements en béton à différents stades d'avancement, des attentes de ferraillage dépassant des sommets, et une grande grue à tour bleue sur la gauche sous un ciel bleu clair. Des matériaux de construction sont répartis sur le sol en terre."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Vue d'ensemble des sept blocs résidentiels en cours de construction."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Vue de several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Les blocs structurels du projet de Bas Mazagran durant la phase de maçonnerie."
+    }
+  ]
+}

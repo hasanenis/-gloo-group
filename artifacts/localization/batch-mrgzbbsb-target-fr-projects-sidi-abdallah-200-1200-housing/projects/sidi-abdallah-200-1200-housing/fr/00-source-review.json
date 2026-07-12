@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgzbbsb-target-fr-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-11T23:11:47.729Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

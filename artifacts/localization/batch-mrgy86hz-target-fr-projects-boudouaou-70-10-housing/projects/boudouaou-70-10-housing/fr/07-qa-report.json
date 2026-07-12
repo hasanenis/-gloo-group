@@ -1,0 +1,57 @@
+{
+  "jobId": "batch-mrgy86hz-target-fr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T22:41:21.192Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1",
+      "severity": "blocker",
+      "message": "The translation introduces '10 logements de type LPL' which contradicts the authoritative project title and facts stating '10 Free Promotional Housing Units' (logements promotionnels libres). LPL stands for Logement Public Locatif (social housing), which is a completely different program from promotional housing."
+    },
+    {
+      "id": "content.meta.1.value",
+      "severity": "blocker",
+      "message": "Inconsistent and incorrect terminology: translates 'promotional housing' as 'logements promotionnels (LPL)'. LPL is Logement Public Locatif, not promotional housing."
+    },
+    {
+      "id": "content.details.0.value",
+      "severity": "blocker",
+      "message": "Incorrectly associates LPL with promotional housing ('Logements LPA et LPL')."
+    },
+    {
+      "id": "content.details.2.value",
+      "severity": "blocker",
+      "message": "Incorrectly lists '10 LPL' instead of promotional housing units."
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "severity": "blocker",
+      "message": "Incorrectly lists '10 appartements LPL' instead of promotional housing units."
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "blocker",
+      "message": "Incorrectly lists '10 logements promotionnels (LPL)' instead of promotional housing units."
+    },
+    {
+      "id": "content.faq.3.answer",
+      "severity": "blocker",
+      "message": "Incorrectly lists '10 logements LPL' instead of promotional housing units."
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "severity": "warning",
+      "message": "Contains untranslated English: 'several' in 'plusieurs immeubles résidentiels à several étages'."
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "severity": "warning",
+      "message": "Contains untranslated English: 'several' in 'plusieurs immeubles résidentiels à several étages'."
+    }
+  ]
+}

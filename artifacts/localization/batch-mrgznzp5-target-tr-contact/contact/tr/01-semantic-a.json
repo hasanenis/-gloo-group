@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrgznzp5-target-tr-contact",
+  "pageId": "contact",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:21:38.488Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "İletişim | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "Proje değerlendirmesi amacıyla saha konumlarını, program gerekliliklerini ve teknik belgeleri iletmek için Birkhadem'deki merkez ofisimizle iletişime geçin.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "İletişim | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "Proje değerlendirmesi amacıyla saha konumlarını, program gerekliliklerini ve teknik belgeleri iletmek için Birkhadem'deki merkez ofisimizle iletişime geçin.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Contact",
+      "draft": "İletişim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Initiate a project consultation.",
+      "draft": "Bir proje danışmanlığı süreci başlatın.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Connect with our technical team in Birkhadem. Submit your site coordinates, development programme and available design documentation to initiate our internal engineering and estimation review.",
+      "draft": "Birkhadem'deki teknik ekibimizle iletişime geçin. Dahili mühendislik ve maliyet tahmini değerlendirme sürecimizi başlatmak üzere saha koordinatlarınızı, geliştirme programınızı ve mevcut tasarım belgelerinizi iletin.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh0ztmn-target-ar-DZ-projects-index",
+  "pageId": "projects-index",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:58:50.199Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

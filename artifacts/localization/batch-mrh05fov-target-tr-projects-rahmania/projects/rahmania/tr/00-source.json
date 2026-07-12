@@ -1,0 +1,354 @@
+{
+  "jobId": "batch-mrh05fov-target-tr-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-11T23:35:12.411Z",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Rahmania Commercial Centres | Douira, Algiers"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers."
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Rahmania Commercial Centres | Douira, Algiers"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers."
+    },
+    {
+      "path": "content.slug",
+      "source": "rahmania"
+    },
+    {
+      "path": "content.title",
+      "source": "Rahmania Commercial Centres"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE INFRASTRUCTURE"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of the complete secondary works package for two commercial centres, completed in 2025 within the 2,500-home residential development in Douira."
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services."
+    },
+    {
+      "path": "content.description.0",
+      "source": "SARL Igloo Yapi Construction executed the complete secondary works package (corps d'état secondaires - CES) for both commercial structures. The scope of work transformed the raw reinforced concrete frames into fully fitted, functional retail environments designed to accommodate local merchants and public services."
+    },
+    {
+      "path": "content.description.1",
+      "source": "The building envelopes feature extensive glazed curtain walling integrated with decorative architectural screens. Internally, vertical circulation is anchored by a central staircase, while a structural pyramid glass skylight provides natural daylighting across the retail floor plates."
+    },
+    {
+      "path": "content.authority",
+      "source": "Completed in 2025, the project was delivered on schedule, with all secondary trades coordinated to meet modern commercial building standards."
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers."
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Typology"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Commercial Centres"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Typology"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Commercial Centres"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douira, Algiers"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Scope of Works"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "Secondary works package (CES)"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2025"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Context"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2,500-home residential programme"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Type"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Execution"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "Complete secondary works package (CES)"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Glazed facade installation and architectural screens"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Central vertical circulation and structural pyramid skylight"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Delivered in 2025, on schedule and to standard"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the Rahmania Commercial Centres project?"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "Secondary works for two commercial centres, completed in 2025 within Douira's 2,500-home residential programme."
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What technical works were executed by the contractor?"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "SARL Igloo Yapi Construction managed the fit-out of the reinforced concrete structures, including interior partitions, finishes, glazed facades, central staircases, and the installation of a structural pyramid glass skylight."
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "When was the commercial development completed?"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services."
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition."
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes."
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Exterior view of the completed three-storey commercial building with dark grey cladding panels and copper-toned trim, situated adjacent to residential blocks."
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Completed commercial centre facade integrated within the residential development."
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows."
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Central atrium and vertical circulation core."
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building."
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Granite-clad curved staircase detail."
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Two curved concrete staircases with protective wrapping on the metal handrails during the interior finishing phase."
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Staircase installation and interior finishing works."
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre."
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace."
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows."
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Central atrium and vertical circulation core."
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre."
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace."
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A newly installed glass pyramid skylight on a flat roof, with residential buildings visible in the background."
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Skylight installation on the commercial centre roof."
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades."
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out."
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building."
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Granite-clad curved staircase detail."
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Close-up of the glass pyramid skylight structure on the tiled roof terrace, with residential blocks in the background."
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Roof terrace skylight detail."
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "External view of the commercial centre with its glass pyramid roof, positioned between multi-storey residential buildings."
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Commercial centre integrated within the Douira residential development."
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades."
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out."
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows."
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Central atrium and vertical circulation core."
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition."
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes."
+    }
+  ]
+}

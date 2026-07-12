@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh0mawq-target-tr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:48:19.361Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "202 Serbest Promosyonel Konutlu Karma Emlak Kompleksi"
+    },
+    {
+      "id": "seo.description",
+      "text": "Cezayir, Said Hamdine'deki 202 serbest promosyonel konut ünitesini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve saha kısıtlamaları."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "202 Serbest Promosyonel Konutlu Karma Emlak Kompleksi"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Cezayir, Said Hamdine'deki 202 serbest promosyonel konut ünitesini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve saha kısıtlamaları."
+    },
+    {
+      "id": "content.slug",
+      "text": "said-hamdine-mixed-real-estate"
+    },
+    {
+      "id": "content.title",
+      "text": "202 Serbest Promosyonel Konutlu Karma Emlak Kompleksi"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "KARMA KULLANIMLI PROJE"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Said Hamdine'de, dik eğimli arazi üzerinde 1 bodrum otopark katı ve asma katlı 3 ticari ara kat ile entegre edilmiş 202 konut ünitesini barındıran beş bloklu karma kullanımlı proje."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Proje, kütleleri kademelendirerek karmaşık saha topografyasını çözmekte, aktif sokak seviyesindeki ticari cepheyi güvenli yer altı otoparkı ve konut sirkülasyonu ile entegre etmektedir."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Bu kentsel gelişim projesi, asma katlı üç ticari ara kat seviyesi ve tek bir bodrum otopark katı üzerinde inşa edilmiş, 202 serbest promosyonel konut ünitesini içeren beş konut bloğundan oluşmaktadır. Yapısal uygulama, Cezayir'deki dik eğimli arazi koşullarına uyum sağlayacak şekilde tasarlanmış olup özel istinat yapıları ve hassas temel mühendisliği gerektirmiştir."
+    },
+    {
+      "id": "content.description.1",
+      "text": "İşlerin kapsamı, taşıyıcı betonarme yapı, cephe artikülasyonu, cam cephe sistemleri ile saha drenajı ve araç sirkülasyonunu yönetmek için entegre yollar ve altyapı ağları (VRD - Voirie et Réseaux Divers) dahil olmak üzere anahtar teslim tüm işler paketi (TCE - Tout Corps d'État) kapsamında yürütülmüştür."
+    },
+    {
+      "id": "content.authority",
+      "text": "Yapı mühendisliği, entegre sirkülasyon ve karmaşık saha tesviye uygulamaları ile tanımlanan karma kullanımlı bir kentsel gelişim projesi."
+    },
+    {
+      "id": "content.seo",
+      "text": "Cezayir, Said Hamdine'deki 202 serbest promosyonel konut ünitesini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve saha kısıtlamaları."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Proje tipi"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Karma emlak kompleksi"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Proje tipi"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Karma emlak kompleksi"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Konum"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Said Hamdine, Bir Mourad Rais, Cezayir"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Konut üniteleri"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "202 serbest promosyonel konut ünitesi"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Bloklar"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "5 konut bloğu"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Otopark"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "1 bodrum otopark katı"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "Saha zorluğu"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "Dik eğimli arazi; asma katlı 3 ticari ara kat"
+    },
+    {
+      "id": "content.details.6.label",
+      "text": "Tamamlanma"
+    },
+    {
+      "id": "content.details.6.value",
+      "text": "2023"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Proje programı"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "Beş bloklu karma kullanımlı yapısal teslimat"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "202 serbest promosyonel konut ünitesi"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Asma katlı üç ticari ara kat"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "1 bodrum otopark katı"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "Yakın yerler"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "Yerel ticaret bölgesi"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "202 Serbest Promosyonel Konutlu Karma Emlak Kompleksi nedir?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Proje, asma katlı üç ticari ara kat seviyesi ve bir bodrum otopark katı üzerinde yükselen, 202 serbest promosyonel konut ünitesini barındıran beş konut bloğundan oluşmaktadır."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Saha topografyası mühendisliği nasıl etkiledi?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Proje; dik eğimli arazi üzerinde beş konut bloğunu, 202 serbest promosyonel konutu, asma katlı 3 ticari ara katı ve 1 bodrum otopark katını bir araya getirmektedir."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "İnşaat sözleşmesinin kapsamı neydi?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Proje; betonarme taşıyıcı sistem işleri, cephe artikülasyonu, cam işleri ve entegre yollar ile altyapı ağlarını (VRD) kapsayan tüm işler paketi (TCE) kapsamında teslim edilmiştir."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Gün batımında arka planda konut binaları, beton pompası ve inşaat işçilerinin göründüğü, donatı demirleriyle güçlendirilmiş beton döşemenin üstten görünüşü."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Şantiyede döşeme kalıp donatısı ve demir montajı."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Balkonlu, beyaz, bej ve gri cepheli, zemin katı yansıtıcı camlı iki modern yüksek binanın düşük açılı görünümü."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Cephe artikülasyonu ve camlı ticari cephe."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Gün batımında şantiyede, yoğun bir demir donatı ızgarası ile beton döşeme hazırlayan inşaat işçileri ve arka planda beton pompası."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Beton zemin döşemesi için donatı çalışmaları."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Beton döşeme tabanlı büyük bir temel kazı çukurunu gösteren üstten görünüm. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için demir donatı ızgaralarını titizlikle yerleştirip bağlıyor. Arka planda çukurun dik, stabilize edilmiş toprak duvarları görünmektedir."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Temel kazısı ve donatı ızgarası montajı."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Ahşap görünümlü seramik zeminli, cam korkuluklu, küçük yuvarlak masalı ve üç koyu renk sandalyeli temiz, modern bir balkon. Arka planda diğer apartman binaları görünmektedir."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Cam korkuluklu konut balkonu detayları."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Cam korkuluklu balkonlara ve yansıtıcı camlı ticari zemin kata sahip, açık mavi gökyüzü ve hafif bir ay manzarasına karşı yükselen modern bir konut binasının aşağıdan görünümü. Sağ tarafta yeşil bir ağaç kadrajı kısmen sınırlıyor."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Konut balkonlarını ve zemin seviyesindeki cam cepheyi gösteren görünüş."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Gün batımında arka planda konut binaları, beton pompası ve inşaat işçilerinin göründüğü, donatı demirleriyle güçlendirilmiş beton döşemenin üstten görünüşü."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Devam eden döşeme donatısı çalışmaları."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "İstinat duvarlarının göründüğü derin bir kazı çukuru içinde, büyük bir bina temeli için çelik donatı montajı yapan güvenlik yelekli inşaat işçileri."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Kazı alanında temel donatısı çalışması."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Beyaz duvarlı, koyu kahverengi parlak seramik zeminli ve yemek alanı ile yatak odası gibi diğer odalara açılan birkaç kapının bulunduğu temiz, boş bir koridor görünümü."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "İç sirkülasyon ve daire koridoru kaplamaları."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Beton döşeme tabanlı büyük bir temel kazı çukurunu gösteren üstten görünüm. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için demir donatı ızgaralarını titizlikle yerleştirip bağlıyor. Arka planda çukurun dik, stabilize edilmiş toprak duvarları görünmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Alt yapı işleri ve temel donatısı."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Ahşap görünümlü seramik zeminli, cam korkuluklu, küçük yuvarlak masalı ve üç koyu renk sandalyeli temiz, modern bir balkon. Arka planda diğer apartman binaları görünmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Balkon detayları ve dış cephe seramik kaplaması."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Betonarme döşemeleri, kolonları ve kırmızı tuğla duvarları gösteren, inşaat halindeki çok katlı bir bina. Yan taraftan aşağıya doğru inen sarı moloz dökme şutları ve alt katlarda inşaat malzemeleri görünmektedir. Arka planda bir vinç yer alıyor."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Taşıyıcı karkas uygulaması ve tuğla duvar dolgusu."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Bulutlu bir gökyüzüne karşı betonarme karkası, kısmen tamamlanmış kırmızı tuğla duvarları ve sarı moloz dökme şutları olan inşaat halindeki yüksek bir bina."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "İnşaat halindeki betonarme karkas ve kagir zarf yapısı."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Beton döşeme tabanlı büyük bir temel kazı çukurunu gösteren üstten görünüm. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için demir donatı ızgaralarını titizlikle yerleştirip bağlıyor. Arka planda çukurun dik, stabilize edilmiş toprak duvarları görünmektedir."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Kazı ve temel radye döşeme hazırlığı."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "İstinat duvarlarının göründüğü derin bir kazı çukuru içinde, büyük bir bina temeli için çelik donatı montajı yapan güvenlik yelekli inşaat işçileri."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Alt yapı donatı montajı."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Gün batımında arka planda konut binaları, beton pompası ve inşaat işçilerinin göründüğü, donatı demirleriyle güçlendirilmiş beton döşemenin üstten görünüşü."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Döşeme donatısı ve beton döküm hazırlığı."
+    }
+  ]
+}

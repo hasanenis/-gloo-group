@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "pageId": "home",
+  "path": "/",
+  "sourceLocale": "en",
+  "fields": [
+    {
+      "key": "content.hero.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.hero.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.hero.lead",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.primaryCta",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.secondaryCta",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[1].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[1].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[2].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[2].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[3].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[3].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[4].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.hero.trustFacts[4].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.credential",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[0].detail",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[1].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[1].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[1].detail",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[2].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[2].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[2].detail",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[3].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[3].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.manifesto.metrics[3].detail",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.featuredProjects.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.featuredProjects.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.featuredProjects.lead",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.lead",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[0].id",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[0].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[0].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[1].id",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[1].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[1].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[2].id",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[2].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[2].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[3].id",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[3].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[3].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[4].id",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[4].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.process.steps[4].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.about.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.about.credential",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.paragraphs[0]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.paragraphs[1]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[1].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[1].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[2].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.metrics[2].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[0].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[0].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[1].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[1].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[2].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.about.proofs[2].body",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.footprint.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.footprint.lead",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.selectedLabel",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.openProject",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.statusCompleted",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.statusInProgress",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[1].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[1].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[2].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footprint.stats[2].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footer.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.footer.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.footer.lead",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footer.emailLabel",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footer.phoneLabel",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.footer.proofLine",
+      "kind": "body",
+      "required": true
+    }
+  ]
+}

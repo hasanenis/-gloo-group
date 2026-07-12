@@ -1,0 +1,47 @@
+{
+  "jobId": "batch-mrgzoiay-target-tr-not-found",
+  "pageId": "not-found",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:22:02.853Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "Sayfa Bulunamadı | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "İstenen sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi görüntülemek için SARL Igloo Yapi Construction portalına dönün.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "Sayfa Bulunamadı | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "İstenen sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi görüntülemek için SARL Igloo Yapi Construction portalına dönün.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Page Not Found",
+      "draft": "Sayfa Bulunamadı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.cta",
+      "source": "Return to the homepage",
+      "draft": "Ana sayfaya dön",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

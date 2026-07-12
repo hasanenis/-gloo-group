@@ -1,0 +1,563 @@
+{
+  "jobId": "batch-mrh0zb9p-target-ar-DZ-home",
+  "pageId": "home",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T23:58:26.418Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria",
+      "draft": "شركة \"إغلو يابي\" للإنشاءات (SARL Igloo Yapi Construction) — تنفيذ المشاريع الإنشائية والسكنية في الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria.",
+      "draft": "مقاول معتمد من الفئة السادسة ينفذ مشاريع سكنية ومتعددة الاستخدامات، بالإضافة إلى مشاريع الطرق وشبكات المرافق (VRD) في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria",
+      "draft": "شركة \"إغلو يابي\" للإنشاءات (SARL Igloo Yapi Construction) — تنفيذ المشاريع الإنشائية والسكنية في الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria.",
+      "draft": "مقاول معتمد من الفئة السادسة ينفذ مشاريع سكنية ومتعددة الاستخدامات، بالإضافة إلى مشاريع الطرق وشبكات المرافق (VRD) في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.eyebrow",
+      "source": "SARL Igloo Yapi Construction",
+      "draft": "شركة إيغلو يابي للإنشاءات (ذ.م.م)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.title",
+      "source": "Structural Execution and All-Trades Delivery across Algeria",
+      "draft": "تنفيذ الأعمال الإنشائية وتسليم المشاريع بكافة تخصصاتها في جميع أنحاء الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.lead",
+      "source": "Delivering residential and mixed-use programmes with rigorous engineering control, site discipline, and long-term structural execution.",
+      "draft": "تسليم مشاريع سكنية ومتعددة الاستخدامات مع تطبيق رقابة هندسية صارمة، وضمان الانضباط في الموقع، وتنفيذ إنشائي يراعي الاستدامة وطول العمر الافتراضي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.primaryCta",
+      "source": "View portfolio",
+      "draft": "عرض معرض الأعمال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.secondaryCta",
+      "source": "Contact our Algiers office",
+      "draft": "تواصل مع مكتبنا في الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.0.value",
+      "source": "Est. 2018",
+      "draft": "تأسست عام 2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.0.label",
+      "source": "Algiers-based",
+      "draft": "الذي يتخذ من الجزائر العاصمة مقراً له",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.1.label",
+      "source": "programmes",
+      "draft": "برامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.2.value",
+      "source": "2,500+",
+      "draft": "أكثر من 2,500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.2.label",
+      "source": "housing units",
+      "draft": "وحدات سكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.3.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.3.label",
+      "source": "wilayas",
+      "draft": "ولايات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.4.value",
+      "source": "Category 6",
+      "draft": "الفئة 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.4.label",
+      "source": "qualification",
+      "draft": "مؤهل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.eyebrow",
+      "source": "Contractual Rigour",
+      "draft": "الصرامة التعاقدية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.title",
+      "source": "Coordinating complex trades to build durable urban frameworks",
+      "draft": "تنسيق تخصصات مهنية معقدة لبناء هياكل حضرية متينة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.body",
+      "source": "From multi-family housing blocks and villas to active street-level commercial frontage, we manage the complete all-trades delivery (TCE) and roads and utility networks (VRD) to resolve complex site constraints.",
+      "draft": "بدءاً من المجمعات السكنية متعددة الوحدات والفيلات ووصولاً إلى الواجهات التجارية الحيوية المطلة على الشارع، نتولى إدارة تنفيذ كافة الأعمال الإنشائية والتخصصية (TCE)، بالإضافة إلى شبكات الطرق والمرافق (VRD)، وذلك للتغلب على التحديات المعقدة التي يفرضها الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.credential",
+      "source": "Professional Qualification and Classification Certificate, Category 6",
+      "draft": "شهادة التأهيل والتصنيف المهني، الفئة 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.value",
+      "source": "2018",
+      "draft": "2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.label",
+      "source": "established",
+      "draft": "مُؤَسَّس",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.detail",
+      "source": "Operational base in Bir Khadem, Algiers",
+      "draft": "قاعدة عملياتية في بئر خادم، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.label",
+      "source": "contracted works",
+      "draft": "الأعمال المتعاقد عليها",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.detail",
+      "source": "Completed and active site operations",
+      "draft": "عمليات الموقع المنجزة والقائمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.value",
+      "source": "2,500+",
+      "draft": "أكثر من 2,500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.label",
+      "source": "units delivered",
+      "draft": "الوحدات المُسلَّمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.detail",
+      "source": "Residential and mixed-use programme scope",
+      "draft": "نطاق برنامج المشاريع السكنية ومتعددة الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.label",
+      "source": "wilayas active",
+      "draft": "الولايات النشطة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.detail",
+      "source": "Operations in Tipaza, Algiers, Mostaganem, and Boumerdes",
+      "draft": "عمليات في تيبازة والجزائر العاصمة ومستغانم وبومرداس",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.eyebrow",
+      "source": "Project Portfolio",
+      "draft": "محفظة المشاريع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.title",
+      "source": "Verified physical delivery and structural execution",
+      "draft": "التحقق من التسليم الفعلي والتنفيذ الإنشائي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.lead",
+      "source": "A record of multi-family housing, individual villas, commercial spaces, and integrated roads and utility networks (VRD) across our active regions.",
+      "draft": "سجل حافل بمشاريع الإسكان متعدد الأسر، والفيلات المستقلة، والمساحات التجارية، وشبكات الطرق والمرافق المتكاملة (VRD) في المناطق التي نزاول فيها أعمالنا.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.eyebrow",
+      "source": "Project Lifecycle",
+      "draft": "دورة حياة المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.title",
+      "source": "Systematic execution from site constraints to handover",
+      "draft": "تنفيذ منهجي بدءاً من قيود الموقع ووصولاً إلى التسليم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.lead",
+      "source": "Our technical workflow ensures that planning, structural engineering, and secondary trades progress under strict site discipline.",
+      "draft": "يضمن سير العمل الفني لدينا تقدم أعمال التخطيط والهندسة الإنشائية والحرف التخصصية في ظل انضباط صارم في الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.id",
+      "source": "coordination",
+      "draft": "تنسيق",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.title",
+      "source": "Pre-Construction Coordination",
+      "draft": "التنسيق السابق للبناء",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.body",
+      "source": "Aligning project quantities, structural requirements, and site constraints before deploying machinery and personnel to the field.",
+      "draft": "مواءمة كميات المشروع والمتطلبات الإنشائية وقيود الموقع قبل نشر المعدات والكوادر في الميدان.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.id",
+      "source": "engineering",
+      "draft": "هندسة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.title",
+      "source": "Engineering & TCE Control",
+      "draft": "الهندسة وضبط التكلفة والجدول الزمني",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.body",
+      "source": "Coordinating structural calculations, MEP routing, and secondary trades within a unified all-trades delivery (TCE) framework.",
+      "draft": "تنسيق الحسابات الإنشائية، ومسارات الأنظمة الميكانيكية والكهربائية والسباكة (MEP)، والأعمال التخصصية الثانوية ضمن إطار عمل موحد لتنفيذ كافة التخصصات (TCE).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.id",
+      "source": "site",
+      "draft": "موقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.title",
+      "source": "Site Execution & Massing",
+      "draft": "تنفيذ الموقع وتشكيل الكتل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.body",
+      "source": "Managing daily concrete pours, structural framing, masonry, and trade sequencing under the direct supervision of our site managers.",
+      "draft": "إدارة عمليات صب الخرسانة اليومية، والأعمال الهيكلية، وأعمال البناء بالطوب والحجر، وتسلسل تنفيذ الأعمال التخصصية، وذلك تحت الإشراف المباشر لمديري المواقع لدينا.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.id",
+      "source": "monitoring",
+      "draft": "مراقبة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.title",
+      "source": "Quality, Safety & Schedule Monitoring",
+      "draft": "مراقبة الجودة والسلامة والجدول الزمني",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.body",
+      "source": "Verifying material compliance, structural tolerances, and safety protocols against contractual milestones and Algerian building codes.",
+      "draft": "التحقق من مطابقة المواد، وهامش التفاوت الإنشائي، وبروتوكولات السلامة، وذلك بمقارنتها بالمراحل التعاقدية وأكواد البناء الجزائرية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.id",
+      "source": "handover",
+      "draft": "تسليم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.title",
+      "source": "Handover & Technical Closeout",
+      "draft": "التسليم والإغلاق الفني",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.body",
+      "source": "Finalising as-built documentation, commissioning building systems, and executing formal handover to the client.",
+      "draft": "إنجاز وثائق \"كما نُفِّذت\" (As-built)، وتشغيل واختبار أنظمة المبنى، وإتمام التسليم الرسمي للعميل.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.eyebrow",
+      "source": "Corporate Profile",
+      "draft": "الملف التعريفي للشركة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.title",
+      "source": "Technical capability and structured site management",
+      "draft": "القدرة الفنية والإدارة المنظمة للموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.credential",
+      "source": "Professional Qualification & Classification Certificate - Category 6",
+      "draft": "شهادة التأهيل والتصنيف المهني - الفئة 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.paragraphs.0",
+      "source": "Founded in 2018 and led by civil engineer Adem Talay, SARL Igloo Yapi Construction operates from Bir Khadem, Algiers, specialising in residential and mixed-use developments across Algeria.",
+      "draft": "تأسست شركة \"إغلو يابي للإنشاءات\" (Igloo Yapi Construction) عام 2018 تحت قيادة المهندس المدني \"آدم تالاي\"، وتتخذ من منطقة \"بئر خادم\" في الجزائر العاصمة مقراً لها، حيث تتخصص في تنفيذ المشاريع السكنية ومتعددة الاستخدامات في جميع أنحاء الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.paragraphs.1",
+      "source": "Holding a Category 6 Professional Qualification and Classification Certificate, the firm maintains an in-house technical office comprising civil engineers, architects, and site managers.",
+      "draft": "تمتلك الشركة شهادة تأهيل وتصنيف مهني من الفئة السادسة، وتدير مكتباً فنياً داخلياً يضم مهندسين مدنيين ومعماريين ومديري مواقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.0.value",
+      "source": "2018",
+      "draft": "2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.0.label",
+      "source": "Year of establishment",
+      "draft": "سنة التأسيس",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.1.label",
+      "source": "Active and completed programmes",
+      "draft": "البرامج القائمة والمكتملة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.2.value",
+      "source": "2,500+",
+      "draft": "أكثر من 2,500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.2.label",
+      "source": "Housing units under contract",
+      "draft": "وحدات سكنية متعاقد عليها",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.0.title",
+      "source": "Category 6 Contractor",
+      "draft": "مقاول من الفئة السادسة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.0.body",
+      "source": "Professional Qualification and Classification Certificate, Category 6.",
+      "draft": "شهادة التأهيل والتصنيف المهني، الفئة 6.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.1.title",
+      "source": "Multidisciplinary Team",
+      "draft": "فريق متعدد التخصصات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.1.body",
+      "source": "Building manager, three engineers, two architects, construction managers, HR, accountant, buyer and site teams.",
+      "draft": "مدير المبنى، وثلاثة مهندسين، ومهندسان معماريان، ومديرو إنشاءات، ومسؤول موارد بشرية، ومحاسب، ومسؤول مشتريات، وفرق الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.2.title",
+      "source": "Residential & Mixed-use Expertise",
+      "draft": "خبرة في المشاريع السكنية ومتعددة الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.2.body",
+      "source": "Housing, villas, commercial premises, roads, networks, services and exterior works.",
+      "draft": "المساكن، والفيلات، والمنشآت التجارية، والطرق، والشبكات، والخدمات، والأعمال الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.eyebrow",
+      "source": "Geographical Footprint",
+      "draft": "النطاق الجغرافي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.title",
+      "source": "Regional operations across northern Algeria",
+      "draft": "عمليات إقليمية في أنحاء شمال الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.lead",
+      "source": "Eleven projects distributed across four key wilayas, establishing a strong operational presence in Algiers, Tipaza, Boumerdes, and Mostaganem.",
+      "draft": "أحد عشر مشروعاً موزعة على أربع ولايات رئيسية، مما يرسخ حضوراً تشغيلياً قوياً في كل من الجزائر العاصمة وتيبازة وبومرداس ومستغانم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.selectedLabel",
+      "source": "Selected programme",
+      "draft": "البرنامج المختار",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.openProject",
+      "source": "View technical details",
+      "draft": "عرض التفاصيل الفنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.statusCompleted",
+      "source": "Completed",
+      "draft": "تم الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.statusInProgress",
+      "source": "In progress",
+      "draft": "قيد التنفيذ",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.0.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.0.label",
+      "source": "documented sites",
+      "draft": "مواقع موثقة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.1.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.1.label",
+      "source": "active wilayas",
+      "draft": "الولايات النشطة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.2.value",
+      "source": "1",
+      "draft": "1",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.2.label",
+      "source": "coastal delivery corridor",
+      "draft": "ممر ساحلي للتسليم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.eyebrow",
+      "source": "Project Inquiries",
+      "draft": "استفسارات حول المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.title",
+      "source": "Discuss your next construction programme",
+      "draft": "ناقش برنامجك الإنشائي القادم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.lead",
+      "source": "Consult our Algiers-based engineering and site management teams for residential, commercial, and infrastructure works.",
+      "draft": "تواصل مع فرقنا الهندسية وفرق إدارة المواقع -التي تتخذ من الجزائر العاصمة مقراً لها- بشأن مشاريع الإنشاءات السكنية والتجارية ومشاريع البنية التحتية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.emailLabel",
+      "source": "Email technical office",
+      "draft": "البريد الإلكتروني للمكتب الفني",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.phoneLabel",
+      "source": "Call Algiers headquarters",
+      "draft": "اتصل بالمقر الرئيسي في الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.proofLine",
+      "source": "Bir Khadem, Algiers · Category 6 Certified Contractor · All-Trades Delivery (TCE) & VRD",
+      "draft": "بئر خادم، الجزائر · مقاول معتمد (الفئة 6) · تنفيذ كافة أعمال البناء (TCE) وأعمال الطرق والشبكات المختلفة (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgy2z8s-target-fr-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-11T22:37:18.571Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

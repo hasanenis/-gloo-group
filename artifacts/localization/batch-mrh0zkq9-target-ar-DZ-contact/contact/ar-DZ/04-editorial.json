@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrh0zkq9-target-ar-DZ-contact",
+  "pageId": "contact",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:58:38.725Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "الاتصال | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "اتصلوا بمقرنا الرئيسي في بئر خادم لتقديم مخططات المواقع، دفاتر الشروط والملفات التقنية لدراسة مشاريعكم."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "الاتصال | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "اتصلوا بمقرنا الرئيسي في بئر خادم لتقديم مخططات المواقع، دفاتر الشروط والملفات التقنية لدراسة مشاريعكم."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "الاتصال"
+    },
+    {
+      "id": "content.heading",
+      "text": "طلب دراسة مشروع"
+    },
+    {
+      "id": "content.lead",
+      "text": "تواصلوا مع مديريتنا التقنية في بئر خادم. يرجى تزويدنا بإحداثيات الوعاء العقاري، البرنامج السكني أو الخدماتي، والملف التقني المتوفر لإطلاق مرحلة الدراسة الهندسية وتقدير التكلفة."
+    }
+  ]
+}

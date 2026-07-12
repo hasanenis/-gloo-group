@@ -1,0 +1,24 @@
+{
+  "jobId": "20260711235104-about-source",
+  "pageId": "about",
+  "locale": "en",
+  "sourceRevision": "v1-bdd104f2",
+  "generatedAt": "2026-07-11T20:51:06.691Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "bf3476ab365a42ab",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Company | Igloo Construction",
+    "description": "A technical team focused on site execution.",
+    "socialTitle": "Company | Igloo Construction",
+    "socialDescription": "A technical team focused on site execution."
+  },
+  "content": {
+    "eyebrow": "Company",
+    "heading": "A technical team focused on site execution.",
+    "body": "Founded in 2018 in Algiers, SARL Igloo Yapi Construction delivers residential and mixed-use projects through its coordinated engineering, procurement and site teams."
+  },
+  "model": "gemini-2.5-pro"
+}

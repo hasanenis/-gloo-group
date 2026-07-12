@@ -1,0 +1,181 @@
+{
+  "pageId": "projects/rahmania",
+  "locale": "fr",
+  "sourceRevision": "v1-3139e298",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-7779737001115da2",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:26.659Z",
+  "seo": {
+    "title": "Centres commerciaux de Rahmania | Douira, Alger",
+    "description": "Réalisation technique et corps d’état secondaires (CES) pour deux centres commerciaux au sein du programme résidentiel de 2 500 logements à Douira, Alger.",
+    "socialTitle": "Centres commerciaux de Rahmania | Douira, Alger",
+    "socialDescription": "Réalisation technique et corps d’état secondaires (CES) pour deux centres commerciaux au sein du programme résidentiel de 2 500 logements à Douira, Alger."
+  },
+  "content": {
+    "slug": "rahmania",
+    "title": "Centres commerciaux de Rahmania",
+    "eyebrow": "INFRASTRUCTURE MIXTE",
+    "summary": [
+      "Livraison du lot complet des corps d’état secondaires (CES) pour deux centres commerciaux, achevés en 2025 au sein du programme résidentiel de 2 500 logements à Douira.",
+      "Deux centres commerciaux dans le programme des 2 500 logements de Douira, aménagés pour accueillir les commerces et services de proximité du quartier."
+    ],
+    "description": [
+      "La SARL Igloo Yapi Construction a exécuté la totalité du lot corps d’état secondaires (CES) pour les deux structures commerciales. Les travaux ont permis de transformer les structures brutes en béton armé en espaces commerciaux entièrement aménagés et fonctionnels, conçus pour accueillir les commerçants locaux et les services publics.",
+      "Les enveloppes des bâtiments se caractérisent par d’importantes façades rideaux vitrées intégrées à des brise-soleil architecturaux décoratifs. À l’intérieur, la circulation verticale est structurée autour d’un escalier central, tandis qu’un lanterneau vitré pyramidal apporte un éclairage zénithal naturel sur les plateaux commerciaux."
+    ],
+    "authority": "Achevé en 2025, le projet a été livré dans les délais impartis, avec une coordination rigoureuse de tous les corps d’état secondaires conformément aux normes des bâtiments commerciaux modernes.",
+    "seo": "Réalisation technique et corps d’état secondaires (CES) pour deux centres commerciaux au sein du programme résidentiel de 2 500 logements à Douira, Alger.",
+    "meta": [
+      {
+        "label": "Typologie du projet",
+        "value": "Centres commerciaux"
+      }
+    ],
+    "details": [
+      {
+        "label": "Typologie du projet",
+        "value": "Centres commerciaux"
+      },
+      {
+        "label": "Localisation",
+        "value": "Douira, Alger"
+      },
+      {
+        "label": "Consistance des travaux",
+        "value": "Corps d’état secondaires (CES)"
+      },
+      {
+        "label": "Année de livraison",
+        "value": "2025"
+      },
+      {
+        "label": "Contexte",
+        "value": "Programme résidentiel de 2 500 logements"
+      },
+      {
+        "label": "Type de contrat",
+        "value": "Travaux d’exécution"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Programme du projet",
+        "items": [
+          "Lot complet des corps d’état secondaires (CES)",
+          "Pose de façades vitrées et de brise-soleil architecturaux",
+          "Circulation verticale centrale et lanterneau pyramidal structurel",
+          "Livré en 2025, dans le respect des délais et des normes"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "Quelle est la consistance des travaux du projet des centres commerciaux de Rahmania ?",
+        "answer": "Il s’agit de la réalisation des corps d’état secondaires (CES) pour deux centres commerciaux, achevés en 2025 dans le cadre du programme de 2 500 logements à Douira."
+      },
+      {
+        "question": "Quels travaux techniques ont été exécutés par l’entreprise ?",
+        "answer": "La SARL Igloo Yapi Construction a pris en charge l’aménagement des structures en béton armé, comprenant les cloisons intérieures, les revêtements, les façades vitrées, les escaliers centraux ainsi que la pose d’un lanterneau vitré pyramidal."
+      },
+      {
+        "question": "Quand ces infrastructures commerciales ont-elles été finalisées ?",
+        "answer": "Les deux centres commerciaux intégrés au programme des 2 500 logements de Douira ont été entièrement équipés et finalisés en 2025."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Intérieur d’un local commercial achevé avec revêtement de sol en carrelage, murs blancs et spots encastrés au plafond, vu à travers une cloison vitrée à profilés noirs.",
+          "caption": "Aménagement intérieur achevé d’un local commercial montrant les vitrages et les finitions."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+          "alt": "Vue extérieure du bâtiment commercial achevé de trois étages avec panneaux de bardage gris foncé et finitions cuivrées, situé à côté des blocs résidentiels.",
+          "caption": "Façade finalisée du centre commercial intégrée au sein de la cité résidentielle."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+        "alt": "Atrium intérieur du centre commercial montrant un escalier en béton sur plusieurs niveaux avec garde-corps en acier inoxydable et grandes baies vitrées périphériques.",
+        "caption": "Atrium central et noyau de circulation verticale."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "Escalier courbe avec marches en granit gris et garde-corps en acier inoxydable dans le hall principal du bâtiment commercial.",
+          "caption": "Détail de l’escalier courbe revêtu de granit."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+          "alt": "Deux escaliers courbes en béton avec film de protection sur les mains courantes métalliques durant la phase des finitions intérieures.",
+          "caption": "Pose des escaliers et travaux de second œuvre intérieur."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "Un lanterneau vitré en forme de pyramide avec structure métallique sombre installé sur la toiture-terrasse carrelée du centre commercial.",
+          "caption": "Lanterneau vitré pyramidal sur la toiture-terrasse."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Atrium intérieur du centre commercial montrant un escalier en béton sur plusieurs niveaux avec garde-corps en acier inoxydable et grandes baies vitrées périphériques.",
+          "caption": "Atrium central et noyau de circulation verticale."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "Un lanterneau vitré en forme de pyramide avec structure métallique sombre installé sur la toiture-terrasse carrelée du centre commercial.",
+          "caption": "Lanterneau vitré pyramidal sur la toiture-terrasse."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+          "alt": "Un lanterneau pyramidal vitré nouvellement installé sur une toiture-terrasse, avec des bâtiments résidentiels visibles à l’arrière-plan.",
+          "caption": "Pose du lanterneau sur la toiture-terrasse du centre commercial."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "Hall commercial spacieux abritant deux escaliers courbes symétriques avec marches en granit foncé et film plastique de protection sur les garde-corps métalliques.",
+          "caption": "Escaliers courbes symétriques dans le hall principal durant la phase finale d’aménagement."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "Escalier courbe avec marches en granit gris et garde-corps en acier inoxydable dans le hall principal du bâtiment commercial.",
+          "caption": "Détail de l’escalier courbe revêtu de granit."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+          "alt": "Gros plan sur la structure du lanterneau pyramidal vitré sur la toiture-terrasse carrelée, avec des blocs résidentiels à l’arrière-plan.",
+          "caption": "Détail du lanterneau de la toiture-terrasse."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+          "alt": "Vue extérieure du centre commercial avec sa toiture à lanterneau pyramidal vitré, implanté entre des bâtiments résidentiels collectifs.",
+          "caption": "Centre commercial intégré au sein du programme résidentiel de Douira."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "Hall commercial spacieux abritant deux escaliers courbes symétriques avec marches en granit foncé et film plastique de protection sur les garde-corps métalliques.",
+          "caption": "Escaliers courbes symétriques dans le hall principal durant la phase finale d’aménagement."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Atrium intérieur du centre commercial montrant un escalier en béton sur several niveaux avec garde-corps en acier inoxydable et grandes baies vitrées périphériques.",
+          "caption": "Atrium central et noyau de circulation verticale."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Intérieur d’un local commercial achevé avec revêtement de sol en carrelage, murs blancs et spots encastrés au plafond, vu à travers une cloison vitrée à profilés noirs.",
+          "caption": "Aménagement intérieur achevé d’un local commercial montrant les vitrages et les finitions."
+        }
+      ]
+    }
+  }
+}

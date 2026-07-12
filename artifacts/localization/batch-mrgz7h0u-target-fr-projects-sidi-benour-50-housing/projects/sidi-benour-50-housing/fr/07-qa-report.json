@@ -1,0 +1,22 @@
+{
+  "jobId": "batch-mrgz7h0u-target-fr-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-11T23:08:47.924Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.meta.0.value",
+      "severity": "warning",
+      "message": "The acronym LPL is used to translate 'Free Promotional Housing' (Logement promotionnel libre). However, in Algeria, LPL stands for 'Logement public locatif' (social housing). The correct acronym for Logement promotionnel libre is LPL, but to avoid confusion with Logement public locatif, it is safer to write out 'Logement promotionnel libre' or use 'LPL' only if explicitly defined, or keep the protected terms as specified. Since LPL is protected as LPL in the rules, but its definition here conflicts with 'promotional libre' (which is LPL in some contexts but usually LPL means public locatif), this is a terminology risk."
+    },
+    {
+      "id": "content.summary.0",
+      "severity": "warning",
+      "message": "The source facts state '50 Free Promotional Housing Units' and the translation introduces 'R+13' which is not in the source facts or metadata for this field, although it appears in details. However, the main issue is that R+13 is used here while the protected terms list R+8 and R+9. Please verify if R+13 is correct or if it alters the project facts."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "jobId": "mrgttjhh-ehqbgg",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-888651e9",
+  "generatedAt": "2026-07-11T20:37:59.169Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.meta.1.value",
+      "severity": "warning",
+      "type": "source-rectification",
+      "message": "English source contains French construction syntax or unaccented French terminology."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrgx96nf-target-fr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T22:14:08.429Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "250 logements avec locaux commerciaux en location et services de conciergerie"
+    },
+    {
+      "id": "seo.description",
+      "text": "Détails techniques, avancement des travaux et spécifications architecturales du projet de 250 logements à Bouraada, Reghaia, wilaya d’Alger."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "250 logements avec locaux commerciaux en location et services de conciergerie"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Détails techniques, avancement des travaux et spécifications architecturales du projet de 250 logements à Bouraada, Reghaia, wilaya d’Alger."
+    },
+    {
+      "id": "content.slug",
+      "text": "reghaia-bouraada-250-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "250 logements avec locaux commerciaux en location et services de conciergerie"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "LOGEMENT COLLECTIF MIXTE"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Un projet immobilier comprenant 250 logements de type location-vente sur le site de Bouraada à Reghaia, livrés avec des locaux commerciaux intégrés au rez-de-chaussée et des espaces dédiés à la conciergerie."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Le plan de masse organise sept blocs en R+9 — composés d’un rez-de-chaussée et de 9 étages — afin de concilier une forte densité résidentielle avec un front commercial actif au niveau de la rue."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Le programme résidentiel propose 250 appartements en location-vente répartis sur sept blocs, caractérisés par un plan d’étage type de quatre logements par niveau selon une configuration équilibrée en F3 et F4. Les niveaux de rez-de-chaussée sont structurellement configurés pour accueillir des locaux commerciaux en location et des bureaux de conciergerie dédiés, renforçant ainsi l’animation de la rue."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Le cahier des charges comprend une livraison en tout corps d’état (TCE), incluant le gros œuvre, le traitement des façades, le second œuvre intérieur, les corps d’état techniques, ainsi que la réalisation des travaux de voirie et réseaux divers (VRD) pour raccorder le site aux infrastructures municipales environnantes."
+    },
+    {
+      "id": "content.authority",
+      "text": "Ce projet résidentiel de sept blocs a été réalisé dans le cadre d’un contrat global en tout corps d’état (TCE), englobant le gros œuvre, les finitions de façade, les aménagements intérieurs et les raccordements VRD à l’échelle du site."
+    },
+    {
+      "id": "content.seo",
+      "text": "Détails techniques, avancement des travaux et spécifications architecturales du projet de 250 logements à Bouraada, Reghaia, wilaya d’Alger."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Maître d’ouvrage"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "Logements en location-vente avec locaux commerciaux et services de conciergerie"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Logements en location-vente avec locaux commerciaux"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Localisation"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Bouraada, Reghaia, wilaya d’Alger"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Nombre de logements"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "250 unités"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Blocs"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "7 blocs en R+9"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Livraison"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "Maître d’ouvrage"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Programme du projet"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "250 logements en location-vente"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Sept blocs résidentiels en R+9 (rez-de-chaussée plus 9 étages)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Locaux commerciaux au rez-de-chaussée et espaces de conciergerie"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "Livré en 2025 avec second œuvre et façades finalisés"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "Quel est le programme du projet des 250 logements à Reghaia ?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Le projet consiste en la construction de 250 appartements résidentiels en location-vente répartis sur sept blocs en R+9, complétés par des locaux commerciaux au rez-de-chaussée et des espaces de conciergerie dédiés."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Quelles sont les spécifications architecturales et structurelles des blocs ?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Le programme propose 250 logements en location-vente, à raison de quatre appartements par étage selon une typologie mixte F3/F4, complétés par des locaux commerciaux et des espaces de conciergerie."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Quels types de travaux ont été exécutés sur ce chantier ?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Le marché a été exécuté en tout corps d’état (TCE), englobant le gros œuvre, le traitement des façades, le second œuvre intérieur, les corps d’état techniques, ainsi que les travaux de voirie et réseaux divers (VRD) à l’échelle du site."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "Comment est exploité le rez-de-chaussée de cet ensemble immobilier ?"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "Le site de Reghaia organise sept blocs en R+9 autour de logements familiaux fonctionnels, de commerces de proximité et de locaux de conciergerie facilitant la gestion quotidienne de la résidence."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Rendu 3D montrant l’extérieur d’un bâtiment résidentiel et commercial de plusieurs étages au design moderne, avec des panneaux jaunes, blancs et gris foncé, des balcons et des espaces commerciaux au rez-de-chaussée, sous un ciel sombre et nuageux."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Rendu architectural montrant le traitement de la façade et le front commercial au rez-de-chaussée des blocs en R+9."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Rendu architectural 3D montrant la façade complète d’un bâtiment résidentiel moderne de plusieurs étages avec des panneaux blancs, jaunes et gris foncé, des espaces commerciaux au rez-de-chaussée, ainsi qu’une zone pavée avec parking et aménagements paysagers au premier plan sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Rendu architectural du bloc résidentiel complet montrant l’intégration des espaces commerciaux et des voies de circulation environnantes."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Un grand bâtiment résidentiel moderne avec une façade contrastée jaune, noire et blanche, doté de plusieurs balcons, sous un ciel bleu clair. Le premier plan montre un chantier de construction actif avec de la terre et des bordures de trottoir récemment posées."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Façade finalisée sur l’un des blocs résidentiels en R+9, montrant le schéma de couleurs extérieures et les détails des balcons."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Vue en plongée d’un bâtiment de plusieurs étages en cours de construction avec maçonnerie de briques apparente et structures en béton, une grande grue à tour bleue, des engins de chantier et des bureaux de chantier temporaires sur un sol en terre."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Phase de réalisation de la structure, montrant les portiques en béton armé et le remplissage en maçonnerie de briques."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, montrant des murs de couleur claire, des balcons avec garde-corps noirs et des fenêtres, avec des matériaux de construction et de l’activité à la base."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Travaux d’enduit de façade et de finitions extérieures en cours sur les blocs résidentiels."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Grand bâtiment résidentiel à l’extérieur jaune, noir et blanc, avec balcons et fenêtres, avec des matériaux de construction et de la terre visibles au premier plan sous un ciel bleu clair."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Enveloppe extérieure achevée d’un bloc en R+9 lors de la phase finale de nettoyage du site."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Rendu architectural 3D montrant la façade complète d’un bâtiment résidentiel moderne de plusieurs étages avec des panneaux blancs, jaunes et gris foncé, des espaces commerciaux au rez-de-chaussée, ainsi qu’une zone pavée avec parking et aménagements paysagers au premier plan sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Visualisation architecturale des blocs résidentiels et des aménagements extérieurs au niveau du sol."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Un immeuble d’appartements de plusieurs étages nouvellement construit avec une façade remarquable présentant des bandes horizontales jaunes, noires et blanches. Le bâtiment comporte de nombreux balcons et fenêtres. Le premier plan montre un chantier de construction en terre avec quelques bordures de trottoir et une palette de blocs de béton."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Détail du traitement de la façade finalisée et des garde-corps des balcons."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Un grand bâtiment résidentiel moderne avec des sections jaunes, noires et blanches sur sa façade, vu d’un angle bas sous un ciel bleu clair, avec des travaux de construction visibles à la base."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Vue en contre-plongée du bloc en R+9 achevé, montrant la volumétrie verticale et les finitions extérieures."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Un grand bâtiment résidentiel moderne avec une façade contrastée jaune, noire et blanche, doté de plusieurs balcons, sous un ciel bleu clair. Le premier plan montre un chantier de construction actif avec de la terre et des bordures de trottoir récemment posées."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Travaux extérieurs achevés sur le bloc résidentiel avant l’aménagement paysager final."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Rendu architectural 3D montrant la façade complète d’un bâtiment résidentiel moderne de several étages avec des panneaux blancs, jaunes et gris foncé, des espaces commerciaux au rez-de-chaussée, ainsi qu’une zone pavée avec parking et aménagements paysagers au premier plan sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Architectural illustrant l’intégration prévue des blocs résidentiels dans le tissu urbain local."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Vue en plongée d’un chantier de construction multi-bâtiments avec une grue à tour bleue, des structures en béton apparentes, du remplissage en briques, des véhicules de chantier et des bureaux temporaires sous un ciel dégagé."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Vue d’ensemble des travaux de structure, montrant les ossatures en béton armé en cours de réalisation."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Un grand bâtiment résidentiel moderne présentant une façade remarquable noire, jaune et blanche, vu d’un angle bas sous un ciel bleu clair. Le premier plan montre un chantier de construction non pavé avec de la terre et quelques matériaux de construction, indiquant des travaux de terrassement en cours."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Photo de chantier montrant l’enveloppe extérieure achevée et les travaux de VRD en cours au niveau du sol."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Un grand bâtiment résidentiel moderne avec une façade contrastée jaune, noire et blanche, doté de plusieurs balcons, sous un ciel bleu clair. Le premier plan montre un chantier de construction actif avec de la terre et des bordures de trottoir récemment posées."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Vue du bloc en R+9 durant les phases finales des travaux extérieurs et d’intégration au site."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Rendu architectural 3D montrant la façade complète d’un bâtiment résidentiel moderne de plusieurs étages avec des panneaux blancs, jaunes et gris foncé, des espaces commerciaux au rez-de-chaussée, ainsi qu’une zone pavée avec parking et aménagements paysagers au premier plan sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Rendu architectural montrant l’intention de conception pour la façade finalisée et les espaces publics environnants."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Rendu 3D montrant l’extérieur d’un bâtiment résidentiel et commercial de plusieurs étages au design moderne, avec des panneaux jaunes, blancs et gris foncé, des balcons et des espaces commerciaux au rez-de-chaussée, sous un ciel sombre et nuageux."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Rendu architectural du projet mixte résidentiel et commercial de 250 logements à Reghaia."
+    }
+  ]
+}

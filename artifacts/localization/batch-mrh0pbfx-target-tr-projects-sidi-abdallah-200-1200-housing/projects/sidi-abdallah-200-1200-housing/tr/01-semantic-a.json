@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh0pbfx-target-tr-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-11T23:50:40.112Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 Kamu Tanıtım Konutları (LPP) | Sidi Abdallah",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "200/1200 Tanıtım Amaçlı Sosyal Konut projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım sunum modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 Kamu Tanıtım Konutları (LPP) | Sidi Abdallah",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "200/1200 Tanıtım Amaçlı Sosyal Konut projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım sunum modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "sidi-abdallah-200-1200-housing",
+      "draft": "Sidi Abdallah 200-1200 Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "200/1200 Public Promotional Housing (LPP)",
+      "draft": "200/1200 Kamu Teşvikli Konut (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "Karma Kullanımlı Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of 200 residential units within the wider 1,200-home Sidi Abdallah master programme, integrating public promotional housing (LPP) with ground-floor commercial and professional premises.",
+      "draft": "Zemin katlarında ticari ve mesleki alanların yer aldığı, kamu destekli konut (LPP) modelini bünyesinde barındıran ve toplam 1.200 konutluk daha geniş kapsamlı Sidi Abdallah ana projesi dahilinde 200 konut biriminin teslimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The development introduces high-density residential blocks configured as ground floor plus 9 upper floors (R+9), accommodating F3 and F4 apartment layouts alongside active street-level commercial frontage.",
+      "draft": "Proje; zemin artı 9 kat (Z+9) şeklinde yapılandırılmış, F3 ve F4 tipi daire planlarını ve sokak seviyesinde hareketli ticari cepheleri bünyesinde barındıran yüksek yoğunluklu konut blokları sunmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The construction scope focused on the execution of secondary trades and interior fit-out works for the dense residential blocks. Facade articulation, internal circulation cores, and technical services were coordinated to align with the master plan's structural and spatial constraints.",
+      "draft": "İnşaat kapsamı, yoğun konut bloklarına yönelik ikincil imalatların ve iç mekan düzenleme işlerinin gerçekleştirilmesine odaklandı. Cephe kurgusu, iç sirkülasyon çekirdekleri ve teknik tesisat sistemleri, master planın yapısal ve mekansal kısıtlarıyla uyumlu olacak şekilde koordine edildi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "By integrating ground-floor retail and professional spaces directly beneath the R+9 residential massing, the architectural layout establishes a functional mixed-use profile that supports local economic activity within the urban pole.",
+      "draft": "Mimari düzen, zemin kattaki perakende ve profesyonel kullanım alanlarını R+9 konut kütlesinin hemen altına entegre ederek, kentsel odak noktası içindeki yerel ekonomik faaliyetleri destekleyen işlevsel ve karma kullanımlı bir yapı oluşturmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A public housing delivery where secondary trades, service premises, and R+9 density work together to support a new urban district.",
+      "draft": "İkincil ticari birimlerin, hizmet alanlarının ve R+9 yoğunluklu yapılaşmanın, yeni bir kentsel bölgeyi desteklemek üzere bir arada işlediği bir sosyal konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "200/1200 Tanıtım Amaçlı Sosyal Konut projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım sunum modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Programme Type",
+      "draft": "Program Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "Kamu Destekli Konut (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Programme Type",
+      "draft": "Program Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "Kamu Destekli Konut (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Sidi Abdallah, Mahelma, Algiers",
+      "draft": "Sidi Abdallah, Mahelma, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme Scope",
+      "draft": "Program Kapsamı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "200 homes within a 1,200-home master plan",
+      "draft": "1.200 konutluk bir master plan kapsamındaki 200 konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion Year",
+      "draft": "Tamamlanma Yılı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2022",
+      "draft": "2022",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Building Configuration",
+      "draft": "Bina Yapılandırması",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 9 upper floors (R+9)",
+      "draft": "Zemin kat ve üzeri 9 kat (Z+9)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Scope",
+      "draft": "Sözleşme Kapsamı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Secondary trades (excluding roads and utility networks / VRD)",
+      "draft": "İkincil imalatlar (yollar ve altyapı şebekeleri / VRD hariç)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Proje Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "200 LPP residential units delivered within a 1,200-home master plan",
+      "draft": "1.200 konutluk bir master plan kapsamında teslim edilen 200 adet LPP konut birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "R+9 residential blocks containing F3 and F4 apartment layouts",
+      "draft": "F3 ve F4 daire planlarını içeren Z+9 katlı konut blokları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial and professional premises",
+      "draft": "Zemin kat ticari ve mesleki kullanım alanları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2022 in compliance with national technical standards",
+      "draft": "Ulusal teknik standartlara uygun olarak 2022 yılında tamamlandı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 200/1200 LPP housing project?",
+      "draft": "200/1200 LPP konut projesinin kapsamı nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It comprises the delivery of 200 public promotional housing (LPP) units, configured with ground-floor commercial spaces, within a larger 1,200-unit urban development in Sidi Abdallah.",
+      "draft": "Bu proje, Sidi Abdallah'taki 1.200 konutluk daha geniş bir kentsel gelişim projesi kapsamında, zemin katlarında ticari alanlar bulunan 200 adet kamu destekli konutun (LPP) teslimini içermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on this site?",
+      "draft": "Bu sahada hangi inşaat çalışmaları gerçekleştirildi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The contract encompassed secondary trades and interior fit-out works for the R+9 residential blocks, excluding the primary roads and utility networks (VRD) package.",
+      "draft": "Sözleşme; ana yollar ve altyapı şebekeleri (VRD) paketi hariç olmak üzere, R+9 konut bloklarına yönelik ikincil imalatları ve iç mekan donatım işlerini kapsıyordu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How are the residential buildings configured?",
+      "draft": "Konut binaları nasıl yapılandırılmış?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The buildings are structured as ground floor plus 9 upper floors (R+9), containing F3 and F4 apartment layouts designed to integrate with the surrounding urban pole.",
+      "draft": "Binalar, çevredeki kentsel odak noktasıyla bütünleşecek şekilde tasarlanmış F3 ve F4 daire planlarını içeren, zemin kat ve üzerinde 9 kat (R+9) olacak biçimde yapılandırılmıştır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Sidi Abdallah'ta; bej ve şeftali tonlarında sıvası, koyu renkli metal korkuluklara sahip girintili balkonları ve dış aydınlatmasıyla R+9 bir konut bloğunun cephesini gösteren, aşağıdan yukarıya doğru çekilmiş bir görünüm.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Zemin+9 katlı kamusal teşvikli konut bloklarının cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projeler/sidi-abdallah-200-1200-konut/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Kapalı bir gökyüzü fonunda dış cephe görselleştirmesini, balkon düzenlemelerini ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının düşük açılı perspektifi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Düşey kütlelenmeyi ve balkon hizalanmasını gösteren dış cephe görünüşü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Taş duvar kaplaması, dikey ahşap detaylar, yerleşik bir bitki ünitesi ve dekoratif metal güvenlik kapısına uzanan desenli mermer zemine sahip bir LPP konut bloğunun iç lobisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Common circulation area inside the residential building, showing the elevator shaft, integrated timber mailboxes, stone wall finishes, and decorative metal balustrades.",
+      "draft": "Konut binası içindeki; asansör boşluğu, entegre ahşap posta kutuları, taş duvar kaplamaları ve dekoratif metal korkulukları gösteren ortak dolaşım alanı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Internal circulation core and integrated mailboxes.",
+      "draft": "İç sirkülasyon çekirdeği ve entegre posta kutuları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Wide shot of multiple R+9 apartment blocks during the final stages of construction, with earthworks, utility piping, and construction machinery visible in the foreground.",
+      "draft": "Ön planda hafriyat çalışmaları, altyapı boru hatları ve iş makinelerinin görüldüğü; inşaatın son aşamalarındaki çok sayıda Z+9 katlı apartman bloğunun geniş açılı görüntüsü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Residential blocks during final site coordination and external works.",
+      "draft": "Nihai saha koordinasyonu ve dış saha çalışmaları sırasındaki konut blokları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Taş duvar kaplaması, dikey ahşap detaylar, yerleşik bir bitki ünitesi ve dekoratif metal güvenlik kapısına uzanan desenli mermer zemine sahip bir LPP konut bloğunun iç lobisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projeler/sidi-abdallah-200-1200-konut/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Kapalı bir gökyüzü fonunda dış cephe görselleştirmesini, balkon düzenlemelerini ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının düşük açılı perspektifi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Düşey kütlelenmeyi ve balkon hizalanmasını gösteren dış cephe görünüşü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+      "draft": "/projeler/sidi-abdallah-200-1200-konut/02-13.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Two completed R+9 residential blocks with white, blue, and peach facades, viewed from an unpaved site area containing construction materials.",
+      "draft": "İnşaat malzemelerinin bulunduğu, henüz kaplanmamış bir şantiye alanından görülen; beyaz, mavi ve şeftali rengi cephelere sahip, tamamlanmış iki adet Z+9 katlı konut bloğu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance.",
+      "draft": "Sahadaki son temizlik çalışmaları öncesinde tamamlanmış konut blokları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Taş duvar kaplaması, dikey ahşap detaylar, yerleşik bir bitki ünitesi ve dekoratif metal güvenlik kapısına uzanan desenli mermer zemine sahip bir LPP konut bloğunun iç lobisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projeler/sidi-abdallah-200-1200-konut/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Kapalı bir gökyüzü fonunda dış cephe görselleştirmesini, balkon düzenlemelerini ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının düşük açılı perspektifi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Düşey kütlelenmeyi ve balkon hizalanmasını gösteren dış cephe görünüşü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Sidi Abdallah'ta; bej ve şeftali tonlarında sıvası, koyu renkli metal korkuluklara sahip girintili balkonları ve dış aydınlatmasıyla R+9 bir konut bloğunun cephesini gösteren, aşağıdan yukarıya doğru çekilmiş bir görünüm.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Zemin+9 katlı kamusal teşvikli konut bloklarının cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Entrance portal of a newly completed residential block, featuring a dark metal security door, stone-clad surrounds, and tiled interior flooring.",
+      "draft": "Koyu renkli metal bir güvenlik kapısı, taş kaplama çevre detayları ve karo zemin döşemesiyle dikkat çeken, yeni tamamlanmış bir konut bloğunun giriş bölümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed entrance portal and ground-floor access control.",
+      "draft": "Tamamlanmış giriş portalı ve zemin kat erişim kontrolü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Taş duvar kaplaması, dikey ahşap detaylar, yerleşik bir bitki ünitesi ve dekoratif metal güvenlik kapısına uzanan desenli mermer zemine sahip bir LPP konut bloğunun iç lobisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projeler/sidi-abdallah-200-1200-konut/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Kapalı bir gökyüzü fonunda dış cephe görselleştirmesini, balkon düzenlemelerini ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının düşük açılı perspektifi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Düşey kütlelenmeyi ve balkon hizalanmasını gösteren dış cephe görünüşü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Sidi Abdallah'ta; bej ve şeftali tonlarında sıvası, koyu renkli metal korkuluklara sahip girintili balkonları ve dış aydınlatmasıyla R+9 bir konut bloğunun cephesini gösteren, aşağıdan yukarıya doğru çekilmiş bir görünüm.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Zemin+9 katlı kamusal teşvikli konut bloklarının cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Sidi Abdallah'ta; bej ve şeftali tonlarında sıvası, koyu renkli metal korkuluklara sahip girintili balkonları ve dış aydınlatmasıyla R+9 bir konut bloğunun cephesini gösteren, aşağıdan yukarıya doğru çekilmiş bir görünüm.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Zemin+9 katlı kamusal teşvikli konut bloklarının cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

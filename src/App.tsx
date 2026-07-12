@@ -3,24 +3,24 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Fragment, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from 'react-router-dom';
 import SiteIntro from './components/SiteIntro';
 import GlobalCursor from './components/GlobalCursor';
 import Header from './components/Header';
 import AssistantDock from './components/AssistantDock';
+import SeoManager from './components/SeoManager';
 import SmoothScrollProvider, { useLenis } from './components/SmoothScrollProvider';
 import { heroSlides } from './data/projects';
-import { LocaleProvider } from './i18n';
+import { LocaleProvider, localizedPath, useLocale } from './i18n';
+import { getPageContent } from './content';
+import { initAutoFitText } from './lib/autoFitText';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
-const Projects = lazy(() => import('./pages/Projects'));
 const ProjectsDemo = lazy(() => import('./pages/ProjectsDemo'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
-const BatProjectsIndex = lazy(() => import('./pages/BatProjectsIndex'));
-const BatProjectDemo = lazy(() => import('./pages/BatProjectDemo'));
 
 const INTRO_VEIL_HOLD_MS = 250;
 const INTRO_VEIL_SLIDE_MS = 1150;
@@ -51,6 +51,7 @@ function ScrollManager() {
 
 function AppShellContent() {
   const location = useLocation();
+  const { locale } = useLocale();
   const [showIntro, setShowIntro] = useState(
     () =>
       location.pathname === '/' &&
@@ -75,6 +76,12 @@ function AppShellContent() {
     void import('./pages/ProjectDetail');
     void import('./pages/Contact');
   }, []);
+
+  // Translated copy (FR/TR/AR) runs longer than the English the layout was
+  // designed for — shrink any text element that overflows its box instead of
+  // letting it clip or break the layout. Reacts to locale switches, route
+  // changes and resizes on its own.
+  useEffect(() => initAutoFitText(), []);
 
   useLayoutEffect(() => {
     const previousPathname = previousPathnameRef.current;
@@ -190,7 +197,8 @@ function AppShellContent() {
   }, [isBatDemoRoute]);
 
   return (
-    <>
+    <Fragment key={locale}>
+      <SeoManager />
       {showGlobalCursor && <GlobalCursor />}
       {!showIntro && !isBatDemoRoute && <Header />}
       {!showIntro && !isBatDemoRoute && <AssistantDock />}
@@ -216,22 +224,75 @@ function AppShellContent() {
       <ScrollManager />
       <Suspense fallback={<RouteFallback />}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<ProjectsDemo />} />
-          <Route path="/projects/:slug" element={<ProjectDetail />} />
-          <Route path="/projects1" element={<Projects />} />
-          <Route path="/bat-demo/projects" element={<BatProjectsIndex />} />
-          <Route path="/bat-demo/projects/:slug" element={<BatProjectDemo />} />
+          <Route path="/" element={<LocaleRootRedirect />} />
+          <Route path="/:locale" element={<LocaleGuard><Home /></LocaleGuard>} />
+          <Route path="/:locale/about" element={<LocaleGuard><About /></LocaleGuard>} />
+          <Route path="/:locale/contact" element={<LocaleGuard><Contact /></LocaleGuard>} />
+          <Route path="/:locale/projects" element={<LocaleGuard><ProjectsDemo /></LocaleGuard>} />
+          <Route path="/:locale/projects/:slug" element={<LocaleGuard><ProjectDetail /></LocaleGuard>} />
+          <Route path="/:locale/404" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
+          <Route path="/:locale/*" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
+
+          {/* Pre-localization URLs remain resolvable while search engines and
+           * users are moved to their locale-prefixed canonical equivalent. */}
+          <Route path="/about" element={<LegacyRouteRedirect />} />
+          <Route path="/contact" element={<LegacyRouteRedirect />} />
+          <Route path="/projects" element={<LegacyRouteRedirect />} />
+          <Route path="/projects/:slug" element={<LegacyRouteRedirect />} />
+          <Route path="/projects1" element={<LegacyRouteRedirect />} />
+          <Route path="/bat-demo/*" element={<LegacyRouteRedirect />} />
+          <Route path="*" element={<LegacyRouteRedirect />} />
         </Routes>
       </Suspense>
-    </>
+    </Fragment>
   );
 }
 
 function RouteFallback() {
   return <div className="min-h-screen w-full bg-[color:var(--igloo-bg)]" aria-hidden="true" />;
+}
+
+function LocaleGuard({ children }: { children: ReactNode }) {
+  const { locale: segment } = useParams();
+  if (!segment || !['en', 'fr', 'tr', 'ar'].includes(segment.toLowerCase())) {
+    return <Navigate replace to="/en/404" />;
+  }
+  return <>{children}</>;
+}
+
+function LocaleRootRedirect() {
+  const { locale } = useLocale();
+  return <Navigate replace to={localizedPath(locale, '/')} />;
+}
+
+function LegacyRouteRedirect() {
+  const { locale } = useLocale();
+  const location = useLocation();
+  const projectMatch = location.pathname.match(/^\/projects\/([^/]+)\/?$/);
+  const target = projectMatch
+    ? `/projects/${projectMatch[1]}`
+    : location.pathname === '/about'
+      ? '/about'
+      : location.pathname === '/contact'
+        ? '/contact'
+        : location.pathname === '/projects'
+          ? '/projects'
+          : '/404';
+  return <Navigate replace to={localizedPath(locale, target)} />;
+}
+
+function LocalizedNotFound() {
+  const { locale } = useLocale();
+  const content = getPageContent<{ heading: string; cta: string }>('not-found', locale).content;
+  return (
+    <main className="flex min-h-screen items-center justify-center px-6 text-center">
+      <div>
+        <p className="mb-3 text-xs uppercase tracking-[0.2em] text-[#c22026]">404</p>
+        <h1 className="text-4xl font-semibold tracking-tight">{content.heading}</h1>
+        <p className="mt-4 text-base text-black/60">{content.cta}</p>
+      </div>
+    </main>
+  );
 }
 
 function AppShell() {
@@ -240,12 +301,12 @@ function AppShell() {
 
 export default function App() {
   return (
-    <LocaleProvider>
-      <Router>
+    <Router>
+      <LocaleProvider>
         <SmoothScrollProvider>
           <AppShell />
         </SmoothScrollProvider>
-      </Router>
-    </LocaleProvider>
+      </LocaleProvider>
+    </Router>
   );
 }

@@ -1,0 +1,21 @@
+{
+  "pageId": "contact",
+  "locale": "tr",
+  "sourceRevision": "v1-afb518cf",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "0c1e28cd4b92f9ac",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:04.927Z",
+  "seo": {
+    "title": "İletişim | SARL Igloo Yapi Construction",
+    "description": "Proje değerlendirmesi kapsamında saha konumlarını, program gereksinimlerini ve teknik dokümantasyonu iletmek için Birkhadem'deki merkez ofisimizle iletişime geçin.",
+    "socialTitle": "İletişim | SARL Igloo Yapi Construction",
+    "socialDescription": "Proje değerlendirmesi kapsamında saha konumlarını, program gereksinimlerini ve teknik dokümantasyonu iletmek için Birkhadem'deki merkez ofisimizle iletişime geçin."
+  },
+  "content": {
+    "eyebrow": "İletişim",
+    "heading": "Proje danışmanlığı başlatın.",
+    "lead": "Birkhadem'deki teknik ekibimizle irtibata geçin. Kurum içi mühendislik ve keşif-metraj değerlendirme sürecimizi başlatmak için saha koordinatlarınızı, imar programınızı ve mevcut tasarım belgelerinizi iletin."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgxkfpz-target-fr-contact",
+  "pageId": "contact",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T22:22:53.321Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

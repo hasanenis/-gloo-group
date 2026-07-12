@@ -1,0 +1,20 @@
+{
+  "pageId": "not-found",
+  "locale": "en",
+  "sourceRevision": "v1-c31f61e7",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-514277f8",
+  "status": "approved",
+  "updatedAt": "2026-07-11T22:10:05.124Z",
+  "seo": {
+    "title": "Page Not Found | SARL Igloo Yapi Construction",
+    "description": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+    "socialTitle": "Page Not Found | SARL Igloo Yapi Construction",
+    "socialDescription": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects."
+  },
+  "content": {
+    "heading": "Page Not Found",
+    "cta": "Return to the homepage"
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "jobId": "batch-mrh0ukpq-target-tr-projects-staoueli-11-41-villas",
+  "pageId": "projects/staoueli-11-41-villas",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-f8504f2d",
+  "generatedAt": "2026-07-11T23:54:45.303Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "11/41 Villa ve VRD İşleri, Staoueli | Konut Portföyü"
+    },
+    {
+      "id": "seo.description",
+      "text": "11/41 Villa ve Altyapı Şebeke İşleri projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, konut ve karma kullanım odaklı bir yapım modelini sergilemektedir."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "11/41 Villa ve VRD İşleri, Staoueli"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "11/41 Villa ve Altyapı Şebeke İşleri projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, konut ve karma kullanım odaklı bir yapım modelini sergilemektedir."
+    },
+    {
+      "id": "content.slug",
+      "text": "staoueli-11-41-villas"
+    },
+    {
+      "id": "content.title",
+      "text": "11/41 Villa ve VRD İşleri"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "KONUT PROGRAMI"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Staoueli'deki Les Pastorales yerleşkesi bünyesinde yer alan, zemin kat artı 2 üst kat konut hacmini entegre yollar ve altyapı şebekeleri (VRD) ile birleştiren 11 adet müstakil villanın teslimi."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Bu konut parseli, uyumlu bir evsel ölçek oluşturmak amacıyla az katlı hacimsel organizasyona, saha içi sirkülasyona ve dayanıklı dış mekan işlerine odaklanmaktadır."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Söz konusu 11 villa, 41 villalık daha geniş bir master planın özel bir aşamasını oluşturmaktadır. Uygulama kapsamı; bağımsız saha bağlantılarını güvence altına almak için koordineli bir anahtar teslim/tüm inşaat işleri (TCE) sırası, cephe artikülasyonu ve özel yollar ile altyapı şebekelerinin (VRD) kurulumunu gerektirmiştir."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Zemin kat artı 2 üst kat taşıyıcı yapı profiliyle inşa edilen villalar, sokak seviyesindeki konut cephesini belirlemek üzere entegre balkonlar, yapısal korkuluklar, dış cephe sıva kaplamaları ve özel erişim yolları barındırmaktadır."
+    },
+    {
+      "id": "content.authority",
+      "text": "Hassas yapısal uygulama, sahaya özgü altyapı şebekeleri ve koordineli cephe kaplamaları ile tanımlanan bir konut teslimi."
+    },
+    {
+      "id": "content.seo",
+      "text": "11/41 Villa ve Altyapı Şebeke İşleri projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, konut ve karma kullanım odaklı bir yapım modelini sergilemektedir."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Geliştirme Tipi"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Geliştirme Tipi"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Konum"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Les Pastorales, Staoueli, Cezayir"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Program Kapsamı"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "41 villalık master plan dahilinde 11 villa"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Tamamlanma Yılı"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2022"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Tipoloji"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "Zemin kat artı 2 üst kat (R+2) müstakil villalar"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "İş Kapsamı"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "Tüm inşaat işleri (TCE) teslimi ile yollar ve altyapı şebekeleri (VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Proje Özellikleri"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "Les Pastorales yerleşkesi bünyesinde 11 adet müstakil R+2 villa"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Su ve elektrik bağlantılarını içeren entegre yollar ve altyapı şebekeleri (VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Entegre balkonlar ve cam korkuluklar içeren artiküle cepheler"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "İnce yapı işleri ve iç mekan kaplamaları ile birlikte 2022 yılında tamamlanmıştır"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "Staoueli'deki 11/41 Villa projesinin kapsamı nedir?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Proje, Staoueli, Les Pastorales'teki 41 villalık daha geniş bir konut projesinin parçası olarak yürütülen, 11 adet müstakil R+2 villanın inşaatını ve tüm inşaat işleri (TCE) dahil teslimini kapsamaktadır."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Sahada hangi inşaat ve altyapı çalışmaları yürütüldü?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Söz konusu 11 villa, 41 villalık bir program dahilinde yer almakta olup, tamamlanmış bir konut ortamı oluşturmak için TCE, VRD, cephe işleri ve dış altyapı şebekelerinin hassas bir sıralama ile uygulanmasına dayanmaktadır."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Villaların mimari özellikleri nelerdir?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Her bir villa, zemin kat artı 2 üst kat (R+2) olarak organize edilmiş olup, modern cephe artikülasyonu, cam korkuluklu balkonlar ve entegre garaj girişi özelliklerine sahiptir."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Açık mavi gökyüzü altında açık renk cephelere, koyu renk detaylara, cam korkuluklu balkonlara ve kırmızı kiremitli çatılara sahip, yeni tamamlanmış konut villalarının dıştan görünümü."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Cephe artikülasyonunu ve cam korkuluklu balkonları gösteren tamamlanmış R+2 konut villaları."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Beyaz ve açık pembe duvarlara, koyu gri mimari detaylara, cam ön cepheli balkonlara, zemin kat girişleri ile garaj kapıları üzerinde ahşap saçaklara sahip çok katlı bir konut binasının dış cephesi. Ön planda döşemeli bir yürüyüş yolu görülmektedir."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Giriş saçaklarını, entegre garajları ve döşemeli erişim yollarını gösteren sokak seviyesindeki ön cephe."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/staoueli-11-41-villas/01-staouali-1.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Üstte açık mavi bir gökyüzü ile koyu renk detaylara, cam balkonlara ve pişmiş toprak kiremit çatılara sahip modern, açık renkli konut villalarından oluşan bir sıra."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Les Pastorales yerleşkesi bünyesindeki R+2 villaların hacimsel hizalanması."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Koyu renkli, parlak mermer desenli zemin karoları, açık krem rengi alt dolaplar, koyu renk tezgahlar, gri ve beyaz geometrik desenli tezgah arası kaplama ve koyu kahverengi ahşap dokulu üst dolaplar içeren yeni tamamlanmış bir mutfak. Ön planda yerde mavi bir bez görülmektedir."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Mutfak dolaplarını ve seramik yüzeyleri gösteren iç mekan ince işleri."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Cephesinde iskele, temelinde brüt beton bulunan ve üst balkonda iki işçinin dinlendiği, inşaat halindeki çok katlı bir konut villası."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Müstakil bir villada devam eden cephe kaplama ve taşıyıcı sistem çalışmaları."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Beyaz ve açık pembe duvarlara, koyu gri mimari detaylara, cam ön cepheli balkonlara, zemin kat girişleri ile garaj kapıları üzerinde ahşap saçaklara sahip çok katlı bir konut binasının dış cephesi. Ön planda döşemeli bir yürüyüş yolu görülmektedir."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Dış cephe kaplamaları, giriş saçakları ve zemin kat sirkülasyonunun detayı."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Açık mavi gökyüzü altında açık renk cephelere, koyu renk detaylara, cam korkuluklu balkonlara ve kırmızı kiremitli çatılara sahip, yeni tamamlanmış konut villalarının dıştan görünümü."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Entegre balkonlar ve pişmiş toprak kiremit çatı kaplaması ile tamamlanmış villa cepheleri."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/staoueli-11-41-villas/03-staoualii.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Bir konut villasında koyu renk granit tezgahlar, açık krem rengi alt dolaplar, beyaz üst dolaplar ve koyu kahverengi ahşap görünümlü duvar dolapları sergileyen modern L tipi bir mutfak. Gazlı ocak, çift gözlü paslanmaz çelik evye, dekoratif desenli fayans tezgah arası kaplama ve koyu mermer efektli zemin karoları görülmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "İnce yapı işleri teslimini gösteren tamamlanmış mutfak montajı."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Açık bej duvarlara, koyu renk pencere kasalarına, cam ve metal korkuluklu balkonlara sahip çok katlı bir konut villasının dış cephesi. Pişmiş toprak kiremitli bir çatı görülmekte olup, çerçevenin üst kısmını büyük bir beton kiriş kapatmaktadır. Sağ altta '2022.9.21 11:52' zaman damgası yer almaktadır."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Üst kat cephelerinin, camların ve balkon korkuluklarının detayı."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Beyaz ve açık pembe duvarlara, koyu gri mimari detaylara, cam ön cepheli balkonlara, zemin kat girişleri ile garaj kapıları üzerinde ahşap saçaklara sahip çok katlı bir konut binasının dış cephesi. Ön planda döşemeli bir yürüyüş yolu görülmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Zemin kat erişim noktaları ve entegre garaj girişleri."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Açık mavi gökyüzü altında açık renk cephelere, koyu renk detaylara, cam korkuluklu balkonlara ve kırmızı kiremitli çatılara sahip, yeni tamamlanmış konut villalarının dıştan görünümü."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Dış sıva ve çatı profillerini gösteren tamamlanmış R+2 villa yapıları."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Açık mavi gökyüzü altında beyaz duvarlara, koyu gri mimari detaylara, pişmiş toprak çatı kiremitlerine ve cam panelli balkonlara sahip, yeni inşa edilmiş birkaç çok katlı konut villasının dıştan görünümü. Sağda zemin katta bir kişi kısmen görülmektedir."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Nihai teslim öncesinde tamamlanmış villa dış cepheleri."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Açık mavi gökyüzü altında açık renk cephelere, koyu renk detaylara, cam korkuluklu balkonlara ve kırmızı kiremitli çatılara sahip, yeni tamamlanmış konut villalarının dıştan görünümü."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Cam, metal ve sıva entegrasyonunu gösteren tamamlanmış cepheler."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Beyaz ve açık pembe duvarlara, koyu gri mimari detaylara, cam ön cepheli balkonlara, zemin kat girişleri ile garaj kapıları üzerinde ahşap saçaklara sahip çok katlı bir konut binasının dış cephesi. Ön planda döşemeli bir yürüyüş yolu görülmektedir."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Tamamlanmış yaya yolları ve dış mekan işleri."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Koyu renkli, parlak mermer desenli zemin karoları, açık krem rengi alt dolaplar, koyu renk tezgahlar, gri ve beyaz geometrik desenli tezgah arası kaplama ve koyu kahverengi ahşap dokulu üst dolaplar içeren yeni tamamlanmış bir mutfak. Ön planda yerde mavi bir bez görülmektedir."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Mutfak alanlarındaki iç mekan seramik döşeme ve dolap montajı."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Açık mavi gökyüzü altında açık renk cephelere, koyu renk detaylara, cam korkuluklu balkonlara ve kırmızı kiremitli çatılara sahip, yeni tamamlanmış konut villalarının dıştan görünümü."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Les Pastorales yerleşkesi bünyesinde tamamlanmış R+2 konut villaları."
+    }
+  ]
+}

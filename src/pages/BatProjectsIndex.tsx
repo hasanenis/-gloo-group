@@ -1,4 +1,4 @@
-import { startTransition, useEffect, useMemo, useRef, useState } from 'react';
+﻿import { startTransition, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -13,10 +13,18 @@ import {
   Rows3,
   X,
 } from 'lucide-react';
-import { companyProfile, projects, type ProjectRecord } from '../data/projects';
+import {
+  companyProfile,
+  localizedProjectScope,
+  localizedProjectShortTitle,
+  localizedProjectStatus,
+  localizedProjectTitle,
+  projects,
+  type ProjectRecord,
+} from '../data/projects';
 import { buildBatProjectPageModel } from '../data/batProjectModel';
 import { useLenis } from '../components/SmoothScrollProvider';
-import { LocaleToggle, useLocale, type Locale } from '../i18n';
+import { LocaleToggle, pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 import { cn } from '../lib/utils';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { runBatPageTransition } from '../transitions/batPageTransition';
@@ -58,22 +66,22 @@ const sectorOrder: SectorKey[] = [
 
 const modeOptions: Array<{
   value: BatProjectsMode;
-  label: { en: string; fr: string };
+  label: LocalizedString;
   icon: typeof Grid3X3;
 }> = [
-  { value: 'grid', label: { en: 'Grid', fr: 'Grille' }, icon: Grid3X3 },
-  { value: 'gallery', label: { en: 'Gallery', fr: 'Galerie' }, icon: Images },
-  { value: 'list', label: { en: 'List', fr: 'Liste' }, icon: Rows3 },
+  { value: 'grid', label: { en: 'Grid', fr: 'Grille', dz: 'شبكة', tr: 'Izgara' }, icon: Grid3X3 },
+  { value: 'gallery', label: { en: 'Gallery', fr: 'Galerie', dz: 'غاليري', tr: 'Galeri' }, icon: Images },
+  { value: 'list', label: { en: 'List', fr: 'Liste', dz: 'قائمة', tr: 'Liste' }, icon: Rows3 },
 ];
 
-const sectorLabels: Record<SectorKey, { en: string; fr: string }> = {
-  All: { en: 'All', fr: 'Tous' },
-  Residential: { en: 'Residential', fr: 'Résidentiel' },
-  Commercial: { en: 'Commercial', fr: 'Commercial' },
-  'Mixed Use': { en: 'Mixed Use', fr: 'Usage mixte' },
-  Infrastructure: { en: 'Infrastructure', fr: 'Infrastructure' },
-  Community: { en: 'Community', fr: 'Communautaire' },
-  Hospitality: { en: 'Hospitality', fr: 'Hôtellerie' },
+const sectorLabels: Record<SectorKey, LocalizedString> = {
+  All: { en: 'All', fr: 'Tous', dz: 'الكل', tr: 'Tümü' },
+  Residential: { en: 'Residential', fr: 'Résidentiel', dz: 'سكني', tr: 'Konut' },
+  Commercial: { en: 'Commercial', fr: 'Commercial', dz: 'تجاري', tr: 'Ticari' },
+  'Mixed Use': { en: 'Mixed Use', fr: 'Usage mixte', dz: 'استعمال مختلط', tr: 'Karma kullanım' },
+  Infrastructure: { en: 'Infrastructure', fr: 'Infrastructure', dz: 'بنية تحتية', tr: 'Altyapı' },
+  Community: { en: 'Community', fr: 'Communautaire', dz: 'مجتمعي', tr: 'Topluluk' },
+  Hospitality: { en: 'Hospitality', fr: 'Hôtellerie', dz: 'فندقة', tr: 'Konaklama' },
 };
 
 const BAT_GRID_SPANS = [
@@ -132,12 +140,12 @@ function buildProjectItems(locale: Locale): BatProjectListItem[] {
 
     return {
       project,
-      title: project.title,
-      shortTitle: model.displayTitles.relatedTitle || project.menuTitle,
+      title: localizedProjectTitle(project, locale),
+      shortTitle: localizedProjectShortTitle(project, locale) || model.displayTitles.relatedTitle || project.menuTitle,
       sector: getSector(project),
       location: projectLocation(project),
-      status: project.chapterLabel,
-      scope: project.scope,
+      status: localizedProjectStatus(project, locale),
+      scope: localizedProjectScope(project, locale),
       coverImage,
       heroImage: coverImage,
       gridSpan: BAT_GRID_SPANS[index % BAT_GRID_SPANS.length],
@@ -172,21 +180,22 @@ function BatProjectsFooter() {
               data-bat-text-drift
               data-bat-text-drift-depth="16"
             >
-              {locale === 'fr'
-                ? 'Construire avec discipline, séquence et précision.'
-                : 'Build with discipline, sequence, and precision.'}
+              {pickLocaleText(locale, { en: 'Build with discipline, sequence, and precision.', fr: 'Construire avec discipline, séquence et précision.', dz: 'نبنيو بانضباط، ترتيب ودقة.', tr: 'Disiplin, sıralama ve hassasiyetle inşa ederiz.' })}
             </h2>
             <p className="bat-demo-footer__small mt-5 max-w-3xl">
-              {locale === 'fr'
-                ? `${companyProfile.name} intervient sur des programmes résidentiels et mixtes depuis Alger, en coordonnant conception, exécution et livraison dans une même chaîne de production.`
-                : `${companyProfile.name} works on residential and mixed-use programmes from Algiers, coordinating design, execution, and delivery inside one production chain.`}
+              {pickLocaleText(locale, {
+                en: `${companyProfile.name} works on residential and mixed-use programmes from Algiers, coordinating design, execution, and delivery inside one production chain.`,
+                fr: `${companyProfile.name} intervient sur des programmes résidentiels et mixtes depuis Alger, en coordonnant conception, exécution et livraison dans une même chaîne de production.`,
+                dz: `${companyProfile.name} تخدم من الجزائر على برامج سكنية ومختلطة، وتنسق التصميم، التنفيذ والتسليم في سلسلة إنتاج وحدة.`,
+                tr: `${companyProfile.name}, Cezayir’den konut ve karma kullanım programlarında tasarım, uygulama ve teslimi tek üretim zincirinde koordine eder.`,
+              })}
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="grid gap-3">
               <p className="text-[11px] font-bold uppercase tracking-[0.26em] text-white/52">
-                {locale === 'fr' ? 'Bureau' : 'Office'}
+                {pickLocaleText(locale, { en: 'Office', fr: 'Bureau', dz: 'المكتب', tr: 'Ofis' })}
               </p>
               <address className="not-italic text-[14px] leading-7 text-white/72">
                 <MapPin className="mb-3 h-4 w-4 text-white" />
@@ -196,7 +205,7 @@ function BatProjectsFooter() {
 
             <div className="grid gap-3">
               <p className="text-[11px] font-bold uppercase tracking-[0.26em] text-white/52">
-                {locale === 'fr' ? 'Navigation' : 'Navigation'}
+                {pickLocaleText(locale, { en: 'Navigation', fr: 'Navigation', dz: 'التنقل', tr: 'Gezinme' })}
               </p>
               <div className="grid gap-2 text-[14px] leading-7 text-white/72">
                 <Link
@@ -353,10 +362,10 @@ export default function BatProjectsIndex() {
         <div className="bat-projects-menu__panel">
           <div className="bat-demo-container">
             <div className="bat-projects-menu__top">
-              <p>{locale === 'fr' ? 'Menu' : 'Menu'}</p>
+              <p>{pickLocaleText(locale, { en: 'Menu', fr: 'Menu', dz: 'القائمة', tr: 'Menü' })}</p>
               <button type="button" onClick={() => setMenuOpen(false)}>
                 <X className="h-5 w-5" />
-                {locale === 'fr' ? 'Fermer' : 'Close'}
+                {pickLocaleText(locale, { en: 'Close', fr: 'Fermer', dz: 'غلق', tr: 'Kapat' })}
               </button>
             </div>
             <nav className="bat-projects-menu__nav" aria-label="Demo navigation">
@@ -383,7 +392,7 @@ export default function BatProjectsIndex() {
       <section className="bat-projects-nav" aria-labelledby="bat-projects-title">
         <div className="bat-demo-container">
           <h1 id="bat-projects-title" className="sr-only">
-            {locale === 'fr' ? 'Projets Igloo' : 'Igloo projects'}
+            {pickLocaleText(locale, { en: 'Igloo projects', fr: 'Projets Igloo', dz: 'مشاريع Igloo', tr: 'Igloo projeleri' })}
           </h1>
 
           <div className="bat-projects-nav__grid">
@@ -391,7 +400,7 @@ export default function BatProjectsIndex() {
 
             <div className="bat-projects-filter-group">
               <p className="bat-projects-filter-title">
-                {locale === 'fr' ? 'Mode' : 'Mode'}
+                {pickLocaleText(locale, { en: 'Mode', fr: 'Mode', dz: 'النمط', tr: 'Mod' })}
               </p>
               <div className="bat-projects-mode-list" role="group" aria-label="Project view mode">
                 {modeOptions.map((option) => {
@@ -407,7 +416,7 @@ export default function BatProjectsIndex() {
                       onClick={() => startTransition(() => setMode(option.value))}
                     >
                       <Icon className="h-4 w-4" strokeWidth={1.8} />
-                      {option.label[locale]}
+                      {pickLocaleText(locale, option.label)}
                     </button>
                   );
                 })}
@@ -416,7 +425,7 @@ export default function BatProjectsIndex() {
 
             <div className="bat-projects-filter-group">
               <p className="bat-projects-filter-title">
-                {locale === 'fr' ? 'Typologie' : 'Typology'}
+                {pickLocaleText(locale, { en: 'Typology', fr: 'Typologie', dz: 'النوع', tr: 'Tipoloji' })}
               </p>
               <div className="bat-projects-tag-list" aria-label="Filter projects by typology">
                 {sectorOrder.map((sector) => {
@@ -432,7 +441,7 @@ export default function BatProjectsIndex() {
                         startTransition(() => setActiveSector(sector))
                       }
                     >
-                      {sectorLabels[sector][locale]}
+                      {pickLocaleText(locale, sectorLabels[sector])}
                     </button>
                   );
                 })}
@@ -441,7 +450,7 @@ export default function BatProjectsIndex() {
 
             <div className="bat-projects-count" aria-live="polite">
               <span>({visibleItems.length})</span>
-              <span>{activeSector === 'All' ? t('allProjects') : sectorLabels[activeSector][locale]}</span>
+              <span>{activeSector === 'All' ? t('allProjects') : pickLocaleText(locale, sectorLabels[activeSector])}</span>
             </div>
           </div>
         </div>
@@ -479,7 +488,7 @@ export default function BatProjectsIndex() {
                         <div className="bat-projects-card__info">
                           <h2>{item.shortTitle}</h2>
                           <p>
-                            {sectorLabels[item.sector][locale]}
+                            {pickLocaleText(locale, sectorLabels[item.sector])}
                             {item.location ? ` / ${item.location}` : ''}
                           </p>
                         </div>
@@ -510,9 +519,9 @@ export default function BatProjectsIndex() {
                       </p>
                       <h2>{selectedItem.shortTitle}</h2>
                       <div className="bat-projects-gallery-view__meta">
-                        <span>{sectorLabels[selectedItem.sector][locale]}</span>
+                        <span>{pickLocaleText(locale, sectorLabels[selectedItem.sector])}</span>
                         <span>{selectedItem.location}</span>
-                        <span>{selectedItem.status === 'Current' ? (locale === 'fr' ? 'En cours' : 'Current') : (locale === 'fr' ? 'Achevé' : 'Completed')}</span>
+                        <span>{selectedItem.status}</span>
                       </div>
                     </div>
                     <button
@@ -528,7 +537,7 @@ export default function BatProjectsIndex() {
                   <div className="bat-projects-gallery-view__controls">
                     <button
                       type="button"
-                      aria-label={locale === 'fr' ? 'Projet précédent' : 'Previous project'}
+                      aria-label={pickLocaleText(locale, { en: 'Previous project', fr: 'Projet précédent', dz: 'المشروع السابق', tr: 'Önceki proje' })}
                       onClick={() => setRelativeGalleryItem(-1)}
                     >
                       <ArrowLeft className="h-5 w-5" />
@@ -550,7 +559,7 @@ export default function BatProjectsIndex() {
                     </div>
                     <button
                       type="button"
-                      aria-label={locale === 'fr' ? 'Projet suivant' : 'Next project'}
+                      aria-label={pickLocaleText(locale, { en: 'Next project', fr: 'Projet suivant', dz: 'المشروع التالي', tr: 'Sonraki proje' })}
                       onClick={() => setRelativeGalleryItem(1)}
                     >
                       <ArrowRight className="h-5 w-5" />
@@ -583,7 +592,7 @@ export default function BatProjectsIndex() {
                       >
                         <span>{String(index + 1).padStart(2, '0')}</span>
                         <strong>{item.shortTitle}</strong>
-                        <em>{sectorLabels[item.sector][locale]}</em>
+                        <em>{pickLocaleText(locale, sectorLabels[item.sector])}</em>
                         <ArrowUpRight className="h-4 w-4" />
                       </Link>
                     ))}
@@ -601,11 +610,9 @@ export default function BatProjectsIndex() {
             </>
           ) : (
             <div className="bat-projects-empty">
-              <p>{locale === 'fr' ? 'Aucun résultat' : 'No match'}</p>
+              <p>{pickLocaleText(locale, { en: 'No match', fr: 'Aucun resultat', dz: 'ما كاين حتى نتيجة', tr: 'Eşleşme yok' })}</p>
               <h2>
-                {locale === 'fr'
-                  ? 'Aucun projet dans cette typologie.'
-                  : 'No projects in this typology.'}
+                {pickLocaleText(locale, { en: 'No projects in this typology.', fr: 'Aucun projet dans cette typologie.', dz: 'ما كاين حتى مشروع في هذا النوع.', tr: 'Bu tipolojide proje yok.' })}
               </h2>
               <button
                 type="button"
@@ -622,3 +629,4 @@ export default function BatProjectsIndex() {
     </main>
   );
 }
+

@@ -1,0 +1,29 @@
+{
+  "jobId": "batch-mrgzorie-target-tr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:22:14.604Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1",
+      "severity": "warning",
+      "message": "The source facts state '10 Free Promotional Housing Units' (LPL/LPP/promotionnel). The translation introduces '10 LPL konut ünitesini', but LPL (Logement Public Locatif) is social housing, whereas promotional is LPP or promotionnel libre. However, the protected terms list allows LPL. More importantly, '10 LPL' contradicts the title's '10 Serbest Promosyonel' (Free Promotional) distinction. Please verify if LPL is the correct acronym for promotional housing here."
+    },
+    {
+      "id": "content.meta.1.value",
+      "kind": "body",
+      "severity": "warning",
+      "message": "Translates 'promotional' as 'LPL promosyonel konut', which is a terminology mismatch since LPL stands for Logement Public Locatif (public rental/social housing), not promotional."
+    },
+    {
+      "id": "content.faq.3.answer",
+      "kind": "body",
+      "severity": "warning",
+      "message": "This answer is a duplicate of facts already stated in content.summary.1 and content.faq.0.answer. According to the rules, FAQ fields must have distinct jobs and not copy the same sentence or facts into multiple fields."
+    }
+  ]
+}

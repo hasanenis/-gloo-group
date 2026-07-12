@@ -1,0 +1,355 @@
+{
+  "jobId": "batch-mrh1il0n-target-ar-DZ-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-12T00:13:25.520Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "50 سكن ترقوي حر"
+    },
+    {
+      "id": "seo.description",
+      "text": "التفاصيل التقنية، تنفيذ الهيكل، وتقدم الأشغال في موقع 50 سكن ترقوي حر بسيدي بنور، الجزائر العاصمة."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "50 سكن ترقوي حر"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "التفاصيل التقنية، تنفيذ الهيكل، وتقدم الأشغال في موقع 50 سكن ترقوي حر بسيدي بنور، الجزائر العاصمة."
+    },
+    {
+      "id": "content.slug",
+      "text": "sidi-benour-50-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "50 سكن ترقوي حر"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "مشروع سكني"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "تسليم عمارة سكنية ذات طابق أرضي زائد 13 طابقاً علوياً (R+13) تضم 50 مسكناً بسيدي بنور، تندرج ضمن برنامج أوسع يشمل 362 سكن ترقوي حر."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يلبي مخطط سيدي بنور الطلب على السكن الحضري من خلال التكثيف العمودي، شبكات المرافق المتكاملة، وتنسيق حركة المرور في الموقع."
+    },
+    {
+      "id": "content.description.0",
+      "text": "يشمل نطاق المشروع تسليم كافة أشغال البناء (TCE) والطرق والشبكات المختلفة (VRD) للكتلة السكنية ذات الصيغة R+13، مع تنسيق تنفيذ الهيكل، تهيئة الواجهات، شبكات المبنى الداخلية، والأشغال الخارجية."
+    },
+    {
+      "id": "content.description.1",
+      "text": "تتميز الواجهة بخطوط عمودية وشرفات بارزة، مدعومة بأعمال تسوية شاملة للموقع، توصيلات المرافق، وطرق وصول مخصصة."
+    },
+    {
+      "id": "content.authority",
+      "text": "مشروع سكني عمودي تتكامل فيه الهندسة الإنشائية، إيقاع الواجهات، شبكات VRD، والأنظمة التقنية لتلبية متطلبات السكن الحضري المكثف."
+    },
+    {
+      "id": "content.seo",
+      "text": "التفاصيل التقنية، تنفيذ الهيكل، وتقدم الأشغال في موقع 50 سكن ترقوي حر بسيدي بنور، الجزائر العاصمة."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "سكن ترقوي حر (LPL)"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "سكن ترقوي حر (LPL)"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "سيدي بنور، محالمة، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "البرنامج"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "50 مسكناً ضمن برنامج إجمالي يضم 362 مسكناً"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "سنة الإنجاز"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "النمط المعماري"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "عمارة سكنية تتكون من طابق أرضي زائد 13 طابقاً علوياً (R+13)"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "الأشغال"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "تسليم كافة أشغال البناء (TCE) مع الطرق والشبكات المختلفة (VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "تسليم 50 مسكناً ضمن برنامج سكني يضم 362 مسكناً"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "عمارة سكنية ذات طابق أرضي زائد 13 طابقاً علوياً (R+13)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "أشغال TCE، شبكات VRD، التجهيزات التقنية، والمداخل الخارجية"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "تم الإنجاز في سنة 2025 بتنسيق كامل للأشغال"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو نطاق مشروع 50 سكن ترقوي حر؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "تسليم عمارة سكنية ذات طابق أرضي زائد 13 طابقاً علوياً (R+13) تضم 50 مسكناً بسيدي بنور، تندرج ضمن برنامج أوسع يشمل 362 سكن ترقوي حر."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي أشغال البناء التي تم تنفيذها في هذا الموقع؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "يجمع المشروع بين أشغال البناء الكلية (TCE) وتهيئة الطرق والشبكات المختلفة (VRD) لعمارة سكنية R+13، مع تنسيق الهيكل، الواجهات، الأنظمة التقنية وحركة المرور الخارجية."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "كيف يتكامل هذا المجمع السكني مع الموقع المحيط به؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "يعتمد التصميم على التكثيف العمودي لتحسين استغلال الوعاء العقاري، مدعوماً بطرق وصول مخصصة وتوصيلات متكاملة بالشبكات لضمان الجاهزية التامة للتشغيل."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "منظر خارجي لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر الهيكل الخرساني المكشوف وجدران الحشو بالطوب الأحمر، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "عمارة سكنية قيد الإنجاز مع أشغال الحشو بالطوب."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "منظر لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر جدران دعم خرسانية ضخمة، هياكل حديد التسليح المعقدة، وعمالاً في الطابق العلوي، مع ذراع رافعة في الأعلى ومبانٍ أخرى في الخلفية."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "تقدم أشغال الهيكل في الوحدات السكنية بسيدي بنور."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "عمارة سكنية شاهقة قيد الإنجاز، تظهر هيكلاً خرسانياً مكشوفاً، جدران حشو بالطوب الأحمر، ورافعة برجية حمراء مقابل سماء زرقاء صافية. تظهر أكوام من الطوب الأحمر على الأرض في المقدمة."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "تقدم أشغال الهيكل في مشروع 50 مسكناً بسيدي بنور."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "رافعة برجية ضخمة تطل على مبنى خرساني متعدد الطوابق قيد الإنجاز، مع حديد تسليح مكشوف وسقالات في الطوابق العليا، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "أشغال الهيكل الجارية للوحدات السكنية."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "منظر خارجي كامل لعمارة سكنية حديثة ذات ألوان فاتحة تضم العديد من الشرفات والنوافذ، تظهر من مستوى الأرض خلف جدار خرساني منخفض ومساحة مبلطة."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "العمارة السكنية المكتملة في سيدي بنور، الجزائر العاصمة."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "عمارة سكنية شاهقة قيد الإنجاز، تظهر الأعمدة والبلاطات الخرسانية، جدران الطوب الأحمر، والشرفات. تظهر رافعة بناء حمراء ضخمة جزئياً على الجانب الأيسر ممتدة نحو الأعلى، مع عامل يظهر في إحدى الشرفات العليا."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "تقدم أشغال الهيكل والحشو بالطوب في الوحدات السكنية."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "منظر خارجي لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر الهيكل الخرساني المكشوف وجدران الحشو بالطوب الأحمر، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "عمارة سكنية قيد الإنجاز مع أشغال الحشو بالطوب."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "منظر جوي لموقع بناء يظهر أساساً خرسانياً واسعاً وأقفاص حديد التسليح لطابق جديد، مع رافعة برجية حمراء على اليسار وعمال على الهيكل. تظهر مبانٍ سكنية بعيدة وتلال خضراء تحت سماء ضبابية."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "أشغال الهيكل قيد التنفيذ للوحدات السكنية، تظهر حديد التسليح والقوالب الخشبية."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "عامل بناء يرتدي قميصاً مخططاً وقبعة يقف بين أكوام كبيرة من الطوب الأحمر المجوف داخل مبنى قيد الإنجاز، مع ظهور مبانٍ سكنية بعيدة ومساحات خضراء من خلال فتحة مفتوحة."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "عامل مع الطوب في موقع مشروع السكن بسيدي بنور."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "عمارة سكنية شاهقة قيد الإنجاز، تظهر هيكلاً خرسانياً مكشوفاً، جدران حشو بالطوب الأحمر، ورافعة برجية حمراء مقابل سماء زرقاء صافية. تظهر أكوام من الطوب الأحمر على الأرض في المقدمة."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "تقدم أشغال الهيكل في مشروع 50 مسكناً بسيدي بنور."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "منظر خارجي لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر الهيكل الخرساني المكشوف وجدران الحشو بالطوب الأحمر، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "عمارة سكنية قيد الإنجاز مع أشغال الحشو بالطوب."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "عمارة سكنية شاهقة قيد الإنجاز، تظهر طوابق متعددة بهياكل خرسانية مكشوفة وبعض جدران الحشو بالطوب الأحمر. تظهر رافعة برجية ضخمة في أعلى اليسار، والسماء رمادية وغائمة. تظهر مواد بناء على بعض الشرفات."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "تقدم أشغال الهيكل في مشروع 50 مسكناً بسيدي بنور."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "لقطة من زاوية منخفضة لمبنى خرساني متعدد الطوابق قيد الإنجاز، تظهر البلاطات والأعمدة الخرسانية المكشوفة والسقالات الخشبية في الطوابق العليا. يظهر ذراع رافعة في أعلى اليمين، وتشرق الشمس ببراعة من خلف المبنى، مما يخلق تأثيراً ظلياً مقابل سماء زرقاء غائمة جزئياً."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "الهيكل الخرساني يرتفع نحو السماء."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "عمارة سكنية شاهقة قيد الإنجاز، تظهر هيكلاً خرسانياً مكشوفاً، جدران حشو بالطوب الأحمر، ورافعة برجية حمراء مقابل سماء زرقاء صافية. تظهر أكوام من الطوب الأحمر على الأرض في المقدمة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "تقدم أشغال الهيكل في مشروع 50 مسكناً بسيدي بنور."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "منظر خارجي لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر الهيكل الخرساني المكشوف وجدران الحشو بالطوب الأحمر، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "عمارة سكنية قيد الإنجاز مع أشغال الحشو بالطوب."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "منظر خارجي لعمارة سكنية متعددة الطوابق قيد الإنجاز، تظهر الهيكل الخرساني المكشوف وجدران الحشو بالطوب الأحمر، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "عمارة سكنية قيد الإنجاز مع أشغال الحشو بالطوب."
+    }
+  ]
+}

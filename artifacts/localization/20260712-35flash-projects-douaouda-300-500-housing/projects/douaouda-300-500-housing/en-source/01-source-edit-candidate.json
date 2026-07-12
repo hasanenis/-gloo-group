@@ -1,0 +1,198 @@
+{
+  "jobId": "20260712-35flash-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "locale": "en",
+  "sourceRevision": "v1-888651e9",
+  "generatedAt": "2026-07-11T21:39:32.029Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "b695dd9df939cea2",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+    "description": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+    "socialTitle": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "douaouda-300-500-housing",
+    "title": "300/500 Assisted Promotional Housing",
+    "eyebrow": "RESIDENTIAL AND COMMERCIAL PROGRAMME",
+    "summary": [
+      "The completed 300-home phase of a 500-home Assisted Promotional Housing (LPA) programme in Douaouda, comprising ground floor plus 8 upper floors (R+8) residential blocks, integrated commercial premises, and comprehensive roads and utility networks (VRD).",
+      "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works."
+    ],
+    "description": [
+      "The project was executed under a complete all-trades package (TCE), encompassing reinforced concrete structural works, secondary trades, building services coordination, and exterior finishing.",
+      "The R+8 blocks are configured with F3 and F4 apartment layouts. The ground-level commercial spaces establish active street-level frontage, integrating local retail and services directly into the residential fabric."
+    ],
+    "authority": "A multi-storey residential development delivered through unified structural engineering, building services integration, and site circulation works.",
+    "seo": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "AADL"
+      },
+      {
+        "label": "Project Type",
+        "value": "Assisted Promotional Housing (LPA)"
+      }
+    ],
+    "details": [
+      {
+        "label": "Project Type",
+        "value": "Assisted Promotional Housing (LPA)"
+      },
+      {
+        "label": "Location",
+        "value": "Douaouda, Tipaza, Algeria"
+      },
+      {
+        "label": "Programme",
+        "value": "300 homes delivered within a 500-home master plan"
+      },
+      {
+        "label": "Completion",
+        "value": "2019"
+      },
+      {
+        "label": "Works Scope",
+        "value": "All-trades delivery (TCE) and roads and utility networks (VRD)"
+      },
+      {
+        "label": "Client",
+        "value": "AADL"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Programme",
+        "items": [
+          "300 apartments completed within the 500-home LPA framework",
+          "Ground floor plus 8 upper floors (R+8) blocks with F3 and F4 layouts",
+          "Ground-level commercial and professional premises",
+          "All-trades delivery (TCE) including civil, structural, and VRD works"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Site Context",
+      "items": [
+        "Direct connection to regional road infrastructure",
+        "Coastal orientation with views of the Mediterranean Sea"
+      ]
+    },
+    "faq": [
+      {
+        "question": "What is the scope of the 300/500 Assisted Promotional Housing project?",
+        "answer": "It represents the completed 300-home phase of a larger 500-home Assisted Promotional Housing (LPA) development in Douaouda, featuring R+8 residential blocks and integrated commercial premises."
+      },
+      {
+        "question": "What construction services were provided for this development?",
+        "answer": "The project was executed under an all-trades delivery (TCE) contract, covering reinforced concrete structures, secondary trades, building services, and roads and utility networks (VRD)."
+      },
+      {
+        "question": "Who is the client for this housing programme?",
+        "answer": "The development was delivered for the National Housing Improvement and Development Agency (AADL) under the state-assisted promotional housing framework."
+      },
+      {
+        "question": "How are the residential blocks configured?",
+        "answer": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+          "caption": "Structural concrete works in progress across the residential blocks."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+          "caption": "Structural framing and masonry infill works underway, showing the coastal site context."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+        "alt": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+        "caption": "Aerial view of the completed R+8 residential blocks in Douaouda."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+          "caption": "Facade articulation and exterior finishing works on the completed blocks."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+          "caption": "Structural concrete works in progress across the residential blocks."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+          "caption": "Structural framing and masonry infill works underway, showing the coastal site context."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+          "caption": "Aerial view of the completed R+8 residential blocks in Douaouda."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+          "alt": "View of several modern, multi-story residential apartment buildings with light-colored facades and brown accents, under an overcast sky. Construction materials like bricks, sand, and white bags are visible in the foreground.",
+          "caption": "Completed residential blocks prior to final site clearance and landscaping."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+          "caption": "Structural framing and masonry infill works underway, showing the coastal site context."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+          "caption": "Structural concrete works in progress across the residential blocks."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+          "caption": "Aerial view of the completed R+8 residential blocks in Douaouda."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+          "caption": "Structural framing and masonry infill works underway, showing the coastal site context."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+          "caption": "Structural concrete works in progress across the residential blocks."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+          "caption": "Aerial view of the completed R+8 residential blocks in Douaouda."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+          "caption": "Facade articulation and exterior finishing works on the completed blocks."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+          "caption": "Structural concrete works in progress across the residential blocks."
+        }
+      ]
+    }
+  },
+  "model": "gemini-3.5-flash"
+}

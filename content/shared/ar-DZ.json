@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar-DZ",
+  "sourceLocale": "en",
+  "revision": "v1-294d3780",
+  "sourceRevision": "v1-2aa11ee9",
+  "status": "approved",
+  "content": {
+    "home": "الرئيسية",
+    "projects": "المشاريع",
+    "company": "الشركة",
+    "contact": "اتصل بنا",
+    "services": "الخدمات",
+    "allProjects": "جميع المشاريع",
+    "openProject": "فتح المشروع",
+    "readMore": "اقرأ المزيد",
+    "previous": "السابق",
+    "next": "التالي",
+    "languageSelector": "اختيار اللغة",
+    "projectOverview": "نظرة عامة على المشروع",
+    "projectDetails": "التفاصيل والموقع",
+    "construction": "تنفيذ الأشغال",
+    "projectGallery": "معرض المشروع",
+    "facilities": "السكن والبنية التحتية",
+    "nearby": "ما يحيط بالمشروع",
+    "faq": "الأسئلة الشائعة",
+    "relatedProjects": "مشاريع مختارة",
+    "discuss": "ناقش مشروعًا"
+  }
+}

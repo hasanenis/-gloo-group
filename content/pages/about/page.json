@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "pageId": "about",
+  "path": "/about",
+  "sourceLocale": "en",
+  "fields": [
+    {
+      "key": "content.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.heading",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.body",
+      "kind": "body",
+      "required": true
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import { projects, type ProjectRecord } from './projects';
 import { generatedProjectContent } from './projectContent.generated';
-import { pickLocaleText, type Locale } from '../i18n';
+import { pickLocaleText, type Locale } from '../i18n/runtime';
+import { getProjectPage } from '../content';
 
-export type LocalizedText = { en: string; fr: string; dz?: string; tr?: string };
+export type LocalizedText = { en: string; fr: string; 'ar-DZ'?: string; dz?: string; tr?: string };
 export type LocalizedList = { title: LocalizedText; items: LocalizedText[] };
 
 export type ProjectImage = {
@@ -69,7 +70,7 @@ function fallbackContent(project: ProjectRecord): ProjectContent {
   };
 }
 
-export function getProjectContent(project: ProjectRecord) {
+function getLegacyProjectContent(project: ProjectRecord) {
   const directContent = generatedProjectContent[project.slug];
   if (directContent) return directContent;
 
@@ -79,15 +80,42 @@ export function getProjectContent(project: ProjectRecord) {
     return {
       ...aliasedContent,
       slug: project.slug,
-      title: { en: project.title, fr: project.menuTitle },
-      eyebrow: { en: project.coverLines[0], fr: project.coverLines[0] },
-      summary: [{ en: project.summary, fr: project.summary }],
-      description: [{ en: project.details, fr: project.details }, { en: project.scope, fr: project.scope }],
-      seo: { en: project.summary, fr: project.summary },
     };
   }
 
   return fallbackContent(project);
+}
+
+function canonicalProjectNode(slug: string, path = ''): unknown {
+  const documents = (['en', 'fr', 'tr', 'ar-DZ'] as const).map((locale) => getProjectPage<Record<string, unknown>>(slug, locale).content);
+  const english = path.split('.').filter(Boolean).reduce<unknown>((current, segment) => {
+    if (!current || typeof current !== 'object') return undefined;
+    return (current as Record<string, unknown>)[segment];
+  }, documents[0]);
+  if (typeof english === 'string') {
+    const leaf = path.split('.').at(-1);
+    if (leaf === 'slug' || leaf === 'src') return english;
+    return Object.fromEntries((['en', 'fr', 'tr', 'ar-DZ'] as const).map((locale, index) => {
+      const value = path.split('.').filter(Boolean).reduce<unknown>((current, segment) => {
+        if (!current || typeof current !== 'object') return undefined;
+        return (current as Record<string, unknown>)[segment];
+      }, documents[index]);
+      return [locale, value];
+    }));
+  }
+  if (Array.isArray(english)) return english.map((_, index) => canonicalProjectNode(slug, path ? `${path}.${index}` : String(index)));
+  if (english && typeof english === 'object') {
+    return Object.fromEntries(Object.keys(english as Record<string, unknown>).map((key) => [key, canonicalProjectNode(slug, path ? `${path}.${key}` : key)]));
+  }
+  return english;
+}
+
+const canonicalProjectContent: ProjectContentBySlug = Object.fromEntries(
+  projects.map((project) => [project.slug, canonicalProjectNode(project.slug) as ProjectContent]),
+);
+
+export function getProjectContent(project: ProjectRecord) {
+  return canonicalProjectContent[project.slug] ?? getLegacyProjectContent(project);
 }
 
 export function localized(value: LocalizedText, locale: Locale) {

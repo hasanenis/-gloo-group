@@ -4,14 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
 import { heroSlides } from '../data/projects';
+import { useLocale } from '../i18n';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HERO_VIDEO_URL = '/projects/Untitled%20Project.mp4';
 const HERO_POSTER = heroSlides[0]?.image;
-const HERO_LOOP_WORDS = ['Building', 'Crafting', 'Dreaming'];
-const HERO_LOOP_SUFFIX = 'Futures';
-
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -25,6 +23,7 @@ function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 
 }
 
 export default function HeroBanner() {
+  const { locale, t } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaParallaxRef = useRef<HTMLDivElement>(null);
@@ -32,7 +31,12 @@ export default function HeroBanner() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoReady, setVideoReady] = useState(false);
   const posterReady = prefersReducedMotion;
-  const heroTitle = `${HERO_LOOP_WORDS[0]} ${HERO_LOOP_SUFFIX}`;
+  const heroPhrases = [
+    t('homeHeroPhraseBuild'),
+    t('homeHeroPhraseCraft'),
+    t('homeHeroPhraseDream'),
+  ];
+  const heroTitle = heroPhrases[0];
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -245,7 +249,7 @@ export default function HeroBanner() {
           '<',
         );
     });
-  }, { scope: containerRef, dependencies: [prefersReducedMotion] });
+  }, { scope: containerRef, dependencies: [locale, prefersReducedMotion] });
 
   return (
     <div
@@ -292,12 +296,25 @@ export default function HeroBanner() {
             className="hero-loop-title inline-flex max-w-[calc(100vw-2rem)] items-center justify-center gap-x-[0.18em] font-nav text-[clamp(2.28rem,0.8rem+7.4vw,3.75rem)] font-light leading-none tracking-normal text-white sm:text-[5rem] md:text-[7.25rem] lg:text-[8.75rem] xl:text-[9.5rem] 2xl:text-[10rem]"
           >
             <span
-              className="hero-loop-mask relative inline-block h-[1.06em] min-w-[4.22em] overflow-hidden align-baseline"
+              className="hero-loop-mask relative inline-block h-[1.06em] min-w-[8.8em] max-w-[92vw] overflow-hidden align-baseline"
               aria-hidden="true"
             >
-              {HERO_LOOP_WORDS.map((word, index) => (
+              {/* Invisible in-flow copies size the mask to the widest phrase —
+                  the animated copies below are absolutely positioned, so
+                  without these the mask would stay at min-w and clip longer
+                  translated phrases (TR/AR run much wider than the English
+                  the em-width was tuned for). */}
+              {heroPhrases.map((phrase, index) => (
                 <span
-                  key={`${word}-${index}`}
+                  key={`sizer-${locale}-${index}`}
+                  className="invisible block h-0 overflow-hidden whitespace-nowrap"
+                >
+                  {phrase}
+                </span>
+              ))}
+              {heroPhrases.map((phrase, index) => (
+                <span
+                  key={`${locale}-${index}`}
                   className="absolute inset-x-0 top-0 block whitespace-nowrap text-center will-change-[transform,opacity,filter,clip-path]"
                   data-hero-loop-word
                   style={{
@@ -305,12 +322,9 @@ export default function HeroBanner() {
                     visibility: index === 0 ? 'visible' : 'hidden',
                   }}
                 >
-                  {word}
+                  {phrase}
                 </span>
               ))}
-            </span>
-            <span className="inline-block shrink-0" aria-hidden="true">
-              {HERO_LOOP_SUFFIX}
             </span>
           </h1>
         </div>

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh1dtfy-target-ar-DZ-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-12T00:09:43.192Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

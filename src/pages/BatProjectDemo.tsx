@@ -1,4 +1,4 @@
-import {
+﻿import {
   useEffect,
   useMemo,
   useRef,
@@ -20,11 +20,13 @@ import { gsap } from "gsap";
 import Draggable from "gsap/Draggable";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { pickLocaleText, type LocalizedString } from "../i18n/runtime";
 import { LocaleToggle, useLocale, type Locale } from "../i18n";
 import { companyProfile, projects } from "../data/projects";
 import {
   buildBatProjectPageModel,
 } from "../data/batProjectModel";
+import { localized } from "../data/projectContent";
 import { useLenis } from "../components/SmoothScrollProvider";
 import { usePrefersReducedMotion } from "../lib/motion";
 import {
@@ -53,6 +55,10 @@ const JO_HOUSE_RELATED_PROJECTS = [
   { slug: "said-hamdine-mixed-real-estate", title: "U16 House" },
   { slug: "douaouda-300-500-housing", title: "Altos Reales I" },
 ] as const;
+
+function localeText(en: string, fr: string, dz: string, tr: string): LocalizedString {
+  return { en, fr, 'ar-DZ': dz, tr };
+}
 
 type CursorVariant = "default" | "rail";
 type HeaderTone = "hero-light" | "hero-dark" | "editorial";
@@ -530,6 +536,7 @@ function DemoHeader({
   tone: HeaderTone;
   onToggleMenu: () => void;
 }) {
+  const { locale } = useLocale();
   return (
     <header
       className={`bat-demo-header bat-demo-header--${tone} ${isMenuOpen ? "is-menu-open" : ""}`}
@@ -549,7 +556,9 @@ function DemoHeader({
             type="button"
             onClick={onToggleMenu}
             aria-expanded={isMenuOpen}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-label={isMenuOpen
+              ? pickLocaleText(locale, localeText('Close menu', 'Fermer le menu', 'غلق القائمة', 'Menüyü kapat'))
+              : pickLocaleText(locale, localeText('Open menu', 'Ouvrir le menu', 'حلّ القائمة', 'Menüyü aç'))}
             className="bat-demo-header__menu-button"
             data-bat-cursor-card
             data-bat-cursor-label={isMenuOpen ? "CLOSE" : "MENU"}
@@ -582,22 +591,22 @@ function DemoMenu({
   const { t } = useLocale();
 
   const sections = [
-    { id: "hero", label: locale === "fr" ? "Vue générale" : "Overview" },
+    { id: "hero", label: pickLocaleText(locale, localeText('Overview', 'Vue générale', 'نظرة عامة', 'Genel bakış')) },
     {
       id: "editorial",
-      label: locale === "fr" ? "Texte éditorial" : "Editorial text",
+      label: pickLocaleText(locale, localeText('Editorial text', 'Texte éditorial', 'النص التحريري', 'Editoryal metin')),
     },
-    { id: "media", label: locale === "fr" ? "Média" : "Media" },
+    { id: "media", label: pickLocaleText(locale, localeText('Media', 'Média', 'الوسائط', 'Medya')) },
     {
       id: "related",
-      label: locale === "fr" ? "Projets liés" : "Related projects",
+      label: pickLocaleText(locale, localeText('Related projects', 'Projets liés', 'مشاريع مرتبطة', 'İlgili projeler')),
     },
-    { id: "technical", label: locale === "fr" ? "Technique" : "Technical" },
-    { id: "faq", label: locale === "fr" ? "FAQ" : "FAQ" },
-    { id: "details", label: locale === "fr" ? "Détails" : "Details" },
-    { id: "programme", label: locale === "fr" ? "Programme" : "Programme" },
-    { id: "nearby", label: locale === "fr" ? "À proximité" : "Nearby" },
-    { id: "contact", label: locale === "fr" ? "Contact" : "Contact" },
+    { id: "technical", label: pickLocaleText(locale, localeText('Technical', 'Technique', 'تقني', 'Teknik')) },
+    { id: "faq", label: pickLocaleText(locale, localeText('FAQ', 'FAQ', 'الأسئلة', 'SSS')) },
+    { id: "details", label: pickLocaleText(locale, localeText('Details', 'Détails', 'التفاصيل', 'Detaylar')) },
+    { id: "programme", label: pickLocaleText(locale, localeText('Programme', 'Programme', 'البرنامج', 'Program')) },
+    { id: "nearby", label: pickLocaleText(locale, localeText('Nearby', 'À proximité', 'بالقرب', 'Yakın çevre')) },
+    { id: "contact", label: pickLocaleText(locale, localeText('Contact', 'Contact', 'اتصال', 'İletişim')) },
   ];
 
   return (
@@ -614,7 +623,7 @@ function DemoMenu({
         <div className="bat-demo-container pt-5 md:pt-7">
           <div className="flex items-center justify-between gap-4">
             <p className="bat-demo-kicker">
-              {locale === "fr" ? "Menu" : "Menu"}
+              {pickLocaleText(locale, localeText('Menu', 'Menu', 'القائمة', 'Menü'))}
             </p>
             <button
               type="button"
@@ -624,7 +633,7 @@ function DemoMenu({
               data-bat-cursor-label="CLOSE"
             >
               <X className="h-4 w-4" />
-              {locale === "fr" ? "Fermer" : "Close"}
+              {pickLocaleText(locale, localeText('Close', 'Fermer', 'غلق', 'Kapat'))}
             </button>
           </div>
         </div>
@@ -633,7 +642,7 @@ function DemoMenu({
           <div className="grid gap-6">
             <div className="grid gap-3">
               <p className="bat-demo-kicker">
-                {locale === "fr" ? "Navigation rapide" : "Quick nav"}
+                {pickLocaleText(locale, localeText('Quick nav', 'Navigation rapide', 'تنقل سريع', 'Hızlı gezinme'))}
               </p>
               <button
                 type="button"
@@ -642,7 +651,7 @@ function DemoMenu({
                 data-bat-cursor-card
                 data-bat-cursor-label="OPEN"
               >
-                {locale === "fr" ? "Projet" : "Project"}
+                {pickLocaleText(locale, localeText('Project', 'Projet', 'المشروع', 'Proje'))}
               </button>
               <button
                 type="button"
@@ -657,7 +666,7 @@ function DemoMenu({
 
             <div className="border-t border-black/10 pt-6">
               <p className="bat-demo-kicker">
-                {locale === "fr" ? "Sections" : "Sections"}
+                {pickLocaleText(locale, localeText('Sections', 'Sections', 'الأقسام', 'Bölümler'))}
               </p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {sections.map((section) => (
@@ -680,7 +689,7 @@ function DemoMenu({
           <div className="grid gap-6">
             <div className="grid gap-3 border-t border-black/10 pt-6">
               <p className="bat-demo-kicker">
-                {locale === "fr" ? "Entreprise" : "Company"}
+                {pickLocaleText(locale, localeText('Company', 'Entreprise', 'الشركة', 'Kurumsal'))}
               </p>
               <p className="bat-demo-menu__small">{companyProfile.name}</p>
               <p className="bat-demo-menu__small">{companyProfile.address}</p>
@@ -688,7 +697,7 @@ function DemoMenu({
 
             <div className="grid gap-3 border-t border-black/10 pt-6">
               <p className="bat-demo-kicker">
-                {locale === "fr" ? "Contact" : "Contact"}
+                {pickLocaleText(locale, localeText('Contact', 'Contact', 'اتصال', 'İletişim'))}
               </p>
               <a
                 href={`mailto:${companyProfile.email}`}
@@ -715,9 +724,7 @@ function DemoMenu({
         <div className="bat-demo-container pb-6">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-black/10 pt-4 text-[11px] uppercase tracking-[0.22em] text-black/42">
             <span>
-              {locale === "fr"
-                ? "Projet ouvert en démonstration"
-                : "Project open in demo mode"}
+              {pickLocaleText(locale, localeText('Project open in demo mode', 'Projet ouvert en démonstration', 'المشروع مفتوح في وضع العرض', 'Proje demo modunda açık'))}
             </span>
             <Link
               to="/"
@@ -726,7 +733,7 @@ function DemoMenu({
               data-bat-cursor-card
               data-bat-cursor-label="HOME"
             >
-              {locale === "fr" ? "Accueil" : "Home"}
+              {pickLocaleText(locale, localeText('Home', 'Accueil', 'الرئيسية', 'Ana sayfa'))}
             </Link>
           </div>
         </div>
@@ -769,21 +776,22 @@ function DemoFooter({
               data-bat-text-drift
               data-bat-text-drift-depth="16"
             >
-              {locale === "fr"
-                ? "Construire avec discipline, séquence et précision."
-                : "Build with discipline, sequence, and precision."}
+              {pickLocaleText(locale, localeText('Build with discipline, sequence, and precision.', 'Construire avec discipline, séquence et précision.', 'نبنيو بانضباط وتسلسل ودقة.', 'Disiplin, sıra ve hassasiyetle inşa ederiz.'))}
             </h2>
             <p className="bat-demo-footer__small mt-5 max-w-3xl">
-              {locale === "fr"
-                ? `${companyProfile.name} intervient sur des programmes résidentiels et mixtes depuis Alger, en coordonnant conception, exécution et livraison dans une même chaîne de production.`
-                : `${companyProfile.name} works on residential and mixed-use programmes from Algiers, coordinating design, execution, and delivery inside one production chain.`}
+              {pickLocaleText(locale, localeText(
+                `${companyProfile.name} works on residential and mixed-use programmes from Algiers, coordinating design, execution, and delivery inside one production chain.`,
+                `${companyProfile.name} intervient sur des programmes résidentiels et mixtes depuis Alger, en coordonnant conception, exécution et livraison dans une même chaîne de production.`,
+                `${companyProfile.name} تخدم على برامج سكنية ومختلطة من الجزائر، وتهندس التصميم والتنفيذ والتسليم داخل نفس السلسلة.`,
+                `${companyProfile.name} Cezayir'den konut ve karma kullanım programlarında tasarımı, uygulamayı ve teslimi tek bir zincirde koordine eder.`,
+              ))}
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <div className="grid gap-3">
               <p className="text-[11px] font-bold uppercase tracking-[0.26em] text-white/52">
-                {locale === "fr" ? "Bureau" : "Office"}
+                {pickLocaleText(locale, localeText('Office', 'Bureau', 'المكتب', 'Ofis'))}
               </p>
               <address className="not-italic text-[14px] leading-7 text-white/72">
                 <MapPin className="mb-3 h-4 w-4 text-white" />
@@ -793,7 +801,7 @@ function DemoFooter({
 
             <div className="grid gap-3">
               <p className="text-[11px] font-bold uppercase tracking-[0.26em] text-white/52">
-                {locale === "fr" ? "Navigation" : "Navigation"}
+                {pickLocaleText(locale, localeText('Navigation', 'Navigation', 'التنقل', 'Gezinme'))}
               </p>
               <div className="grid gap-2 text-[14px] leading-7 text-white/72">
                 <Link
@@ -813,9 +821,7 @@ function DemoFooter({
                   data-bat-cursor-card
                   data-bat-cursor-label="OPEN"
                 >
-                  {locale === "fr"
-                    ? "Rafraîchir la démonstration"
-                    : "Refresh demo"}
+                  {pickLocaleText(locale, localeText('Refresh demo', 'Rafraîchir la démonstration', 'تحديث العرض', 'Demoyu yenile'))}
                 </button>
                 {prev ? (
                   <button
@@ -1670,7 +1676,7 @@ export default function BatProjectDemo() {
               <img
                 ref={heroImageRef}
                 src={model.hero.image.src}
-                alt={model.hero.image.alt[locale]}
+                alt={localized(model.hero.image.alt, locale)}
                 className="bat-demo-hero__image"
                 data-bat-parallax-image
                 data-bat-view-transition-hero
@@ -1711,7 +1717,7 @@ export default function BatProjectDemo() {
                 <div className="bat-demo-hero__meta-row">
                   <div className="bat-demo-hero__tab">
                     <span>
-                      {locale === "fr" ? "Informations projet" : "Project info"}
+                      {pickLocaleText(locale, localeText('Project info', 'Informations projet', 'معلومات المشروع', 'Proje bilgileri'))}
                     </span>
                   </div>
                 </div>
@@ -1748,7 +1754,7 @@ export default function BatProjectDemo() {
             <div className="grid gap-10 pt-5 lg:grid-cols-[0.42fr_0.58fr] lg:gap-16 lg:pt-6">
               <div className="grid gap-4">
                 <p className="bat-demo-kicker" data-bat-text-fade>
-                  {locale === "fr" ? "Texte éditorial" : "Editorial text"}
+                  {pickLocaleText(locale, localeText('Editorial text', 'Texte éditorial', 'النص التحريري', 'Editoryal metin'))}
                 </p>
                 <h2
                   className="bat-demo-title max-w-[11ch]"
@@ -1798,7 +1804,7 @@ export default function BatProjectDemo() {
             <img
               ref={mediaImageRef}
               src={model.featureMedia.image.src}
-              alt={model.featureMedia.image.alt[locale]}
+              alt={localized(model.featureMedia.image.alt, locale)}
               className="bat-demo-media__image"
               data-bat-parallax-image
               decoding="async"
@@ -1831,12 +1837,12 @@ export default function BatProjectDemo() {
                   data-bat-text-reveal
                   data-bat-text-reveal-mode="line"
                 >
-                  <span className="bat-demo-text-mask">
-                    <span data-bat-text-reveal-item>
-                      {locale === "fr" ? "Projets liés" : "Related projects"}
+                    <span className="bat-demo-text-mask">
+                      <span data-bat-text-reveal-item>
+                      {pickLocaleText(locale, localeText('Related projects', 'Projets liés', 'مشاريع مرتبطة', 'İlgili projeler'))}
+                      </span>
                     </span>
-                  </span>
-                </h2>
+                  </h2>
               </div>
               <button
                 type="button"
@@ -1845,7 +1851,7 @@ export default function BatProjectDemo() {
                 data-bat-cursor-card
                 data-bat-cursor-label="SCROLL"
               >
-                {locale === "fr" ? "Retour aux projets" : "Back to projects"}
+                {pickLocaleText(locale, localeText('Back to projects', 'Retour aux projets', 'رجوع للمشاريع', 'Projelere dön'))}
                 <ArrowRight className="h-4 w-4" strokeWidth={2} />
               </button>
             </div>
@@ -1900,7 +1906,7 @@ export default function BatProjectDemo() {
                       >
                         <img
                           src={image.src}
-                          alt={image.alt[locale]}
+                          alt={localized(image.alt, locale)}
                           data-bat-parallax-image
                           data-bat-view-transition-hero
                           decoding="async"
@@ -1930,17 +1936,13 @@ export default function BatProjectDemo() {
               <div className="grid gap-10 border-t border-black/12 pt-5 lg:grid-cols-[0.42fr_0.58fr] lg:gap-16 lg:pt-6">
                 <div>
                   <p className="bat-demo-kicker">
-                    {locale === "fr"
-                      ? "Maîtrise technique"
-                      : "Technical mastery"}
+                    {pickLocaleText(locale, localeText('Technical mastery', 'Maîtrise technique', 'الإتقان التقني', 'Teknik ustalık'))}
                   </p>
                   <h2 className="bat-demo-title mt-4 max-w-[11ch]">
-                    {locale === "fr"
-                      ? "Repères et livrables"
-                      : "Markers and deliverables"}
+                    {pickLocaleText(locale, localeText('Markers and deliverables', 'Repères et livrables', 'المؤشرات والمخرجات', 'İşaretler ve teslimatlar'))}
                   </h2>
                   <p className="mt-5 max-w-[54ch] text-[15px] leading-8 text-black/76">
-                    {model.content.authority[locale]}
+                    {localized(model.content.authority, locale)}
                   </p>
                 </div>
 
@@ -1973,12 +1975,10 @@ export default function BatProjectDemo() {
               <div className="grid gap-10 border-t border-black/12 pt-5 lg:grid-cols-[0.42fr_0.58fr] lg:gap-16 lg:pt-6">
                 <div>
                   <p className="bat-demo-kicker">
-                    {locale === "fr"
-                      ? "Intervention de l’entreprise"
-                      : "Company delivery"}
+                    {pickLocaleText(locale, localeText('Company delivery', 'Intervention de l’entreprise', 'تنفيذ الشركة', 'Şirket teslimi'))}
                   </p>
                   <h2 className="bat-demo-title mt-4 max-w-[10ch]">
-                    {locale === "fr" ? "Rôle d’Igloo" : "Igloo role"}
+                    {pickLocaleText(locale, localeText('Igloo role', 'Rôle d’Igloo', 'دور إيغلو', 'Igloo rolü'))}
                   </h2>
                 </div>
                 <div className="grid gap-4">
@@ -2002,17 +2002,15 @@ export default function BatProjectDemo() {
               >
                 <div className="border-t border-black/12 pt-5 lg:pt-6">
                   <p className="bat-demo-kicker">
-                    {locale === "fr"
-                      ? "Questions fréquentes"
-                      : "Frequently asked questions"}
+                    {pickLocaleText(locale, localeText('Frequently asked questions', 'Questions fréquentes', 'الأسئلة المتكررة', 'Sık sorulan sorular'))}
                   </p>
                   <h2 className="bat-demo-title mt-4 max-w-[12ch]">
-                    {locale === "fr" ? "Questions utiles" : "Useful questions"}
+                    {pickLocaleText(locale, localeText('Useful questions', 'Questions utiles', 'أسئلة مفيدة', 'Faydalı sorular'))}
                   </h2>
                   <div className="mt-8 divide-y divide-black/10 border-y border-black/10">
                     {model.extraSections.faq.map((item, index) => (
                       <details
-                        key={item.question[locale]}
+                        key={localized(item.question, locale)}
                         className="group py-4 md:py-5"
                       >
                         <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-left text-[15px] leading-7 text-black/84">
@@ -2020,12 +2018,12 @@ export default function BatProjectDemo() {
                             <span className="text-[#111]">
                               {String(index + 1).padStart(2, "0")}.
                             </span>
-                            <span>{item.question[locale]}</span>
+                            <span>{localized(item.question, locale)}</span>
                           </span>
                           <ChevronDown className="h-4 w-4 shrink-0 text-black/52 transition-transform group-open:rotate-180" />
                         </summary>
                         <p className="max-w-4xl pb-2 pl-12 pt-4 text-[15px] leading-8 text-black/68">
-                          {item.answer[locale]}
+                          {localized(item.answer, locale)}
                         </p>
                       </details>
                     ))}
@@ -2042,21 +2040,19 @@ export default function BatProjectDemo() {
               >
                 <div className="border-t border-black/12 pt-5 lg:pt-6">
                   <p className="bat-demo-kicker">
-                    {locale === "fr"
-                      ? "Détails & localisation"
-                      : "Details & location"}
+                    {pickLocaleText(locale, localeText('Details & location', 'Détails & localisation', 'التفاصيل والموقع', 'Detaylar ve konum'))}
                   </p>
                   <div className="mt-6 grid gap-0 border border-black/10 md:grid-cols-2">
                     {model.extraSections.details.map((item, index) => (
                       <div
-                        key={`${item.label[locale]}-${item.value[locale]}`}
+                        key={`${localized(item.label, locale)}-${localized(item.value, locale)}`}
                         className={`border-black/10 px-4 py-4 ${index % 2 === 0 ? "md:border-r" : ""} ${index < model.extraSections.details.length - 2 ? "border-b" : ""}`}
                       >
                         <p className="text-[11px] uppercase tracking-[0.18em] text-black/40">
-                          {item.label[locale]}
+                          {localized(item.label, locale)}
                         </p>
                         <p className="mt-2 text-[15px] leading-7 text-black/82">
-                          {item.value[locale]}
+                          {localized(item.value, locale)}
                         </p>
                       </div>
                     ))}
@@ -2073,24 +2069,22 @@ export default function BatProjectDemo() {
               >
                 <div className="border-t border-black/12 pt-5 lg:pt-6">
                   <p className="bat-demo-kicker">
-                    {locale === "fr"
-                      ? "Programme & portée"
-                      : "Programme & scope"}
+                    {pickLocaleText(locale, localeText('Programme & scope', 'Programme & portée', 'البرنامج والنطاق', 'Program ve kapsam'))}
                   </p>
                   <div className="mt-6 grid gap-10 md:grid-cols-2">
                     {model.extraSections.programme.map((group) => (
-                      <div key={group.title[locale]} className="grid gap-3">
+                      <div key={localized(group.title, locale)} className="grid gap-3">
                         <h3 className="border-b border-black/20 pb-2 text-[14px] font-medium text-black/88">
-                          {group.title[locale]}
+                          {localized(group.title, locale)}
                         </h3>
                         <ul className="space-y-2">
                           {group.items.map((item) => (
                             <li
-                              key={item[locale]}
+                              key={localized(item, locale)}
                               className="flex gap-3 text-[14px] leading-7 text-black/72"
                             >
                               <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-black" />
-                              {item[locale]}
+                              {localized(item, locale)}
                             </li>
                           ))}
                         </ul>
@@ -2109,19 +2103,19 @@ export default function BatProjectDemo() {
               >
                 <div className="border-t border-black/12 pt-5 lg:pt-6">
                   <p className="bat-demo-kicker">
-                    {locale === "fr" ? "À proximité" : "What's around"}
+                    {pickLocaleText(locale, localeText("What's around", 'À proximité', 'وش كاين فالمحيط', 'Yakın çevre'))}
                   </p>
                   <h2 className="bat-demo-title mt-4 max-w-[10ch]">
-                    {locale === "fr" ? "Environnement" : "Surroundings"}
+                    {pickLocaleText(locale, localeText('Surroundings', 'Environnement', 'المحيط', 'Çevre'))}
                   </h2>
                   <ul className="mt-8 divide-y divide-black/10 border-y border-black/10">
                     {model.extraSections.nearby.items.map((item) => (
                       <li
-                        key={item[locale]}
+                        key={localized(item, locale)}
                         className="flex gap-3 py-3 text-[15px] leading-7 text-black/72"
                       >
                         <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-black" />
-                        {item[locale]}
+                        {localized(item, locale)}
                       </li>
                     ))}
                   </ul>
@@ -2136,7 +2130,7 @@ export default function BatProjectDemo() {
             >
               <div className="border-t border-black/12 pt-5 lg:pt-6">
                 <p className="bat-demo-kicker">
-                  {locale === "fr" ? "Projet livré" : "Project delivered"}
+                  {pickLocaleText(locale, localeText('Project delivered', 'Projet livré', 'المشروع مسلّم', 'Proje teslim edildi'))}
                 </p>
                 <h2 className="bat-demo-title mt-4 max-w-[14ch]">
                   {model.extraSections.closing.title}
@@ -2171,3 +2165,4 @@ export default function BatProjectDemo() {
     </main>
   );
 }
+

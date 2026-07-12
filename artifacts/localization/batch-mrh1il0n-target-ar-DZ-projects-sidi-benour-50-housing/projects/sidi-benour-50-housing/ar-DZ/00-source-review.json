@@ -1,0 +1,18 @@
+{
+  "jobId": "batch-mrh1il0n-target-ar-DZ-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-12T00:13:25.520Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0|content.faq.0.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

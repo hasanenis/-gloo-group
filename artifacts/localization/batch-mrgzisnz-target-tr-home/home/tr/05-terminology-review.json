@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgzisnz-target-tr-home",
+  "pageId": "home",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T23:17:36.050Z",
+  "status": "pass",
+  "issues": []
+}

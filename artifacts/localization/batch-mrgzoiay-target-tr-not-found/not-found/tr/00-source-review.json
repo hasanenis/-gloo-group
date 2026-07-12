@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgzoiay-target-tr-not-found",
+  "pageId": "not-found",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:22:02.853Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

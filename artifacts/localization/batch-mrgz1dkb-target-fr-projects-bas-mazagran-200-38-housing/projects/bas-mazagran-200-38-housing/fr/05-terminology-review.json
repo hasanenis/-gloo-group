@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgz1dkb-target-fr-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-11T23:04:03.407Z",
+  "status": "pass",
+  "issues": []
+}

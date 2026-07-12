@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrgz6g0o-target-fr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:07:59.867Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "Complexe immobilier mixte comprenant 202 logements en accession libre",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Spécifications techniques, exécution de la structure et contraintes du site pour le projet immobilier à usage mixte de Said Hamdine (Alger), comprenant 202 logements promotionnels libres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "Complexe immobilier mixte comprenant 202 logements en accession libre",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Spécifications techniques, exécution de la structure et contraintes du site pour le projet immobilier à usage mixte de Said Hamdine (Alger), comprenant 202 logements promotionnels libres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "said-hamdine-mixed-real-estate",
+      "draft": "Projet immobilier mixte à Saïd Hamdine",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "Complexe immobilier mixte comprenant 202 logements en accession libre",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE PROJECT",
+      "draft": "Projet à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A five-block mixed-use development in Said Hamdine, integrating 202 residential units on a steeply sloping site with one basement parking level and three commercial mezzanine floors.",
+      "draft": "Un projet immobilier à usage mixte composé de cinq bâtiments à Said Hamdine, intégrant 202 logements sur un terrain en forte pente, avec un niveau de parking en sous-sol et trois niveaux de mezzanines commerciales.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The scheme resolves complex site topography by stepping the massing, integrating active street-level commercial frontage with secure subterranean parking and residential circulation.",
+      "draft": "Le projet répond à la topographie complexe du site grâce à une volumétrie en gradins, tout en intégrant des commerces animant le rez-de-chaussée, un parking souterrain sécurisé et les circulations résidentielles.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "This urban development comprises five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and a single basement parking level. The structural execution was engineered to negotiate a steeply sloping site in Algiers, requiring specialized retaining structures and precise foundation engineering.",
+      "draft": "Ce projet d'aménagement urbain comprend cinq immeubles résidentiels totalisant 202 logements en promotion libre, érigés au-dessus de trois niveaux de mezzanines commerciales et d'un niveau de parking en sous-sol. La conception structurelle a été élaborée pour s'adapter à un terrain en forte pente à Alger, nécessitant la mise en œuvre d'ouvrages de soutènement spécifiques et une ingénierie de fondations de haute précision.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of works was executed under an all-trades package (TCE - Tout Corps d'État), including structural concrete, facade articulation, glazing systems, and integrated roads and utility networks (VRD - Voirie et Réseaux Divers) to manage site drainage and vehicular circulation.",
+      "draft": "Les travaux ont été réalisés dans le cadre d'un marché tous corps d'état (TCE), incluant le béton structurel, la conception des façades, les systèmes de vitrage ainsi que les aménagements de voirie et réseaux divers (VRD) pour la gestion du drainage du site et de la circulation des véhicules.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A mixed-use urban development defined by structural engineering, integrated circulation, and complex site-grading execution.",
+      "draft": "Un projet d'aménagement urbain à usage mixte caractérisé par l'ingénierie structurelle, une circulation intégrée et une mise en œuvre complexe du nivellement du site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Spécifications techniques, exécution de la structure et contraintes du site pour le projet immobilier à usage mixte de Said Hamdine (Alger), comprenant 202 logements promotionnels libres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Mixed real-estate complex",
+      "draft": "Complexe immobilier mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Mixed real-estate complex",
+      "draft": "Complexe immobilier mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Said Hamdine, Bir Mourad Rais, Algiers",
+      "draft": "Saïd Hamdine, Bir Mourad Raïs, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing units",
+      "draft": "Logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "202 free promotional housing units",
+      "draft": "202 logements promotionnels gratuits",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Blocks",
+      "draft": "Blocs",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "5 residential blocks",
+      "draft": "5 immeubles résidentiels",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Parking",
+      "draft": "Stationnement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "1 basement parking level",
+      "draft": "1 niveau de stationnement en sous-sol",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Site challenge",
+      "draft": "Défi lié au site",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Steeply sloping site; 3 commercial mezzanine levels",
+      "draft": "Terrain en forte pente ; 3 niveaux de mezzanine à usage commercial",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.label",
+      "source": "Completion",
+      "draft": "Achèvement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.value",
+      "source": "2023",
+      "draft": "2023",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "Five-block mixed-use structural delivery",
+      "draft": "Réalisation de la structure d'un ensemble à usage mixte de cinq bâtiments",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "202 free promotional housing units",
+      "draft": "202 logements promotionnels gratuits",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Three commercial mezzanine levels",
+      "draft": "Trois niveaux de mezzanine commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "One basement parking level",
+      "draft": "Un niveau de stationnement en sous-sol",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Nearby places",
+      "draft": "Lieux à proximité",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Local commercial district",
+      "draft": "Zone commerciale de proximité",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is Mixed Real Estate Complex with 202 Free Promotional Housing?",
+      "draft": "Qu'est-ce qu'un complexe immobilier mixte comprenant 202 logements en promotion libre ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The development consists of five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and one basement parking level.",
+      "draft": "Le projet se compose de cinq immeubles résidentiels comprenant 202 logements en accession libre, construits au-dessus de trois niveaux de mezzanines commerciales et d'un niveau de parking en sous-sol.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "How did the site topography influence the engineering?",
+      "draft": "Comment la topographie du site a-t-elle influencé la conception technique ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project brings together five residential blocks, 202 free promotional homes, three commercial entre-sols with mezzanine and one basement parking level on a steeply sloping Algerian site.",
+      "draft": "Le projet réunit cinq bâtiments résidentiels, 202 logements en promotion libre, trois locaux commerciaux en rez-de-chaussée avec mezzanine et un niveau de parking en sous-sol, sur un terrain algérien en forte pente.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What was the scope of the construction contract?",
+      "draft": "Quelle était la portée du contrat de construction ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The project was delivered under an all-trades package (TCE), encompassing structural concrete works, facade articulation, glazing, and integrated roads and utility networks (VRD).",
+      "draft": "Le projet a été réalisé dans le cadre d'un lot « tous corps d'état » (TCE), incluant les travaux de structure en béton, la conception des façades, la vitrerie ainsi que les travaux de voirie et réseaux divers (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Vue en surplomb d'une dalle en béton armé, montrant des ouvriers du bâtiment, une pompe à béton et des immeubles résidentiels en arrière-plan au coucher du soleil.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Structural slab reinforcement and rebar installation on site.",
+      "draft": "Ferraillage de dalle structurelle et pose d'armatures sur site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/02-sidi-yahia-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Low-angle view of two modern high-rise buildings featuring balconies, a mix of white, beige, and grey facades, and a reflective glass ground floor.",
+      "draft": "Vue en contre-plongée de deux tours modernes dotées de balcons, de façades mêlant le blanc, le beige et le gris, et d'un rez-de-chaussée en verre réfléchissant.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Facade articulation and glazed commercial frontage.",
+      "draft": "Articulation de la façade et devanture commerciale vitrée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/07-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Construction workers on a building site at sunset, preparing a concrete slab with a dense rebar grid and a concrete pump in the background.",
+      "draft": "Des ouvriers du bâtiment sur un chantier au coucher du soleil, préparant une dalle en béton dotée d'un maillage dense d'armatures, avec une pompe à béton en arrière-plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Reinforcement works for the concrete floor slab.",
+      "draft": "Travaux de renforcement de la dalle de sol en béton.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Vue aérienne d'un chantier montrant une vaste excavation dont le fond est constitué d'une dalle de béton. De nombreux ouvriers vêtus de gilets de sécurité orange disposent et lient méticuleusement des treillis d'armature pour les fondations du bâtiment. À l'arrière-plan, on distingue les parois abruptes et stabilisées de l'excavation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Foundation excavation and reinforcement grid installation.",
+      "draft": "Excavation des fondations et pose du treillis d'armature.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/03-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
+      "draft": "Un balcon moderne et soigné, doté d'un sol en carrelage imitation bois, d'une rambarde en verre, d'une petite table ronde et de trois chaises sombres. En arrière-plan, on aperçoit d'autres immeubles résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Residential balcony detailing with glass balustrades.",
+      "draft": "Détails de balcon résidentiel avec garde-corps en verre.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/05-sidi-yahia-5.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "View from below of a tall, modern residential building featuring balconies with glass railings and a reflective glass commercial ground floor, set against a clear blue sky with a faint moon. A green tree partially frames the right side.",
+      "draft": "Vue en contre-plongée d'un immeuble résidentiel moderne et élevé, doté de balcons aux garde-corps en verre et d'un rez-de-chaussée commercial en verre réfléchissant, se dressant sur fond de ciel bleu clair où l'on distingue une lune pâle. Un arbre au feuillage vert encadre partiellement le côté droit.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Elevation showing residential balconies and ground-level glazing.",
+      "draft": "Élévation montrant des balcons résidentiels et des surfaces vitrées au rez-de-chaussée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Vue en surplomb d'une dalle en béton armé, montrant des ouvriers du bâtiment, une pompe à béton et des immeubles résidentiels en arrière-plan au coucher du soleil.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Slab reinforcement works in progress.",
+      "draft": "Travaux de renforcement de la dalle en cours.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
+      "draft": "Des ouvriers du bâtiment vêtus de gilets de sécurité installent des armatures en acier pour les fondations d'un grand immeuble au fond d'une excavation profonde, avec des murs de soutènement visibles.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Foundation reinforcement within the excavated site.",
+      "draft": "Renforcement des fondations au sein de la zone excavée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/04-sidi-yahia-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "View of a clean, empty hallway with white walls, dark brown glossy tiled floor, and several open doors leading to other rooms, including a dining area and a bedroom.",
+      "draft": "Vue d'un couloir propre et vide aux murs blancs, doté d'un sol en carrelage brillant brun foncé et de plusieurs portes ouvertes menant à d'autres pièces, notamment un coin repas et une chambre.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Internal circulation and apartment hallway finishes.",
+      "draft": "Finitions des circulations intérieures et des couloirs d'appartements.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Vue aérienne d'un chantier montrant une vaste excavation dont le fond est constitué d'une dalle de béton. De nombreux ouvriers vêtus de gilets de sécurité orange disposent et lient méticuleusement des treillis d'armature pour les fondations du bâtiment. À l'arrière-plan, on distingue les parois abruptes et stabilisées de l'excavation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Substructure works and foundation reinforcement.",
+      "draft": "Travaux de sous-structure et renforcement des fondations.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/03-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
+      "draft": "Un balcon moderne et soigné, doté d'un sol en carrelage imitation bois, d'une rambarde en verre, d'une petite table ronde et de trois chaises sombres. En arrière-plan, on aperçoit d'autres immeubles résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Balcony detailing and external tiling.",
+      "draft": "Détails de balcon et carrelage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/06-sidi-yahia-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A multi-story building under construction, showing concrete slabs, columns, and red brick walls. Yellow debris chutes run down the side, and construction materials are visible on lower floors. A crane is in the background.",
+      "draft": "Un immeuble à plusieurs étages en construction, laissant apparaître des dalles en béton, des colonnes et des murs en briques rouges. Des goulottes d'évacuation des gravats jaunes descendent le long de la façade, et des matériaux de construction sont visibles aux étages inférieurs. Une grue se trouve en arrière-plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural frame execution and brickwork infill.",
+      "draft": "Réalisation de la structure et remplissage en maçonnerie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall building under construction, featuring a concrete skeleton, partially completed red brick walls, and yellow debris chutes, set against a cloudy sky.",
+      "draft": "Un grand immeuble en construction, présentant une ossature en béton, des murs en briques rouges partiellement achevés et des goulottes à gravats jaunes, se détachant sur un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Reinforced concrete frame and masonry envelope under construction.",
+      "draft": "Ossature en béton armé et enveloppe en maçonnerie en cours de construction.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projets/immobilier-mixte-said-hamdine/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Vue aérienne d'un chantier montrant une vaste excavation dont le fond est constitué d'une dalle de béton. De nombreux ouvriers vêtus de gilets de sécurité orange disposent et lient méticuleusement des treillis d'armature pour les fondations du bâtiment. À l'arrière-plan, on distingue les parois abruptes et stabilisées de l'excavation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Excavation and foundation slab preparation.",
+      "draft": "Excavation et préparation de la dalle de fondation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
+      "draft": "Des ouvriers du bâtiment vêtus de gilets de sécurité installent des armatures en acier pour les fondations d'un grand immeuble au fond d'une excavation profonde, avec des murs de soutènement visibles.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Substructure reinforcement installation.",
+      "draft": "Installation du renforcement de la sous-structure.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Vue en surplomb d'une dalle en béton armé, montrant des ouvriers du bâtiment, une pompe à béton et des immeubles résidentiels en arrière-plan au coucher du soleil.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Slab reinforcement and concrete pouring preparation.",
+      "draft": "Ferraillage de la dalle et préparation au coulage du béton.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "jobId": "batch-mrgy4pmw-target-fr-home",
+  "pageId": "home",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T22:38:39.579Z",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria"
+    },
+    {
+      "path": "seo.description",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria."
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria."
+    },
+    {
+      "path": "content.hero.eyebrow",
+      "source": "SARL Igloo Yapi Construction"
+    },
+    {
+      "path": "content.hero.title",
+      "source": "Structural Execution and All-Trades Delivery across Algeria"
+    },
+    {
+      "path": "content.hero.lead",
+      "source": "Delivering residential and mixed-use programmes with rigorous engineering control, site discipline, and long-term structural execution."
+    },
+    {
+      "path": "content.hero.primaryCta",
+      "source": "View portfolio"
+    },
+    {
+      "path": "content.hero.secondaryCta",
+      "source": "Contact our Algiers office"
+    },
+    {
+      "path": "content.hero.trustFacts.0.value",
+      "source": "Est. 2018"
+    },
+    {
+      "path": "content.hero.trustFacts.0.label",
+      "source": "Algiers-based"
+    },
+    {
+      "path": "content.hero.trustFacts.1.value",
+      "source": "11"
+    },
+    {
+      "path": "content.hero.trustFacts.1.label",
+      "source": "programmes"
+    },
+    {
+      "path": "content.hero.trustFacts.2.value",
+      "source": "2,500+"
+    },
+    {
+      "path": "content.hero.trustFacts.2.label",
+      "source": "housing units"
+    },
+    {
+      "path": "content.hero.trustFacts.3.value",
+      "source": "4"
+    },
+    {
+      "path": "content.hero.trustFacts.3.label",
+      "source": "wilayas"
+    },
+    {
+      "path": "content.hero.trustFacts.4.value",
+      "source": "Category 6"
+    },
+    {
+      "path": "content.hero.trustFacts.4.label",
+      "source": "qualification"
+    },
+    {
+      "path": "content.manifesto.eyebrow",
+      "source": "Contractual Rigour"
+    },
+    {
+      "path": "content.manifesto.title",
+      "source": "Coordinating complex trades to build durable urban frameworks"
+    },
+    {
+      "path": "content.manifesto.body",
+      "source": "From multi-family housing blocks and villas to active street-level commercial frontage, we manage the complete all-trades delivery (TCE) and roads and utility networks (VRD) to resolve complex site constraints."
+    },
+    {
+      "path": "content.manifesto.credential",
+      "source": "Professional Qualification and Classification Certificate, Category 6"
+    },
+    {
+      "path": "content.manifesto.metrics.0.value",
+      "source": "2018"
+    },
+    {
+      "path": "content.manifesto.metrics.0.label",
+      "source": "established"
+    },
+    {
+      "path": "content.manifesto.metrics.0.detail",
+      "source": "Operational base in Bir Khadem, Algiers"
+    },
+    {
+      "path": "content.manifesto.metrics.1.value",
+      "source": "11"
+    },
+    {
+      "path": "content.manifesto.metrics.1.label",
+      "source": "contracted works"
+    },
+    {
+      "path": "content.manifesto.metrics.1.detail",
+      "source": "Completed and active site operations"
+    },
+    {
+      "path": "content.manifesto.metrics.2.value",
+      "source": "2,500+"
+    },
+    {
+      "path": "content.manifesto.metrics.2.label",
+      "source": "units delivered"
+    },
+    {
+      "path": "content.manifesto.metrics.2.detail",
+      "source": "Residential and mixed-use programme scope"
+    },
+    {
+      "path": "content.manifesto.metrics.3.value",
+      "source": "4"
+    },
+    {
+      "path": "content.manifesto.metrics.3.label",
+      "source": "wilayas active"
+    },
+    {
+      "path": "content.manifesto.metrics.3.detail",
+      "source": "Operations in Tipaza, Algiers, Mostaganem, and Boumerdes"
+    },
+    {
+      "path": "content.featuredProjects.eyebrow",
+      "source": "Project Portfolio"
+    },
+    {
+      "path": "content.featuredProjects.title",
+      "source": "Verified physical delivery and structural execution"
+    },
+    {
+      "path": "content.featuredProjects.lead",
+      "source": "A record of multi-family housing, individual villas, commercial spaces, and integrated roads and utility networks (VRD) across our active regions."
+    },
+    {
+      "path": "content.process.eyebrow",
+      "source": "Project Lifecycle"
+    },
+    {
+      "path": "content.process.title",
+      "source": "Systematic execution from site constraints to handover"
+    },
+    {
+      "path": "content.process.lead",
+      "source": "Our technical workflow ensures that planning, structural engineering, and secondary trades progress under strict site discipline."
+    },
+    {
+      "path": "content.process.steps.0.id",
+      "source": "coordination"
+    },
+    {
+      "path": "content.process.steps.0.title",
+      "source": "Pre-Construction Coordination"
+    },
+    {
+      "path": "content.process.steps.0.body",
+      "source": "Aligning project quantities, structural requirements, and site constraints before deploying machinery and personnel to the field."
+    },
+    {
+      "path": "content.process.steps.1.id",
+      "source": "engineering"
+    },
+    {
+      "path": "content.process.steps.1.title",
+      "source": "Engineering & TCE Control"
+    },
+    {
+      "path": "content.process.steps.1.body",
+      "source": "Coordinating structural calculations, MEP routing, and secondary trades within a unified all-trades delivery (TCE) framework."
+    },
+    {
+      "path": "content.process.steps.2.id",
+      "source": "site"
+    },
+    {
+      "path": "content.process.steps.2.title",
+      "source": "Site Execution & Massing"
+    },
+    {
+      "path": "content.process.steps.2.body",
+      "source": "Managing daily concrete pours, structural framing, masonry, and trade sequencing under the direct supervision of our site managers."
+    },
+    {
+      "path": "content.process.steps.3.id",
+      "source": "monitoring"
+    },
+    {
+      "path": "content.process.steps.3.title",
+      "source": "Quality, Safety & Schedule Monitoring"
+    },
+    {
+      "path": "content.process.steps.3.body",
+      "source": "Verifying material compliance, structural tolerances, and safety protocols against contractual milestones and Algerian building codes."
+    },
+    {
+      "path": "content.process.steps.4.id",
+      "source": "handover"
+    },
+    {
+      "path": "content.process.steps.4.title",
+      "source": "Handover & Technical Closeout"
+    },
+    {
+      "path": "content.process.steps.4.body",
+      "source": "Finalising as-built documentation, commissioning building systems, and executing formal handover to the client."
+    },
+    {
+      "path": "content.about.eyebrow",
+      "source": "Corporate Profile"
+    },
+    {
+      "path": "content.about.title",
+      "source": "Technical capability and structured site management"
+    },
+    {
+      "path": "content.about.credential",
+      "source": "Professional Qualification & Classification Certificate - Category 6"
+    },
+    {
+      "path": "content.about.paragraphs.0",
+      "source": "Founded in 2018 and led by civil engineer Adem Talay, SARL Igloo Yapi Construction operates from Bir Khadem, Algiers, specialising in residential and mixed-use developments across Algeria."
+    },
+    {
+      "path": "content.about.paragraphs.1",
+      "source": "Holding a Category 6 Professional Qualification and Classification Certificate, the firm maintains an in-house technical office comprising civil engineers, architects, and site managers."
+    },
+    {
+      "path": "content.about.metrics.0.value",
+      "source": "2018"
+    },
+    {
+      "path": "content.about.metrics.0.label",
+      "source": "Year of establishment"
+    },
+    {
+      "path": "content.about.metrics.1.value",
+      "source": "11"
+    },
+    {
+      "path": "content.about.metrics.1.label",
+      "source": "Active and completed programmes"
+    },
+    {
+      "path": "content.about.metrics.2.value",
+      "source": "2,500+"
+    },
+    {
+      "path": "content.about.metrics.2.label",
+      "source": "Housing units under contract"
+    },
+    {
+      "path": "content.about.proofs.0.title",
+      "source": "Category 6 Contractor"
+    },
+    {
+      "path": "content.about.proofs.0.body",
+      "source": "Professional Qualification and Classification Certificate, Category 6."
+    },
+    {
+      "path": "content.about.proofs.1.title",
+      "source": "Multidisciplinary Team"
+    },
+    {
+      "path": "content.about.proofs.1.body",
+      "source": "Building manager, three engineers, two architects, construction managers, HR, accountant, buyer and site teams."
+    },
+    {
+      "path": "content.about.proofs.2.title",
+      "source": "Residential & Mixed-use Expertise"
+    },
+    {
+      "path": "content.about.proofs.2.body",
+      "source": "Housing, villas, commercial premises, roads, networks, services and exterior works."
+    },
+    {
+      "path": "content.footprint.eyebrow",
+      "source": "Geographical Footprint"
+    },
+    {
+      "path": "content.footprint.title",
+      "source": "Regional operations across northern Algeria"
+    },
+    {
+      "path": "content.footprint.lead",
+      "source": "Eleven projects distributed across four key wilayas, establishing a strong operational presence in Algiers, Tipaza, Boumerdes, and Mostaganem."
+    },
+    {
+      "path": "content.footprint.selectedLabel",
+      "source": "Selected programme"
+    },
+    {
+      "path": "content.footprint.openProject",
+      "source": "View technical details"
+    },
+    {
+      "path": "content.footprint.statusCompleted",
+      "source": "Completed"
+    },
+    {
+      "path": "content.footprint.statusInProgress",
+      "source": "In progress"
+    },
+    {
+      "path": "content.footprint.stats.0.value",
+      "source": "11"
+    },
+    {
+      "path": "content.footprint.stats.0.label",
+      "source": "documented sites"
+    },
+    {
+      "path": "content.footprint.stats.1.value",
+      "source": "4"
+    },
+    {
+      "path": "content.footprint.stats.1.label",
+      "source": "active wilayas"
+    },
+    {
+      "path": "content.footprint.stats.2.value",
+      "source": "1"
+    },
+    {
+      "path": "content.footprint.stats.2.label",
+      "source": "coastal delivery corridor"
+    },
+    {
+      "path": "content.footer.eyebrow",
+      "source": "Project Inquiries"
+    },
+    {
+      "path": "content.footer.title",
+      "source": "Discuss your next construction programme"
+    },
+    {
+      "path": "content.footer.lead",
+      "source": "Consult our Algiers-based engineering and site management teams for residential, commercial, and infrastructure works."
+    },
+    {
+      "path": "content.footer.emailLabel",
+      "source": "Email technical office"
+    },
+    {
+      "path": "content.footer.phoneLabel",
+      "source": "Call Algiers headquarters"
+    },
+    {
+      "path": "content.footer.proofLine",
+      "source": "Bir Khadem, Algiers · Category 6 Certified Contractor · All-Trades Delivery (TCE) & VRD"
+    }
+  ]
+}

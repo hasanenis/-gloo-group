@@ -1,0 +1,31 @@
+{
+  "jobId": "20260712215500-rouiba-source-35flash-final",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "locale": "en",
+  "sourceRevision": "v1-18192590",
+  "generatedAt": "2026-07-11T21:29:31.311Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "unsupported-enrichment",
+      "phrase": "independent service connections",
+      "message": "Candidate introduces a technical, ownership or performance claim not present in the English source."
+    },
+    {
+      "id": "content.faq.2.answer",
+      "severity": "blocker",
+      "type": "unsupported-enrichment",
+      "phrase": "drainage",
+      "message": "Candidate introduces a technical, ownership or performance claim not present in the English source."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here."
+}

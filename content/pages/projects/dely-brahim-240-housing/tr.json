@@ -1,0 +1,190 @@
+{
+  "pageId": "projects/dely-brahim-240-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-c9a1cef8",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-7086186e2467b641",
+  "status": "approved",
+  "updatedAt": "2026-07-12T15:55:00+03:00",
+  "seo": {
+    "title": "Ticari Alanlı 240 LPL Konut Projesi | Dely Brahim",
+    "description": "Bois des Cars, Dely Brahim’de yer alan; ticari alanlar, bodrum ve ara kat otoparkları içeren 240 konutluk LPL projesi.",
+    "socialTitle": "Dely Brahim 240 LPL Konut Projesi",
+    "socialDescription": "240 konutu, üç ticari katı ve çok katlı otopark düzenini bir araya getiren yüksek katlı karma kullanım projesi."
+  },
+  "content": {
+    "slug": "dely-brahim-240-housing",
+    "title": "Dely Brahim 240 LPL Konut Projesi",
+    "eyebrow": "KONUT, TİCARET VE OTOPARK",
+    "summary": [
+      "Bois des Cars, Dely Brahim’de yer alan yüksek katlı proje; F3, F4 ve F5 tiplerinde toplam 240 serbest promosyonel konuttan oluşmaktadır.",
+      "Projede teraslı üç ticari katın yanı sıra otopark olarak kullanılan üç bodrum ve üç ara kat bulunmaktadır."
+    ],
+    "description": [
+      "Ticari alanlar zemin kattan 2. kata kadar üç seviyede düzenlenmiştir. Konutlar ise proje verilerine göre 3. kattan 33. kata kadar, her katta 8 daire olacak şekilde dağıtılmıştır.",
+      "Bu katmanlı düzen; konutları, ticari alanları ve farklı seviyelerdeki otoparkları tek bir yapı içerisinde bir araya getirmektedir."
+    ],
+    "authority": "Konut, ticaret ve otopark işlevlerini açık bir düşey organizasyon içinde bir araya getiren yüksek katlı karma kullanım projesi.",
+    "seo": "Bois des Cars, Dely Brahim’de yer alan; üç ticari kat, üç bodrum ve üç ara otopark katı içeren 240 LPL konut projesi.",
+    "meta": [
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari alanlı serbest promosyonel konut projesi"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari alanlı serbest promosyonel konut projesi"
+      },
+      {
+        "label": "Konum",
+        "value": "Bois des Cars, Dely Brahim, Cezayir"
+      },
+      {
+        "label": "Konut Sayısı",
+        "value": "240 konut"
+      },
+      {
+        "label": "Konut Dağılımı",
+        "value": "3. kattan 33. kata kadar, her katta 8 daire"
+      },
+      {
+        "label": "Ticari Alanlar",
+        "value": "Zemin kattan 2. kata kadar teraslı 3 seviye"
+      },
+      {
+        "label": "Otopark",
+        "value": "3 bodrum ve 3 ara otopark katı"
+      },
+      {
+        "label": "Durum",
+        "value": "Yapımı devam ediyor"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Bileşenleri",
+        "items": [
+          "F3, F4 ve F5 tiplerinde 240 serbest promosyonel konut",
+          "3. kattan 33. kata kadar, her katta 8 daire",
+          "Zemin kattan 2. kata kadar teraslı 3 ticari kat",
+          "Otopark olarak kullanılan 3 bodrum ve 3 ara kat"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Konum",
+      "items": [
+        "Bois des Cars, Dely Brahim, Cezayir"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Dely Brahim projesi neleri içeriyor?",
+        "answer": "Proje; 240 serbest promosyonel konut, teraslı üç ticari kat, üç bodrum ve üç ara otopark katından oluşmaktadır."
+      },
+      {
+        "question": "Konutlar katlara nasıl dağıtılıyor?",
+        "answer": "F3, F4 ve F5 tiplerindeki konutlar 3. kattan 33. kata kadar, her katta 8 daire olacak şekilde düzenlenmiştir."
+      },
+      {
+        "question": "Ticari alanlar ve otopark nasıl düzenlenmiştir?",
+        "answer": "Ticari alanlar zemin kattan 2. kata kadar üç seviyede yer alır. Otoparklar ise üç bodrum ve üç ara kata dağıtılmıştır."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Dely Brahim’de planlanan konut ve ticaret kulesinin gece mimari görselleştirmesi.",
+          "caption": "Konutları ve ticari alanları gösteren gece 3D proje görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Zemin kattaki ticari alanlar ile üst katlardaki konutları gösteren yakın plan mimari görselleştirme.",
+          "caption": "Ticari bölüm ve konut katlarının 3D görünümü."
+        }
+      ],
+      "intro": {
+        "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+        "alt": "Dely Brahim’deki 240 LPL konut projesinin genel mimari görselleştirmesi.",
+        "caption": "Projenin dikey organizasyonunu gösteren genel 3D görünüm."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Ana cepheyi ve cephe aydınlatmasını gösteren mimari görselleştirme.",
+          "caption": "Ana cephenin 3D tasarım görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Ticari bölüm ile konut kulesi arasındaki ilişkiyi gösteren 3D görünüm.",
+          "caption": "Ticari alanlar ve konut katlarının birlikte organizasyonu."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Kulenin kentsel çevre içindeki genel mimari görünümü.",
+          "caption": "Projenin genel kütle düzeni."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Ticari vitrinleri ve bina girişlerini yaya seviyesinden gösteren mimari görünüm.",
+          "caption": "Cadde seviyesindeki ticari alanlar ve girişler."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Konut cephesinin düşey çizgilerini gösteren 3D mimari görünüm.",
+          "caption": "Konut cephesinin mimari kompozisyonu."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Alt kattaki ticari alanlar ile üstteki konutları gösteren mimari görselleştirme.",
+          "caption": "Ticari ve konut işlevleri arasındaki ilişki."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Balkonları ve dış cephe düzenini gösteren genel görünüm.",
+          "caption": "Cephe ve balkonların genel düzeni."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Ticari vitrinleri ve yaya girişlerini gösteren cadde seviyesi görünümü.",
+          "caption": "Bina girişleri ve ticari alanlar."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Projenin mimari görselleştirmesi; güncel gerçek fotoğraf ulaştığında bu görsel değiştirilecektir.",
+          "caption": "3D proje görünümü — gerçek fotoğraf eklenecek."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Cepheye ait 3D görselleştirme; şantiye fotoğrafları ulaştığında galeri güncellenecektir.",
+          "caption": "Mimari görselleştirme — gerçek fotoğraflar beklenecek."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Projenin öngörülen dış görünümünü gösteren genel mimari görselleştirme.",
+          "caption": "Dış cephenin 3D proje görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Ticari bölüm ve konut katlarını gösteren 3D proje görünümü.",
+          "caption": "Proje görselleştirmesi — fotoğraf galerisi tamamlanacak."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Konut, ticari ve otopark katlarını entegre eden 33 katlı çok amaçlı kule."
+        }
+      ]
+    }
+  }
+}

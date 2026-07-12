@@ -1,0 +1,21 @@
+{
+  "pageId": "contact",
+  "locale": "fr",
+  "sourceRevision": "v1-afb518cf",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "6381c8f3b2f879bb",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:04.927Z",
+  "seo": {
+    "title": "Contact | SARL Igloo Yapi Construction",
+    "description": "Contactez notre siège social à Birkhadem pour soumettre l’implantation de vos sites, les exigences de vos programmes et vos dossiers techniques pour étude.",
+    "socialTitle": "Contact | SARL Igloo Yapi Construction",
+    "socialDescription": "Contactez notre siège social à Birkhadem pour soumettre l’implantation de vos sites, les exigences de vos programmes et vos dossiers techniques pour étude."
+  },
+  "content": {
+    "eyebrow": "Contact",
+    "heading": "Initier une consultation de projet",
+    "lead": "Prenez contact avec notre équipe technique à Birkhadem. Soumettez les coordonnées de votre site, votre programme de développement ainsi que les plans et pièces écrites disponibles afin de lancer notre processus interne d’ingénierie et d’estimation."
+  }
+}

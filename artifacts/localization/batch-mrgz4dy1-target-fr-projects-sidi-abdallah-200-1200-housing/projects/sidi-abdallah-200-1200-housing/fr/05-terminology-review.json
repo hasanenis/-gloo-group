@@ -1,0 +1,35 @@
+{
+  "jobId": "batch-mrgz4dy1-target-fr-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-11T23:06:23.917Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 1,200"
+    },
+    {
+      "id": "content.details.2.value",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 1,200"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 1,200"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 1,200"
+    }
+  ]
+}

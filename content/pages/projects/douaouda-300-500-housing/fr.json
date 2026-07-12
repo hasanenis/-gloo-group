@@ -1,0 +1,195 @@
+{
+  "pageId": "projects/douaouda-300-500-housing",
+  "locale": "fr",
+  "sourceRevision": "v1-f1eb4962",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-cfe2fdabd1bc38bd",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:28.894Z",
+  "seo": {
+    "title": "300/500 Logements promotionnels aidés (LPA) | Douaouda",
+    "description": "Découvrez la galerie, les détails techniques et les notes d'implantation du projet de 300/500 Logements Promotionnels Aidés. Un modèle de réalisation résidentiel et mixte.",
+    "socialTitle": "300/500 Logements promotionnels aidés (LPA) | Douaouda",
+    "socialDescription": "Découvrez la galerie, les détails techniques et les notes d'implantation du projet de 300/500 Logements Promotionnels Aidés. Un modèle de réalisation résidentiel et mixte."
+  },
+  "content": {
+    "slug": "douaouda-300-500-housing",
+    "title": "300/500 Logements Promotionnels Aidés",
+    "eyebrow": "PROGRAMME RÉSIDENTIEL ET COMMERCIAL",
+    "summary": [
+      "La phase achevée de 300 logements sur un total de 500 d'un programme de Logements Promotionnels Aidés (LPA) à Douaouda, comprenant des blocs résidentiels en R+8 (rez-de-chaussée plus 8 étages), des locaux commerciaux intégrés et des travaux de voirie et réseaux divers (VRD).",
+      "Le projet de Douaouda intègre la tranche finalisée de 300 logements sur un total de 500 logements promotionnels aidés dans un cadre côtier, associant des habitations familiales à des locaux professionnels et des aménagements extérieurs structurés."
+    ],
+    "description": [
+      "Le projet a été exécuté dans le cadre d'un contrat en tous corps d'état (TCE), englobant les travaux de structure en béton armé, le second œuvre, la coordination des corps d'état techniques et les finitions extérieures.",
+      "Les blocs en R+8 sont configurés avec des typologies d'appartements F3 et F4. Les espaces commerciaux au rez-de-chaussée créent un front de rue actif, intégrant les commerces de proximité et les services directement au tissu résidentiel."
+    ],
+    "authority": "Un ensemble résidentiel de plusieurs étages réalisé grâce à une ingénierie structurelle unifiée, l'intégration des corps d'état techniques et des travaux de voirie et réseaux divers.",
+    "seo": "Découvrez la galerie, les détails techniques et les notes d'implantation du projet de 300/500 Logements Promotionnels Aidés. Un modèle de réalisation résidentiel et mixte.",
+    "meta": [
+      {
+        "label": "Maître d'ouvrage",
+        "value": "AADL"
+      },
+      {
+        "label": "Type de projet",
+        "value": "Logement Promotionnel Aidé (LPA)"
+      }
+    ],
+    "details": [
+      {
+        "label": "Type de projet",
+        "value": "Logement Promotionnel Aidé (LPA)"
+      },
+      {
+        "label": "Localisation",
+        "value": "Douaouda, Tipaza, Algérie"
+      },
+      {
+        "label": "Programme",
+        "value": "300 logements réalisés sur un total de 500 dans le cadre du plan de masse"
+      },
+      {
+        "label": "Année de livraison",
+        "value": "2019"
+      },
+      {
+        "label": "Consistance des travaux",
+        "value": "Réalisation en tous corps d'état (TCE) et voirie et réseaux divers (VRD)"
+      },
+      {
+        "label": "Maître d'ouvrage",
+        "value": "AADL"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Programme du projet",
+        "items": [
+          "300 logements réalisés sur un total de 500 dans le cadre du programme LPA",
+          "Blocs en R+8 (rez-de-chaussée plus 8 étages) avec des configurations F3 et F4",
+          "Locaux commerciaux et professionnels au rez-de-chaussée",
+          "Réalisation en tous corps d'état (TCE) incluant le génie civil, la structure et les VRD"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Implantation du site",
+      "items": [
+        "Raccordement direct aux infrastructures routières régionales",
+        "Orientation côtière avec vue sur la mer Méditerranée"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Quelle est la consistance du projet de 300/500 Logements Promotionnels Aidés ?",
+        "answer": "Il s'agit de la phase achevée de 300 logements sur un total de 500 d'un programme de Logements Promotionnels Aidés (LPA) à Douaouda, comprenant des blocs résidentiels en R+8 et des locaux commerciaux intégrés."
+      },
+      {
+        "question": "Quelles prestations de construction ont été fournies pour ce projet ?",
+        "answer": "Le projet a été exécuté dans le cadre d'un contrat en tous corps d'état (TCE), couvrant les structures en béton armé, le second œuvre, les corps d'état techniques ainsi que les travaux de voirie et réseaux divers (VRD)."
+      },
+      {
+        "question": "Qui est le maître d'ouvrage de ce programme de logements ?",
+        "answer": "Le projet a été réalisé pour le compte de l'Agence Nationale de l'Amélioration et du Développement du Logement (AADL) dans le cadre du dispositif d'aide publique au logement promotionnel."
+      },
+      {
+        "question": "Comment sont configurés les blocs résidentiels ?",
+        "answer": "Les blocs résidentiels sont configurés en R+8 (rez-de-chaussée plus 8 étages) et comprennent des appartements de typologies F3 et F4, complétés par des locaux commerciaux au rez-de-chaussée."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Vue d'ensemble d'un grand chantier de construction avec plusieurs bâtiments résidentiels en béton de plusieurs étages à différents stades de réalisation structurelle. Une grue à tour s'élève en arrière-plan au-dessus des bâtiments. Le sol est en terre argileuse et le ciel est couvert.",
+          "caption": "Travaux de structure en béton armé en cours sur les blocs résidentiels."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et de la végétation. Au second plan, une haute structure en béton gris avec des coffrages rouges au sommet, et à sa droite, un autre bâtiment de plusieurs étages avec ossature en béton et remplissage en briques rouges. Une grande grue à tour bleue avec l'inscription 'UNEN COMANSA' visible sur sa flèche traverse le ciel. Sous la grue, un camion pompe à béton et deux camions malaxeurs sont visibles. À l'arrière-plan, la mer bleue se dessine.",
+          "caption": "Travaux d'ossature structurelle et de maçonnerie de remplissage en cours, illustrant l'implantation côtière du site."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+        "alt": "Vue aérienne montrant plusieurs grands blocs d'appartements de couleur beige avec des toits bruns, entourés de terrains non revêtus et de matériaux de construction. Des bâtiments plus anciens et plus petits sont au premier plan, et une étendue d'eau est visible à l'horizon sous un ciel nuageux.",
+        "caption": "Vue aérienne des blocs résidentiels achevés en R+8 à Douaouda."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Plusieurs bâtiments résidentiels de plusieurs étages avec des façades claires et des accents bruns, vus d'un angle bas. Le premier plan montre un chantier en terre avec des tas de sable, des briques et des sacs blancs. Un ciel couvert est visible au-dessus des bâtiments.",
+          "caption": "Traitement des façades et travaux de finitions extérieures sur les blocs achevés."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Vue d'ensemble d'un grand chantier de construction avec plusieurs bâtiments résidentiels en béton de several étages à différents stades de réalisation structurelle. Une grue à tour s'élève en arrière-plan au-dessus des bâtiments. Le sol est en terre argileuse et le ciel est couvert.",
+          "caption": "Travaux de structure en béton armé en cours sur les blocs résidentiels."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et de la végétation. Au second plan, une haute structure en béton gris avec des coffrages rouges au sommet, et à sa droite, un autre bâtiment de plusieurs étages avec ossature en béton et remplissage en briques rouges. Une grande grue à tour bleue avec l'inscription 'UNEN COMANSA' visible sur sa flèche traverse le ciel. Sous la grue, un camion pompe à béton et deux camions malaxeurs sont visibles. À l'arrière-plan, la mer bleue se dessine.",
+          "caption": "Travaux d'ossature structurelle et de maçonnerie de remplissage en cours, illustrant l'implantation côtière du site."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Vue aérienne montrant plusieurs grands blocs d'appartements de couleur beige avec des toits bruns, entourés de terrains non revêtus et de matériaux de construction. Des bâtiments plus anciens et plus petits sont au premier plan, et une étendue d'eau est visible à l'horizon sous un ciel nuageux.",
+          "caption": "Vue aérienne des blocs résidentiels achevés en R+8 à Douaouda."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+          "alt": "Vue de plusieurs bâtiments d'appartements résidentiels modernes de plusieurs étages avec des façades claires et des accents bruns, sous un ciel couvert. Des matériaux de construction tels que des briques, du sable et des sacs blancs sont visibles au premier plan.",
+          "caption": "Blocs résidentiels achevés avant le nettoyage final du site et les aménagements extérieurs."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et de la végétation. Au second plan, une haute structure en béton gris avec des coffrages rouges au sommet, et à sa droite, un autre bâtiment de plusieurs étages avec ossature en béton et remplissage en briques rouges. Une grande grue à tour bleue avec l'inscription 'UNEN COMANSA' visible sur sa flèche traverse le ciel. Sous la grue, un camion pompe à béton et deux camions malaxeurs sont visibles. À l'arrière-plan, la mer bleue se dessine.",
+          "caption": "Travaux d'ossature structurelle et de maçonnerie de remplissage en cours, illustrant l'implantation côtière du site."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Vue d'ensemble d'un grand chantier de construction avec plusieurs bâtiments résidentiels en béton de plusieurs étages à différents stades de réalisation structurelle. Une grue à tour s'élève en arrière-plan au-dessus des bâtiments. Le sol est en terre argileuse et le ciel est couvert.",
+          "caption": "Travaux de structure en béton armé en cours sur les blocs résidentiels."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Vue aérienne montrant plusieurs grands blocs d'appartements de couleur beige avec des toits bruns, entourés de terrains non revêtus et de matériaux de construction. Des bâtiments plus anciens et plus petits sont au premier plan, et une étendue d'eau est visible à l'horizon sous un ciel nuageux.",
+          "caption": "Vue aérienne des blocs résidentiels achevés en R+8 à Douaouda."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et de la végétation. Au second plan, une haute structure en béton gris avec des coffrages rouges au sommet, et à sa droite, un autre bâtiment de several étages avec ossature en béton et remplissage en briques rouges. Une grande grue à tour bleue avec l'inscription 'UNEN COMANSA' visible sur sa flèche traverse le ciel. Sous la grue, un camion pompe à béton et deux camions malaxeurs sont visibles. À l'arrière-plan, la mer bleue se dessine.",
+          "caption": "Travaux d'ossature structurelle et de maçonnerie de remplissage en cours, illustrant l'implantation côtière du site."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Vue d'ensemble d'un grand chantier de construction avec plusieurs bâtiments résidentiels en béton de plusieurs étages à différents stades de réalisation structurelle. Une grue à tour s'élève en arrière-plan au-dessus des bâtiments. Le sol est en terre argileuse et le ciel est couvert.",
+          "caption": "Travaux de structure en béton armé en cours sur les blocs résidentiels."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Vue aérienne montrant plusieurs grands blocs d'appartements de couleur beige avec des toits bruns, entourés de terrains non revêtus et de matériaux de construction. Des bâtiments plus anciens et plus petits sont au premier plan, et une étendue d'eau est visible à l'horizon sous un ciel nuageux.",
+          "caption": "Vue aérienne des blocs résidentiels achevés en R+8 à Douaouda."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Plusieurs bâtiments résidentiels de plusieurs étages avec des façades claires et des accents bruns, vus d'un angle bas. Le premier plan montre un chantier en terre avec des tas de sable, des briques et des sacs blancs. Un ciel couvert est visible au-dessus des bâtiments.",
+          "caption": "Traitement des façades et travaux de finitions extérieures sur les blocs achevés."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Vue d'ensemble d'un grand chantier de construction avec plusieurs bâtiments résidentiels en béton de plusieurs étages à différents stades de réalisation structurelle. Une grue à tour s'élève en arrière-plan au-dessus des bâtiments. Le sol est en terre argileuse et le ciel est couvert.",
+          "caption": "Travaux de structure en béton armé en cours sur les blocs résidentiels."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrgy7iq6-target-fr-contact",
+  "pageId": "contact",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T22:40:50.319Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "Contact | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "Contactez notre siège social à Birkhadem pour soumettre les emplacements des sites, les exigences du programme et la documentation technique en vue de l'évaluation du projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "Contact | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "Contactez notre siège social à Birkhadem pour soumettre les emplacements des sites, les exigences du programme et la documentation technique en vue de l'évaluation du projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Contact",
+      "draft": "Contact",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Initiate a project consultation.",
+      "draft": "Lancer une consultation de projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Connect with our technical team in Birkhadem. Submit your site coordinates, development programme and available design documentation to initiate our internal engineering and estimation review.",
+      "draft": "Prenez contact avec notre équipe technique à Birkhadem. Transmettez-nous les coordonnées du site, le programme de développement et la documentation de conception disponible afin de lancer notre examen interne d'ingénierie et d'estimation.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

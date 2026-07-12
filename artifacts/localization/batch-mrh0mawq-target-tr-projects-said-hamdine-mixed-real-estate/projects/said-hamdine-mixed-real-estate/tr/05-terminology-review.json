@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrh0mawq-target-tr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:48:19.361Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content",
+      "severity": "blocker",
+      "type": "project-override",
+      "message": "Required project fact is missing: dik eğimli arazi; 1 bodrum otopark katı ve asma katlı 3 ticari ara kat"
+    }
+  ]
+}

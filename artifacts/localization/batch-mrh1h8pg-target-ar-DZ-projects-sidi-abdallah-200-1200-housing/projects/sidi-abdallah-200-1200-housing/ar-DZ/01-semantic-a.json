@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh1h8pg-target-ar-DZ-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-12T00:12:22.806Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 وحدة سكنية ضمن برنامج السكن الترقوي العمومي (LPP) | سيدي عبد الله",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية وملاحظات الموقع الخاصة بمشروع الإسكان العام الترويجي (200/1200). يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة المصدرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 وحدة سكنية ضمن برنامج السكن الترقوي العمومي (LPP) | سيدي عبد الله",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية وملاحظات الموقع الخاصة بمشروع الإسكان العام الترويجي (200/1200). يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة المصدرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "sidi-abdallah-200-1200-housing",
+      "draft": "مشروع سيدي عبد الله السكني (200 - 1200 وحدة سكنية)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "200/1200 Public Promotional Housing (LPP)",
+      "draft": "200/1200 وحدة سكنية ضمن برنامج السكن الترقوي العمومي (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "مشروع سكني متعدد الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of 200 residential units within the wider 1,200-home Sidi Abdallah master programme, integrating public promotional housing (LPP) with ground-floor commercial and professional premises.",
+      "draft": "تسليم 200 وحدة سكنية ضمن البرنامج الشامل في \"سيدي عبد الله\" الذي يضم 1200 وحدة، حيث يجمع المشروع بين السكن الترقوي العمومي (LPP) ومساحات تجارية ومهنية في الطوابق الأرضية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The development introduces high-density residential blocks configured as ground floor plus 9 upper floors (R+9), accommodating F3 and F4 apartment layouts alongside active street-level commercial frontage.",
+      "draft": "يضم المشروع مجمعات سكنية عالية الكثافة تتألف من طابق أرضي وتسعة طوابق علوية (R+9)، وتوفر شققاً بتصاميم (F3) و(F4) إلى جانب واجهات تجارية نشطة تطل على الشارع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The construction scope focused on the execution of secondary trades and interior fit-out works for the dense residential blocks. Facade articulation, internal circulation cores, and technical services were coordinated to align with the master plan's structural and spatial constraints.",
+      "draft": "تركز نطاق أعمال البناء على تنفيذ الأعمال التكميلية وتجهيز المساحات الداخلية لمجمعات الوحدات السكنية المتقاربة؛ حيث جرى تنسيق تصميم الواجهات، ومحاور الحركة الداخلية، والخدمات الفنية لتتوافق مع القيود الهيكلية والمكانية للمخطط العام.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "By integrating ground-floor retail and professional spaces directly beneath the R+9 residential massing, the architectural layout establishes a functional mixed-use profile that supports local economic activity within the urban pole.",
+      "draft": "من خلال دمج مساحات مخصصة لتجارة التجزئة والأنشطة المهنية في الطابق الأرضي -مباشرةً أسفل الكتلة السكنية المكونة من تسعة طوابق فوق الأرضي (R+9)- يُرسي التصميم المعماري نموذجاً وظيفياً متعدد الاستخدامات يدعم النشاط الاقتصادي المحلي داخل القطب العمراني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A public housing delivery where secondary trades, service premises, and R+9 density work together to support a new urban district.",
+      "draft": "مشروع للإسكان العام تتضافر فيه الأنشطة التجارية الثانوية ومرافق الخدمات والكثافة البنائية (بارتفاع 9 طوابق فوق الطابق الأرضي) لدعم حي حضري جديد.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية وملاحظات الموقع الخاصة بمشروع الإسكان العام الترويجي (200/1200). يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة المصدرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Programme Type",
+      "draft": "نوع البرنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "السكن الترقوي العمومي (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Programme Type",
+      "draft": "نوع البرنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "السكن الترقوي العمومي (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Sidi Abdallah, Mahelma, Algiers",
+      "draft": "سيدي عبد الله، ماهلما، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme Scope",
+      "draft": "نطاق البرنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "200 homes within a 1,200-home master plan",
+      "draft": "200 وحدة سكنية ضمن مخطط رئيسي يضم 1200 وحدة سكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion Year",
+      "draft": "سنة الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2022",
+      "draft": "2022",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Building Configuration",
+      "draft": "تكوين المبنى",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 9 upper floors (R+9)",
+      "draft": "طابق أرضي و9 طوابق علوية (R+9)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Scope",
+      "draft": "نطاق العقد",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Secondary trades (excluding roads and utility networks / VRD)",
+      "draft": "الأعمال الثانوية (باستثناء الطرق وشبكات المرافق)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "200 LPP residential units delivered within a 1,200-home master plan",
+      "draft": "تسليم 200 وحدة سكنية من نوع LPP ضمن مخطط رئيسي يضم 1200 منزل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "R+9 residential blocks containing F3 and F4 apartment layouts",
+      "draft": "مباني سكنية مكونة من طابق أرضي و9 طوابق علوية، تضم شققاً بتصاميم F3 وF4.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial and professional premises",
+      "draft": "مساحات تجارية ومهنية في الطابق الأرضي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2022 in compliance with national technical standards",
+      "draft": "أُنجز في عام 2022 بما يتوافق مع المعايير الفنية الوطنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 200/1200 LPP housing project?",
+      "draft": "ما هو نطاق مشروع الإسكان LPP (200/1200)؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It comprises the delivery of 200 public promotional housing (LPP) units, configured with ground-floor commercial spaces, within a larger 1,200-unit urban development in Sidi Abdallah.",
+      "draft": "يتضمن المشروع تسليم 200 وحدة سكنية ضمن برنامج السكن الترقوي العمومي (LPP)، مجهزة بمساحات تجارية في الطابق الأرضي، وذلك كجزء من مشروع تطوير عمراني أوسع يضم 1200 وحدة سكنية في سيدي عبد الله.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on this site?",
+      "draft": "ما هي أعمال البناء التي نُفِّذت في هذا الموقع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The contract encompassed secondary trades and interior fit-out works for the R+9 residential blocks, excluding the primary roads and utility networks (VRD) package.",
+      "draft": "شمل العقد الأعمال الثانوية وأعمال التشطيبات الداخلية للمباني السكنية المكونة من طابق أرضي وتسعة طوابق علوية (R+9)، باستثناء حزمة الطرق الرئيسية وشبكات المرافق (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How are the residential buildings configured?",
+      "draft": "كيف تم تصميم المباني السكنية؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The buildings are structured as ground floor plus 9 upper floors (R+9), containing F3 and F4 apartment layouts designed to integrate with the surrounding urban pole.",
+      "draft": "تتألف المباني من طابق أرضي وتسعة طوابق علوية (R+9)، وتضم شققاً بتصاميم (F3) و(F4) صُممت لتتكامل مع القطب العمراني المحيط.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "لقطة من زاوية منخفضة لواجهة مبنى سكني (مكون من طابق أرضي و9 طوابق علوية) في سيدي عبد الله، تُظهر تشطيبات خارجية بألوان البيج والخوخي، وشرفات غائرة مزودة بحواجز معدنية داكنة، وإضاءة خارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "تشكيل واجهات مجمعات السكن الترويجي العام المكونة من طابق أرضي وتسعة طوابق علوية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "منظور من زاوية منخفضة للمبنى السكني المكتمل (المكون من طابق أرضي و9 طوابق علوية)، يُظهر التصميم الخارجي وتشكيلات الشرفات وفتحات النوافذ على خلفية سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "واجهة خارجية تُظهر التكوين الكتلي الرأسي ومحاذاة الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "بهو داخلي لمبنى سكني (ضمن برنامج LPP)، يتميز بكسوة حجرية للجدران، وعناصر خشبية رأسية، وحوض نباتات مدمج، وأرضية من الرخام المزخرف تؤدي إلى باب أمني معدني ذي تصميم زخرفي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "منظر داخلي لردهة المدخل يُظهر التكسية الحجرية وتفاصيل خشبية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Common circulation area inside the residential building, showing the elevator shaft, integrated timber mailboxes, stone wall finishes, and decorative metal balustrades.",
+      "draft": "منطقة حركة مشتركة داخل المبنى السكني، تُظهر بئر المصعد، وصناديق البريد الخشبية المدمجة، وتشطيبات الجدران الحجرية، ودرابزين معدني مزخرف.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Internal circulation core and integrated mailboxes.",
+      "draft": "نواة الحركة الداخلية وصناديق البريد المدمجة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Wide shot of multiple R+9 apartment blocks during the final stages of construction, with earthworks, utility piping, and construction machinery visible in the foreground.",
+      "draft": "لقطة واسعة لمجموعة من المباني السكنية المكونة من تسعة طوابق فوق الطابق الأرضي (R+9) في مراحل البناء النهائية، مع ظهور أعمال الحفر وأنابيب المرافق ومعدات البناء في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Residential blocks during final site coordination and external works.",
+      "draft": "المباني السكنية أثناء أعمال تنسيق الموقع النهائية والأعمال الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "بهو داخلي لمبنى سكني (ضمن برنامج LPP)، يتميز بكسوة حجرية للجدران، وعناصر خشبية رأسية، وحوض نباتات مدمج، وأرضية من الرخام المزخرف تؤدي إلى باب أمني معدني ذي تصميم زخرفي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "منظر داخلي لردهة المدخل يُظهر التكسية الحجرية وتفاصيل خشبية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "منظور من زاوية منخفضة للمبنى السكني المكتمل (المكون من طابق أرضي و9 طوابق علوية)، يُظهر التصميم الخارجي وتشكيلات الشرفات وفتحات النوافذ على خلفية سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "واجهة خارجية تُظهر التكوين الكتلي الرأسي ومحاذاة الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Two completed R+9 residential blocks with white, blue, and peach facades, viewed from an unpaved site area containing construction materials.",
+      "draft": "مبنيان سكنيان مكتملان (مكونان من طابق أرضي وتسعة طوابق علوية) بواجهات باللون الأبيض والأزرق والوردي المائل للبرتقالي، كما يظهران من منطقة موقع غير معبدة تحتوي على مواد بناء.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance.",
+      "draft": "مجمعات سكنية مكتملة قبل الإخلاء النهائي للموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "بهو داخلي لمبنى سكني (ضمن برنامج LPP)، يتميز بكسوة حجرية للجدران، وعناصر خشبية رأسية، وحوض نباتات مدمج، وأرضية من الرخام المزخرف تؤدي إلى باب أمني معدني ذي تصميم زخرفي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "منظر داخلي لردهة المدخل يُظهر التكسية الحجرية وتفاصيل خشبية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "منظور من زاوية منخفضة للمبنى السكني المكتمل (المكون من طابق أرضي و9 طوابق علوية)، يُظهر التصميم الخارجي وتشكيلات الشرفات وفتحات النوافذ على خلفية سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "واجهة خارجية تُظهر التكوين الكتلي الرأسي ومحاذاة الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "لقطة من زاوية منخفضة لواجهة مبنى سكني (مكون من طابق أرضي و9 طوابق علوية) في سيدي عبد الله، تُظهر تشطيبات خارجية بألوان البيج والخوخي، وشرفات غائرة مزودة بحواجز معدنية داكنة، وإضاءة خارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "تشكيل واجهات مجمعات السكن الترويجي العام المكونة من طابق أرضي وتسعة طوابق علوية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Entrance portal of a newly completed residential block, featuring a dark metal security door, stone-clad surrounds, and tiled interior flooring.",
+      "draft": "مدخل مبنى سكني أُنجز حديثاً، يتميز بباب أمني معدني داكن، وإطار محيط مكسو بالحجر، وأرضية داخلية مبلطة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed entrance portal and ground-floor access control.",
+      "draft": "تم إنجاز بوابة المدخل ونظام التحكم في الدخول بالطابق الأرضي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "بهو داخلي لمبنى سكني (ضمن برنامج LPP)، يتميز بكسوة حجرية للجدران، وعناصر خشبية رأسية، وحوض نباتات مدمج، وأرضية من الرخام المزخرف تؤدي إلى باب أمني معدني ذي تصميم زخرفي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "منظر داخلي لردهة المدخل يُظهر التكسية الحجرية وتفاصيل خشبية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "منظور من زاوية منخفضة للمبنى السكني المكتمل (المكون من طابق أرضي و9 طوابق علوية)، يُظهر التصميم الخارجي وتشكيلات الشرفات وفتحات النوافذ على خلفية سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "واجهة خارجية تُظهر التكوين الكتلي الرأسي ومحاذاة الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "لقطة من زاوية منخفضة لواجهة مبنى سكني (مكون من طابق أرضي و9 طوابق علوية) في سيدي عبد الله، تُظهر تشطيبات خارجية بألوان البيج والخوخي، وشرفات غائرة مزودة بحواجز معدنية داكنة، وإضاءة خارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "تشكيل واجهات مجمعات السكن الترويجي العام المكونة من طابق أرضي وتسعة طوابق علوية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "لقطة من زاوية منخفضة لواجهة مبنى سكني (مكون من طابق أرضي و9 طوابق علوية) في سيدي عبد الله، تُظهر تشطيبات خارجية بألوان البيج والخوخي، وشرفات غائرة مزودة بحواجز معدنية داكنة، وإضاءة خارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "تشكيل واجهات مجمعات السكن الترويجي العام المكونة من طابق أرضي وتسعة طوابق علوية.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

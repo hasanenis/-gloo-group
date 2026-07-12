@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh0rh4p-target-tr-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-11T23:52:20.643Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 Ücretsiz Tanıtım Amaçlı Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "Cezayir, Sidi Benour'daki 50 adet serbest piyasa konut birimine ilişkin teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 Ücretsiz Tanıtım Amaçlı Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "Cezayir, Sidi Benour'daki 50 adet serbest piyasa konut birimine ilişkin teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "sidi-benour-50-housing",
+      "draft": "Sidi Benour 50 Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 Ücretsiz Tanıtım Amaçlı Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL PROJECT",
+      "draft": "Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A 50-home R+13 residential delivery in Sidi Benour, part of a wider 362-home free promotional housing programme.",
+      "draft": "Sidi Benour'da, 362 konutluk daha geniş kapsamlı bir ücretsiz teşvikli konut programının parçası olan, Z+13 katlı 50 konutluk bir proje teslimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The Sidi Benour scheme addresses urban residential demand through vertical massing, integrated utility networks, and coordinated site circulation.",
+      "draft": "Sidi Benour projesi; dikey kütleleşme, entegre altyapı ağları ve koordineli bir yerleşim içi dolaşım düzeni aracılığıyla kentsel konut talebini karşılamaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The project scope encompasses all-trades delivery (TCE) and roads and utility networks (VRD) for the R+13 residential block, coordinating structural execution, facade articulation, building services, and external works.",
+      "draft": "Proje kapsamı; yapısal uygulama, cephe detaylandırması, bina tesisatları ve dış saha işlerinin koordinasyonunu sağlayarak, Z+13 katlı konut bloğunun tüm disiplinleri kapsayan yapımını (TCE) ve yol ile altyapı şebekelerinin (VRD) gerçekleştirilmesini içermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The facade articulation is defined by vertical lines and projecting balconies, supported by comprehensive site grading, utility connections, and dedicated access roads.",
+      "draft": "Cephe kurgusu; kapsamlı arazi düzenlemesi, altyapı bağlantıları ve özel erişim yolları ile desteklenen dikey çizgiler ve çıkıntılı balkonlarla tanımlanmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A high-rise residential development where structural engineering, facade rhythm, VRD, and technical systems are integrated to meet dense urban housing requirements.",
+      "draft": "Yoğun kentsel konut gereksinimlerini karşılamak üzere yapısal mühendislik, cephe ritmi, VRD ve teknik sistemlerin entegre edildiği yüksek katlı bir konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "Cezayir, Sidi Benour'daki 50 adet serbest piyasa konut birimine ilişkin teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project type",
+      "draft": "Proje türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Free promotional housing (LPL)",
+      "draft": "Ücretsiz tanıtım amaçlı konaklama (LPL)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project type",
+      "draft": "Proje türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Free promotional housing (LPL)",
+      "draft": "Ücretsiz tanıtım amaçlı konaklama (LPL)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Sidi Benour, Mehelma, Algiers",
+      "draft": "Sidi Benour, Mehelma, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme",
+      "draft": "Program",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "50 homes within a 362-home programme",
+      "draft": "362 konutluk bir program kapsamındaki 50 konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "Tamamlama",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Typology",
+      "draft": "Tipoloji",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 13 upper floors (R+13) residential building",
+      "draft": "Zemin kat ve üzeri 13 katlı (Z+13) konut binası",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Works",
+      "draft": "Eserler",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "All-trades delivery (TCE) with roads and utility networks (VRD)",
+      "draft": "Yollar ve altyapı şebekeleri (VRD) dahil olmak üzere tüm yapım işlerinin (TCE) üstlenilmesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project programme",
+      "draft": "Proje programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "50 homes delivered within a 362-home programme",
+      "draft": "362 konutluk bir program kapsamında 50 konut teslim edildi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Ground floor plus 13 upper floors (R+13) residential building",
+      "draft": "Zemin kat ve üzeri 13 katlı (Z+13) konut binası",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "TCE, VRD, MEP, and exterior access",
+      "draft": "TCE, VRD, MEP ve dış erişim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2025 with coordinated execution",
+      "draft": "Koordineli bir şekilde yürütülerek 2025 yılında tamamlandı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 50 Free Promotional Housing Units project?",
+      "draft": "50 Ücretsiz Tanıtım Konutu projesinin kapsamı nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "A 50-home R+13 residential delivery in Sidi Benour, part of a wider 362-home free promotional housing programme.",
+      "draft": "Sidi Benour'da, 362 konutluk daha geniş kapsamlı bir ücretsiz teşvikli konut programının parçası olan, Z+13 katlı 50 konutluk bir proje teslimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on this site?",
+      "draft": "Bu sahada hangi inşaat çalışmaları gerçekleştirildi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project combines TCE and VRD delivery for a R+13 residential building, coordinating structure, facades, technical systems and exterior circulation.",
+      "draft": "Proje, Z+13 katlı bir konut binası için TCE ve VRD süreçlerini bir araya getirerek yapı, cepheler, teknik sistemler ve dış sirkülasyon unsurlarını koordine etmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How does the development integrate with the surrounding site?",
+      "draft": "Proje, çevresindeki alanla nasıl bütünleşiyor?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The design utilizes vertical massing to optimize land use, supported by dedicated access roads and integrated utility connections to ensure full operational readiness.",
+      "draft": "Tasarım, arazi kullanımını optimize etmek amacıyla dikey kütlelenmeden yararlanmakta; tam operasyonel hazırlığı sağlamak üzere özel erişim yolları ve entegre altyapı bağlantılarıyla desteklenmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; brüt beton iskeleti ve kırmızı tuğla dolgu duvarlarıyla, yapım aşamasındaki çok katlı bir konut binasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "Tuğla dolgulu, yapım aşamasındaki konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+      "draft": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "View of a multi-story residential building under construction, featuring large concrete retaining walls, intricate rebar structures, and workers on the upper level, with a crane boom overhead and other buildings in the background.",
+      "draft": "İnşaat halindeki çok katlı bir konut binasının; büyük beton istinat duvarları, karmaşık donatı yapıları ve üst seviyede çalışan işçileri içeren; üzerinde bir vinç kolu ve arka planda başka binaların bulunduğu görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Structural progress on residential units in Sidi Benour.",
+      "draft": "Sidi Benour'daki konut birimlerinde yapısal ilerleme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "Açık beton yapısı, kırmızı tuğla dolgu duvarları ve açık mavi bir gökyüzü fonundaki kırmızı kule vinciyle, yapım aşamasında olan yüksek bir konut binası. Ön planda, zeminde kırmızı tuğla yığınları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "Sidi Benour'daki 50 konut biriminde yapısal ilerleme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+      "draft": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A large tower crane overlooks a multi-story concrete building under construction, with exposed rebar and scaffolding on the upper levels, under an overcast sky.",
+      "draft": "Kapalı bir gökyüzü altında, üst katlarında açıkta kalmış donatı demirleri ve iskeleler bulunan, yapım aşamasındaki çok katlı bir beton binanın üzerinde büyük bir kule vinç yükseliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural work underway for residential housing units.",
+      "draft": "Konut birimleri için yapısal çalışmalar devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+      "draft": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Full exterior view of a tall, modern, light-colored residential building with many balconies and windows, seen from ground level behind a low concrete wall and paved area.",
+      "draft": "Alçak bir beton duvarın ve taş döşeli bir alanın gerisinden, zemin seviyesinden görülen; çok sayıda balkona ve pencereye sahip, yüksek, modern ve açık renkli bir konut binasının tam dış cephe görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Completed residential building in Sidi Benour, Algiers.",
+      "draft": "Cezayir, Sidi Benour'da tamamlanmış konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+      "draft": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A tall residential building under construction, showing concrete columns and slabs, red brick walls, and balconies. A large red construction crane is partially visible on the left side, extending upwards. A worker is visible on one of the upper balconies.",
+      "draft": "Beton kolon ve döşemeleri, kırmızı tuğla duvarları ve balkonlarıyla inşaat halindeki yüksek bir konut binası. Sol tarafta, yukarı doğru uzanan büyük ve kırmızı bir inşaat vinci kısmen görülüyor. Üst balkonlardan birinde bir işçi fark ediliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural work and brick infill progress on residential units.",
+      "draft": "Konut birimlerinde yapısal çalışmalar ve tuğla dolgu işlemleri ilerliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; brüt beton iskeleti ve kırmızı tuğla dolgu duvarlarıyla, yapım aşamasındaki çok katlı bir konut binasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "Tuğla dolgulu, yapım aşamasındaki konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+      "draft": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "An aerial view of a construction site with a large concrete foundation and rebar cages for a new floor, a red tower crane on the left, and workers on the structure. Distant residential buildings and green hills are visible under a hazy sky.",
+      "draft": "Geniş bir beton temele ve yeni bir kat için donatı kafeslerine, solda kırmızı bir kule vince ve yapı üzerinde çalışan işçilere sahip bir şantiyenin havadan görünümü. Puslu bir gökyüzü altında uzaktaki konut binaları ve yeşil tepeler seçilebiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Structural work in progress for residential units, featuring rebar and formwork.",
+      "draft": "Konut birimleri için donatı ve kalıp çalışmalarını da kapsayan yapısal inşaat süreci devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+      "draft": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A construction worker in a striped shirt and cap stands between large stacks of hollow red bricks inside a building under construction, with distant residential buildings and greenery visible through an open section.",
+      "draft": "Çizgili bir gömlek ve şapka giymiş bir inşaat işçisi, yapım aşamasındaki bir binanın içinde, büyük kırmızı delikli tuğla yığınlarının arasında duruyor; açık bir bölümden ise uzaktaki konutlar ve yeşillikler görünüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Worker with bricks at Sidi Benour housing site.",
+      "draft": "Sidi Benour konut şantiyesinde tuğlalı işçi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "Açık beton yapısı, kırmızı tuğla dolgu duvarları ve açık mavi bir gökyüzü fonundaki kırmızı kule vinciyle, yapım aşamasında olan yüksek bir konut binası. Ön planda, zeminde kırmızı tuğla yığınları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "Sidi Benour'daki 50 konut biriminde yapısal ilerleme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; brüt beton iskeleti ve kırmızı tuğla dolgu duvarlarıyla, yapım aşamasındaki çok katlı bir konut binasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "Tuğla dolgulu, yapım aşamasındaki konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+      "draft": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A tall residential building under construction, showing multiple floors with exposed concrete structures and some red brick infill. A large tower crane is visible in the upper left, and the sky is grey and overcast. Construction materials are visible on some balconies.",
+      "draft": "İnşaat halindeki yüksek bir konut binası; çıplak beton yapıları ve yer yer kırmızı tuğla dolguları görülen çok sayıda katı sergiliyor. Sol üstte büyük bir kule vinç göze çarpıyor ve gökyüzü gri, kapalı bir görünümde. Bazı balkonlarda inşaat malzemeleri görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "Sidi Benour'daki 50 konut biriminde yapısal ilerleme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+      "draft": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A low-angle shot of a multi-story concrete building under construction, showing exposed concrete slabs, columns, and wooden scaffolding on the upper floors. A crane boom is visible in the top right, and the sun shines brightly from behind the building, creating a silhouette effect against a partly cloudy blue sky.",
+      "draft": "İnşaat halindeki çok katlı bir beton binanın alt açıdan çekilmiş görüntüsü; üst katlardaki çıplak beton döşemeleri, kolonları ve ahşap iskeleleri gözler önüne seriyor. Sağ üst köşede bir vinç kolu görülürken, binanın arkasından parlak bir şekilde yükselen güneş, parçalı bulutlu mavi gökyüzüne karşı bir silüet etkisi yaratıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Concrete structure rising against the sky.",
+      "draft": "Gökyüzüne doğru yükselen beton yapı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "Açık beton yapısı, kırmızı tuğla dolgu duvarları ve açık mavi bir gökyüzü fonundaki kırmızı kule vinciyle, yapım aşamasında olan yüksek bir konut binası. Ön planda, zeminde kırmızı tuğla yığınları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "Sidi Benour'daki 50 konut biriminde yapısal ilerleme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; brüt beton iskeleti ve kırmızı tuğla dolgu duvarlarıyla, yapım aşamasındaki çok katlı bir konut binasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "Tuğla dolgulu, yapım aşamasındaki konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; brüt beton iskeleti ve kırmızı tuğla dolgu duvarlarıyla, yapım aşamasındaki çok katlı bir konut binasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "Tuğla dolgulu, yapım aşamasındaki konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

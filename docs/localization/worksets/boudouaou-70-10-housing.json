@@ -1,0 +1,352 @@
+[
+  {
+    "id": "project.boudouaou-70-10-housing.title",
+    "source": "70 Assisted Housing and 10 Free Promotional Housing Units",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: title. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.eyebrow",
+    "source": "MIXED-USE PROJECT",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: eyebrow. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.summary.0",
+    "source": "70 Assisted Housing and 10 Free Promotional Housing Units is a mixed-use project. It is located in Boudouaou -Boumerdes-Algerie.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: summary.0. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.summary.1",
+    "source": "Client: AADL.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: summary.1. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.description.0",
+    "source": "Realisation of 70 assisted promotional housing units and 10 free promotional housing units with 10 professional and commercial premises, including roads and networks, in Boudouaou. Programme: housing units promotionnels aidés (LPA) et market-rate promotional housing (LPL) avec commercial and professional premises..",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: description.0. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.description.1",
+    "source": "A live mixed programme that combines residential delivery with commercial and professional premises in one coordinated site package. Scope: Housing, professional premises, commercial spaces, roads, and networks..",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: description.1. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.authority",
+    "source": "Igloo Construction coordinates the delivery with the discipline required for housing units promotionnels aidés (lpa) et market-rate promotional housing (lpl) avec commercial and professional premises.. Housing, professional premises, commercial spaces, roads, and networks.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: authority. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.seo",
+    "source": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: seo. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.meta.0.label",
+    "source": "Client",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: meta.0.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.meta.0.value",
+    "source": "AADL",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: meta.0.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.meta.1.label",
+    "source": "Project type",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: meta.1.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.meta.1.value",
+    "source": "housing units promotionnels aidés (LPA) et market-rate promotional housing (LPL) avec commercial and professional premises.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: meta.1.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.0.label",
+    "source": "Location",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.0.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.0.value",
+    "source": "Boudouaou -Boumerdes-Algerie",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.0.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.1.label",
+    "source": "Project type",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.1.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.1.value",
+    "source": "housing units promotionnels aidés (LPA) et market-rate promotional housing (LPL) avec commercial and professional premises.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.1.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.2.label",
+    "source": "Total housing units",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.2.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.2.value",
+    "source": "80 housing units (70 LPA + 10 LPL).",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.2.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.3.label",
+    "source": "Number of blocks",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.3.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.3.value",
+    "source": "3 blocs.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.3.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.4.label",
+    "source": "Commercial and professional premises",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.4.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.4.value",
+    "source": "10 premises.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.4.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.5.label",
+    "source": "Project objective",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.5.label. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.details.5.value",
+    "source": "Développer un ensemble résidentiel moderne intégrant housing, shops et services de proximité in a functional urban setting",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: details.5.value. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.title",
+    "source": "Project programme",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.title. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.items.0",
+    "source": "housing units promotionnels aidés (LPA) et market-rate promotional housing (LPL) avec commercial and professional premises.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.items.0. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.items.1",
+    "source": "80 housing units (70 LPA + 10 LPL).",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.items.1. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.items.2",
+    "source": "3 blocs.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.items.2. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.items.3",
+    "source": "10 premises.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.items.3. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.facilityGroups.0.items.4",
+    "source": "Développer un ensemble résidentiel moderne intégrant housing, shops et services de proximité in a functional urban setting",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: facilityGroups.0.items.4. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.0.question",
+    "source": "What is 70 Assisted Housing and 10 Free Promotional Housing Units?",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.0.question. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.0.answer",
+    "source": "70 Assisted Housing and 10 Free Promotional Housing Units is located in Boudouaou -Boumerdes-Algerie. It is a housing units promotionnels aidés (lpa) et market-rate promotional housing (lpl) avec commercial and professional premises..",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.0.answer. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.1.question",
+    "source": "What was the project scope?",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.1.question. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.1.answer",
+    "source": "A live mixed programme that combines residential delivery with commercial and professional premises in one coordinated site package. Housing, professional premises, commercial spaces, roads, and networks.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.1.answer. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.2.question",
+    "source": "Who led the delivery?",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.2.question. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.2.answer",
+    "source": "Client: AADL.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.2.answer. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.3.question",
+    "source": "What makes the project notable?",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.3.question. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.faq.3.answer",
+    "source": "Realisation of 70 assisted promotional housing units and 10 free promotional housing units with 10 professional and commercial premises, including roads and networks, in Boudouaou. Housing, professional premises, commercial spaces, roads, and networks.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: faq.3.answer. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.hero.0.alt",
+    "source": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.hero.0.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.hero.0.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.hero.0.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.hero.1.alt",
+    "source": "A modern, multi-story residential building with a light-colored facade and dark, patterned balcony railings, seen from a low angle against a bright blue sky with a sun flare.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.hero.1.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.hero.1.caption",
+    "source": "Exterior view of the newly constructed residential building in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.hero.1.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.intro.alt",
+    "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.intro.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.intro.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.intro.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.0.alt",
+    "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.0.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.0.caption",
+    "source": "Modern housing units nearing completion in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.0.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.1.alt",
+    "source": "View of several multi-story residential buildings in various stages of construction, with a yellow tower crane visible between them, set against a clear blue sky.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.1.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.1.caption",
+    "source": "Construction progress of residential units in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.1.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.2.alt",
+    "source": "A dynamic, low-angle shot of several tall residential buildings in various stages of construction. The building on the left has exposed concrete, while the central buildings show finished light-colored facades with windows and balconies. A large blue construction crane extends into the bright, overcast sky on the right. A pile of dirt is visible in the foreground.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.2.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.2.caption",
+    "source": "Construction progress at Boudouaou, featuring multiple residential blocks and a towering crane.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.2.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.3.alt",
+    "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.3.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.mosaic.3.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.mosaic.3.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.0.alt",
+    "source": "Newly built, tall white apartment buildings with multiple windows and balconies, set against a bright blue sky. The ground in the foreground is unpaved earth, indicating ongoing site development. A small white truck is visible on the dirt road.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.0.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.0.caption",
+    "source": "Modern housing units nearing completion at Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.0.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.1.alt",
+    "source": "Tall residential buildings under construction, with some sections having white finished facades and others still raw concrete. Two construction workers are visible, one on a balcony and another on a scaffold. A crane boom is partially visible against a clear blue sky.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.1.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.1.caption",
+    "source": "Residential buildings in Boudouaou showing construction progress with finished and unfinished facades.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.1.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.2.alt",
+    "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.2.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.2.caption",
+    "source": "Modern housing units nearing completion in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.2.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.3.alt",
+    "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.3.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featureGallery.3.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featureGallery.3.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.0.alt",
+    "source": "Several multi-story residential buildings in various stages of construction. The buildings on the left and center are painted light beige with white window frames and balconies, appearing largely complete. The building on the far right is still in a raw concrete and brick state. A clear blue sky is visible above, and power lines cross the frame. A small truck is parked in the foreground on a dirt construction site.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.0.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.0.caption",
+    "source": "Progress on the Boudouaou housing development.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.0.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.1.alt",
+    "source": "A newly constructed, light-beige residential building with multiple stories and balconies featuring black railings, under a bright blue sky. Construction materials are visible at the ground level.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.1.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.1.caption",
+    "source": "Modern residential building nearing completion in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.1.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.2.alt",
+    "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.2.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.2.caption",
+    "source": "Modern housing units nearing completion in Boudouaou.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.2.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.3.alt",
+    "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.3.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.constructionGallery.3.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.constructionGallery.3.caption. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featured.0.alt",
+    "source": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featured.0.alt. Preserve project names, measurements, acronyms, and factual claims."
+  },
+  {
+    "id": "project.boudouaou-70-10-housing.images.featured.0.caption",
+    "source": "Modern residential buildings nearing completion.",
+    "context": "Project detail route /projects/boudouaou-70-10-housing. Field path: images.featured.0.caption. Preserve project names, measurements, acronyms, and factual claims."
+  }
+]

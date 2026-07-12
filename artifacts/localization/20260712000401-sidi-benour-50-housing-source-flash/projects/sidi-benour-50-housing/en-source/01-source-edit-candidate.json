@@ -1,0 +1,184 @@
+{
+  "jobId": "20260712000401-sidi-benour-50-housing-source-flash",
+  "pageId": "projects/sidi-benour-50-housing",
+  "locale": "en",
+  "sourceRevision": "v1-856b4a4a",
+  "generatedAt": "2026-07-11T21:04:02.948Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "f6b03a1ec85bd9b2",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "50 Free Promotional Housing Units",
+    "description": "Explore the gallery, technical details, and location notes for 50 Free Promotional Housing Units. This project exemplifies a programme-driven residential delivery model.",
+    "socialTitle": "50 Free Promotional Housing Units",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 50 Free Promotional Housing Units. This project exemplifies a programme-driven residential delivery model."
+  },
+  "content": {
+    "slug": "sidi-benour-50-housing",
+    "title": "50 Free Promotional Housing Units",
+    "eyebrow": "RESIDENTIAL PROJECT",
+    "summary": [
+      "A 50-home R+13 residential development in Sidi Benour, part of a wider 362-home free promotional housing programme.",
+      "The Sidi Benour project is a vertical housing development designed to meet the demand for quality homes while improving access, utility networks, and external site organisation."
+    ],
+    "description": [
+      "The project combines TCE and VRD delivery for an R+13 residential building, coordinating the structure, facades, technical systems, and external circulation.",
+      "Vertical lines, projecting balconies, and considered facade treatments define the building's identity, while utility networks and access works ensure the residence is operational."
+    ],
+    "authority": "A high-rise residential development where the structure, facade rhythm, VRD, and technical systems meet the demands of dense urban housing.",
+    "seo": "Explore the gallery, technical details, and location notes for 50 Free Promotional Housing Units. This project exemplifies a programme-driven residential delivery model.",
+    "meta": [
+      {
+        "label": "Project type",
+        "value": "Market-rate promotional housing (LPL)."
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Free promotional housing (LPL)"
+      },
+      {
+        "label": "Location",
+        "value": "Sidi Benour, Mehelma, Algiers"
+      },
+      {
+        "label": "Programme",
+        "value": "50 homes within a 362-home programme"
+      },
+      {
+        "label": "Completion",
+        "value": "2025"
+      },
+      {
+        "label": "Typology",
+        "value": "R+13 residential building"
+      },
+      {
+        "label": "Works",
+        "value": "TCE with VRD"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Programme",
+        "items": [
+          "50 homes delivered within a 362-home programme",
+          "R+13 residential building",
+          "TCE, VRD, MEP, and external access",
+          "Completed in 2025 with coordinated delivery"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is 50 Free Promotional Housing Units?",
+        "answer": "A 50-home R+13 residential development in Sidi Benour, part of a wider 362-home free promotional housing programme."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "The project combines TCE and VRD delivery for an R+13 residential building, coordinating the structure, facades, technical systems, and external circulation."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "The Sidi Benour project is a vertical housing development designed to meet the demand for quality homes while improving access, utility networks, and external site organisation."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, featuring an exposed concrete structure and red brick infill walls, under a cloudy sky.",
+          "caption": "Residential building under construction with brick infill."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+          "alt": "View of a multi-story residential building under construction, featuring large concrete retaining walls, intricate rebar structures, and workers on the upper level, with a crane boom overhead and other buildings in the background.",
+          "caption": "Structural progress on residential units in Sidi Benour."
+        }
+      ],
+      "intro": {
+        "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+        "alt": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+        "caption": "Structural progress on the 50 housing units in Sidi Benour."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+          "alt": "A large tower crane overlooks a multi-story concrete building under construction, with exposed rebar and scaffolding on the upper levels, under an overcast sky.",
+          "caption": "Structural work underway for residential housing units."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+          "alt": "Full exterior view of a tall, modern, light-coloured residential building with many balconies and windows, seen from ground level behind a low concrete wall and paved area.",
+          "caption": "Completed residential building in Sidi Benour, Algiers."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+          "alt": "A tall residential building under construction, showing concrete columns and slabs, red brick walls, and balconies. A large red construction crane is partially visible on the left side, extending upwards. A worker is visible on one of the upper balconies.",
+          "caption": "Structural work and brick infill progress on residential units."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, featuring an exposed concrete structure and red brick infill walls, under a cloudy sky.",
+          "caption": "Residential building under construction with brick infill."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+          "alt": "An aerial view of a construction site with a large concrete foundation and rebar cages for a new floor, a red tower crane on the left, and workers on the structure. Distant residential buildings and green hills are visible under a hazy sky.",
+          "caption": "Structural work in progress for residential units, featuring rebar and formwork."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+          "alt": "A construction worker in a striped shirt and cap stands between large stacks of hollow red bricks inside a building under construction, with distant residential buildings and greenery visible through an open section.",
+          "caption": "Worker with bricks at Sidi Benour housing site."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+          "alt": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+          "caption": "Structural progress on the 50 housing units in Sidi Benour."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, featuring an exposed concrete structure and red brick infill walls, under a cloudy sky.",
+          "caption": "Residential building under construction with brick infill."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+          "alt": "A tall residential building under construction, showing multiple floors with exposed concrete structures and some red brick infill. A large tower crane is visible in the upper left, and the sky is grey and overcast. Construction materials are visible on some balconies.",
+          "caption": "Structural progress on the 50 housing units in Sidi Benour."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+          "alt": "A low-angle shot of a multi-story concrete building under construction, showing exposed concrete slabs, columns, and wooden scaffolding on the upper floors. A crane boom is visible in the top right, and the sun shines brightly from behind the building, creating a silhouette effect against a partly cloudy blue sky.",
+          "caption": "Concrete structure rising against the sky."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+          "alt": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+          "caption": "Structural progress on the 50 housing units in Sidi Benour."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, featuring an exposed concrete structure and red brick infill walls, under a cloudy sky.",
+          "caption": "Residential building under construction with brick infill."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, featuring an exposed concrete structure and red brick infill walls, under a cloudy sky.",
+          "caption": "Residential building under construction with brick infill."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

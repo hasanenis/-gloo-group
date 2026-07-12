@@ -1,0 +1,47 @@
+{
+  "jobId": "batch-mrh10ark-target-ar-DZ-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:59:12.382Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1",
+      "severity": "warning",
+      "message": "The translation introduced '10 units of LPL' (10 وحدات سكنية من صيغة LPL) which contradicts the project title and facts stating '10 Free Promotional Housing Units' (10 سكنات ترقوية حرة). LPL stands for Logement Public Locatif (social housing), which is not promotional/free housing."
+    },
+    {
+      "id": "content.meta.1.value",
+      "severity": "warning",
+      "message": "Incorrectly translates promotional housing as LPL ('سكنات ترقوية LPL'). LPL is social rental housing, whereas promotional housing is 'ترقوي حر' or 'LPP' depending on the formula. The source facts state '10 Free Promotional Housing Units'."
+    },
+    {
+      "id": "content.details.0.value",
+      "severity": "warning",
+      "message": "Incorrectly uses 'LPL' for promotional housing ('سكنات LPA وLPL')."
+    },
+    {
+      "id": "content.details.2.value",
+      "severity": "warning",
+      "message": "Incorrectly represents the 10 promotional units as '10 LPL' instead of promotional/free housing."
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "severity": "warning",
+      "message": "Incorrectly translates promotional units as '10 شقق LPL'."
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "warning",
+      "message": "Incorrectly translates promotional units as '10 وحدات سكنية ترقوية من صيغة LPL'."
+    },
+    {
+      "id": "content.faq.3.answer",
+      "severity": "warning",
+      "message": "Incorrectly translates promotional units as '10 مساكن من صيغة LPL'."
+    }
+  ]
+}

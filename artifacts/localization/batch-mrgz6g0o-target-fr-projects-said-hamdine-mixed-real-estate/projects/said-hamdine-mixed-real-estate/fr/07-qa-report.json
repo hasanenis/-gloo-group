@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgz6g0o-target-fr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:07:59.867Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

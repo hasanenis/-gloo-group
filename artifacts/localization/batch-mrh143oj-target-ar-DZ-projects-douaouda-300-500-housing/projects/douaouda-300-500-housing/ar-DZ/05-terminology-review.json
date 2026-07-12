@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrh143oj-target-ar-DZ-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-12T00:02:09.868Z",
+  "status": "pass",
+  "issues": []
+}

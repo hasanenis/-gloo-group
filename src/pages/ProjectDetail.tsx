@@ -18,9 +18,15 @@ import {
 } from 'lucide-react';
 import { useLenis } from '../components/SmoothScrollProvider';
 import CardCarousel, { CarouselProgressBar } from '../components/CardCarousel';
-import { projects, type ProjectRecord } from '../data/projects';
+import {
+  localizedProjectScope,
+  localizedProjectStatus,
+  localizedProjectSummary,
+  projects,
+  type ProjectRecord,
+} from '../data/projects';
 import { buildBatProjectPageModel } from '../data/batProjectModel';
-import { getProjectContent, localized, type ProjectFact, type ProjectImage } from '../data/projectContent';
+import { getProjectContent, localized, type LocalizedText, type ProjectContent, type ProjectFact, type ProjectImage } from '../data/projectContent';
 import { getProjectHeroImage } from '../data/projectHeroImage';
 import {
   getProjectEditorialContent,
@@ -52,10 +58,10 @@ const LEGACY_PROJECT_SLUGS: Record<string, string> = {
   'douira-commercial-centers-2500-housing': 'rahmania',
 };
 
-type LocalizedValue = LocalizedString;
+type LocalizedValue = LocalizedText;
 
-function localValue(en: string, fr = en, dz?: string, tr?: string): LocalizedValue {
-  return { en, fr, dz, tr };
+function localValue(en: string, fr = en, arDz?: string, tr?: string): LocalizedValue {
+  return { en, fr, 'ar-DZ': arDz, tr };
 }
 
 function copyFor(locale: Parameters<typeof pickLocaleText>[0], value: LocalizedString) {
@@ -106,11 +112,11 @@ const RAHMANIA_DUO_LEFT_IMAGE: ProjectImage = {
   src: '/projects/douira-commercial-centers-2500-housing/12-whatsapp-image-2025-11-12-at-15-18-39.webp',
   alt: localValue(
     'Curved staircase and stainless-steel railings inside the Douira commercial centre.',
-    "Escalier courbe et garde-corps inox à l'intérieur du centre commercial de Douira.",
+    "Escalier courbe et garde-corps inox à l'intérieur du centre commercial de Douira.", 'سلم منحنٍ ودرابزين من الفولاذ المقاوم للصدأ داخل مركز "دويرة" التجاري.', "Douira Ticaret Merkezi'nde kavisli merdiven ve paslanmaz çelik korkuluklar.",
   ),
   caption: localValue(
     'Interior circulation and staircase finishes in the Douira commercial centre.',
-    "Circulation intérieure et finitions d'escalier dans le centre commercial de Douira.",
+    "Circulation intérieure et finitions d'escalier dans le centre commercial de Douira.", 'مسارات الحركة الداخلية وتشطيبات السلالم في مركز دويرة التجاري.', "Douira Ticaret Merkezi'nde iç dolaşım alanları ve merdiven bitiş detayları.",
   ),
 };
 
@@ -118,51 +124,57 @@ const RAHMANIA_DUO_RIGHT_IMAGE: ProjectImage = {
   src: '/projects/douira-commercial-centers-2500-housing/13-whatsapp-image-2025-11-12-at-15-19-49.webp',
   alt: localValue(
     'Modern interior stair hall in the Douira commercial centre.',
-    "Hall d'escalier moderne dans le centre commercial de Douira.",
+    "Hall d'escalier moderne dans le centre commercial de Douira.", 'ردهة سلالم داخلية عصرية في مركز "دويرة" التجاري.', "Douira Ticaret Merkezi'nin modern tasarımlı merdiven holü.",
   ),
   caption: localValue(
     'Completed staircase hall serving the commercial centre levels.',
-    "Hall d'escalier achevé desservant les niveaux du centre commercial.",
+    "Hall d'escalier achevé desservant les niveaux du centre commercial.", 'قاعة السلالم المنجزة التي تخدم طوابق المركز التجاري.', 'Ticaret merkezi katlarına ulaşım sağlayan merdiven holünün tamamlanmış hali.',
   ),
 };
 
-function buildScopeItems(project: ProjectRecord): ProjectEditorialScopeItem[] {
-  return [
-    { icon: 'building', text: localValue(project.scope, project.scope) },
-    { icon: 'network', text: localValue(project.details, project.details) },
-    { icon: 'delivery', text: localValue('Site follow-up and delivery control', 'Suivi de chantier et contrôle de livraison') },
+function projectValue(project: ProjectRecord, getter: typeof localizedProjectScope): LocalizedText {
+  return localValue(
+    getter(project, 'en'),
+    getter(project, 'fr'),
+    getter(project, 'ar-DZ'),
+    getter(project, 'tr'),
+  );
+}
+
+function buildScopeItems(project: ProjectRecord, content?: ProjectContent): ProjectEditorialScopeItem[] {
+  const authored = content
+    ? [content.description[0], ...(content.facilityGroups[0]?.items ?? []), content.summary[0]].filter(Boolean)
+    : [];
+  const fallback = [
+    projectValue(project, localizedProjectScope),
+    projectValue(project, localizedProjectSummary),
   ];
+  const icons: ProjectEditorialIcon[] = ['building', 'network', 'delivery', 'commerce'];
+  return (authored.length ? authored : fallback).slice(0, 4).map((text, index) => ({
+    icon: icons[index] ?? 'building',
+    text,
+  }));
 }
 
 function buildProjectFacts(project: ProjectRecord, contentFacts: ProjectFact[]) {
-  if (project.slug === 'rahmania') {
-    return [
-      { label: localValue('Project type', 'Nature du projet'), value: localValue('Commercial centres', 'Centres commerciaux') },
-      { label: localValue('Location', 'Localisation'), value: localValue('Douira, Algiers, Algeria', 'Douira, Alger, Algérie') },
-      { label: localValue('Works', 'Travaux'), value: localValue('Secondary works packages (CES)', 'Corps d état secondaires (CES)') },
-      { label: localValue('Completion', 'Achèvement'), value: localValue('2025 — on schedule', '2025 — dans les délais') },
-      { label: localValue('Development', 'Programme'), value: localValue('2,500-home residential programme', 'Programme résidentiel de 2500 logements') },
-      { label: localValue('Contract', 'Contrat'), value: localValue('Exécution', 'Réalisation') },
-    ];
-  }
-
-  if (project.slug === 'said-hamdine-mixed-real-estate') {
-    return [
-      { label: localValue('Project type', 'Nature du projet'), value: localValue('Ensemble immobilier mixte', 'Ensemble immobilier mixte') },
-      { label: localValue('Location', 'Localisation'), value: localValue('Said Hamdine, Bir Mourad Rais, Alger, Algeria', 'Said Hamdine, Bir Mourad Rais, Alger, Algérie') },
-      { label: localValue('Housing units', 'Logements'), value: localValue('202 promotional housing units', '202 logements promotionnels libres') },
-      { label: localValue('Blocks', 'Blocs'), value: localValue('5 residential blocks', '5 blocs résidentiels') },
-      { label: localValue('Parking', 'Parking'), value: localValue('2 underground parking levels', '2 niveaux de parking en sous-sol') },
-      { label: localValue('Status', 'Statut'), value: localValue('Completed', 'Achevé') },
-    ];
-  }
-
-  return uniqueFacts([
-    { label: localValue('Project type', 'Nature du projet'), value: localValue(project.scope, project.scope) },
-    { label: localValue('Location', 'Localisation'), value: localValue(project.location, project.location) },
-    { label: localValue('Status', 'Statut'), value: localValue(project.chapterLabel, project.chapterLabel) },
-    ...contentFacts,
-  ]).slice(0, 6);
+  const find = (pattern: RegExp) => contentFacts.find((fact) => pattern.test(fact.label.en));
+  const projectType = find(/project type|nature/i) ?? {
+    label: localValue('Project type', 'Nature du projet', 'نوع المشروع', 'Proje türü'),
+    value: projectValue(project, localizedProjectScope),
+  };
+  const location = find(/location|localisation/i) ?? {
+    label: localValue('Location', 'Localisation', 'الموقع', 'Konum'),
+    value: localValue(project.location, project.location, project.location, project.location),
+  };
+  const status: ProjectFact = {
+    label: localValue('Status', 'Statut', 'الحالة', 'Durum'),
+    value: projectValue(project, localizedProjectStatus),
+  };
+  const client = find(/client|owner|employer/i);
+  const selected = [projectType, location, status, client].filter((fact): fact is ProjectFact => Boolean(fact));
+  const selectedKeys = new Set(selected.map((fact) => `${fact.label.en}:${fact.value.en}`));
+  const remainder = contentFacts.filter((fact) => !selectedKeys.has(`${fact.label.en}:${fact.value.en}`));
+  return uniqueFacts([...selected, ...remainder]).slice(0, 6);
 }
 
 function ParallaxImage({
@@ -231,6 +243,7 @@ export default function ProjectDetail() {
   const project = index >= 0 ? projects[index] : undefined;
   const content = project ? getProjectContent(project) : undefined;
   const editorial = project ? getProjectEditorialContent(project) : undefined;
+  const useEditorialCopy = Boolean(editorial);
   const batModel = useMemo(() => (project ? buildBatProjectPageModel(project, locale) : undefined), [project, locale]);
   const isSaidHamdine = project?.slug === 'said-hamdine-mixed-real-estate';
   const isRahmania = project?.slug === 'rahmania';
@@ -239,12 +252,12 @@ export default function ProjectDetail() {
   const tr = (value: LocalizedValue) => localized(value, locale);
   const contentFacts = useMemo(() => (content ? uniqueFacts([...content.meta, ...content.details]) : []), [content]);
   const projectFacts = useMemo(
-    () => editorial?.facts ?? (project ? buildProjectFacts(project, contentFacts) : []),
-    [contentFacts, editorial, project],
+    () => (useEditorialCopy ? editorial?.facts : undefined) ?? (project ? buildProjectFacts(project, contentFacts) : []),
+    [contentFacts, editorial, project, useEditorialCopy],
   );
   const scopeItems = useMemo(
-    () => editorial?.scopeItems ?? (project ? buildScopeItems(project) : []),
-    [editorial, project],
+    () => (useEditorialCopy ? editorial?.scopeItems : undefined) ?? (project ? buildScopeItems(project) : []),
+    [content, editorial, project, useEditorialCopy],
   );
 
   const imageSet = useMemo(() => {
@@ -298,72 +311,75 @@ export default function ProjectDetail() {
     label: localized(fact.label, locale),
     value: localized(fact.value, locale),
   }));
-  const heroTitleLines = editorial?.heroTitleLines ?? batModel?.hero.titleLines ?? [];
+  const heroTitleLines = (useEditorialCopy ? editorial?.heroTitleLines : undefined) ?? batModel?.hero.titleLines ?? [];
 
-  const heroDescription = editorial?.heroDescription ?? null;
+  const heroDescription = (useEditorialCopy ? editorial?.heroDescription : undefined) ?? content?.seo ?? null;
 
-  const statement = editorial?.statement ?? (isSaidHamdine
+  const statement = (useEditorialCopy ? editorial?.statement : undefined) ?? content?.description[0] ?? (isSaidHamdine
     ? localValue(
       'A mixed urban complex held together by structure, access, housing and the discipline of delivery.',
-      'Un ensemble urbain mixte tenu par la structure, les accès, le logement et la discipline de livraison.',
+      "Un complexe urbain mixte structuré autour de l'ossature, des accès, des logements et d'une exécution rigoureuse.", 'مجمع حضري متعدد الاستخدامات تتماسك عناصره بفضل البنية الهيكلية، وشبكة الوصول، والإسكان، وانضباط التنفيذ.', 'Yapısı, ulaşım olanakları, konutları ve planlı uygulama disipliniyle bütünleşen karma bir kent kompleksi.',
     )
     : isRahmania
       ? localValue(
         'Delivered in 2025, on schedule — every secondary trade coordinated to the standard a modern commercial building demands.',
-        'Livré en 2025, dans les délais — chaque corps d état coordonné au niveau qu exige un équipement commercial moderne.',
+        "Livré en 2025, dans les délais. Chaque corps d'état secondaire a été coordonné pour répondre aux standards d'un bâtiment commercial moderne.", 'يتم التسليم في عام 2025 وفقاً للجدول الزمني، مع تنسيق كافة الأعمال التخصصية لتلبي المعايير التي تتطلبها المباني التجارية العصرية.', 'Proje, 2025 yılında takvime uygun olarak tamamlandı. Tüm ince işler, modern bir ticari yapının gerektirdiği standartlara göre koordine edildi.',
       )
     : localValue(project?.summary ?? '', project?.summary ?? ''));
 
-  const introText = editorial?.intro ?? (isSaidHamdine
+  const introText = (useEditorialCopy ? editorial?.intro : undefined) ?? content?.summary[0] ?? (isSaidHamdine
     ? localValue(
-      'Said Hamdine combines 202 promotional housing units, five residential blocks and two underground parking levels into one compact urban opération.',
-      'Said Hamdine rassemble 202 logements promotionnels, cinq blocs résidentiels et deux niveaux de parking en sous-sol dans une opération urbaine compacte.',
+      'Said Hamdine combines 202 promotional housing units, five residential blocks, one basement parking level and three commercial entre-sols with a mezzanine on a steeply sloping site.',
+      "Said Hamdine rassemble 202 logements promotionnels, cinq blocs résidentiels, un sous-sol de parking et trois entre-sols commerciaux avec mezzanine sur un terrain à forte pente.", 'يجمع مشروع "سعيد حمدين" بين 202 وحدة سكنية ترويجية وخمس كتل سكنية وطابق سفلي واحد للمواقف وثلاثة طوابق تجارية نصفية مع ميزانين، على أرضية شديدة الانحدار.', 'Said Hamdine projesi; eğimli bir arazide yer alan 202 serbest satışlı konut, beş konut bloğu, bir bodrum otoparkı ve mezzaninli üç ticari ara kattan oluşan karma bir kent projesidir.',
     )
     : isRahmania
       ? localValue(
         "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services.",
-        'Deux centres commerciaux au sein du programme de 2500 logements de Douira, aménagés pour accueillir commerces et services de proximité.',
+        'Deux centres commerciaux au sein du programme de 2 500 logements de Douira, aménagés pour accueillir les commerces et services de proximité du quartier.', 'مركزان تجاريان ضمن مشروع "دويرة" السكني (الذي يضم 2500 وحدة سكنية)، مجهّزان لاستيعاب متاجر الحي والخدمات اليومية.', "Douira'daki 2.500 konutluk projenin içinde, bölgedeki dükkanlara ve günlük hizmetlere ev sahipliği yapacak iki ticaret merkezi.",
       )
     : localValue(project?.summary ?? '', project?.summary ?? ''));
 
   const infoMetric = editorial?.metric ?? (isSaidHamdine ? '202' : isRahmania ? '2,500' : projectMetricFromRecord(project));
   const rahmaniaInfoHeading = localValue(
     "A hub of shops and services for the residents' daily needs.",
-    'Un pôle de commerces et de services répondant aux besoins quotidiens des habitants.',
+    'Un pôle de commerces et de services répondant aux besoins quotidiens des habitants.', 'مركز يضم متاجر وخدمات لتلبية الاحتياجات اليومية للسكان.', 'Bölge sakinlerinin günlük ihtiyaçlarına yönelik bir dükkan ve hizmet merkezi.',
   );
   const rahmaniaInfoParagraph = localValue(
     'The two centres form an attractive hub of activity inside the residential programme. Their layout favours accessibility, functional spaces, and user comfort — and their completion adds to the urban quality and economic life of the Douira district.',
-    'Les deux centres forment un pôle d activités attractif au sein du programme résidentiel. Leur conception favorise l accessibilité, la fonctionnalité des espaces et le confort des usagers — et leur achèvement contribue à la valorisation du cadre urbain et au dynamisme économique de Douira.',
+    "Les deux centres forment un pôle d'activités attractif au sein du programme résidentiel. Leur conception favorise l'accessibilité, la fonctionnalité des espaces et le confort des usagers — leur achèvement contribue ainsi à la valorisation du cadre urbain et au dynamisme économique du quartier de Douira.", 'يشكّل المركزان محوراً حيوياً وجذاباً ضمن المشروع السكني؛ إذ يراعي تصميمهما سهولة الوصول وتوفير مساحات عملية وراحة المستخدمين، كما يُسهم إنجازهما في تعزيز الجودة العمرانية والحياة الاقتصادية في منطقة "دويرة".', 'Bu iki merkez, konut projesi içinde çekici birer aktivite odağı oluşturuyor. Yerleşim planında ulaşım kolaylığı, işlevsel mekanlar ve kullanıcı konforu ön planda tutuldu. Projenin tamamlanması Douira bölgesinin kent kalitesini ve ekonomik canlılığını artırıyor.',
   );
   const rahmaniaColumnsIntro = localValue(
     'Igloo carried out the complete secondary works package for both centres — façades, interior finishes, and technical networks — turning two reinforced-concrete structures into modern, functional spaces ready for traders and everyday users.',
-    'Igloo a réalisé l ensemble des corps d état secondaires des deux centres — façades, finitions intérieures et réseaux techniques — transformant deux structures en béton armé en espaces modernes et fonctionnels, prêts pour les commerçants et les usagers.',
+    "Igloo a réalisé l'ensemble des corps d'état secondaires pour les deux centres — façades, finitions intérieures et réseaux techniques — transformant ainsi deux structures en béton armé en espaces modernes et fonctionnels, prêts à accueillir commerçants et usagers.", 'نفذت شركة "إيغلو" (Igloo) حزمة الأعمال الثانوية الكاملة لكلا المركزين — بما في ذلك الواجهات والتشطيبات الداخلية والشبكات الفنية — محولةً بذلك مبنيين من الخرسانة المسلحة إلى مساحات عصرية وعملية، جاهزة لخدمة التجار والمستخدمين اليوميين.', 'Igloo, her iki merkezin de cephelerini, iç mekanlarını ve teknik ağlarını kapsayan tüm ince işlerini yürüttü. Böylece iki betonarme karkası, esnaf ve ziyaretçiler için modern ve işlevsel mekanlar haline getirdi.',
   );
   const rahmaniaColumnsDetail = localValue(
     'The façades pair large glazed surfaces with decorative screen elements that give the buildings their identity. Inside, circulation is organised around a central staircase, and a pyramidal glass skylight draws natural light down through the retail levels.',
-    "Les façades associent de larges surfaces vitrées à des éléments décoratifs qui signent l'identité des bâtiments. À l'intérieur, la circulation s'articule autour d'un escalier central, et une verrière pyramidale en verre diffuse la lumière naturelle à travers les niveaux commerciaux.",
+    "Les façades associent de larges surfaces vitrées à des éléments décoratifs qui signent l'identité des bâtiments. À l'intérieur, la circulation s'articule autour d'un escalier central, et une verrière pyramidale en verre diffuse la lumière naturelle à travers les niveaux commerciaux.", 'تجمع الواجهات بين مساحات زجاجية كبيرة وعناصر حجب زخرفية تمنح المباني هويتها المميزة. أما في الداخل، فتنتظم حركة التنقل حول درج مركزي، وتعمل نافذة سقفية زجاجية هرمية الشكل على توجيه الضوء الطبيعي ليتخلل طوابق المحلات التجارية.', 'Cephelerde, binaya kimliğini kazandıran dekoratif paravanlar ve geniş cam yüzeyler bir arada kullanıldı. İçeride dolaşım, merkezi bir merdiven etrafında çözüldü. Piramit formundaki cam çatı ışıklığı ise doğal ışığı mağaza katlarına taşıyor.',
   );
-  const rahmaniaInfoTopline = localValue('OUR IMPACT', 'NOTRE IMPACT', 'الأثر تاعنا', 'ETKİMİZ');
-  const rahmaniaInfoEyebrow = localValue('PROXIMITY SERVICES', 'SERVICES DE PROXIMITÉ');
-  const rahmaniaInfoMetricLabel = localValue('HOMES', 'LOGEMENTS', 'سكن', 'KONUT');
+  const rahmaniaInfoTopline = localValue('OUR IMPACT', 'NOTRE IMPACT', 'الأثر تاعنا', 'KATKIMIZ');
+  const rahmaniaInfoEyebrow = localValue('PROXIMITY SERVICES', 'SERVICES DE PROXIMITÉ', 'خدمات القرب', 'Çevre Hizmetleri');
+  const rahmaniaInfoMetricLabel = localValue('HOMES', 'LOGEMENTS', 'سكن', 'Konut');
   const rahmaniaMetricCaptionLines = {
     en: ['IN A THRIVING', 'MASTERPLANNED', 'NEIGHBOURHOOD'],
     fr: ['DANS UN QUARTIER', 'RÉSIDENTIEL STRUCTURÉ', 'ET DYNAMIQUE'],
-    dz: ['في حي', 'سكني منظم', 'ونشيط'],
+    'ar-DZ': ['في حي', 'سكني منظم', 'ونشيط'],
     tr: ['CANLI', 'PLANLI BİR', 'MAHALLEDE'],
   }[locale];
-  const editorialColumns = editorial?.columns ?? [rahmaniaColumnsIntro, rahmaniaColumnsDetail];
+  const editorialColumns = (useEditorialCopy ? editorial?.columns : undefined) ?? (content
+    ? [content.summary[0] ?? content.seo, content.description[0] ?? content.summary[0] ?? content.seo]
+    : [rahmaniaColumnsIntro, rahmaniaColumnsDetail]);
   const infoGraphicSrc = (project ? getManualProjectImage(project.slug, 'info')?.src : undefined)
     ?? (isDouaouda
       ? '/projects/douaouda-300-500-housing/Draw.png'
       : '/projects/rahmania/community-graphic-line.png');
-  const infoHeading = editorial?.infoHeading ?? rahmaniaInfoHeading;
-  const infoParagraph = editorial?.infoParagraph ?? rahmaniaInfoParagraph;
-  const infoTopline = editorial?.infoTopline ?? rahmaniaInfoTopline;
-  const infoEyebrow = editorial?.infoEyebrow ?? rahmaniaInfoEyebrow;
-  const infoMetricLabel = editorial?.metricLabel ?? rahmaniaInfoMetricLabel;
+  const infoHeading = (useEditorialCopy ? editorial?.infoHeading : undefined) ?? content?.title ?? rahmaniaInfoHeading;
+  const infoParagraph = (useEditorialCopy ? editorial?.infoParagraph : undefined) ?? content?.description[0] ?? rahmaniaInfoParagraph;
+  const infoTopline = (useEditorialCopy ? editorial?.infoTopline : undefined) ?? content?.eyebrow ?? rahmaniaInfoTopline;
+  const infoEyebrow = (useEditorialCopy ? editorial?.infoEyebrow : undefined) ?? content?.eyebrow ?? rahmaniaInfoEyebrow;
+  const infoMetricLabel = (useEditorialCopy ? editorial?.metricLabel : undefined) ?? rahmaniaInfoMetricLabel;
+  const projectEyebrow = content ? localized(content.eyebrow, locale) : project?.coverLines[0] ?? '';
   const metricKey = locale === 'fr' ? 'fr' : 'en';
-  const infoMetricCaptionLines = (locale === 'dz' || locale === 'tr')
+  const infoMetricCaptionLines = (locale === 'ar-DZ' || locale === 'tr')
     ? rahmaniaMetricCaptionLines
     : editorial?.metricCaptionLines[metricKey] ?? rahmaniaMetricCaptionLines;
 
@@ -574,7 +590,7 @@ export default function ProjectDetail() {
         <div className="bat-demo-hero__content">
           <div className="bat-demo-hero__copy">
             <div className="bat-demo-hero__headline">
-              <p className="bat-demo-hero__pretitle">{project.coverLines[0]}</p>
+              <p className="bat-demo-hero__pretitle">{projectEyebrow}</p>
               <h1
                 className="bat-demo-hero__title"
                 aria-label={heroTitleLines.join(' ')}
@@ -595,7 +611,7 @@ export default function ProjectDetail() {
             <div className="bat-demo-hero__info">
               <div className="bat-demo-hero__meta-row">
                 <div className="bat-demo-hero__tab">
-                  <span>{copyFor(locale, { en: 'Project info', fr: 'Informations projet', dz: 'معلومات المشروع', tr: 'Proje bilgileri' })}</span>
+                  <span>{copyFor(locale, { en: 'Project info', fr: 'Informations projet', dz: 'معلومات المشروع', tr: 'Proje Bilgileri' })}</span>
                 </div>
               </div>
 
@@ -615,7 +631,7 @@ export default function ProjectDetail() {
 
       <section className="igloo-simple-split">
         <div className="igloo-simple-split__text" data-reveal>
-          <p>{project.coverLines[0]}</p>
+          <p>{projectEyebrow}</p>
           <h2>{tr(introText)}</h2>
         </div>
         <div className="igloo-simple-split__image" data-reveal>
@@ -725,13 +741,13 @@ export default function ProjectDetail() {
       {relatedProjects.length > 0 && (
         <section className="igloo-simple-related" aria-label="Related projects">
           <div className="igloo-simple-related__head">
-            <p>{copyFor(locale, { en: 'More work', fr: 'Voir aussi', dz: 'مشاريع أخرى', tr: 'Diğer projeler' })}</p>
-            <h2>{copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'İlgili projeler' })}</h2>
+            <p>{copyFor(locale, { en: 'More work', fr: 'Autres projets', dz: 'مشاريع أخرى', tr: 'Diğer Projelerimiz' })}</p>
+            <h2>{copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'Benzer Projeler' })}</h2>
           </div>
           <CardCarousel
             items={relatedProjects}
             getKey={(related) => related.slug}
-            ariaLabel={copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'İlgili projeler' })}
+            ariaLabel={copyFor(locale, { en: 'Related projects', fr: 'Projets liés', dz: 'مشاريع قريبة', tr: 'Benzer Projeler' })}
             spaceBetween={26}
             slideClassName="!w-[280px] sm:!w-[320px] md:!w-[360px]"
             renderItem={(related) => {

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh0zb9y-target-ar-DZ-about",
+  "pageId": "about",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:58:26.410Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

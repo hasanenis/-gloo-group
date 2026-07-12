@@ -1,0 +1,23 @@
+{
+  "jobId": "20260711235105-not-found-source",
+  "pageId": "not-found",
+  "locale": "en",
+  "sourceRevision": "v1-33be78e9",
+  "generatedAt": "2026-07-11T20:51:08.584Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "8a4f4a07c19a2ddd",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Page not found | Igloo Construction",
+    "description": "This page is not available.",
+    "socialTitle": "Page not found | Igloo Construction",
+    "socialDescription": "This page is not available."
+  },
+  "content": {
+    "heading": "Page not found",
+    "cta": "Return to the homepage"
+  },
+  "model": "gemini-2.5-pro"
+}

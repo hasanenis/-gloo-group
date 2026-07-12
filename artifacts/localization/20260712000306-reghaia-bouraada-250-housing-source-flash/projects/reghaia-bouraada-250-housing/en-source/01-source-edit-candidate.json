@@ -1,0 +1,192 @@
+{
+  "jobId": "20260712000306-reghaia-bouraada-250-housing-source-flash",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "locale": "en",
+  "sourceRevision": "v1-7da09a51",
+  "generatedAt": "2026-07-11T21:03:08.005Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "6749d8afa09ee511",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "250 Housing Units with Commercial Rental and Concierge Services",
+    "description": "Explore the gallery, technical details, and location notes for 250 Housing Units with Commercial Rental and Concierge Services. The project showcases an integrated residential and mixed-use delivery model.",
+    "socialTitle": "250 Housing Units with Commercial Rental and Concierge Services",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 250 Housing Units with Commercial Rental and Concierge Services. The project showcases an integrated residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "reghaia-bouraada-250-housing",
+    "title": "250 Housing Units with Commercial Rental and Concierge Services",
+    "eyebrow": "MIXED-USE PROJECT",
+    "summary": [
+      "A 250-home rent-to-own residential development in Bouraada, Reghaia, featuring commercial premises, concierge spaces, and secondary works.",
+      "The Reghaia development comprises seven R+9 blocks, designed to provide practical family housing, local services, and concierge spaces that enhance residents' daily lives."
+    ],
+    "description": [
+      "The project provides 250 rent-to-own homes, with four units per floor and a clear mix of F3 and F4 units, complemented by commercial premises and concierge spaces.",
+      "Igloo completed the remaining secondary works, facade construction, technical installations, and external landscaping, bringing the seven-block site to a habitable residential standard."
+    ],
+    "authority": "A seven-block rent-to-own development completed through the essential work that makes housing habitable: facades, finishes, utility networks, and daily service spaces.",
+    "seo": "Explore the gallery, technical details, and location notes for 250 Housing Units with Commercial Rental and Concierge Services. The project showcases an integrated residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "AADL"
+      },
+      {
+        "label": "Project type",
+        "value": "Rent-to-own housing units with commercial premises and concierge services."
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Rent-to-own housing with premises"
+      },
+      {
+        "label": "Location",
+        "value": "Bouraada, Reghaia, Algiers"
+      },
+      {
+        "label": "Housing units",
+        "value": "250 homes"
+      },
+      {
+        "label": "Blocks",
+        "value": "7 R+9 blocks"
+      },
+      {
+        "label": "Completion",
+        "value": "2025"
+      },
+      {
+        "label": "Client",
+        "value": "AADL"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project programme",
+        "items": [
+          "250 rent-to-own housing units",
+          "Seven R+9 residential blocks",
+          "Commercial premises and concierge spaces",
+          "Expected completion in 2025, including secondary works and facades."
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is 250 Housing Units with Commercial Rental and Concierge Services?",
+        "answer": "A 250-home rent-to-own residential development in Bouraada, Reghaia, featuring commercial premises, concierge spaces, and secondary works."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "The project provides 250 rent-to-own homes, with four units per floor and a clear mix of F3 and F4 units, complemented by commercial premises and concierge spaces."
+      },
+      {
+        "question": "Who led the delivery?",
+        "answer": "A seven-block rent-to-own development completed through the essential work that makes housing habitable: facades, finishes, utility networks, and daily service spaces."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "The Reghaia development comprises seven R+9 blocks, designed to provide practical family housing, local services, and concierge spaces that enhance residents' daily lives."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+          "alt": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+          "caption": "Vision of the Bouraada housing and commercial complex."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+          "alt": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+          "caption": "Architectural rendering of the Bouraada housing project."
+        }
+      ],
+      "intro": {
+        "src": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+        "alt": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed kerbstones.",
+        "caption": "Modern residential building with yellow and black accents under construction."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+          "alt": "High-angle view of a multi-story building under construction with exposed brickwork and concrete frames, a large blue tower crane, construction vehicles, and temporary site offices on a dirt ground.",
+          "caption": "Construction progress at Bouraada site, showing a tower crane and building frames."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+          "alt": "Exterior view of a multi-story residential building under construction, showing light-colored walls, balconies with black railings, and windows, with construction materials and activity at the base.",
+          "caption": "Progress on the new housing units at Bouraada site."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+          "alt": "Tall residential building with yellow, black, and white exterior, featuring balconies and windows, with construction materials and dirt visible in the foreground under a clear blue sky.",
+          "caption": "Modern residential building with striking facade under construction."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+          "alt": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+          "caption": "Architectural rendering of the Bouraada housing project."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+          "alt": "A newly constructed, multi-story apartment building with a striking facade featuring horizontal bands of yellow, black, and white. The building has numerous balconies and windows. The foreground shows a dirt construction site with some kerbstones and a pallet of concrete blocks.",
+          "caption": "Modern residential building facade nearing completion."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+          "alt": "A tall, modern residential building with yellow, black, and white sections on its facade, seen from a low angle against a clear blue sky, with construction work visible at the base.",
+          "caption": "Modern residential building under construction with distinctive facade."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+          "alt": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed kerbstones.",
+          "caption": "Modern residential building with yellow and black accents under construction."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+          "alt": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+          "caption": "Architectural rendering of the Bouraada housing project."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+          "alt": "High-angle view of a multi-building construction site with a blue tower crane, exposed concrete structures, brick infill, construction vehicles, and temporary site offices under a clear sky.",
+          "caption": "Construction progress at Bouraada site, featuring a tower crane and multi-story buildings."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+          "alt": "A tall, modern residential building featuring a striking black, yellow, and white facade, viewed from a low angle against a clear blue sky. The foreground shows an unpaved construction site with dirt and some construction materials, indicating ongoing site work.",
+          "caption": "Modern residential building exterior under construction."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+          "alt": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed kerbstones.",
+          "caption": "Modern residential building with yellow and black accents under construction."
+        },
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+          "alt": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+          "caption": "Architectural rendering of the Bouraada housing project."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+          "alt": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+          "caption": "Vision of the Bouraada housing and commercial complex."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

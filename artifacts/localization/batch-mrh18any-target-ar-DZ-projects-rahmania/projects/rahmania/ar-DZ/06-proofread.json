@@ -1,0 +1,355 @@
+{
+  "jobId": "batch-mrh18any-target-ar-DZ-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-12T00:05:25.582Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "المراكز التجارية الرحمانية | الدويرة، الجزائر العاصمة"
+    },
+    {
+      "id": "seo.description",
+      "text": "الإنجاز التقني والأشغال الثانوية لمركزين تجاريين ضمن المشروع السكني لـ 2500 مسكن في الدويرة، الجزائر العاصمة."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "المراكز التجارية الرحمانية | الدويرة، الجزائر العاصمة"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "الإنجاز التقني والأشغال الثانوية لمركزين تجاريين ضمن المشروع السكني لـ 2500 مسكن في الدويرة، الجزائر العاصمة."
+    },
+    {
+      "id": "content.slug",
+      "text": "rahmania"
+    },
+    {
+      "id": "content.title",
+      "text": "المراكز التجارية الرحمانية"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "بنية تحتية متعددة الاستعمالات"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "تسليم الحصة الكاملة للأشغال الثانوية لمركزين تجاريين، تم استكمالهما في سنة 2025 ضمن المشروع السكني لـ 2500 مسكن بالدويرة."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "مركزان تجاريان ضمن برنامج 2500 مسكن بالدويرة، تم تهيئتهما لاحتضان المحلات التجارية والخدمات اليومية للحي."
+    },
+    {
+      "id": "content.description.0",
+      "text": "أنجزت شركة SARL Igloo Yapi Construction الحصة الكاملة للأشغال الثانوية (corps d'état secondaires - CES) للهيكلين التجاريين. وقد سمح نطاق الأشغال بتحويل الهياكل الخرسانية المسلحة الخام إلى فضاءات تجارية مهيأة بالكامل وعملية، مصممة لاستيعاب التجار المحليين والخدمات العمومية."
+    },
+    {
+      "id": "content.description.1",
+      "text": "تتميز واجهات المباني بجدران ستائرية زجاجية واسعة مدمجة مع شاشات معمارية تزيينية. ومن الداخل، تتمركز الحركة العمودية حول درج مركزي، بينما توفر قبة سماوية زجاجية هرمية الهيكل إضاءة طبيعية عبر مختلف الطوابق التجارية."
+    },
+    {
+      "id": "content.authority",
+      "text": "تم استكمال المشروع في سنة 2025 وتسليمه في الآجال المحددة، مع تنسيق كافة الحرف الثانوية لتلبية المعايير الحديثة للمباني التجارية."
+    },
+    {
+      "id": "content.seo",
+      "text": "الإنجاز التقني والأشغال الثانوية لمركزين تجاريين ضمن المشروع السكني لـ 2500 مسكن في الدويرة، الجزائر العاصمة."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "نوعية المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "مراكز تجارية"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوعية المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "مراكز تجارية"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "الدويرة، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "نطاق الأشغال"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "حصة الأشغال الثانوية (CES)"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "تاريخ الاستكمال"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "السياق"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "البرنامج السكني لـ 2500 مسكن"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "نوع العقد"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "الإنجاز"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "الحصة الكاملة للأشغال الثانوية (CES)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "تركيب الواجهات الزجاجية والشاشات المعمارية"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "الحركة العمودية المركزية وقبة سماوية زجاجية هرمية الهيكل"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "تم التسليم في سنة 2025، وفق الآجال المحددة والمعايير المعمول بها"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو نطاق مشروع المراكز التجارية الرحمانية؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "الأشغال الثانوية لمركزين تجاريين، تم استكمالهما في سنة 2025 ضمن البرنامج السكني لـ 2500 مسكن بالدويرة."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي الأشغال التقنية التي أنجزها المقاول؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "تكفلت شركة SARL Igloo Yapi Construction بتهيئة الهياكل الخرسانية المسلحة، بما في ذلك الفواصل الداخلية، التشطيبات، الواجهات الزجاجية، السلالم المركزية، وتركيب قبة سماوية زجاجية هرمية الهيكل."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "متى تم استكمال هذا المشروع التجاري؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "تمت تهيئة المركزين التجاريين ضمن برنامج 2500 مسكن بالدويرة لاحتضان المحلات التجارية والخدمات اليومية للحي."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "منظر داخلي لوحدة تجارية مستكملة تتميز بأرضية مبلطة، جدران بيضاء، وإضاءة سقفية غائرة، تظهر عبر حاجز زجاجي ذي إطار أسود."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "التصميم الداخلي المستكمل لوحدة تجارية يظهر الزجاج الداخلي والتشطيبات."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "منظر خارجي للمبنى التجاري المستكمل المكون من ثلاثة طوابق مع ألواح تلبيس رمادية داكنة وحواف نحاسية اللون، يقع بجوار العمارات السكنية."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "واجهة المركز التجاري المستكملة المدمجة داخل المشروع السكني."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "البهو الداخلي للمركز التجاري يظهر درجاً خرسانياً متعدد المستويات مع درابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية واسعة."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "البهو المركزي ونواة الحركة العمودية."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "درج دائري بدرجات من الغرانيت الرمادي ودرابزين من الفولاذ المقاوم للصدأ في البهو الرئيسي للمبنى التجاري."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "تفصيل للدرج الدائري الملبس بالغرانيت."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "درجان خرسانيان دائريان مع غلاف واقٍ على الدرابزين المعدني خلال مرحلة التشطيبات الداخلية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "أشغال تركيب السلالم والتشطيبات الداخلية."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "قبة سماوية زجاجية هرمية الشكل مع إطار معدني داكن مثبتة على السقف المبلط للمركز التجاري."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "قبة سماوية زجاجية هرمية الهيكل على السطح الترابي."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "البهو الداخلي للمركز التجاري يظهر درجاً خرسانياً متعدد المستويات مع درابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية واسعة."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "البهو المركزي ونواة الحركة العمودية."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "قبة سماوية زجاجية هرمية الشكل مع إطار معدني داكن مثبتة على السقف المبلط للمركز التجاري."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "قبة سماوية زجاجية هرمية الهيكل على السطح الترابي."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "قبة سماوية زجاجية هرمية حديثة التركيب على سقف مسطح، مع ظهور المباني السكنية في الخلفية."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "تركيب القبة السماوية على سقف المركز التجاري."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "بهو تجاري واسع يتميز بدرجين دائريين توأمين مع درجات من الغرانيت الداكن وغلاف بلاستيكي واقٍ على الدرابزين المعدني."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "الدرجان الدائريان التوأمان في البهو الرئيسي خلال مرحلة التهيئة النهائية."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "درج دائري بدرجات من الغرانيت الرمادي ودرابزين من الفولاذ المقاوم للصدأ في البهو الرئيسي للمبنى التجاري."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "تفصيل للدرج الدائري الملبس بالغرانيت."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "لقطة مقربة لهيكل القبة السماوية الزجاجية الهرمية على السطح الترابي المبلط، مع ظهور العمارات السكنية في الخلفية."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "تفصيل القبة السماوية للسطح الترابي."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "منظر خارجي للمركز التجاري مع سقفه الزجاجي الهرمي، يقع بين عمارات سكنية متعددة الطوابق."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "المركز التجاري مدمج داخل المشروع السكني بالدويرة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "بهو تجاري واسع يتميز بدرجين دائريين توأمين مع درجات من الغرانيت الداكن وغلاف بلاستيكي واقٍ على الدرابزين المعدني."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "الدرجان الدائريان التوأمان في البهو الرئيسي خلال مرحلة التهيئة النهائية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "البهو الداخلي للمركز التجاري يظهر درجاً خرسانياً متعدد المستويات مع درابزين من الفولاذ المقاوم للصدأ ونوافذ محيطية واسعة."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "البهو المركزي ونواة الحركة العمودية."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "منظر داخلي لوحدة تجارية مستكملة تتميز بأرضية مبلطة، جدران بيضاء، وإضاءة سقفية غائرة، تظهر عبر حاجز زجاجي ذي إطار أسود."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "التصميم الداخلي المستكمل لوحدة تجارية يظهر الزجاج الداخلي والتشطيبات."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh0ztmn-target-ar-DZ-projects-index",
+  "pageId": "projects-index",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:58:50.199Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

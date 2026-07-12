@@ -1,0 +1,57 @@
+{
+  "jobId": "batch-mrh0rh4p-target-tr-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-11T23:52:20.643Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.meta.0.value",
+      "severity": "blocker",
+      "message": "The source term 'LPL' is a specific Algerian social housing program (Logement Public Locatif) and is not synonymous with 'Serbest promosyonel konut' (LPA/LPP/Promotionnel). Mixing these acronyms violates the protected terminology rules."
+    },
+    {
+      "id": "content.details.0.value",
+      "severity": "blocker",
+      "message": "The source term 'LPL' is incorrectly mapped to 'Serbest promosyonel konut'. These are distinct housing programs in Algeria and must not be conflated."
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'sistemi and kırmızı' should be 'sistemi ve kırmızı'."
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'sistemi and kırmızı' should be 'sistemi ve kırmızı'."
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'sistemi and kırmızı' should be 'sistemi ve kırmızı'."
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'görünüyor and gökyüzü' should be 'görünüyor ve gökyüzü'."
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'görünüyor and güneş' should be 'görünüyor ve güneş'."
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'sistemi and kırmızı' should be 'sistemi ve kırmızı'."
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "severity": "warning",
+      "message": "Typo in Turkish conjunction: 'sistemi and kırmızı' should be 'sistemi ve kırmızı'."
+    }
+  ]
+}

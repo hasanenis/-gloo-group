@@ -1,0 +1,355 @@
+{
+  "jobId": "batch-mrh1lmcd-target-ar-DZ-projects-staoueli-11-41-villas",
+  "pageId": "projects/staoueli-11-41-villas",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-f8504f2d",
+  "generatedAt": "2026-07-12T00:15:47.188Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "أشغال إنجاز 11/41 فيلا وأشغال الـ VRD، سطاوالي | محفظة المشاريع السكنية"
+    },
+    {
+      "id": "seo.description",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 11/41 فيلا وأشغال الشبكات. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "11/41 فيلا وأشغال الـ VRD، سطاوالي"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 11/41 فيلا وأشغال الشبكات. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.slug",
+      "text": "staoueli-11-41-villas"
+    },
+    {
+      "id": "content.title",
+      "text": "11/41 فيلا وأشغال الـ VRD"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "برنامج سكني"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "تسليم 11 فيلا فردية ضمن مشروع \"Les Pastorales\" في سطاوالي، يجمع بين حجم سكني يتكون من طابق أرضي زائد طابقين علويين (R+2) مع تهيئة الطرق والشبكات المختلفة (VRD) المتكاملة."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يركز هذا الجزء السكني على التنظيم الحجمي منخفض الارتفاع، حركة المرور داخل الموقع، والأشغال الخارجية المتينة لإنشاء مقياس سكني متناسق."
+    },
+    {
+      "id": "content.description.0",
+      "text": "تشكل الـ 11 فيلا مرحلة محددة من مخطط توجيهي أوسع يضم 41 فيلا. تطلب نطاق الإنجاز تنسيق تسلسل تسليم جميع حصص الأشغال (TCE)، وتشكيل الواجهات، وتركيب شبكات الطرق والشبكات المختلفة (VRD) المخصصة لضمان توصيلات مستقلة للموقع."
+    },
+    {
+      "id": "content.description.1",
+      "text": "تم تشييد الفيلات بهيكل يتكون من طابق أرضي زائد طابقين علويين (R+2)، وتتميز بشرفات مدمجة، وحواجز حماية هيكلية، وتلبيس خارجي، وممرات وصول مخصصة لتحديد الواجهة السكنية على مستوى الشارع."
+    },
+    {
+      "id": "content.authority",
+      "text": "تسليم سكني يتميز بإنجاز هيكلي دقيق، شبكات مرافق مخصصة للموقع، وتشطيبات واجهات منسقة."
+    },
+    {
+      "id": "content.seo",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 11/41 فيلا وأشغال الشبكات. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Les Pastorales، سطاوالي، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "نطاق البرنامج"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "11 فيلا ضمن مخطط توجيهي يضم 41 فيلا"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "سنة الإنجاز"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2022"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "النمط المعماري"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "فيلات فردية تتكون من طابق أرضي زائد طابقين علويين (R+2)"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "نطاق الأشغال"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "تسليم جميع حصص الأشغال (TCE) وأشغال الطرق والشبكات المختلفة (VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "المواصفات التقنية للمشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "11 فيلا فردية R+2 ضمن مشروع Les Pastorales"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "أشغال الطرق والشبكات المختلفة (VRD) المتكاملة بما في ذلك توصيلات المياه والكهرباء"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "واجهات مفصلة مع شرفات مدمجة وحواجز حماية زجاجية"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "تم الانتهاء من الإنجاز في 2022 مع الأشغال الثانوية والتشطيبات الداخلية"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو نطاق مشروع 11/41 فيلا في سطاوالي؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "يشمل المشروع بناء وتسليم جميع حصص الأشغال (TCE) لـ 11 فيلا فردية تتكون من طابق أرضي زائد طابقين علويين (R+2)، تم إنجازها كجزء من برنامج سكني أوسع يضم 41 فيلا في Les Pastorales، سطاوالي."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي أشغال الهندسة المدنية والبنية التحتية التي تم تنفيذها في الموقع؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "تقع الـ 11 فيلا داخل برنامج يضم 41 فيلا، وتعتمد على تسلسل دقيق من جميع حصص الأشغال (TCE)، الـ VRD، أشغال الواجهات والشبكات الخارجية لإنشاء محيط سكني مكتمل."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "ما هي الخصائص المعمارية للفيلات؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "تم تنظيم كل فيلا بهيكل يتكون من طابق أرضي زائد طابقين علويين (R+2)، وتتميز بتشكيل واجهات عصري، شرفات ذات حواجز زجاجية، ومداخل مرائب مدمجة."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "منظر خارجي لفيلات سكنية منجزة حديثاً تتميز بواجهات فاتحة، تفاصيل داكنة، شرفات بحواجز زجاجية، وأسطح قرميدية حمراء تحت سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "فيلات سكنية مكتملة R+2 تظهر تشكيل الواجهات والشرفات ذات الحواجز الزجاجية."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "المظهر الخارجي لمبنى سكني متعدد الطوابق بجدران بيضاء ووردية فاتحة، تفاصيل معمارية رمادية داكنة، شرفات ذات واجهات زجاجية، ومظلات خشبية فوق مداخل الطابق الأرضي وأبواب المرائب. يظهر ممر مبلط في المقدمة."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "الواجهة على مستوى الشارع تظهر مظلات المداخل، المرائب المدمجة، وممرات الوصول المبلطة."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/staoueli-11-41-villas/01-staouali-1.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "صف من الفيلات السكنية الحديثة ذات الألوان الفاتحة وتتميز بتفاصيل داكنة، شرفات زجاجية، وأسطح من قرميد التراكوتا، مع سماء زرقاء صافية في الأعلى."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "الاصطفاف الحجمي لفيلات R+2 ضمن مشروع Les Pastorales."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "مطبخ منجز حديثاً يتميز ببلاط أرضيات داكن ولامع بنمط رخامي، خزائن سفلية بلون كريمي فاتح، أسطح عمل داكنة، جدار خلفي بنمط هندسي رمادي وأبيض، وخزائن علوية بنقشة خشبية بنية داكنة. تظهر قطعة قماش زرقاء على الأرض في المقدمة."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "أشغال التشطيبات الداخلية تظهر خزائن المطبخ والأسطح المبلطة."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "فيلا سكنية متعددة الطوابق قيد الإنشاء مع وجود سكلات على الواجهة، خرسانة ظاهرة عند القاعدة، وعاملين يستريحان على شرفة علوية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "أشغال تشطيب الواجهة والأشغال الهيكلية قيد التنفيذ في فيلا فردية."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "المظهر الخارجي لمبنى سكني متعدد الطوابق بجدران بيضاء ووردية فاتحة، تفاصيل معمارية رمادية داكنة، شرفات ذات واجهات زجاجية، ومظلات خشبية فوق مداخل الطابق الأرضي وأبواب المرائب. يظهر ممر مبلط في المقدمة."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "تفاصيل التشطيبات الخارجية، مظلات المداخل، وحركة المرور في الطابق الأرضي."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "منظر خارجي لفيلات سكنية منجزة حديثاً تتميز بواجهات فاتحة، تفاصيل داكنة، شرفات بحواجز زجاجية، وأسطح قرميدية حمراء تحت سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "واجهات الفيلات المكتملة مع الشرفات المدمجة وأسطح قرميد التراكوتا."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/staoueli-11-41-villas/03-staoualii.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "مطبخ عصري على شكل حرف L في فيلا سكنية، يظهر أسطح عمل من الغرانيت الداكن، خزائن سفلية بلون كريمي فاتح، خزائن علوية بيضاء، وخزائن حائطية بنقشة خشبية بنية داكنة. يظهر موقد غاز، حوض مزدوج من الفولاذ المقاوم للصدأ، وجدار خلفي من البلاط المزخرف، بالإضافة إلى بلاط أرضيات داكن بنمط رخامي."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "تركيب المطبخ المكتمل يوضح تسليم الأشغال الثانوية."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "المظهر الخارجي لفيلا سكنية متعددة الطوابق بجدران بيج فاتحة، إطارات نوافذ داكنة، وشرفات ذات حواجز زجاجية ومعدنية. يظهر سقف من قرميد التراكوتا، وعارضة خرسانية كبيرة تعترض الجزء العلوي من الإطار. تظهر علامة وقت '2022.9.21 11:52' في أسفل اليمين."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "تفاصيل واجهات الطوابق العليا، الزجاج، وحواجز الشرفات."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "المظهر الخارجي لمبنى سكني متعدد الطوابق بجدران بيضاء ووردية فاتحة، تفاصيل معمارية رمادية داكنة، شرفات ذات واجهات زجاجية، ومظلات خشبية فوق مداخل الطابق الأرضي وأبواب المرائب. يظهر ممر مبلط في المقدمة."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "نقاط الوصول بالطابق الأرضي ومداخل المرائب المدمجة."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "منظر خارجي لفيلات سكنية منجزة حديثاً تتميز بواجهات فاتحة، تفاصيل داكنة، شرفات بحواجز زجاجية، وأسطح قرميدية حمراء تحت سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "هياكل فيلات R+2 المكتملة تظهر التلبيس الخارجي وتفاصيل الأسطح."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "منظر خارجي لعدة فيلات سكنية متعددة الطوابق مبنية حديثاً تتميز بجدران بيضاء، تفاصيل معمارية رمادية داكنة، قرميد أسطح تراكوتا، وشرفات ذات ألواح زجاجية تحت سماء زرقاء صافية. يظهر شخص جزئياً في الطابق الأرضي على اليمين."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "الواجهات الخارجية للفيلات المكتملة قبل التسليم النهائي."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "منظر خارجي لفيلات سكنية منجزة حديثاً تتميز بواجهات فاتحة، تفاصيل داكنة، شرفات بحواجز زجاجية، وأسطح قرميدية حمراء تحت سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "الواجهات المنجزة تظهر تكامل الزجاج، المعدن، والتلبيس."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "المظهر الخارجي لمبنى سكني متعدد الطوابق بجدران بيضاء ووردية فاتحة، تفاصيل معمارية رمادية داكنة، شرفات ذات واجهات زجاجية، ومظلات خشبية فوق مداخل الطابق الأرضي وأبواب المرائب. يظهر ممر مبلط في المقدمة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "ممرات المشاة المكتملة والأشغال الخارجية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "مطبخ منجز حديثاً يتميز ببلاط أرضيات داكن ولامع بنمط رخامي، خزائن سفلية بلون كريمي فاتح، أسطح عمل داكنة، جدار خلفي بنمط هندسي رمادي وأبيض، وخزائن علوية بنقشة خشبية بنية داكنة. تظهر قطعة قماش زرقاء على الأرض في المقدمة."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "أشغال بلاط الأرضيات وتركيب الخزائن داخل مناطق المطبخ."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "منظر خارجي لفيلات سكنية منجزة حديثاً تتميز بواجهات فاتحة، تفاصيل داكنة، شرفات بحواجز زجاجية، وأسطح قرميدية حمراء تحت سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "فيلات سكنية مكتملة R+2 ضمن مشروع Les Pastorales."
+    }
+  ]
+}

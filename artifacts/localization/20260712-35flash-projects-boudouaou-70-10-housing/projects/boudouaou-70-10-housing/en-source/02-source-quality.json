@@ -1,0 +1,45 @@
+{
+  "jobId": "20260712-35flash-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "locale": "en",
+  "sourceRevision": "v1-ae435144",
+  "generatedAt": "2026-07-11T21:38:52.657Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.1",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "seo.description",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "seo.socialDescription",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.seo",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.0.question",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

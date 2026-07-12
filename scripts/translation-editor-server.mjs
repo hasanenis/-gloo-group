@@ -2,7 +2,20 @@ import express from 'express';
 import ts from 'typescript';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import {
+  LOCALES,
+  TARGET_LOCALES,
+  assertLocale,
+  clone,
+  documentRevision,
+  listContentDocuments,
+  readDocument,
+  readJsonDocument,
+  validateDocument,
+  writeDocument,
+} from './localization-content.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -26,6 +39,11 @@ const PO_DIR = 'src/locales';
 
 const LOCALE_KEYS = ['en', 'fr', 'dz', 'ar-DZ', 'tr'];
 const AR_KEYS = new Set(['dz', 'ar-DZ']);
+
+// JSON page editor jobs are intentionally kept in memory. The source of truth
+// is always the approved/draft JSON file; job artifacts live under
+// artifacts/localization and can be inspected or resumed independently.
+const localizationJobs = new Map();
 
 function isStringy(node) {
   return ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node);
@@ -381,6 +399,147 @@ async function writePoEntry(locale, msgid, value) {
 
 const app = express();
 app.use(express.json({ limit: '5mb' }));
+
+function pageIdFromRequest(req) {
+  // Query form supports nested ids (`projects/foo`) on every Express version.
+  return String(req.query.pageId || req.params.pageId || '').replace(/^\/+|\/+$/g, '');
+}
+
+function contentReadOptions(req) {
+  const shared = String(req.query.shared || '').toLowerCase() === 'true' || req.body?.shared === true;
+  const pageId = shared ? 'shared' : pageIdFromRequest(req);
+  return { pageId, locale: assertLocale(req.query.locale || req.params.locale || req.body?.locale), shared };
+}
+
+async function loadContentIndex() {
+  const files = await listContentDocuments();
+  const rows = [];
+  for (const item of files) {
+    try {
+      const document = await readJsonDocument(item.file, { expectedPageId: item.type === 'shared' ? 'shared' : item.pageId, expectedLocale: item.locale, shared: item.type === 'shared' });
+      rows.push({ type: item.type, pageId: item.pageId, locale: item.locale, status: document.status, revision: document.revision, sourceRevision: document.sourceRevision, file: path.relative(rootDir, item.file).replaceAll('\\', '/') });
+    } catch (error) {
+      rows.push({ type: item.type, pageId: item.pageId, locale: item.locale, error: String(error?.message ?? error), file: path.relative(rootDir, item.file).replaceAll('\\', '/') });
+    }
+  }
+  return rows;
+}
+
+// Page/shared JSON APIs. These are additive: the historical /api/entries and
+// /api/po endpoints below remain available to existing editor clients.
+app.get('/api/content/pages', async (req, res) => {
+  try {
+    const rows = await loadContentIndex();
+    const page = req.query.pageId ? String(req.query.pageId) : null;
+    const type = req.query.shared === 'true' ? 'shared' : req.query.shared === 'false' ? 'page' : null;
+    res.json({ locales: LOCALES, targets: TARGET_LOCALES, documents: rows.filter((row) => (!page || row.pageId === page) && (!type || row.type === type)) });
+  } catch (error) {
+    res.status(500).json({ error: String(error?.message ?? error) });
+  }
+});
+
+async function handleContentGet(req, res) {
+  try {
+    const options = contentReadOptions(req);
+    const document = await readDocument(options);
+    res.json({ ...document, _meta: { pageId: options.pageId, locale: options.locale, shared: options.shared } });
+  } catch (error) {
+    const status = error?.code === 'ENOENT' ? 404 : 400;
+    res.status(status).json({ error: String(error?.message ?? error) });
+  }
+}
+
+app.get('/api/content/page', handleContentGet);
+app.get('/api/content/pages/:pageId/:locale', handleContentGet);
+
+async function handleContentPut(req, res) {
+  try {
+    const options = contentReadOptions(req);
+    const incoming = req.body?.document && typeof req.body.document === 'object' ? req.body.document : req.body;
+    if (!incoming || typeof incoming !== 'object') return res.status(400).json({ error: 'JSON document is required.' });
+    const document = clone(incoming);
+    document.locale = options.locale;
+    document.pageId = options.shared ? 'shared' : options.pageId;
+    const source = options.locale === 'en' ? document : await readDocument({ pageId: options.pageId, locale: 'en', shared: options.shared });
+    if (options.locale !== 'en' && document.sourceRevision !== source.revision && req.body?.force !== true) {
+      return res.status(409).json({ error: 'Source changed; refresh this locale before saving.', expectedSourceRevision: source.revision, receivedSourceRevision: document.sourceRevision });
+    }
+    document.revision = documentRevision(document);
+    document.updatedAt = new Date().toISOString();
+    validateDocument(document, { expectedPageId: options.shared ? 'shared' : options.pageId, expectedLocale: options.locale });
+    await writeDocument({ ...options, document });
+    res.json({ ok: true, document });
+  } catch (error) {
+    res.status(error?.code === 'ENOENT' ? 404 : 400).json({ error: String(error?.message ?? error) });
+  }
+}
+
+app.put('/api/content/page', handleContentPut);
+app.put('/api/content/pages/:pageId/:locale', handleContentPut);
+
+async function approveContent(req, res) {
+  try {
+    const options = contentReadOptions(req);
+    const document = clone(await readDocument(options));
+    const source = options.locale === 'en' ? document : await readDocument({ pageId: options.pageId, locale: 'en', shared: options.shared });
+    if (options.locale !== 'en' && document.sourceRevision !== source.revision) return res.status(409).json({ error: 'Cannot approve stale translation.', expectedSourceRevision: source.revision, receivedSourceRevision: document.sourceRevision });
+    document.status = 'approved';
+    document.revision = documentRevision(document);
+    document.updatedAt = new Date().toISOString();
+    await writeDocument({ ...options, document });
+    res.json({ ok: true, document });
+  } catch (error) {
+    res.status(error?.code === 'ENOENT' ? 404 : 400).json({ error: String(error?.message ?? error) });
+  }
+}
+
+app.post('/api/content/page/approve', approveContent);
+app.post('/api/content/pages/:pageId/:locale/approve', approveContent);
+
+app.post('/api/localization/jobs', async (req, res) => {
+  const pageId = String(req.body?.pageId || '').replace(/^\/+|\/+$/g, '');
+  let target;
+  try { target = assertLocale(req.body?.locale || req.body?.target); } catch (error) { return res.status(400).json({ error: String(error?.message ?? error) }); }
+  const shared = req.body?.shared === true;
+  if (!pageId || target === 'en') return res.status(400).json({ error: 'pageId and a non-English target locale are required.' });
+  const id = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+  const job = { id, pageId, target, shared, status: 'queued', createdAt: new Date().toISOString(), logs: [] };
+  localizationJobs.set(id, job);
+  const child = spawn(process.execPath, [path.join(rootDir, 'scripts', 'localization-pipeline.mjs'), '--page', pageId, '--target', target, ...(shared ? ['--shared'] : []), '--job-id', id], { cwd: rootDir, env: process.env, stdio: ['ignore', 'pipe', 'pipe'] });
+  job.status = 'running';
+  child.stdout.on('data', (chunk) => job.logs.push(String(chunk).trim()));
+  child.stderr.on('data', (chunk) => job.logs.push(String(chunk).trim()));
+  child.on('close', (code) => { job.status = code === 0 ? 'completed' : 'failed'; job.exitCode = code; job.finishedAt = new Date().toISOString(); });
+  res.status(202).json(job);
+});
+
+app.get('/api/localization/jobs/:jobId', (req, res) => {
+  const job = localizationJobs.get(req.params.jobId);
+  if (!job) return res.status(404).json({ error: 'Localization job not found.' });
+  res.json(job);
+});
+
+app.get('/api/localization/jobs/:jobId/artifacts', async (req, res) => {
+  const jobId = String(req.params.jobId || '');
+  if (!/^[a-z0-9-]+$/iu.test(jobId)) return res.status(400).json({ error: 'Invalid localization job id.' });
+  const base = path.resolve(rootDir, 'artifacts', 'localization', jobId);
+  const root = path.resolve(rootDir, 'artifacts', 'localization');
+  if (!base.startsWith(`${root}${path.sep}`)) return res.status(400).json({ error: 'Invalid artifact path.' });
+  const artifacts = [];
+  async function walk(directory) {
+    for (const entry of await fs.readdir(directory, { withFileTypes: true }).catch(() => [])) {
+      const file = path.join(directory, entry.name);
+      if (entry.isDirectory()) await walk(file);
+      else if (entry.isFile() && entry.name.endsWith('.json')) {
+        const relative = path.relative(base, file).replaceAll('\\', '/');
+        try { artifacts.push({ file: relative, data: JSON.parse(await fs.readFile(file, 'utf8')) }); }
+        catch (error) { artifacts.push({ file: relative, error: String(error?.message ?? error) }); }
+      }
+    }
+  }
+  await walk(base);
+  res.json({ jobId, artifacts });
+});
 
 app.get('/api/entries', async (_req, res) => {
   const groups = {};

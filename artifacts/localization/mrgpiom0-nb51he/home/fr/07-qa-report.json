@@ -1,0 +1,11 @@
+{
+  "jobId": "mrgpiom0-nb51he",
+  "pageId": "home",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-e5551402",
+  "generatedAt": "2026-07-11T18:37:34.114Z",
+  "status": "dry-run",
+  "issues": [],
+  "note": "Remote AI stages skipped by --offline/--dry-run."
+}

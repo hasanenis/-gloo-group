@@ -1,0 +1,59 @@
+{
+  "jobId": "batch-mrh05fov-target-tr-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-11T23:35:12.411Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "seo.description",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "seo.socialDescription",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.summary.0",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.summary.1",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.seo",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.details.4.value",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 2,500"
+    }
+  ]
+}

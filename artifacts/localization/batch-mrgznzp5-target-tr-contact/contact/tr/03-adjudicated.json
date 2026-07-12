@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrgznzp5-target-tr-contact",
+  "pageId": "contact",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:21:38.488Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "İletişim | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "Proje değerlendirmesi amacıyla saha konumlarını, program gereksinimlerini ve teknik dokümantasyonu sunmak için Birkhadem'deki merkez ofisimizle iletişime geçin."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "İletişim | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Proje değerlendirmesi amacıyla saha konumlarını, program gereksinimlerini ve teknik dokümantasyonu sunmak için Birkhadem'deki merkez ofisimizle iletişime geçin."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "İletişim"
+    },
+    {
+      "id": "content.heading",
+      "text": "Bir proje danışmanlığı süreci başlatın."
+    },
+    {
+      "id": "content.lead",
+      "text": "Birkhadem'deki teknik ekibimizle iletişime geçin. Dahili mühendislik ve maliyet tahmini değerlendirme sürecimizi başlatmak üzere saha koordinatlarınızı, geliştirme programınızı ve mevcut tasarım belgelerinizi iletin."
+    }
+  ]
+}

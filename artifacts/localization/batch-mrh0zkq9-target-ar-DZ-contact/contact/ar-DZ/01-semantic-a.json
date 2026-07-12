@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrh0zkq9-target-ar-DZ-contact",
+  "pageId": "contact",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:58:38.725Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "اتصل بنا | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "تواصل مع مكتبنا الرئيسي في بئر خادم لتقديم مواقع المشاريع، ومتطلبات البرنامج، والوثائق الفنية لغرض تقييم المشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Contact | SARL Igloo Yapi Construction",
+      "draft": "اتصل بنا | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+      "draft": "تواصل مع مكتبنا الرئيسي في بئر خادم لتقديم مواقع المشاريع، ومتطلبات البرنامج، والوثائق الفنية لغرض تقييم المشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Contact",
+      "draft": "اتصل بنا",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Initiate a project consultation.",
+      "draft": "بدء استشارة حول المشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Connect with our technical team in Birkhadem. Submit your site coordinates, development programme and available design documentation to initiate our internal engineering and estimation review.",
+      "draft": "تواصل مع فريقنا الفني في بئر خادم. وقدم إحداثيات الموقع، وبرنامج التطوير، ووثائق التصميم المتاحة للبدء في إجراءات المراجعة الهندسية والتقديرية الداخلية.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

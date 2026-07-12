@@ -1,0 +1,47 @@
+{
+  "jobId": "batch-mrgxkwq6-target-fr-not-found",
+  "pageId": "not-found",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T22:23:15.379Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "Page introuvable | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "La page demandée est introuvable. Retournez sur le portail de SARL Igloo Yapi Construction pour consulter nos programmes immobiliers et nos projets de construction.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "Page introuvable | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "La page demandée est introuvable. Retournez sur le portail de SARL Igloo Yapi Construction pour consulter nos programmes immobiliers et nos projets de construction.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Page Not Found",
+      "draft": "Page introuvable",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.cta",
+      "source": "Return to the homepage",
+      "draft": "Retour à la page d'accueil",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "jobId": "20260712000306-rahmania-source-flash",
+  "pageId": "projects/rahmania",
+  "locale": "en",
+  "sourceRevision": "v1-2f4fddef",
+  "generatedAt": "2026-07-11T21:03:07.915Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "621cc32d8eec7d56",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Rahmania Commercial Centres",
+    "description": "Explore the gallery, technical details, and location notes for Rahmania Commercial Centres. The project exemplifies a residential and mixed-use development model.",
+    "socialTitle": "Rahmania Commercial Centres",
+    "socialDescription": "Explore the gallery, technical details, and location notes for Rahmania Commercial Centres. The project exemplifies a residential and mixed-use development model."
+  },
+  "content": {
+    "slug": "rahmania",
+    "title": "Rahmania Commercial Centres",
+    "eyebrow": "MIXED-USE PROJECT",
+    "summary": [
+      "Secondary works for two commercial centres, completed in 2025 within Douira's 2,500-home residential programme.",
+      "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services."
+    ],
+    "description": [
+      "Igloo carried out the complete secondary works package for both centres, turning two reinforced-concrete structures into modern, functional spaces ready for traders and everyday users.",
+      "The facades combine large glazed surfaces with decorative screen elements. Inside, circulation is organised around a central staircase, while a pyramidal glass skylight brings natural light into the retail levels."
+    ],
+    "authority": "Delivered in 2025, on schedule, with every finishing trade coordinated to the high standards demanded by a modern commercial building.",
+    "seo": "Explore the gallery, technical details, and location notes for Rahmania Commercial Centres. The project exemplifies a residential and mixed-use development model.",
+    "meta": [
+      {
+        "label": "Project type",
+        "value": "Commercial centres"
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Commercial centres"
+      },
+      {
+        "label": "Location",
+        "value": "Douira, Algiers, Algeria"
+      },
+      {
+        "label": "Works",
+        "value": "Secondary works packages"
+      },
+      {
+        "label": "Completion",
+        "value": "2025, on schedule"
+      },
+      {
+        "label": "Development",
+        "value": "2,500-home residential programme"
+      },
+      {
+        "label": "Contract",
+        "value": "Construction"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project programme",
+        "items": [
+          "Complete secondary works package",
+          "Reinforced concrete structure and glazed facades",
+          "Central staircase and pyramidal glass skylight",
+          "Delivered in 2025, on schedule and to the required standard"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is Rahmania Commercial Centres?",
+        "answer": "Secondary works for two commercial centres, completed in 2025 within Douira's 2,500-home residential programme."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "Igloo carried out the complete secondary works package for both centres, turning two reinforced-concrete structures into modern, functional spaces ready for traders and everyday users."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Interior of a modern commercial unit with white walls, tiled floor, and recessed lighting, viewed through a black-framed glass partition. A worker is visible near a large window in the background, which shows another building.",
+          "caption": "Newly completed commercial unit interior."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+          "alt": "Exterior view of a modern three-story commercial building with dark grey panels and copper trim, situated between two light-colored residential high-rises, with a street and a parked car in the foreground.",
+          "caption": "Completed commercial center serving a large residential development."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+        "alt": "Interior of a bright, modern commercial center featuring a prominent multi-level staircase with white steps and sleek stainless steel railings. Large windows are visible in the background, providing natural light to the clean, empty space.",
+        "caption": "Modern interior of a commercial center with a multi-level staircase."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "A grand, curved staircase with grey granite steps and shiny stainless steel railings in a bright, modern commercial building lobby. White walls and black-framed doors are visible in the background.",
+          "caption": "Elegant curved staircase in a new commercial center."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+          "alt": "Two grand, curved staircases with metal railings covered in protective plastic sheeting, set within a large, bright commercial interior space with white walls and concrete floors. Large windows are visible in the background.",
+          "caption": "Interior view of the commercial center featuring curved staircases during finishing."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "A modern pyramid-shaped glass skylight with a dark frame and greenish-tinted glass panels sits on a light brown tiled roof. In the background, several multi-story residential buildings are visible under a partly cloudy sky.",
+          "caption": "Architectural skylight detail at the commercial center."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Interior of a bright, modern commercial center featuring a prominent multi-level staircase with white steps and sleek stainless steel railings. Large windows are visible in the background, providing natural light to the clean, empty space.",
+          "caption": "Modern interior of a commercial center with a multi-level staircase."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "A modern pyramid-shaped glass skylight with a dark frame and greenish-tinted glass panels sits on a light brown tiled roof. In the background, several multi-story residential buildings are visible under a partly cloudy sky.",
+          "caption": "Architectural skylight detail at the commercial center."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+          "alt": "A newly installed glass pyramid skylight on a flat roof, with beige residential buildings visible in the background under a bright blue sky. A worker is partially visible on the left.",
+          "caption": "Modern glass skylight installation at the commercial center."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "A wide shot of a spacious commercial building interior with two grand, curved staircases. The staircases have dark granite steps and modern metal railings, which are covered in translucent protective plastic sheeting. A large white column stands between the two staircases. In the background, large glass doors and windows are visible, letting in natural light. The floor is a light grey, unfinished concrete.",
+          "caption": "Twin curved staircases in a commercial center lobby during the finishing phase."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "A grand, curved staircase with grey granite steps and shiny stainless steel railings in a bright, modern commercial building lobby. White walls and black-framed doors are visible in the background.",
+          "caption": "Elegant curved staircase in a new commercial center."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+          "alt": "A close-up view of a contemporary glass pyramid skylight structure on a light brown tiled rooftop. In the background, a beige multi-story building with small windows is visible, and further back, several residential apartment blocks under a cloudy sky.",
+          "caption": "Architectural detail: Glass skylight on a commercial center rooftop."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+          "alt": "View of a modern commercial center with a glass pyramid roof, situated between two tall, light-colored residential apartment buildings. In the foreground, a circular landscaped area is under development, and a tanker truck is parked nearby. More residential buildings are visible in the background under a clear blue sky.",
+          "caption": "Commercial center and residential buildings in Douira, Algiers."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "A wide shot of a spacious commercial building interior with two grand, curved staircases. The staircases have dark granite steps and modern metal railings, which are covered in translucent protective plastic sheeting. A large white column stands between the two staircases. In the background, large glass doors and windows are visible, letting in natural light. The floor is a light grey, unfinished concrete.",
+          "caption": "Twin curved staircases in a commercial center lobby during the finishing phase."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Interior of a bright, modern commercial center featuring a prominent multi-level staircase with white steps and sleek stainless steel railings. Large windows are visible in the background, providing natural light to the clean, empty space.",
+          "caption": "Modern interior of a commercial center with a multi-level staircase."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Interior of a modern commercial unit with white walls, tiled floor, and recessed lighting, viewed through a black-framed glass partition. A worker is visible near a large window in the background, which shows another building.",
+          "caption": "Newly completed commercial unit interior."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

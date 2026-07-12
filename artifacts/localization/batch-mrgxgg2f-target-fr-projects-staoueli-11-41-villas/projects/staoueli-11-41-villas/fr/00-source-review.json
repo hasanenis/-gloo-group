@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgxgg2f-target-fr-projects-staoueli-11-41-villas",
+  "pageId": "projects/staoueli-11-41-villas",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-f8504f2d",
+  "generatedAt": "2026-07-11T22:19:47.184Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

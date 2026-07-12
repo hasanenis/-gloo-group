@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgyov21-target-fr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T22:54:19.510Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

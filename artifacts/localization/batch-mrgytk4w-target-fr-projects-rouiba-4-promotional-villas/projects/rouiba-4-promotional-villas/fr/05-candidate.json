@@ -1,0 +1,177 @@
+{
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "locale": "fr",
+  "sourceRevision": "v1-9ac52814",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "99541a5e3ce2204f",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:06.040Z",
+  "seo": {
+    "title": "4 villas promotionnelles et travaux de réseaux | Rouiba",
+    "description": "Détails d’exécution technique et galerie de construction pour les 4 villas promotionnelles à Rouiba, livrées dans le cadre d’un contrat global tous corps d’état et réseaux divers.",
+    "socialTitle": "4 villas promotionnelles et travaux de réseaux | Rouiba",
+    "socialDescription": "Détails d’exécution technique et galerie de construction pour les 4 villas promotionnelles à Rouiba, livrées dans le cadre d’un contrat global tous corps d’état et réseaux divers."
+  },
+  "content": {
+    "slug": "rouiba-4-promotional-villas",
+    "title": "4 villas promotionnelles et travaux de réseaux",
+    "eyebrow": "DÉVELOPPEMENT RÉSIDENTIEL",
+    "summary": [
+      "Un projet résidentiel de 4 villas promotionnelles privées à Rouiba, exécuté en entreprise générale tous corps d’état (TCE) incluant la voirie et réseaux divers (VRD).",
+      "Le périmètre du projet comprend la réalisation de la structure, l’articulation des façades et l’infrastructure intégrée du site pour former un ensemble résidentiel cohérent."
+    ],
+    "description": [
+      "Le projet a été exécuté sous forme de lot unique complet, englobant les travaux de structure en béton armé, les finitions intérieures et extérieures, les installations techniques (MEP), ainsi que les travaux de voirie et réseaux divers (VRD).",
+      "La volumétrie architecturale privilégie des volumes contemporains épurés, équilibrant les espaces résidentiels privés avec des réseaux intégrés de circulation piétonne et carrossable."
+    ],
+    "authority": "Un programme résidentiel précis où la durabilité structurelle et les infrastructures du site sont alignées depuis les terrassements initiaux jusqu’à la réception finale.",
+    "seo": "Détails d’exécution technique et galerie de construction pour les 4 villas promotionnelles à Rouiba, livrées dans le cadre d’un contrat global tous corps d’état et réseaux divers.",
+    "meta": [
+      {
+        "label": "Type de programme",
+        "value": "Villas promotionnelles libres"
+      }
+    ],
+    "details": [
+      {
+        "label": "Type de projet",
+        "value": "Villas promotionnelles privées"
+      },
+      {
+        "label": "Localisation",
+        "value": "Rouiba, Alger"
+      },
+      {
+        "label": "Échelle",
+        "value": "4 villas individuelles"
+      },
+      {
+        "label": "Année de livraison",
+        "value": "2023"
+      },
+      {
+        "label": "Consistance des travaux",
+        "value": "Livraison tous corps d’état (TCE) et Voirie et Réseaux Divers (VRD)"
+      },
+      {
+        "label": "Usage principal",
+        "value": "Résidentiel privé"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Consistance technique",
+        "items": [
+          "4 villas promotionnelles privées",
+          "Voirie et réseaux divers (VRD) intégrés avec accès piétons dédiés",
+          "Structures en béton armé avec façades contemporaines articulées",
+          "Livraison complète tous corps d’état (TCE) achevée en 2023"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "En quoi consiste le projet des 4 villas promotionnelles et travaux de réseaux ?",
+        "answer": "Le projet comprend 4 villas promotionnelles privées livrées clés en main avec l’ensemble des travaux tous corps d’état et les infrastructures de viabilisation du site."
+      },
+      {
+        "question": "Quels travaux de construction ont été exécutés sur le site ?",
+        "answer": "Les prestations ont englobé le gros œuvre en béton armé, les travaux de second œuvre et finitions, les installations techniques (MEP), ainsi que la réalisation de la voirie et réseaux divers (VRD)."
+      },
+      {
+        "question": "Comment est structurée la circulation sur le site ?",
+        "answer": "Le plan de masse intègre des voies d’accès carrossables et piétonnes dédiées afin de garantir une circulation fluide et de préserver l’intimité entre les 4 unités résidentielles."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Dessin d’élévation architecturale des villas promotionnelles à Rouiba."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Façade extérieure d’une villa promotionnelle achevée à plusieurs niveaux à Rouiba, montrant des vitrages en retrait et des pergolas décoratives.",
+          "caption": "Articulation de façade finalisée d’une villa promotionnelle."
+        }
+      ],
+      "intro": {
+        "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+        "alt": "Vue aérienne de l’ensemble de villas achevé à Rouiba, montrant les toitures terrasses et les structures de balcons.",
+        "caption": "L’ensemble de villas achevé à Rouiba, illustrant la volumétrie contemporaine."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "Travaux de structure en béton armé et coffrage de poteaux en cours sur le chantier des villas de Rouiba.",
+          "caption": "Exécution du béton armé structural sur site."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Façade extérieure d’une villa promotionnelle achevée à plusieurs niveaux à Rouiba, montrant des vitrages en retrait et des pergolas décoratives.",
+          "caption": "Articulation de façade finalisée d’une villa promotionnelle."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Vue aérienne de l’ensemble de villas achevé à Rouiba, montrant les toitures terrasses et les structures de balcons.",
+          "caption": "L’ensemble de villas achevé à Rouiba, illustrant la volumétrie contemporaine."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Dessin d’élévation architecturale des villas promotionnelles à Rouiba."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
+          "alt": "Vue extérieure d’une villa promotionnelle durant les phases finales de finition de façade, avec une grue à tour en arrière-plan.",
+          "caption": "Travaux de finition de façade en cours."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Façade extérieure d’une villa promotionnelle achevée à plusieurs niveaux à Rouiba, montrant des vitrages en retrait et des pergolas décoratives.",
+          "caption": "Articulation de façade finalisée d’une villa promotionnelle."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Vue aérienne de l’ensemble de villas achevé à Rouiba, montrant les toitures terrasses et les structures de balcons.",
+          "caption": "L’ensemble de villas achevé à Rouiba, illustrant la volumétrie contemporaine."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Dessin d’élévation architecturale des villas promotionnelles à Rouiba."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
+          "alt": "Structure d’une villa à plusieurs niveaux durant les étapes finales d’enduit extérieur et de nettoyage du site.",
+          "caption": "Travaux de finitions extérieures et de préparation du site."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Façade extérieure d’une villa promotionnelle achevée à plusieurs niveaux à Rouiba, montrant des vitrages en retrait et des pergolas décoratives.",
+          "caption": "Articulation de façade finalisée d’une villa promotionnelle."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Vue aérienne de l’ensemble de villas achevé à Rouiba, montrant les toitures terrasses et les structures de balcons.",
+          "caption": "L’ensemble de villas achevé à Rouiba, illustrant la volumétrie contemporaine."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "Travaux de structure en béton armé et coffrage de poteaux en cours sur le chantier des villas de Rouiba.",
+          "caption": "Exécution du béton armé structural sur site."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Dessin d’élévation architecturale des villas promotionnelles à Rouiba."
+        }
+      ]
+    }
+  }
+}

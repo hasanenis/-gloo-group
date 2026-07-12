@@ -1,0 +1,193 @@
+{
+  "jobId": "20260711235145-dely-brahim-240-housing-source",
+  "pageId": "projects/dely-brahim-240-housing",
+  "locale": "en",
+  "sourceRevision": "v1-670fa269",
+  "generatedAt": "2026-07-11T20:51:46.686Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "83b994c3f49d0292",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "240 Free Promotional Housing with Commercial Areas",
+    "description": "Explore the gallery, technical details, and location notes for the 240 Free Promotional Housing with Commercial Areas project. This development showcases a developer-led residential and mixed-use delivery model.",
+    "socialTitle": "240 Free Promotional Housing with Commercial Areas",
+    "socialDescription": "Explore the gallery, technical details, and location notes for the 240 Free Promotional Housing with Commercial Areas project. This development showcases a developer-led residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "dely-brahim-240-housing",
+    "title": "240 Free Promotional Housing with Commercial Areas",
+    "eyebrow": "MIXED-USE PROJECT",
+    "summary": [
+      "A 33-storey residential tower in Dely Brahim, combining 240 free promotional homes with three commercial levels with a terrace, three basement levels, and three mezzanine parking levels.",
+      "The Dely Brahim project represents a new scale for the portfolio: a 33-storey tower with homes from the 3rd to the 33rd floors, eight homes per floor, three commercial levels with a terrace, three basement levels, and three mezzanine parking levels."
+    ],
+    "description": [
+      "The project combines housing density with everyday services, placing F3, F4, and F5 homes from the 3rd to the 33rd floors above three commercial levels with a terrace, three basement levels, and three mezzanine parking levels.",
+      "Its primary technical challenge is vertical coordination: the structure, lifts, fire safety, ventilation, plumbing, electrical systems, facade openings, and exterior works all require a unified execution sequence."
+    ],
+    "authority": "A high-rise, mixed-use tower where residential density, services, and parking are integrated into a single vertical system.",
+    "seo": "Explore the gallery, technical details, and location notes for the 240 Free Promotional Housing with Commercial Areas project. This development showcases a developer-led residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Project Type",
+        "value": "Market-rate promotional housing with commercial and service areas."
+      }
+    ],
+    "details": [
+      {
+        "label": "Project Type",
+        "value": "Free promotional housing with services"
+      },
+      {
+        "label": "Location",
+        "value": "Bois des Cars, Dely Brahim, Algiers"
+      },
+      {
+        "label": "Housing Units",
+        "value": "240 homes"
+      },
+      {
+        "label": "Typology",
+        "value": "Homes from the 3rd to the 33rd floors; 8 homes per floor"
+      },
+      {
+        "label": "Commercial Base",
+        "value": "3 commercial levels with a terrace"
+      },
+      {
+        "label": "Parking",
+        "value": "3 basement levels and 3 mezzanine parking levels"
+      },
+      {
+        "label": "Status",
+        "value": "In progress"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Programme",
+        "items": [
+          "33-storey residential tower",
+          "240 homes with F3, F4, and F5 layouts",
+          "Three basement levels and three mezzanine parking levels",
+          "Secondary trades (CES), external works (VRD), MEP, lifts, and safety systems"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Nearby Places",
+      "items": [
+        "Local shops"
+      ]
+    },
+    "faq": [
+      {
+        "question": "What is the 240 Free Promotional Housing with Commercial Areas project?",
+        "answer": "A 33-storey residential tower in Dely Brahim, combining 240 free promotional homes with three commercial levels with a terrace, three basement levels, and three mezzanine parking levels."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "The project combines housing density with everyday services, placing F3, F4, and F5 homes from the 3rd to the 33rd floors above three commercial levels with a terrace, three basement levels, and three mezzanine parking levels."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "The Dely Brahim project represents a new scale for the portfolio: a 33-storey tower with homes from the 3rd to the 33rd floors, eight homes per floor, three commercial levels with a terrace, three basement levels, and three mezzanine parking levels."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+          "caption": "Modern mixed-use building with residential, commercial, and parking at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+          "caption": "Modern mixed-use building with illuminated commercial and residential units at night."
+        }
+      ],
+      "intro": {
+        "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+        "alt": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+        "caption": "Modern high-rise with illuminated commercial and residential units at night."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+          "caption": "Modern mixed-use building at night with vibrant commercial frontage."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+          "caption": "Modern mixed-use building with residential, commercial, and parking at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+          "caption": "Modern high-rise with illuminated commercial and residential units at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+          "caption": "Modern mixed-use building with illuminated commercial and residential units at night."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+          "caption": "Modern mixed-use building at night with vibrant commercial frontage."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+          "caption": "Modern mixed-use building with residential, commercial, and parking at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+          "caption": "Modern high-rise with illuminated commercial and residential units at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+          "caption": "Modern mixed-use building with illuminated commercial and residential units at night."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+          "caption": "Modern mixed-use building with residential, commercial, and parking at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+          "caption": "Modern mixed-use building at night with vibrant commercial frontage."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+          "caption": "Modern high-rise with illuminated commercial and residential units at night."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+          "caption": "Modern mixed-use building with illuminated commercial and residential units at night."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+          "caption": "Modern mixed-use building with residential, commercial, and parking at night."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-pro"
+}

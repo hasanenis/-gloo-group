@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "entries": [
+    { "source": "second work", "target": "second œuvre", "note": "Use the Algerian construction term, not a literal translation." },
+    { "source": "external works", "target": "VRD", "note": "Keep the protected acronym when the source refers to roads and networks." },
+    { "source": "delivered", "target": "livré", "note": "Use for a completed project, not as a generic marketing verb." },
+    { "source": "site infrastructure", "target": "infrastructure et VRD", "note": "Keep the construction context explicit." }
+  ]
+}

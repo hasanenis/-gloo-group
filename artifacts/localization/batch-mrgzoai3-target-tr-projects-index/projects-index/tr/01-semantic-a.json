@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrgzoai3-target-tr-projects-index",
+  "pageId": "projects-index",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:21:52.453Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "Projeler | SARL Igloo Yapı İnşaat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "Cezayir genelinde hayata geçirilen konut projeleri, villalar, ticari yapılar ile yol ve altyapı şebekelerinden (VRD) oluşan bir portföy.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "Projeler | SARL Igloo Yapı İnşaat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "Cezayir genelinde hayata geçirilen konut projeleri, villalar, ticari yapılar ile yol ve altyapı şebekelerinden (VRD) oluşan bir portföy.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Projects",
+      "draft": "Projeler",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "A portfolio built on delivery.",
+      "draft": "Teslimat üzerine kurulu bir portföy.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Our completed works encompass residential programmes, villas, commercial premises, and roads and utility networks (VRD) executed across Algeria.",
+      "draft": "Tamamladığımız projeler; Cezayir genelinde gerçekleştirilen konut projeleri, villalar, ticari yapılar ile yol ve altyapı şebekelerini (VRD) kapsamaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

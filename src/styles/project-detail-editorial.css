@@ -631,6 +631,36 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+html[lang='ar-DZ'] .igloo-simple-project {
+  --simple-display-font: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+}
+
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-split__text,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-columns,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-info__detail,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-info__metric-copy,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-related__head {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang='ar-DZ'] .igloo-simple-project .bat-demo-hero__copy,
+html[lang='ar-DZ'] .igloo-simple-project .bat-demo-hero__info {
+  direction: rtl;
+}
+
+html[lang='ar-DZ'] .igloo-simple-project .bat-demo-hero__fact-label,
+html[lang='ar-DZ'] .igloo-simple-project .bat-demo-hero__fact-value,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-hero-description,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-info__metric-label,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-info__metric-kicker span,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-info__row-text,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-related__card h3,
+html[lang='ar-DZ'] .igloo-simple-project .igloo-simple-related__card p {
+  letter-spacing: 0;
+  unicode-bidi: plaintext;
+}
+
 .igloo-simple-project .bat-demo-hero__fact-value {
   max-width: 20ch;
 }

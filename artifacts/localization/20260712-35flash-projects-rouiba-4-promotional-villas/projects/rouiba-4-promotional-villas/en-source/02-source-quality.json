@@ -1,0 +1,16 @@
+{
+  "jobId": "20260712-35flash-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "locale": "en",
+  "sourceRevision": "v1-18192590",
+  "generatedAt": "2026-07-11T21:40:29.497Z",
+  "status": "review",
+  "issues": [],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.faq.0.question",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

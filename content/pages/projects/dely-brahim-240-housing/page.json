@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "pageId": "projects/dely-brahim-240-housing",
+  "path": "/projects/dely-brahim-240-housing",
+  "sourceLocale": "en",
+  "fields": [
+    {
+      "key": "content.slug",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.summary[0]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.summary[1]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.description[0]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.description[1]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.authority",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.seo",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.meta[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.meta[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[0].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[0].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[1].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[1].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[2].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[2].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[3].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[3].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[4].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[4].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[5].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[5].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[6].label",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.details[6].value",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.facilityGroups[0].title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.facilityGroups[0].items[0]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.facilityGroups[0].items[1]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.facilityGroups[0].items[2]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.facilityGroups[0].items[3]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.nearby.title",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.nearby.items[0]",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[0].question",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[0].answer",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[1].question",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[1].answer",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[2].question",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.faq[2].answer",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[0].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[0].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[0].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[1].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[1].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.hero[1].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.intro.src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.intro.alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.intro.caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[0].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[0].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[0].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[1].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[1].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[1].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[2].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[2].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[2].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[3].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[3].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.mosaic[3].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[0].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[0].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[0].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[1].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[1].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[1].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[2].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[2].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[2].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[3].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[3].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featureGallery[3].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[0].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[0].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[0].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[1].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[1].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[1].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[2].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[2].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[2].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[3].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[3].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.constructionGallery[3].caption",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featured[0].src",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featured[0].alt",
+      "kind": "body",
+      "required": true
+    },
+    {
+      "key": "content.images.featured[0].caption",
+      "kind": "body",
+      "required": true
+    }
+  ],
+  "facts": {
+    "slug": "dely-brahim-240-housing",
+    "title": "240 Free Promotional Housing with Commercial Areas",
+    "location": "Dely Brahim, Algiers",
+    "status": "current",
+    "sourceSlides": [
+      13
+    ],
+    "client": null,
+    "architect": null,
+    "formOfContract": null
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh0fswj-target-tr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T23:43:16.279Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Ticari Kiralama ve Konsiyerj Hizmetli 250 Konut Projesi"
+    },
+    {
+      "id": "seo.description",
+      "text": "Cezayir Vilayeti, Reghaia, Bouraada sahasındaki 250 konutluk toplu konut projesine ait teknik detaylar, inşaat ilerlemesi ve mimari şartnameler."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Ticari Kiralama ve Konsiyerj Hizmetli 250 Konut Projesi"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Cezayir Vilayeti, Reghaia, Bouraada sahasındaki 250 konutluk toplu konut projesine ait teknik detaylar, inşaat ilerlemesi ve mimari şartnameler."
+    },
+    {
+      "id": "content.slug",
+      "text": "reghaia-bouraada-250-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "Ticari Kiralama ve Konsiyerj Hizmetli 250 Konut Projesi"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "KARMA KULLANIMLI KONUT"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Reghaia'daki Bouraada sahasında yer alan, zemin katta entegre ticari dükkanlar ve özel konsiyerj alanları ile teslim edilen 250 adet kira öder gibi ev sahibi olma (rent-to-own) modeline uygun konuttan oluşan yerleşim projesi."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Vaziyet planı, yüksek yoğunluklu konut ihtiyacı ile sokak seviyesindeki aktif ticari cephe kullanımını dengelemek amacıyla her biri zemin kat artı 9 üst kattan oluşan yedi adet R+9 bloğu organize etmektedir."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Konut programı, yedi bloğa dağıtılmış 250 adet kira öder gibi ev sahibi olma modeline uygun daireyi kapsamakta olup, kat başına dengeli F3 ve F4 plan şemasında dört dairelik standart bir kat planı sunmaktadır. Zemin kat seviyeleri, sokak düzeyindeki aktif cephe kullanımını artırmak amacıyla ticari kiralık dükkanları ve özel konsiyerj ofislerini destekleyecek şekilde yapısal olarak tasarlanmıştır."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Uygulama kapsamı; kaba inşaatın tamamlanması, cephe tasarımı, ince inşaat işleri, binanın teknik tesisat işleri ile projenin çevre belediye altyapısına entegrasyonunu sağlayan yol ve genel altyapı şebekelerinin (VRD) kurulumunu içeren anahtar teslim tüm işler (TCE) paketini kapsamaktadır."
+    },
+    {
+      "id": "content.authority",
+      "text": "Bu yedi bloklu konut projesi; kaba inşaat işleri, cephe kaplamaları, iç tesisat işleri ve saha genelindeki altyapı bağlantılarını yöneten kapsamlı bir tüm işler (TCE) sözleşmesi kapsamında yürütülmüştür."
+    },
+    {
+      "id": "content.seo",
+      "text": "Cezayir Vilayeti, Reghaia, Bouraada sahasındaki 250 konutluk toplu konut projesine ait teknik detaylar, inşaat ilerlemesi ve mimari şartnameler."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "İşveren"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "Proje Tipi"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "Ticari dükkanlı ve konsiyerj hizmetli kira öder gibi ev sahibi olma modeline uygun konutlar"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Proje Tipi"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Ticari dükkanlı, kira öder gibi ev sahibi olma modeline uygun konutlar"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Konum"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Bouraada, Reghaia, Cezayir Vilayeti"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Konut Sayısı"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "250 konut"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Bloklar"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "7 adet R+9 blok"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Tamamlanma"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "İşveren"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Proje Programı"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "250 adet kira öder gibi ev sahibi olma modeline uygun konut"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Yedi adet R+9 konut bloğu (zemin kat artı 9 üst kat)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Zemin katta ticari dükkanlar ve konsiyerj alanları"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "İnce inşaat işleri ve cepheleri ile birlikte 2025 yılında tamamlandı"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "Reghaia'daki 250 Konut Projesinin kapsamı nedir?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Proje, zemin kat ticari dükkanları ve özel konsiyerj alanları ile tamamlanmış yedi adet R+9 blokta yer alan 250 adet kira öder gibi ev sahibi olma modeline uygun konut dairesinin inşasını kapsamaktadır."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Blokların mimari ve yapısal özellikleri nelerdir?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Program, ticari dükkanlar ve konsiyerj alanları ile desteklenen, kat başına dört daire düşen net F3/F4 dağılımlı 250 adet kira öder gibi ev sahibi olma modeline uygun konut sunmaktadır."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Bu sahada hangi inşaat işleri yürütülmüştür?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Sözleşme; kaba inşaat işleri, cephe tasarımı, ince inşaat işleri, binanın teknik tesisat işleri ile saha genelindeki yol ve altyapı şebekelerini (VRD) kapsayan bir tüm işler (TCE) paketi olarak yürütülmüştür."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "Projenin zemin katı nasıl değerlendirilmektedir?"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "Reghaia projesi, yedi adet R+9 bloğu; aile yaşamına uygun konutlar, yerel hizmetler ve sitede yaşamı kolaylaştıran konsiyerj alanları etrafında organize etmektedir."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Karanlık ve bulutlu bir gökyüzü önünde; sarı, beyaz ve koyu gri panellere, balkonlara ve zemin kat ticari alanlara sahip, modern tasarımlı çok katlı bir konut ve ticaret binasının dış cephesini gösteren 3D görselleştirme."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "R+9 blokların cephe tasarımını ve zemin kat ticari cephesini gösteren mimari görselleştirme."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Bulutlu bir gökyüzü altında, ön planda otopark ve peyzaj düzenlemesine sahip kaplamalı bir alan ile beyaz, sarı ve koyu gri panellere sahip modern ve çok katlı bir konut binasının tüm cephesini gösteren 3D mimari görselleştirme."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Ticari alanların ve çevre sirkülasyon yollarının entegrasyonunu gösteren konut bloğunun bütünsel mimari görselleştirmesi."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Açık mavi bir gökyüzü önünde, çok sayıda balkona sahip, sarı, siyah ve beyaz renkli dikkat çekici cephesiyle yükselen modern bir konut binası. Ön planda toprak zemin ve yeni yerleştirilmiş bordür taşları ile aktif bir inşaat sahası görünmektedir."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "R+9 konut bloklarından birinde tamamlanan cephe uygulaması; dış renk şeması ve balkon detayları."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Toprak zemin üzerinde tuğla duvarları ve betonarme karkası açıkta olan, büyük mavi bir kule vinç, inşaat araçları ve geçici şantiye ofislerinin yer aldığı inşaat halindeki çok katlı binanın yüksek açılı görünümü."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Betonarme karkas ve tuğla dolgu duvar işlerini gösteren kaba inşaat uygulama aşaması."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "İnşaat halindeki çok katlı bir konut binasının dış görünümü; açık renkli duvarlar, siyah korkuluklu balkonlar ve pencereler ile taban kısmındaki inşaat malzemeleri ve faaliyetler."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Konut bloklarında devam eden cephe sıva ve dış cephe bitirme işleri."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Açık mavi bir gökyüzü altında, ön planda inşaat malzemeleri ve toprak zeminin görüldüğü, balkon ve pencerelere sahip sarı, siyah ve beyaz dış cepheli yüksek konut binası."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Sahanın son temizlik aşamasında bir R+9 bloğunun tamamlanmış dış kabuğu."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Bulutlu bir gökyüzü altında, ön planda otopark ve peyzaj düzenlemesine sahip kaplamalı bir alan ile beyaz, sarı ve koyu gri panellere sahip modern ve çok katlı bir konut binasının tüm cephesini gösteren 3D mimari görselleştirme."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Konut bloklarının ve zemin seviyesindeki kamusal alanın mimari görselleştirmesi."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Yatay sarı, siyah ve beyaz şeritlere sahip dikkat çekici cephesiyle yeni inşa edilmiş çok katlı bir apartman binası. Binada çok sayıda balkon ve pencere bulunmaktadır. Ön planda bazı bordür taşları ve bir palet beton blok ile toprak inşaat sahası görünmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Tamamlanan cephe tasarımının ve balkon korkuluklarının detayı."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Açık mavi bir gökyüzüne karşı düşük bir açıdan görülen, cephesinde sarı, siyah ve beyaz bölümler bulunan yüksek ve modern bir konut binası; taban kısmında inşaat çalışmaları görünmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Tamamlanan R+9 bloğunun dikey kütle etkisini ve dış cephe kaplamalarını gösteren düşük açılı görünümü."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Açık mavi bir gökyüzü önünde, çok sayıda balkona sahip, sarı, siyah ve beyaz renkli dikkat çekici cephesiyle yükselen modern bir konut binası. Ön planda toprak zemin ve yeni yerleştirilmiş bordür taşları ile aktif bir inşaat sahası görünmektedir."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Nihai peyzaj düzenlemesi öncesinde konut bloğunda tamamlanan dış cephe işleri."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Bulutlu bir gökyüzü altında, ön planda otopark ve peyzaj düzenlemesine sahip kaplamalı bir alan ile beyaz, sarı ve koyu gri panellere sahip modern ve çok katlı bir konut binasının tüm cephesini gösteren 3D mimari görselleştirme."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Konut bloklarının yerel sokak dokusuyla planlanan entegrasyonunu gösteren mimari görselleştirme."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Açık bir gökyüzü altında; mavi bir kule vinç, açıkta kalan betonarme yapılar, tuğla dolgular, inşaat araçları ve geçici şantiye ofislerinin yer aldığı çok binalı bir inşaat sahasının yüksek açılı görünümü."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "İnşaat halindeki betonarme karkasları gösteren saha genelindeki kaba inşaat işleri görünümü."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Açık mavi bir gökyüzüne karşı düşük bir açıdan görülen, siyah, sarı ve beyaz renkli dikkat çekici cepheye sahip yüksek ve modern bir konut binası. Ön planda, saha çalışmalarının devam ettiğini gösteren toprak zeminli kaplamasız inşaat alanı ve bazı inşaat malzemeleri yer almaktadır."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Tamamlanan dış kabuğu ve devam eden zemin seviyesindeki altyapı işlerini gösteren ilerleme fotoğrafı."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Açık mavi bir gökyüzü önünde, çok sayıda balkona sahip, sarı, siyah ve beyaz renkli dikkat çekici cephesiyle yükselen modern bir konut binası. Ön planda toprak zemin ve yeni yerleştirilmiş bordür taşları ile aktif bir inşaat sahası görünmektedir."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Dış cephe işlerinin ve saha entegrasyonunun son aşamalarında R+9 bloğunun görünümü."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Bulutlu bir gökyüzü altında, ön planda otopark ve peyzaj düzenlemesine sahip kaplamalı bir alan ile beyaz, sarı ve koyu gri panellere sahip modern ve çok katlı bir konut binasının tüm cephesini gösteren 3D mimari görselleştirme."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Tamamlanan cephe ve çevre kamusal alan için tasarım hedefini gösteren mimari görselleştirme."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Karanlık ve bulutlu bir gökyüzü önünde; sarı, beyaz ve koyu gri panellere, balkonlara ve zemin kat ticari alanlara sahip, modern tasarımlı çok katlı bir konut ve ticaret binasının dış cephesini gösteren 3D görselleştirme."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Reghaia'daki 250 konutluk karma kullanımlı konut projesinin mimari görselleştirmesi."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "jobId": "20260712-35flash-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "locale": "en",
+  "sourceRevision": "v1-856b4a4a",
+  "generatedAt": "2026-07-11T21:41:45.040Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.summary.0",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

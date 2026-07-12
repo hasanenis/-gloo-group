@@ -1,0 +1,21 @@
+{
+  "pageId": "about",
+  "locale": "fr",
+  "sourceRevision": "v1-b8ec0e5d",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "5aac916e11607514",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:04.809Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Profil de l’entreprise",
+    "description": "Entreprise algérienne du bâtiment réalisant des projets résidentiels et mixtes grâce à une intégration complète de l’ingénierie, des approvisionnements et de l’exécution sur chantier.",
+    "socialTitle": "SARL Igloo Yapi Construction | Profil de l’entreprise",
+    "socialDescription": "Entreprise algérienne du bâtiment réalisant des projets résidentiels et mixtes grâce à une intégration complète de l’ingénierie, des approvisionnements et de l’exécution sur chantier."
+  },
+  "content": {
+    "eyebrow": "Profil de l’entreprise",
+    "heading": "Synergie des bureaux d’études et des équipes de réalisation sur chantier.",
+    "body": "Fondée en 2018 à Alger, la SARL Igloo Yapi Construction assure la réalisation de projets résidentiels et mixtes en coordonnant l’ingénierie, les approvisionnements et la conduite de travaux."
+  }
+}

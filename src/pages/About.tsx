@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { companyProfile, projects, type ProjectRecord } from '../data/projects';
 import { localize, type HomepageText } from '../data/homepageContent';
 import { pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
+import { usePageContent } from '../content';
 
 const Footer = lazy(() => import('../components/Footer'));
 
@@ -22,53 +23,61 @@ type ShowcaseItem = {
 
 const facts = [
   {
-    value: '2018',
-    label: { en: 'Established in Algiers', fr: 'Fondee a Alger' },
+    value: { en: '2018', fr: '2018', dz: '2018', tr: '2018' },
+    label: { en: 'Established in Algiers', fr: 'Fondée à Alger', dz: 'تأسست في الجزائر', tr: "Cezayir'de kuruldu" },
   },
   {
-    value: 'Category 6',
-    label: { en: 'Professional classification', fr: 'Classification professionnelle' },
+    value: { en: 'Category 6', fr: 'Catégorie 6', dz: 'الفئة 6', tr: 'Kategori 6' },
+    label: { en: 'Professional classification', fr: 'Classification professionnelle', dz: 'التصنيف المهني', tr: 'Mesleki sınıflandırma' },
   },
   {
-    value: String(projects.length),
-    label: { en: 'Projects in the portfolio', fr: 'Projets au portefeuille' },
+    value: { en: String(projects.length), fr: String(projects.length), dz: String(projects.length), tr: String(projects.length) },
+    label: { en: 'Projects in the portfolio', fr: 'Projets au portefeuille', dz: 'المشاريع في سجل الأعمال', tr: 'Portföydeki proje' },
   },
   {
-    value: '4',
-    label: { en: 'Wilayas represented', fr: 'Wilayas representees' },
+    value: { en: '4', fr: '4', dz: '4', tr: '4' },
+    label: { en: 'Wilayas represented', fr: 'Wilayas représentées', dz: 'الولايات المشمولة', tr: 'Çalışılan vilayet' },
   },
-] satisfies Array<{ value: string; label: HomepageText }>;
+] satisfies Array<{ value: HomepageText; label: HomepageText }>;
 
 const capabilities: Capability[] = [
   {
-    title: { en: 'Residential construction', fr: 'Construction residentielle' },
+    title: { en: 'Residential construction', fr: 'Construction résidentielle', dz: 'البناء السكني', tr: 'Konut yapımı' },
     body: {
       en: 'Housing programmes, apartment buildings and villas delivered from structure through finishing works.',
-      fr: 'Programmes de logements, immeubles et villas realises de la structure jusqu aux finitions.',
+      fr: 'Programmes de logements, immeubles et villas réalisés de la structure jusqu’aux finitions.',
+      dz: 'مشاريع سكنية وعمارات وفيلات من الهيكل إلى التشطيبات.',
+      tr: 'Apartman ve villa projelerinde taşıyıcı sistemden ince işlere kadar tüm yapım süreci.',
     },
     projectSlug: 'rouiba-4-promotional-villas',
   },
   {
-    title: { en: 'Mixed-use programmes', fr: 'Programmes mixtes' },
+    title: { en: 'Mixed-use programmes', fr: 'Programmes mixtes', dz: 'المشاريع متعددة الاستخدامات', tr: 'Karma kullanım projeleri' },
     body: {
       en: 'Residential blocks coordinated with commercial floors, parking and the services that support daily use.',
-      fr: 'Blocs residentiels coordonnes avec commerces, stationnement et services necessaires a l usage quotidien.',
+      fr: 'Blocs résidentiels coordonnés avec commerces, stationnement et services nécessaires à l’usage quotidien.',
+      dz: 'مبانٍ سكنية مع طوابق تجارية ومواقف وخدمات يومية.',
+      tr: 'Konut bloklarıyla birlikte planlanan ticari katlar, otoparklar ve günlük hizmet alanları.',
     },
     projectSlug: 'said-hamdine-mixed-real-estate',
   },
   {
-    title: { en: 'Roads and utility networks', fr: 'Voiries et reseaux' },
+    title: { en: 'Roads and utility networks', fr: 'Voiries et réseaux', dz: 'الطرقات والشبكات', tr: 'Yol ve altyapı şebekeleri' },
     body: {
       en: 'Site access, external works and network packages planned as part of the complete construction scope.',
-      fr: 'Acces, amenagements exterieurs et lots reseaux planifies dans le perimetre global des travaux.',
+      fr: 'Accès, aménagements extérieurs et lots réseaux planifiés dans le périmètre global des travaux.',
+      dz: 'مداخل الموقع والأشغال الخارجية وشبكات البنية التحتية ضمن نطاق البناء.',
+      tr: 'Saha ulaşımı, çevre düzenlemesi ve altyapı şebekelerinin yapım işiyle birlikte planlanması.',
     },
     projectSlug: 'staoueli-11-41-villas',
   },
   {
-    title: { en: 'Coordinated site delivery', fr: 'Execution chantier coordonnee' },
+    title: { en: 'Coordinated site delivery', fr: 'Exécution de chantier coordonnée', dz: 'تنسيق أعمال الورشة', tr: 'Koordineli şantiye yönetimi' },
     body: {
       en: 'Engineering, quantities, procurement and field teams connected through one accountable delivery structure.',
-      fr: 'Ingenierie, quantites, achats et equipes terrain reunis dans une structure de livraison responsable.',
+      fr: 'Ingénierie, quantités, achats et équipes terrain réunis dans une structure de livraison responsable.',
+      dz: 'تنسيق الهندسة والكميات والمشتريات وفرق الميدان ضمن إدارة واحدة.',
+      tr: 'Mühendislik, metraj, satın alma ve saha ekiplerinin tek yönetim altında koordinasyonu.',
     },
     projectSlug: 'bas-mazagran-200-38-housing',
   },
@@ -103,7 +112,7 @@ function getCopy(locale: Locale) {
       en: 'An Algiers-based construction company delivering residential, mixed-use, road and network works across Algeria.',
       fr: 'Entreprise de construction basée à Bir Khadem, spécialisée dans les programmes résidentiels, mixtes, les voiries et les réseaux en Algérie.',
       dz: 'شركة بناء مقرها في بئر خادم، تنجز برامج سكنية ومختلطة، طرقات وشبكات عبر الجزائر.',
-      tr: 'Cezayir merkezli, konut, karma kullanım, yol ve altyapı işleri teslim eden bir inşaat şirketi.',
+      tr: 'Cezayir genelinde konut, karma kullanım, yol ve altyapı projeleri yürüten bir inşaat şirketi.',
     }),
     contact: copyFor(locale, { en: 'Contact the team', fr: 'Contacter l’équipe', dz: 'تواصل مع الفريق', tr: 'Ekiple iletişime geç' }),
     imageCaption: copyFor(locale, {
@@ -124,7 +133,7 @@ function getCopy(locale: Locale) {
         en: 'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction delivers building projects within a clear technical and regulatory framework.',
         fr: 'Fondée en 2018 et dirigée par l’ingénieur civil Adem Talay, SARL Igloo Yapi Construction réalise des projets de bâtiment dans un cadre technique et réglementaire clair.',
         dz: 'تأسست في 2018 وتسيرها المهندس المدني آدم تالاي، SARL Igloo Yapi Construction تنجز مشاريع بناء بإطار تقني وتنظيمي واضح.',
-        tr: '2018’de kurulan ve inşaat mühendisi Adem Talay tarafından yönetilen SARL Igloo Yapi Construction, net teknik ve yasal çerçevede yapı projeleri teslim eder.',
+        tr: '2018’de kurulan SARL Igloo Yapi Construction, inşaat mühendisi Adem Talay yönetiminde teknik ve yasal gerekliliklere uygun yapı projeleri yürütür.',
       }),
       copyFor(locale, {
         en: 'Engineers, architects, construction managers, procurement and site teams work as one structure, from preparation through handover.',
@@ -191,9 +200,9 @@ function AboutIntro() {
 
           <dl className="mt-14 grid border-y border-black/14 sm:grid-cols-2 lg:grid-cols-4">
             {facts.map((fact) => (
-              <div key={fact.value} className="border-b border-black/10 py-5 sm:px-5 sm:first:pl-0 lg:border-b-0 lg:border-r lg:last:border-r-0">
+              <div key={fact.label.en} className="border-b border-black/10 py-5 sm:px-5 sm:first:pl-0 lg:border-b-0 lg:border-r lg:last:border-r-0">
                 <dt className="text-[13px] leading-[1.45] text-black/50">{localize(fact.label, locale)}</dt>
-                <dd className="mt-2 text-[25px] font-semibold leading-none text-black">{fact.value}</dd>
+                <dd className="mt-2 text-[25px] font-semibold leading-none text-black">{localize(fact.value, locale)}</dd>
               </div>
             ))}
           </dl>
@@ -224,6 +233,8 @@ function AboutIntro() {
 function CompanyProfile() {
   const { locale } = useLocale();
   const copy = getCopy(locale);
+  const pageContent = usePageContent<{ eyebrow: string; heading: string; body: string }>('about', locale);
+  const profileParagraphs = [pageContent.content.body, copy.profileParagraphs[1]];
 
   return (
     <section className="bg-[#111] px-5 py-20 text-white md:px-10 md:py-28 xl:px-16">
@@ -237,7 +248,7 @@ function CompanyProfile() {
 
         <div>
           <div className="grid gap-7 text-[17px] leading-[1.8] text-white/68 md:grid-cols-2 md:text-[18px]">
-            {copy.profileParagraphs.map((paragraph) => (
+            {profileParagraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>

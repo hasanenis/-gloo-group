@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgznzp5-target-tr-contact",
+  "pageId": "contact",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:21:38.488Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

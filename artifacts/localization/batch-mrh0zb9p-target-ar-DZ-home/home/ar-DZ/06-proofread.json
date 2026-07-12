@@ -1,0 +1,379 @@
+{
+  "jobId": "batch-mrh0zb9p-target-ar-DZ-home",
+  "pageId": "home",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T23:58:26.418Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "SARL Igloo Yapi Construction — إنجاز الهياكل والسكنات في الجزائر"
+    },
+    {
+      "id": "seo.description",
+      "text": "مقاول مؤهل في الفئة 6 يتولى إنجاز البرامج السكنية، المختلطة، وأشغال الطرقات والشبكات المختلفة (VRD) عبر التراب الوطني."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "SARL Igloo Yapi Construction — إنجاز الهياكل والسكنات في الجزائر"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "مقاول مؤهل في الفئة 6 يتولى إنجاز البرامج السكنية، المختلطة، وأشغال الطرقات والشبكات المختلفة (VRD) عبر التراب الوطني."
+    },
+    {
+      "id": "content.hero.eyebrow",
+      "text": "SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "content.hero.title",
+      "text": "إنجاز الهياكل وتسليم المشاريع بكافة أطوار الإنجاز (TCE) عبر الجزائر"
+    },
+    {
+      "id": "content.hero.lead",
+      "text": "إنجاز البرامج السكنية والمختلطة مع تحكم هندسي صارم، وانضباط في الورشات، ومتابعة دقيقة للهياكل على المدى الطويل."
+    },
+    {
+      "id": "content.hero.primaryCta",
+      "text": "تصفح المشاريع"
+    },
+    {
+      "id": "content.hero.secondaryCta",
+      "text": "اتصل بمكتبنا في الجزائر العاصمة"
+    },
+    {
+      "id": "content.hero.trustFacts.0.value",
+      "text": "تأسست سنة 2018"
+    },
+    {
+      "id": "content.hero.trustFacts.0.label",
+      "text": "مقرها بالجزائر العاصمة"
+    },
+    {
+      "id": "content.hero.trustFacts.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.hero.trustFacts.1.label",
+      "text": "برنامجاً"
+    },
+    {
+      "id": "content.hero.trustFacts.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.hero.trustFacts.2.label",
+      "text": "وحدة سكنية"
+    },
+    {
+      "id": "content.hero.trustFacts.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.hero.trustFacts.3.label",
+      "text": "ولايات"
+    },
+    {
+      "id": "content.hero.trustFacts.4.value",
+      "text": "الفئة 6"
+    },
+    {
+      "id": "content.hero.trustFacts.4.label",
+      "text": "شهادة التأهيل"
+    },
+    {
+      "id": "content.manifesto.eyebrow",
+      "text": "الالتزام التعاقدي"
+    },
+    {
+      "id": "content.manifesto.title",
+      "text": "تنسيق مختلف الحرف لبناء هياكل حضرية مستدامة"
+    },
+    {
+      "id": "content.manifesto.body",
+      "text": "من المجمعات السكنية الجماعية والفيلات إلى المحلات التجارية النشطة على مستوى الشارع، نتولى إدارة تسليم المشاريع بكافة أطوار الإنجاز (TCE) وأشغال الطرقات والشبكات المختلفة (VRD) لتجاوز كافة قيود الورشات المعقدة."
+    },
+    {
+      "id": "content.manifesto.credential",
+      "text": "شهادة التأهيل والتصنيف المهني، الفئة 6"
+    },
+    {
+      "id": "content.manifesto.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.manifesto.metrics.0.label",
+      "text": "سنة التأسيس"
+    },
+    {
+      "id": "content.manifesto.metrics.0.detail",
+      "text": "قاعدة العمليات في بئر خادم، الجزائر العاصمة"
+    },
+    {
+      "id": "content.manifesto.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.manifesto.metrics.1.label",
+      "text": "أشغال متعاقد عليها"
+    },
+    {
+      "id": "content.manifesto.metrics.1.detail",
+      "text": "عمليات ميدانية منجزة وقيد الإنجاز"
+    },
+    {
+      "id": "content.manifesto.metrics.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.manifesto.metrics.2.label",
+      "text": "وحدة مسلّمة"
+    },
+    {
+      "id": "content.manifesto.metrics.2.detail",
+      "text": "نطاق البرامج السكنية والمختلطة"
+    },
+    {
+      "id": "content.manifesto.metrics.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.manifesto.metrics.3.label",
+      "text": "ولايات نشطة"
+    },
+    {
+      "id": "content.manifesto.metrics.3.detail",
+      "text": "مشاريع في تيبازة، الجزائر العاصمة، مستغانم، وبومرداس"
+    },
+    {
+      "id": "content.featuredProjects.eyebrow",
+      "text": "سجل المشاريع"
+    },
+    {
+      "id": "content.featuredProjects.title",
+      "text": "إنجاز ميداني فعلي ومتابعة دقيقة للهياكل"
+    },
+    {
+      "id": "content.featuredProjects.lead",
+      "text": "سجل حافل من السكنات الجماعية، الفيلات الفردية، المحلات التجارية، وأشغال الطرقات والشبكات المختلفة (VRD) المتكاملة عبر مناطق نشاطنا."
+    },
+    {
+      "id": "content.process.eyebrow",
+      "text": "دورة حياة المشروع"
+    },
+    {
+      "id": "content.process.title",
+      "text": "تنفيذ منهجي بدءاً من قيود الموقع حتى تسليم المفاتيح"
+    },
+    {
+      "id": "content.process.lead",
+      "text": "يضمن مخطط عملنا التقني تقدم التخطيط، الهندسة الإنشائية، والأشغال الثانوية تحت انضباط صارم في الورشة."
+    },
+    {
+      "id": "content.process.steps.0.id",
+      "text": "coordination"
+    },
+    {
+      "id": "content.process.steps.0.title",
+      "text": "التنسيق قبل البناء"
+    },
+    {
+      "id": "content.process.steps.0.body",
+      "text": "ضبط كميات المشروع، المتطلبات الهيكلية، وقيود الموقع قبل نشر المعدات والعمال في الميدان."
+    },
+    {
+      "id": "content.process.steps.1.id",
+      "text": "engineering"
+    },
+    {
+      "id": "content.process.steps.1.title",
+      "text": "الهندسة ومراقبة كافة أطوار الإنجاز (TCE)"
+    },
+    {
+      "id": "content.process.steps.1.body",
+      "text": "تنسيق الحسابات الهيكلية، تمديدات الكهرباء والترصيص والتهوية (MEP)، والأشغال الثانوية ضمن إطار موحد لكافة أطوار الإنجاز (TCE)."
+    },
+    {
+      "id": "content.process.steps.2.id",
+      "text": "site"
+    },
+    {
+      "id": "content.process.steps.2.title",
+      "text": "تنفيذ الأشغال وهيكلة الكتل"
+    },
+    {
+      "id": "content.process.steps.2.body",
+      "text": "إدارة عمليات صب الخرسانة اليومية، الهياكل الحاملة، البناء، وتسلسل الحرف تحت الإشراف المباشر لمديري الورشات لدينا."
+    },
+    {
+      "id": "content.process.steps.3.id",
+      "text": "monitoring"
+    },
+    {
+      "id": "content.process.steps.3.title",
+      "text": "مراقبة الجودة، السلامة والآجال"
+    },
+    {
+      "id": "content.process.steps.3.body",
+      "text": "التحقق من مطابقة المواد، التفاوتات الهيكلية، وبروتوكولات السلامة وفقاً للالتزامات التعاقدية وقوانين البناء الجزائرية."
+    },
+    {
+      "id": "content.process.steps.4.id",
+      "text": "handover"
+    },
+    {
+      "id": "content.process.steps.4.title",
+      "text": "التسليم والإغلاق التقني للمشروع"
+    },
+    {
+      "id": "content.process.steps.4.body",
+      "text": "إعداد المخططات النهائية للمنشآت المنجزة (as-built)، تشغيل أنظمة المبنى، وإجراء التسليم الرسمي للزبون."
+    },
+    {
+      "id": "content.about.eyebrow",
+      "text": "تعريف بالشركة"
+    },
+    {
+      "id": "content.about.title",
+      "text": "القدرة التقنية والإدارة المنظمة للورشات"
+    },
+    {
+      "id": "content.about.credential",
+      "text": "شهادة التأهيل والتصنيف المهني - الفئة 6"
+    },
+    {
+      "id": "content.about.paragraphs.0",
+      "text": "تأسست شركة SARL Igloo Yapi Construction في عام 2018 ويقودها المهندس المدني Adem Talay، وتنشط انطلاقاً من بئر خادم بالجزائر العاصمة، حيث تتخصص في المشاريع السكنية والمختلطة عبر الجزائر."
+    },
+    {
+      "id": "content.about.paragraphs.1",
+      "text": "تمتلك الشركة شهادة التأهيل والتصنيف المهني من الفئة 6، وتضم مكتباً تقنياً داخلياً يتكون من مهندسين مدنيين، مهندسين معماريين، ومديري ورشات."
+    },
+    {
+      "id": "content.about.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.about.metrics.0.label",
+      "text": "سنة التأسيس"
+    },
+    {
+      "id": "content.about.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.about.metrics.1.label",
+      "text": "البرامج النشطة والمنجزة"
+    },
+    {
+      "id": "content.about.metrics.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.about.metrics.2.label",
+      "text": "وحدة سكنية متعاقد عليها"
+    },
+    {
+      "id": "content.about.proofs.0.title",
+      "text": "مقاول من الفئة 6"
+    },
+    {
+      "id": "content.about.proofs.0.body",
+      "text": "شهادة التأهيل والتصنيف المهني، الفئة 6."
+    },
+    {
+      "id": "content.about.proofs.1.title",
+      "text": "فريق متعدد التخصصات"
+    },
+    {
+      "id": "content.about.proofs.1.body",
+      "text": "مدير مبنى، ثلاثة مهندسين، مهندسان معماريان، مسيرو أشغال، الموارد البشرية، محاسب، مسؤول مشتريات وفرق الورشات."
+    },
+    {
+      "id": "content.about.proofs.2.title",
+      "text": "خبرة في السكني والمختلط"
+    },
+    {
+      "id": "content.about.proofs.2.body",
+      "text": "السكنات، الفيلات، المحلات التجارية، الطرقات، الشبكات، التهيئة الخارجية والأشغال الثانوية."
+    },
+    {
+      "id": "content.footprint.eyebrow",
+      "text": "التواجد الجغرافي"
+    },
+    {
+      "id": "content.footprint.title",
+      "text": "عمليات جهوية عبر شمال الجزائر"
+    },
+    {
+      "id": "content.footprint.lead",
+      "text": "أحد عشر مشروعاً موزعة على أربع ولايات رئيسية، مما يضمن حضوراً ميدانياً قوياً في الجزائر العاصمة، تيبازة، بومرداس، ومستغانم."
+    },
+    {
+      "id": "content.footprint.selectedLabel",
+      "text": "البرنامج المحدد"
+    },
+    {
+      "id": "content.footprint.openProject",
+      "text": "عرض التفاصيل التقنية"
+    },
+    {
+      "id": "content.footprint.statusCompleted",
+      "text": "منجز"
+    },
+    {
+      "id": "content.footprint.statusInProgress",
+      "text": "قيد الإنجاز"
+    },
+    {
+      "id": "content.footprint.stats.0.value",
+      "text": "11"
+    },
+    {
+      "id": "content.footprint.stats.0.label",
+      "text": "ورشات موثقة"
+    },
+    {
+      "id": "content.footprint.stats.1.value",
+      "text": "4"
+    },
+    {
+      "id": "content.footprint.stats.1.label",
+      "text": "ولايات نشطة"
+    },
+    {
+      "id": "content.footprint.stats.2.value",
+      "text": "1"
+    },
+    {
+      "id": "content.footprint.stats.2.label",
+      "text": "رواق ساحلي لإنجاز المشاريع"
+    },
+    {
+      "id": "content.footer.eyebrow",
+      "text": "الاستفسار عن المشاريع"
+    },
+    {
+      "id": "content.footer.title",
+      "text": "ناقش برنامج البناء القادم الخاص بك"
+    },
+    {
+      "id": "content.footer.lead",
+      "text": "استشر فرق الهندسة وإدارة الورشات لدينا في الجزائر العاصمة بخصوص أشغال السكن، التجاري، والبنية التحتية."
+    },
+    {
+      "id": "content.footer.emailLabel",
+      "text": "مراسلة المكتب التقني"
+    },
+    {
+      "id": "content.footer.phoneLabel",
+      "text": "الاتصال بالمقر الرئيسي بالجزائر العاصمة"
+    },
+    {
+      "id": "content.footer.proofLine",
+      "text": "بئر خادم، الجزائر العاصمة · مقاول مؤهل في الفئة 6 · تسليم المشاريع بكافة أطوار الإنجاز (TCE) و VRD"
+    }
+  ]
+}

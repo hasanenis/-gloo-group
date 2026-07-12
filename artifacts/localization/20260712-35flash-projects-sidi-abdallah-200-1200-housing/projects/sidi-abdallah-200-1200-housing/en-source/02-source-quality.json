@@ -1,0 +1,38 @@
+{
+  "jobId": "20260712-35flash-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "locale": "en",
+  "sourceRevision": "v1-8e82a8d4",
+  "generatedAt": "2026-07-11T21:41:26.005Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1",
+      "severity": "blocker",
+      "type": "unsupported-enrichment",
+      "phrase": "high-density",
+      "message": "Candidate introduces a technical, ownership or performance claim not present in the English source."
+    },
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "seo.description",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "seo.socialDescription",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.seo",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

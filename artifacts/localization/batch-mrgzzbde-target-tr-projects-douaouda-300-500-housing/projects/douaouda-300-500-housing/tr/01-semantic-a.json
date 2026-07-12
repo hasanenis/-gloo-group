@@ -1,0 +1,569 @@
+{
+  "jobId": "batch-mrgzzbde-target-tr-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-11T23:30:26.896Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 Destekli Tanıtımlı Konut (LPA) | Douaouda",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 Destekli Tanıtımlı Konut (LPA) | Douaouda",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "douaouda-300-500-housing",
+      "draft": "Douaouda 300-500 Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "300/500 Assisted Promotional Housing",
+      "draft": "300/500 Destekli Teşvikli Konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL AND COMMERCIAL PROGRAMME",
+      "draft": "Konut ve Ticari Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "The completed 300-home phase of a 500-home Assisted Promotional Housing (LPA) programme in Douaouda, comprising ground floor plus 8 upper floors (R+8) residential blocks, integrated commercial premises, and comprehensive roads and utility networks (VRD).",
+      "draft": "Douaouda'da; zemin artı 8 katlı (R+8) konut blokları, entegre ticari alanlar ile kapsamlı yol ve altyapı ağlarından (VRD) oluşan, 500 konutluk Destekli Konut Programı'nın (LPA) tamamlanmış 300 konutluk etabı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "Douaouda, 500 konutluk destekli bir konut projesinin tamamlanan 300 konutluk etabını kıyı şeridindeki bir alana taşıyarak; aile konutlarını ticari/mesleki birimler ve düzenlenmiş dış mekan çalışmalarıyla bir araya getiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The project was executed under a complete all-trades package (TCE), encompassing reinforced concrete structural works, secondary trades, building services coordination, and exterior finishing.",
+      "draft": "Proje; betonarme yapı işleri, ikincil imalatlar, bina tesisat sistemleri koordinasyonu ve dış cephe kaplama işlerini kapsayan, tüm disiplinleri içeren kapsamlı bir paket (TCE) dahilinde gerçekleştirildi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The R+8 blocks are configured with F3 and F4 apartment layouts. The ground-level commercial spaces establish active street-level frontage, integrating local retail and services directly into the residential fabric.",
+      "draft": "Zemin+8 katlı bloklar, F3 ve F4 daire planlarıyla kurgulanmıştır. Zemin seviyesindeki ticari alanlar, yerel perakende ve hizmet birimlerini doğrudan konut dokusuna entegre ederek sokak düzeyinde hareketli bir cephe oluşturur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A multi-storey residential development delivered through unified structural engineering, building services integration, and site circulation works.",
+      "draft": "Bütünleşik yapısal mühendislik, bina sistemleri entegrasyonu ve saha içi dolaşım düzenlemeleriyle hayata geçirilen çok katlı bir konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "Teşvikli Konut (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "Teşvikli Konut (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douaouda, Tipaza, Algeria",
+      "draft": "Douaouda, Tipaza, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme",
+      "draft": "Program",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "300 homes delivered within a 500-home master plan",
+      "draft": "500 konutluk bir master plan kapsamında 300 konut teslim edildi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "Tamamlama",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2019",
+      "draft": "2019",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Works Scope",
+      "draft": "İş Kapsamı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "All-trades delivery (TCE) and roads and utility networks (VRD)",
+      "draft": "Tüm yapı işleri (TCE) ile yol ve altyapı şebekeleri (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Proje Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "300 apartments completed within the 500-home LPA framework",
+      "draft": "500 konutluk LPA çerçevesinde 300 daire tamamlandı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Ground floor plus 8 upper floors (R+8) blocks with F3 and F4 layouts",
+      "draft": "Zemin kat ve üzeri 8 katlı (Z+8), F3 ve F4 yerleşim planlarına sahip bloklar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-level commercial and professional premises",
+      "draft": "Zemin seviyesinde ticari ve mesleki kullanım alanları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including civil, structural, and VRD works",
+      "draft": "İnşaat, yapısal işler ve VRD (yol, şebeke ve çevre düzenlemesi) dahil olmak üzere tüm iş kalemlerinin teslimi (TCE)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Site Context",
+      "draft": "Arazi Bağlamı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Direct connection to regional road infrastructure",
+      "draft": "Bölgesel yol altyapısına doğrudan bağlantı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.1",
+      "source": "Coastal orientation with views of the Mediterranean Sea",
+      "draft": "Akdeniz manzaralı, kıyıya dönük konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 300/500 Assisted Promotional Housing project?",
+      "draft": "300/500 Destekli Teşvikli Konut projesinin kapsamı nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It represents the completed 300-home phase of a larger 500-home Assisted Promotional Housing (LPA) development in Douaouda, featuring R+8 residential blocks and integrated commercial premises.",
+      "draft": "Bu proje, Douaouda'da yer alan; R+8 katlı konut blokları ve entegre ticari alanları bünyesinde barındıran, toplam 500 konutluk daha büyük bir Destekli Konut (LPA) projesinin tamamlanmış 300 konutluk etabını oluşturmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction services were provided for this development?",
+      "draft": "Bu proje için hangi inşaat hizmetleri sağlandı?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project was executed under an all-trades delivery (TCE) contract, covering reinforced concrete structures, secondary trades, building services, and roads and utility networks (VRD).",
+      "draft": "Proje; betonarme yapılar, ikincil imalatlar, bina tesisatları ile yollar ve altyapı şebekelerini (VRD) kapsayan, tüm yapım işlerini içeren bir sözleşme (TCE) kapsamında gerçekleştirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Who is the client for this housing programme?",
+      "draft": "Bu konut programının işvereni kim?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The development was delivered for the National Housing Improvement and Development Agency (AADL) under the state-assisted promotional housing framework.",
+      "draft": "Söz konusu proje, devlet destekli teşvikli konut çerçevesinde Ulusal Konut İyileştirme ve Geliştirme Ajansı (AADL) için hayata geçirildi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How are the residential blocks configured?",
+      "draft": "Konut blokları nasıl yapılandırılmış?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "Douaouda, 500 konutluk destekli bir konut projesinin tamamlanan 300 konutluk etabını kıyı şeridindeki bir alana taşıyarak; aile konutlarını ticari/mesleki birimler ve düzenlenmiş dış mekan çalışmalarıyla bir araya getiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Yapısal tamamlanma süreçleri farklı aşamalarda olan çok katlı beton konut binalarının yer aldığı büyük bir şantiyenin geniş açılı görüntüsü. Arka planda, binaların üzerine doğru uzanan yüksek bir kule vinç görülüyor. Zemin kızıl-kahverengi toprak, gökyüzü ise kapalı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Konut bloklarında yapısal beton çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Açık mavi bir gökyüzü altında bir şantiyenin dikey görünümü. Ön planda, kırmızı-kahverengi renkte kazılmış toprak ve bir miktar yeşil bitki örtüsü yer alıyor. Orta planda, tepesinde kırmızı kalıplar bulunan yüksek ve gri bir beton yapı (muhtemelen bir yapı çekirdeği) ve bunun sağında, beton iskeletli ve kırmızı tuğla dolgulu çok katlı başka bir bina görülüyor. Gökyüzüne doğru uzanan ve kolunda 'UNEN COMANSA' yazısı seçilebilen büyük, mavi bir kule vinç dikkat çekiyor. Vincin altında bir beton pompası kamyonu ve iki beton mikseri yer alıyor. En arka planda ise mavi deniz seçilebiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Kıyıdaki arazi bağlamını yansıtan yapısal iskelet ve kargir dolgu çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Kahverengi çatılı, bej renkli birkaç büyük apartman bloğunu; bunların çevresindeki kaplamasız zemini ve bazı inşaat malzemelerini gösteren havadan bir görünüm. Ön planda daha eski ve küçük binalar yer alırken, uzak planda bulutlu bir gökyüzü altında bir su kütlesi görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Douaouda'daki tamamlanmış Z+8 konut bloklarının havadan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "Aşağıdan bir açıyla görülen, açık renkli cephelere ve kahverengi detaylara sahip birkaç katlı konut binası. Ön planda kum yığınları, tuğlalar ve beyaz torbaların bulunduğu toprak bir şantiye alanı yer alıyor. Binaların üzerinde ise kapalı bir gökyüzü görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "Tamamlanan bloklarda cephe düzenlemesi ve dış cephe bitirme işleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Yapısal tamamlanma süreçleri farklı aşamalarda olan çok katlı beton konut binalarının yer aldığı büyük bir şantiyenin geniş açılı görüntüsü. Arka planda, binaların üzerine doğru uzanan yüksek bir kule vinç görülüyor. Zemin kızıl-kahverengi toprak, gökyüzü ise kapalı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Konut bloklarında yapısal beton çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Açık mavi bir gökyüzü altında bir şantiyenin dikey görünümü. Ön planda, kırmızı-kahverengi renkte kazılmış toprak ve bir miktar yeşil bitki örtüsü yer alıyor. Orta planda, tepesinde kırmızı kalıplar bulunan yüksek ve gri bir beton yapı (muhtemelen bir yapı çekirdeği) ve bunun sağında, beton iskeletli ve kırmızı tuğla dolgulu çok katlı başka bir bina görülüyor. Gökyüzüne doğru uzanan ve kolunda 'UNEN COMANSA' yazısı seçilebilen büyük, mavi bir kule vinç dikkat çekiyor. Vincin altında bir beton pompası kamyonu ve iki beton mikseri yer alıyor. En arka planda ise mavi deniz seçilebiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Kıyıdaki arazi bağlamını yansıtan yapısal iskelet ve kargir dolgu çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Kahverengi çatılı, bej renkli birkaç büyük apartman bloğunu; bunların çevresindeki kaplamasız zemini ve bazı inşaat malzemelerini gösteren havadan bir görünüm. Ön planda daha eski ve küçük binalar yer alırken, uzak planda bulutlu bir gökyüzü altında bir su kütlesi görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Douaouda'daki tamamlanmış Z+8 konut bloklarının havadan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "draft": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "View of several modern, multi-story residential apartment buildings with light-colored facades and brown accents, under an overcast sky. Construction materials like bricks, sand, and white bags are visible in the foreground.",
+      "draft": "Kapalı bir gökyüzü altında, açık renkli cephelere ve kahverengi detaylara sahip, modern ve çok katlı birkaç konut binasının görünümü. Ön planda tuğla, kum ve beyaz torbalar gibi inşaat malzemeleri görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance and landscaping.",
+      "draft": "Son saha temizliği ve peyzaj çalışmalarından önceki tamamlanmış konut blokları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Açık mavi bir gökyüzü altında bir şantiyenin dikey görünümü. Ön planda, kırmızı-kahverengi renkte kazılmış toprak ve bir miktar yeşil bitki örtüsü yer alıyor. Orta planda, tepesinde kırmızı kalıplar bulunan yüksek ve gri bir beton yapı (muhtemelen bir yapı çekirdeği) ve bunun sağında, beton iskeletli ve kırmızı tuğla dolgulu çok katlı başka bir bina görülüyor. Gökyüzüne doğru uzanan ve kolunda 'UNEN COMANSA' yazısı seçilebilen büyük, mavi bir kule vinç dikkat çekiyor. Vincin altında bir beton pompası kamyonu ve iki beton mikseri yer alıyor. En arka planda ise mavi deniz seçilebiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Kıyıdaki arazi bağlamını yansıtan yapısal iskelet ve kargir dolgu çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Yapısal tamamlanma süreçleri farklı aşamalarda olan çok katlı beton konut binalarının yer aldığı büyük bir şantiyenin geniş açılı görüntüsü. Arka planda, binaların üzerine doğru uzanan yüksek bir kule vinç görülüyor. Zemin kızıl-kahverengi toprak, gökyüzü ise kapalı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Konut bloklarında yapısal beton çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Kahverengi çatılı, bej renkli birkaç büyük apartman bloğunu; bunların çevresindeki kaplamasız zemini ve bazı inşaat malzemelerini gösteren havadan bir görünüm. Ön planda daha eski ve küçük binalar yer alırken, uzak planda bulutlu bir gökyüzü altında bir su kütlesi görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Douaouda'daki tamamlanmış Z+8 konut bloklarının havadan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Açık mavi bir gökyüzü altında bir şantiyenin dikey görünümü. Ön planda, kırmızı-kahverengi renkte kazılmış toprak ve bir miktar yeşil bitki örtüsü yer alıyor. Orta planda, tepesinde kırmızı kalıplar bulunan yüksek ve gri bir beton yapı (muhtemelen bir yapı çekirdeği) ve bunun sağında, beton iskeletli ve kırmızı tuğla dolgulu çok katlı başka bir bina görülüyor. Gökyüzüne doğru uzanan ve kolunda 'UNEN COMANSA' yazısı seçilebilen büyük, mavi bir kule vinç dikkat çekiyor. Vincin altında bir beton pompası kamyonu ve iki beton mikseri yer alıyor. En arka planda ise mavi deniz seçilebiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Kıyıdaki arazi bağlamını yansıtan yapısal iskelet ve kargir dolgu çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Yapısal tamamlanma süreçleri farklı aşamalarda olan çok katlı beton konut binalarının yer aldığı büyük bir şantiyenin geniş açılı görüntüsü. Arka planda, binaların üzerine doğru uzanan yüksek bir kule vinç görülüyor. Zemin kızıl-kahverengi toprak, gökyüzü ise kapalı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Konut bloklarında yapısal beton çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Kahverengi çatılı, bej renkli birkaç büyük apartman bloğunu; bunların çevresindeki kaplamasız zemini ve bazı inşaat malzemelerini gösteren havadan bir görünüm. Ön planda daha eski ve küçük binalar yer alırken, uzak planda bulutlu bir gökyüzü altında bir su kütlesi görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Douaouda'daki tamamlanmış Z+8 konut bloklarının havadan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "Aşağıdan bir açıyla görülen, açık renkli cephelere ve kahverengi detaylara sahip birkaç katlı konut binası. Ön planda kum yığınları, tuğlalar ve beyaz torbaların bulunduğu toprak bir şantiye alanı yer alıyor. Binaların üzerinde ise kapalı bir gökyüzü görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "Tamamlanan bloklarda cephe düzenlemesi ve dış cephe bitirme işleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Yapısal tamamlanma süreçleri farklı aşamalarda olan çok katlı beton konut binalarının yer aldığı büyük bir şantiyenin geniş açılı görüntüsü. Arka planda, binaların üzerine doğru uzanan yüksek bir kule vinç görülüyor. Zemin kızıl-kahverengi toprak, gökyüzü ise kapalı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Konut bloklarında yapısal beton çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

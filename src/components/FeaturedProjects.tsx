@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, MapPin } from 'lucide-react';
 import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
-import { homeProjectCards } from '../data/projects';
+import { homeProjectCards, localizedProjectCardTitle, localizedProjectScope } from '../data/projects';
 import { localized } from '../data/projectContent';
 import { homepageContent, homepageProjectProofs, localize as localizeHome } from '../data/homepageContent';
 import { getProjectHeroImage } from '../data/projectHeroImage';
@@ -25,7 +25,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   const goTo = useSiteNavigate();
   const image = getProjectHeroImage(project);
   const proof = homepageProjectProofs[project.slug];
-  const cardTitle = pickLocaleText(locale, { en: project.title, fr: project.menuTitle });
+  const cardTitle = localizedProjectCardTitle(project, locale);
 
   const handleMouseEnter = () => {
     if (!cardRef.current || prefersReducedMotion) return;
@@ -106,7 +106,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           data-home-text-reveal
           data-home-text-reveal-start="top 88%"
         >
-          {proof ? localizeHome(proof, locale) : project.scope}
+          {proof ? localizeHome(proof, locale) : localizedProjectScope(project, locale)}
         </p>
         <span className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-white/85">
           <span

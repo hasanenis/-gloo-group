@@ -1,0 +1,33 @@
+{
+  "jobId": "20260712-35flash-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "locale": "en",
+  "sourceRevision": "v1-670fa269",
+  "generatedAt": "2026-07-11T21:39:13.127Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.images.hero.0.caption",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.faq.0.question",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

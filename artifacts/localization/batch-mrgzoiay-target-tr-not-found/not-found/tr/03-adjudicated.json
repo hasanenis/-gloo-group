@@ -1,0 +1,35 @@
+{
+  "jobId": "batch-mrgzoiay-target-tr-not-found",
+  "pageId": "not-found",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:22:02.853Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Sayfa Bulunamadı | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "Talep edilen sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi incelemek için SARL Igloo Yapi Construction portalına geri dönün."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Sayfa Bulunamadı | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Talep edilen sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi incelemek için SARL Igloo Yapi Construction portalına geri dönün."
+    },
+    {
+      "id": "content.heading",
+      "text": "Sayfa Bulunamadı"
+    },
+    {
+      "id": "content.cta",
+      "text": "Ana sayfaya dön"
+    }
+  ]
+}

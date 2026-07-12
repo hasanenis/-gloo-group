@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh1ffd7-target-ar-DZ-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-12T00:10:58.276Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "مجمع عقاري مختلط يضم 202 مسكن ترقي حر"
+    },
+    {
+      "id": "seo.description",
+      "text": "المواصفات التقنية، الإنجاز الهيكلي، والقيود الجيوتقنية للموقع الخاص بالمشروع العقاري المختلط في سعيد حمدين بالجزائر العاصمة، والذي يضم 202 مسكن ترقي حر."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "مجمع عقاري مختلط يضم 202 مسكن ترقي حر"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "المواصفات التقنية، الإنجاز الهيكلي، والقيود الجيوتقنية للموقع الخاص بالمشروع العقاري المختلط في سعيد حمدين بالجزائر العاصمة، والذي يضم 202 مسكن ترقي حر."
+    },
+    {
+      "id": "content.slug",
+      "text": "said-hamdine-mixed-real-estate"
+    },
+    {
+      "id": "content.title",
+      "text": "مجمع عقاري مختلط يضم 202 مسكن ترقي حر"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "مشروع عقاري مختلط"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "مشروع عقاري مختلط يتكون من خمس عمارات في سعيد حمدين، يدمج 202 وحدة سكنية على أرض شديدة الانحدار؛ طابق سفلي واحد لمواقف السيارات وثلاثة طوابق تجارية نصفية مع ميزانين."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يعالج المخطط تضاريس الموقع المعقدة عبر تدرج الكتل العمرانية، مدمجاً واجهة تجارية نشطة على مستوى الشارع مع مواقف سيارات تحت الأرض وممرات حركة آمنة للمقيمين."
+    },
+    {
+      "id": "content.description.0",
+      "text": "يتكون هذا المجمع العقاري الحضري من خمس عمارات سكنية تحتوي على 202 مسكن ترقي حر، شُيدت فوق ثلاثة طوابق تجارية نصفية مع ميزانين وطابق سفلي واحد مخصص لمواقف السيارات. وقد صُمم الإنجاز الهيكلي ليتلاءم مع أرض شديدة الانحدار في الجزائر العاصمة، مما تطلب منشآت دعم متخصصة وهندسة دقيقة للأساسات."
+    },
+    {
+      "id": "content.description.1",
+      "text": "تم تنفيذ أشغال المشروع في إطار صفقة تسليم بكافة التجهيزات (TCE)، بما في ذلك الهيكل الخرساني، تهيئة الواجهات، أنظمة الزجاج، وأشغال الطرق والشبكات المختلفة (VRD) لتسيير صرف مياه الموقع وحركة المركبات."
+    },
+    {
+      "id": "content.authority",
+      "text": "مجمع عقاري حضري مختلط يتميز بالهندسة الإنشائية الدقيقة، وحركة التنقل المتكاملة، والتعامل الفعال مع تضاريس الموقع المعقدة."
+    },
+    {
+      "id": "content.seo",
+      "text": "المواصفات التقنية، الإنجاز الهيكلي، والقيود الجيوتقنية للموقع الخاص بالمشروع العقاري المختلط في سعيد حمدين بالجزائر العاصمة، والذي يضم 202 مسكن ترقي حر."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "مجمع عقاري مختلط"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "مجمع عقاري مختلط"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "سعيد حمدين، بئر مراد رايس، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "الوحدات السكنية"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "202 مسكن ترقي حر"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "العمارات"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "5 عمارات سكنية"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "مواقف السيارات"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "طابق سفلي واحد لمواقف السيارات"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "تحدي الموقع"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "أرض شديدة الانحدار؛ ثلاثة طوابق تجارية نصفية مع ميزانين"
+    },
+    {
+      "id": "content.details.6.label",
+      "text": "تاريخ الإنجاز"
+    },
+    {
+      "id": "content.details.6.value",
+      "text": "2023"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "إنجاز هيكلي لخمس عمارات مختلطة الاستعمال"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "202 مسكن ترقي حر"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "ثلاثة طوابق تجارية نصفية مع ميزانين"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "طابق سفلي واحد لمواقف السيارات"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "أماكن مجاورة"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "منطقة تجارية محلية"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو المجمع العقاري المختلط الذي يضم 202 مسكن ترقي حر؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "هو مشروع تطوير عقاري يتكون من خمس عمارات سكنية تحتوي على 202 مسكن ترقي حر، شُيدت فوق ثلاثة طوابق تجارية نصفية مع ميزانين وطابق سفلي واحد مخصص لمواقف السيارات."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "كيف أثرت تضاريس الموقع على التصميم الهندسي؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "يتطلب المشروع دمج خمس عمارات سكنية، و202 مسكن ترقي حر، وثلاثة طوابق تجارية نصفية مع ميزانين، وطابق سفلي واحد لمواقف السيارات على أرض شديدة الانحدار بالجزائر."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "ماذا شمل نطاق عقد البناء؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "تم تسليم المشروع بالكامل في إطار صفقة بكافة التجهيزات (TCE)، والتي شملت أشغال الهيكل الخرساني، تهيئة الواجهات، تركيب الزجاج، وأشغال الطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "لقطة علوية لبلاطة خرسانية مسلحة بحديد التسليح، تظهر عمال البناء، مضخة الخرسانة، ومباني سكنية في الخلفية أثناء غروب الشمس."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "أشغال تسليح البلاطة الهيكلية وتركيب حديد التسليح في الموقع."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "لقطة من زاوية منخفضة لمبنيين شاهقين حديثين يتميزان بشرفات، وواجهات تجمع بين الألوان الأبيض والبيج والرمادي، مع طابق أرضي زجاجي عاكس."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "تفاصيل الواجهة والواجهات التجارية الزجاجية."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "عمال بناء في موقع ورشة عند غروب الشمس، يقومون بتحضير بلاطة خرسانية مع شبكة تسليح كثيفة وتظهر مضخة الخرسانة في الخلفية."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "أشغال تسليح بلاطة الأرضية الخرسانية."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "لقطة علوية لموقع بناء تظهر حفرة أساسات واسعة مع قاعدة من البلاطة الخرسانية. يظهر العديد من العمال بسترات الأمان البرتقالية وهم يقومون بتركيب وربط شبكات حديد التسليح لأساسات المبنى، مع ظهور جدران الحفرة الترابية المستقرة في الخلفية."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "أشغال حفر الأساسات وتركيب شبكة حديد التسليح."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "شرفة حديثة ونظيفة بأرضية من البلاط الشبيه بالخشب، وحاجز زجاجي، وطاولة مستديرة صغيرة مع ثلاثة كراسي داكنة، وتظهر مبانٍ سكنية أخرى في الخلفية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "تفاصيل الشرفة السكنية مع الحواجز الزجاجية."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "منظر من الأسفل لمبنى سكني حديث شاهق يتميز بشرفات ذات حواجز زجاجية وطابق أرضي تجاري بزجاج عاكس، تحت سماء زرقاء صافية يظهر فيها هلال خفيف، مع شجرة خضراء تؤطر الجانب الأيمن جزئياً."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "واجهة المبنى تظهر الشرفات السكنية والواجهات الزجاجية للطابق الأرضي."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "لقطة علوية لبلاطة خرسانية مسلحة بحديد التسليح، تظهر عمال البناء، مضخة الخرسانة، ومباني سكنية في الخلفية أثناء غروب الشمس."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "أشغال تسليح البلاطة الجارية في الموقع."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "عمال بناء يرتدون سترات الأمان يقومون بتركيب حديد التسليح لأساسات مبنى ضخم داخل حفرة حفر عميقة، مع ظهور جدران الدعم."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "تسليح الأساسات داخل موقع الحفر."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "منظر لرواق داخلي نظيف وشاغر بجدران بيضاء وأرضية من البلاط البني اللامع، مع عدة أبواب مفتوحة تؤدي إلى غرف أخرى تشمل مساحة لتناول الطعام وغرفة نوم."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "الممرات الداخلية وتشطيبات رواق الشقة."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "لقطة علوية لموقع بناء تظهر حفرة أساسات واسعة مع قاعدة من البلاطة الخرسانية. يظهر العديد من العمال بسترات الأمان البرتقالية وهم يقومون بتركيب وربط شبكات حديد التسليح لأساسات المبنى، مع ظهور جدران الحفرة الترابية المستقرة في الخلفية."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "أشغال البنية التحتية وتسليح الأساسات."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "شرفة حديثة ونظيفة بأرضية من البلاط الشبيه بالخشب, وحاجز زجاجي، وطاولة مستديرة صغيرة مع ثلاثة كراسي داكنة، وتظهر مبانٍ سكنية أخرى في الخلفية."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "تفاصيل الشرفة والتبليط الخارجي."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "مبنى متعدد الطوابق قيد الإنشاء، يظهر البلاطات الخرسانية، الأعمدة، وجدران الطوب الأحمر، مع قنوات صفراء لتصريف الردم ممتدة على الجانب، وتظهر مواد البناء في الطوابق السفلية ورافعة في الخلفية."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "إنجاز الهيكل الحامل وأشغال بناء الجدران بالطوب."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "مبنى شاهق قيد الإنشاء يظهر الهيكل الخرساني، وجدران الطوب الأحمر المنجزة جزئياً، وقنوات صفراء لتصريف الردم، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "الهيكل الخرساني المسلح والجدران الخارجية قيد الإنجاز."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "لقطة علوية لموقع بناء تظهر حفرة أساسات واسعة مع قاعدة من البلاطة الخرسانية. يظهر العديد من العمال بسترات الأمان البرتقالية وهم يقومون بتركيب وربط شبكات حديد التسليح لأساسات المبنى، مع ظهور جدران الحفرة الترابية المستقرة في الخلفية."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "أشغال الحفر وتحضير بلاطة الأساسات."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "عمال بناء يرتدون سترات الأمان يقومون بتركيب حديد التسليح لأساسات مبنى ضخم داخل حفرة حفر عميقة، مع ظهور جدران الدعم."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "تركيب تسليح البنية التحتية."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "لقطة علوية لبلاطة خرسانية مسلحة بحديد التسليح، تظهر عمال البناء، مضخة الخرسانة، ومباني سكنية في الخلفية أثناء غروب الشمس."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "تسليح البلاطة وتحضير صب الخرسانة."
+    }
+  ]
+}

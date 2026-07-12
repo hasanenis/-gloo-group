@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgx60j3-target-fr-projects-index",
+  "pageId": "projects-index",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T22:11:40.644Z",
+  "status": "pass",
+  "issues": []
+}

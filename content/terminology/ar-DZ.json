@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar-DZ",
+  "entries": [
+    { "source": "second work", "target": "الأشغال الثانوية", "note": "Use the Algerian construction meaning, not a literal everyday translation." },
+    { "source": "external works", "target": "أشغال الطرق والشبكات المختلفة", "note": "Keep VRD in project facts when it is an official acronym." },
+    { "source": "delivered", "target": "تم تسليمه", "note": "Use for a completed project." },
+    { "source": "site infrastructure", "target": "تهيئة الموقع والبنية التحتية", "note": "Keep the construction context explicit." }
+  ]
+}

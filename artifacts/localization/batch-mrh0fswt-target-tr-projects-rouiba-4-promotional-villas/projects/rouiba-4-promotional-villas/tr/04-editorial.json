@@ -1,0 +1,339 @@
+{
+  "jobId": "batch-mrh0fswt-target-tr-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-11T23:43:16.259Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "4 Promosyonel Villa ve Altyapı İşleri | Rouiba"
+    },
+    {
+      "id": "seo.description",
+      "text": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "4 Promosyonel Villa ve Altyapı İşleri | Rouiba"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi."
+    },
+    {
+      "id": "content.slug",
+      "text": "rouiba-4-promotional-villas"
+    },
+    {
+      "id": "content.title",
+      "text": "4 Promosyonel Villa ve Altyapı İşleri"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "KONUT GELİŞTİRME"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Rouiba'da, yollar ve altyapı şebekeleri (VRD) dahil olmak üzere eksiksiz bir tüm gruplar (TCE) paketi kapsamında yürütülen 4 özel promosyonel villadan oluşan konut projesi."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Proje kapsamı, uyumlu bir konut alanı oluşturmak amacıyla kaba yapı işlerini, cephe detaylandırmasını ve entegre saha altyapısını içermektedir."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Proje; betonarme kaba yapı işleri, iç ve dış ince işler, mekanik-elektrik-tesisat (MEP) kurulumları ile yollar ve altyapı şebekelerini (VRD) kapsayan eksiksiz bir saha paketi olarak yürütülmüştür."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Mimari kütle tasarımı, özel konut alanları ile entegre araç ve yaya sirkülasyon ağlarını dengeleyen modern hacimler kullanmaktadır."
+    },
+    {
+      "id": "content.authority",
+      "text": "İlk kazı işlerinden nihai teslime kadar yapısal dayanıklılık ile saha altyapısının uyum içinde yürütüldüğü titiz bir konut programı."
+    },
+    {
+      "id": "content.seo",
+      "text": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Program Tipi"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Proje Tipi"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Özel Promosyonel Villalar"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Konum"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Rouiba, Cezayir"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Ölçek"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "4 adet müstakil villa"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Tamamlanma Yılı"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2023"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Sözleşme Kapsamı"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "Tüm Gruplar Anahtar Teslim (TCE) ve Yollar ve Altyapı Şebekeleri (VRD)"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "Birincil Kullanım"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "Özel Konut"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Teknik Kapsam"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "4 adet özel promosyonel villa"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Özel yaya erişimine sahip entegre yollar ve altyapı şebekeleri (VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Modern cephe detaylarına sahip betonarme taşıyıcı sistemler"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "2023 yılında tamamlanan eksiksiz tüm gruplar teslimi (TCE)"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "4 Promosyonel Villa ve Altyapı İşleri projesi nedir?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Proje, eksiksiz tüm gruplar (TCE) inşaat işleri ve entegre saha altyapısı ile birlikte teslim edilen 4 adet özel promosyonel villadan oluşmaktadır."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Sahada hangi inşaat çalışmaları yürütüldü?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Çalışma kapsamı; betonarme yapı mühendisliği, iç ve dış ince işler, mekanik-elektrik-tesisat (MEP) kurulumları ile yollar ve altyapı şebekelerini (VRD) içermektedir."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Saha içi sirkülasyon nasıl yapılandırılmıştır?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Vaziyet planı, 4 konut birimi arasında net bir sirkülasyon ve mahremiyet sağlamak amacıyla özel araç ve yaya erişim yollarını entegre etmektedir."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Rouiba villa şantiyesinde devam eden betonarme kaba yapı işleri ve kolon kalıp çalışmaları."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Sahada taşıyıcı betonarme imalatı."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Arka planda kule vincin yer aldığı, cephe bitirme işlerinin son aşamalarındaki bir promosyonel villanın dış görünümü."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Devam eden cephe bitirme işleri."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Dış sıva ve saha temizliği işlerinin son aşamalarında olan çok katlı bir villa yapısı."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Dış cephe bitirme ve saha hazırlık işleri."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Rouiba villa şantiyesinde devam eden betonarme kaba yapı işleri ve kolon kalıp çalışmaları."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Sahada taşıyıcı betonarme imalatı."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
+    }
+  ]
+}

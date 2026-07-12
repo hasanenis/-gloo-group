@@ -1,0 +1,181 @@
+{
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-b6378a0d",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "91a0ed3bf36a4ecb",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:06.305Z",
+  "seo": {
+    "title": "200/1200 Kamu Teşvikli Konut Projesi (LPP) | Sidi Abdallah",
+    "description": "200/1200 Kamu Teşvikli Konut Projesi'ne ait galeri, teknik detaylar ve konum notlarını inceleyin. Proje, kaynak odaklı konut ve karma kullanım teslim modelini sergilemektedir.",
+    "socialTitle": "200/1200 Kamu Teşvikli Konut Projesi (LPP) | Sidi Abdallah",
+    "socialDescription": "200/1200 Kamu Teşvikli Konut Projesi'ne ait galeri, teknik detaylar ve konum notlarını inceleyin. Proje, kaynak odaklı konut ve karma kullanım teslim modelini sergilemektedir."
+  },
+  "content": {
+    "slug": "sidi-abdallah-200-1200-housing",
+    "title": "200/1200 Kamu Teşvikli Konut Projesi (LPP)",
+    "eyebrow": "KARMA KULLANIMLI KONUT PROJESİ",
+    "summary": [
+      "Kamu teşvikli konut (LPP) programı ile zemin kat ticari ve mesleki alanları entegre eden, 1.200 konutluk Sidi Abdallah ana imar planı kapsamındaki 200 konutun teslimi.",
+      "Proje, zemin kat artı 9 üst kat (R+9) olarak yapılandırılmış yüksek yoğunluklu konut bloklarını sunmakta olup, sokak seviyesindeki aktif ticari cephelerin yanı sıra F3 ve F4 daire planlarına ev sahipliği yapmaktadır."
+    ],
+    "description": [
+      "İnşaat kapsamı, yoğun konut bloklarının ince yapı işleri ve iç mekan donatım işlerinin yürütülmesine odaklanmıştır. Cephe artikülasyonu, iç sirkülasyon çekirdekleri ve teknik tesisat işleri, ana planın yapısal ve mekansal sınırlarına uyum sağlayacak şekilde koordine edilmiştir.",
+      "Zemin kattaki ticari ve mesleki alanların doğrudan R+9 konut kütlesinin altına entegre edilmesiyle, mimari yerleşim planı kentsel gelişim bölgesi içindeki yerel ekonomik faaliyeti destekleyen fonksiyonel bir karma kullanım profili oluşturmaktadır."
+    ],
+    "authority": "İnce yapı işlerinin, hizmet alanlarının ve R+9 yoğunluğunun yeni bir kentsel bölgeyi desteklemek üzere birlikte çalıştığı bir kamu konut teslimi.",
+    "seo": "200/1200 Kamu Teşvikli Konut Projesi'ne ait galeri, teknik detaylar ve konum notlarını inceleyin. Proje, kaynak odaklı konut ve karma kullanım teslim modelini sergilemektedir.",
+    "meta": [
+      {
+        "label": "Program Tipi",
+        "value": "Kamu Teşvikli Konut (LPP)"
+      }
+    ],
+    "details": [
+      {
+        "label": "Program Tipi",
+        "value": "Kamu Teşvikli Konut (LPP)"
+      },
+      {
+        "label": "Konum",
+        "value": "Sidi Abdallah, Mahelma, Cezayir"
+      },
+      {
+        "label": "Program Kapsamı",
+        "value": "1.200 konutluk ana imar planı içinde 200 konut"
+      },
+      {
+        "label": "Tamamlanma Yılı",
+        "value": "2022"
+      },
+      {
+        "label": "Bina Yapılandırması",
+        "value": "Zemin kat artı 9 üst kat (R+9)"
+      },
+      {
+        "label": "Sözleşme Kapsamı",
+        "value": "İnce yapı işleri (altyapı, yollar ve bağlantı ağları / VRD hariç)"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Programı",
+        "items": [
+          "1.200 konutluk ana imar planı kapsamında teslim edilen 200 LPP konut ünitesi",
+          "F3 ve F4 daire planlarını içeren R+9 konut blokları",
+          "Zemin kat ticari ve mesleki alanlar",
+          "Ulusal teknik standartlara uygun olarak 2022 yılında tamamlanmıştır"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "200/1200 LPP konut projesinin kapsamı nedir?",
+        "answer": "Proje, Sidi Abdallah'taki 1.200 konutluk daha büyük bir kentsel gelişimin parçası olarak, zemin katında ticari alanlar bulunan 200 adet kamu teşvikli konut (LPP) ünitesinin teslimini kapsamaktadır."
+      },
+      {
+        "question": "Bu şantiyede hangi inşaat işleri yürütülmüştür?",
+        "answer": "Sözleşme, ana yollar ve altyapı bağlantı ağları (VRD) paketi hariç olmak üzere, R+9 konut bloklarının ince yapı işlerini ve iç mekan donatım işlerini kapsamaktadır."
+      },
+      {
+        "question": "Konut binaları nasıl yapılandırılmıştır?",
+        "answer": "Binalar, çevre kentsel bölgeyle entegre olacak şekilde tasarlanmış, F3 ve F4 daire planlarını içeren zemin kat artı 9 üst kat (R+9) şeklinde yapılandırılmıştır."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "Sidi Abdallah'taki bir R+9 konut bloğu cephesinin aşağıdan görünümü; bej ve şeftali rengi sıva, koyu metal korkuluklu gömme balkonlar ve dış aydınlatma gösterilmektedir.",
+          "caption": "R+9 kamu teşvikli konut bloklarının cephe artikülasyonu."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "Bulutlu bir gökyüzüne karşı dış sıva, balkon konfigürasyonları ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının aşağıdan çekilmiş perspektifi.",
+          "caption": "Dikey kütlelenmeyi ve balkon hizalamasını gösteren dış cephe görünüşü."
+        }
+      ],
+      "intro": {
+        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+        "alt": "Bir LPP konut bloğunun iç lobisi; taş duvar kaplaması, dikey ahşap detaylar, entegre saksılık ve dekoratif metal güvenlik kapısına yönlendiren desenli mermer zemin kaplaması.",
+        "caption": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+          "alt": "Konut binasının içindeki ortak sirkülasyon alanı; asansör boşluğu, entegre ahşap posta kutuları, taş duvar kaplamaları ve dekoratif metal korkuluklar gösterilmektedir.",
+          "caption": "İç sirkülasyon çekirdeği ve entegre posta kutuları."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+          "alt": "İnşaatın son aşamalarında, ön planda toprak işleri, altyapı boruları ve inşaat makinelerinin görüldüğü çok sayıda R+9 apartman bloğunun geniş açılı çekimi.",
+          "caption": "Saha koordinasyonu ve dış mekan işlerinin son aşamalarındaki konut blokları."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Bir LPP konut bloğunun iç lobisi; taş duvar kaplaması, dikey ahşap detaylar, entegre saksılık ve dekoratif metal güvenlik kapısına yönlendiren desenli mermer zemin kaplaması.",
+          "caption": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "Bulutlu bir gökyüzüne karşı dış sıva, balkon konfigürasyonları ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının aşağıdan çekilmiş perspektifi.",
+          "caption": "Dikey kütlelenmeyi ve balkon hizalamasını gösteren dış cephe görünüşü."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+          "alt": "İnşaat malzemeleri içeren kaplanmamış bir saha alanından görülen, beyaz, mavi ve şeftali rengi cephelere sahip tamamlanmış iki adet R+9 konut bloğu.",
+          "caption": "Saha temizliği öncesinde tamamlanmış konut blokları."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Bir LPP konut bloğunun iç lobisi; taş duvar kaplaması, dikey ahşap detaylar, entegre saksılık ve dekoratif metal güvenlik kapısına yönlendiren desenli mermer zemin kaplaması.",
+          "caption": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "Bulutlu bir gökyüzüne karşı dış sıva, balkon konfigürasyonları ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının aşağıdan çekilmiş perspektifi.",
+          "caption": "Dikey kütlelenmeyi ve balkon hizalamasını gösteren dış cephe görünüşü."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "Sidi Abdallah'taki bir R+9 konut bloğu cephesinin aşağıdan görünümü; bej ve şeftali rengi sıva, koyu metal korkuluklu gömme balkonlar and dış aydınlatma gösterilmektedir.",
+          "caption": "R+9 kamu teşvikli konut bloklarının cephe artikülasyonu."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+          "alt": "Yeni tamamlanmış bir konut bloğunun giriş portalı; koyu metal güvenlik kapısı, taş kaplama söveler ve karolu iç zemin kaplaması gösterilmektedir.",
+          "caption": "Tamamlanmış giriş portalı ve zemin kat geçiş kontrolü."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Bir LPP konut bloğunun iç lobisi; taş duvar kaplaması, dikey ahşap detaylar, entegre saksılık ve dekoratif metal güvenlik kapısına yönlendiren desenli mermer zemin kaplaması.",
+          "caption": "Taş kaplama ve ahşap detayları gösteren giriş lobisi iç mekanı."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "Bulutlu bir gökyüzüne karşı dış sıva, balkon konfigürasyonları ve pencere açıklıklarını gösteren, tamamlanmış R+9 konut binasının aşağıdan çekilmiş perspektifi.",
+          "caption": "Dikey kütlelenmeyi ve balkon hizalamasını gösteren dış cephe görünüşü."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "Sidi Abdallah'taki bir R+9 konut bloğu cephesinin aşağıdan görünümü; bej ve şeftali rengi sıva, koyu metal korkuluklu gömme balkonlar ve dış aydınlatma gösterilmektedir.",
+          "caption": "R+9 kamu teşvikli konut bloklarının cephe artikülasyonu."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "Sidi Abdallah'taki bir R+9 konut bloğu cephesinin aşağıdan görünümü; bej ve şeftali rengi sıva, koyu metal korkuluklu gömme balkonlar ve dış aydınlatma gösterilmektedir.",
+          "caption": "R+9 kamu teşvikli konut bloklarının cephe artikülasyonu."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "jobId": "batch-mrh18any-target-ar-DZ-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-12T00:05:25.582Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0|content.faq.0.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    },
+    {
+      "id": "content.summary.1|content.faq.2.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrh1cpxx-target-ar-DZ-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-12T00:08:51.823Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.faq.2.answer",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 4"
+    }
+  ]
+}

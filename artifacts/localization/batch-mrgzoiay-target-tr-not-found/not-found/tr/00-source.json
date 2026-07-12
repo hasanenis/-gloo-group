@@ -1,0 +1,34 @@
+{
+  "jobId": "batch-mrgzoiay-target-tr-not-found",
+  "pageId": "not-found",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:22:02.853Z",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Page Not Found | SARL Igloo Yapi Construction"
+    },
+    {
+      "path": "seo.description",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects."
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Page Not Found | SARL Igloo Yapi Construction"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects."
+    },
+    {
+      "path": "content.heading",
+      "source": "Page Not Found"
+    },
+    {
+      "path": "content.cta",
+      "source": "Return to the homepage"
+    }
+  ]
+}

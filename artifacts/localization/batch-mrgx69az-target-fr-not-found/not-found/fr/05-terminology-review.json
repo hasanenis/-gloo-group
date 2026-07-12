@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgx69az-target-fr-not-found",
+  "pageId": "not-found",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T22:11:51.826Z",
+  "status": "pass",
+  "issues": []
+}

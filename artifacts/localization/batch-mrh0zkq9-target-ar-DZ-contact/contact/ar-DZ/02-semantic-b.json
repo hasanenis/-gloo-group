@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrh0zkq9-target-ar-DZ-contact",
+  "pageId": "contact",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:58:38.725Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "الاتصال | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "اتصل بمقرنا الرئيسي في بئر خادم لتقديم إحداثيات المواقع، متطلبات البرنامج والوثائق التقنية لتقييم المشروع."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "الاتصال | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "اتصل بمقرنا الرئيسي في بئر خادم لتقديم إحداثيات المواقع، متطلبات البرنامج والوثائق التقنية لتقييم المشروع."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "الاتصال"
+    },
+    {
+      "id": "content.heading",
+      "text": "ابدأ استشارة حول المشروع."
+    },
+    {
+      "id": "content.lead",
+      "text": "تواصل مع فريقنا التقني في بئر خادم. قدم إحداثيات موقعك، برنامج التطوير ووثائق التصميم المتاحة لبدء مراجعة الهندسة والتقدير الداخلي لدينا."
+    }
+  ]
+}

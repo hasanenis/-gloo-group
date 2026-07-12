@@ -1,0 +1,23 @@
+{
+  "jobId": "batch-mrh1ffd7-target-ar-DZ-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-12T00:10:58.276Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.details.4.value",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 1"
+    },
+    {
+      "id": "content.details.5.value",
+      "severity": "blocker",
+      "type": "fact",
+      "message": "Source number not preserved: 3"
+    }
+  ]
+}

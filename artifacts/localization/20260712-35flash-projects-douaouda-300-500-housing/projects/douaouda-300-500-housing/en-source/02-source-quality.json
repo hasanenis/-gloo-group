@@ -1,0 +1,32 @@
+{
+  "jobId": "20260712-35flash-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "locale": "en",
+  "sourceRevision": "v1-888651e9",
+  "generatedAt": "2026-07-11T21:39:32.029Z",
+  "status": "review",
+  "issues": [],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "seo.description",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "seo.socialDescription",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.summary.1",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.seo",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

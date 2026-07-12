@@ -1,0 +1,180 @@
+{
+  "jobId": "20260712000306-rouiba-4-promotional-villas-source-flash",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "locale": "en",
+  "sourceRevision": "v1-18192590",
+  "generatedAt": "2026-07-11T21:03:08.109Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "f8966c452563934a",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "4 Promotional Villas and Network Works",
+    "description": "Explore the gallery, technical details, and location notes for 4 Promotional Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+    "socialTitle": "4 Promotional Villas and Network Works",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 4 Promotional Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "rouiba-4-promotional-villas",
+    "title": "4 Promotional Villas and Network Works",
+    "eyebrow": "RESIDENTIAL PROJECT",
+    "summary": [
+      "Four detached promotional villas in Rouiba, delivered with full TCE, VRD, external access, and contemporary residential finishes.",
+      "The Rouiba project features a compact villa development where privacy, access, and external works are as important as the buildings themselves."
+    ],
+    "description": [
+      "Igloo delivered the villas as a complete site package, including reinforced concrete structures, internal and external finishes, MEP networks, and roads and pedestrian access.",
+      "The project employs clean contemporary volumes and external arrangements to create a small-scale residential setting, emphasising durability, independence, and comfort."
+    ],
+    "authority": "A small villa development where quality is achieved through execution: access, networks, facades, and finishing details are aligned from site to handover.",
+    "seo": "Explore the gallery, technical details, and location notes for 4 Promotional Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Project type",
+        "value": "Detached promotional villas"
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Detached promotional villas"
+      },
+      {
+        "label": "Location",
+        "value": "Rouiba, Algiers, Algeria"
+      },
+      {
+        "label": "Units",
+        "value": "4 individual villas"
+      },
+      {
+        "label": "Completion",
+        "value": "2023"
+      },
+      {
+        "label": "Works",
+        "value": "TCE with VRD"
+      },
+      {
+        "label": "Use",
+        "value": "Individual residential housing"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project programme",
+        "items": [
+          "4 detached promotional villas",
+          "VRD, vehicle access, and pedestrian access",
+          "Reinforced concrete structures with contemporary facades",
+          "Completed in 2023 with full TCE coordination"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is 4 Promotional Villas and Network Works?",
+        "answer": "Four detached promotional villas in Rouiba, delivered with full TCE, VRD, external access, and contemporary residential finishes."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "Igloo delivered the villas as a complete site package, including reinforced concrete structures, internal and external finishes, MEP networks, and roads and pedestrian access."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "The Rouiba project features a compact villa development where privacy, access, and external works are as important as the buildings themselves."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Igloo Construction project image"
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky.",
+          "caption": "Modern promotional villa exterior."
+        }
+      ],
+      "intro": {
+        "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+        "alt": "Elevated perspective of several recently built, white-painted villas featuring modern architecture, flat roofs, and balconies. A construction crane boom is partially visible on the left, and the background shows a dense residential area.",
+        "caption": "Modern villas nearing completion in Rouiba, showcasing contemporary design."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "An elevated view of a construction site for a promotional villa, featuring concrete foundations, wooden formwork for columns, and several construction workers. A large yellow crane arm is visible on the left, and a street with cars and trees is in the background.",
+          "caption": "Construction progress on a promotional villa site in Rouiba."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky.",
+          "caption": "Modern promotional villa exterior."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated perspective of several recently built, white-painted villas featuring modern architecture, flat roofs, and balconies. A construction crane boom is partially visible on the left, and the background shows a dense residential area.",
+          "caption": "Modern villas nearing completion in Rouiba, showcasing contemporary design."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Igloo Construction project image"
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
+          "alt": "Exterior view of a modern, light-colored promotional villa with multiple windows and balconies, with a yellow construction crane visible on the right.",
+          "caption": "Modern promotional villa exterior with crane."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky.",
+          "caption": "Modern promotional villa exterior."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated perspective of several recently built, white-painted villas featuring modern architecture, flat roofs, and balconies. A construction crane boom is partially visible on the left, and the background shows a dense residential area.",
+          "caption": "Modern villas nearing completion in Rouiba, showcasing contemporary design."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Igloo Construction project image"
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
+          "alt": "A multi-story, light-colored modern villa with a distinctive architectural design, surrounded by construction debris and building materials on a dirt ground under an overcast sky.",
+          "caption": "Modern villa nearing completion amidst construction activity."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky.",
+          "caption": "Modern promotional villa exterior."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated perspective of several recently built, white-painted villas featuring modern architecture, flat roofs, and balconies. A construction crane boom is partially visible on the left, and the background shows a dense residential area.",
+          "caption": "Modern villas nearing completion in Rouiba, showcasing contemporary design."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "An elevated view of a construction site for a promotional villa, featuring concrete foundations, wooden formwork for columns, and several construction workers. A large yellow crane arm is visible on the left, and a street with cars and trees is in the background.",
+          "caption": "Construction progress on a promotional villa site in Rouiba."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Igloo Construction project image"
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

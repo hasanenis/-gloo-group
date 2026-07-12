@@ -1,0 +1,24 @@
+{
+  "jobId": "20260712-35flash-about",
+  "pageId": "about",
+  "locale": "en",
+  "sourceRevision": "v1-bdd104f2",
+  "generatedAt": "2026-07-11T21:38:39.081Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "1afbddafcc2ce5e9",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Corporate Profile",
+    "description": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+    "socialTitle": "SARL Igloo Yapi Construction | Corporate Profile",
+    "socialDescription": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations."
+  },
+  "content": {
+    "eyebrow": "Corporate Profile",
+    "heading": "Integrated engineering and site execution teams.",
+    "body": "Founded in 2018 in Algiers, SARL Igloo Yapi Construction delivers residential and mixed-use projects through coordinated engineering, procurement and site teams."
+  },
+  "model": "gemini-3.5-flash"
+}

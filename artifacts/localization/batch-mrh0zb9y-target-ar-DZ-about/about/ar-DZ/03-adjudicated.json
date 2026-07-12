@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrh0zb9y-target-ar-DZ-about",
+  "pageId": "about",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:58:26.410Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "SARL Igloo Yapi Construction | التعريف بالمؤسسة"
+    },
+    {
+      "id": "seo.description",
+      "text": "مؤسسة بناء جزائرية تنجز مشاريع سكنية ومتعددة الاستعمالات من خلال الهندسة المتكاملة، التموين وعمليات الموقع."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "SARL Igloo Yapi Construction | التعريف بالمؤسسة"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "مؤسسة بناء جزائرية تنجز مشاريع سكنية ومتعددة الاستعمالات من خلال الهندسة المتكاملة، التموين وعمليات الموقع."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "التعريف بالمؤسسة"
+    },
+    {
+      "id": "content.heading",
+      "text": "فرق متكاملة للهندسة وإنجاز الأشغال في الموقع."
+    },
+    {
+      "id": "content.body",
+      "text": "تأسست SARL Igloo Yapi Construction في سنة 2018 بالجزائر العاصمة، وهي تنجز مشاريع سكنية ومتعددة الاستعمالات عبر التنسيق بين فرق الهندسة، التموين وورشات الموقع."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgylhuk-target-fr-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-11T22:51:42.580Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

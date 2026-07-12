@@ -1,0 +1,181 @@
+{
+  "pageId": "projects/rahmania",
+  "locale": "tr",
+  "sourceRevision": "v1-41865e99",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "ddb6dcbd901ea1f8",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:05.794Z",
+  "seo": {
+    "title": "Rahmania Ticaret Merkezleri | Douira, Cezayir",
+    "description": "Cezayir, Douira'daki 2.500 konutluk yerleşim projesi kapsamında yer alan iki adet ticaret merkezinin teknik uygulama ve ince işler (CES) paketinin yapımı.",
+    "socialTitle": "Rahmania Ticaret Merkezleri | Douira, Cezayir",
+    "socialDescription": "Cezayir, Douira'daki 2.500 konutluk yerleşim projesi kapsamında yer alan iki adet ticaret merkezinin teknik uygulama ve ince işler (CES) paketinin yapımı."
+  },
+  "content": {
+    "slug": "rahmania",
+    "title": "Rahmania Ticaret Merkezleri",
+    "eyebrow": "ÇOK AMAÇLI ALTYAPI",
+    "summary": [
+      "Douira'daki 2.500 konutluk yerleşim projesi bünyesinde yer alan iki adet ticaret merkezinin ince işler paketinin tamamı 2025 yılında teslim edilmiştir.",
+      "Douira'daki 2.500 konutluk program kapsamında yer alan iki adet ticaret merkezi, bölgedeki mağazalara ve günlük hizmetlere ev sahipliği yapacak şekilde donatılmıştır."
+    ],
+    "description": [
+      "SARL Igloo Yapi Construction, her iki ticari yapının da ince işler (corps d'état secondaires - CES) paketinin tamamını üstlenmiştir. Yapılan çalışmalar kapsamında, kaba betonarme karkas yapılar, yerel esnafa ve kamu hizmetlerine hizmet verecek şekilde tamamen donatılmış, işlevsel ticari alanlara dönüştürülmüştür.",
+      "Bina cephelerinde, dekoratif mimari panellerle entegre edilmiş geniş cam giydirme cephe sistemleri kullanılmıştır. İç mekanda dikey sirkülasyon merkezi bir merdivenle sağlanırken, yapısal piramit cam ışıklık ticari kat alanlarına doğal gün ışığı taşımaktadır."
+    ],
+    "authority": "2025 yılında tamamlanan proje, modern ticari bina standartlarını karşılayacak şekilde tüm ince iş disiplinleri koordine edilerek planlanan takvime uygun olarak teslim edilmiştir.",
+    "seo": "Cezayir, Douira'daki 2.500 konutluk yerleşim projesi kapsamında yer alan iki adet ticaret merkezinin teknik uygulama ve ince işler (CES) paketinin yapımı.",
+    "meta": [
+      {
+        "label": "Proje Tipolojisi",
+        "value": "Ticaret Merkezleri"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje Tipolojisi",
+        "value": "Ticaret Merkezleri"
+      },
+      {
+        "label": "Konum",
+        "value": "Douira, Cezayir"
+      },
+      {
+        "label": "İş Kapsamı",
+        "value": "İnce işler paketi (CES)"
+      },
+      {
+        "label": "Tamamlanma",
+        "value": "2025"
+      },
+      {
+        "label": "Bağlam",
+        "value": "2.500 konutluk yerleşim programı"
+      },
+      {
+        "label": "Sözleşme Tipi",
+        "value": "Uygulama"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Programı",
+        "items": [
+          "İnce işler (CES) paketinin tamamı",
+          "Cam cephe montajı ve mimari paneller",
+          "Merkezi dikey sirkülasyon ve yapısal piramit ışıklık",
+          "2025 yılında, takvime ve standartlara uygun olarak teslim edilmiştir"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "Rahmania Ticaret Merkezleri projesinin kapsamı nedir?",
+        "answer": "Douira'daki 2.500 konutluk yerleşim programı bünyesinde yer alan iki adet ticaret merkezinin ince işleri olup, 2025 yılında tamamlanmıştır."
+      },
+      {
+        "question": "Yüklenici tarafından hangi teknik çalışmalar yürütülmüştür?",
+        "answer": "SARL Igloo Yapi Construction, betonarme yapıların iç bölme duvarları, ince iş kaplamaları, cam cepheleri, merkezi merdivenleri ve yapısal piramit cam ışıklık montajı dahil olmak üzere tüm iç donatım sürecini yönetmiştir."
+      },
+      {
+        "question": "Ticari alanların yapımı ne zaman tamamlanmıştır?",
+        "answer": "Douira'daki 2.500 konutluk program kapsamında yer alan iki adet ticaret merkezi, bölgedeki mağazalara ve günlük hizmetlere ev sahipliği yapacak şekilde donatılmıştır."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Siyah çerçeveli cam bölmeden görünen, seramik zeminli, beyaz duvarlı ve asma tavan spot aydınlatmalı tamamlanmış ticari ünitenin iç mekanı.",
+          "caption": "Ticari ünitenin iç cam bölmelerini ve ince iş kaplamalarını gösteren tamamlanmış iç mekan görünümü."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+          "alt": "Konut bloklarının yanında yer alan, koyu gri kaplama panellerine ve bakır tonlu detaylara sahip, tamamlanmış üç katlı ticaret merkezinin dıştan görünümü.",
+          "caption": "Yerleşim projesiyle entegre edilmiş tamamlanmış ticaret merkezi cephesi."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+        "alt": "Ticaret merkezinin paslanmaz çelik korkuluklu çok katlı betonarme merdivenini ve geniş çevre pencerelerini gösteren iç atrium alanı.",
+        "caption": "Merkezi atrium ve dikey sirkülasyon çekirdeği."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "Ticari binanın ana lobisinde yer alan gri granit basamaklı ve paslanmaz çelik korkuluklu dairesel merdiven.",
+          "caption": "Granit kaplama dairesel merdiven detayı."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+          "alt": "İç ince işler aşamasında, metal korkulukları koruyucu ambalajla kaplanmış iki adet dairesel betonarme merdiven.",
+          "caption": "Merdiven montajı ve iç ince işler."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "Ticaret merkezinin kiremit kaplı çatısına monte edilmiş koyu metal çerçeveli piramit şeklinde cam ışıklık.",
+          "caption": "Çatı terasındaki yapısal piramit cam ışıklık."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Ticaret merkezinin paslanmaz çelik korkuluklu çok katlı betonarme merdivenini ve geniş çevre pencerelerini gösteren iç atrium alanı.",
+          "caption": "Merkezi atrium ve dikey sirkülasyon çekirdeği."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+          "alt": "Ticaret merkezinin kiremit kaplı çatısına monte edilmiş koyu metal çerçeveli piramit şeklinde cam ışıklık.",
+          "caption": "Çatı terasındaki yapısal piramit cam ışıklık."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+          "alt": "Düz çatıya yeni monte edilmiş cam piramit ışıklık, arka planda konut binaları görünmektedir.",
+          "caption": "Ticaret merkezi çatısındaki ışıklık montajı."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "Koyu renk granit basamaklara ve metal korkuluklarında koruyucu plastik ambalajlara sahip çift dairesel merdivenli geniş ticari lobi alanı.",
+          "caption": "Son ince işler sırasında ana lobideki çift dairesel merdivenler."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+          "alt": "Ticari binanın ana lobisinde yer alan gri granit basamaklı ve paslanmaz çelik korkuluklu dairesel merdiven.",
+          "caption": "Granit kaplama dairesel merdiven detayı."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+          "alt": "Arka planda konut bloklarının yer aldığı, kiremit kaplı çatı terasındaki cam piramit ışıklık yapısının yakın çekimi.",
+          "caption": "Çatı terası ışıklık detayı."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+          "alt": "Çok katlı konut binalarının arasında konumlanmış, cam piramit çatılı ticaret merkezinin dıştan görünümü.",
+          "caption": "Douira konut projesiyle entegre edilmiş ticaret merkezi."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+          "alt": "Koyu renk granit basamaklara ve metal korkuluklarında koruyucu plastik ambalajlara sahip çift dairesel merdivenli geniş ticari lobi alanı.",
+          "caption": "Son ince işler sırasında ana lobideki çift dairesel merdivenler."
+        },
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+          "alt": "Ticaret merkezinin paslanmaz çelik korkuluklu çok katlı betonarme merdivenini ve geniş çevre pencerelerini gösteren iç atrium alanı.",
+          "caption": "Merkezi atrium ve dikey sirkülasyon çekirdeği."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+          "alt": "Siyah çerçeveli cam bölmeden görünen, seramik zeminli, beyaz duvarlı ve asma tavan spot aydınlatmalı tamamlanmış ticari ünitenin iç mekanı.",
+          "caption": "Ticari ünitenin iç cam bölmelerini ve ince iş kaplamalarını gösteren tamamlanmış iç mekan görünümü."
+        }
+      ]
+    }
+  }
+}

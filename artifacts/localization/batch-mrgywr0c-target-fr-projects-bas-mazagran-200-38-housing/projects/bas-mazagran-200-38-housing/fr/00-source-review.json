@@ -1,0 +1,30 @@
+{
+  "jobId": "batch-mrgywr0c-target-fr-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-11T23:00:27.916Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "severity": "warning",
+      "type": "unsupported-claim",
+      "message": "English source contains an architectural or market-positioning claim that must be checked against facts."
+    },
+    {
+      "id": "content.summary.0|content.faq.0.question",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    },
+    {
+      "id": "content.faq.0.question|content.faq.0.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

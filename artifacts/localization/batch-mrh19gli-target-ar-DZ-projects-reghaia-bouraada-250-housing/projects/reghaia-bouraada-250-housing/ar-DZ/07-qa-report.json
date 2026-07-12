@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh19gli-target-ar-DZ-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-12T00:06:19.854Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

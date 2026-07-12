@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgyh1tj-target-fr-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-11T22:48:15.269Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

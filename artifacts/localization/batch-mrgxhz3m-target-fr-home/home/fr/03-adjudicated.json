@@ -1,0 +1,379 @@
+{
+  "jobId": "batch-mrgxhz3m-target-fr-home",
+  "pageId": "home",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T22:20:58.454Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "SARL Igloo Yapi Construction — Réalisation de gros œuvres & logements en Algérie"
+    },
+    {
+      "id": "seo.description",
+      "text": "Entreprise qualifiée en Catégorie 6 réalisant des programmes résidentiels, mixtes et de voirie et réseaux divers (VRD) à travers l’Algérie."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "SARL Igloo Yapi Construction — Réalisation de gros œuvres & logements en Algérie"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Entreprise qualifiée en Catégorie 6 réalisant des programmes résidentiels, mixtes et de voirie et réseaux divers (VRD) à travers l’Algérie."
+    },
+    {
+      "id": "content.hero.eyebrow",
+      "text": "SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "content.hero.title",
+      "text": "Exécution des structures et livraison en tous corps d’état à travers l’Algérie"
+    },
+    {
+      "id": "content.hero.lead",
+      "text": "Réalisation de programmes résidentiels et mixtes avec un contrôle rigoureux de l’ingénierie, une discipline de chantier et une exécution structurelle durable."
+    },
+    {
+      "id": "content.hero.primaryCta",
+      "text": "Consulter le portfolio"
+    },
+    {
+      "id": "content.hero.secondaryCta",
+      "text": "Contacter notre bureau d’Alger"
+    },
+    {
+      "id": "content.hero.trustFacts.0.value",
+      "text": "Fondée en 2018"
+    },
+    {
+      "id": "content.hero.trustFacts.0.label",
+      "text": "basée à Alger"
+    },
+    {
+      "id": "content.hero.trustFacts.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.hero.trustFacts.1.label",
+      "text": "programmes"
+    },
+    {
+      "id": "content.hero.trustFacts.2.value",
+      "text": "2 500+"
+    },
+    {
+      "id": "content.hero.trustFacts.2.label",
+      "text": "logements"
+    },
+    {
+      "id": "content.hero.trustFacts.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.hero.trustFacts.3.label",
+      "text": "wilayas"
+    },
+    {
+      "id": "content.hero.trustFacts.4.value",
+      "text": "Catégorie 6"
+    },
+    {
+      "id": "content.hero.trustFacts.4.label",
+      "text": "qualification"
+    },
+    {
+      "id": "content.manifesto.eyebrow",
+      "text": "Rigueur contractuelle"
+    },
+    {
+      "id": "content.manifesto.title",
+      "text": "Coordonner les corps d’état complexes pour bâtir des structures urbaines durables"
+    },
+    {
+      "id": "content.manifesto.body",
+      "text": "Des blocs de logements collectifs et villas individuelles aux locaux commerciaux actifs en rez-de-chaussée, nous gérons l’intégralité des travaux en TCE (tous corps d’état) et VRD pour répondre aux contraintes techniques de chaque site."
+    },
+    {
+      "id": "content.manifesto.credential",
+      "text": "Certificat de Qualification et de Classification Professionnelle, Catégorie 6"
+    },
+    {
+      "id": "content.manifesto.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.manifesto.metrics.0.label",
+      "text": "année de création"
+    },
+    {
+      "id": "content.manifesto.metrics.0.detail",
+      "text": "Base opérationnelle située à Bir Khadem, Alger"
+    },
+    {
+      "id": "content.manifesto.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.manifesto.metrics.1.label",
+      "text": "chantiers contractés"
+    },
+    {
+      "id": "content.manifesto.metrics.1.detail",
+      "text": "Opérations de construction achevées et en cours"
+    },
+    {
+      "id": "content.manifesto.metrics.2.value",
+      "text": "2 500+"
+    },
+    {
+      "id": "content.manifesto.metrics.2.label",
+      "text": "logements livrés"
+    },
+    {
+      "id": "content.manifesto.metrics.2.detail",
+      "text": "Consistance des programmes résidentiels et mixtes"
+    },
+    {
+      "id": "content.manifesto.metrics.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.manifesto.metrics.3.label",
+      "text": "wilayas d’activité"
+    },
+    {
+      "id": "content.manifesto.metrics.3.detail",
+      "text": "Opérations menées à Tipaza, Alger, Mostaganem et Boumerdès"
+    },
+    {
+      "id": "content.featuredProjects.eyebrow",
+      "text": "Portfolio de projets"
+    },
+    {
+      "id": "content.featuredProjects.title",
+      "text": "Réalisations physiques et exécution structurelle validées"
+    },
+    {
+      "id": "content.featuredProjects.lead",
+      "text": "Un historique de logements collectifs, de villas individuelles, de locaux commerciaux et de travaux intégrés de VRD au sein de nos régions d’activité."
+    },
+    {
+      "id": "content.process.eyebrow",
+      "text": "Cycle de vie du projet"
+    },
+    {
+      "id": "content.process.title",
+      "text": "Exécution systématique depuis l’analyse des contraintes jusqu’à la réception"
+    },
+    {
+      "id": "content.process.lead",
+      "text": "Notre méthodologie technique garantit que la planification, l’ingénierie des structures et les corps d’état secondaires progressent sous une stricte discipline de chantier."
+    },
+    {
+      "id": "content.process.steps.0.id",
+      "text": "coordination"
+    },
+    {
+      "id": "content.process.steps.0.title",
+      "text": "Coordination pré-construction"
+    },
+    {
+      "id": "content.process.steps.0.body",
+      "text": "Harmonisation des métrés, des exigences structurelles et des contraintes du site avant le déploiement des engins et des équipes sur le terrain."
+    },
+    {
+      "id": "content.process.steps.1.id",
+      "text": "engineering"
+    },
+    {
+      "id": "content.process.steps.1.title",
+      "text": "Ingénierie & contrôle TCE"
+    },
+    {
+      "id": "content.process.steps.1.body",
+      "text": "Coordination des notes de calcul de structure, des passages de réseaux (MEP) et des corps d’état secondaires dans un cadre unifié en TCE."
+    },
+    {
+      "id": "content.process.steps.2.id",
+      "text": "site"
+    },
+    {
+      "id": "content.process.steps.2.title",
+      "text": "Exécution sur site & gros œuvre"
+    },
+    {
+      "id": "content.process.steps.2.body",
+      "text": "Gestion quotidienne du coulage du béton, du coffrage, de la maçonnerie et de l’enchaînement des tâches sous la supervision directe de nos conducteurs de travaux."
+    },
+    {
+      "id": "content.process.steps.3.id",
+      "text": "monitoring"
+    },
+    {
+      "id": "content.process.steps.3.title",
+      "text": "Suivi de la qualité, de la sécurité & du planning"
+    },
+    {
+      "id": "content.process.steps.3.body",
+      "text": "Contrôle de conformité des matériaux, des tolérances structurelles et des protocoles de sécurité conformément aux jalons contractuels et aux normes algériennes de construction."
+    },
+    {
+      "id": "content.process.steps.4.id",
+      "text": "handover"
+    },
+    {
+      "id": "content.process.steps.4.title",
+      "text": "Réception & clôture technique"
+    },
+    {
+      "id": "content.process.steps.4.body",
+      "text": "Finalisation des plans de récolement, mise en service des équipements techniques du bâtiment et transfert formel de l’ouvrage au maître d’ouvrage."
+    },
+    {
+      "id": "content.about.eyebrow",
+      "text": "Profil de l’entreprise"
+    },
+    {
+      "id": "content.about.title",
+      "text": "Capacité technique et gestion rigoureuse des chantiers"
+    },
+    {
+      "id": "content.about.credential",
+      "text": "Certificat de Qualification & de Classification Professionnelle - Catégorie 6"
+    },
+    {
+      "id": "content.about.paragraphs.0",
+      "text": "Fondée en 2018 et dirigée par l’ingénieur en génie civil Adem Talay, la SARL Igloo Yapi Construction opère depuis Bir Khadem, Alger, et se spécialise dans la réalisation de programmes résidentiels et mixtes à travers l’Algérie."
+    },
+    {
+      "id": "content.about.paragraphs.1",
+      "text": "Détentrice d’un Certificat de Qualification et de Classification Professionnelle de Catégorie 6, l’entreprise s’appuie sur un bureau technique interne composé d’ingénieurs en génie civil, d’architectes et de conducteurs de travaux."
+    },
+    {
+      "id": "content.about.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.about.metrics.0.label",
+      "text": "Année de création"
+    },
+    {
+      "id": "content.about.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.about.metrics.1.label",
+      "text": "Programmes actifs et achevés"
+    },
+    {
+      "id": "content.about.metrics.2.value",
+      "text": "2 500+"
+    },
+    {
+      "id": "content.about.metrics.2.label",
+      "text": "Logements sous contrat"
+    },
+    {
+      "id": "content.about.proofs.0.title",
+      "text": "Entreprise qualifiée Catégorie 6"
+    },
+    {
+      "id": "content.about.proofs.0.body",
+      "text": "Certificat de Qualification et de Classification Professionnelle, Catégorie 6."
+    },
+    {
+      "id": "content.about.proofs.1.title",
+      "text": "Équipe pluridisciplinaire"
+    },
+    {
+      "id": "content.about.proofs.1.body",
+      "text": "Directeur de travaux, trois ingénieurs, deux architectes, chefs de chantier, RH, comptable, acheteur et équipes de réalisation."
+    },
+    {
+      "id": "content.about.proofs.2.title",
+      "text": "Expertise résidentielle & mixte"
+    },
+    {
+      "id": "content.about.proofs.2.body",
+      "text": "Logements, villas, locaux commerciaux, voirie, réseaux, aménagements extérieurs et VRD."
+    },
+    {
+      "id": "content.footprint.eyebrow",
+      "text": "Implantation géographique"
+    },
+    {
+      "id": "content.footprint.title",
+      "text": "Opérations régionales dans le nord de l’Algérie"
+    },
+    {
+      "id": "content.footprint.lead",
+      "text": "Onze projets répartis sur quatre wilayas clés, établissant une solide présence opérationnelle à Alger, Tipaza, Boumerdès et Mostaganem."
+    },
+    {
+      "id": "content.footprint.selectedLabel",
+      "text": "Programme sélectionné"
+    },
+    {
+      "id": "content.footprint.openProject",
+      "text": "Consulter les détails techniques"
+    },
+    {
+      "id": "content.footprint.statusCompleted",
+      "text": "Achevé"
+    },
+    {
+      "id": "content.footprint.statusInProgress",
+      "text": "En cours"
+    },
+    {
+      "id": "content.footprint.stats.0.value",
+      "text": "11"
+    },
+    {
+      "id": "content.footprint.stats.0.label",
+      "text": "chantiers documentés"
+    },
+    {
+      "id": "content.footprint.stats.1.value",
+      "text": "4"
+    },
+    {
+      "id": "content.footprint.stats.1.label",
+      "text": "wilayas actives"
+    },
+    {
+      "id": "content.footprint.stats.2.value",
+      "text": "1"
+    },
+    {
+      "id": "content.footprint.stats.2.label",
+      "text": "couloir de livraison côtier"
+    },
+    {
+      "id": "content.footer.eyebrow",
+      "text": "Demandes de projets"
+    },
+    {
+      "id": "content.footer.title",
+      "text": "Discutons de votre prochain programme de construction"
+    },
+    {
+      "id": "content.footer.lead",
+      "text": "Consultez nos équipes d’ingénierie et de conduite de travaux basées à Alger pour vos projets résidentiels, commerciaux et d’infrastructure."
+    },
+    {
+      "id": "content.footer.emailLabel",
+      "text": "Contacter le bureau technique par e-mail"
+    },
+    {
+      "id": "content.footer.phoneLabel",
+      "text": "Appeler le siège d’Alger"
+    },
+    {
+      "id": "content.footer.proofLine",
+      "text": "Bir Khadem, Alger · Entreprise qualifiée Catégorie 6 · Tous corps d’état (TCE) & VRD"
+    }
+  ]
+}

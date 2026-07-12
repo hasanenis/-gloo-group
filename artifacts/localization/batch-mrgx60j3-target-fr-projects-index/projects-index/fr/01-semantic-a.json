@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrgx60j3-target-fr-projects-index",
+  "pageId": "projects-index",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T22:11:40.644Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "Projets | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "Un portefeuille de programmes résidentiels, de villas, de locaux commerciaux ainsi que de projets de voirie et réseaux divers (VRD) réalisés à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Projects | SARL Igloo Yapi Construction",
+      "draft": "Projets | SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+      "draft": "Un portefeuille de programmes résidentiels, de villas, de locaux commerciaux ainsi que de projets de voirie et réseaux divers (VRD) réalisés à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Projects",
+      "draft": "Projets",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "A portfolio built on delivery.",
+      "draft": "Un portefeuille fondé sur la concrétisation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.lead",
+      "source": "Our completed works encompass residential programmes, villas, commercial premises, and roads and utility networks (VRD) executed across Algeria.",
+      "draft": "Nos réalisations comprennent des programmes résidentiels, des villas, des locaux commerciaux ainsi que des travaux de voirie et réseaux divers (VRD) exécutés à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

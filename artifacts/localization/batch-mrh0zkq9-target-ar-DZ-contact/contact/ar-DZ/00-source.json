@@ -1,0 +1,38 @@
+{
+  "jobId": "batch-mrh0zkq9-target-ar-DZ-contact",
+  "pageId": "contact",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T23:58:38.725Z",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Contact | SARL Igloo Yapi Construction"
+    },
+    {
+      "path": "seo.description",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation."
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Contact | SARL Igloo Yapi Construction"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation."
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Contact"
+    },
+    {
+      "path": "content.heading",
+      "source": "Initiate a project consultation."
+    },
+    {
+      "path": "content.lead",
+      "source": "Connect with our technical team in Birkhadem. Submit your site coordinates, development programme and available design documentation to initiate our internal engineering and estimation review."
+    }
+  ]
+}

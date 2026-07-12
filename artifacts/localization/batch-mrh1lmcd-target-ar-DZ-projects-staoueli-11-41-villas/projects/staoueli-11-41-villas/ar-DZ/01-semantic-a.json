@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh1lmcd-target-ar-DZ-projects-staoueli-11-41-villas",
+  "pageId": "projects/staoueli-11-41-villas",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-f8504f2d",
+  "generatedAt": "2026-07-12T00:15:47.188Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "11/41 Villas and VRD Works, Staoueli | Residential Portfolio",
+      "draft": "مشروع 11/41 فيلا وأعمال البنية التحتية (VRD)، سطاوالي | محفظة المشاريع السكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"11/41 Villas and Network Works\". يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات يعتمد على نهج \"المصدر\" (source-led) في الإنجاز.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "11/41 Villas and VRD Works, Staoueli",
+      "draft": "11/41 فيلات وأعمال الطرق والشبكات (VRD)، سطاوالي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"11/41 Villas and Network Works\". يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات يعتمد على نهج \"المصدر\" (source-led) في الإنجاز.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "staoueli-11-41-villas",
+      "draft": "فيلات سطاوالي 11-41",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "11/41 Villas and VRD Works",
+      "draft": "11/41 الفلل وأعمال الطرق والمرافق",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL PROGRAMME",
+      "draft": "برنامج إقامة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of 11 individual villas within the Les Pastorales development in Staoueli, combining ground floor plus 2 upper floors of residential volume with integrated roads and utility networks (VRD).",
+      "draft": "تسليم 11 فيلا مستقلة ضمن مشروع \"لي باستورال\" (Les Pastorales) في سطاوالي، تتألف كل منها من طابق أرضي وطابقين علويين، مع شبكات متكاملة للطرق والمرافق (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "This residential parcel focuses on low-rise volumetric organisation, site circulation, and durable exterior works to establish a coherent domestic scale.",
+      "draft": "يركز هذا المشروع السكني على التنظيم الكتلي للمباني منخفضة الارتفاع، ومسارات الحركة داخل الموقع، والأعمال الخارجية المتينة، وذلك لإرساء طابع سكني متناغم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The 11 villas constitute a specific phase of a larger 41-villa master plan. The scope of execution required a coordinated sequence of all-trades delivery (TCE), facade articulation, and the installation of dedicated roads and utility networks (VRD) to secure independent site connections.",
+      "draft": "تُشكّل الفيلات الإحدى عشرة مرحلةً محددةً ضمن مخططٍ رئيسيٍ أوسع يضم 41 فيلا. وقد تطلّب نطاق التنفيذ تسلسلاً منسّقاً لتنفيذ كافة الأعمال الإنشائية والفنية (TCE)، وتشكيل الواجهات، وإنشاء طرق وشبكات مرافق مخصصة (VRD) لضمان توفير وصلات مستقلة للموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "Constructed with a structural profile of ground floor plus 2 upper floors, the villas feature integrated balconies, structural guardrails, exterior render coatings, and dedicated access pathways to define the street-level residential frontage.",
+      "draft": "تتميز الفلل -التي تتألف إنشائياً من طابق أرضي وطابقين علويين- بشرفات مدمجة، وحواجز حماية إنشائية، وتشطيبات خارجية (لياسة)، وممرات وصول مخصصة تحدد الواجهة السكنية المطلة على الشارع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A residential delivery defined by precise structural execution, site-specific utility networks, and coordinated facade finishes.",
+      "draft": "مشروع سكني يتميز بدقة التنفيذ الإنشائي، وشبكات مرافق مصممة خصيصاً للموقع، وتشطيبات متناسقة للواجهات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"11/41 Villas and Network Works\". يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات يعتمد على نهج \"المصدر\" (source-led) في الإنجاز.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Development Type",
+      "draft": "نوع التطوير",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Villas promotionnelles libres",
+      "draft": "فيلات متاحة بعروض ترويجية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Development Type",
+      "draft": "نوع التطوير",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Villas promotionnelles libres",
+      "draft": "فيلات متاحة بعروض ترويجية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Les Pastorales, Staoueli, Algiers",
+      "draft": "لي باستورال، سطاوالي، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme Scope",
+      "draft": "نطاق البرنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "11 villas within a 41-villa master plan",
+      "draft": "11 فيلا ضمن مخطط رئيسي يضم 41 فيلا",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion Year",
+      "draft": "سنة الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2022",
+      "draft": "2022",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Typology",
+      "draft": "علم التصنيف",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 2 upper floors (R+2) individual villas",
+      "draft": "فيلات مستقلة مكونة من طابق أرضي وطابقين علويين (R+2)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Scope of Works",
+      "draft": "نطاق الأعمال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "All-trades delivery (TCE) and roads and utility networks (VRD)",
+      "draft": "تنفيذ كافة الأعمال الإنشائية (TCE) وأعمال الطرق وشبكات المرافق (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Specifications",
+      "draft": "مواصفات المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "11 individual R+2 villas within the Les Pastorales development",
+      "draft": "11 فيلا مستقلة (أرضي + طابقين) ضمن مشروع \"لي باستورال\" (Les Pastorales)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Integrated roads and utility networks (VRD) including water and power connections",
+      "draft": "شبكات متكاملة للطرق والمرافق (VRD)، بما في ذلك توصيلات المياه والكهرباء",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Articulated facades with integrated balconies and glass guardrails",
+      "draft": "واجهات ذات تشكيلات بارزة وغائرة، مزودة بشرفات مدمجة وحواجز حماية زجاجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2022 with secondary trades and interior finishes",
+      "draft": "اكتمل في عام 2022، شاملاً الأعمال التكميلية والتشطيبات الداخلية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 11/41 Villas project in Staoueli?",
+      "draft": "ما هو نطاق مشروع فيلات 11/41 في سطاوالي؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project comprises the construction and all-trades delivery of 11 individual R+2 villas, executed as part of a larger 41-villa residential development in Les Pastorales, Staoueli.",
+      "draft": "يتضمن المشروع إنشاء وتسليم 11 فيلا مستقلة (مكونة من طابق أرضي وطابقين علويين) بكافة أعمالها الإنشائية والتشطيبية، وذلك ضمن مشروع سكني أكبر يضم 41 فيلا في منطقة \"لي باستورال\" (Les Pastorales) ببلدية سطاوالي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What civil and infrastructure works were executed on site?",
+      "draft": "ما هي الأعمال المدنية وأعمال البنية التحتية التي تم تنفيذها في الموقع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The 11 villas sit inside a 41-villa programme and rely on a precise sequence of TCES, VRD, facade work and exterior networks to create a finished residential setting.",
+      "draft": "تندرج هذه الفيلات الإحدى عشرة ضمن مشروع يضم 41 فيلا، وتعتمد في إنجازها على تسلسل دقيق يشمل الأعمال الفنية والتقنية (TCES)، وأعمال الطرق والشبكات (VRD)، وتشطيب الواجهات، والشبكات الخارجية، وذلك لتهيئة بيئة سكنية متكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What are the architectural characteristics of the villas?",
+      "draft": "ما هي الخصائص المعمارية للفيلات؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Each villa is organised as a ground floor plus 2 upper floors (R+2), featuring contemporary facade articulation, glass-railed balconies, and integrated garage access.",
+      "draft": "تتألف كل فيلا من طابق أرضي وطابقين علويين، وتتميز بتصميم عصري للواجهات، وشرفات ذات درابزين زجاجي، ومدخل مدمج للمرآب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "draft": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+      "draft": "مشهد خارجي لفيلات سكنية مكتملة حديثاً، تتميز بواجهات فاتحة اللون ولمسات داكنة وشرفات ذات درابزين زجاجي وأسقف مغطاة بالقرميد الأحمر، وذلك تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Completed R+2 residential villas showing facade articulation and glass-railed balconies.",
+      "draft": "فيلات سكنية مكتملة البناء (أرضي + طابقين) تُبرز تشكيلات الواجهات وشرفات ذات درابزين زجاجي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "draft": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+      "draft": "واجهة مبنى سكني متعدد الطوابق يتميز بجدران بيضاء ووردية فاتحة، وتفاصيل معمارية باللون الرمادي الداكن، وشرفات ذات واجهات زجاجية، ومظلات خشبية تعلو مداخل الطابق الأرضي وأبواب المرآب؛ كما يظهر ممر مرصوف في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Street-level frontage showing entrance canopies, integrated garages, and paved access pathways.",
+      "draft": "واجهة على مستوى الشارع تُظهر مظلات المداخل، ومرائب مدمجة، وممرات وصول ممهدة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/staoueli-11-41-villas/01-staouali-1.webp",
+      "draft": "/projects/staoueli-11-41-villas/01-staouali-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A row of modern, light-colored residential villas featuring dark accents, glass balconies, and terracotta tile roofs, with a clear blue sky overhead.",
+      "draft": "صفٌّ من الفيلات السكنية العصرية ذات الألوان الفاتحة، والتي تتميز بلمسات داكنة وشرفات زجاجية وأسقف من قرميد التراكوتا، تعلوها سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Volumetric alignment of the R+2 villas within the Les Pastorales development.",
+      "draft": "المحاذاة الحجمية للفيلات المكونة من طابق أرضي وطابقين علويين (R+2) ضمن مشروع \"لي باستورال\" (Les Pastorales).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+      "draft": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+      "draft": "مطبخ مكتمل التشطيب حديثاً يتميز ببلاط أرضية داكن ولامع بنقوش رخامية، وخزائن سفلية بلون كريمي فاتح، وأسطح عمل داكنة، وجدار خلفي بنقوش هندسية رمادية وبيضاء، وخزائن علوية بلون خشبي بني داكن. وتظهر قطعة قماش زرقاء على الأرضية في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Interior finishing works showing kitchen cabinetry and tiled surfaces.",
+      "draft": "أعمال التشطيبات الداخلية التي تظهر خزائن المطبخ والأسطح المكسوة بالبلاط.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp",
+      "draft": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A multi-story residential villa under construction with scaffolding on the facade, exposed concrete at the base, and two workers relaxing on an upper balcony.",
+      "draft": "فيلا سكنية متعددة الطوابق قيد الإنشاء، تظهر عليها سقالات على الواجهة وخرسانة مكشوفة عند القاعدة، مع وجود عاملين يستريحان في شرفة علوية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Facade finishing and structural works in progress on an individual villa.",
+      "draft": "أعمال التشطيبات الخارجية والأعمال الإنشائية جارية في فيلا مستقلة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "draft": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+      "draft": "واجهة مبنى سكني متعدد الطوابق يتميز بجدران بيضاء ووردية فاتحة، وتفاصيل معمارية باللون الرمادي الداكن، وشرفات ذات واجهات زجاجية، ومظلات خشبية تعلو مداخل الطابق الأرضي وأبواب المرآب؛ كما يظهر ممر مرصوف في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Detail of the exterior finishes, entrance canopies, and ground-floor circulation.",
+      "draft": "تفاصيل التشطيبات الخارجية، ومظلات المداخل، ومسارات الحركة في الطابق الأرضي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "draft": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+      "draft": "مشهد خارجي لفيلات سكنية مكتملة حديثاً، تتميز بواجهات فاتحة اللون ولمسات داكنة وشرفات ذات درابزين زجاجي وأسقف مغطاة بالقرميد الأحمر، وذلك تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Completed villa elevations with integrated balconies and terracotta roof tiling.",
+      "draft": "واجهات فيلا مكتملة التنفيذ، تضم شرفات مدمجة وأسقفاً مغطاة ببلاط التراكوتا.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/staoueli-11-41-villas/03-staoualii.webp",
+      "draft": "/projects/staoueli-11-41-villas/03-staoualii.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A contemporary L-shaped kitchen in a residential villa, showcasing dark granite countertops, light cream base cabinets, white upper cabinets, and dark brown wood-effect wall cabinets. A gas hob, double stainless steel sink, and a decorative patterned tile backsplash are visible, along with dark marble-effect floor tiles.",
+      "draft": "مطبخ عصري بتصميم على شكل حرف L في فيلا سكنية، يتميز بأسطح عمل من الجرانيت الداكن، وخزائن سفلية بلون كريمي فاتح، وخزائن علوية بيضاء، وأخرى جدارية بمظهر خشبي بني داكن. يضم المطبخ موقداً غازياً، وحوض غسيل مزدوجاً من الفولاذ المقاوم للصدأ، وجداراً خلفياً مزيناً ببلاط منقوش، بالإضافة إلى أرضية من البلاط بمظهر الرخام الداكن.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed kitchen installation demonstrating secondary trades delivery.",
+      "draft": "تركيب مطبخ مُنجَز يُظهر تنفيذ الأعمال الحرفية التكميلية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp",
+      "draft": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Exterior of a multi-story residential villa with light beige walls, dark window frames, and balconies with glass and metal railings. A terracotta-tiled roof is visible, and a large concrete beam obstructs the top of the frame. A timestamp '2022.9.21 11:52' is in the bottom right.",
+      "draft": "واجهة خارجية لفيلا سكنية متعددة الطوابق تتميز بجدران ذات لون بيج فاتح وإطارات نوافذ داكنة وشرفات ذات درابزين من الزجاج والمعدن. يظهر سقف مغطى ببلاط التراكوتا، بينما تحجب عارضة خرسانية كبيرة الجزء العلوي من الصورة. وتظهر علامة زمنية تشير إلى \"2022.9.21 11:52\" في الزاوية اليمنى السفلية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Detail of the upper floor elevations, glazing, and balcony balustrades.",
+      "draft": "تفاصيل واجهات الطوابق العلوية، والزجاج، ودرابزين الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "draft": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+      "draft": "واجهة مبنى سكني متعدد الطوابق يتميز بجدران بيضاء ووردية فاتحة، وتفاصيل معمارية باللون الرمادي الداكن، وشرفات ذات واجهات زجاجية، ومظلات خشبية تعلو مداخل الطابق الأرضي وأبواب المرآب؛ كما يظهر ممر مرصوف في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Ground-floor access points and integrated garage entries.",
+      "draft": "نقاط الوصول في الطابق الأرضي ومداخل المرآب المدمجة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "draft": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+      "draft": "مشهد خارجي لفيلات سكنية مكتملة حديثاً، تتميز بواجهات فاتحة اللون ولمسات داكنة وشرفات ذات درابزين زجاجي وأسقف مغطاة بالقرميد الأحمر، وذلك تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Completed R+2 villa structures showing external render and roof profiles.",
+      "draft": "هياكل فيلات مكتملة (أرضي + طابقان) تُظهر أعمال اللياسة الخارجية وتفاصيل حواف الأسطح.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp",
+      "draft": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Exterior view of several newly built, multi-story residential villas featuring white walls, dark grey architectural accents, terracotta roof tiles, and glass-paneled balconies under a bright blue sky. A person is partially visible on the ground floor to the right.",
+      "draft": "مشهد خارجي لعدة فيلات سكنية متعددة الطوابق شُيدت حديثاً، تتميز بجدران بيضاء، ولمسات معمارية باللون الرمادي الداكن، وبلاط أسقف من التراكوتا، وشرفات ذات واجهات زجاجية، وذلك تحت سماء زرقاء صافية. ويظهر شخص بشكل جزئي في الطابق الأرضي جهة اليمين.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed villa exteriors prior to final handover.",
+      "draft": "الواجهات الخارجية المكتملة للفيلات قبل التسليم النهائي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "draft": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+      "draft": "مشهد خارجي لفيلات سكنية مكتملة حديثاً، تتميز بواجهات فاتحة اللون ولمسات داكنة وشرفات ذات درابزين زجاجي وأسقف مغطاة بالقرميد الأحمر، وذلك تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Finished elevations showing the integration of glass, metal, and render.",
+      "draft": "واجهات نهائية تُظهر التكامل بين الزجاج والمعدن وطبقة التشطيب (اللياسة).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "draft": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+      "draft": "واجهة مبنى سكني متعدد الطوابق يتميز بجدران بيضاء ووردية فاتحة، وتفاصيل معمارية باللون الرمادي الداكن، وشرفات ذات واجهات زجاجية، ومظلات خشبية تعلو مداخل الطابق الأرضي وأبواب المرآب؛ كما يظهر ممر مرصوف في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Completed pedestrian pathways and exterior works.",
+      "draft": "تم إنجاز ممرات المشاة والأعمال الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+      "draft": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+      "draft": "مطبخ مكتمل التشطيب حديثاً يتميز ببلاط أرضية داكن ولامع بنقوش رخامية، وخزائن سفلية بلون كريمي فاتح، وأسطح عمل داكنة، وجدار خلفي بنقوش هندسية رمادية وبيضاء، وخزائن علوية بلون خشبي بني داكن. وتظهر قطعة قماش زرقاء على الأرضية في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Interior tiling and cabinetry installation within the kitchen zones.",
+      "draft": "تركيب البلاط الداخلي والخزائن في مناطق المطابخ.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "draft": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+      "draft": "مشهد خارجي لفيلات سكنية مكتملة حديثاً، تتميز بواجهات فاتحة اللون ولمسات داكنة وشرفات ذات درابزين زجاجي وأسقف مغطاة بالقرميد الأحمر، وذلك تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Completed R+2 residential villas within the Les Pastorales development.",
+      "draft": "فلل سكنية مكتملة البناء (أرضي + طابقين) ضمن مشروع \"لي باستورال\" (Les Pastorales).",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

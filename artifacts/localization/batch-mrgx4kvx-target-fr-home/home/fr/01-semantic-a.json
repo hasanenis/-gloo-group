@@ -1,0 +1,563 @@
+{
+  "jobId": "batch-mrgx4kvx-target-fr-home",
+  "pageId": "home",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T22:10:33.870Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria",
+      "draft": "SARL Igloo Yapi Construction — Réalisation de structures et de projets résidentiels en Algérie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria.",
+      "draft": "Entreprise certifiée de catégorie 6 réalisant des projets résidentiels, à usage mixte ainsi que des projets de voirie et réseaux divers (VRD) à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "SARL Igloo Yapi Construction — Structural & Residential Delivery Algeria",
+      "draft": "SARL Igloo Yapi Construction — Réalisation de structures et de projets résidentiels en Algérie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Category 6 certified contractor delivering residential, mixed-use, and roads and utility networks (VRD) programmes across Algeria.",
+      "draft": "Entreprise certifiée de catégorie 6 réalisant des projets résidentiels, à usage mixte ainsi que des projets de voirie et réseaux divers (VRD) à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.eyebrow",
+      "source": "SARL Igloo Yapi Construction",
+      "draft": "SARL Igloo Yapi Construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.title",
+      "source": "Structural Execution and All-Trades Delivery across Algeria",
+      "draft": "Réalisation de structures et livraison tous corps d'état à travers l'Algérie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.lead",
+      "source": "Delivering residential and mixed-use programmes with rigorous engineering control, site discipline, and long-term structural execution.",
+      "draft": "Réalisation de projets résidentiels et à usage mixte alliant rigueur du contrôle technique, discipline sur le chantier et exécution structurelle pérenne.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.primaryCta",
+      "source": "View portfolio",
+      "draft": "Voir le portfolio",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.secondaryCta",
+      "source": "Contact our Algiers office",
+      "draft": "Contactez notre bureau d'Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.0.value",
+      "source": "Est. 2018",
+      "draft": "Fondé en 2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.0.label",
+      "source": "Algiers-based",
+      "draft": "Basé à Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.1.label",
+      "source": "programmes",
+      "draft": "programmes",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.2.value",
+      "source": "2,500+",
+      "draft": "Plus de 2 500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.2.label",
+      "source": "housing units",
+      "draft": "unités de logement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.3.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.3.label",
+      "source": "wilayas",
+      "draft": "wilayas",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.4.value",
+      "source": "Category 6",
+      "draft": "Catégorie 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.hero.trustFacts.4.label",
+      "source": "qualification",
+      "draft": "qualification",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.eyebrow",
+      "source": "Contractual Rigour",
+      "draft": "Rigueur contractuelle",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.title",
+      "source": "Coordinating complex trades to build durable urban frameworks",
+      "draft": "Coordination de corps de métier complexes pour bâtir des structures urbaines durables",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.body",
+      "source": "From multi-family housing blocks and villas to active street-level commercial frontage, we manage the complete all-trades delivery (TCE) and roads and utility networks (VRD) to resolve complex site constraints.",
+      "draft": "Des ensembles de logements collectifs et villas aux façades commerciales actives en rez-de-chaussée, nous pilotons la réalisation complète tous corps d'état (TCE) ainsi que les travaux de voirie et réseaux divers (VRD) pour répondre aux contraintes complexes du site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.credential",
+      "source": "Professional Qualification and Classification Certificate, Category 6",
+      "draft": "Certificat de qualification et de classification professionnelle, catégorie 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.value",
+      "source": "2018",
+      "draft": "2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.label",
+      "source": "established",
+      "draft": "établi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.0.detail",
+      "source": "Operational base in Bir Khadem, Algiers",
+      "draft": "Base opérationnelle à Bir Khadem, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.label",
+      "source": "contracted works",
+      "draft": "travaux sous contrat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.1.detail",
+      "source": "Completed and active site operations",
+      "draft": "Opérations de site terminées et en cours",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.value",
+      "source": "2,500+",
+      "draft": "Plus de 2 500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.label",
+      "source": "units delivered",
+      "draft": "unités livrées",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.2.detail",
+      "source": "Residential and mixed-use programme scope",
+      "draft": "Périmètre du programme résidentiel et à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.label",
+      "source": "wilayas active",
+      "draft": "wilayas actives",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.manifesto.metrics.3.detail",
+      "source": "Operations in Tipaza, Algiers, Mostaganem, and Boumerdes",
+      "draft": "Opérations à Tipaza, Alger, Mostaganem et Boumerdès",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.eyebrow",
+      "source": "Project Portfolio",
+      "draft": "Portefeuille de projets",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.title",
+      "source": "Verified physical delivery and structural execution",
+      "draft": "Livraison physique et exécution structurelle vérifiées",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.featuredProjects.lead",
+      "source": "A record of multi-family housing, individual villas, commercial spaces, and integrated roads and utility networks (VRD) across our active regions.",
+      "draft": "Un historique de réalisations comprenant des logements collectifs, des villas individuelles, des espaces commerciaux ainsi que des aménagements de voirie et réseaux divers (VRD) dans nos zones d'activité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.eyebrow",
+      "source": "Project Lifecycle",
+      "draft": "Cycle de vie du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.title",
+      "source": "Systematic execution from site constraints to handover",
+      "draft": "Exécution méthodique, des contraintes du site jusqu'à la remise de l'ouvrage.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.lead",
+      "source": "Our technical workflow ensures that planning, structural engineering, and secondary trades progress under strict site discipline.",
+      "draft": "Notre processus technique garantit que la planification, l'ingénierie structurelle et les corps d'état secondaires progressent dans le respect d'une discipline de chantier rigoureuse.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.id",
+      "source": "coordination",
+      "draft": "coordination",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.title",
+      "source": "Pre-Construction Coordination",
+      "draft": "Coordination de la phase de pré-construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.0.body",
+      "source": "Aligning project quantities, structural requirements, and site constraints before deploying machinery and personnel to the field.",
+      "draft": "Harmoniser les quantités du projet, les exigences structurelles et les contraintes du site avant de déployer les engins et le personnel sur le terrain.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.id",
+      "source": "engineering",
+      "draft": "ingénierie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.title",
+      "source": "Engineering & TCE Control",
+      "draft": "Ingénierie et pilotage des corps d'état",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.1.body",
+      "source": "Coordinating structural calculations, MEP routing, and secondary trades within a unified all-trades delivery (TCE) framework.",
+      "draft": "Coordination des calculs de structure, du tracé des réseaux (MEP) et des corps d'état secondaires dans le cadre d'une réalisation tous corps d'état (TCE) unifiée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.id",
+      "source": "site",
+      "draft": "site",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.title",
+      "source": "Site Execution & Massing",
+      "draft": "Mise en œuvre sur site et volumétrie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.2.body",
+      "source": "Managing daily concrete pours, structural framing, masonry, and trade sequencing under the direct supervision of our site managers.",
+      "draft": "Gestion des coulages de béton quotidiens, de la charpente structurelle, de la maçonnerie et de la coordination des différents corps d'état, sous la supervision directe de nos chefs de chantier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.id",
+      "source": "monitoring",
+      "draft": "surveillance",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.title",
+      "source": "Quality, Safety & Schedule Monitoring",
+      "draft": "Suivi de la qualité, de la sécurité et du calendrier",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.3.body",
+      "source": "Verifying material compliance, structural tolerances, and safety protocols against contractual milestones and Algerian building codes.",
+      "draft": "Vérification de la conformité des matériaux, des tolérances structurelles et des protocoles de sécurité au regard des jalons contractuels et des normes de construction algériennes.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.id",
+      "source": "handover",
+      "draft": "passation",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.title",
+      "source": "Handover & Technical Closeout",
+      "draft": "Passation et clôture technique",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.process.steps.4.body",
+      "source": "Finalising as-built documentation, commissioning building systems, and executing formal handover to the client.",
+      "draft": "Finalisation du dossier d'ouvrage exécuté, mise en service des systèmes du bâtiment et remise officielle au client.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.eyebrow",
+      "source": "Corporate Profile",
+      "draft": "Profil de l'entreprise",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.title",
+      "source": "Technical capability and structured site management",
+      "draft": "Capacité technique et gestion structurée du chantier",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.credential",
+      "source": "Professional Qualification & Classification Certificate - Category 6",
+      "draft": "Certificat de qualification et de classification professionnelle – Catégorie 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.paragraphs.0",
+      "source": "Founded in 2018 and led by civil engineer Adem Talay, SARL Igloo Yapi Construction operates from Bir Khadem, Algiers, specialising in residential and mixed-use developments across Algeria.",
+      "draft": "Fondée en 2018 et dirigée par l'ingénieur en génie civil Adem Talay, la SARL Igloo Yapi Construction opère depuis Bir Khadem (Alger) et se spécialise dans les projets immobiliers résidentiels et à usage mixte à travers l'Algérie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.paragraphs.1",
+      "source": "Holding a Category 6 Professional Qualification and Classification Certificate, the firm maintains an in-house technical office comprising civil engineers, architects, and site managers.",
+      "draft": "Titulaire d'un certificat de qualification professionnelle et de classement de catégorie 6, l'entreprise dispose d'un bureau d'études interne composé d'ingénieurs en génie civil, d'architectes et de chefs de chantier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.0.value",
+      "source": "2018",
+      "draft": "2018",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.0.label",
+      "source": "Year of establishment",
+      "draft": "Année de création",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.1.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.1.label",
+      "source": "Active and completed programmes",
+      "draft": "Programmes en cours et terminés",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.2.value",
+      "source": "2,500+",
+      "draft": "Plus de 2 500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.metrics.2.label",
+      "source": "Housing units under contract",
+      "draft": "Logements sous contrat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.0.title",
+      "source": "Category 6 Contractor",
+      "draft": "Entrepreneur de catégorie 6",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.0.body",
+      "source": "Professional Qualification and Classification Certificate, Category 6.",
+      "draft": "Certificat de qualification et de classification professionnelle, catégorie 6.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.1.title",
+      "source": "Multidisciplinary Team",
+      "draft": "Équipe pluridisciplinaire",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.1.body",
+      "source": "Building manager, three engineers, two architects, construction managers, HR, accountant, buyer and site teams.",
+      "draft": "Responsable du bâtiment, trois ingénieurs, deux architectes, responsables de travaux, ressources humaines, comptable, acheteur et équipes de chantier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.2.title",
+      "source": "Residential & Mixed-use Expertise",
+      "draft": "Expertise en immobilier résidentiel et à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.about.proofs.2.body",
+      "source": "Housing, villas, commercial premises, roads, networks, services and exterior works.",
+      "draft": "Logements, villas, locaux commerciaux, voirie, réseaux, services et aménagements extérieurs.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.eyebrow",
+      "source": "Geographical Footprint",
+      "draft": "Empreinte géographique",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.title",
+      "source": "Regional operations across northern Algeria",
+      "draft": "Opérations régionales dans le nord de l'Algérie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.lead",
+      "source": "Eleven projects distributed across four key wilayas, establishing a strong operational presence in Algiers, Tipaza, Boumerdes, and Mostaganem.",
+      "draft": "Onze projets répartis sur quatre wilayas clés, établissant une forte présence opérationnelle à Alger, Tipaza, Boumerdès et Mostaganem.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.selectedLabel",
+      "source": "Selected programme",
+      "draft": "Programme sélectionné",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.openProject",
+      "source": "View technical details",
+      "draft": "Voir les détails techniques",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.statusCompleted",
+      "source": "Completed",
+      "draft": "Terminé",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.statusInProgress",
+      "source": "In progress",
+      "draft": "En cours",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.0.value",
+      "source": "11",
+      "draft": "11",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.0.label",
+      "source": "documented sites",
+      "draft": "sites documentés",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.1.value",
+      "source": "4",
+      "draft": "4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.1.label",
+      "source": "active wilayas",
+      "draft": "wilayas actives",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.2.value",
+      "source": "1",
+      "draft": "1",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footprint.stats.2.label",
+      "source": "coastal delivery corridor",
+      "draft": "couloir de livraison côtier",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.eyebrow",
+      "source": "Project Inquiries",
+      "draft": "Demandes relatives aux projets",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.title",
+      "source": "Discuss your next construction programme",
+      "draft": "Discutez de votre prochain programme de construction",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.lead",
+      "source": "Consult our Algiers-based engineering and site management teams for residential, commercial, and infrastructure works.",
+      "draft": "Faites appel à nos équipes d'ingénierie et de gestion de chantier basées à Alger pour vos projets résidentiels, commerciaux et d'infrastructure.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.emailLabel",
+      "source": "Email technical office",
+      "draft": "Envoyer un e-mail au bureau technique",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.phoneLabel",
+      "source": "Call Algiers headquarters",
+      "draft": "Appelez le siège d'Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.footer.proofLine",
+      "source": "Bir Khadem, Algiers · Category 6 Certified Contractor · All-Trades Delivery (TCE) & VRD",
+      "draft": "Bir Khadem, Alger · Entrepreneur certifié (Catégorie 6) · Réalisation tous corps d'état (TCE) et VRD",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

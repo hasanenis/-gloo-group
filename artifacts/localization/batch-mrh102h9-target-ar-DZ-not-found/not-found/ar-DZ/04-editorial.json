@@ -1,0 +1,35 @@
+{
+  "jobId": "batch-mrh102h9-target-ar-DZ-not-found",
+  "pageId": "not-found",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:59:01.683Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "الصفحة غير موجودة | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "تعذر العثور على الصفحة المطلوبة. يرجى العودة إلى بوابة SARL Igloo Yapi Construction للاطلاع على برامجنا السكنية ومشاريع البناء."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "الصفحة غير موجودة | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "تعذر العثور على الصفحة المطلوبة. يرجى العودة إلى بوابة SARL Igloo Yapi Construction للاطلاع على برامجنا السكنية ومشاريع البناء."
+    },
+    {
+      "id": "content.heading",
+      "text": "الصفحة غير موجودة"
+    },
+    {
+      "id": "content.cta",
+      "text": "العودة إلى الصفحة الرئيسية"
+    }
+  ]
+}

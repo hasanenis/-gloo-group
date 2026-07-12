@@ -1,0 +1,22 @@
+{
+  "jobId": "batch-mrh1il0n-target-ar-DZ-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-12T00:13:25.520Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.meta.0.value",
+      "severity": "blocker",
+      "message": "The source text specifies 'Free Promotional Housing' (ترقوي حر), but the translation maps this to the acronym 'LPL' (Logement Public Locatif), which is social housing. This is a severe factual and programmatic error."
+    },
+    {
+      "id": "content.details.0.value",
+      "severity": "blocker",
+      "message": "Incorrectly maps 'Free Promotional Housing' to 'LPL' (Logement Public Locatif). This is a major terminology contradiction."
+    }
+  ]
+}

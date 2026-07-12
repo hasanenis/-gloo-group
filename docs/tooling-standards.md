@@ -250,11 +250,13 @@ const NewPage = lazy(() => import('./pages/NewPage'));
 5. Named export'lu modülü lazy yüklerken:
    `lazy(() => import('./X').then(m => ({ default: m.X })))`.
 
-## B.6 Doğrulama Zinciri (her değişiklikte)
+## B.6 Riskle Orantılı Doğrulama
+
+Bu komutlar her değişiklikte otomatik çalıştırılmaz. Yalnızca değişikliğin etkilediği en dar doğrulama seçilir; doküman, metin, metadata, ayar veya izole düşük riskli değişikliklerde gerekmedikçe test çalıştırılmaz.
 
 ```bash
-npm run lint               # tsc --noEmit
-npm run build              # prod build kırık mı
+npm run lint               # paylaşılan TypeScript/API değiştiyse
+npm run build              # build/config/dependency/route sınırı değiştiyse
 npx playwright test        # layout/rota değiştiyse
 npm run analyze:bundle     # dependency/chunk değiştiyse
 npm run storybook          # primitive değiştiyse story'leri gözden geçir

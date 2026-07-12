@@ -8,7 +8,13 @@ import {
   type ProjectFact,
   type ProjectImage,
 } from './projectContent';
-import type { Locale } from '../i18n';
+import { pickLocaleText, type Locale } from '../i18n/runtime';
+import {
+  localizedProjectScope,
+  localizedProjectShortTitle,
+  localizedProjectStatus,
+  localizedProjectTitle,
+} from './projects';
 
 export type BatProjectFact = {
   label: string;
@@ -136,9 +142,10 @@ function normalizeProjectTitle(title: string) {
   return normalized || title.trim();
 }
 
-function resolveDisplayTitles(project: ProjectRecord, options: BatProjectModelOptions = {}): BatProjectDisplayTitles {
+function resolveDisplayTitles(project: ProjectRecord, locale: Locale, options: BatProjectModelOptions = {}): BatProjectDisplayTitles {
   const resolvedTitle = firstNonEmpty(
     options.displayTitleOverride,
+    localizedProjectShortTitle(project, locale),
     CURATED_SHORT_TITLES[project.slug],
     project.coverLines[1],
     project.menuTitle,
@@ -171,9 +178,9 @@ function buildHeroFacts(project: ProjectRecord, content: ProjectContent, locale:
   ];
 
   const fallbackFacts: BatProjectFact[] = [
-    { label: locale === 'fr' ? 'Statut' : 'Status', value: project.chapterLabel },
-    { label: locale === 'fr' ? 'Localisation' : 'Location', value: project.location },
-    { label: locale === 'fr' ? 'Périmètre' : 'Scope', value: project.scope },
+    { label: pickLocaleText(locale, { en: 'Status', fr: 'Statut', dz: 'الحالة', tr: 'Durum' }), value: localizedProjectStatus(project, locale) },
+    { label: pickLocaleText(locale, { en: 'Location', fr: 'Localisation', dz: 'الموقع', tr: 'Konum' }), value: project.location },
+    { label: pickLocaleText(locale, { en: 'Scope', fr: 'Périmètre', dz: 'نطاق الخدمة', tr: 'İşin Kapsamı' }), value: localizedProjectScope(project, locale) },
   ];
 
   return uniqueFacts([...fromContent, ...fallbackFacts])
@@ -192,22 +199,28 @@ function buildTechnicalFacts(project: ProjectRecord, content: ProjectContent, lo
       label: localized(fact.label, locale),
       value: localized(fact.value, locale),
     })),
-    { label: locale === 'fr' ? 'Statut' : 'Status', value: project.chapterLabel },
-    { label: locale === 'fr' ? 'Localisation' : 'Location', value: project.location },
+    { label: pickLocaleText(locale, { en: 'Status', fr: 'Statut', dz: 'الحالة', tr: 'Durum' }), value: localizedProjectStatus(project, locale) },
+    { label: pickLocaleText(locale, { en: 'Location', fr: 'Localisation', dz: 'الموقع', tr: 'Konum' }), value: project.location },
   ]).slice(0, 6);
 }
 
 export function buildBatProjectPageModel(project: ProjectRecord, locale: Locale, options: BatProjectModelOptions = {}): BatProjectPageModel {
   const content = getProjectContent(project);
+  const fallbackHeroImage: ProjectImage = {
+    src: project.images[0],
+    alt: {
+      en: localizedProjectTitle(project, 'en'),
+      fr: localizedProjectTitle(project, 'fr'),
+      dz: localizedProjectTitle(project, 'ar-DZ'),
+      tr: localizedProjectTitle(project, 'tr'),
+    },
+  };
   const heroImage =
     content.images.hero[0] ??
     content.images.intro ??
     content.images.featured[0] ??
     content.images.mosaic[0] ??
-    {
-      src: project.images[0],
-      alt: { en: project.title, fr: project.menuTitle },
-    };
+    fallbackHeroImage;
 
   const featureImage =
     content.images.featureGallery[0] ??
@@ -221,7 +234,7 @@ export function buildBatProjectPageModel(project: ProjectRecord, locale: Locale,
   ].filter(Boolean).slice(0, 3);
 
   const relatedProjects = projects.filter((item) => item.slug !== project.slug).slice(0, 5);
-  const displayTitles = resolveDisplayTitles(project, options);
+  const displayTitles = resolveDisplayTitles(project, locale, options);
 
   return {
     slug: project.slug,

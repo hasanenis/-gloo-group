@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrgxl52e-target-fr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T22:23:26.171Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "70 logements aidés et 10 logements promotionnels libres"
+    },
+    {
+      "id": "seo.description",
+      "text": "Découvrez la galerie, les détails techniques et les notes de localisation pour le projet de 70 logements aidés et 10 logements promotionnels libres. Le projet illustre un modèle de réalisation résidentiel et mixte."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "70 logements aidés et 10 logements promotionnels libres"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Découvrez la galerie, les détails techniques et les notes de localisation pour le projet de 70 logements aidés et 10 logements promotionnels libres. Le projet illustre un modèle de réalisation résidentiel et mixte."
+    },
+    {
+      "id": "content.slug",
+      "text": "boudouaou-70-10-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "70 logements aidés et 10 logements promotionnels libres"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "DÉVELOPPEMENT RÉSIDENTIEL MIXTE"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Un programme résidentiel mixte de 80 logements à Boudouaou, combinant des logements aidés et promotionnels libres avec des locaux professionnels et commerciaux au rez-de-chaussée."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Le projet intègre 70 unités de logement aidé LPA, 10 unités de logement LPL et 10 locaux commerciaux répartis sur trois blocs distincts."
+    },
+    {
+      "id": "content.description.0",
+      "text": "La volumétrie architecturale est répartie sur trois blocs : le Bloc A et le Bloc B, conçus chacun en rez-de-chaussée plus 8 étages (R+8), et le Bloc C, conçu en rez-de-chaussée plus 5 étages (R+5). Les plateaux d’étages sont configurés à raison de quatre appartements par niveau, offrant une répartition équilibrée des typologies F3 et F4."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Le niveau d’intervention couvre la livraison en entreprise générale (TCE), comprenant le second œuvre, l’étanchéité, la menuiserie intérieure, les installations de plomberie, électricité et chauffage (CVC-E), ainsi que les travaux de voirie et réseaux divers (VRD) et d’aménagements extérieurs pour intégrer ce programme mixte."
+    },
+    {
+      "id": "content.authority",
+      "text": "Un projet résidentiel coordonné où trois blocs structurels, des façades commerciales et les réseaux de viabilisation du site sont exécutés comme une insertion urbaine unifiée."
+    },
+    {
+      "id": "content.seo",
+      "text": "Découvrez la galerie, les détails techniques et les notes de localisation pour le projet de 70 logements aidés et 10 logements promotionnels libres. Le projet illustre un modèle de réalisation résidentiel et mixte."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Maître d’ouvrage"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "Logements aidés LPA et logements promotionnels LPL avec locaux commerciaux et professionnels"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Logements LPA et LPL avec locaux commerciaux"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Localisation"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Boudouaou, Boumerdes"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Unités de logement"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "80 unités (70 LPA + 10 LPL)"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Volumétrie structurelle"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "3 blocs : R+8, R+8 et R+5"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Année de livraison"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "Maître d’ouvrage"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Programme du projet"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "80 unités résidentielles, comprenant 70 appartements LPA et 10 appartements LPL"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Trois blocs structurels construits selon des profils de hauteur en R+8 et R+5"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "10 locaux commerciaux et professionnels au rez-de-chaussée"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "Livraison en tous corps d’état (TCE) y compris la voirie et les réseaux divers (VRD)"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "En quoi consiste le projet des 70 logements aidés et 10 logements promotionnels libres ?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Ce projet est un programme résidentiel mixte de 80 logements situé à Boudouaou, associant 70 unités de logement aidé LPA et 10 unités de logement promotionnel LPL avec des locaux commerciaux au rez-de-chaussée."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Quelles sont les hauteurs structurelles et les configurations des blocs ?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Le projet comprend trois blocs : le Bloc A et le Bloc B sont configurés en rez-de-chaussée plus 8 étages (R+8), tandis que le Bloc C est construit en rez-de-chaussée plus 5 étages (R+5)."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Quel était le périmètre technique des travaux de construction ?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Le marché a été exécuté dans le cadre d’une livraison tous corps d’état (TCE), englobant le second œuvre, les finitions intérieures, les lots techniques (MEP), ainsi que les travaux de voirie et réseaux divers (VRD)."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "Comment sont répartis les différents types d’appartements ?"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "Le site de Boudouaou combine 70 logements LPA, 10 logements LPL et 10 locaux professionnels ou commerciaux à travers trois blocs de hauteurs différentes."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages nouvellement construit, avec des façades claires et de nombreuses fenêtres, sous un ciel bleu lumineux. Des équipements de chantier et une voiture se trouvent sur le sol en terre devant le bâtiment, indiquant des travaux en cours sur le site du projet de Boudouaou."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Modulation des façades et aménagements extérieurs sur les blocs résidentiels en R+8."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Un bâtiment résidentiel moderne de plusieurs étages avec une façade claire et des garde-corps de balcon sombres à motifs, vu d’un angle bas sous un ciel bleu lumineux avec un reflet de soleil."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Vue en contre-plongée de la façade terminée et des garde-corps des balcons."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Vue d’en bas de plusieurs grands immeubles d’habitation de couleur claire avec de nombreuses fenêtres et quelques balcons, sur fond de ciel bleu lumineux. Le sol au premier plan est en terre, indiquant une construction récente."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Vue en élévation des blocs résidentiels de plusieurs étages pendant le nivellement final du terrain."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Un grand bâtiment résidentiel de couleur claire avec plusieurs balcons et fenêtres, certaines avec des volets fermés, sous un ciel bleu lumineux. Une chargeuse-pelleteuse jaune et noire est garée sur le sol non goudronné devant le bâtiment, avec une voiture partiellement visible sur la droite."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Travaux de voirie actifs et raccordements aux réseaux extérieurs devant le bloc en R+8."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Vue de plusieurs bâtiments résidentiels de plusieurs étages à différents stades de construction, avec une grue à tour jaune visible entre eux, sur fond de ciel bleu clair."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Exécution de la structure et opérations de la grue à tour pendant la phase de gros œuvre en béton."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Une vue dynamique en contre-plongée de plusieurs grands bâtiments résidentiels à différents stades de construction. Le bâtiment de gauche présente du béton brut, tandis que les bâtiments centraux affichent des façades claires terminées avec fenêtres et balcons. Une grande grue de chantier bleue s’élève dans le ciel clair et voilé sur la droite. Un tas de terre est visible au premier plan."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Réalisation simultanée du gros œuvre et de l’enduit de façade sur les trois blocs."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Vue d’en bas de several grands immeubles d’habitation de couleur claire avec de nombreuses fenêtres et quelques balcons, sur fond de ciel bleu lumineux. Le sol au premier plan est en terre, indiquant une construction récente."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Enveloppes structurelles achevées en attente des derniers aménagements extérieurs."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Immeubles d’habitation blancs et hauts nouvellement construits, avec de multiples fenêtres et balcons, sur fond de ciel bleu lumineux. Le sol au premier plan est en terre non pavée, indiquant des travaux d’aménagement extérieur en cours. Un petit camion blanc est visible sur le chemin en terre."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Préparation du terrain extérieur et alignement des voies d’accès."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Grands bâtiments résidentiels en cours de construction, avec certaines sections présentant des façades blanches finies et d’autres encore en béton brut. Deux ouvriers du bâtiment sont visibles, l’un sur un balcon et l’autre sur un échafaudage. Une flèche de grue est partiellement visible sur un ciel bleu clair."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Application de l’enduit de façade et pose de l’isolation extérieure."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Un grand bâtiment résidentiel de couleur claire avec plusieurs balcons et fenêtres, certaines avec des volets fermés, sous un ciel bleu lumineux. Une chargeuse-pelleteuse jaune et noire est garée sur le sol non goudronné devant le bâtiment, avec une voiture partiellement visible sur la droite."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Excavation et ouverture de tranchées pour les réseaux de viabilisation principaux."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Vue d’en bas de plusieurs grands immeubles d’habitation de couleur claire avec de nombreuses fenêtres et quelques balcons, sur fond de ciel bleu lumineux. Le sol au premier plan est en terre, indiquant une construction récente."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Volumétrie et espacement spatial entre les blocs résidentiels en R+8."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Plusieurs bâtiments résidentiels de plusieurs étages à différents stades de construction. Les bâtiments de gauche et du centre sont peints en beige clair avec des cadres de fenêtres blancs et des balcons, apparaissant en grande partie terminés. Le bâtiment à l’extrême droite est encore à l’état de béton brut et de briques. Un ciel bleu clair est visible au-dessus, et des lignes électriques traversent le cadre. Un petit camion est garé au premier plan sur un chantier en terre."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Achèvement progressif des structures porteuses et de la maçonnerie extérieure."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Un bâtiment résidentiel beige clair nouvellement construit avec plusieurs étages et des balcons dotés de garde-corps noirs, sous un ciel bleu lumineux. Des matériaux de construction sont visibles au niveau du sol."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Vue détaillée des finitions de la façade extérieure et des garde-corps des balcons."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Un grand bâtiment résidentiel de couleur claire avec plusieurs balcons et fenêtres, certaines avec des volets fermés, sous un ciel bleu lumineux. Une chargeuse-pelleteuse jaune et noire est garée sur le sol non goudronné devant le bâtiment, avec une voiture partiellement visible sur la droite."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Terrassement du site et préparation pour la pose finale de la voirie et des réseaux divers (VRD)."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Vue d’en bas de plusieurs grands immeubles d’habitation de couleur claire avec de nombreuses fenêtres et quelques balcons, sur fond de ciel bleu lumineux. Le sol au premier plan est en terre, indiquant une construction récente."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Alignement structurel des blocs résidentiels par rapport aux limites du terrain."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages nouvellement construit, avec des façades claires et de nombreuses fenêtres, sous un ciel bleu lumineux. Des équipements de chantier et une voiture se trouvent sur le sol en terre devant le bâtiment, indiquant des travaux en cours sur le site du projet de Boudouaou."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Enveloppes structurelles achevées des blocs résidentiels en R+8."
+    }
+  ]
+}

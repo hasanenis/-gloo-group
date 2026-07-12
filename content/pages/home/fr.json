@@ -1,0 +1,181 @@
+{
+  "pageId": "home",
+  "locale": "fr",
+  "sourceRevision": "v1-dba325a2",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v3-natural-fr",
+  "status": "approved",
+  "updatedAt": "2026-07-12T15:40:00.000Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Projets Résidentiels, Commerciaux et d'Infrastructures en Algérie",
+    "description": "SARL Igloo Yapi Construction est une entreprise générale qualifiée en catégorie 6, réalisant des projets résidentiels, commerciaux et d'infrastructures en Algérie.",
+    "socialTitle": "SARL Igloo Yapi Construction | Construction et Réalisation Clés en Main",
+    "socialDescription": "Entreprise générale qualifiée en catégorie 6, spécialisée dans les projets résidentiels, commerciaux et d’infrastructures à travers l’Algérie."
+  },
+  "content": {
+    "hero": {
+      "eyebrow": "SARL Igloo Yapi Construction",
+      "title": "Construction Fiable et Entreprise Générale Clés en Main en Algérie",
+      "lead": "Nous concrétisons vos projets résidentiels, mixtes et d'infrastructures grâce à une rigueur d'ingénierie, une gestion de chantier performante et un engagement qualité permanent.",
+      "primaryCta": "Découvrir les Projets",
+      "secondaryCta": "Nous Contacter",
+      "trustFacts": [
+        {
+          "value": "2018",
+          "label": "Création"
+        },
+        {
+          "value": "11",
+          "label": "Projets Réalisés et en Cours"
+        },
+        {
+          "value": "2 500+",
+          "label": "Logements"
+        },
+        {
+          "value": "4",
+          "label": "Wilayas d'Activité"
+        },
+        {
+          "value": "Catégorie 6",
+          "label": "Certificat de Qualification"
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Notre Approche",
+      "title": "Rassembler l'ingénierie, la planification et la gestion de chantier sous une même identité",
+      "body": "Des logements collectifs aux villas, des bâtiments commerciaux aux travaux d'infrastructures, nous pilotons les phases d’étude, d'exécution et de livraison avec une approche globale.",
+      "credential": "Certificat de Qualification et de Classification Professionnelle, Catégorie 6",
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Création",
+          "detail": "Siège social situé à Bir Khadem, Alger"
+        },
+        {
+          "value": "11",
+          "label": "Projets",
+          "detail": "Opérations de construction achevées et en cours"
+        },
+        {
+          "value": "2 500+",
+          "label": "Logements",
+          "detail": "Programmes résidentiels et mixtes"
+        },
+        {
+          "value": "4",
+          "label": "Wilayas",
+          "detail": "Alger, Tipaza, Mostaganem et Boumerdès"
+        }
+      ]
+    },
+    "featuredProjects": {
+      "eyebrow": "Projets",
+      "title": "Projets Réalisés et en Cours",
+      "lead": "Découvrez notre portfolio composé de projets résidentiels, commerciaux, de villas et d'infrastructures."
+    },
+    "process": {
+      "eyebrow": "Notre Processus",
+      "title": "Une gestion de projet méthodique, de la planification à la réception",
+      "lead": "Chaque projet est mené à bien en intégrant les études d'ingénierie, le contrôle qualité et la coordination de chantier dans un processus unique et fluide.",
+      "steps": [
+        {
+          "id": "coordination",
+          "title": "Préparation et Planification",
+          "body": "Le périmètre, les métrés, les conditions du site, les plannings et les besoins logistiques sont étudiés en détail avant le démarrage des travaux."
+        },
+        {
+          "id": "engineering",
+          "title": "Coordination des Études",
+          "body": "Les structures, les lots techniques (électricité, plomberie, CVC) et toutes les autres disciplines d'exécution sont coordonnés en parfaite synergie."
+        },
+        {
+          "id": "site",
+          "title": "Exécution sur Chantier",
+          "body": "Les travaux sont conduits sous la supervision directe de nos ingénieurs de site, conformément aux règles de l'art et aux standards de qualité."
+        },
+        {
+          "id": "monitoring",
+          "title": "Qualité et Sécurité",
+          "body": "La conformité des matériaux, la qualité de mise en œuvre, la sécurité au travail et le respect des délais font l'objet d'un suivi rigoureux."
+        },
+        {
+          "id": "handover",
+          "title": "Contrôles Finaux et Réception",
+          "body": "Une fois les vérifications techniques finalisées et les documents complétés, l'ouvrage est remis clés en main au maître d'ouvrage."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Profil de l'Entreprise",
+      "title": "SARL Igloo Yapi Construction",
+      "credential": "Certificat de Qualification et de Classification Professionnelle, Catégorie 6",
+      "paragraphs": [
+        "Fondée en 2018 par l'Ingénieur en Génie Civil Adem Talay, la SARL Igloo Yapi Construction est une entreprise générale qualifiée en catégorie 6, spécialisée dans la réalisation de projets résidentiels, commerciaux, mixtes et d'infrastructures routières et réseaux (VRD) à travers l'Algérie.",
+        "Opérant depuis son siège social à Bir Khadem, Alger, l'entreprise prend en charge toutes les étapes d'un projet sous une structure unique : des études techniques à l'exécution sur site, jusqu'à la livraison clés en main.",
+        "Grâce à un encadrement composé d'ingénieurs civils, d'architectes, de conducteurs de travaux et d'équipes spécialisées sur le terrain, nous apportons des solutions fiables, organisées et axées sur la performance pour les donneurs d'ordres publics et privés."
+      ],
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Création"
+        },
+        {
+          "value": "11",
+          "label": "Projets Réalisés et en Cours"
+        },
+        {
+          "value": "2 500+",
+          "label": "Logements"
+        }
+      ],
+      "proofs": [
+        {
+          "title": "Entreprise Générale Qualifiée Catégorie 6",
+          "body": "Titulaire du certificat officiel requis pour contracter et piloter des projets résidentiels, commerciaux et d'infrastructures de grande envergure."
+        },
+        {
+          "title": "Équipe Technique Spécialisée",
+          "body": "Soutenue par une structure organisationnelle solide réunissant ingénieurs d'études, architectes, directeurs de chantiers et compagnons qualifiés."
+        },
+        {
+          "title": "Expertise Résidentielle & VRD",
+          "body": "Bénéficie d'une large expérience pratique dans la construction de bâtiments collectifs, de villas premium, de centres commerciaux et d'infrastructures d'aménagement (VRD)."
+        }
+      ]
+    },
+    "footprint": {
+      "eyebrow": "Notre Implantation",
+      "title": "Opérations Actives dans Quatre Wilayas",
+      "lead": "Nous sommes présents sur le terrain à travers nos réalisations achevées et en cours à Alger, Tipaza, Mostaganem et Boumerdès.",
+      "selectedLabel": "Projet Sélectionné",
+      "openProject": "Voir les Détails Techniques",
+      "statusCompleted": "Achevé",
+      "statusInProgress": "En cours",
+      "stats": [
+        {
+          "value": "11",
+          "label": "Projets"
+        },
+        {
+          "value": "4",
+          "label": "Wilayas"
+        },
+        {
+          "value": "1",
+          "label": "Siège Social"
+        }
+      ]
+    },
+    "footer": {
+      "eyebrow": "Contact",
+      "title": "Bâtissons Ensemble Votre Prochain Projet",
+      "lead": "Contactez notre bureau technique pour étudier vos projets résidentiels, commerciaux ou d'infrastructures.",
+      "emailLabel": "Envoyer un e-mail au Bureau Technique",
+      "phoneLabel": "Appeler le Siège Social",
+      "proofLine": "Bir Khadem, Alger • Entreprise Générale Qualifiée Catégorie 6 • Construction Clés en Main & Aménagements VRD"
+    }
+  }
+}

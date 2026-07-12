@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrgydaqg-target-fr-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-ae0bb1f4",
+  "generatedAt": "2026-07-11T22:45:19.901Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas | Dely Brahim",
+      "draft": "240 logements promotionnels libres avec espaces commerciaux | Dely Brahim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Spécifications techniques, exécution de la structure et aménagement du site pour les 240 logements promotionnels libres à Dely Brahim (Alger), incluant des espaces commerciaux en façade.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "240 logements promotionnels libres avec espaces commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Spécifications techniques, exécution de la structure et aménagement du site pour les 240 logements promotionnels libres à Dely Brahim (Alger), incluant des espaces commerciaux en façade.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "dely-brahim-240-housing",
+      "draft": "240 logements à Dely Ibrahim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "240 logements promotionnels libres avec espaces commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "Projet résidentiel à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A 33-storey mixed-use residential tower in Dely Brahim, Algiers, integrating 240 free promotional housing units with three commercial levels, three basement levels, and three parking mezzanine floors.",
+      "draft": "Une tour résidentielle à usage mixte de 33 étages à Dely Brahim (Alger), comprenant 240 logements promotionnels libres ainsi que trois niveaux commerciaux, trois niveaux de sous-sol et trois niveaux de mezzanine dédiés au stationnement.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "This high-rise development features residential units distributed from the 3rd to the 33rd floor, supported by a multi-level commercial podium and dedicated subterranean parking structures.",
+      "draft": "Ce projet immobilier en hauteur comprend des unités résidentielles réparties du 3e au 33e étage, reposant sur un socle commercial à plusieurs niveaux et des structures de stationnement souterrain dédiées.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The architectural programme optimizes urban density by vertically zoning F3, F4, and F5 apartment typologies above a three-level commercial base. The lower levels incorporate three basement floors and three parking mezzanine levels to resolve site constraints and vehicle circulation.",
+      "draft": "Le programme architectural optimise la densité urbaine en répartissant verticalement des typologies d'appartements de types F3, F4 et F5 au-dessus d'un socle commercial de trois niveaux. Les niveaux inférieurs intègrent trois sous-sols ainsi que trois niveaux de mezzanine dédiés au stationnement, afin de répondre aux contraintes du site et d'organiser la circulation des véhicules.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The structural execution required complex vertical coordination, managing the integration of reinforced concrete framing, vertical circulation shafts, fire safety compartments, mechanical, electrical, and plumbing (MEP) systems, and facade articulation.",
+      "draft": "La réalisation de la structure a nécessité une coordination verticale complexe, impliquant la gestion de l'intégration de l'ossature en béton armé, des cages de circulation verticale, des compartiments de sécurité incendie, des systèmes techniques (mécanique, électricité et plomberie) ainsi que de l'articulation de la façade.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A high-rise mixed-use development coordinating residential density, active street-level commercial frontage, and multi-level parking into a single vertical structure.",
+      "draft": "Un projet immobilier à usage mixte en hauteur intégrant, au sein d'une même structure verticale, densité résidentielle, façades commerciales actives au niveau de la rue et stationnement sur plusieurs niveaux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Spécifications techniques, exécution de la structure et aménagement du site pour les 240 logements promotionnels libres à Dely Brahim (Alger), incluant des espaces commerciaux en façade.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Free promotional housing with commercial premises and services",
+      "draft": "Logements promotionnels gratuits avec locaux commerciaux et services",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Free promotional housing with commercial premises",
+      "draft": "Logement promotionnel gratuit avec local commercial",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bois des Cars, Dely Brahim, Algiers",
+      "draft": "Bois des Cars, Dely Brahim, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "Unités de logement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "240 units",
+      "draft": "240 unités",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Vertical Zoning",
+      "draft": "Zonage vertical",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "Residential units from the 3rd to the 33rd floor, 8 units per floor",
+      "draft": "Unités résidentielles du 3e au 33e étage, 8 unités par étage",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Commercial Base",
+      "draft": "Base commerciale",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "3 commercial levels with terrace",
+      "draft": "3 niveaux commerciaux avec terrasse",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Parking Infrastructure",
+      "draft": "Infrastructures de stationnement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "3 basement levels and 3 parking mezzanine floors",
+      "draft": "3 niveaux de sous-sol et 3 niveaux de mezzanine de stationnement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.label",
+      "source": "Status",
+      "draft": "Statut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.value",
+      "source": "Current",
+      "draft": "Actuel",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "33-storey mixed-use tower",
+      "draft": "Tour à usage mixte de 33 étages",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "240 residential units in F3, F4, and F5 configurations",
+      "draft": "240 logements de types F3, F4 et F5",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Three basement levels and three parking mezzanine floors",
+      "draft": "Trois niveaux de sous-sol et trois niveaux de mezzanine de stationnement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including roads and utility networks (VRD), MEP, vertical transport, and safety systems",
+      "draft": "Réalisation tous corps d'état (TCE), incluant la voirie et les réseaux divers (VRD), les lots techniques (MEP), le transport vertical et les systèmes de sécurité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Local Infrastructure",
+      "draft": "Infrastructures locales",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Dely Brahim commercial district",
+      "draft": "Quartier commercial de Dely Brahim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is 240 Free Promotional Housing with Commercial Areas?",
+      "draft": "En quoi consiste le projet de 240 logements promotionnels libres avec espaces commerciaux ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project is a 33-storey mixed-use tower containing 240 free promotional housing units, supported by a three-level commercial podium, three basement levels, and three parking mezzanine floors.",
+      "draft": "Le projet consiste en une tour à usage mixte de 33 étages comprenant 240 logements en accession libre, reposant sur un socle commercial de trois niveaux, trois niveaux de sous-sol et trois niveaux de mezzanine dédiés au stationnement.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "How are the residential and commercial zones distributed vertically?",
+      "draft": "Comment les zones résidentielles et commerciales sont-elles réparties verticalement ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The tower features vertical zoning with F3, F4, and F5 apartment layouts situated from the 3rd to the 33rd floor, positioned above three commercial levels with terrace access.",
+      "draft": "La tour présente une répartition verticale des usages, avec des appartements de types F3, F4 et F5 situés du 3e au 33e étage, au-dessus de trois niveaux commerciaux dotés d'un accès à des terrasses.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What parking and circulation infrastructure is integrated into the site?",
+      "draft": "Quelles infrastructures de stationnement et de circulation sont intégrées au site ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Dely Brahim pushes the portfolio upward: a 33-storey tower with homes from the 3rd to the 33rd floor, eight homes per floor, three commercial levels with terrace, three basement levels and three parking entre-sols.",
+      "draft": "Le projet de Dely Brahim hisse le portefeuille vers de nouveaux sommets : une tour de 33 étages comprenant des logements du 3e au 33e niveau (à raison de huit unités par étage), trois niveaux commerciaux avec terrasse, ainsi que trois niveaux de sous-sol et trois niveaux de parking en mezzanine.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-logements/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Vue nocturne d'un immeuble contemporain à usage mixte doté de balcons résidentiels éclairés, de vitrines commerciales animées et d'un parking souterrain à plusieurs niveaux, bordant une rue où circulent des voitures et bordée d'arbres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Night view of the mixed-use tower showing the illuminated residential balconies and active commercial frontage.",
+      "draft": "Vue nocturne de la tour à usage mixte, montrant les balcons résidentiels illuminés et la façade commerciale animée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projets/dely-brahim-240-logements/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Un immeuble moderne à plusieurs étages de nuit, avec des vitrines commerciales vivement éclairées au rez-de-chaussée où l'on aperçoit des personnes, et des logements avec balcons aux étages supérieurs. Des voitures apparaissent floues dans la rue et un piéton passe à proximité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Detail of the active street-level commercial frontage and upper residential balconies at night.",
+      "draft": "Détail de la façade commerciale animée au rez-de-chaussée et des balcons résidentiels des étages supérieurs, de nuit.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projets/dely-brahim-240-logements/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Un immeuble résidentiel contemporain et élevé, doté de balcons vivement éclairés et d'espaces commerciaux au rez-de-chaussée, se détachant sur un ciel du soir bleu sombre, avec des arbres et une route au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Elevation view of the 33-storey tower showing the vertical transition from the commercial base to the residential levels.",
+      "draft": "Vue en élévation de la tour de 33 étages montrant la transition verticale entre le socle commercial et les niveaux résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Un grand immeuble résidentiel contemporain illuminé la nuit, doté de nombreux balcons et de bandes lumineuses verticales éclatantes sur sa façade. Le rez-de-chaussée abrite des commerces aux vitrines lumineuses, tandis qu'une rue où l'on distingue les traînées floues des phares de voitures passe devant. Des arbres encadrent le bâtiment et un ciel nocturne étoilé est visible au-dessus.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and vertical lighting elements on the residential elevation.",
+      "draft": "Articulation de la façade et éléments d'éclairage verticaux sur l'élévation résidentielle.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-logements/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Vue nocturne d'un immeuble contemporain à usage mixte doté de balcons résidentiels éclairés, de vitrines commerciales animées et d'un parking souterrain à plusieurs niveaux, bordant une rue où circulent des voitures et bordée d'arbres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Integration of the multi-level parking structure and commercial podium.",
+      "draft": "Intégration du parc de stationnement à plusieurs niveaux et du socle commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projets/dely-brahim-240-logements/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Un immeuble résidentiel contemporain et élevé, doté de balcons vivement éclairés et d'espaces commerciaux au rez-de-chaussée, se détachant sur un ciel du soir bleu sombre, avec des arbres et une route au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "The tower profile against the evening sky, highlighting the residential massing.",
+      "draft": "La silhouette de la tour se détachant sur le ciel du soir, mettant en valeur le volume résidentiel.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projets/dely-brahim-240-logements/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Un immeuble moderne à plusieurs étages de nuit, avec des vitrines commerciales vivement éclairées au rez-de-chaussée où l'on aperçoit des personnes, et des logements avec balcons aux étages supérieurs. Des voitures apparaissent floues dans la rue et un piéton passe à proximité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Pedestrian perspective of the glazed commercial storefronts.",
+      "draft": "Vue depuis le point de vue d'un piéton sur les vitrines commerciales.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Un grand immeuble résidentiel contemporain illuminé la nuit, doté de nombreux balcons et de bandes lumineuses verticales éclatantes sur sa façade. Le rez-de-chaussée abrite des commerces aux vitrines lumineuses, tandis qu'une rue où l'on distingue les traînées floues des phares de voitures passe devant. Des arbres encadrent le bâtiment et un ciel nocturne étoilé est visible au-dessus.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Night view showing the vertical lighting integrated into the facade panels.",
+      "draft": "Vue nocturne montrant l'éclairage vertical intégré aux panneaux de façade.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-logements/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Vue nocturne d'un immeuble contemporain à usage mixte doté de balcons résidentiels éclairés, de vitrines commerciales animées et d'un parking souterrain à plusieurs niveaux, bordant une rue où circulent des voitures et bordée d'arbres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "The relationship between the active commercial base and the residential tower above.",
+      "draft": "La relation entre le socle commercial animé et la tour résidentielle qui le surmonte.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projets/dely-brahim-240-logements/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Un immeuble résidentiel contemporain et élevé, doté de balcons vivement éclairés et d'espaces commerciaux au rez-de-chaussée, se détachant sur un ciel du soir bleu sombre, avec des arbres et une route au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior view of the residential balconies and structural framing.",
+      "draft": "Vue extérieure des balcons résidentiels et de la structure porteuse.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projets/dely-brahim-240-logements/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Un immeuble moderne à plusieurs étages de nuit, avec des vitrines commerciales vivement éclairées au rez-de-chaussée où l'on aperçoit des personnes, et des logements avec balcons aux étages supérieurs. Des voitures apparaissent floues dans la rue et un piéton passe à proximité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Ground-level view of the commercial glazing and pedestrian access.",
+      "draft": "Vue au niveau du sol du vitrage commercial et de l'accès piéton.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-logements/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Vue nocturne d'un immeuble contemporain à usage mixte doté de balcons résidentiels éclairés, de vitrines commerciales animées et d'un parking souterrain à plusieurs niveaux, bordant une rue où circulent des voitures et bordée d'arbres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed structural envelope and external works.",
+      "draft": "Enveloppe structurelle et aménagements extérieurs achevés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Un grand immeuble résidentiel contemporain illuminé la nuit, doté de nombreux balcons et de bandes lumineuses verticales éclatantes sur sa façade. Le rez-de-chaussée abrite des commerces aux vitrines lumineuses, tandis qu'une rue où l'on distingue les traînées floues des phares de voitures passe devant. Des arbres encadrent le bâtiment et un ciel nocturne étoilé est visible au-dessus.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Facade finishing and external lighting installation.",
+      "draft": "Finition de façade et installation de l'éclairage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projets/dely-brahim-240-logements/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Un immeuble résidentiel contemporain et élevé, doté de balcons vivement éclairés et d'espaces commerciaux au rez-de-chaussée, se détachant sur un ciel du soir bleu sombre, avec des arbres et une route au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Completed structural frame and exterior cladding.",
+      "draft": "Ossature structurelle et revêtement extérieur terminés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projets/dely-brahim-240-logements/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Un immeuble moderne à plusieurs étages de nuit, avec des vitrines commerciales vivement éclairées au rez-de-chaussée où l'on aperçoit des personnes, et des logements avec balcons aux étages supérieurs. Des voitures apparaissent floues dans la rue et un piéton passe à proximité.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Detail of the completed ground-floor commercial envelope.",
+      "draft": "Détail de l'enveloppe commerciale achevée au rez-de-chaussée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-logements/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Vue nocturne d'un immeuble contemporain à usage mixte doté de balcons résidentiels éclairés, de vitrines commerciales animées et d'un parking souterrain à plusieurs niveaux, bordant une rue où circulent des voitures et bordée d'arbres.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "The 33-storey mixed-use tower integrating residential, commercial, and parking levels.",
+      "draft": "La tour à usage mixte de 33 étages intégrant des niveaux résidentiels, commerciaux et de stationnement.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

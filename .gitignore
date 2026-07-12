@@ -6,3 +6,11 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Local-only service credentials. Never commit Google Cloud keys.
+.secrets/
+*-service-account.json
+project-*.json
+
+# Generated, review-only machine-translation candidates.
+artifacts/translation-drafts/

@@ -1,0 +1,11 @@
+{
+  "jobId": "mrgttyi7-xtjl04",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-888651e9",
+  "generatedAt": "2026-07-11T20:38:18.625Z",
+  "status": "dry-run",
+  "issues": [],
+  "note": "Remote AI stages skipped by --offline/--dry-run."
+}

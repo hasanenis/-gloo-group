@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh1h8pg-target-ar-DZ-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-12T00:12:22.806Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

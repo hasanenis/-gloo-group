@@ -1,0 +1,18 @@
+{
+  "jobId": "batch-mrgzorie-target-tr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:22:14.604Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0|content.faq.0.answer",
+      "severity": "warning",
+      "type": "tautology",
+      "message": "Summary, description or FAQ fields are too semantically similar; rewrite them with distinct information roles."
+    }
+  ],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

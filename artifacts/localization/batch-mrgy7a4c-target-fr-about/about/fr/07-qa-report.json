@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgy7a4c-target-fr-about",
+  "pageId": "about",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T22:40:39.271Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

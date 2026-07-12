@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh10ark-target-ar-DZ-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:59:12.382Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة"
+    },
+    {
+      "id": "seo.description",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع لمشروع 70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع لمشروع 70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.slug",
+      "text": "boudouaou-70-10-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "مشروع سكني متعدد الاستخدامات"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "مخطط سكني مختلط يضم 80 مسكنا في بودواو، يجمع بين السكن المدعم والترقوي الحر مع محلات مهنية وتجارية في الطابق الأرضي."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يدمج المشروع 70 وحدة سكنية من صيغة LPA، و10 وحدات سكنية من صيغة LPL، و10 محلات تجارية موزعة على ثلاث عمارات منفصلة."
+    },
+    {
+      "id": "content.description.0",
+      "text": "تتوزع الكتل المعمارية على ثلاث عمارات: العمارة A والعمارة B، المصممتان كطابق أرضي زائد 8 طوابق علوية (R+8)، والعمارة C المصممة كطابق أرضي زائد 5 طوابق علوية (R+5). تم تهيئة الطوابق بمعدل أربع شقق في كل مستوى، مما يوفر توزيعا متوازنا بين شقق من نوع F3 وF4."
+    },
+    {
+      "id": "content.description.1",
+      "text": "يشمل نطاق الإنجاز أشغال كلية لجميع الحرف (TCE)، بما في ذلك الأشغال الثانوية، الكتامة، النجارة الداخلية، التجهيزات الميكانيكية والكهربائية والرصاصة (MEP)، إلى جانب الطرق والشبكات المختلفة (VRD) والتهيئة الخارجية لدمج هذا البرنامج متعدد الاستخدامات."
+    },
+    {
+      "id": "content.authority",
+      "text": "مشروع سكني منسق يتم فيه إنجاز ثلاث عمارات هيكلية، واجهات تجارية وشبكات المرافق للموقع كإدماج حضري موحد."
+    },
+    {
+      "id": "content.seo",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع لمشروع 70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة. يبرز المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "صاحب المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "سكنات LPA وسكنات ترقوية LPL مع محلات تجارية ومهنية"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "سكنات LPA وLPL مع محلات تجارية"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "بودواو، بومرداس"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "الوحدات السكنية"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "80 وحدة (70 LPA + 10 LPL)"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "الكتل الهيكلية"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "3 عمارات: R+8، R+8 وR+5"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "سنة الإنجاز"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "2025"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "صاحب المشروع"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "AADL"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "80 وحدة سكنية، تتكون من 70 شقة LPA و10 شقق LPL"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "ثلاث عمارات هيكلية منجزة بارتفاعات R+8 وR+5"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "10 محلات تجارية ومهنية في الطابق الأرضي"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "أشغال كلية لجميع الحرف (TCE) بما في ذلك الطرق والشبكات المختلفة (VRD)"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو مشروع 70 مسكنا ترقويا مدعما و10 سكنات ترقوية حرة؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "المشروع عبارة عن مخطط سكني مختلط يضم 80 مسكنا في بودواو، يجمع بين 70 وحدة سكنية من صيغة LPA و10 وحدات سكنية ترقوية من صيغة LPL مع محلات تجارية في الطابق الأرضي."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي الارتفاعات الهيكلية وتكوينات العمارات؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "يتكون المشروع من ثلاث عمارات: العمارة A والعمارة B مصممتان كطابق أرضي زائد 8 طوابق علوية (R+8)، بينما تم بناء العمارة C كطابق أرضي زائد 5 طوابق علوية (R+5)."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "ما هو النطاق التقني لأشغال البناء؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "تم تنفيذ العقد في إطار أشغال كلية لجميع الحرف (TCE)، تشمل الأشغال الثانوية، التشطيبات الداخلية، تجهيزات MEP، والطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "كيف تتوزع مخططات الشقق الفردية؟"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "يجمع مشروع بودواو بين 70 مسكنا من صيغة LPA، و10 مساكن من صيغة LPL، و10 محلات مهنية وتجارية موزعة على ثلاث عمارات بارتفاعات مختلفة."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "منظر خارجي لعمارة سكنية حديثة البناء ومتعددة الطوابق بواجهات فاتحة اللون ونوافذ عديدة، تحت سماء زرقاء صافية. تظهر معدات بناء وسيارة على الأرض الترابية أمام المبنى، مما يشير إلى الأشغال الجارية في موقع مشروع بودواو."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "تفاصيل الواجهة وأشغال الموقع الخارجية في العمارات السكنية ذات الارتفاع R+8."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "عمارة سكنية حديثة متعددة الطوابق بواجهة فاتحة اللون ودرابزين شرفات داكن ومزخرف، تظهر من زاوية منخفضة مقابل سماء زرقاء ساطعة مع توهج الشمس."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "منظر من زاوية منخفضة للواجهة المكتملة ودرابزين الشرفات."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "منظر من الأسفل لعدة عمارات سكنية شاهقة وفاتحة اللون بنوافذ كثيرة وبعض الشرفات، مقابل سماء زرقاء صافية. الأرض في المقدمة ترابية، مما يدل على أعمال البناء الحديثة."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "منظر عمودي للعمارات السكنية متعددة الطوابق أثناء التسوية النهائية للموقع."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "عمارة سكنية شاهقة وفاتحة اللون بشرفات ونوافذ متعددة، بعضها بنوافذ مغلقة، تحت سماء زرقاء صافية. آلة حفر وشحن صفراء وسوداء مركونة على الأرض غير المعبدة أمام المبنى، مع ظهور جزئي لسيارة على اليمين."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "أشغال الموقع النشطة وتوصيلات الشبكات الخارجية أمام العمارة ذات الارتفاع R+8."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق في مراحل مختلفة من البناء، مع ظهور رافعة برجية صفراء بينها، مقابل سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "الأشغال الهيكلية وعمليات الرافعة البرجية خلال مرحلة الهيكل الخرساني."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "لقطة ديناميكية من زاوية منخفضة لعدة عمارات سكنية شاهقة في مراحل مختلفة من البناء. تظهر العمارة على اليسار بخرسانة مكشوفة، بينما تظهر العمارات المركزية بواجهات منتهية وفاتحة اللون مع نوافذ وشرفات. تمتد رافعة بناء زرقاء كبيرة في السماء المغشاة على اليمين، مع وجود كومة تراب في المقدمة."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "أشغال الهيكل الخرساني وتشطيب الواجهات في آن واحد عبر العمارات الثلاث."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "منظر من الأسفل لعدة عمارات سكنية شاهقة وفاتحة اللون بنوافذ كثيرة وبعض الشرفات، مقابل سماء زرقاء صافية. الأرض في المقدمة ترابية، مما يدل على أعمال البناء الحديثة."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "الهياكل المكتملة في انتظار الأشغال الخارجية النهائية."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "عمارات سكنية بيضاء شاهقة وحديثة البناء بنوافذ وشرفات متعددة، مقابل سماء زرقاء صافية. الأرض في المقدمة ترابية وغير معبدة، مما يشير إلى تواصل تهيئة الموقع. تظهر شاحنة بيضاء صغيرة على الطريق الترابي."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "التهيئة الخارجية للموقع وأشغال تخطيط الطرق."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "عمارات سكنية شاهقة قيد الإنشاء، تظهر بعض أجزائها بواجهات بيضاء منتهية وأخرى بخرسانة خام. يظهر عاملان، أحدهما على شرفة والآخر على سقالة، مع ظهور جزئي لذراع رافعة مقابل سماء زرقاء صافية."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "تلبيس الواجهات وتطبيق العزل الخارجي."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "عمارة سكنية شاهقة وفاتحة اللون بشرفات ونوافذ متعددة، بعضها بنوافذ مغلقة، تحت سماء زرقاء صافية. آلة حفر وشحن صفراء وسوداء مركونة على الأرض غير المعبدة أمام المبنى، مع ظهور جزئي لسيارة على اليمين."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "أشغال الحفر والخنادق لشبكات المرافق الأساسية."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "منظر من الأسفل لعدة عمارات سكنية شاهقة وفاتحة اللون بنوافذ كثيرة وبعض الشرفات، مقابل سماء زرقاء صافية. الأرض في المقدمة ترابية، مما يدل على أعمال البناء الحديثة."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "الكتل المعمارية والفصل الفضائي بين العمارات السكنية ذات الارتفاع R+8."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "عدة عمارات سكنية متعددة الطوابق في مراحل مختلفة من البناء. تظهر العمارات على اليسار وفي الوسط مطلية باللون البيج الفاتح مع إطارات نوافذ وشرفات بيضاء، وتبدو مكتملة إلى حد كبير. بينما لا تزال العمارة في أقصى اليمين في مرحلة الخرسانة الخام والآجر. تظهر سماء زرقاء صافية في الأعلى، وتتقاطع خطوط الكهرباء في الإطار، مع شاحنة صغيرة مركونة في المقدمة بموقع البناء الترابي."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "التقدم التدريجي في إنجاز الهياكل الخرسانية والمباني الخارجية."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "عمارة سكنية حديثة البناء بلون بيج فاتح، تتكون من عدة طوابق وشرفات ذات درابزين أسود، تحت سماء زرقاء صافية. تظهر مواد بناء في الطابق الأرضي."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "منظر تفصيلي لتشطيبات الواجهة الخارجية ودرابزين الشرفات."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "عمارة سكنية شاهقة وفاتحة اللون بشرفات ونوافذ متعددة، بعضها بنوافذ مغلقة، تحت سماء زرقاء صافية. آلة حفر وشحن صفراء وسوداء مركونة على الأرض غير المعبدة أمام المبنى، مع ظهور جزئي لسيارة على اليمين."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "تسوية الموقع والتحضير لتهيئة الطرق والشبكات المختلفة (VRD) النهائية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "منظر من الأسفل لعدة عمارات سكنية شاهقة وفاتحة اللون بنوافذ كثيرة وبعض الشرفات، مقابل سماء زرقاء صافية. الأرض في المقدمة ترابية، مما يدل على أعمال البناء الحديثة."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "المحاذاة الهيكلية للعمارات السكنية مع حدود الموقع."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "منظر خارجي لعمارة سكنية حديثة البناء ومتعددة الطوابق بواجهات فاتحة اللون ونوافذ عديدة، تحت سماء زرقاء صافية. تظهر معدات بناء وسيارة على الأرض الترابية أمام المبنى، مما يشير إلى الأشغال الجارية في موقع مشروع بودواو."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "الهياكل المكتملة للعمارات السكنية ذات الارتفاع R+8."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "tr",
+  "entries": [
+    { "source": "second work", "target": "ince işler", "note": "Use the construction meaning; do not translate as ordinary second work." },
+    { "source": "external works", "target": "altyapı ve çevre düzenleme işleri", "note": "Preserve VRD in facts when it is an official acronym." },
+    { "source": "delivered", "target": "teslim edildi", "note": "Use for a completed project." },
+    { "source": "site infrastructure", "target": "saha altyapısı ve çevre işleri", "note": "Keep the construction context explicit." }
+  ]
+}

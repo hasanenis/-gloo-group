@@ -1,0 +1,184 @@
+{
+  "jobId": "20260712-35flash-projects-staoueli-11-41-villas",
+  "pageId": "projects/staoueli-11-41-villas",
+  "locale": "en",
+  "sourceRevision": "v1-0b57b86a",
+  "generatedAt": "2026-07-11T21:42:01.522Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "83599d7979d49d53",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "11/41 Villas and VRD Works, Staoueli | Residential Portfolio",
+    "description": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+    "socialTitle": "11/41 Villas and VRD Works, Staoueli",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "staoueli-11-41-villas",
+    "title": "11/41 Villas and VRD Works",
+    "eyebrow": "RESIDENTIAL PROGRAMME",
+    "summary": [
+      "Delivery of 11 individual villas within the Les Pastorales development in Staoueli, combining ground floor plus 2 upper floors of residential volume with integrated roads and utility networks (VRD).",
+      "This residential parcel focuses on low-rise volumetric organisation, site circulation, and durable exterior works to establish a coherent domestic scale."
+    ],
+    "description": [
+      "The 11 villas constitute a specific phase of a larger 41-villa master plan. The scope of execution required a coordinated sequence of all-trades delivery (TCE), facade articulation, and the installation of dedicated roads and utility networks (VRD) to secure independent site connections.",
+      "Constructed with a structural profile of ground floor plus 2 upper floors, the villas feature integrated balconies, structural guardrails, exterior render coatings, and dedicated access pathways to define the street-level residential frontage."
+    ],
+    "authority": "A residential delivery defined by precise structural execution, site-specific utility networks, and coordinated facade finishes.",
+    "seo": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a source-led residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Development Type",
+        "value": "Villas promotionnelles libres"
+      }
+    ],
+    "details": [
+      {
+        "label": "Development Type",
+        "value": "Villas promotionnelles libres"
+      },
+      {
+        "label": "Location",
+        "value": "Les Pastorales, Staoueli, Algiers"
+      },
+      {
+        "label": "Programme Scope",
+        "value": "11 villas within a 41-villa master plan"
+      },
+      {
+        "label": "Completion Year",
+        "value": "2022"
+      },
+      {
+        "label": "Typology",
+        "value": "Ground floor plus 2 upper floors (R+2) individual villas"
+      },
+      {
+        "label": "Scope of Works",
+        "value": "All-trades delivery (TCE) and roads and utility networks (VRD)"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Specifications",
+        "items": [
+          "11 individual R+2 villas within the Les Pastorales development",
+          "Integrated roads and utility networks (VRD) including water and power connections",
+          "Articulated facades with integrated balconies and glass guardrails",
+          "Completed in 2022 with secondary trades and interior finishes"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is the scope of the 11/41 Villas project in Staoueli?",
+        "answer": "The project comprises the construction and all-trades delivery of 11 individual R+2 villas, executed as part of a larger 41-villa residential development in Les Pastorales, Staoueli."
+      },
+      {
+        "question": "What civil and infrastructure works were executed on site?",
+        "answer": "The 11 villas sit inside a 41-villa programme and rely on a precise sequence of TCES, VRD, facade work and exterior networks to create a finished residential setting."
+      },
+      {
+        "question": "What are the architectural characteristics of the villas?",
+        "answer": "Each villa is organised as a ground floor plus 2 upper floors (R+2), featuring contemporary facade articulation, glass-railed balconies, and integrated garage access."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed R+2 residential villas showing facade articulation and glass-railed balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Street-level frontage showing entrance canopies, integrated garages, and paved access pathways."
+        }
+      ],
+      "intro": {
+        "src": "/projects/staoueli-11-41-villas/01-staouali-1.webp",
+        "alt": "A row of modern, light-colored residential villas featuring dark accents, glass balconies, and terracotta tile roofs, with a clear blue sky overhead.",
+        "caption": "Volumetric alignment of the R+2 villas within the Les Pastorales development."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+          "alt": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+          "caption": "Interior finishing works showing kitchen cabinetry and tiled surfaces."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp",
+          "alt": "A multi-story residential villa under construction with scaffolding on the facade, exposed concrete at the base, and two workers relaxing on an upper balcony.",
+          "caption": "Facade finishing and structural works in progress on an individual villa."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Detail of the exterior finishes, entrance canopies, and ground-floor circulation."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed villa elevations with integrated balconies and terracotta roof tiling."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/staoueli-11-41-villas/03-staoualii.webp",
+          "alt": "A contemporary L-shaped kitchen in a residential villa, showcasing dark granite countertops, light cream base cabinets, white upper cabinets, and dark brown wood-effect wall cabinets. A gas hob, double stainless steel sink, and a decorative patterned tile backsplash are visible, along with dark marble-effect floor tiles.",
+          "caption": "Completed kitchen installation demonstrating secondary trades delivery."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp",
+          "alt": "Exterior of a multi-story residential villa with light beige walls, dark window frames, and balconies with glass and metal railings. A terracotta-tiled roof is visible, and a large concrete beam obstructs the top of the frame. A timestamp '2022.9.21 11:52' is in the bottom right.",
+          "caption": "Detail of the upper floor elevations, glazing, and balcony balustrades."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Ground-floor access points and integrated garage entries."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed R+2 villa structures showing external render and roof profiles."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp",
+          "alt": "Exterior view of several newly built, multi-story residential villas featuring white walls, dark grey architectural accents, terracotta roof tiles, and glass-paneled balconies under a bright blue sky. A person is partially visible on the ground floor to the right.",
+          "caption": "Completed villa exteriors prior to final handover."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Finished elevations showing the integration of glass, metal, and render."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Completed pedestrian pathways and exterior works."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+          "alt": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+          "caption": "Interior tiling and cabinetry installation within the kitchen zones."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed R+2 residential villas within the Les Pastorales development."
+        }
+      ]
+    }
+  },
+  "model": "gemini-3.5-flash"
+}

@@ -4,7 +4,7 @@ import { homepageContent, localize, type HomepageProcessStep } from '../data/hom
 import { useLocale } from '../i18n';
 import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
 
-const DRAW_IMAGE = '/projects/rouiba-4-promotional-villas/Draw.png';
+const DRAW_IMAGE = '/projects/rouiba-4-promotional-villas/01-draw.webp';
 
 const STEP_ICONS: Record<HomepageProcessStep['id'], typeof ClipboardCheck> = {
   coordination: ClipboardCheck,

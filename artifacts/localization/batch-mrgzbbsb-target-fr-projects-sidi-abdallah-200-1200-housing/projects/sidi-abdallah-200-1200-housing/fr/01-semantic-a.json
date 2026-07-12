@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrgzbbsb-target-fr-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-11T23:11:47.729Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 Logements promotionnels publics (LPP) | Sidi Abdallah",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les détails techniques et les informations sur l'emplacement du projet de logements publics « 200/1200 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par l'initiateur du projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
+      "draft": "200/1200 Logements promotionnels publics (LPP) | Sidi Abdallah",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les détails techniques et les informations sur l'emplacement du projet de logements publics « 200/1200 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par l'initiateur du projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "sidi-abdallah-200-1200-housing",
+      "draft": "Projet de 1 200 logements à Sidi Abdallah",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "200/1200 Public Promotional Housing (LPP)",
+      "draft": "200/1200 Logements promotionnels publics (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "Projet résidentiel à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of 200 residential units within the wider 1,200-home Sidi Abdallah master programme, integrating public promotional housing (LPP) with ground-floor commercial and professional premises.",
+      "draft": "Livraison de 200 logements dans le cadre du programme global de 1 200 unités de Sidi Abdallah, intégrant des logements promotionnels publics (LPP) ainsi que des locaux commerciaux et professionnels en rez-de-chaussée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The development introduces high-density residential blocks configured as ground floor plus 9 upper floors (R+9), accommodating F3 and F4 apartment layouts alongside active street-level commercial frontage.",
+      "draft": "Le projet prévoit des immeubles résidentiels à haute densité, composés d'un rez-de-chaussée et de neuf étages (R+9), accueillant des appartements de type F3 et F4 ainsi que des commerces actifs en rez-de-chaussée.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The construction scope focused on the execution of secondary trades and interior fit-out works for the dense residential blocks. Facade articulation, internal circulation cores, and technical services were coordinated to align with the master plan's structural and spatial constraints.",
+      "draft": "Le périmètre des travaux a porté sur la réalisation des corps d'état secondaires et de l'aménagement intérieur des blocs résidentiels à forte densité. La conception des façades, les noyaux de circulation interne et les installations techniques ont été coordonnés afin de respecter les contraintes structurelles et spatiales du plan directeur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "By integrating ground-floor retail and professional spaces directly beneath the R+9 residential massing, the architectural layout establishes a functional mixed-use profile that supports local economic activity within the urban pole.",
+      "draft": "En intégrant des commerces et des locaux professionnels au rez-de-chaussée, directement sous le volume résidentiel de neuf étages, la conception architecturale instaure une mixité fonctionnelle qui soutient l'activité économique locale au sein du pôle urbain.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A public housing delivery where secondary trades, service premises, and R+9 density work together to support a new urban district.",
+      "draft": "Une opération de logements sociaux où locaux d'activités artisanales, espaces de services et une densité en R+9 concourent au développement d'un nouveau quartier urbain.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les détails techniques et les informations sur l'emplacement du projet de logements publics « 200/1200 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par l'initiateur du projet.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Programme Type",
+      "draft": "Type de programme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "Logement promotionnel public (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Programme Type",
+      "draft": "Type de programme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Public Promotional Housing (LPP)",
+      "draft": "Logement promotionnel public (LPP)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Sidi Abdallah, Mahelma, Algiers",
+      "draft": "Sidi Abdallah, Mahelma, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme Scope",
+      "draft": "Portée du programme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "200 homes within a 1,200-home master plan",
+      "draft": "200 logements au sein d'un plan d'aménagement global de 1 200 logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion Year",
+      "draft": "Année d'achèvement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2022",
+      "draft": "2022",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Building Configuration",
+      "draft": "Configuration du bâtiment",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 9 upper floors (R+9)",
+      "draft": "Rez-de-chaussée et 9 étages (R+9)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Scope",
+      "draft": "Périmètre du contrat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Secondary trades (excluding roads and utility networks / VRD)",
+      "draft": "Corps d'état secondaires (hors VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "200 LPP residential units delivered within a 1,200-home master plan",
+      "draft": "Livraison de 200 logements LPP dans le cadre d'un projet d'ensemble de 1 200 logements.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "R+9 residential blocks containing F3 and F4 apartment layouts",
+      "draft": "Immeubles résidentiels de 10 niveaux (R+9) comprenant des appartements de type F3 et F4.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial and professional premises",
+      "draft": "Locaux commerciaux et professionnels en rez-de-chaussée",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2022 in compliance with national technical standards",
+      "draft": "Achevé en 2022 conformément aux normes techniques nationales",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 200/1200 LPP housing project?",
+      "draft": "Quelle est l'envergure du projet de logements LPP 200/1200 ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It comprises the delivery of 200 public promotional housing (LPP) units, configured with ground-floor commercial spaces, within a larger 1,200-unit urban development in Sidi Abdallah.",
+      "draft": "Il comprend la livraison de 200 logements publics promotionnels (LPP), dotés d'espaces commerciaux au rez-de-chaussée, au sein d'un projet d'aménagement urbain plus vaste de 1 200 logements à Sidi Abdallah.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on this site?",
+      "draft": "Quels travaux de construction ont été réalisés sur ce site ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The contract encompassed secondary trades and interior fit-out works for the R+9 residential blocks, excluding the primary roads and utility networks (VRD) package.",
+      "draft": "Le marché couvrait les corps d'état secondaires et les travaux d'aménagement intérieur des immeubles résidentiels (R+9), à l'exclusion du lot VRD (voirie et réseaux divers).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How are the residential buildings configured?",
+      "draft": "Comment les bâtiments résidentiels sont-ils configurés ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The buildings are structured as ground floor plus 9 upper floors (R+9), containing F3 and F4 apartment layouts designed to integrate with the surrounding urban pole.",
+      "draft": "Les bâtiments sont structurés en rez-de-chaussée plus neuf étages (R+9) et comprennent des appartements de type F3 et F4, conçus pour s'intégrer au pôle urbain environnant.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Vue en contre-plongée de la façade d'un immeuble résidentiel de neuf étages (R+9) à Sidi Abdallah, présentant un enduit beige et pêche, des balcons en retrait dotés de garde-corps en métal sombre ainsi qu'un éclairage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Articulation des façades des immeubles de logements publics (R+9).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projets/sidi-abdallah-200-1200-logements/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Vue en contre-plongée de l'immeuble résidentiel achevé (R+9), montrant le rendu extérieur, la configuration des balcons et les ouvertures sur fond de ciel couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Élévation extérieure montrant la volumétrie verticale et l'alignement des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Hall d'entrée intérieur d'un immeuble résidentiel LPP, caractérisé par un revêtement mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité décorative en métal.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Intérieur du hall d'entrée présentant un revêtement en pierre et des finitions en bois.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Common circulation area inside the residential building, showing the elevator shaft, integrated timber mailboxes, stone wall finishes, and decorative metal balustrades.",
+      "draft": "Espace de circulation commun à l'intérieur de l'immeuble résidentiel, montrant la cage d'ascenseur, les boîtes aux lettres intégrées en bois, les finitions murales en pierre et les garde-corps décoratifs en métal.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Internal circulation core and integrated mailboxes.",
+      "draft": "Noyau de circulation interne et boîtes aux lettres intégrées.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Wide shot of multiple R+9 apartment blocks during the final stages of construction, with earthworks, utility piping, and construction machinery visible in the foreground.",
+      "draft": "Plan large de plusieurs immeubles résidentiels de neuf étages (R+9) aux derniers stades de la construction, avec des travaux de terrassement, des canalisations de réseaux et des engins de chantier visibles au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Residential blocks during final site coordination and external works.",
+      "draft": "Immeubles résidentiels lors de la coordination finale du chantier et des aménagements extérieurs.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Hall d'entrée intérieur d'un immeuble résidentiel LPP, caractérisé par un revêtement mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité décorative en métal.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Intérieur du hall d'entrée présentant un revêtement en pierre et des finitions en bois.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projets/sidi-abdallah-200-1200-logements/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Vue en contre-plongée de l'immeuble résidentiel achevé (R+9), montrant le rendu extérieur, la configuration des balcons et les ouvertures sur fond de ciel couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Élévation extérieure montrant la volumétrie verticale et l'alignement des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+      "draft": "/projets/sidi-abdallah-200-1200-logements/02-13.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Two completed R+9 residential blocks with white, blue, and peach facades, viewed from an unpaved site area containing construction materials.",
+      "draft": "Deux immeubles résidentiels achevés de neuf étages (R+9), aux façades blanches, bleues et pêche, vus depuis une zone non revêtue du chantier où sont entreposés des matériaux de construction.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance.",
+      "draft": "Immeubles résidentiels achevés avant le nettoyage final du site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Hall d'entrée intérieur d'un immeuble résidentiel LPP, caractérisé par un revêtement mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité décorative en métal.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Intérieur du hall d'entrée présentant un revêtement en pierre et des finitions en bois.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projets/sidi-abdallah-200-1200-logements/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Vue en contre-plongée de l'immeuble résidentiel achevé (R+9), montrant le rendu extérieur, la configuration des balcons et les ouvertures sur fond de ciel couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Élévation extérieure montrant la volumétrie verticale et l'alignement des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Vue en contre-plongée de la façade d'un immeuble résidentiel de neuf étages (R+9) à Sidi Abdallah, présentant un enduit beige et pêche, des balcons en retrait dotés de garde-corps en métal sombre ainsi qu'un éclairage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Articulation des façades des immeubles de logements publics (R+9).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Entrance portal of a newly completed residential block, featuring a dark metal security door, stone-clad surrounds, and tiled interior flooring.",
+      "draft": "Portail d'entrée d'un immeuble résidentiel récemment achevé, doté d'une porte de sécurité en métal sombre, d'encadrements habillés de pierre et d'un sol intérieur carrelé.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed entrance portal and ground-floor access control.",
+      "draft": "Portail d'entrée et contrôle d'accès au rez-de-chaussée terminés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
+      "draft": "Hall d'entrée intérieur d'un immeuble résidentiel LPP, caractérisé par un revêtement mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité décorative en métal.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Entrance lobby interior showing stone cladding and timber detailing.",
+      "draft": "Intérieur du hall d'entrée présentant un revêtement en pierre et des finitions en bois.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+      "draft": "/projets/sidi-abdallah-200-1200-logements/01-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
+      "draft": "Vue en contre-plongée de l'immeuble résidentiel achevé (R+9), montrant le rendu extérieur, la configuration des balcons et les ouvertures sur fond de ciel couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Exterior elevation showing the vertical massing and balcony alignment.",
+      "draft": "Élévation extérieure montrant la volumétrie verticale et l'alignement des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Vue en contre-plongée de la façade d'un immeuble résidentiel de neuf étages (R+9) à Sidi Abdallah, présentant un enduit beige et pêche, des balcons en retrait dotés de garde-corps en métal sombre ainsi qu'un éclairage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Articulation des façades des immeubles de logements publics (R+9).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "draft": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
+      "draft": "Vue en contre-plongée de la façade d'un immeuble résidentiel de neuf étages (R+9) à Sidi Abdallah, présentant un enduit beige et pêche, des balcons en retrait dotés de garde-corps en métal sombre ainsi qu'un éclairage extérieur.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Facade articulation of the R+9 public promotional housing blocks.",
+      "draft": "Articulation des façades des immeubles de logements publics (R+9).",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

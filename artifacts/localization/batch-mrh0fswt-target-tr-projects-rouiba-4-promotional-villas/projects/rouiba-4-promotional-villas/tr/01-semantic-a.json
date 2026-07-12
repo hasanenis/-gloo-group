@@ -1,0 +1,503 @@
+{
+  "jobId": "batch-mrh0fswt-target-tr-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-11T23:43:16.259Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "4 Promotional Villas and Network Works | Rouiba",
+      "draft": "4 Adet Tanıtım Villası ve Şebeke İşleri | Rouiba",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical execution details and construction gallery for the 4 promotional villas in Rouiba, delivered under a comprehensive all-trades and civil networks contract.",
+      "draft": "Rouiba'daki 4 adet tanıtım villasının —tüm yapım işlerini ve altyapı şebekelerini kapsayan kapsamlı bir sözleşme çerçevesinde teslim edilen— teknik uygulama detayları ve inşaat süreci galerisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "4 Promotional Villas and Network Works | Rouiba",
+      "draft": "4 Adet Tanıtım Villası ve Şebeke İşleri | Rouiba",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical execution details and construction gallery for the 4 promotional villas in Rouiba, delivered under a comprehensive all-trades and civil networks contract.",
+      "draft": "Rouiba'daki 4 adet tanıtım villasının —tüm yapım işlerini ve altyapı şebekelerini kapsayan kapsamlı bir sözleşme çerçevesinde teslim edilen— teknik uygulama detayları ve inşaat süreci galerisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "rouiba-4-promotional-villas",
+      "draft": "Rouiba 4 Tanıtım Villaları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "4 Promotional Villas and Network Works",
+      "draft": "4 Tanıtım Villası ve Ağ Çalışmaları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL DEVELOPMENT",
+      "draft": "Konut Geliştirme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A residential development of 4 private promotional villas in Rouiba, executed under a complete all-trades package (TCE) including roads and utility networks (VRD).",
+      "draft": "Rouiba'da; yollar ve altyapı şebekeleri (VRD) dahil olmak üzere, tüm yapım kalemlerini kapsayan bütüncül bir paket (TCE) kapsamında gerçekleştirilen, 4 adet özel konut villasından oluşan bir proje.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The project scope encompasses structural execution, facade articulation, and integrated site infrastructure to establish a cohesive residential enclave.",
+      "draft": "Proje kapsamı, bütünlüklü bir konut yerleşimi oluşturmak amacıyla yapısal uygulamayı, cephe kurgusunu ve entegre saha altyapısını içermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The development was executed as a comprehensive site package, spanning reinforced-concrete structural works, internal and external finishes, MEP installations, and dedicated roads and utility networks (VRD).",
+      "draft": "Proje; betonarme yapı işleri, iç ve dış ince işler, MEP (mekanik, elektrik ve sıhhi tesisat) kurulumları ile özel yollar ve altyapı şebekelerini (VRD) kapsayan kapsamlı bir saha paketi olarak gerçekleştirildi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "Architectural massing utilizes clean contemporary volumes, balancing private residential zones with integrated vehicle and pedestrian circulation networks.",
+      "draft": "Mimari kütle kurgusu, yalın ve çağdaş hacimlerden yararlanarak özel konut alanları ile entegre araç ve yaya dolaşım ağları arasında bir denge kurmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A precise residential programme where structural durability and site infrastructure are aligned from initial earthworks to final handover.",
+      "draft": "İlk hafriyat çalışmalarından nihai teslimata kadar yapısal dayanıklılık ile saha altyapısının uyum içinde ele alındığı, hassas bir konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical execution details and construction gallery for the 4 promotional villas in Rouiba, delivered under a comprehensive all-trades and civil networks contract.",
+      "draft": "Rouiba'daki 4 adet tanıtım villasının —tüm yapım işlerini ve altyapı şebekelerini kapsayan kapsamlı bir sözleşme çerçevesinde teslim edilen— teknik uygulama detayları ve inşaat süreci galerisi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Programme Type",
+      "draft": "Program Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Villas promotionnelles libres",
+      "draft": "Müsait promosyonlu villalar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Private Promotional Villas",
+      "draft": "Özel Tanıtım Villaları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Rouiba, Algiers",
+      "draft": "Rouiba, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Scale",
+      "draft": "Ölçek",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "4 individual villas",
+      "draft": "4 müstakil villa",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion Year",
+      "draft": "Tamamlanma Yılı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2023",
+      "draft": "2023",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Contract Scope",
+      "draft": "Sözleşme Kapsamı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "All-Trades Delivery (TCE) and Roads and Utility Networks (VRD)",
+      "draft": "Tüm Yapım İşleri (TCE) ile Yol ve Altyapı Şebekeleri (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Primary Use",
+      "draft": "Birincil Kullanım",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Private Residential",
+      "draft": "Özel Konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Technical Scope",
+      "draft": "Teknik Kapsam",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "4 private promotional villas",
+      "draft": "4 adet özel tanıtım villası",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Integrated roads and utility networks (VRD) with dedicated pedestrian access",
+      "draft": "Özel yaya erişimine sahip entegre yollar ve altyapı ağları (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Reinforced-concrete structural frames with articulated contemporary facades",
+      "draft": "Eklemlenmiş çağdaş cephelere sahip betonarme yapısal çerçeveler",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Full all-trades delivery (TCE) completed in 2023",
+      "draft": "2023 yılında tüm branşları kapsayan tam teslimat (TCE) tamamlandı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is 4 Promotional Villas and Network Works?",
+      "draft": "4 Tanıtım Villası ve Ağ Çalışmaları nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project consists of 4 private promotional villas delivered with complete all-trades works and integrated site infrastructure.",
+      "draft": "Proje, tüm yapım işleri tamamlanmış ve saha altyapısı entegre edilmiş şekilde teslim edilen 4 adet özel tanıtım villasından oluşmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on site?",
+      "draft": "Sahada hangi inşaat çalışmaları gerçekleştirildi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The scope covered reinforced-concrete structural engineering, interior and exterior finishes, MEP installations, and dedicated roads and utility networks (VRD).",
+      "draft": "Kapsam; betonarme yapı mühendisliği, iç ve dış cephe kaplamaları, MEP tesisatları ile özel yollar ve altyapı şebekelerini (VRD) içeriyordu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How is the site circulation structured?",
+      "draft": "Arazi içi dolaşım nasıl kurgulanmıştır?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The master plan integrates dedicated vehicle and pedestrian access routes to ensure clear circulation and privacy between the 4 residential units.",
+      "draft": "Master plan, 4 konut birimi arasında net bir dolaşım ve mahremiyet sağlamak amacıyla, araç ve yayalara özel erişim yollarını bütünleştirmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/01-cizim.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Architectural elevation drawing of the promotional villas in Rouiba.",
+      "draft": "Rouiba'daki tanıtım villalarının mimari cephe çizimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed glazing and decorative pergolas.",
+      "draft": "Rouiba'da tamamlanmış, çok katlı bir tanıtım villasının; içeriye doğru girintili cam yüzeyleri ve dekoratif pergolaları gösteren dış cephesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Completed facade articulation of a promotional villa.",
+      "draft": "Tanıtım amaçlı bir villanın tamamlanmış cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Elevated view of the completed villa cluster in Rouiba, showing flat rooflines and balcony structures.",
+      "draft": "Rouiba'daki tamamlanmış villa grubunun; düz çatı hatlarını ve balkon yapılarını gösteren, yüksekten çekilmiş görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "The completed villa cluster in Rouiba, demonstrating contemporary massing.",
+      "draft": "Rouiba'da çağdaş kütle kurgusunu yansıtan tamamlanmış villa grubu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Reinforced-concrete structural works and column formwork underway on the Rouiba villa site.",
+      "draft": "Rouiba villa şantiyesinde betonarme yapı işleri ve kolon kalıp çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural concrete execution on site.",
+      "draft": "Sahada yapısal beton uygulaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed glazing and decorative pergolas.",
+      "draft": "Rouiba'da tamamlanmış, çok katlı bir tanıtım villasının; içeriye doğru girintili cam yüzeyleri ve dekoratif pergolaları gösteren dış cephesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Completed facade articulation of a promotional villa.",
+      "draft": "Tanıtım amaçlı bir villanın tamamlanmış cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Elevated view of the completed villa cluster in Rouiba, showing flat rooflines and balcony structures.",
+      "draft": "Rouiba'daki tamamlanmış villa grubunun; düz çatı hatlarını ve balkon yapılarını gösteren, yüksekten çekilmiş görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "The completed villa cluster in Rouiba, demonstrating contemporary massing.",
+      "draft": "Rouiba'da çağdaş kütle kurgusunu yansıtan tamamlanmış villa grubu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/01-cizim.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Architectural elevation drawing of the promotional villas in Rouiba.",
+      "draft": "Rouiba'daki tanıtım villalarının mimari cephe çizimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Exterior view of a promotional villa during the final stages of facade finishing, with a tower crane in the background.",
+      "draft": "Arka planda bir kule vincin yer aldığı, cephe kaplama işlemlerinin son aşamasındaki bir tanıtım villasının dış görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Facade finishing works in progress.",
+      "draft": "Cephe bitirme çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed glazing and decorative pergolas.",
+      "draft": "Rouiba'da tamamlanmış, çok katlı bir tanıtım villasının; içeriye doğru girintili cam yüzeyleri ve dekoratif pergolaları gösteren dış cephesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Completed facade articulation of a promotional villa.",
+      "draft": "Tanıtım amaçlı bir villanın tamamlanmış cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Elevated view of the completed villa cluster in Rouiba, showing flat rooflines and balcony structures.",
+      "draft": "Rouiba'daki tamamlanmış villa grubunun; düz çatı hatlarını ve balkon yapılarını gösteren, yüksekten çekilmiş görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "The completed villa cluster in Rouiba, demonstrating contemporary massing.",
+      "draft": "Rouiba'da çağdaş kütle kurgusunu yansıtan tamamlanmış villa grubu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/01-cizim.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Architectural elevation drawing of the promotional villas in Rouiba.",
+      "draft": "Rouiba'daki tanıtım villalarının mimari cephe çizimi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A multi-storey villa structure during the final stages of exterior plastering and site clearance.",
+      "draft": "Dış cephe sıvası ve şantiye sahasının temizlenmesi işlemlerinin son aşamalarındaki çok katlı bir villa yapısı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Exterior finishing and site preparation works.",
+      "draft": "Dış cephe kaplama ve saha hazırlık çalışmaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed glazing and decorative pergolas.",
+      "draft": "Rouiba'da tamamlanmış, çok katlı bir tanıtım villasının; içeriye doğru girintili cam yüzeyleri ve dekoratif pergolaları gösteren dış cephesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Completed facade articulation of a promotional villa.",
+      "draft": "Tanıtım amaçlı bir villanın tamamlanmış cephe kurgusu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Elevated view of the completed villa cluster in Rouiba, showing flat rooflines and balcony structures.",
+      "draft": "Rouiba'daki tamamlanmış villa grubunun; düz çatı hatlarını ve balkon yapılarını gösteren, yüksekten çekilmiş görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "The completed villa cluster in Rouiba, demonstrating contemporary massing.",
+      "draft": "Rouiba'da çağdaş kütle kurgusunu yansıtan tamamlanmış villa grubu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Reinforced-concrete structural works and column formwork underway on the Rouiba villa site.",
+      "draft": "Rouiba villa şantiyesinde betonarme yapı işleri ve kolon kalıp çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Structural concrete execution on site.",
+      "draft": "Sahada yapısal beton uygulaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+      "draft": "/projects/rouiba-4-promotional-villas/01-cizim.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Architectural elevation drawing of the promotional villas in Rouiba.",
+      "draft": "Rouiba'daki tanıtım villalarının mimari cephe çizimi.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

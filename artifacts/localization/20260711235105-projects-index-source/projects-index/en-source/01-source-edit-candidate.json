@@ -1,0 +1,24 @@
+{
+  "jobId": "20260711235105-projects-index-source",
+  "pageId": "projects-index",
+  "locale": "en",
+  "sourceRevision": "v1-88f3a04d",
+  "generatedAt": "2026-07-11T20:51:08.617Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "fe680378dab1bdf8",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Projects | Igloo Construction",
+    "description": "Residential programmes, villas, commercial premises, and roads and utility networks delivered across Algeria.",
+    "socialTitle": "Projects | Igloo Construction",
+    "socialDescription": "Residential programmes, villas, commercial premises, and roads and utility networks delivered across Algeria."
+  },
+  "content": {
+    "eyebrow": "Projects",
+    "heading": "A portfolio built on delivery.",
+    "lead": "Residential programmes, villas, commercial premises, and roads and utility networks delivered across Algeria."
+  },
+  "model": "gemini-2.5-pro"
+}

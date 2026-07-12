@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgytk4w-target-fr-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-11T22:57:58.716Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

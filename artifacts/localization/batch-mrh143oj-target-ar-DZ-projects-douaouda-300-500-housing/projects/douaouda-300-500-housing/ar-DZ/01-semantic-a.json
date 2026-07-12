@@ -1,0 +1,569 @@
+{
+  "jobId": "batch-mrh143oj-target-ar-DZ-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-12T00:02:09.868Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 وحدة سكنية ترقوية مدعمة (LPA) | دواودة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"300/500\" للإسكان الترويجي المدعوم؛ إذ يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة الموفرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 وحدة سكنية ترقوية مدعمة (LPA) | دواودة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"300/500\" للإسكان الترويجي المدعوم؛ إذ يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة الموفرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "douaouda-300-500-housing",
+      "draft": "مشروع 300-500 وحدة سكنية في دواودة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "300/500 Assisted Promotional Housing",
+      "draft": "مشروع 300/500 وحدة سكنية ترويجية مدعومة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL AND COMMERCIAL PROGRAMME",
+      "draft": "برنامج العقارات السكنية والتجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "The completed 300-home phase of a 500-home Assisted Promotional Housing (LPA) programme in Douaouda, comprising ground floor plus 8 upper floors (R+8) residential blocks, integrated commercial premises, and comprehensive roads and utility networks (VRD).",
+      "draft": "المرحلة المنجزة -التي تضم 300 وحدة سكنية- من برنامج السكن الترقوي المدعم (LPA) في \"دواودة\" (بإجمالي 500 وحدة)، وتشمل مباني سكنية مكونة من طابق أرضي و8 طوابق علوية (R+8)، ومحلات تجارية متكاملة، وشبكات شاملة للطرق والمرافق (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "يُقيم مشروع \"دواودة\" المرحلة المنجزة -التي تضم 300 وحدة سكنية- ضمن برنامج للسكن الترقوي المدعوم بإجمالي 500 وحدة، وذلك في موقع ساحلي يجمع بين السكن العائلي والمساحات المخصصة للأنشطة المهنية، إلى جانب أعمال التهيئة الخارجية المنظمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The project was executed under a complete all-trades package (TCE), encompassing reinforced concrete structural works, secondary trades, building services coordination, and exterior finishing.",
+      "draft": "تم تنفيذ المشروع بموجب حزمة شاملة تغطي كافة التخصصات الإنشائية والفنية (TCE)، بما في ذلك الأعمال الهيكلية للخرسانة المسلحة، والأعمال التكميلية، وتنسيق خدمات المبنى، والتشطيبات الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The R+8 blocks are configured with F3 and F4 apartment layouts. The ground-level commercial spaces establish active street-level frontage, integrating local retail and services directly into the residential fabric.",
+      "draft": "تتألف المباني السكنية (المكونة من طابق أرضي و8 طوابق علوية) من شقق بتصاميم (F3) و(F4). وتُشكّل المساحات التجارية في الطابق الأرضي واجهةً حيويةً تطل على الشارع، مما يدمج متاجر التجزئة والخدمات المحلية مباشرةً في النسيج السكني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A multi-storey residential development delivered through unified structural engineering, building services integration, and site circulation works.",
+      "draft": "مشروع سكني متعدد الطوابق تم إنجازه من خلال هندسة إنشائية موحدة، وتكامل خدمات المبنى، وأعمال تنظيم حركة التنقل داخل الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "اطلع على معرض الصور والتفاصيل الفنية ومعلومات الموقع الخاصة بمشروع \"300/500\" للإسكان الترويجي المدعوم؛ إذ يجسد المشروع نموذجاً لتنفيذ مشاريع سكنية ومتعددة الاستخدامات تقودها الجهة الموفرة للمشروع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "عميل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "السكن الترويجي المدعوم (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "السكن الترويجي المدعوم (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douaouda, Tipaza, Algeria",
+      "draft": "دواودة، تيبازة، الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme",
+      "draft": "برنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "300 homes delivered within a 500-home master plan",
+      "draft": "تسليم 300 وحدة سكنية ضمن مخطط رئيسي يضم 500 وحدة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2019",
+      "draft": "2019",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Works Scope",
+      "draft": "نطاق الأعمال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "All-trades delivery (TCE) and roads and utility networks (VRD)",
+      "draft": "تنفيذ كافة الأعمال الإنشائية (TCE) وأعمال الطرق وشبكات المرافق (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "عميل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "300 apartments completed within the 500-home LPA framework",
+      "draft": "إنجاز 300 شقة ضمن إطار مشروع الـ 500 وحدة سكنية التابع لـ LPA",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Ground floor plus 8 upper floors (R+8) blocks with F3 and F4 layouts",
+      "draft": "مبانٍ مكونة من طابق أرضي و8 طوابق علوية (R+8)، بتصاميم F3 وF4",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-level commercial and professional premises",
+      "draft": "مساحات تجارية ومهنية في الطابق الأرضي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including civil, structural, and VRD works",
+      "draft": "تنفيذ كافة الأعمال الإنشائية والهندسية (TCE)، بما في ذلك الأعمال المدنية، والأعمال الهيكلية، وأعمال الطرق والمرافق (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Site Context",
+      "draft": "سياق الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Direct connection to regional road infrastructure",
+      "draft": "ربط مباشر بالبنية التحتية للطرق الإقليمية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.1",
+      "source": "Coastal orientation with views of the Mediterranean Sea",
+      "draft": "موقع مواجه للساحل مع إطلالات على البحر الأبيض المتوسط",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 300/500 Assisted Promotional Housing project?",
+      "draft": "ما هو نطاق مشروع الإسكان الترويجي المدعوم (300/500)؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It represents the completed 300-home phase of a larger 500-home Assisted Promotional Housing (LPA) development in Douaouda, featuring R+8 residential blocks and integrated commercial premises.",
+      "draft": "يمثل هذا المشروع المرحلة المنجزة —التي تضم 300 وحدة سكنية— من مشروع أكبر للسكن الترقوي المدعم (LPA) في \"دواودة\" يشتمل على 500 وحدة سكنية، موزعة على مبانٍ سكنية بارتفاع أرضي و8 طوابق علوية (R+8) ومرافق تجارية متكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction services were provided for this development?",
+      "draft": "ما هي خدمات البناء التي قُدِّمت لهذا المشروع التطويري؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project was executed under an all-trades delivery (TCE) contract, covering reinforced concrete structures, secondary trades, building services, and roads and utility networks (VRD).",
+      "draft": "تم تنفيذ المشروع بموجب عقد شامل لكافة التخصصات الإنشائية والفنية (TCE)، شمل الهياكل الخرسانية المسلحة، والأعمال التكميلية، وخدمات المبنى، بالإضافة إلى الطرق وشبكات المرافق (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Who is the client for this housing programme?",
+      "draft": "من هو العميل المستفيد من برنامج الإسكان هذا؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The development was delivered for the National Housing Improvement and Development Agency (AADL) under the state-assisted promotional housing framework.",
+      "draft": "سُلِّم المشروع إلى الوكالة الوطنية لتحسين السكن وتطويره (AADL) في إطار برنامج السكن الترقوي المدعوم من الدولة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How are the residential blocks configured?",
+      "draft": "كيف تم تصميم الكتل السكنية؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "يُقيم مشروع \"دواودة\" المرحلة المنجزة -التي تضم 300 وحدة سكنية- ضمن برنامج للسكن الترقوي المدعوم بإجمالي 500 وحدة، وذلك في موقع ساحلي يجمع بين السكن العائلي والمساحات المخصصة للأنشطة المهنية، إلى جانب أعمال التهيئة الخارجية المنظمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "لقطة واسعة لموقع بناء كبير يضم عدة مبانٍ سكنية خرسانية متعددة الطوابق في مراحل متفاوتة من الإنجاز الإنشائي. وتظهر في الخلفية رافعة برجية شاهقة تمتد فوق المباني، بينما تغطي الأرضية تربة ذات لون بني محمر، وتكتسي السماء بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "تجري حالياً أعمال الخرسانة الإنشائية في المباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "لقطة عمودية لموقع بناء تحت سماء زرقاء صافية. تظهر في المقدمة تربة محفورة بلون بني محمر وبعض الغطاء النباتي الأخضر. وفي المنطقة الوسطى، يبرز هيكل خرساني رمادي شاهق (يُرجح أنه قلب المبنى الإنشائي) تعلوه قوالب صب حمراء، وإلى يمينه مبنى آخر متعدد الطوابق يتميز بإطارات خرسانية وجدران حشو من الطوب الأحمر. وتمتد عبر السماء رافعة برجية زرقاء كبيرة تحمل اسم \"UNEN COMANSA\" على ذراعها، وتظهر أسفلها شاحنة مضخة خرسانة وشاحنتان لخلط الأسمنت. أما في الخلفية البعيدة، فيظهر البحر الأزرق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "تجري حالياً أعمال الهيكل الإنشائي وملء الفراغات بأعمال البناء (الميسونري)، مع إظهار سياق الموقع الساحلي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "لقطة جوية تُظهر عدة مجمعات سكنية كبيرة ذات لون بيج وأسطح بنية، تحيط بها أرض غير معبدة وبعض مواد البناء. وتظهر في المقدمة مبانٍ أقدم وأصغر حجماً، بينما يبدو مسطح مائي في الخلفية البعيدة تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "لقطة جوية للمجمعات السكنية المنجزة (بارتفاع أرضي + 8 طوابق) في دواودة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "مجموعة من المباني السكنية متعددة الطوابق ذات واجهات فاتحة اللون ولمسات بنية، تظهر في المشهد من زاوية منخفضة. تظهر في المقدمة ساحة موقع بناء ترابي تتناثر فيها أكوام من الرمل والطوب وأكياس بيضاء، بينما تبدو السماء ملبدة بالغيوم فوق المباني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "أعمال تشكيل الواجهات والتشطيبات الخارجية للمباني المنجزة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "لقطة واسعة لموقع بناء كبير يضم عدة مبانٍ سكنية خرسانية متعددة الطوابق في مراحل متفاوتة من الإنجاز الإنشائي. وتظهر في الخلفية رافعة برجية شاهقة تمتد فوق المباني، بينما تغطي الأرضية تربة ذات لون بني محمر، وتكتسي السماء بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "تجري حالياً أعمال الخرسانة الإنشائية في المباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "لقطة عمودية لموقع بناء تحت سماء زرقاء صافية. تظهر في المقدمة تربة محفورة بلون بني محمر وبعض الغطاء النباتي الأخضر. وفي المنطقة الوسطى، يبرز هيكل خرساني رمادي شاهق (يُرجح أنه قلب المبنى الإنشائي) تعلوه قوالب صب حمراء، وإلى يمينه مبنى آخر متعدد الطوابق يتميز بإطارات خرسانية وجدران حشو من الطوب الأحمر. وتمتد عبر السماء رافعة برجية زرقاء كبيرة تحمل اسم \"UNEN COMANSA\" على ذراعها، وتظهر أسفلها شاحنة مضخة خرسانة وشاحنتان لخلط الأسمنت. أما في الخلفية البعيدة، فيظهر البحر الأزرق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "تجري حالياً أعمال الهيكل الإنشائي وملء الفراغات بأعمال البناء (الميسونري)، مع إظهار سياق الموقع الساحلي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "لقطة جوية تُظهر عدة مجمعات سكنية كبيرة ذات لون بيج وأسطح بنية، تحيط بها أرض غير معبدة وبعض مواد البناء. وتظهر في المقدمة مبانٍ أقدم وأصغر حجماً، بينما يبدو مسطح مائي في الخلفية البعيدة تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "لقطة جوية للمجمعات السكنية المنجزة (بارتفاع أرضي + 8 طوابق) في دواودة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "draft": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "View of several modern, multi-story residential apartment buildings with light-colored facades and brown accents, under an overcast sky. Construction materials like bricks, sand, and white bags are visible in the foreground.",
+      "draft": "مشهد لعدة مبانٍ سكنية حديثة ومتعددة الطوابق، تتميز بواجهات فاتحة اللون ولمسات بنية، وتقع تحت سماء ملبدة بالغيوم. وتظهر في المقدمة مواد بناء مثل الطوب والرمل والأكياس البيضاء.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance and landscaping.",
+      "draft": "مجمعات سكنية مكتملة قبل أعمال التنظيف النهائي للموقع وتنسيق الحدائق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "لقطة عمودية لموقع بناء تحت سماء زرقاء صافية. تظهر في المقدمة تربة محفورة بلون بني محمر وبعض الغطاء النباتي الأخضر. وفي المنطقة الوسطى، يبرز هيكل خرساني رمادي شاهق (يُرجح أنه قلب المبنى الإنشائي) تعلوه قوالب صب حمراء، وإلى يمينه مبنى آخر متعدد الطوابق يتميز بإطارات خرسانية وجدران حشو من الطوب الأحمر. وتمتد عبر السماء رافعة برجية زرقاء كبيرة تحمل اسم \"UNEN COMANSA\" على ذراعها، وتظهر أسفلها شاحنة مضخة خرسانة وشاحنتان لخلط الأسمنت. أما في الخلفية البعيدة، فيظهر البحر الأزرق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "تجري حالياً أعمال الهيكل الإنشائي وملء الفراغات بأعمال البناء (الميسونري)، مع إظهار سياق الموقع الساحلي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "لقطة واسعة لموقع بناء كبير يضم عدة مبانٍ سكنية خرسانية متعددة الطوابق في مراحل متفاوتة من الإنجاز الإنشائي. وتظهر في الخلفية رافعة برجية شاهقة تمتد فوق المباني، بينما تغطي الأرضية تربة ذات لون بني محمر، وتكتسي السماء بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "تجري حالياً أعمال الخرسانة الإنشائية في المباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "لقطة جوية تُظهر عدة مجمعات سكنية كبيرة ذات لون بيج وأسطح بنية، تحيط بها أرض غير معبدة وبعض مواد البناء. وتظهر في المقدمة مبانٍ أقدم وأصغر حجماً، بينما يبدو مسطح مائي في الخلفية البعيدة تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "لقطة جوية للمجمعات السكنية المنجزة (بارتفاع أرضي + 8 طوابق) في دواودة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "لقطة عمودية لموقع بناء تحت سماء زرقاء صافية. تظهر في المقدمة تربة محفورة بلون بني محمر وبعض الغطاء النباتي الأخضر. وفي المنطقة الوسطى، يبرز هيكل خرساني رمادي شاهق (يُرجح أنه قلب المبنى الإنشائي) تعلوه قوالب صب حمراء، وإلى يمينه مبنى آخر متعدد الطوابق يتميز بإطارات خرسانية وجدران حشو من الطوب الأحمر. وتمتد عبر السماء رافعة برجية زرقاء كبيرة تحمل اسم \"UNEN COMANSA\" على ذراعها، وتظهر أسفلها شاحنة مضخة خرسانة وشاحنتان لخلط الأسمنت. أما في الخلفية البعيدة، فيظهر البحر الأزرق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "تجري حالياً أعمال الهيكل الإنشائي وملء الفراغات بأعمال البناء (الميسونري)، مع إظهار سياق الموقع الساحلي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "لقطة واسعة لموقع بناء كبير يضم عدة مبانٍ سكنية خرسانية متعددة الطوابق في مراحل متفاوتة من الإنجاز الإنشائي. وتظهر في الخلفية رافعة برجية شاهقة تمتد فوق المباني، بينما تغطي الأرضية تربة ذات لون بني محمر، وتكتسي السماء بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "تجري حالياً أعمال الخرسانة الإنشائية في المباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "لقطة جوية تُظهر عدة مجمعات سكنية كبيرة ذات لون بيج وأسطح بنية، تحيط بها أرض غير معبدة وبعض مواد البناء. وتظهر في المقدمة مبانٍ أقدم وأصغر حجماً، بينما يبدو مسطح مائي في الخلفية البعيدة تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "لقطة جوية للمجمعات السكنية المنجزة (بارتفاع أرضي + 8 طوابق) في دواودة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "مجموعة من المباني السكنية متعددة الطوابق ذات واجهات فاتحة اللون ولمسات بنية، تظهر في المشهد من زاوية منخفضة. تظهر في المقدمة ساحة موقع بناء ترابي تتناثر فيها أكوام من الرمل والطوب وأكياس بيضاء، بينما تبدو السماء ملبدة بالغيوم فوق المباني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "أعمال تشكيل الواجهات والتشطيبات الخارجية للمباني المنجزة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "لقطة واسعة لموقع بناء كبير يضم عدة مبانٍ سكنية خرسانية متعددة الطوابق في مراحل متفاوتة من الإنجاز الإنشائي. وتظهر في الخلفية رافعة برجية شاهقة تمتد فوق المباني، بينما تغطي الأرضية تربة ذات لون بني محمر، وتكتسي السماء بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "تجري حالياً أعمال الخرسانة الإنشائية في المباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrgznrga-target-tr-about",
+  "pageId": "about",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:21:27.914Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "SARL Igloo Yapi Construction | Corporate Profile",
+      "draft": "SARL Igloo Yapı İnşaat | Kurumsal Profil",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+      "draft": "Entegre mühendislik, tedarik ve saha operasyonları aracılığıyla konut ve karma kullanımlı projeler hayata geçiren bir Cezayirli inşaat şirketi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "SARL Igloo Yapi Construction | Corporate Profile",
+      "draft": "SARL Igloo Yapı İnşaat | Kurumsal Profil",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+      "draft": "Entegre mühendislik, tedarik ve saha operasyonları aracılığıyla konut ve karma kullanımlı projeler hayata geçiren bir Cezayirli inşaat şirketi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Corporate Profile",
+      "draft": "Kurumsal Profil",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Integrated engineering and site execution teams.",
+      "draft": "Entegre mühendislik ve saha uygulama ekipleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.body",
+      "source": "Founded in 2018 in Algiers, SARL Igloo Yapi Construction delivers residential and mixed-use projects through coordinated engineering, procurement and site teams.",
+      "draft": "2018 yılında Cezayir'de kurulan SARL Igloo Yapi Construction; mühendislik, tedarik ve saha ekiplerinin koordineli çalışmasıyla konut ve karma kullanımlı projeler hayata geçirmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { getProjectHeroImage } from '../data/projectHeroImage';
 import { getManualProjectHeroSettings } from '../data/manualProjectImages';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { runBatPageTransition } from '../transitions/batPageTransition';
+import { localizedPath, useLocale } from '../i18n';
 
 function getPathname(path: string) {
   const pathWithoutHash = path.split('#')[0] || '/';
@@ -29,11 +30,13 @@ function decodeSlug(slug: string) {
 // Only individual project pages get the cinematic hero transition;
 // every other route uses the plain white wipe.
 function isProjectDetailPath(pathname: string) {
-  return /^\/(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname);
+  return /^\/(?:en|fr|tr|ar)(?:\/)?(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname)
+    || /^\/(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname);
 }
 
 function resolveTransitionProject(pathname: string) {
-  const projectMatch = pathname.match(/^\/(?:bat-demo\/)?projects\/([^/]+)\/?$/);
+  const projectMatch = pathname.match(/^\/(?:en|fr|tr|ar)\/(?:bat-demo\/)?projects\/([^/]+)\/?$/)
+    ?? pathname.match(/^\/(?:bat-demo\/)?projects\/([^/]+)\/?$/);
   if (!projectMatch) return undefined;
 
   const slug = decodeSlug(projectMatch[1]);
@@ -64,11 +67,13 @@ export function useSiteNavigate() {
   const location = useLocation();
   const lenis = useLenis();
   const prefersReducedMotion = usePrefersReducedMotion();
+  const { locale } = useLocale();
 
   return useCallback(
     (path: string, imageSrc?: string) => {
+      const localizedTargetPath = localizedPath(locale, path);
       const [, hash] = path.split('#');
-      const targetPathname = getPathname(path);
+      const targetPathname = getPathname(localizedTargetPath);
 
       // Same route already active: no page to transition to — just scroll.
       if (targetPathname === location.pathname) {
@@ -92,7 +97,7 @@ export function useSiteNavigate() {
       const isProjectDetail = isProjectDetailPath(targetPathname);
 
       void runBatPageTransition({
-        targetPath: path,
+        targetPath: localizedTargetPath,
         variant: isProjectDetail ? 'hero' : 'plain',
         imageSrc: isProjectDetail
           ? imageSrc ?? getProjectTransitionImage(targetPathname)
@@ -105,6 +110,6 @@ export function useSiteNavigate() {
         navigate,
       });
     },
-    [location.pathname, lenis, navigate, prefersReducedMotion],
+    [locale, location.pathname, lenis, navigate, prefersReducedMotion],
   );
 }

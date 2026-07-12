@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgzzbde-target-tr-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-11T23:30:26.896Z",
+  "status": "pass",
+  "issues": []
+}

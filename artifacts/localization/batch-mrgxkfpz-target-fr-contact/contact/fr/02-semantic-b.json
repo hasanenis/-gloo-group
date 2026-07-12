@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrgxkfpz-target-fr-contact",
+  "pageId": "contact",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T22:22:53.321Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Contact | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "Contactez notre siège social à Birkhadem pour soumettre les coordonnées du site, les exigences du programme et la documentation technique pour l’évaluation du projet."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Contact | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Contactez notre siège social à Birkhadem pour soumettre les coordonnées du site, les exigences du programme et la documentation technique pour l’évaluation du projet."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "Contact"
+    },
+    {
+      "id": "content.heading",
+      "text": "Initier une consultation de projet"
+    },
+    {
+      "id": "content.lead",
+      "text": "Prenez contact avec notre équipe technique à Birkhadem. Soumettez les coordonnées de votre site, le programme de développement et la documentation de conception disponible afin d’initier notre processus interne d’ingénierie et d’estimation."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "jobId": "batch-mrgxkwq6-target-fr-not-found",
+  "pageId": "not-found",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T22:23:15.379Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Page non trouvée | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "La page demandée est introuvable. Retournez sur le portail de la SARL Igloo Yapi Construction pour consulter nos programmes de logements et nos projets de construction."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Page non trouvée | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "La page demandée est introuvable. Retournez sur le portail de la SARL Igloo Yapi Construction pour consulter nos programmes de logements et nos projets de construction."
+    },
+    {
+      "id": "content.heading",
+      "text": "Page non trouvée"
+    },
+    {
+      "id": "content.cta",
+      "text": "Retourner à la page d’accueil"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrgylhuk-target-fr-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-41865e99",
+  "generatedAt": "2026-07-11T22:51:42.580Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Rahmania Commercial Centres | Douira, Algiers",
+      "draft": "Centres commerciaux Rahmania | Douira, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "Exécution technique et travaux de second œuvre pour deux centres commerciaux au sein du complexe résidentiel de 2 500 logements à Douira, Alger.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Rahmania Commercial Centres | Douira, Algiers",
+      "draft": "Centres commerciaux Rahmania | Douira, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "Exécution technique et travaux de second œuvre pour deux centres commerciaux au sein du complexe résidentiel de 2 500 logements à Douira, Alger.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "rahmania",
+      "draft": "Rahmania",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "Rahmania Commercial Centres",
+      "draft": "Centres commerciaux Rahmania",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE INFRASTRUCTURE",
+      "draft": "Infrastructure à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "Delivery of the complete secondary works package for two commercial centres, completed in 2025 within the 2,500-home residential development in Douira.",
+      "draft": "Livraison du lot complet de second œuvre pour deux centres commerciaux, achevés en 2025 au sein du projet résidentiel de 2 500 logements à Douira.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services.",
+      "draft": "Deux centres commerciaux au sein du programme de 2 500 logements de Douira, aménagés pour accueillir les commerces et les services de proximité du quartier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "SARL Igloo Yapi Construction executed the complete secondary works package (corps d'état secondaires - CES) for both commercial structures. The scope of work transformed the raw reinforced concrete frames into fully fitted, functional retail environments designed to accommodate local merchants and public services.",
+      "draft": "La SARL Igloo Yapi Construction a réalisé l'ensemble des travaux de second œuvre pour les deux structures commerciales. Ces interventions ont permis de transformer les structures brutes en béton armé en espaces commerciaux fonctionnels et entièrement aménagés, destinés à accueillir des commerçants de proximité ainsi que des services publics.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The building envelopes feature extensive glazed curtain walling integrated with decorative architectural screens. Internally, vertical circulation is anchored by a central staircase, while a structural pyramid glass skylight provides natural daylighting across the retail floor plates.",
+      "draft": "Les façades du bâtiment se distinguent par de vastes murs-rideaux vitrés intégrant des écrans architecturaux décoratifs. À l'intérieur, la circulation verticale s'articule autour d'un escalier central, tandis qu'une verrière pyramidale structurelle assure un apport de lumière naturelle sur les plateaux commerciaux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "Completed in 2025, the project was delivered on schedule, with all secondary trades coordinated to meet modern commercial building standards.",
+      "draft": "Achevé en 2025, le projet a été livré dans les délais, avec une coordination de tous les corps d'état secondaires visant à répondre aux normes modernes des bâtiments commerciaux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical execution and secondary works for two commercial centres within the 2,500-home residential development in Douira, Algiers.",
+      "draft": "Exécution technique et travaux de second œuvre pour deux centres commerciaux au sein du complexe résidentiel de 2 500 logements à Douira, Alger.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Typology",
+      "draft": "Typologie de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Commercial Centres",
+      "draft": "Centres commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Typology",
+      "draft": "Typologie de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Commercial Centres",
+      "draft": "Centres commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douira, Algiers",
+      "draft": "Douira, Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Scope of Works",
+      "draft": "Étendue des travaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "Secondary works package (CES)",
+      "draft": "Lot de travaux secondaires (CES)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "Achèvement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Context",
+      "draft": "Contexte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2,500-home residential programme",
+      "draft": "Programme résidentiel de 2 500 logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Contract Type",
+      "draft": "Type de contrat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Execution",
+      "draft": "Exécution",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "Complete secondary works package (CES)",
+      "draft": "Lot complet de travaux de second œuvre",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Glazed facade installation and architectural screens",
+      "draft": "Installation de façades vitrées et de parements architecturaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Central vertical circulation and structural pyramid skylight",
+      "draft": "Circulation verticale centrale et verrière pyramidale structurelle",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Delivered in 2025, on schedule and to standard",
+      "draft": "Livré en 2025, dans les délais et conformément aux normes",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the Rahmania Commercial Centres project?",
+      "draft": "Quelle est la portée du projet des centres commerciaux Rahmania ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "Secondary works for two commercial centres, completed in 2025 within Douira's 2,500-home residential programme.",
+      "draft": "Travaux de second œuvre pour deux centres commerciaux, achevés en 2025 dans le cadre du programme résidentiel de 2 500 logements de Douira.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What technical works were executed by the contractor?",
+      "draft": "Quels travaux techniques ont été réalisés par l'entrepreneur ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "SARL Igloo Yapi Construction managed the fit-out of the reinforced concrete structures, including interior partitions, finishes, glazed facades, central staircases, and the installation of a structural pyramid glass skylight.",
+      "draft": "La SARL Igloo Yapi Construction a pris en charge l'aménagement des structures en béton armé, incluant les cloisons intérieures, les finitions, les façades vitrées, les escaliers centraux ainsi que l'installation d'une verrière pyramidale structurelle.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "When was the commercial development completed?",
+      "draft": "Quand le projet de développement commercial a-t-il été achevé ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Two commercial centres in Douira's 2,500-home programme, fitted out to host the district's shops and everyday services.",
+      "draft": "Deux centres commerciaux au sein du programme de 2 500 logements de Douira, aménagés pour accueillir les commerces et les services de proximité du quartier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "draft": "/projets/centres-commerciaux-douira-2500-logements/06-rahmania-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition.",
+      "draft": "Intérieur d'un local commercial terminé, doté d'un sol carrelé, de murs blancs et d'un éclairage de plafond encastré, vu à travers une cloison vitrée à cadre noir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes.",
+      "draft": "Intérieur achevé d'un local commercial, montrant le vitrage intérieur et les finitions.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/18-whatsapp-image-2025-11-12-at-15-23-03.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Exterior view of the completed three-storey commercial building with dark grey cladding panels and copper-toned trim, situated adjacent to residential blocks.",
+      "draft": "Vue extérieure du bâtiment commercial de trois étages achevé, doté de panneaux de revêtement gris foncé et de finitions aux tons cuivrés, situé à proximité d'immeubles résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Completed commercial centre facade integrated within the residential development.",
+      "draft": "Façade du centre commercial achevée, intégrée au complexe résidentiel.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "Atrium intérieur du centre commercial présentant un escalier en béton à plusieurs niveaux doté de mains courantes en acier inoxydable et de grandes baies vitrées périphériques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "Atrium central et noyau de circulation verticale.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building.",
+      "draft": "Escalier courbe avec marches en granit gris et garde-corps en acier inoxydable dans le hall principal de l'immeuble commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Granite-clad curved staircase detail.",
+      "draft": "Détail d'un escalier courbe revêtu de granit.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/13-rahmania-3.webp",
+      "draft": "/projets/centres-commerciaux-douira-2500-logements/13-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Two curved concrete staircases with protective wrapping on the metal handrails during the interior finishing phase.",
+      "draft": "Deux escaliers courbes en béton, avec des protections enveloppant les mains courantes métalliques durant la phase de finition intérieure.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Staircase installation and interior finishing works.",
+      "draft": "Installation d'escaliers et travaux de finition intérieure.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre.",
+      "draft": "Une verrière pyramidale à ossature métallique sombre installée sur le toit en tuiles du centre commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace.",
+      "draft": "Verrière structurelle pyramidale sur le toit-terrasse.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "Atrium intérieur du centre commercial présentant un escalier en béton à plusieurs niveaux doté de mains courantes en acier inoxydable et de grandes baies vitrées périphériques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "Atrium central et noyau de circulation verticale.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/02-img-20251112-wa0001.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A pyramid-shaped glass skylight with a dark metal frame installed on the tiled roof of the commercial centre.",
+      "draft": "Une verrière pyramidale à ossature métallique sombre installée sur le toit en tuiles du centre commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Structural pyramid glass skylight on the roof terrace.",
+      "draft": "Verrière structurelle pyramidale sur le toit-terrasse.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/04-img-20251112-wa0003.webp",
+      "draft": "/projets/centres-commerciaux-douira-2500-logements/04-img-20251112-wa0003.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A newly installed glass pyramid skylight on a flat roof, with residential buildings visible in the background.",
+      "draft": "Une verrière pyramidale en verre récemment installée sur un toit plat, avec des immeubles résidentiels visibles en arrière-plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Skylight installation on the commercial centre roof.",
+      "draft": "Installation d'une verrière sur le toit du centre commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades.",
+      "draft": "Vaste hall d'entrée d'immeuble commercial doté d'un double escalier courbe aux marches en granit sombre, avec un film plastique de protection sur les balustrades métalliques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out.",
+      "draft": "Escaliers courbes jumelés dans le hall principal lors des derniers aménagements.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/16-whatsapp-image-2025-11-12-at-15-20-30.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Curved staircase with grey granite treads and stainless steel balustrades in the main lobby of the commercial building.",
+      "draft": "Escalier courbe avec marches en granit gris et garde-corps en acier inoxydable dans le hall principal de l'immeuble commercial.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Granite-clad curved staircase detail.",
+      "draft": "Détail d'un escalier courbe revêtu de granit.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/03-img-20251112-wa0002.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Close-up of the glass pyramid skylight structure on the tiled roof terrace, with residential blocks in the background.",
+      "draft": "Gros plan sur la structure de la verrière en forme de pyramide située sur la terrasse en toiture carrelée, avec des immeubles résidentiels en arrière-plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Roof terrace skylight detail.",
+      "draft": "Détail de la verrière de toit-terrasse.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/08-rahmania-2.webp",
+      "draft": "/projets/centres-commerciaux-douira-2500-logements/08-rahmania-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "External view of the commercial centre with its glass pyramid roof, positioned between multi-storey residential buildings.",
+      "draft": "Vue extérieure du centre commercial doté d'une toiture en forme de pyramide de verre, situé entre des immeubles résidentiels à plusieurs étages.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Commercial centre integrated within the Douira residential development.",
+      "draft": "Centre commercial intégré au projet résidentiel de Douira.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/12-rahmania-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Spacious commercial lobby featuring twin curved staircases with dark granite steps and protective plastic wrapping on the metal balustrades.",
+      "draft": "Vaste hall d'entrée d'immeuble commercial doté d'un double escalier courbe aux marches en granit sombre, avec un film plastique de protection sur les balustrades métalliques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Twin curved staircases in the main lobby during final fit-out.",
+      "draft": "Escaliers courbes jumelés dans le hall principal lors des derniers aménagements.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "draft": "/projects/douira-commercial-centers-2500-housing/15-whatsapp-image-2025-11-12-at-15-19-49.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Interior atrium of the commercial centre showing a multi-level concrete staircase with stainless steel handrails and large perimeter windows.",
+      "draft": "Atrium intérieur du centre commercial présentant un escalier en béton à plusieurs niveaux doté de mains courantes en acier inoxydable et de grandes baies vitrées périphériques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Central atrium and vertical circulation core.",
+      "draft": "Atrium central et noyau de circulation verticale.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douira-commercial-centers-2500-housing/06-rahmania-1.webp",
+      "draft": "/projets/centres-commerciaux-douira-2500-logements/06-rahmania-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Interior of a completed commercial unit with tiled flooring, white walls, and recessed ceiling lighting, viewed through a black-framed glass partition.",
+      "draft": "Intérieur d'un local commercial terminé, doté d'un sol carrelé, de murs blancs et d'un éclairage de plafond encastré, vu à travers une cloison vitrée à cadre noir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Completed interior of a commercial unit showing internal glazing and finishes.",
+      "draft": "Intérieur achevé d'un local commercial, montrant le vitrage intérieur et les finitions.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

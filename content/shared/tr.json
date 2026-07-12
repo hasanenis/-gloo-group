@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "locale": "tr",
+  "sourceLocale": "en",
+  "revision": "v1-a076c674",
+  "sourceRevision": "v1-2aa11ee9",
+  "status": "approved",
+  "content": {
+    "home": "Ana sayfa",
+    "projects": "Projeler",
+    "company": "Kurumsal",
+    "contact": "İletişim",
+    "services": "Hizmetler",
+    "allProjects": "Tüm projeler",
+    "openProject": "Projeyi aç",
+    "readMore": "Devamını okuyun",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "languageSelector": "Dil seçimi",
+    "projectOverview": "Proje özeti",
+    "projectDetails": "Detaylar ve konum",
+    "construction": "Yapım süreci",
+    "projectGallery": "Proje galerisi",
+    "facilities": "Konut ve altyapı",
+    "nearby": "Yakın çevre",
+    "faq": "Sık sorulan sorular",
+    "relatedProjects": "Öne çıkan projeler",
+    "discuss": "Proje hakkında konuşalım"
+  }
+}

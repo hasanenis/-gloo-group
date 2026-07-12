@@ -2,13 +2,19 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { visualizer } from 'rollup-plugin-visualizer';
+import { lingui } from '@lingui/vite-plugin';
 
 const shouldAnalyzeBundle =
   process.env.BUNDLE_ANALYZE === 'true' || process.env.ANALYZE_BUNDLE === 'true';
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: ['@lingui/babel-plugin-lingui-macro'],
+      },
+    }),
+    lingui(),
     tailwindcss(),
     shouldAnalyzeBundle &&
       visualizer({

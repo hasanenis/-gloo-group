@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "pageId": "not-found",
+  "path": "/not-found",
+  "sourceLocale": "en",
+  "fields": [
+    {
+      "key": "content.heading",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.cta",
+      "kind": "body",
+      "required": true
+    }
+  ]
+}

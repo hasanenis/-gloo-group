@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrgywr0c-target-fr-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-11T23:00:27.916Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content",
+      "severity": "blocker",
+      "type": "project-override",
+      "message": "Required project fact is missing: projet balnéaire actuellement en phase de livraison"
+    }
+  ]
+}

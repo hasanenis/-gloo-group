@@ -1,0 +1,181 @@
+{
+  "pageId": "home",
+  "locale": "tr",
+  "sourceRevision": "v1-dba325a2",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v3-natural-tr",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:31.023Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Cezayir'de Konut, Ticari Yapılar ve Altyapı Projeleri",
+    "description": "SARL Igloo Yapi Construction, Cezayir genelinde konut, ticari yapı ve altyapı projeleri gerçekleştiren Kategori 6 sertifikalı bir ana yüklenicidir.",
+    "socialTitle": "SARL Igloo Yapi Construction | Yapım ve Anahtar Teslim Taahhüt",
+    "socialDescription": "Cezayir genelinde konut, ticari yapı ve altyapı projeleri gerçekleştiren Kategori 6 sertifikalı ana yüklenici."
+  },
+  "content": {
+    "hero": {
+      "eyebrow": "SARL Igloo Yapi Construction",
+      "title": "Cezayir'de Güvenilir Yapım ve Anahtar Teslim Taahhüt",
+      "lead": "Konut, karma kullanım ve altyapı projelerini; mühendislik disiplini, güçlü saha yönetimi ve kalite odaklı uygulama anlayışıyla hayata geçiriyoruz.",
+      "primaryCta": "Projeleri İncele",
+      "secondaryCta": "Bizimle İletişime Geçin",
+      "trustFacts": [
+        {
+          "value": "2018",
+          "label": "Kuruluş"
+        },
+        {
+          "value": "11",
+          "label": "Tamamlanan ve Devam Eden Proje"
+        },
+        {
+          "value": "2.500+",
+          "label": "Konut Birimi"
+        },
+        {
+          "value": "4",
+          "label": "Faaliyet Gösterilen Vilayet"
+        },
+        {
+          "value": "Kategori 6",
+          "label": "Yetki Belgesi"
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Çalışma Anlayışımız",
+      "title": "Mühendislik, planlama ve saha yönetimini tek bir çatı altında birleştiriyoruz",
+      "body": "Toplu konutlardan villalara, ticari yapılardan altyapı çalışmalarına kadar tüm projeleri; planlama, uygulama ve teslim süreçlerini bütüncül bir yaklaşımla yönetiyoruz.",
+      "credential": "Kategori 6 Mesleki Yeterlilik ve Sınıflandırma Belgesi",
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Kuruluş",
+          "detail": "Bir Khadem, Cezayir'deki merkez ofis"
+        },
+        {
+          "value": "11",
+          "label": "Proje",
+          "detail": "Tamamlanan ve devam eden projeler"
+        },
+        {
+          "value": "2.500+",
+          "label": "Konut Birimi",
+          "detail": "Konut ve karma kullanım projeleri"
+        },
+        {
+          "value": "4",
+          "label": "Vilayet",
+          "detail": "Cezayir, Tipaza, Mostaganem ve Boumerdes"
+        }
+      ]
+    },
+    "featuredProjects": {
+      "eyebrow": "Projeler",
+      "title": "Tamamlanan ve Devam Eden Projeler",
+      "lead": "Konut, ticari yapı, villa ve altyapı projelerinden oluşan portföyümüzü inceleyin."
+    },
+    "process": {
+      "eyebrow": "Çalışma Sürecimiz",
+      "title": "Planlamadan teslim aşamasına kadar sistemli proje yönetimi",
+      "lead": "Her projeyi mühendislik planlaması, kalite kontrolü ve saha koordinasyonunu tek bir süreç içinde yöneterek hayata geçiriyoruz.",
+      "steps": [
+        {
+          "id": "coordination",
+          "title": "Ön Hazırlık ve Planlama",
+          "body": "Proje kapsamı, metraj, saha koşulları, iş programı ve lojistik ihtiyaçlar uygulama öncesinde ayrıntılı olarak planlanır."
+        },
+        {
+          "id": "engineering",
+          "title": "Mühendislik Koordinasyonu",
+          "body": "Taşıyıcı sistemler, mekanik ve elektrik tesisatları ile diğer tüm uygulama disiplinleri koordineli biçimde yönetilir."
+        },
+        {
+          "id": "site",
+          "title": "Saha Uygulaması",
+          "body": "İnşaat süreci, saha mühendislerimizin doğrudan gözetiminde proje şartlarına ve kalite standartlarına uygun olarak yürütülür."
+        },
+        {
+          "id": "monitoring",
+          "title": "Kalite ve İş Güvenliği",
+          "body": "Malzeme uygunluğu, uygulama kalitesi, iş güvenliği ve iş programı düzenli olarak takip edilir."
+        },
+        {
+          "id": "handover",
+          "title": "Son Kontroller ve Teslim",
+          "body": "Teknik kontroller ve gerekli belgeler tamamlandıktan sonra proje eksiksiz şekilde işverene teslim edilir."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Kurumsal Profil",
+      "title": "SARL Igloo Yapi Construction",
+      "credential": "Kategori 6 Mesleki Yeterlilik ve Sınıflandırma Belgesi",
+      "paragraphs": [
+        "2018 yılında İnşaat Mühendisi Adem Talay tarafından kurulan SARL Igloo Yapi Construction, Cezayir genelinde konut, ticari yapı, karma kullanım ve altyapı projeleri gerçekleştiren Kategori 6 sertifikalı bir ana yüklenicidir.",
+        "Faaliyetlerini Bir Khadem, Cezayir'deki merkez ofisinden yürüten şirket; planlamadan saha uygulamasına, teknik koordinasyondan anahtar teslim sürecine kadar projenin tüm aşamalarını tek çatı altında yönetmektedir.",
+        "İnşaat mühendisleri, mimarlar, saha yöneticileri, teknik personel ve uzman uygulama ekiplerinden oluşan kadrosuyla kamu kurumları ve özel sektör için güvenilir, düzenli ve kalite odaklı çözümler sunmaktadır."
+      ],
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Kuruluş"
+        },
+        {
+          "value": "11",
+          "label": "Tamamlanan ve Devam Eden Proje"
+        },
+        {
+          "value": "2.500+",
+          "label": "Konut Birimi"
+        }
+      ],
+      "proofs": [
+        {
+          "title": "Kategori 6 Sertifikalı Ana Yüklenici",
+          "body": "Büyük ölçekli konut, ticari yapı ve altyapı projelerini üstlenmeye yönelik resmi mesleki yeterlilik ve sınıflandırma belgesine sahiptir."
+        },
+        {
+          "title": "Uzman Teknik Kadro",
+          "body": "İnşaat mühendisleri, mimarlar, saha yöneticileri, teknik personel ve uygulama ekiplerinden oluşan güçlü bir organizasyon yapısına sahiptir."
+        },
+        {
+          "title": "Konut ve Karma Kullanım Projeleri",
+          "body": "Toplu konut, villa, ticari alan ve altyapı uygulamalarında kapsamlı proje ve saha deneyimi sunar."
+        }
+      ]
+    },
+    "footprint": {
+      "eyebrow": "Faaliyet Alanlarımız",
+      "title": "Cezayir'in Dört Vilayetinde Aktif Operasyon",
+      "lead": "Cezayir, Tipaza, Mostaganem ve Boumerdes'te tamamlanan ve devam eden projelerimizle dört farklı vilayette faaliyet gösteriyoruz.",
+      "selectedLabel": "Seçilen Proje",
+      "openProject": "Proje Detaylarını Görüntüle",
+      "statusCompleted": "Tamamlandı",
+      "statusInProgress": "Devam Ediyor",
+      "stats": [
+        {
+          "value": "11",
+          "label": "Proje"
+        },
+        {
+          "value": "4",
+          "label": "Vilayet"
+        },
+        {
+          "value": "1",
+          "label": "Merkez Ofis"
+        }
+      ]
+    },
+    "footer": {
+      "eyebrow": "İletişim",
+      "title": "Bir Sonraki Projenizi Birlikte Hayata Geçirelim",
+      "lead": "Konut, ticari yapı ve altyapı projeleriniz için teknik ekibimizle iletişime geçin.",
+      "emailLabel": "Teknik Ofise E-posta Gönderin",
+      "phoneLabel": "Merkez Ofisimizi Arayın",
+      "proofLine": "Bir Khadem, Cezayir • Kategori 6 Sertifikalı Ana Yüklenici • Anahtar Teslim Yapım ve VRD Altyapı Hizmetleri"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgxk6wk-target-fr-about",
+  "pageId": "about",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T22:22:41.870Z",
+  "status": "pass",
+  "issues": []
+}

@@ -1,0 +1,569 @@
+{
+  "jobId": "batch-mrgyh1tj-target-fr-projects-douaouda-300-500-housing",
+  "pageId": "projects/douaouda-300-500-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-e82700c4",
+  "generatedAt": "2026-07-11T22:48:15.269Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 Logements promotionnels aidés (LPA) | Douaouda",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les caractéristiques techniques et les informations sur l'emplacement du projet de logements aidés « 300/500 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par le maître d'ouvrage.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "300/500 Assisted Promotional Housing (LPA) | Douaouda",
+      "draft": "300/500 Logements promotionnels aidés (LPA) | Douaouda",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les caractéristiques techniques et les informations sur l'emplacement du projet de logements aidés « 300/500 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par le maître d'ouvrage.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "douaouda-300-500-housing",
+      "draft": "Projet de 300 à 500 logements à Douaouda",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "300/500 Assisted Promotional Housing",
+      "draft": "Logements promotionnels aidés 300/500",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL AND COMMERCIAL PROGRAMME",
+      "draft": "Programme résidentiel et commercial",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "The completed 300-home phase of a 500-home Assisted Promotional Housing (LPA) programme in Douaouda, comprising ground floor plus 8 upper floors (R+8) residential blocks, integrated commercial premises, and comprehensive roads and utility networks (VRD).",
+      "draft": "La phase achevée de 300 logements d'un programme de 500 logements de type Logement Promotionnel Aidé (LPA) à Douaouda, comprenant des immeubles résidentiels en R+8, des locaux commerciaux intégrés ainsi que l'ensemble des travaux de voirie et réseaux divers (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "Le projet de Douaouda concrétise la première phase — achevée et comptant 300 logements — d'un programme de 500 logements en accession aidée situé en bord de mer, associant logements familiaux, locaux professionnels et aménagements extérieurs structurés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The project was executed under a complete all-trades package (TCE), encompassing reinforced concrete structural works, secondary trades, building services coordination, and exterior finishing.",
+      "draft": "Le projet a été réalisé dans le cadre d'un marché tous corps d'état (TCE), incluant le gros œuvre en béton armé, les corps d'état secondaires, la coordination des lots techniques et les finitions extérieures.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The R+8 blocks are configured with F3 and F4 apartment layouts. The ground-level commercial spaces establish active street-level frontage, integrating local retail and services directly into the residential fabric.",
+      "draft": "Les immeubles de neuf niveaux (R+8) sont composés d'appartements de type F3 et F4. Les espaces commerciaux en rez-de-chaussée créent une façade active sur rue, intégrant ainsi les commerces et services de proximité directement au tissu résidentiel.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A multi-storey residential development delivered through unified structural engineering, building services integration, and site circulation works.",
+      "draft": "Un projet résidentiel à plusieurs niveaux réalisé grâce à une approche unifiée alliant ingénierie structurelle, intégration des équipements techniques et aménagement des circulations sur le site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 300/500 Assisted Promotional Housing. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "Découvrez la galerie, les caractéristiques techniques et les informations sur l'emplacement du projet de logements aidés « 300/500 ». Ce projet illustre un modèle de réalisation de programmes résidentiels et à usage mixte piloté par le maître d'ouvrage.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "Client",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "Logement promotionnel aidé (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Assisted Promotional Housing (LPA)",
+      "draft": "Logement promotionnel aidé (LPA)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Douaouda, Tipaza, Algeria",
+      "draft": "Douaouda, Tipaza, Algérie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme",
+      "draft": "Programme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "300 homes delivered within a 500-home master plan",
+      "draft": "300 logements livrés dans le cadre d'un plan d'ensemble de 500 logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "Achèvement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2019",
+      "draft": "2019",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Works Scope",
+      "draft": "Périmètre des travaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "All-trades delivery (TCE) and roads and utility networks (VRD)",
+      "draft": "Réalisation tous corps d'état (TCE) et voirie et réseaux divers (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "Client",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "300 apartments completed within the 500-home LPA framework",
+      "draft": "300 appartements achevés dans le cadre du programme LPA de 500 logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Ground floor plus 8 upper floors (R+8) blocks with F3 and F4 layouts",
+      "draft": "Immeubles en R+8 (rez-de-chaussée et 8 étages) proposant des appartements de type F3 et F4.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-level commercial and professional premises",
+      "draft": "Locaux commerciaux et professionnels en rez-de-chaussée",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including civil, structural, and VRD works",
+      "draft": "Réalisation tous corps d'état (TCE), incluant le génie civil, la structure et les VRD",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Site Context",
+      "draft": "Contexte du site",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Direct connection to regional road infrastructure",
+      "draft": "Connexion directe au réseau routier régional",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.1",
+      "source": "Coastal orientation with views of the Mediterranean Sea",
+      "draft": "Orientation vers la côte avec vue sur la mer Méditerranée",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 300/500 Assisted Promotional Housing project?",
+      "draft": "Quelle est la portée du projet de logements promotionnels aidés 300/500 ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "It represents the completed 300-home phase of a larger 500-home Assisted Promotional Housing (LPA) development in Douaouda, featuring R+8 residential blocks and integrated commercial premises.",
+      "draft": "Il s'agit de la phase achevée de 300 logements d'un projet plus vaste de 500 logements de type Logement Promotionnel Aidé (LPA) à Douaouda, comprenant des immeubles résidentiels en R+8 et des locaux commerciaux intégrés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction services were provided for this development?",
+      "draft": "Quels services de construction ont été fournis pour ce projet immobilier ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project was executed under an all-trades delivery (TCE) contract, covering reinforced concrete structures, secondary trades, building services, and roads and utility networks (VRD).",
+      "draft": "Le projet a été réalisé dans le cadre d'un marché tous corps d'état (TCE), couvrant les structures en béton armé, les corps d'état secondaires, les équipements techniques du bâtiment ainsi que la voirie et les réseaux divers (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Who is the client for this housing programme?",
+      "draft": "Qui est le maître d'ouvrage de ce programme de logements ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The development was delivered for the National Housing Improvement and Development Agency (AADL) under the state-assisted promotional housing framework.",
+      "draft": "Le projet a été réalisé pour le compte de l'Agence nationale de l'amélioration et du développement du logement (AADL) dans le cadre du dispositif de logement promotionnel aidé par l'État.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How are the residential blocks configured?",
+      "draft": "Comment les bâtiments résidentiels sont-ils configurés ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Douaouda brings the completed 300-home phase of a 500-home assisted promotional housing programme into a coastal setting, pairing family housing with professional premises and organised exterior works.",
+      "draft": "Le projet de Douaouda concrétise la première phase — achevée et comptant 300 logements — d'un programme de 500 logements en accession aidée situé en bord de mer, associant logements familiaux, locaux professionnels et aménagements extérieurs structurés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Une vue d'ensemble d'un vaste chantier de construction comprenant plusieurs immeubles résidentiels en béton à plusieurs étages, à divers stades d'achèvement de leur structure. Une haute grue à tour est visible à l'arrière-plan, surplombant les bâtiments. Le sol est constitué de terre brun-rouge et le ciel est couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Travaux de béton structurel en cours sur l'ensemble des bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Une vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et un peu de végétation verte. Au plan intermédiaire, une haute structure en béton gris (probablement un noyau) surmontée d'un coffrage rouge et, à sa droite, un autre immeuble à plusieurs étages doté d'une ossature en béton et de remplissages en briques rouges. Une grande grue à tour bleue, portant l'inscription « UNEN COMANSA » sur sa flèche, se déploie dans le ciel. Sous la grue, on aperçoit un camion-pompe à béton et deux camions-toupies. Au loin, en arrière-plan, la mer bleue est visible.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Travaux de structure et de remplissage en maçonnerie en cours, illustrant le contexte du site côtier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projets/douaouda-300-500-logements/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Une vue aérienne montrant plusieurs grands immeubles résidentiels beiges aux toits bruns, entourés de terrains non aménagés et de quelques matériaux de construction. Des bâtiments plus anciens et plus petits se trouvent au premier plan, tandis qu'une étendue d'eau est visible au loin, sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Vue aérienne des immeubles résidentiels (R+8) achevés à Douaouda.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projets/douaouda-300-500-logements/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "Plusieurs immeubles résidentiels à plusieurs étages, aux façades claires et aux touches brunes, vus en contre-plongée. Au premier plan, un chantier en terre battue présente des tas de sable, des briques et des sacs blancs. Un ciel couvert est visible au-dessus des bâtiments.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "Articulation des façades et travaux de finition extérieure sur les bâtiments achevés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Une vue d'ensemble d'un vaste chantier de construction comprenant plusieurs immeubles résidentiels en béton à plusieurs étages, à divers stades d'achèvement de leur structure. Une haute grue à tour est visible à l'arrière-plan, surplombant les bâtiments. Le sol est constitué de terre brun-rouge et le ciel est couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Travaux de béton structurel en cours sur l'ensemble des bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Une vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et un peu de végétation verte. Au plan intermédiaire, une haute structure en béton gris (probablement un noyau) surmontée d'un coffrage rouge et, à sa droite, un autre immeuble à plusieurs étages doté d'une ossature en béton et de remplissages en briques rouges. Une grande grue à tour bleue, portant l'inscription « UNEN COMANSA » sur sa flèche, se déploie dans le ciel. Sous la grue, on aperçoit un camion-pompe à béton et deux camions-toupies. Au loin, en arrière-plan, la mer bleue est visible.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Travaux de structure et de remplissage en maçonnerie en cours, illustrant le contexte du site côtier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projets/douaouda-300-500-logements/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Une vue aérienne montrant plusieurs grands immeubles résidentiels beiges aux toits bruns, entourés de terrains non aménagés et de quelques matériaux de construction. Des bâtiments plus anciens et plus petits se trouvent au premier plan, tandis qu'une étendue d'eau est visible au loin, sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Vue aérienne des immeubles résidentiels (R+8) achevés à Douaouda.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "draft": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "View of several modern, multi-story residential apartment buildings with light-colored facades and brown accents, under an overcast sky. Construction materials like bricks, sand, and white bags are visible in the foreground.",
+      "draft": "Vue de plusieurs immeubles résidentiels modernes à plusieurs étages, aux façades claires rehaussées de touches brunes, sous un ciel couvert. Des matériaux de construction tels que des briques, du sable et des sacs blancs sont visibles au premier plan.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Completed residential blocks prior to final site clearance and landscaping.",
+      "draft": "Immeubles résidentiels achevés, avant le nettoyage final du site et l'aménagement paysager.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Une vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et un peu de végétation verte. Au plan intermédiaire, une haute structure en béton gris (probablement un noyau) surmontée d'un coffrage rouge et, à sa droite, un autre immeuble à plusieurs étages doté d'une ossature en béton et de remplissages en briques rouges. Une grande grue à tour bleue, portant l'inscription « UNEN COMANSA » sur sa flèche, se déploie dans le ciel. Sous la grue, on aperçoit un camion-pompe à béton et deux camions-toupies. Au loin, en arrière-plan, la mer bleue est visible.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Travaux de structure et de remplissage en maçonnerie en cours, illustrant le contexte du site côtier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Une vue d'ensemble d'un vaste chantier de construction comprenant plusieurs immeubles résidentiels en béton à plusieurs étages, à divers stades d'achèvement de leur structure. Une haute grue à tour est visible à l'arrière-plan, surplombant les bâtiments. Le sol est constitué de terre brun-rouge et le ciel est couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Travaux de béton structurel en cours sur l'ensemble des bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projets/douaouda-300-500-logements/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Une vue aérienne montrant plusieurs grands immeubles résidentiels beiges aux toits bruns, entourés de terrains non aménagés et de quelques matériaux de construction. Des bâtiments plus anciens et plus petits se trouvent au premier plan, tandis qu'une étendue d'eau est visible au loin, sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Vue aérienne des immeubles résidentiels (R+8) achevés à Douaouda.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "draft": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A vertical shot of a construction site under a clear blue sky. In the foreground, red-brown excavated earth and some green vegetation. In the midground, a tall, grey concrete structure (likely a core) with red formwork at the top, and to its right, another multi-story building with concrete frames and red brick infill. A large blue tower crane with 'UNEN COMANSA' visible on its boom extends across the sky. Below the crane, a concrete pump truck and two cement mixer trucks are visible. In the far background, the blue sea is visible.",
+      "draft": "Une vue verticale d'un chantier de construction sous un ciel bleu dégagé. Au premier plan, de la terre excavée brun-rouge et un peu de végétation verte. Au plan intermédiaire, une haute structure en béton gris (probablement un noyau) surmontée d'un coffrage rouge et, à sa droite, un autre immeuble à plusieurs étages doté d'une ossature en béton et de remplissages en briques rouges. Une grande grue à tour bleue, portant l'inscription « UNEN COMANSA » sur sa flèche, se déploie dans le ciel. Sous la grue, on aperçoit un camion-pompe à béton et deux camions-toupies. Au loin, en arrière-plan, la mer bleue est visible.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural framing and masonry infill works underway, showing the coastal site context.",
+      "draft": "Travaux de structure et de remplissage en maçonnerie en cours, illustrant le contexte du site côtier.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Une vue d'ensemble d'un vaste chantier de construction comprenant plusieurs immeubles résidentiels en béton à plusieurs étages, à divers stades d'achèvement de leur structure. Une haute grue à tour est visible à l'arrière-plan, surplombant les bâtiments. Le sol est constitué de terre brun-rouge et le ciel est couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Travaux de béton structurel en cours sur l'ensemble des bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+      "draft": "/projets/douaouda-300-500-logements/01-douaouda-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "An aerial shot showing several large, beige apartment blocks with brown roofs, surrounded by unpaved ground and some construction materials. Older, smaller buildings are in the foreground, and a body of water is visible in the distant background under a cloudy sky.",
+      "draft": "Une vue aérienne montrant plusieurs grands immeubles résidentiels beiges aux toits bruns, entourés de terrains non aménagés et de quelques matériaux de construction. Des bâtiments plus anciens et plus petits se trouvent au premier plan, tandis qu'une étendue d'eau est visible au loin, sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Aerial view of the completed R+8 residential blocks in Douaouda.",
+      "draft": "Vue aérienne des immeubles résidentiels (R+8) achevés à Douaouda.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+      "draft": "/projets/douaouda-300-500-logements/03-douaouda.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Several multi-story residential apartment buildings with light-colored facades and brown accents, viewed from a low angle. The foreground is a dirt construction site with piles of sand, bricks, and white bags. An overcast sky is visible above the buildings.",
+      "draft": "Plusieurs immeubles résidentiels à plusieurs étages, aux façades claires et aux touches brunes, vus en contre-plongée. Au premier plan, un chantier en terre battue présente des tas de sable, des briques et des sacs blancs. Un ciel couvert est visible au-dessus des bâtiments.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Facade articulation and exterior finishing works on the completed blocks.",
+      "draft": "Articulation des façades et travaux de finition extérieure sur les bâtiments achevés.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "draft": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast.",
+      "draft": "Une vue d'ensemble d'un vaste chantier de construction comprenant plusieurs immeubles résidentiels en béton à plusieurs étages, à divers stades d'achèvement de leur structure. Une haute grue à tour est visible à l'arrière-plan, surplombant les bâtiments. Le sol est constitué de terre brun-rouge et le ciel est couvert.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Structural concrete works in progress across the residential blocks.",
+      "draft": "Travaux de béton structurel en cours sur l'ensemble des bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

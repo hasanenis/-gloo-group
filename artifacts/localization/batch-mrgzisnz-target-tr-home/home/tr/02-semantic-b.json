@@ -1,0 +1,379 @@
+{
+  "jobId": "batch-mrgzisnz-target-tr-home",
+  "pageId": "home",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T23:17:36.050Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "SARL Igloo Yapi Construction — Cezayir'de Kaba Yapı ve Konut Projeleri"
+    },
+    {
+      "id": "seo.description",
+      "text": "Cezayir genelinde konut, karma kullanım ve altyapı ile çevre düzenleme (VRD) programları sunan, Sınıf 6 sertifikalı yüklenici."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "SARL Igloo Yapi Construction — Cezayir'de Kaba Yapı ve Konut Projeleri"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Cezayir genelinde konut, karma kullanım ve altyapı ile çevre düzenleme (VRD) programları sunan, Sınıf 6 sertifikalı yüklenici."
+    },
+    {
+      "id": "content.hero.eyebrow",
+      "text": "SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "content.hero.title",
+      "text": "Cezayir Genelinde Yapısal Uygulama ve Tüm Yapım İşleri (TCE) Teslimatı"
+    },
+    {
+      "id": "content.hero.lead",
+      "text": "Konut ve karma kullanım programlarını sıkı mühendislik kontrolü, şantiye disiplini ve uzun vadeli yapısal uygulama ile teslim ediyoruz."
+    },
+    {
+      "id": "content.hero.primaryCta",
+      "text": "Portföyü görüntüle"
+    },
+    {
+      "id": "content.hero.secondaryCta",
+      "text": "Cezayir ofisimizle iletişime geçin"
+    },
+    {
+      "id": "content.hero.trustFacts.0.value",
+      "text": "Kuruluş 2018"
+    },
+    {
+      "id": "content.hero.trustFacts.0.label",
+      "text": "Cezayir merkezli"
+    },
+    {
+      "id": "content.hero.trustFacts.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.hero.trustFacts.1.label",
+      "text": "program"
+    },
+    {
+      "id": "content.hero.trustFacts.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.hero.trustFacts.2.label",
+      "text": "konut ünitesi"
+    },
+    {
+      "id": "content.hero.trustFacts.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.hero.trustFacts.3.label",
+      "text": "vilayet"
+    },
+    {
+      "id": "content.hero.trustFacts.4.value",
+      "text": "Sınıf 6"
+    },
+    {
+      "id": "content.hero.trustFacts.4.label",
+      "text": "yeterlilik derecesi"
+    },
+    {
+      "id": "content.manifesto.eyebrow",
+      "text": "Sözleşme Disiplini"
+    },
+    {
+      "id": "content.manifesto.title",
+      "text": "Dayanıklı kentsel yapılar inşa etmek için karmaşık iş kollarını koordine ediyoruz"
+    },
+    {
+      "id": "content.manifesto.body",
+      "text": "Çok aileli konut blokları ve villalardan cadde seviyesindeki aktif ticari alanlara kadar, karmaşık şantiye kısıtlamalarını çözmek için tüm yapım işleri (TCE) ve altyapı ile çevre düzenleme (VRD) süreçlerini eksiksiz yönetiyoruz."
+    },
+    {
+      "id": "content.manifesto.credential",
+      "text": "Mesleki Yeterlilik ve Sınıflandırma Belgesi, Sınıf 6"
+    },
+    {
+      "id": "content.manifesto.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.manifesto.metrics.0.label",
+      "text": "kuruluş"
+    },
+    {
+      "id": "content.manifesto.metrics.0.detail",
+      "text": "Bir Khadem, Cezayir'de operasyonel merkez"
+    },
+    {
+      "id": "content.manifesto.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.manifesto.metrics.1.label",
+      "text": "sözleşmeli iş"
+    },
+    {
+      "id": "content.manifesto.metrics.1.detail",
+      "text": "Tamamlanan ve aktif şantiye operasyonları"
+    },
+    {
+      "id": "content.manifesto.metrics.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.manifesto.metrics.2.label",
+      "text": "teslim edilen ünite"
+    },
+    {
+      "id": "content.manifesto.metrics.2.detail",
+      "text": "Konut ve karma kullanım programı kapsamı"
+    },
+    {
+      "id": "content.manifesto.metrics.3.value",
+      "text": "4"
+    },
+    {
+      "id": "content.manifesto.metrics.3.label",
+      "text": "aktif vilayet"
+    },
+    {
+      "id": "content.manifesto.metrics.3.detail",
+      "text": "Tipaza, Cezayir, Mostaganem ve Boumerdes'te operasyonlar"
+    },
+    {
+      "id": "content.featuredProjects.eyebrow",
+      "text": "Proje Portföyü"
+    },
+    {
+      "id": "content.featuredProjects.title",
+      "text": "Doğrulanmış fiziki teslimat ve yapısal uygulama"
+    },
+    {
+      "id": "content.featuredProjects.lead",
+      "text": "Aktif bölgelerimizde çok aileli konutlar, müstakil villalar, ticari alanlar ve entegre altyapı ile çevre düzenleme (VRD) projelerinden oluşan bir sicil."
+    },
+    {
+      "id": "content.process.eyebrow",
+      "text": "Proje Yaşam Döngüsü"
+    },
+    {
+      "id": "content.process.title",
+      "text": "Şantiye kısıtlamalarından teslime kadar sistematik uygulama"
+    },
+    {
+      "id": "content.process.lead",
+      "text": "Teknik iş akışımız; planlama, yapı mühendisliği ve ince işlerin sıkı şantiye disiplini altında ilerlemesini sağlar."
+    },
+    {
+      "id": "content.process.steps.0.id",
+      "text": "coordination"
+    },
+    {
+      "id": "content.process.steps.0.title",
+      "text": "İnşaat Öncesi Koordinasyon"
+    },
+    {
+      "id": "content.process.steps.0.body",
+      "text": "Sahaya makine ve personel sevk etmeden önce proje metrajlarını, yapısal gereksinimleri ve şantiye kısıtlamalarını uyumlu hale getirmek."
+    },
+    {
+      "id": "content.process.steps.1.id",
+      "text": "engineering"
+    },
+    {
+      "id": "content.process.steps.1.title",
+      "text": "Mühendislik ve TCE Kontrolü"
+    },
+    {
+      "id": "content.process.steps.1.body",
+      "text": "Yapısal hesapları, mekanik-elektrik-tesisat (MEP) hatlarını ve ince işleri tek bir tüm yapım işleri (TCE) çerçevesinde koordine etmek."
+    },
+    {
+      "id": "content.process.steps.2.id",
+      "text": "site"
+    },
+    {
+      "id": "content.process.steps.2.title",
+      "text": "Şantiye Uygulaması ve Kütle Yapımı"
+    },
+    {
+      "id": "content.process.steps.2.body",
+      "text": "Şantiye şeflerimizin doğrudan gözetimi altında günlük beton dökümlerini, taşıyıcı karkas kurulumunu, duvar işlerini ve iş sırasını yönetmek."
+    },
+    {
+      "id": "content.process.steps.3.id",
+      "text": "monitoring"
+    },
+    {
+      "id": "content.process.steps.3.title",
+      "text": "Kalite, Güvenlik ve Takvim İzleme"
+    },
+    {
+      "id": "content.process.steps.3.body",
+      "text": "Malzeme uygunluğunu, yapısal toleransları ve güvenlik protokollerini sözleşme aşamalarına ve Cezayir yapı yönetmeliklerine göre doğrulamak."
+    },
+    {
+      "id": "content.process.steps.4.id",
+      "text": "handover"
+    },
+    {
+      "id": "content.process.steps.4.title",
+      "text": "Teslimat ve Teknik Kapanış"
+    },
+    {
+      "id": "content.process.steps.4.body",
+      "text": "As-built (yapıldığı şekliyle) projelerini nihai hale getirmek, bina sistemlerini devreye almak ve işverene resmi teslimatı gerçekleştirmek."
+    },
+    {
+      "id": "content.about.eyebrow",
+      "text": "Kurumsal Profil"
+    },
+    {
+      "id": "content.about.title",
+      "text": "Teknik yetkinlik ve yapılandırılmış şantiye yönetimi"
+    },
+    {
+      "id": "content.about.credential",
+      "text": "Mesleki Yeterlilik ve Sınıflandırma Belgesi - Sınıf 6"
+    },
+    {
+      "id": "content.about.paragraphs.0",
+      "text": "2018 yılında kurulan ve inşaat mühendisi Adem Talay liderliğinde faaliyet gösteren SARL Igloo Yapi Construction, Cezayir'in Bir Khadem bölgesindeki merkezinden yönetilmekte olup Cezayir genelinde konut ve karma kullanım projelerinde uzmanlaşmıştır."
+    },
+    {
+      "id": "content.about.paragraphs.1",
+      "text": "Sınıf 6 Mesleki Yeterlilik ve Sınıflandırma Belgesi'ne sahip olan firma; bünyesinde inşaat mühendisleri, mimarlar ve şantiye şeflerinden oluşan bir teknik ofis barındırmaktadır."
+    },
+    {
+      "id": "content.about.metrics.0.value",
+      "text": "2018"
+    },
+    {
+      "id": "content.about.metrics.0.label",
+      "text": "Kuruluş yılı"
+    },
+    {
+      "id": "content.about.metrics.1.value",
+      "text": "11"
+    },
+    {
+      "id": "content.about.metrics.1.label",
+      "text": "Aktif ve tamamlanmış programlar"
+    },
+    {
+      "id": "content.about.metrics.2.value",
+      "text": "2,500+"
+    },
+    {
+      "id": "content.about.metrics.2.label",
+      "text": "Sözleşme kapsamındaki konut ünitesi"
+    },
+    {
+      "id": "content.about.proofs.0.title",
+      "text": "Sınıf 6 Yüklenici"
+    },
+    {
+      "id": "content.about.proofs.0.body",
+      "text": "Mesleki Yeterlilik ve Sınıflandırma Belgesi, Sınıf 6."
+    },
+    {
+      "id": "content.about.proofs.1.title",
+      "text": "Çok Disiplinli Kadro"
+    },
+    {
+      "id": "content.about.proofs.1.body",
+      "text": "Bina sorumlusu, üç mühendis, iki mimar, şantiye şefleri, insan kaynakları, muhasebeci, satın alma sorumlusu ve şantiye ekipleri."
+    },
+    {
+      "id": "content.about.proofs.2.title",
+      "text": "Konut ve Karma Kullanım Uzmanlığı"
+    },
+    {
+      "id": "content.about.proofs.2.body",
+      "text": "Konutlar, villalar, ticari alanlar, yollar, şebekeler, altyapı hizmetleri ve çevre düzenleme işleri."
+    },
+    {
+      "id": "content.footprint.eyebrow",
+      "text": "Coğrafi Etki Alanı"
+    },
+    {
+      "id": "content.footprint.title",
+      "text": "Kuzey Cezayir genelinde bölgesel operasyonlar"
+    },
+    {
+      "id": "content.footprint.lead",
+      "text": "Cezayir, Tipaza, Boumerdes ve Mostaganem'de güçlü bir operasyonel varlık gösteren, dört önemli vilayete yayılmış on bir proje."
+    },
+    {
+      "id": "content.footprint.selectedLabel",
+      "text": "Seçilen program"
+    },
+    {
+      "id": "content.footprint.openProject",
+      "text": "Teknik detayları görüntüle"
+    },
+    {
+      "id": "content.footprint.statusCompleted",
+      "text": "Tamamlandı"
+    },
+    {
+      "id": "content.footprint.statusInProgress",
+      "text": "Devam ediyor"
+    },
+    {
+      "id": "content.footprint.stats.0.value",
+      "text": "11"
+    },
+    {
+      "id": "content.footprint.stats.0.label",
+      "text": "kayıtlı şantiye"
+    },
+    {
+      "id": "content.footprint.stats.1.value",
+      "text": "4"
+    },
+    {
+      "id": "content.footprint.stats.1.label",
+      "text": "aktif vilayet"
+    },
+    {
+      "id": "content.footprint.stats.2.value",
+      "text": "1"
+    },
+    {
+      "id": "content.footprint.stats.2.label",
+      "text": "kıyı teslimat koridoru"
+    },
+    {
+      "id": "content.footer.eyebrow",
+      "text": "Proje Talepleri"
+    },
+    {
+      "id": "content.footer.title",
+      "text": "Gelecek inşaat programınızı görüşün"
+    },
+    {
+      "id": "content.footer.lead",
+      "text": "Konut, ticari alan ve altyapı işleri için Cezayir merkezli mühendislik ve şantiye yönetimi ekiplerimize danışın."
+    },
+    {
+      "id": "content.footer.emailLabel",
+      "text": "Teknik ofise e-posta gönderin"
+    },
+    {
+      "id": "content.footer.phoneLabel",
+      "text": "Cezayir merkez ofisini arayın"
+    },
+    {
+      "id": "content.footer.proofLine",
+      "text": "Bir Khadem, Cezayir · Sınıf 6 Sertifikalı Yüklenici · Tüm Yapım İşleri (TCE) ve VRD"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "jobId": "20260712-35flash-projects-index",
+  "pageId": "projects-index",
+  "locale": "en",
+  "sourceRevision": "v1-88f3a04d",
+  "generatedAt": "2026-07-11T21:38:46.543Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "seo.description",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "seo.socialDescription",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.lead",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here."
+}

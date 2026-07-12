@@ -1,0 +1,21 @@
+{
+  "pageId": "about",
+  "locale": "tr",
+  "sourceRevision": "v1-0ab197cd",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-179eba0c879de31e",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:29.695Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Kurumsal Profil",
+    "description": "Entegre mühendislik, tedarik ve şantiye operasyonları aracılığıyla konut ve karma kullanım projeleri gerçekleştiren Cezayirli inşaat şirketi.",
+    "socialTitle": "SARL Igloo Yapi Construction | Kurumsal Profil",
+    "socialDescription": "Entegre mühendislik, tedarik ve şantiye operasyonları aracılığıyla konut ve karma kullanım projeleri gerçekleştiren Cezayirli inşaat şirketi."
+  },
+  "content": {
+    "eyebrow": "Kurumsal Profil",
+    "heading": "Entegre mühendislik ve şantiye uygulama ekipleri.",
+    "body": "2018 yılında kurulan ve inşaat mühendisi Adem Talay tarafından yönetilen SARL Igloo Yapi Construction, Cezayir'in Bir Khadem bölgesinden konut ve karma kullanımlı projeler yürütmektedir."
+  }
+}

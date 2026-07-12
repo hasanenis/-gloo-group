@@ -1,0 +1,339 @@
+{
+  "jobId": "batch-mrh1cpxx-target-ar-DZ-projects-rouiba-4-promotional-villas",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9ac52814",
+  "generatedAt": "2026-07-12T00:08:51.823Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "مشروع 4 فيلات ترقوية وأشغال الشبكات | الرويبة"
+    },
+    {
+      "id": "seo.description",
+      "text": "تفاصيل الإنجاز التقني ومعرض أشغال البناء لـ 4 فيلات ترقوية في الرويبة، تم تسليمها ضمن صفقة كاملة تشمل جميع الأشغال والشبكات المختلفة."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "مشروع 4 فيلات ترقوية وأشغال الشبكات | الرويبة"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "تفاصيل الإنجاز التقني ومعرض أشغال البناء لـ 4 فيلات ترقوية في الرويبة، تم تسليمها ضمن صفقة كاملة تشمل جميع الأشغال والشبكات المختلفة."
+    },
+    {
+      "id": "content.slug",
+      "text": "rouiba-4-promotional-villas"
+    },
+    {
+      "id": "content.title",
+      "text": "مشروع 4 فيلات ترقوية وأشغال الشبكات"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "تطوير سكني"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "مشروع تطوير سكني يضم 4 فيلات ترقوية خاصة في الرويبة، تم إنجازه بصيغة جميع الأشغال (TCE) بما في ذلك الطرقات والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يشمل نطاق المشروع إنجاز الهيكل الحامل، تهيئة الواجهات، والبنية التحتية المتكاملة للموقع لإنشاء مجمع سكني متناسق."
+    },
+    {
+      "id": "content.description.0",
+      "text": "تم تنفيذ هذا المشروع السكني كحزمة موقع متكاملة، تشمل أشغال الهيكل من الخرسانة المسلحة، التشطيبات الداخلية والخارجية، التجهيزات التقنية الكهربائية والسباكة، بالإضافة إلى أشغال الطرقات والشبكات المختلفة (VRD) المخصصة."
+    },
+    {
+      "id": "content.description.1",
+      "text": "تعتمد الكتل المعمارية على أحجام عصرية واضحة، توازن بين المساحات السكنية الخاصة وشبكات حركة المرور المخصصة للمشاة والمركبات."
+    },
+    {
+      "id": "content.authority",
+      "text": "برنامج سكني دقيق يتوافق فيه استقرار الهيكل مع البنية التحتية للموقع بدءاً من الحفريات الأولية حتى التسليم النهائي."
+    },
+    {
+      "id": "content.seo",
+      "text": "تفاصيل الإنجاز التقني ومعرض أشغال البناء لـ 4 فيلات ترقوية في الرويبة، تم تسليمها ضمن صفقة كاملة تشمل جميع الأشغال والشبكات المختلفة."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "صيغة البرنامج"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Villas promotionnelles libres"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "فيلات ترقوية خاصة"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "الرويبة، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "الحجم"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "4 فيلات فردية"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "سنة الإنجاز"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2023"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "نطاق الصفقة"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "تسليم بكامل الأشغال (TCE) والطرقات والشبكات المختلفة (VRD)"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "الاستعمال الرئيسي"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "سكني فردي"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "النطاق التقني"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "4 فيلات ترقوية خاصة"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "شبكات طرقات وتوصيلات مختلفة (VRD) متكاملة مع ممرات مخصصة للمشاة"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "هياكل حاملة من الخرسانة المسلحة مع واجهات عصرية مهيأة"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "تسليم كامل بصيغة جميع الأشغال (TCE) منجز في سنة 2023"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو مشروع 4 فيلات ترقوية وأشغال الشبكات؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "يتكون المشروع من 4 فيلات ترقوية خاصة تم تسليمها بكافة أشغال البناء والتشطيبات مع البنية التحتية المتكاملة للموقع."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي أشغال البناء التي تم تنفيذها في الموقع؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "شمل نطاق العمل هندسة الهياكل الخرسانية المسلحة، التشطيبات الداخلية والخارجية، التجهيزات التقنية، وأشغال الطرقات والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "كيف تم تنظيم حركة المرور داخل الموقع؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "يضم المخطط التوجيهي ممرات مخصصة لحركة السيارات والمشاة لضمان انسيابية التنقل والحفاظ على خصوصية الوحدات السكنية الأربع."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "مخطط واجهة معمارية للفيلات الترقوية في الرويبة."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "الواجهة الخارجية لفيلا ترقوية منجزة من عدة طوابق في الرويبة، تظهر النوافذ الزجاجية الغائرة والمظلات التزيينية."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "تفاصيل الواجهة المكتملة لفيلا ترقوية."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "منظر علوي للمجمع السكني المكتمل في الرويبة، يظهر الأسطح المستوية وهياكل الشرفات."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "المجمع السكني المكتمل في الرويبة، يبرز تناسق الكتل العصرية."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "أشغال الهيكل الخرساني المسلح وقوالب الأعمدة قيد التنفيذ في موقع فيلات الرويبة."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "تنفيذ الهيكل الخرساني في الموقع."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "الواجهة الخارجية لفيلا ترقوية منجزة من عدة طوابق في الرويبة، تظهر النوافذ الزجاجية الغائرة والمظلات التزيينية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "تفاصيل الواجهة المكتملة لفيلا ترقوية."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "منظر علوي للمجمع السكني المكتمل في الرويبة، يظهر الأسطح المستوية وهياكل الشرفات."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "المجمع السكني المكتمل في الرويبة، يبرز تناسق الكتل العصرية."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "مخطط واجهة معمارية للفيلات الترقوية في الرويبة."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "منظر خارجي لفيلا ترقوية خلال المراحل الأخيرة من تشطيب الواجهة، مع ظهور رافعة برجية في الخلفية."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "أشغال تشطيب الواجهات قيد التنفيذ."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "الواجهة الخارجية لفيلا ترقوية منجزة من عدة طوابق في الرويبة، تظهر النوافذ الزجاجية الغائرة والمظلات التزيينية."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "تفاصيل الواجهة المكتملة لفيلا ترقوية."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "منظر علوي للمجمع السكني المكتمل في الرويبة، يظهر الأسطح المستوية وهياكل الشرفات."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "المجمع السكني المكتمل في الرويبة، يبرز تناسق الكتل العصرية."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "مخطط واجهة معمارية للفيلات الترقوية في الرويبة."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "هيكل فيلا متعددة الطوابق خلال المراحل الأخيرة من التلبيس الخارجي وتهيئة الموقع."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "أشغال التشطيب الخارجي وتهيئة الموقع."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "الواجهة الخارجية لفيلا ترقوية منجزة من عدة طوابق في الرويبة، تظهر النوافذ الزجاجية الغائرة والمظلات التزيينية."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "تفاصيل الواجهة المكتملة لفيلا ترقوية."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "منظر علوي للمجمع السكني المكتمل في الرويبة، يظهر الأسطح المستوية وهياكل الشرفات."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "المجمع السكني المكتمل في الرويبة، يبرز تناسق الكتل العصرية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "أشغال الهيكل الخرساني المسلح وقوالب الأعمدة قيد التنفيذ في موقع فيلات الرويبة."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "تنفيذ الهيكل الخرساني في الموقع."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/rouiba-4-promotional-villas/01-draw.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "مخطط واجهة معمارية للفيلات الترقوية في الرويبة."
+    }
+  ]
+}

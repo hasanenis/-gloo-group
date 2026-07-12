@@ -14,7 +14,8 @@
 ```
 Error: expect(page).toHaveScreenshot(expected) failed
 
-  8658 pixels (ratio 0.03 of all image pixels) are different.
+Timeout: 15000ms
+  Failed to take two consecutive stable screenshots.
 
   Snapshot: home-390x844.png
 
@@ -25,14 +26,63 @@ Call log:
     - disabled all CSS animations
   - waiting for fonts to load...
   - fonts loaded
-  - 8658 pixels (ratio 0.03 of all image pixels) are different.
+  - 162520 pixels (ratio 0.50 of all image pixels) are different.
   - waiting 100ms before taking screenshot
   - taking page screenshot
     - disabled all CSS animations
   - waiting for fonts to load...
   - fonts loaded
-  - captured a stable screenshot
-  - 8658 pixels (ratio 0.03 of all image pixels) are different.
+  - 92425 pixels (ratio 0.29 of all image pixels) are different.
+  - waiting 250ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 37352 pixels (ratio 0.12 of all image pixels) are different.
+  - waiting 500ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 112311 pixels (ratio 0.35 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 76613 pixels (ratio 0.24 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 50293 pixels (ratio 0.16 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 76076 pixels (ratio 0.24 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 129244 pixels (ratio 0.40 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 103619 pixels (ratio 0.32 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - taking page screenshot
+    - disabled all CSS animations
+  - waiting for fonts to load...
+  - fonts loaded
+  - 93426 pixels (ratio 0.29 of all image pixels) are different.
+  - waiting 1000ms before taking screenshot
+  - Timeout 15000ms exceeded.
 
 ```
 
@@ -44,333 +94,636 @@ Call log:
     - link "Igloo Construction" [ref=e5] [cursor=pointer]:
       - /url: /
       - img "Igloo Construction" [ref=e6]
-  - navigation "Mobile navigation" [ref=e7]:
-    - button "Home" [ref=e8] [cursor=pointer]:
+    - button "EN" [ref=e8]:
       - img [ref=e9]
-      - generic [ref=e12]: Home
-    - button "Projects" [ref=e13] [cursor=pointer]:
-      - img [ref=e14]
-      - generic [ref=e16]: Projects
-    - button "Open Igloo assistant" [ref=e17] [cursor=pointer]:
-      - img [ref=e19]
-    - button "Services" [ref=e21] [cursor=pointer]:
-      - img [ref=e22]
-      - generic [ref=e26]: Services
-    - button "More" [ref=e27] [cursor=pointer]:
-      - img [ref=e28]
-      - generic [ref=e32]: More
-  - main [ref=e33]:
-    - generic [ref=e39]:
-      - heading "L’empreinte de demain, pensée pour durer" [level=1] [ref=e40]:
-        - generic [ref=e42]: L’empreinte
-        - generic [ref=e44]: de
-        - generic [ref=e46]: demain,
-        - generic [ref=e48]: pensée
-        - generic [ref=e50]: pour
-        - generic [ref=e52]: durer
-      - paragraph [ref=e53]: Igloo shapes residential and mixed-use places with measured execution, architectural clarity, and a lasting sense of presence.
-    - region "Company manifesto" [ref=e54]:
-      - generic [ref=e55]:
-        - generic [ref=e56]:
-          - generic [ref=e57]: Est. 2018
-          - generic [ref=e58]: Qualification n°6
-        - heading "We build homes, not just buildings." [level=2] [ref=e59]:
-          - generic [ref=e61]: We
-          - generic [ref=e63]: build
-          - generic [ref=e65]: homes,
-          - generic [ref=e67]: not
-          - generic [ref=e69]: just
-          - generic [ref=e71]: buildings.
-        - paragraph [ref=e72]: Since 2018, Igloo has delivered residential and mixed-use developments across Algeria — with precision engineering, honest materials, and structures built to last.
-    - generic [ref=e74]:
-      - generic [ref=e76]:
-        - generic [ref=e77]:
-          - generic [ref=e78]: Featured work
-          - generic [ref=e79]:
-            - heading "PROVEN WORKS" [level=2] [ref=e80]
-            - paragraph [ref=e81]: Real residential and mixed-use programmes, shown with scope, location, and construction context.
-        - link "See all projects" [ref=e83] [cursor=pointer]:
+      - text: EN
+  - navigation "Mobile navigation" [ref=e13]:
+    - button "Home" [ref=e14] [cursor=pointer]:
+      - img [ref=e15]
+      - generic [ref=e18]: Home
+    - button "Company" [ref=e19] [cursor=pointer]:
+      - img [ref=e20]
+      - generic [ref=e24]: Company
+    - button "Open Igloo assistant" [ref=e25] [cursor=pointer]:
+      - img [ref=e27]
+    - button "Projects" [ref=e29] [cursor=pointer]:
+      - img [ref=e30]
+      - generic [ref=e32]: Projects
+    - button "Contact" [ref=e33] [cursor=pointer]:
+      - img [ref=e34]
+      - generic [ref=e37]: Contact
+  - main [ref=e38]:
+    - generic:
+      - img
+    - heading "Building the future" [level=1] [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: Building the future
+        - generic [ref=e47]: Crafting the future
+    - region "Company profile" [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]: Company profile
+            - heading "Built with expertise. Delivered with control." [level=2] [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e57]: Built with
+                - generic [ref=e59]: expertise.
+              - generic [ref=e60]:
+                - generic [ref=e62]: Delivered with
+                - generic [ref=e64]: control.
+            - generic [ref=e66]:
+              - paragraph [ref=e67]:
+                - generic [ref=e69]: Founded in 2018 and managed by civil
+                - generic [ref=e71]: engineer Adem Talay, SARL Igloo Yapi
+                - generic [ref=e73]: Construction works from Bir Khadem, Algiers,
+                - generic [ref=e75]: on residential and mixed-use programmes
+                - generic [ref=e77]: across Algeria.
+              - paragraph [ref=e78]:
+                - generic [ref=e80]: The company holds a Professional
+                - generic [ref=e82]: Qualification and Classification Certificate,
+                - generic [ref=e84]: Category 6, and operates with a qualified
+                - generic [ref=e86]: building manager, engineers, architects,
+                - generic [ref=e88]: construction managers and site staff.
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - img [ref=e91]
+              - generic [ref=e94]: Professional Qualification & Classification Certificate - Category 6
+            - generic [ref=e97]:
+              - img [ref=e98]
+              - img [ref=e99]
+              - img [ref=e100]
+              - img [ref=e101]
+              - img [ref=e102]
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]: "2018"
+              - generic [ref=e109]: Established
+            - generic [ref=e110]:
+              - generic [ref=e111]: "11"
+              - generic [ref=e112]:
+                - generic [ref=e114]: Projects
+                - generic [ref=e116]: delivered and
+                - generic [ref=e118]: underway
+            - generic [ref=e119]:
+              - generic [ref=e120]: 2,500+
+              - generic [ref=e121]:
+                - generic [ref=e123]: Homes
+                - generic [ref=e125]: delivered or
+                - generic [ref=e127]: underway
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - img [ref=e130]
+              - heading "Category 6 Contractor" [level=3] [ref=e133]:
+                - generic [ref=e135]: Category 6 Contractor
+            - generic [ref=e136]:
+              - img [ref=e137]
+              - heading "Multidisciplinary Team" [level=3] [ref=e141]:
+                - generic [ref=e143]: Multidisciplinary Team
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - heading "Residential & Mixed-use Expertise" [level=3] [ref=e149]:
+                - generic [ref=e151]: Residential &
+                - generic [ref=e153]: Mixed-use Expertise
+    - generic [ref=e155]:
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: Selected work
+          - generic [ref=e160]:
+            - heading "Built evidence, not promises." [level=2] [ref=e161]:
+              - generic [ref=e163]: Built evidence, not
+              - generic [ref=e165]: promises.
+            - paragraph [ref=e166]:
+              - generic [ref=e168]: A portfolio of housing, villas, commercial premises,
+              - generic [ref=e170]: roads and networks, shown through real project
+              - generic [ref=e172]: scope and location proof.
+        - link "See all projects" [ref=e174] [cursor=pointer]:
           - /url: /projects
-      - group "Featured projects" [ref=e85]:
-        - generic [ref=e87]:
-          - group "1 / 11" [ref=e88]:
-            - link "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast. Completed Douaouda 300/500 Assisted Promotional Housing 300/500 Assisted Promotional Housing is a mixed-use project. It is located in Douaouda-Tipaza -Algerie. Open project" [ref=e89] [cursor=pointer]:
+      - group "Featured projects" [ref=e176]:
+        - generic [ref=e178]:
+          - group "1 / 11" [ref=e179]:
+            - link "Douaouda housing project Completed Douaouda 300/500 Assisted Promotional Housing - Douaouda Assisted promotional housing in Douaouda with professional premises, exterior works and TCE delivery. Open project" [ref=e180] [cursor=pointer]:
               - /url: /projects/douaouda-300-500-housing
-              - img "A wide shot of a large construction site with several multi-story concrete residential buildings in various stages of structural completion. A tall tower crane is visible in the background, extending over the buildings. The ground is reddish-brown dirt, and the sky is overcast." [ref=e90]
+              - img "Douaouda housing project" [ref=e181]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Douaouda
-                - heading "300/500 Assisted Promotional Housing" [level=3]
-                - paragraph: 300/500 Assisted Promotional Housing is a mixed-use project. It is located in Douaouda-Tipaza -Algerie.
+                    - generic: Douaouda
+                - heading "300/500 Assisted Promotional Housing - Douaouda" [level=3]:
+                  - generic:
+                    - generic: 300/500 Assisted
+                  - generic:
+                    - generic: Promotional Housing -
+                  - generic:
+                    - generic: Douaouda
+                - paragraph:
+                  - generic:
+                    - generic: Assisted promotional housing in Douaouda
+                  - generic:
+                    - generic: with professional premises, exterior works and
+                  - generic:
+                    - generic: TCE delivery.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "2 / 11" [ref=e92]:
-            - link "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows. Completed Sidi Abdallah - Mahalma 200/1200 Promotional Public Housing 200/1200 Promotional Public Housing is a mixed-use project. It is located in Sidi Abdellah -Alger -Algerie. Open project" [ref=e93] [cursor=pointer]:
+          - group "2 / 11" [ref=e183]:
+            - link "Completed Sidi Abdallah - Mahalma 200/1200 Promotional Public Housing - Sidi Abdallah - Mahalma Public promotional housing in Sidi Abdallah with R+9 buildings and commercial/professional premises. Open project" [ref=e184] [cursor=pointer]:
               - /url: /projects/sidi-abdallah-200-1200-housing
-              - img "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows." [ref=e94]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Sidi Abdallah - Mahalma
-                - heading "200/1200 Promotional Public Housing" [level=3]
-                - paragraph: 200/1200 Promotional Public Housing is a mixed-use project. It is located in Sidi Abdellah -Alger -Algerie.
+                    - generic: Sidi Abdallah - Mahalma
+                - heading "200/1200 Promotional Public Housing - Sidi Abdallah - Mahalma" [level=3]:
+                  - generic:
+                    - generic: 200/1200 Promotional
+                  - generic:
+                    - generic: Public Housing - Sidi
+                  - generic:
+                    - generic: Abdallah - Mahalma
+                - paragraph:
+                  - generic:
+                    - generic: Public promotional housing in Sidi Abdallah
+                  - generic:
+                    - generic: with R+9 buildings and
+                  - generic:
+                    - generic: commercial/professional premises.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "3 / 11" [ref=e96]:
-            - link "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky. Completed Staoueli 11/41 Villas and Network Works 11/41 Villas and Network Works is a residential project. It is located in Staouali -Alger -Algerie. Open project" [ref=e97] [cursor=pointer]:
+          - group "3 / 11" [ref=e186]:
+            - link "Completed Staoueli 11/41 Villas and Network Works - Staoueli Standing villa delivery at Les Pastorales with secondary trades, roads and utility networks. Open project" [ref=e187] [cursor=pointer]:
               - /url: /projects/staoueli-11-41-villas
-              - img "Exterior view of newly completed residential villas featuring light facades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky." [ref=e98]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Staoueli
-                - heading "11/41 Villas and Network Works" [level=3]
-                - paragraph: 11/41 Villas and Network Works is a residential project. It is located in Staouali -Alger -Algerie.
+                    - generic: Staoueli
+                - heading "11/41 Villas and Network Works - Staoueli" [level=3]:
+                  - generic:
+                    - generic: 11/41 Villas and Network
+                  - generic:
+                    - generic: Works - Staoueli
+                - paragraph:
+                  - generic:
+                    - generic: Standing villa delivery at Les Pastorales with
+                  - generic:
+                    - generic: secondary trades, roads and utility networks.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "4 / 11" [ref=e100]:
-            - link "Exterior view of a modern three-story commercial building with dark grey panels and copper trim, situated between two light-colored residential high-rises, with a street and a parked car in the foreground. Completed Douira, Algiers Rahmania Commercial Centres Two commercial centres completed as part of Douira's 2,500-home residential development. Open project" [ref=e101] [cursor=pointer]:
+          - group "4 / 11" [ref=e189]:
+            - link "Interior of a modern commercial unit with white walls, tiled floor, and recessed lighting, viewed through a black-framed glass partition. A worker is visible near a large window in the background, which shows another building. Completed Douira, Algiers Rahmania Commercial Centres - Douira Two commercial centres serving a 2,500-home residential programme in Douira, Algiers. Open project" [ref=e190] [cursor=pointer]:
               - /url: /projects/rahmania
-              - img "Exterior view of a modern three-story commercial building with dark grey panels and copper trim, situated between two light-colored residential high-rises, with a street and a parked car in the foreground." [ref=e102]
+              - img "Interior of a modern commercial unit with white walls, tiled floor, and recessed lighting, viewed through a black-framed glass partition. A worker is visible near a large window in the background, which shows another building." [ref=e191]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Douira, Algiers
-                - heading "Rahmania Commercial Centres" [level=3]
-                - paragraph: Two commercial centres completed as part of Douira's 2,500-home residential development.
+                    - generic: Douira, Algiers
+                - heading "Rahmania Commercial Centres - Douira" [level=3]:
+                  - generic:
+                    - generic: Rahmania Commercial
+                  - generic:
+                    - generic: Centres - Douira
+                - paragraph:
+                  - generic:
+                    - generic: Two commercial centres serving a 2,500-home
+                  - generic:
+                    - generic: residential programme in Douira, Algiers.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "5 / 11" [ref=e104]:
-            - link "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset. Completed Said Hamdine, Bir Mourad Rais, Algiers Mixed Real Estate Complex with 202 Free Promotional Housing Mixed Real Estate Complex with 202 Free Promotional Housing is a mixed-use project. It is located in Said Hamdine ,Bir Mourad Rais ,Alger ,Algerie. Open project" [ref=e105] [cursor=pointer]:
+          - group "5 / 11" [ref=e193]:
+            - link "Completed Said Hamdine, Bir Mourad Rais, Algiers Mixed Real Estate Complex with 202 Free Promotional Housing - Said Hamdine Five residential blocks, 202 free promotional units, commercial levels and two basement parking floors. Open project" [ref=e194] [cursor=pointer]:
               - /url: /projects/said-hamdine-mixed-real-estate
-              - img "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset." [ref=e106]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Said Hamdine, Bir Mourad Rais, Algiers
-                - heading "Mixed Real Estate Complex with 202 Free Promotional Housing" [level=3]
-                - paragraph: Mixed Real Estate Complex with 202 Free Promotional Housing is a mixed-use project. It is located in Said Hamdine ,Bir Mourad Rais ,Alger ,Algerie.
+                    - generic: Said Hamdine, Bir Mourad Rais, Algiers
+                - heading "Mixed Real Estate Complex with 202 Free Promotional Housing - Said Hamdine" [level=3]:
+                  - generic:
+                    - generic: Mixed Real Estate
+                  - generic:
+                    - generic: Complex with 202 Free
+                  - generic:
+                    - generic: Promotional Housing -
+                  - generic:
+                    - generic: Said Hamdine
+                - paragraph:
+                  - generic:
+                    - generic: Five residential blocks, 202 free promotional
+                  - generic:
+                    - generic: units, commercial levels and two basement
+                  - generic:
+                    - generic: parking floors.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "6 / 11" [ref=e108]:
-            - link "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky. Completed Rouiba 4 Promotional Villas and Network Works 4 Promotional Villas and Network Works is a residential project. It is located in Rouiba -Alger -Algerie. Open project" [ref=e109] [cursor=pointer]:
+          - group "6 / 11" [ref=e196]:
+            - link "Completed Rouiba 4 Promotional Villas and Network Works - Rouiba Four promotional villas in Rouiba delivered with TCE, VRD and exterior site works. Open project" [ref=e197] [cursor=pointer]:
               - /url: /projects/rouiba-4-promotional-villas
-              - img "Exterior of a modern, light-colored promotional villa with multiple stories, recessed windows, and decorative pergolas, set against a cloudy sky." [ref=e110]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Rouiba
-                - heading "4 Promotional Villas and Network Works" [level=3]
-                - paragraph: 4 Promotional Villas and Network Works is a residential project. It is located in Rouiba -Alger -Algerie.
+                    - generic: Rouiba
+                - heading "4 Promotional Villas and Network Works - Rouiba" [level=3]:
+                  - generic:
+                    - generic: 4 Promotional Villas and
+                  - generic:
+                    - generic: Network Works - Rouiba
+                - paragraph:
+                  - generic:
+                    - generic: Four promotional villas in Rouiba delivered with
+                  - generic:
+                    - generic: TCE, VRD and exterior site works.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "7 / 11" [ref=e112]:
-            - link "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky. Completed Sidi Benour, Algiers 50 Free Promotional Housing Units 50 Free Promotional Housing Units is a residential project. It is located in Sidi Benour ,Alger ,Algerie. Open project" [ref=e113] [cursor=pointer]:
+          - group "7 / 11" [ref=e199]:
+            - link "Completed Sidi Benour, Algiers 50 Free Promotional Housing Units - Sidi Benour High-rise R+13 residential delivery within the Sidi Benour promotional housing programme. Open project" [ref=e200] [cursor=pointer]:
               - /url: /projects/sidi-benour-50-housing
-              - img "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky." [ref=e114]
               - generic:
                 - generic:
                   - generic: Completed
                   - generic:
                     - img
-                    - text: Sidi Benour, Algiers
-                - heading "50 Free Promotional Housing Units" [level=3]
-                - paragraph: 50 Free Promotional Housing Units is a residential project. It is located in Sidi Benour ,Alger ,Algerie.
+                    - generic: Sidi Benour, Algiers
+                - heading "50 Free Promotional Housing Units - Sidi Benour" [level=3]:
+                  - generic:
+                    - generic: 50 Free Promotional
+                  - generic:
+                    - generic: Housing Units - Sidi
+                  - generic:
+                    - generic: Benour
+                - paragraph:
+                  - generic:
+                    - generic: High-rise R+13 residential delivery within the
+                  - generic:
+                    - generic: Sidi Benour promotional housing programme.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "8 / 11" [ref=e116]:
-            - link "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees. Current Dely Brahim, Algiers 240 Free Promotional Housing with Commercial Areas 240 Free Promotional Housing with Commercial Areas is a mixed-use project. It is located in Dely Brahim ,Alger ,Algerie. Open project" [ref=e117] [cursor=pointer]:
+          - group "8 / 11" [ref=e202]:
+            - link "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees. Current Dely Brahim, Algiers 240 Free Promotional Housing with Commercial Areas - Dely Brahim A 240-unit vertical residential programme with commercial areas, services and underground parking. Open project" [ref=e203] [cursor=pointer]:
               - /url: /projects/dely-brahim-240-housing
-              - img "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees." [ref=e118]
+              - img "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees." [ref=e204]
               - generic:
                 - generic:
                   - generic: Current
                   - generic:
                     - img
-                    - text: Dely Brahim, Algiers
-                - heading "240 Free Promotional Housing with Commercial Areas" [level=3]
-                - paragraph: 240 Free Promotional Housing with Commercial Areas is a mixed-use project. It is located in Dely Brahim ,Alger ,Algerie.
+                    - generic: Dely Brahim, Algiers
+                - heading "240 Free Promotional Housing with Commercial Areas - Dely Brahim" [level=3]:
+                  - generic:
+                    - generic: 240 Free Promotional
+                  - generic:
+                    - generic: Housing with Commercial
+                  - generic:
+                    - generic: Areas - Dely Brahim
+                - paragraph:
+                  - generic:
+                    - generic: A 240-unit vertical residential programme with
+                  - generic:
+                    - generic: commercial areas, services and underground
+                  - generic:
+                    - generic: parking.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "9 / 11" [ref=e120]:
-            - link "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground. Current Bas Mazagran, Mostaganem 200 Assisted Housing and 38 Free Promotional Housing Units 200 Assisted Housing and 38 Free Promotional Housing Units is a mixed-use project. It is located in Bas Mazagran – Mostaganem -Algerie. Open project" [ref=e121] [cursor=pointer]:
+          - group "9 / 11" [ref=e206]:
+            - link "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground. Current Bas Mazagran, Mostaganem 200 Assisted Housing and 38 Free Promotional Housing Units - Bas Mazagran A seven-block Mostaganem programme combining assisted and free promotional housing with commercial premises. Open project" [ref=e207] [cursor=pointer]:
               - /url: /projects/bas-mazagran-200-38-housing
-              - img "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground." [ref=e122]
+              - img "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground." [ref=e208]
               - generic:
                 - generic:
                   - generic: Current
                   - generic:
                     - img
-                    - text: Bas Mazagran, Mostaganem
-                - heading "200 Assisted Housing and 38 Free Promotional Housing Units" [level=3]
-                - paragraph: 200 Assisted Housing and 38 Free Promotional Housing Units is a mixed-use project. It is located in Bas Mazagran – Mostaganem -Algerie.
+                    - generic: Bas Mazagran, Mostaganem
+                - heading "200 Assisted Housing and 38 Free Promotional Housing Units - Bas Mazagran" [level=3]:
+                  - generic:
+                    - generic: 200 Assisted Housing and
+                  - generic:
+                    - generic: 38 Free Promotional
+                  - generic:
+                    - generic: Housing Units - Bas
+                  - generic:
+                    - generic: Mazagran
+                - paragraph:
+                  - generic:
+                    - generic: A seven-block Mostaganem programme
+                  - generic:
+                    - generic: combining assisted and free promotional
+                  - generic:
+                    - generic: housing with commercial premises.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "10 / 11" [ref=e124]:
-            - link "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky. Current Bouraada Site, Reghaia, Algiers Province 250 Housing Units with Commercial Rental and Concierge Services 250 Housing Units with Commercial Rental and Concierge Services is a mixed-use project. It is located in Bourrade ,Reghaia ,Alger. Open project" [ref=e125] [cursor=pointer]:
+          - group "10 / 11" [ref=e210]:
+            - link "Current Bouraada Site, Reghaia, Algiers Province 250 Housing Units with Commercial Rental and Concierge Services - Bouraada Site A 250-unit Reghaia programme with commercial premises, concierge spaces and multi-block execution. Open project" [ref=e211] [cursor=pointer]:
               - /url: /projects/reghaia-bouraada-250-housing
-              - img "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky." [ref=e126]
               - generic:
                 - generic:
                   - generic: Current
                   - generic:
                     - img
-                    - text: Bouraada Site, Reghaia, Algiers Province
-                - heading "250 Housing Units with Commercial Rental and Concierge Services" [level=3]
-                - paragraph: 250 Housing Units with Commercial Rental and Concierge Services is a mixed-use project. It is located in Bourrade ,Reghaia ,Alger.
+                    - generic: Bouraada Site, Reghaia, Algiers Province
+                - heading "250 Housing Units with Commercial Rental and Concierge Services - Bouraada Site" [level=3]:
+                  - generic:
+                    - generic: 250 Housing Units with
+                  - generic:
+                    - generic: Commercial Rental and
+                  - generic:
+                    - generic: Concierge Services -
+                  - generic:
+                    - generic: Bouraada Site
+                - paragraph:
+                  - generic:
+                    - generic: A 250-unit Reghaia programme with
+                  - generic:
+                    - generic: commercial premises, concierge spaces and
+                  - generic:
+                    - generic: multi-block execution.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-          - group "11 / 11" [ref=e128]:
-            - link "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site. Current Boudouaou, Boumerdes 70 Assisted Housing and 10 Free Promotional Housing Units 70 Assisted Housing and 10 Free Promotional Housing Units is a mixed-use project. It is located in Boudouaou -Boumerdes-Algerie. Open project" [ref=e129] [cursor=pointer]:
+          - group "11 / 11" [ref=e213]:
+            - link "Current Boudouaou, Boumerdes 70 Assisted Housing and 10 Free Promotional Housing Units - Boudouaou A Boumerdes programme of 70 assisted and 10 free promotional units with commercial/professional premises. Open project" [ref=e214] [cursor=pointer]:
               - /url: /projects/boudouaou-70-10-housing
-              - img "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site." [ref=e130]
               - generic:
                 - generic:
                   - generic: Current
                   - generic:
                     - img
-                    - text: Boudouaou, Boumerdes
-                - heading "70 Assisted Housing and 10 Free Promotional Housing Units" [level=3]
-                - paragraph: 70 Assisted Housing and 10 Free Promotional Housing Units is a mixed-use project. It is located in Boudouaou -Boumerdes-Algerie.
+                    - generic: Boudouaou, Boumerdes
+                - heading "70 Assisted Housing and 10 Free Promotional Housing Units - Boudouaou" [level=3]:
+                  - generic:
+                    - generic: 70 Assisted Housing and
+                  - generic:
+                    - generic: 10 Free Promotional
+                  - generic:
+                    - generic: Housing Units -
+                  - generic:
+                    - generic: Boudouaou
+                - paragraph:
+                  - generic:
+                    - generic: A Boumerdes programme of 70 assisted and
+                  - generic:
+                    - generic: 10 free promotional units with
+                  - generic:
+                    - generic: commercial/professional premises.
                 - generic:
-                  - text: Open project
+                  - generic: Open project
                   - img
-        - generic [ref=e132]:
-          - generic [ref=e133]:
+        - generic [ref=e216]:
+          - generic [ref=e217]:
             - button "Previous" [disabled]:
               - img
-            - button "Next" [ref=e134]:
+            - button "Next" [ref=e218]:
               - img
-          - generic [ref=e136]: 01 / 11
-    - generic [ref=e139]:
-      - generic [ref=e140]:
-        - heading "About Us" [level=2] [ref=e142]
-        - generic [ref=e144]:
-          - paragraph [ref=e145]: Founded in 2018 in Ouled Fayet, Algiers, SARL Igloo Yapi Construction specializes in residential and mixed-use developments led by civil engineer Adem Talay.
-          - paragraph [ref=e146]: Our engineers, architects, site managers, and field teams work as one coordinated structure to deliver projects with precision, efficiency, and lasting quality.
-          - paragraph [ref=e147]: We create modern, durable, and functional spaces designed for people, businesses, and communities.
-      - generic [ref=e148]:
-        - generic [ref=e151]:
-          - button [disabled] [ref=e152]:
-            - img [ref=e153]
-          - button [disabled] [ref=e155]:
-            - img [ref=e156]
-        - generic [ref=e158]:
-          - generic [ref=e159]:
-            - generic [ref=e160]:
-              - generic [ref=e161]: "8"
-              - generic [ref=e162]: +
-            - generic [ref=e163]: Years Active
-          - generic [ref=e164]:
-            - generic [ref=e165]:
-              - generic [ref=e166]: "11"
-              - generic [ref=e167]: +
-            - generic [ref=e168]: Projects Featured
-    - generic [ref=e171]:
-      - generic [ref=e173]:
-        - generic [ref=e174]: Performance
-        - generic [ref=e175]:
-          - heading "Key figures" [level=2] [ref=e176]
-          - paragraph [ref=e177]: A quick read on delivery scope and the pace of the business.
-      - generic [ref=e178]:
-        - generic [ref=e179]:
-          - img [ref=e181]
-          - generic [ref=e184]:
-            - generic [ref=e186]: 8+
-            - generic [ref=e187]: Years of experience
-        - generic [ref=e188]:
-          - img [ref=e190]
-          - generic [ref=e194]:
-            - generic [ref=e196]: "11"
-            - generic [ref=e197]: Projects in portfolio
-        - generic [ref=e198]:
-          - img [ref=e200]
-          - generic [ref=e205]:
-            - generic [ref=e207]: 2500+
-            - generic [ref=e208]: Housing units delivered
-        - generic [ref=e209]:
-          - img [ref=e211]
-          - generic [ref=e215]:
-            - generic [ref=e217]: "4"
-            - generic [ref=e218]: Wilayas covered
-    - generic [ref=e221]:
-      - generic [ref=e222]:
-        - generic [ref=e223]:
-          - img "Igloo Construction" [ref=e224]
-          - heading "Build durable residential work with a coordinated construction partner." [level=2] [ref=e225]
-          - paragraph [ref=e226]: SARL Igloo Yapi Construction works from Algiers on residential and mixed-use programmes, combining engineering control, site coordination, and long-term delivery discipline.
-        - generic [ref=e227]:
-          - generic [ref=e228]: Discuss a project
-          - link "Email Igloo" [ref=e229] [cursor=pointer]:
-            - /url: mailto:medatalay@gmail.com
-            - text: Email Igloo
-            - img [ref=e230]
-          - link "Call Algeria office" [ref=e233] [cursor=pointer]:
+          - generic [ref=e221]: 01 / 11
+    - region "From first coordination to handover." [ref=e223]:
+      - generic [ref=e224]:
+        - generic [ref=e225]:
+          - generic [ref=e226]:
+            - generic [ref=e227]: Delivery discipline
+            - heading "From first coordination to handover." [level=2] [ref=e229]:
+              - generic [ref=e231]: From first
+              - generic [ref=e233]: coordination to
+              - generic [ref=e235]: handover.
+            - paragraph [ref=e236]:
+              - generic [ref=e238]: A clear technical structure keeps each programme
+              - generic [ref=e240]: moving through planning, engineering control, site
+              - generic [ref=e242]: execution and final delivery.
+          - figure
+        - generic [ref=e244]:
+          - article [ref=e245]:
+            - generic [ref=e246]: "01"
+            - img [ref=e249]
+            - heading "Pre-construction coordination" [level=3] [ref=e253]:
+              - generic [ref=e255]: Pre-construction
+              - generic [ref=e257]: coordination
+            - paragraph [ref=e259]:
+              - generic [ref=e261]: Scope, programme requirements, quantities and site
+              - generic [ref=e263]: constraints are aligned before work moves on site.
+          - article [ref=e264]:
+            - generic [ref=e265]: "02"
+            - img [ref=e268]
+            - heading "Engineering & TCE control" [level=3] [ref=e274]:
+              - generic [ref=e276]: Engineering &
+              - generic [ref=e278]: TCE control
+            - paragraph [ref=e280]:
+              - generic [ref=e282]: Engineers, architects and technical managers
+              - generic [ref=e284]: coordinate secondary trades, structures, MEP, roads
+              - generic [ref=e286]: and networks.
+          - article [ref=e287]:
+            - generic [ref=e288]: "03"
+            - img [ref=e291]
+            - heading "Site execution" [level=3] [ref=e296]:
+              - generic [ref=e298]: Site execution
+            - paragraph [ref=e300]:
+              - generic [ref=e302]: Construction managers and site teams organise daily
+              - generic [ref=e304]: progress, trade sequencing and material movement.
+          - article [ref=e305]:
+            - generic [ref=e306]: "04"
+            - img [ref=e309]
+            - heading "Quality, safety & schedule monitoring" [level=3] [ref=e312]:
+              - generic [ref=e314]: Quality, safety &
+              - generic [ref=e316]: schedule
+              - generic [ref=e318]: monitoring
+            - paragraph [ref=e320]:
+              - generic [ref=e322]: Delivery is tracked against technical requirements,
+              - generic [ref=e324]: safety rules, finish quality and contractual milestones.
+          - article [ref=e325]:
+            - generic [ref=e326]: "05"
+            - img [ref=e329]
+            - heading "Handover & aftercare" [level=3] [ref=e332]:
+              - generic [ref=e334]: Handover &
+              - generic [ref=e336]: aftercare
+            - paragraph [ref=e338]:
+              - generic [ref=e340]: Final works are closed with practical readiness,
+              - generic [ref=e342]: documentation and attention to the long-term use of
+              - generic [ref=e344]: each place.
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - generic [ref=e349]:
+          - paragraph [ref=e350]: Project footprint
+          - heading "Algeria & Beyond" [level=2] [ref=e351]:
+            - generic [ref=e353]: Algeria & Beyond
+        - paragraph [ref=e354]:
+          - generic [ref=e356]: Eleven project locations across four highlighted
+          - generic [ref=e358]: wilayas, with a dense Algiers delivery belt and
+          - generic [ref=e360]: active reach toward Mostaganem and Boumerdes.
+      - generic [ref=e361]:
+        - button "All locations11" [pressed] [ref=e362]: All locations11
+        - button "West Algiers / Tipaza5" [ref=e364]
+        - button "Central Algiers2" [ref=e365]
+        - button "East Algiers / Boumerdes2" [ref=e366]
+        - button "Mostaganem1" [ref=e367]
+        - button "Boumerdes1" [ref=e368]
+      - generic [ref=e369]:
+        - generic [ref=e370]:
+          - region "Interactive map of Igloo Construction project locations across Algeria" [ref=e372]:
+            - generic [ref=e373]:
+              - region "Map" [ref=e374]
+              - generic:
+                - generic: Use Ctrl + scroll to zoom the map
+              - button "Map marker" [ref=e375] [cursor=pointer]:
+                - generic [ref=e376]:
+                  - img [ref=e377]
+                  - generic: "1"
+              - button "Map marker" [ref=e380] [cursor=pointer]:
+                - generic [ref=e381]:
+                  - img [ref=e382]
+                  - generic: "2"
+              - button "Map marker" [ref=e385] [cursor=pointer]:
+                - generic [ref=e386]:
+                  - img [ref=e387]
+                  - generic: "3"
+              - button "Map marker" [ref=e390] [cursor=pointer]:
+                - generic [ref=e391]:
+                  - img [ref=e392]
+                  - generic: "4"
+              - button "Map marker" [ref=e395] [cursor=pointer]:
+                - generic [ref=e396]:
+                  - img [ref=e397]
+                  - generic: "5"
+              - button "Map marker" [ref=e400] [cursor=pointer]:
+                - generic [ref=e401]:
+                  - img [ref=e402]
+                  - generic: "6"
+              - button "Map marker" [ref=e405] [cursor=pointer]:
+                - generic [ref=e406]:
+                  - img [ref=e407]
+                  - generic: "7"
+              - button "Map marker" [ref=e410] [cursor=pointer]:
+                - generic [ref=e411]:
+                  - img [ref=e412]
+                  - generic: "8"
+              - button "Map marker" [ref=e415] [cursor=pointer]:
+                - generic [ref=e416]:
+                  - img [ref=e417]
+                  - generic: "9"
+              - button "Map marker" [ref=e420] [cursor=pointer]:
+                - generic [ref=e421]:
+                  - img [ref=e422]
+                  - generic: "10"
+              - button "Map marker" [ref=e425] [cursor=pointer]:
+                - generic [ref=e426]:
+                  - img [ref=e427]
+                  - generic: "11"
+            - generic [ref=e430]:
+              - button "Zoom in" [ref=e431] [cursor=pointer]
+              - button "Zoom out" [ref=e433] [cursor=pointer]
+          - generic [ref=e435]:
+            - generic [ref=e436]:
+              - img [ref=e437]
+              - generic [ref=e440]:
+                - generic [ref=e441]: "11"
+                - generic [ref=e444]: project pins
+            - generic [ref=e445]:
+              - img [ref=e446]
+              - generic [ref=e448]:
+                - generic [ref=e449]: "4"
+                - generic [ref=e452]: highlighted wilayas
+            - generic [ref=e453]:
+              - img [ref=e454]
+              - generic [ref=e458]:
+                - generic [ref=e459]: "1"
+                - generic [ref=e462]: north-coast delivery belt
+        - complementary [ref=e463]:
+          - paragraph [ref=e464]: Selected project
+          - heading "Douaouda Housing" [level=3] [ref=e465]:
+            - generic [ref=e467]: Douaouda Housing
+          - paragraph [ref=e468]: Douaouda · Tipaza
+          - paragraph [ref=e469]:
+            - generic [ref=e471]: Assisted promotional housing in Douaouda
+            - generic [ref=e473]: with professional premises, exterior works and
+            - generic [ref=e475]: TCE delivery.
+          - generic [ref=e476]:
+            - img [ref=e477]
+            - generic [ref=e480]: West Algiers / Tipaza
+            - generic [ref=e481]: "|"
+            - generic [ref=e482]: Completed
+          - img "Douaouda housing project" [ref=e484]
+          - link "Open project" [ref=e485] [cursor=pointer]:
+            - /url: /projects/douaouda-300-500-housing
+            - generic [ref=e486]: Open project
+            - img [ref=e487]
+    - generic [ref=e491]:
+      - generic [ref=e492]:
+        - generic [ref=e493]:
+          - img "Igloo Construction" [ref=e494]
+          - heading "Let’s discuss the next durable programme." [level=2] [ref=e495]:
+            - generic [ref=e497]: Let’s discuss the next
+            - generic [ref=e499]: durable programme.
+          - paragraph [ref=e500]:
+            - generic [ref=e502]: Speak with an Algiers-based team experienced in
+            - generic [ref=e504]: residential, mixed-use, roads, networks and
+            - generic [ref=e506]: coordinated site delivery.
+        - generic [ref=e507]:
+          - generic [ref=e508]: Project discussion
+          - link "Email Igloo" [ref=e509] [cursor=pointer]:
+            - /url: mailto:info@igloogroupe.com
+            - generic [ref=e510]: Email Igloo
+            - img [ref=e511]
+          - link "Call Algeria office" [ref=e514] [cursor=pointer]:
             - /url: tel:+213542819461
-            - text: Call Algeria office
-            - img [ref=e234]
-      - generic [ref=e236]:
-        - generic [ref=e237]:
-          - heading "Office" [level=3] [ref=e238]
-          - generic [ref=e239]:
-            - img [ref=e240]
-            - text: 9 National Route 142, Section 01, GP 235, Ground Floor, Ouled Fayet, Algiers
-        - generic [ref=e243]:
-          - heading "Contact" [level=3] [ref=e244]
-          - generic [ref=e245]:
-            - link "+213 542 819 461" [ref=e246] [cursor=pointer]:
+            - generic [ref=e515]: Call Algeria office
+            - img [ref=e516]
+      - generic [ref=e518]:
+        - generic [ref=e519]:
+          - heading "Office" [level=3] [ref=e520]
+          - generic [ref=e521]:
+            - img [ref=e522]
+            - generic [ref=e525]:
+              - generic [ref=e527]: N° 8, Rue Krouch Slimane, Closan JeanLot n° 1-31, RDC,
+              - generic [ref=e529]: Bir Khadem – Alger
+        - generic [ref=e530]:
+          - heading "Contact" [level=3] [ref=e531]
+          - generic [ref=e532]:
+            - link "+213 542 819 461" [ref=e533] [cursor=pointer]:
               - /url: tel:+213542819461
-              - img [ref=e247]
+              - img [ref=e534]
               - text: +213 542 819 461
-            - link "+90 542 479 5700" [ref=e249] [cursor=pointer]:
+            - link "+90 542 479 5700" [ref=e536] [cursor=pointer]:
               - /url: tel:+905424795700
-              - img [ref=e250]
+              - img [ref=e537]
               - text: +90 542 479 5700
-            - link "medatalay@gmail.com" [ref=e252] [cursor=pointer]:
-              - /url: mailto:medatalay@gmail.com
-              - img [ref=e253]
-              - text: medatalay@gmail.com
-        - generic [ref=e256]:
-          - heading "Navigation" [level=3] [ref=e257]
-          - generic [ref=e258]:
-            - link "Home" [ref=e259] [cursor=pointer]:
+            - link "info@igloogroupe.com" [ref=e539] [cursor=pointer]:
+              - /url: mailto:info@igloogroupe.com
+              - img [ref=e540]
+              - text: info@igloogroupe.com
+        - generic [ref=e543]:
+          - heading "Navigation" [level=3] [ref=e544]
+          - generic [ref=e545]:
+            - link "Home" [ref=e546] [cursor=pointer]:
               - /url: /
-            - link "Company" [ref=e260] [cursor=pointer]:
-              - /url: /#about
-            - link "Projects" [ref=e261] [cursor=pointer]:
+            - link "Company" [ref=e547] [cursor=pointer]:
+              - /url: /about
+            - link "Projects" [ref=e548] [cursor=pointer]:
               - /url: /projects
-            - link "Proof" [ref=e262] [cursor=pointer]:
+            - link "Proof" [ref=e549] [cursor=pointer]:
               - /url: /#proof
-            - link "Process" [ref=e263] [cursor=pointer]:
+            - link "Process" [ref=e550] [cursor=pointer]:
               - /url: /#services
-            - link "Contact" [ref=e264] [cursor=pointer]:
-              - /url: /#contact
-      - generic [ref=e265]:
-        - paragraph [ref=e266]: © 2026 Igloo Construction. All rights reserved.
-        - paragraph [ref=e267]: Founded 2018 · Ouled Fayet, Algiers · RC 16B1098634
+            - link "Contact" [ref=e551] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e552]:
+        - paragraph [ref=e553]: © 2026 Igloo Construction. All rights reserved.
+        - paragraph [ref=e554]:
+          - generic [ref=e556]: Bir Khadem, Algiers · Category 6 certified contractor ·
+          - generic [ref=e558]: Residential and mixed-use delivery
 ```
 
 # Test source

@@ -1,0 +1,181 @@
+{
+  "pageId": "home",
+  "locale": "en",
+  "sourceRevision": "v1-dba325a2",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v3-natural-en",
+  "status": "approved",
+  "updatedAt": "2026-07-12T15:40:00.000Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Residential, Commercial & Infrastructure Projects in Algeria",
+    "description": "SARL Igloo Yapi Construction is a Category 6 certified general contractor delivering residential, commercial, and civil infrastructure projects across Algeria.",
+    "socialTitle": "SARL Igloo Yapi Construction | General Contracting & Turnkey Delivery",
+    "socialDescription": "Category 6 certified general contractor executing residential, commercial, and infrastructure projects across Algeria."
+  },
+  "content": {
+    "hero": {
+      "eyebrow": "SARL Igloo Yapi Construction",
+      "title": "Reliable Construction & Turnkey General Contracting in Algeria",
+      "lead": "We bring residential, mixed-use, and infrastructure projects to life through engineering excellence, strong site management, and a quality-driven approach.",
+      "primaryCta": "Explore Projects",
+      "secondaryCta": "Get in Touch",
+      "trustFacts": [
+        {
+          "value": "2018",
+          "label": "Established"
+        },
+        {
+          "value": "11",
+          "label": "Active & Completed Projects"
+        },
+        {
+          "value": "2,500+",
+          "label": "Housing Units"
+        },
+        {
+          "value": "4",
+          "label": "Active Wilayas"
+        },
+        {
+          "value": "Category 6",
+          "label": "Qualification"
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Our Approach",
+      "title": "Bringing engineering, planning, and site management under one roof",
+      "body": "From multi-family housing blocks and villas to commercial buildings and infrastructure, we manage planning, execution, and delivery with an integrated approach.",
+      "credential": "Category 6 Professional Qualification and Classification Certificate",
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Established",
+          "detail": "Head office in Bir Khadem, Algiers"
+        },
+        {
+          "value": "11",
+          "label": "Projects",
+          "detail": "Completed and ongoing construction works"
+        },
+        {
+          "value": "2,500+",
+          "label": "Housing Units",
+          "detail": "Residential and mixed-use developments"
+        },
+        {
+          "value": "4",
+          "label": "Wilayas",
+          "detail": "Algiers, Tipaza, Mostaganem, and Boumerdes"
+        }
+      ]
+    },
+    "featuredProjects": {
+      "eyebrow": "Projects",
+      "title": "Completed and Active Projects",
+      "lead": "Explore our portfolio of residential, commercial, villa, and infrastructure developments."
+    },
+    "process": {
+      "eyebrow": "Our Workflow",
+      "title": "Streamlined project management from planning to handover",
+      "lead": "We deliver every project by integrating engineering planning, quality control, and on-site coordination into a single, efficient process.",
+      "steps": [
+        {
+          "id": "coordination",
+          "title": "Pre-Construction Planning",
+          "body": "Project scope, quantities, site conditions, schedules, and logistics are thoroughly planned before any work begins on-site."
+        },
+        {
+          "id": "engineering",
+          "title": "Engineering Coordination",
+          "body": "Structural execution, mechanical, electrical, and plumbing (MEP) layouts, and all other disciplines are managed in full alignment."
+        },
+        {
+          "id": "site",
+          "title": "Site Execution",
+          "body": "The construction process is carried out under the direct supervision of our site engineers, adhering strictly to project specifications and quality standards."
+        },
+        {
+          "id": "monitoring",
+          "title": "Quality & Safety Control",
+          "body": "Material compliance, workmanship quality, health and safety protocols, and schedule tracking are monitored systematically."
+        },
+        {
+          "id": "handover",
+          "title": "Final Checks & Handover",
+          "body": "Following technical verification and the completion of all necessary documentation, the project is fully delivered to the client."
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Corporate Profile",
+      "title": "SARL Igloo Yapi Construction",
+      "credential": "Category 6 Professional Qualification and Classification Certificate",
+      "paragraphs": [
+        "Founded in 2018 by Civil Engineer Adem Talay, SARL Igloo Yapi Construction is a Category 6 certified general contractor specializing in residential, commercial, mixed-use, and civil infrastructure projects across Algeria.",
+        "Operating from its head office in Bir Khadem, Algiers, the company manages every stage of a project under one roof—from planning and site execution to technical coordination and turnkey delivery.",
+        "With a strong team of civil engineers, architects, site managers, technical staff, and skilled field crews, we provide reliable, well-organized, and quality-driven solutions for both public institutions and the private sector."
+      ],
+      "metrics": [
+        {
+          "value": "2018",
+          "label": "Established"
+        },
+        {
+          "value": "11",
+          "label": "Active & Completed Projects"
+        },
+        {
+          "value": "2,500+",
+          "label": "Housing Units"
+        }
+      ],
+      "proofs": [
+        {
+          "title": "Category 6 General Contractor",
+          "body": "Holds the official professional qualification and classification certificate required to undertake large-scale residential, commercial, and infrastructure works."
+        },
+        {
+          "title": "Expert Technical Team",
+          "body": "Supported by a solid organizational structure comprising civil engineers, architects, site managers, and specialized field crews."
+        },
+        {
+          "title": "Residential & Mixed-Use Expertise",
+          "body": "Offers extensive engineering and field experience in multi-family housing, premium villas, commercial zones, and infrastructure civil works."
+        }
+      ]
+    },
+    "footprint": {
+      "eyebrow": "Areas of Operation",
+      "title": "Active Operations Across Four Wilayas",
+      "lead": "We operate across four different regions with completed and ongoing projects spanning Algiers, Tipaza, Mostaganem, and Boumerdes.",
+      "selectedLabel": "Selected Project",
+      "openProject": "View Project Details",
+      "statusCompleted": "Completed",
+      "statusInProgress": "In Progress",
+      "stats": [
+        {
+          "value": "11",
+          "label": "Projects"
+        },
+        {
+          "value": "4",
+          "label": "Wilayas"
+        },
+        {
+          "value": "1",
+          "label": "Head Office"
+        }
+      ]
+    },
+    "footer": {
+      "eyebrow": "Contact",
+      "title": "Let's Build Your Next Project Together",
+      "lead": "Get in touch with our technical team to discuss your residential, commercial, or infrastructure developments.",
+      "emailLabel": "Email Technical Office",
+      "phoneLabel": "Call Head Office",
+      "proofLine": "Bir Khadem, Algiers • Category 6 Certified General Contractor • Turnkey Construction & VRD Infrastructure Services"
+    }
+  }
+}

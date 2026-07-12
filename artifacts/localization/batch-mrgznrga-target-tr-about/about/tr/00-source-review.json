@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgznrga-target-tr-about",
+  "pageId": "about",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:21:27.914Z",
+  "status": "review",
+  "issues": [],
+  "note": "English source remains authoritative; repair suggestions are reviewed before changing source JSON."
+}

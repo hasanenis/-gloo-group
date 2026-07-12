@@ -1,0 +1,21 @@
+{
+  "pageId": "about",
+  "locale": "en",
+  "sourceRevision": "v1-0ab197cd",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-e7ec3615",
+  "status": "approved",
+  "updatedAt": "2026-07-11T22:10:04.809Z",
+  "seo": {
+    "title": "SARL Igloo Yapi Construction | Corporate Profile",
+    "description": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+    "socialTitle": "SARL Igloo Yapi Construction | Corporate Profile",
+    "socialDescription": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations."
+  },
+  "content": {
+    "eyebrow": "Corporate Profile",
+    "heading": "Integrated engineering and site execution teams.",
+    "body": "Founded in 2018 and led by civil engineer Adem Talay, SARL Igloo Yapi Construction operates from Bir Khadem, Algiers, specialising in residential and mixed-use developments across Algeria."
+  }
+}

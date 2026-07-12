@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgx5rys-target-fr-contact",
+  "pageId": "contact",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-afb518cf",
+  "generatedAt": "2026-07-11T22:11:29.401Z",
+  "status": "pass",
+  "issues": []
+}

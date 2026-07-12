@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrgzu0wv-target-tr-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-ae0bb1f4",
+  "generatedAt": "2026-07-11T23:26:20.056Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas | Dely Brahim",
+      "draft": "Ticari Alanlara Sahip 240 Adet Serbest Tanıtımlı Konut Birimi | Dely Brahim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Cezayir, Dely Brahim'de yer alan ve entegre ticari cepheler içeren 240 adet serbest statülü konut birimine ilişkin teknik şartnameler, yapısal uygulama ve yerleşim planı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "Ticari Alanlara Sahip 240 Adet Ücretsiz Tanıtım Konutu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Cezayir, Dely Brahim'de yer alan ve entegre ticari cepheler içeren 240 adet serbest statülü konut birimine ilişkin teknik şartnameler, yapısal uygulama ve yerleşim planı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "dely-brahim-240-housing",
+      "draft": "Dely Ibrahim 240 Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "Ticari Alanlara Sahip 240 Adet Ücretsiz Tanıtım Konutu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "Karma Kullanımlı Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A 33-storey mixed-use residential tower in Dely Brahim, Algiers, integrating 240 free promotional housing units with three commercial levels, three basement levels, and three parking mezzanine floors.",
+      "draft": "Cezayir, Dely Brahim'de; 240 adet serbest piyasa konut birimini üç ticari kat, üç bodrum katı ve üç otopark asma katı ile bütünleştiren, 33 katlı, karma kullanımlı bir konut kulesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "This high-rise development features residential units distributed from the 3rd to the 33rd floor, supported by a multi-level commercial podium and dedicated subterranean parking structures.",
+      "draft": "Bu yüksek katlı proje; çok katlı bir ticari podyum ve özel yeraltı otopark yapılarıyla desteklenen, 3. kattan 33. kata kadar dağılmış konut birimlerini bünyesinde barındırmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The architectural programme optimizes urban density by vertically zoning F3, F4, and F5 apartment typologies above a three-level commercial base. The lower levels incorporate three basement floors and three parking mezzanine levels to resolve site constraints and vehicle circulation.",
+      "draft": "Mimari program, üç katlı bir ticari tabanın üzerinde F3, F4 ve F5 konut tipolojilerini dikey olarak kurgulayarak kentsel yoğunluğu optimize etmektedir. Alt seviyeler; arazi kısıtlamalarını ve araç sirkülasyonunu çözümlemek amacıyla üç bodrum katı ile üç otopark asma katını bünyesinde barındırmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The structural execution required complex vertical coordination, managing the integration of reinforced concrete framing, vertical circulation shafts, fire safety compartments, mechanical, electrical, and plumbing (MEP) systems, and facade articulation.",
+      "draft": "Yapısal uygulama; betonarme iskelet, düşey sirkülasyon şaftları, yangın güvenliği bölmeleri, mekanik, elektrik ve tesisat (MEP) sistemleri ile cephe kurgusunun entegrasyonunu yönetmeyi gerektiren karmaşık bir düşey koordinasyon süreciydi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A high-rise mixed-use development coordinating residential density, active street-level commercial frontage, and multi-level parking into a single vertical structure.",
+      "draft": "Konut yoğunluğunu, sokak seviyesinde hareketli ticari cepheleri ve çok katlı otoparkı tek bir dikey yapıda bir araya getiren, yüksek katlı ve karma kullanımlı bir proje.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "Cezayir, Dely Brahim'de yer alan ve entegre ticari cepheler içeren 240 adet serbest statülü konut birimine ilişkin teknik şartnameler, yapısal uygulama ve yerleşim planı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Free promotional housing with commercial premises and services",
+      "draft": "Ticari alanlar ve hizmetler içeren ücretsiz tanıtım amaçlı konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Free promotional housing with commercial premises",
+      "draft": "Ticari alanlar içeren ücretsiz tanıtım amaçlı konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bois des Cars, Dely Brahim, Algiers",
+      "draft": "Bois des Cars, Dely Brahim, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "Konut Birimleri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "240 units",
+      "draft": "240 birim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Vertical Zoning",
+      "draft": "Dikey Bölgeleme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "Residential units from the 3rd to the 33rd floor, 8 units per floor",
+      "draft": "3. kattan 33. kata kadar konut birimleri; her katta 8 birim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Commercial Base",
+      "draft": "Ticari Taban",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "3 commercial levels with terrace",
+      "draft": "Teraslı 3 ticari kat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Parking Infrastructure",
+      "draft": "Otopark Altyapısı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "3 basement levels and 3 parking mezzanine floors",
+      "draft": "3 bodrum katı ve 3 otopark ara katı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.label",
+      "source": "Status",
+      "draft": "Durum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.value",
+      "source": "Current",
+      "draft": "Mevcut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Proje Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "33-storey mixed-use tower",
+      "draft": "33 katlı karma kullanımlı kule",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "240 residential units in F3, F4, and F5 configurations",
+      "draft": "F3, F4 ve F5 konfigürasyonlarında 240 konut birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Three basement levels and three parking mezzanine floors",
+      "draft": "Üç bodrum katı ve üç otopark ara katı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including roads and utility networks (VRD), MEP, vertical transport, and safety systems",
+      "draft": "Yollar ve altyapı şebekeleri (VRD), MEP, dikey ulaşım ve güvenlik sistemleri dahil olmak üzere tüm yapım işlerinin (TCE) teslimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Local Infrastructure",
+      "draft": "Yerel Altyapı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Dely Brahim commercial district",
+      "draft": "Dely Brahim ticaret bölgesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is 240 Free Promotional Housing with Commercial Areas?",
+      "draft": "Ticari alanlara sahip 240 adet ücretsiz tanıtım konutu nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project is a 33-storey mixed-use tower containing 240 free promotional housing units, supported by a three-level commercial podium, three basement levels, and three parking mezzanine floors.",
+      "draft": "Proje; üç katlı bir ticari podyum, üç bodrum katı ve üç otopark asma katı ile desteklenen, 240 adet serbest konut birimini bünyesinde barındıran 33 katlı, karma kullanımlı bir kuledir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "How are the residential and commercial zones distributed vertically?",
+      "draft": "Konut ve ticari bölgeler dikey olarak nasıl dağılmıştır?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The tower features vertical zoning with F3, F4, and F5 apartment layouts situated from the 3rd to the 33rd floor, positioned above three commercial levels with terrace access.",
+      "draft": "Kule, teras erişimine sahip üç ticari katın üzerinde yer alan ve 3. kattan 33. kata kadar konumlandırılmış F3, F4 ve F5 daire planlarıyla dikey bir yerleşim düzenine sahiptir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What parking and circulation infrastructure is integrated into the site?",
+      "draft": "Alana ne tür bir otopark ve dolaşım altyapısı entegre edilmiştir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Dely Brahim pushes the portfolio upward: a 33-storey tower with homes from the 3rd to the 33rd floor, eight homes per floor, three commercial levels with terrace, three basement levels and three parking entre-sols.",
+      "draft": "Dely Brahim projesi portföyü bir üst seviyeye taşıyor: 3. kattan 33. kata kadar konutların yer aldığı 33 katlı bir kule; her katta sekiz daire, teraslı üç ticari kat, üç bodrum katı ve üç ara otopark katından oluşuyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Aydınlatılmış konut balkonlarına, canlı ticari vitrinlere ve çok katlı yeraltı otoparkına sahip çağdaş, karma kullanımlı bir binanın; hareket halindeki araçların ve ağaçların bulunduğu bir cadde kenarındaki gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Night view of the mixed-use tower showing the illuminated residential balconies and active commercial frontage.",
+      "draft": "Aydınlatılmış konut balkonlarını ve hareketli ticari cepheyi gösteren, karma kullanımlı kulenin gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Gece vakti modern, çok katlı bir bina; zemin katında içeride insanların bulunduğu, parlak ışıklarla aydınlatılmış ticari dükkanlar ve üst katlarda balkonlu konut birimleri yer alıyor. Sokaktaki araçlar hareket halindeyken bulanık görünüyor ve bir yaya oradan geçiyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Detail of the active street-level commercial frontage and upper residential balconies at night.",
+      "draft": "Gece vakti, hareketli zemin kat ticari cephesi ve üst kat konut balkonlarının detayı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Ön planda ağaçlar ve bir yolun yer aldığı, koyu mavi bir akşam gökyüzü fonunda; parlak ışıklandırılmış balkonlara ve zemin katında ticari alanlara sahip, yüksek ve çağdaş bir konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Elevation view of the 33-storey tower showing the vertical transition from the commercial base to the residential levels.",
+      "draft": "Ticari tabandan konut katlarına olan dikey geçişi gösteren, 33 katlı kulenin cephe görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Gece vakti aydınlatılmış; çok sayıda balkona ve cephesinde parlak dikey ışık şeritlerine sahip, yüksek ve çağdaş bir konut binası. Zemin katında geniş vitrinli, parlak ışıklarla aydınlatılmış ticari dükkânlar yer alıyor ve binanın önünden, araç ışıklarının hareket halindeyken bulanıklaştığı bir cadde geçiyor. Ağaçların çevrelediği binanın üzerinde ise yıldızlı bir gece gökyüzü seçiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and vertical lighting elements on the residential elevation.",
+      "draft": "Konut cephesinde cephe artikülasyonu ve dikey aydınlatma elemanları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Aydınlatılmış konut balkonlarına, canlı ticari vitrinlere ve çok katlı yeraltı otoparkına sahip çağdaş, karma kullanımlı bir binanın; hareket halindeki araçların ve ağaçların bulunduğu bir cadde kenarındaki gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Integration of the multi-level parking structure and commercial podium.",
+      "draft": "Çok katlı otopark yapısı ile ticari podyumun entegrasyonu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Ön planda ağaçlar ve bir yolun yer aldığı, koyu mavi bir akşam gökyüzü fonunda; parlak ışıklandırılmış balkonlara ve zemin katında ticari alanlara sahip, yüksek ve çağdaş bir konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "The tower profile against the evening sky, highlighting the residential massing.",
+      "draft": "Konut kütlesini öne çıkaran, akşam gökyüzü fonundaki kule silüeti.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Gece vakti modern, çok katlı bir bina; zemin katında içeride insanların bulunduğu, parlak ışıklarla aydınlatılmış ticari dükkanlar ve üst katlarda balkonlu konut birimleri yer alıyor. Sokaktaki araçlar hareket halindeyken bulanık görünüyor ve bir yaya oradan geçiyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Pedestrian perspective of the glazed commercial storefronts.",
+      "draft": "Cam cepheli ticari vitrinlerin yaya gözünden görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Gece vakti aydınlatılmış; çok sayıda balkona ve cephesinde parlak dikey ışık şeritlerine sahip, yüksek ve çağdaş bir konut binası. Zemin katında geniş vitrinli, parlak ışıklarla aydınlatılmış ticari dükkânlar yer alıyor ve binanın önünden, araç ışıklarının hareket halindeyken bulanıklaştığı bir cadde geçiyor. Ağaçların çevrelediği binanın üzerinde ise yıldızlı bir gece gökyüzü seçiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Night view showing the vertical lighting integrated into the facade panels.",
+      "draft": "Cephe panellerine entegre edilmiş dikey aydınlatmayı gösteren gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Aydınlatılmış konut balkonlarına, canlı ticari vitrinlere ve çok katlı yeraltı otoparkına sahip çağdaş, karma kullanımlı bir binanın; hareket halindeki araçların ve ağaçların bulunduğu bir cadde kenarındaki gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "The relationship between the active commercial base and the residential tower above.",
+      "draft": "Hareketli ticari taban ile üzerindeki konut kulesi arasındaki ilişki.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Ön planda ağaçlar ve bir yolun yer aldığı, koyu mavi bir akşam gökyüzü fonunda; parlak ışıklandırılmış balkonlara ve zemin katında ticari alanlara sahip, yüksek ve çağdaş bir konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior view of the residential balconies and structural framing.",
+      "draft": "Konut balkonlarının ve yapısal iskeletin dıştan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Gece vakti modern, çok katlı bir bina; zemin katında içeride insanların bulunduğu, parlak ışıklarla aydınlatılmış ticari dükkanlar ve üst katlarda balkonlu konut birimleri yer alıyor. Sokaktaki araçlar hareket halindeyken bulanık görünüyor ve bir yaya oradan geçiyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Ground-level view of the commercial glazing and pedestrian access.",
+      "draft": "Ticari cam cephe ve yaya erişiminin zemin seviyesinden görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Aydınlatılmış konut balkonlarına, canlı ticari vitrinlere ve çok katlı yeraltı otoparkına sahip çağdaş, karma kullanımlı bir binanın; hareket halindeki araçların ve ağaçların bulunduğu bir cadde kenarındaki gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed structural envelope and external works.",
+      "draft": "Yapı kabuğu ve dış cephe çalışmaları tamamlandı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "Gece vakti aydınlatılmış; çok sayıda balkona ve cephesinde parlak dikey ışık şeritlerine sahip, yüksek ve çağdaş bir konut binası. Zemin katında geniş vitrinli, parlak ışıklarla aydınlatılmış ticari dükkânlar yer alıyor ve binanın önünden, araç ışıklarının hareket halindeyken bulanıklaştığı bir cadde geçiyor. Ağaçların çevrelediği binanın üzerinde ise yıldızlı bir gece gökyüzü seçiliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Facade finishing and external lighting installation.",
+      "draft": "Cephe kaplama ve dış aydınlatma montajı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "Ön planda ağaçlar ve bir yolun yer aldığı, koyu mavi bir akşam gökyüzü fonunda; parlak ışıklandırılmış balkonlara ve zemin katında ticari alanlara sahip, yüksek ve çağdaş bir konut binası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Completed structural frame and exterior cladding.",
+      "draft": "Yapısal iskelet ve dış cephe kaplaması tamamlandı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "Gece vakti modern, çok katlı bir bina; zemin katında içeride insanların bulunduğu, parlak ışıklarla aydınlatılmış ticari dükkanlar ve üst katlarda balkonlu konut birimleri yer alıyor. Sokaktaki araçlar hareket halindeyken bulanık görünüyor ve bir yaya oradan geçiyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Detail of the completed ground-floor commercial envelope.",
+      "draft": "Tamamlanmış zemin kat ticari cephe sisteminin detayı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "Aydınlatılmış konut balkonlarına, canlı ticari vitrinlere ve çok katlı yeraltı otoparkına sahip çağdaş, karma kullanımlı bir binanın; hareket halindeki araçların ve ağaçların bulunduğu bir cadde kenarındaki gece görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "The 33-storey mixed-use tower integrating residential, commercial, and parking levels.",
+      "draft": "Konut, ticari alan ve otopark katlarını bünyesinde barındıran 33 katlı karma kullanımlı kule.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

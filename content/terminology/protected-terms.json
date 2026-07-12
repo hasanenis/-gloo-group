@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "terms": [
+    {
+      "source": "LPA",
+      "protected": true,
+      "domain": "housing",
+      "fr": "LPA",
+      "tr": "LPA",
+      "ar-DZ": "LPA",
+      "notes": "Keep the programme acronym."
+    },
+    {
+      "source": "LPL",
+      "protected": true,
+      "domain": "housing",
+      "fr": "LPL",
+      "tr": "LPL",
+      "ar-DZ": "LPL",
+      "notes": "Keep the programme acronym."
+    },
+    {
+      "source": "LPP",
+      "protected": true,
+      "domain": "housing",
+      "fr": "LPP",
+      "tr": "LPP",
+      "ar-DZ": "LPP",
+      "notes": "Keep the programme acronym."
+    },
+    {
+      "source": "VRD",
+      "protected": true,
+      "domain": "construction",
+      "fr": "VRD",
+      "tr": "VRD",
+      "ar-DZ": "VRD",
+      "notes": "Voirie et réseaux divers; preserve acronym in project facts."
+    },
+    {
+      "source": "R+8",
+      "protected": true,
+      "domain": "construction",
+      "fr": "R+8",
+      "tr": "R+8",
+      "ar-DZ": "R+8"
+    },
+    {
+      "source": "R+9",
+      "protected": true,
+      "domain": "construction",
+      "fr": "R+9",
+      "tr": "R+9",
+      "ar-DZ": "R+9"
+    },
+    {
+      "source": "SARL Igloo Yapi Construction",
+      "protected": true,
+      "domain": "company",
+      "fr": "SARL Igloo Yapi Construction",
+      "tr": "SARL Igloo Yapi Construction",
+      "ar-DZ": "SARL Igloo Yapi Construction"
+    }
+  ]
+}

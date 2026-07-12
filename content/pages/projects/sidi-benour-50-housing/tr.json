@@ -1,0 +1,181 @@
+{
+  "pageId": "projects/sidi-benour-50-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-90b63688",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-a387bd4c03ba5f5a",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:30.211Z",
+  "seo": {
+    "title": "50 Serbest Promosyonel Konut Ünitesi",
+    "description": "Cezayir, Sidi Benour'daki 50 serbest promosyonel konut ünitesine ait teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu.",
+    "socialTitle": "50 Serbest Promosyonel Konut Ünitesi",
+    "socialDescription": "Cezayir, Sidi Benour'daki 50 serbest promosyonel konut ünitesine ait teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu."
+  },
+  "content": {
+    "slug": "sidi-benour-50-housing",
+    "title": "50 Serbest Promosyonel Konut Ünitesi",
+    "eyebrow": "KONUT PROJESİ",
+    "summary": [
+      "Sidi Benour'da, 362 konutluk daha geniş bir serbest promosyonel konut programının parçası olan R+13 katlı 50 konutluk bir teslimat.",
+      "Sidi Benour projesi, dikey kütle kurgusu, entegre altyapı ağları ve koordineli saha içi sirkülasyon ile kentsel konut talebini karşılamaktadır."
+    ],
+    "description": [
+      "Proje kapsamı, R+13 konut bloğu için tüm işler (TCE) teslimatını ve altyapı ile çevre düzenleme (VRD) işlerini içermekte; kaba inşaat uygulaması, cephe kurgusu, bina tesisatları ve çevre düzenleme işlerini koordine etmektedir.",
+      "Cephe kurgusu, dikey hatlar ve çıkıntılı balkonlarla belirlenmiş olup, kapsamlı saha tesviyesi, altyapı bağlantıları ve özel erişim yolları ile desteklenmektedir."
+    ],
+    "authority": "Yoğun kentsel konut gereksinimlerini karşılamak üzere yapı mühendisliği, cephe ritmi, VRD ve teknik sistemlerin entegre edildiği çok katlı bir konut projesi.",
+    "seo": "Cezayir, Sidi Benour'daki 50 serbest promosyonel konut ünitesine ait teknik detaylar, yapısal uygulama ve şantiye ilerleme durumu.",
+    "meta": [
+      {
+        "label": "Proje tipi",
+        "value": "Serbest promosyonel konut (LPL)"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje tipi",
+        "value": "Serbest promosyonel konut (LPL)"
+      },
+      {
+        "label": "Konum",
+        "value": "Sidi Benour, Mehelma, Cezayir"
+      },
+      {
+        "label": "Program",
+        "value": "362 konutluk bir program dahilinde 50 konut"
+      },
+      {
+        "label": "Tamamlanma",
+        "value": "2025"
+      },
+      {
+        "label": "Tipoloji",
+        "value": "Zemin kat artı 13 üst katlı (R+13) konut binası"
+      },
+      {
+        "label": "İşler",
+        "value": "Altyapı ve çevre düzenleme (VRD) ile birlikte tüm işler (TCE) teslimatı"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje programı",
+        "items": [
+          "362 konutluk bir program kapsamında teslim edilen 50 konut",
+          "Zemin kat artı 13 üst katlı (R+13) konut binası",
+          "TCE, VRD, MEP ve dış mekan erişimi",
+          "Koordineli uygulama ile 2025 yılında tamamlandı"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "50 Serbest Promosyonel Konut Ünitesi projesinin kapsamı nedir?",
+        "answer": "Sidi Benour'da, 362 konutluk daha geniş bir serbest promosyonel konut programının parçası olan R+13 katlı 50 konutluk bir teslimattır."
+      },
+      {
+        "question": "Bu şantiyede hangi inşaat işleri gerçekleştirildi?",
+        "answer": "Proje, bir R+13 konut binası için TCE ve VRD teslimatını bir araya getirerek taşıyıcı sistemi, cepheleri, teknik sistemleri ve dış sirkülasyonu koordine etmektedir."
+      },
+      {
+        "question": "Proje çevre alanla nasıl entegre olmaktadır?",
+        "answer": "Tasarım, arazi kullanımını optimize etmek için dikey kütle kurgusundan yararlanmakta, tam operasyonel hazır olma durumunu sağlamak için özel erişim yolları ve entegre altyapı bağlantıları ile desteklenmektedir."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Bulutlu bir gökyüzü altında, açıkta kalan beton taşıyıcı sistemi and kırmızı tuğla dolgu duvarları ile inşaat halindeki çok katlı bir konut binasının dıştan görünümü.",
+          "caption": "Tuğla dolgulu, inşaat halindeki konut binası."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+          "alt": "Üstte bir vinç bomu ve arka planda diğer binalarla birlikte, büyük beton istinat duvarları, karmaşık donatı yapıları ve üst seviyedeki işçileri içeren inşaat halindeki çok katlı bir konut binasının görünümü.",
+          "caption": "Sidi Benour'daki konut ünitelerinde yapısal ilerleme."
+        }
+      ],
+      "intro": {
+        "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+        "alt": "Açık mavi bir gökyüzüne karşı, açıkta kalan beton taşıyıcı sistemi, kırmızı tuğla dolgu duvarları ve kırmızı bir kule vinci ile inşaat halindeki yüksek bir konut binası. Ön planda yerde istiflenmiş kırmızı tuğlalar görülüyor.",
+        "caption": "Sidi Benour'daki 50 konut ünitesinde yapısal ilerleme."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+          "alt": "Kapalı bir gökyüzü altında, üst seviyelerinde açıkta kalan donatılar ve iskeleler bulunan, inşaat halindeki çok katlı betonarme bir binaya bakan büyük bir kule vinç.",
+          "caption": "Konut üniteleri için devam eden kaba inşaat işleri."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+          "alt": "Alçak bir beton duvarın ve kaplamalı alanın arkasından, zemin seviyesinden görülen, çok sayıda balkon ve pencereye sahip, açık renkli, yüksek ve modern bir konut binasının tam dış görünümü.",
+          "caption": "Cezayir, Sidi Benour'da tamamlanan konut binası."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+          "alt": "Beton kolon ve döşemeleri, kırmızı tuğla duvarları ve balkonları gösteren inşaat halindeki yüksek bir konut binası. Sol tarafta yukarı doğru uzanan büyük kırmızı bir inşaat vinci kısmen görünüyor. Üst balkonlardan birinde bir işçi görülüyor.",
+          "caption": "Konut ünitelerinde kaba inşaat ve tuğla dolgu ilerlemesi."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Bulutlu bir gökyüzü altında, açıkta kalan beton taşıyıcı sistemi and kırmızı tuğla dolgu duvarları ile inşaat halindeki çok katlı bir konut binasının dıştan görünümü.",
+          "caption": "Tuğla dolgulu, inşaat halindeki konut binası."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+          "alt": "Sol tarafta kırmızı bir kule vinç ve yapı üzerinde çalışan işçilerle birlikte, yeni bir döşeme için büyük bir beton temel ve donatı kafeslerinin bulunduğu bir inşaat sahasının havadan görünümü. Puslu bir gökyüzü altında uzak konut binaları ve yeşil tepeler görünüyor.",
+          "caption": "Donatı ve kalıp işlerini içeren, konut üniteleri için devam eden kaba inşaat işleri."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+          "alt": "Çizgili tişörtlü ve şapkalı bir inşaat işçisi, inşaat halindeki bir binanın içinde büyük kırmızı delikli tuğla yığınları arasında duruyor; açık bir bölümden uzak konut binaları ve yeşillikler görünüyor.",
+          "caption": "Sidi Benour konut şantiyesinde tuğlalı işçi."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, açıkta kalan beton taşıyıcı sistemi, kırmızı tuğla dolgu duvarları ve kırmızı bir kule vinci ile inşaat halindeki yüksek bir konut binası. Ön planda yerde istiflenmiş kırmızı tuğlalar görülüyor.",
+          "caption": "Sidi Benour'daki 50 konut ünitesinde yapısal ilerleme."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Bulutlu bir gökyüzü altında, açıkta kalan beton taşıyıcı sistemi and kırmızı tuğla dolgu duvarları ile inşaat halindeki çok katlı bir konut binasının dıştan görünümü.",
+          "caption": "Tuğla dolgulu, inşaat halindeki konut binası."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+          "alt": "Açıkta kalan beton taşıyıcı sistemleri ve bazı kırmızı tuğla dolguları ile çok sayıda katı gösteren, inşaat halindeki yüksek bir konut binası. Sol üstte büyük bir kule vinç görünüyor and gökyüzü gri ve kapalı. Bazı balkonlarda inşaat malzemeleri görülüyor.",
+          "caption": "Sidi Benour'daki 50 konut ünitesinde yapısal ilerleme."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+          "alt": "İnşaat halindeki çok katlı betonarme bir binanın alçak açıdan çekimi; üst katlarda açıkta kalan beton döşemeler, kolonlar ve ahşap iskeleler görülüyor. Sağ üstte bir vinç bomu görünüyor and güneş binanın arkasından parlak bir şekilde parlayarak parçalı bulutlu mavi bir gökyüzüne karşı bir siluet etkisi yaratıyor.",
+          "caption": "Gökyüzüne doğru yükselen betonarme yapı."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, açıkta kalan beton taşıyıcı sistemi, kırmızı tuğla dolgu duvarları ve kırmızı bir kule vinci ile inşaat halindeki yüksek bir konut binası. Ön planda yerde istiflenmiş kırmızı tuğlalar görülüyor.",
+          "caption": "Sidi Benour'daki 50 konut ünitesinde yapısal ilerleme."
+        },
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Bulutlu bir gökyüzü altında, açıkta kalan beton taşıyıcı sistemi and kırmızı tuğla dolgu duvarları ile inşaat halindeki çok katlı bir konut binasının dıştan görünümü.",
+          "caption": "Tuğla dolgulu, inşaat halindeki konut binası."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+          "alt": "Bulutlu bir gökyüzü altında, açıkta kalan beton taşıyıcı sistemi and kırmızı tuğla dolgu duvarları ile inşaat halindeki çok katlı bir konut binasının dıştan görünümü.",
+          "caption": "Tuğla dolgulu, inşaat halindeki konut binası."
+        }
+      ]
+    }
+  }
+}

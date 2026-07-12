@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh1dtfy-target-ar-DZ-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-12T00:09:43.192Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "با مازغران | 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر"
+    },
+    {
+      "id": "seo.description",
+      "text": "الإنجاز التقني للمشروع السكني المكون من 238 وحدة سكنية في با مازغران، مستغانم، ويضم 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر. مشروع ساحلي في مرحلة التسليم."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "با مازغران | 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "الإنجاز التقني للمشروع السكني المكون من 238 وحدة سكنية في با مازغران، مستغانم، ويضم 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر. مشروع ساحلي في مرحلة التسليم."
+    },
+    {
+      "id": "content.slug",
+      "text": "bas-mazagran-200-38-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "200 مسكن ترقوي مدعم و38 مسكن ترقوي حر، با مازغران"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "مشروع سكني"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "يقع هذا المشروع السكني في با مازغران بمستغانم، ويتكون من سبع عمارات هيكلية تضم 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر، مدمجة مع محلات تجارية في الطابق الأرضي. مشروع ساحلي في مرحلة التسليم."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يعمل المشروع على تحسين الكثافة العمودية من خلال توزيع الكتل الهيكلية وتصميم الواجهات، مع دمج ممرات مخصصة للمشاة وشبكة الطرق والشبكات المختلفة (VRD) لتهيئة المحيط السكني الجديد."
+    },
+    {
+      "id": "content.description.0",
+      "text": "يتوزع المخطط المعماري لـ 238 شقة عبر سبع عمارات هيكلية من الخرسانة، مصممة بتوزيع يبلغ أربع شقق في كل طابق لتحسين حركة المرور الداخلية وكفاءة الهيكل."
+    },
+    {
+      "id": "content.description.1",
+      "text": "يتقدم برنامج البناء حالياً في مرحلة الأشغال الثانوية، مع التركيز على التشطيبات المعمارية، وبناء جدران الواجهات بالآجر، والتمديدات التقنية الداخلية، واستكمال الطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.authority",
+      "text": "ديوان الترقية والتسيير العقاري (OPGI)"
+    },
+    {
+      "id": "content.seo",
+      "text": "المواصفات التقنية، تقدم الأشغال، وتفاصيل موقع 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر في با مازغران، مستغانم."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "صاحب المشروع"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "OPGI"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "سكن ترقوي مدعم وترقوي حر"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "نوع المشروع"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "سكن ترقوي مدعم وترقوي حر"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "با مازغران، مستغانم"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "البرنامج"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "200 مسكن ترقوي مدعم و38 مسكن ترقوي حر"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "العمارات"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "7 عمارات (من طابق أرضي + 5 طوابق علوية إلى طابق أرضي + 9 طوابق علوية)"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "الحالة"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "قيد الإنجاز"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "238 وحدة سكنية مبرمجة تتوزع بين الفئات المدعمة والترقوية الحرة"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "سبع عمارات هيكلية من الخرسانة تتراوح بين طابق أرضي + 5 طوابق علوية وطابق أرضي + 9 طوابق علوية (R+5 إلى R+9)"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "محلات تجارية في الطابق الأرضي"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "شبكة متكاملة للطرق والشبكات المختلفة (VRD) وممرات للمشاة"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "سياق الموقع"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "المنطقة الساحلية لبا مازغران، مستغانم"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو مشروع 200 مسكن ترقوي مدعم و38 مسكن ترقوي حر؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "هو مشروع سكني يضم 200 وحدة سكنية بصيغة الترقوي المدعم (LPA) و38 وحدة بصيغة الترقوي الحر، موزعة على سبع عمارات هيكلية مع محلات تجارية في الطابق الأرضي. وهو مشروع ساحلي في مرحلة التسليم."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هو التوزيع الهيكلي للعمارات؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "يشمل المشروع إنجازاً هيكلياً ومكانياً لـ 238 شقة موزعة على سبع عمارات، مع الحفاظ على توزيع عملي بمعدل أربع شقق في كل طابق."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "من هو صاحب المشروع السكني؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "يتم إنجاز المشروع لحساب ديوان الترقية والتسيير العقاري (OPGI) لتلبية الاحتياجات السكنية في المنطقة."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "ما هي الحالة الحالية لأشغال البناء؟"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "المشروع حالياً قيد الإنجاز، حيث تركز الأشغال على التشطيبات المعمارية الثانوية، وبناء الواجهات، وتهيئة الطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق قيد الإنجاز، تظهر الهياكل الخرسانية وجدران الطوب الأحمر، تحت سماء صافية مع مرور شخص في المقدمة."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "الأشغال الهيكلية للعمارات السكنية تظهر الهياكل الخرسانية المسلحة وجدران الآجر."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "لقطة واسعة لموقع بناء يضم هياكل سكنية خرسانية متعددة في مراحل إنجاز مختلفة، مع بروز حديد التسليح من الأعلى، ورافعة برجية زرقاء كبيرة على اليسار تحت سماء صافية. مواد البناء موزعة على الأرضية الترابية."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "الرافعة البرجية قيد التشغيل أثناء إنجاز الهياكل الخرسانية للعمارات السكنية ذات الارتفاع R+5 إلى R+9."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "منظر لموقع بناء يظهر أكواماً ترابية كبيرة في المقدمة، مع رافعتين (واحدة برجية وأخرى متنقلة) قيد التشغيل، وعمارات قيد الإنجاز في الخلفية تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "أشغال الحفر وتهيئة البنية التحتية عبر موقع المشروع."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "منظر جوي لموقع بناء يظهر حفارة رمادية من نوع HIDROMEK تقوم بالحفر في خندق رملي واسع. شاحنتا تفريغ برتقاليتان متوقفتان في الجوار، إحداهما محملة بالتراب. في الخلفية، تظهر عمارة خرسانية قيد الإنجاز، مع عمارات سكنية وتلال بعيدة. يتواجد عاملان بالقرب من الشاحنات."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "عمليات الحفر وتسوية الموقع لوضع أساسات العمارات السبع."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "حفارة ذات ذراع كبير تقوم بحفر خندق عميق في تربة رملية. يقف عاملان بالقرب من الخندق لمتابعة العملية، مع ظهور عامل آخر داخل مقصورة الحفارة. جدار خرساني تعلوه أسلاك شائكة يظهر في الخلفية."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "حفر الخنادق لتمديد الشبكات الأرضية المختلفة."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "عاملان بالقرب من شاحنة بيك آب بيضاء محملة بمواد البناء في موقع ترابي، مع رافعة برجية زرقاء كبيرة وعمارات متعددة الطوابق قيد الإنجاز في الخلفية تحت سماء غائمة جزئياً."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "الخدمات اللوجستية للمواد في الموقع وتوريد عناصر البناء الثانوية."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق قيد الإنجاز، تظهر الهياكل الخرسانية وجدران الطوب الأحمر، تحت سماء صافية مع مرور شخص في المقدمة."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "تقدم أشغال البناء الخارجي والهياكل الحاملة للوحدات السكنية."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "حفارة وشاحنتا تفريغ في موقع بناء رملي، مع عمارة خرسانية شبه مكتملة في الخلفية تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "الآليات الثقيلة تقوم بتهيئة تضاريس الموقع لشبكة الطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "حفارة وشاحنات تفريغ في موقع بناء مع خندق محفور وعمارة خرسانية قيد الإنجاز جزئياً، تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "أشغال الحفر الأولية وتأسيس البنية التحتية."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق قيد الإنجاز، تظهر الهياكل الخرسانية وجدران الطوب الأحمر، تحت سماء صافية مع مرور شخص في المقدمة."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "تفاصيل الواجهات وبناء الجدران الخارجية للعمارات متعددة الطوابق."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "لقطة واسعة لموقع بناء يضم هياكل سكنية خرسانية متعددة في مراحل إنجاز مختلفة، مع بروز حديد التسليح من الأعلى، ورافعة برجية زرقاء كبيرة على اليسار تحت سماء صافية. مواد البناء موزعة على الأرضية الترابية."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "الكتل الهيكلية للعمارات السبع خلال مرحلة صب الخرسانة."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "حفارة يظهر اسم 'HIDROMEK' على ذراعها تقوم بحفر خندق عميق في تربة رملية. يتواجد عاملان داخل الخندق، ويقف عامل آخر بقميص أحمر بالقرب من الحفارة. جدار خرساني تعلوه أسلاك شائكة يظهر في الخلفية."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "أشغال الهندسة المدنية وحفر الخنادق لتوصيل الشبكات المختلفة."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "شاحنة بيك آب بيضاء من نوع JMC محملة بأكياس مواد البناء، ويقف بالقرب منها رجلان في موقع بناء ترابي. في الخلفية، تظهر رافعة برجية زرقاء كبيرة وعدة عمارات متعددة الطوابق قيد الإنجاز تحت سماء غائمة جزئياً."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "توصيل مواد التشطيبات إلى قطاعات البناء النشطة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق قيد الإنجاز، تظهر الهياكل الخرسانية وجدران الطوب الأحمر، تحت سماء صافية مع مرور شخص في المقدمة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "إنجاز جدران الآجر الخارجية وفتحات النوافذ."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "لقطة واسعة لموقع بناء يضم هياكل سكنية خرسانية متعددة في مراحل إنجاز مختلفة، مع بروز حديد التسليح من الأعلى، ورافعة برجية زرقاء كبيرة على اليسار تحت سماء صافية. مواد البناء موزعة على الأرضية الترابية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "نظرة عامة على العمارات السكنية السبع قيد الإنجاز."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "منظر لعدة عمارات سكنية متعددة الطوابق قيد الإنجاز، تظهر الهياكل الخرسانية وجدران الطوب الأحمر، تحت سماء صافية مع مرور شخص في المقدمة."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "العمارات الهيكلية لمشروع با مازغران خلال مرحلة بناء جدران الآجر."
+    }
+  ]
+}

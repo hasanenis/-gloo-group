@@ -104,7 +104,7 @@ Detailed tooling documentation and the binding global rules for cva/cn styling, 
 
 ## Performance Rules
 
-- For route-level or layout changes, validate with Playwright snapshots on `/`, `/projects`, `/projects/:slug`, and `/bat-demo/projects` using the shared viewport set.
+- Run Playwright snapshots only when the change materially affects route-level layout, responsive behavior, or shared navigation. Test only affected routes/viewports; do not run the full route matrix by default.
 - For bundle-sensitive changes, run `npm run analyze:bundle` and use the report to decide whether a dependency or route should be lazy-loaded or split into its own chunk.
 - Keep the home shell light. Push heavy editorial, demo, or animation-only surfaces behind route splits or lazy imports when they do not need to be on the first screen.
 
@@ -140,20 +140,17 @@ Active rebuild plan and reference notes: `docs/design-editor-framer-rebuild-plan
 
 ## Verification
 
-For most changes:
+Verification must be proportional to risk. Do not run tests, TypeScript checks, builds, browser checks, or dev servers for documentation, copy-only, configuration, metadata, or clearly isolated low-risk edits unless the user requests them or evidence suggests a problem.
 
-```bash
-npm run lint
-npm run build
-```
+Run each selected verification command once after the edit set stabilizes. Repeat it only if a subsequent edit can affect its result or the first run was inconclusive. Batch targeted file searches/reads and bound their output; avoid repeatedly reading unchanged whole files.
 
-For visual or animation changes:
+- Small isolated code change: run the narrowest relevant check when one exists.
+- Shared TypeScript/API change: run `npm run lint`.
+- Build/config/dependency/route-boundary change: run `npm run build`; add `npm run lint` only when useful.
+- Visual or animation change: inspect only the affected route and viewport; do not automatically test unrelated routes.
+- Full `lint + build + Playwright` is reserved for broad, release-level, or high-risk changes.
 
-```bash
-npm run dev
-```
-
-Then manually verify:
+When browser verification is actually warranted, check only relevant items from this list:
 
 - `/` loads without console errors and the one-time intro veil plays once per session.
 - `/projects` and `/projects/:slug` render the current demo/detail pages; `/projects1` still plays the legacy GSAP scroll choreography through all sections.

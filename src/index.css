@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss/theme";
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
@@ -21,6 +21,12 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+}
+
+:root[lang='ar-DZ'] {
+  --font-sans: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+  --font-nav: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+  --font-serif: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
 }
 
 body {
@@ -1381,6 +1387,7 @@ img {
   color: rgba(255, 255, 255, 0.74);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: 88px 0 28px;
+  overflow-x: clip;
 }
 
 .app-footer__inner {

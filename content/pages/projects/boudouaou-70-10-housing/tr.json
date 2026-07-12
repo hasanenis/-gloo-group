@@ -1,0 +1,189 @@
+{
+  "pageId": "projects/boudouaou-70-10-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-1bd2397e",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-808212f0a8574840",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:30.870Z",
+  "seo": {
+    "title": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi",
+    "description": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir.",
+    "socialTitle": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi",
+    "socialDescription": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir."
+  },
+  "content": {
+    "slug": "boudouaou-70-10-housing",
+    "title": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi",
+    "eyebrow": "KARMA KULLANIMLI KONUT PROJESİ",
+    "summary": [
+      "Boudouaou'da, destekli ve serbest promosyonel konutları zemin kattaki mesleki ve ticari alanlarla birleştiren 80 konutluk karma yerleşim projesi.",
+      "Proje, üç ayrı blokta 70 LPA destekli konut ünitesini, 10 LPL konut ünitesini ve 10 ticari alanı entegre etmektedir."
+    ],
+    "description": [
+      "Mimari kütle dağılımı üç bloktan oluşmaktadır: Her biri zemin kat artı 8 üst kat (R+8) olarak tasarlanan Blok A ve Blok B ile zemin kat artı 5 üst kat (R+5) olarak tasarlanan Blok C. Kat planları, her katta dört daire olacak şekilde yapılandırılarak F3 ve F4 tipolojilerinin dengeli bir dağılımını sağlamaktadır.",
+      "Uygulama kapsamı; ince işler, su yalıtımı, iç doğrama işleri, mekanik, elektrik ve tesisat (MEP) kurulumlarının yanı sıra karma kullanım programını entegre etmek amacıyla altyapı ve çevre düzenleme (VRD) işleri ile dış saha düzenlemelerini içeren anahtar teslim tüm inşaat işlerini (TCE) kapsamaktadır."
+    ],
+    "authority": "Üç yapısal bloğun, ticari cephelerin ve saha altyapı ağlarının bütünsel bir kentsel entegrasyon olarak uygulandığı koordineli bir konut projesi.",
+    "seo": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir.",
+    "meta": [
+      {
+        "label": "İşveren",
+        "value": "AADL"
+      },
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari ve mesleki alanlara sahip LPA destekli konut ve LPL promosyonel konut projesi"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari alanlara sahip LPA ve LPL konutları"
+      },
+      {
+        "label": "Konum",
+        "value": "Boudouaou, Boumerdes"
+      },
+      {
+        "label": "Konut Üniteleri",
+        "value": "80 ünite (70 LPA + 10 LPL)"
+      },
+      {
+        "label": "Yapısal Kütle",
+        "value": "3 blok: R+8, R+8 ve R+5"
+      },
+      {
+        "label": "Tamamlanma Yılı",
+        "value": "2025"
+      },
+      {
+        "label": "İşveren",
+        "value": "AADL"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Programı",
+        "items": [
+          "70 LPA ve 10 LPL daireden oluşan 80 konut ünitesi",
+          "R+8 ve R+5 yükseklik profillerinde inşa edilmiş üç yapısal blok",
+          "Zemin katta yer alan 10 ticari ve mesleki alan",
+          "Altyapı ve çevre düzenleme (VRD) dahil olmak üzere anahtar teslim tüm inşaat işleri (TCE)"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "70 Destekli Konut ve 10 Serbest Promosyonel Konut Ünitesi projesi nedir?",
+        "answer": "Bu proje, Boudouaou'da 70 LPA destekli konut ünitesi ile 10 LPL promosyonel konut ünitesini zemin kattaki ticari alanlarla birleştiren 80 konutluk karma bir yerleşim projesidir."
+      },
+      {
+        "question": "Yapısal yükseklikler ve blok konfigürasyonları nasıldır?",
+        "answer": "Proje üç bloktan oluşmaktadır: Blok A ve Blok B, zemin kat artı 8 üst kat (R+8) olarak yapılandırılmışken, Blok C ise zemin kat artı 5 üst kat (R+5) olarak inşa edilmiştir."
+      },
+      {
+        "question": "İnşaat işlerinin teknik kapsamı neydi?",
+        "answer": "Sözleşme; ince işler, iç mekan kaplamaları, MEP tesisatları ile altyapı ve çevre düzenleme (VRD) işlerini kapsayan anahtar teslim tüm inşaat işleri (TCE) çerçevesinde yürütülmüştür."
+      },
+      {
+        "question": "Bireysel daire planları nasıl dağıtılmaktadır?",
+        "answer": "Boudouaou projesi, farklı yüksekliklerdeki üç blokta 70 LPA konutunu, 10 LPL konutunu ve 10 mesleki/ticari alanı bir araya getirmektedir."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+          "alt": "Açık mavi bir gökyüzü altında, açık renkli cephelere ve çok sayıda pencereye sahip, yeni inşa edilmiş çok katlı bir konut binasının dıştan görünümü. Binanın önündeki toprak zeminde yer alan inşaat ekipmanları ve bir araç, Boudouaou proje sahasında devam eden çalışmaları göstermektedir.",
+          "caption": "R+8 konut bloklarında cephe hareketleri ve dış saha çalışmaları."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp",
+          "alt": "Güneş parlaması eşliğinde, parlak mavi bir gökyüzüne karşı düşük bir açıdan görülen, açık renkli cepheye ve koyu renkli, desenli balkon korkuluklarına sahip modern, çok katlı bir konut binası.",
+          "caption": "Tamamlanan cephenin ve balkon korkuluklarının düşük açılı görünümü."
+        }
+      ],
+      "intro": {
+        "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+        "alt": "Açık mavi bir gökyüzüne karşı, çok sayıda pencereye ve bazı balkonlara sahip, açık renkli birkaç yüksek apartman binasının aşağıdan görünümü. Ön plandaki zeminin toprak olması, yakın zamanda yapılan inşaat çalışmalarını göstermektedir.",
+        "caption": "Son saha tesviyesi sırasında çok katlı konut bloklarının görünüşü."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+          "alt": "Açık mavi bir gökyüzü altında, bazıları kapalı panjurlu çok sayıda balkona ve pencereye sahip, açık renkli yüksek bir konut binası. Binanın önündeki kaplamasız zeminde sarı ve siyah renkli bir kazıcı yükleyici park edilmiş durumda, sağda ise bir araç kısmen görünmektedir.",
+          "caption": "R+8 bloğunun önünde aktif saha çalışmaları ve dış altyapı bağlantıları."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, aralarında sarı bir kule vincin görüldüğü, inşaatın çeşitli aşamalarındaki çok katlı birkaç konut binasının görünümü.",
+          "caption": "Betonarme karkas aşamasında yapısal uygulama ve kule vinç çalışmaları."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp",
+          "alt": "İnşaatın çeşitli aşamalarındaki birkaç yüksek konut binasının dinamik, düşük açılı bir çekimi. Soldaki binanın brüt betonu görünürken, ortadaki binalar pencereli ve balkonlu, tamamlanmış açık renkli cepheleri göstermektedir. Sağda, parlak ve bulutlu gökyüzüne doğru uzanan büyük, mavi bir inşaat vinci yer almaktadır. Ön planda bir toprak yığını görünmektedir.",
+          "caption": "Üç blokta eş zamanlı kaba yapı inşası ve cephe bitirme işleri."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, çok sayıda pencereye ve bazı balkonlara sahip, açık renkli birkaç yüksek apartman binasının aşağıdan görünümü. Ön plandaki zeminin toprak olması, yakın zamanda yapılan inşaat çalışmalarını göstermektedir.",
+          "caption": "Son dış saha işlerini bekleyen tamamlanmış kaba yapılar."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, çok sayıda pencereye ve balkona sahip, yeni inşa edilmiş yüksek, beyaz apartman binaları. Ön plandaki zeminin kaplamasız toprak olması, devam eden saha düzenlemesini göstermektedir. Toprak yolda küçük, beyaz bir kamyonet görünmektedir.",
+          "caption": "Dış saha hazırlığı ve yol hizalama çalışmaları."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp",
+          "alt": "Bazı bölümleri beyaz boyalı cephelere sahip, diğer kısımları ise hala brüt beton halinde olan inşaat halindeki yüksek konut binaları. Biri balkonda, diğeri ise iskelede olmak üzere iki inşaat işçisi görünmektedir. Açık mavi gökyüzüne karşı bir vinç bomu kısmen seçilmektedir.",
+          "caption": "Cephe sıva uygulaması ve dış cephe yalıtımı."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+          "alt": "Açık mavi bir gökyüzü altında, bazıları kapalı panjurlu çok sayıda balkona ve pencereye sahip, açık renkli yüksek bir konut binası. Binanın önündeki kaplamasız zeminde sarı ve siyah renkli bir kazıcı yükleyici park edilmiş durumda, sağda ise bir araç kısmen görünmektedir.",
+          "caption": "Ana altyapı şebekeleri için kazı ve kanal açma işleri."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, çok sayıda pencereye ve bazı balkonlara sahip, açık renkli birkaç yüksek apartman binasının aşağıdan görünümü. Ön plandaki zeminin toprak olması, yakın zamanda yapılan inşaat çalışmalarını göstermektedir.",
+          "caption": "R+8 konut blokları arasındaki kütle düzeni ve mekansal mesafe."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp",
+          "alt": "İnşaatın çeşitli aşamalarındaki çok katlı birkaç konut binası. Soldaki ve ortadaki binalar, beyaz pencere çerçeveleri ve balkonlarıyla açık bej rengine boyanmış olup büyük ölçüde tamamlanmış görünmektedir. En sağdaki bina ise hala brüt beton ve tuğla aşamasındadır. Üstte açık mavi bir gökyüzü görünmekte ve elektrik hatları kadrajı kesmektedir. Ön plandaki toprak inşaat sahasında küçük bir kamyonet park halindedir.",
+          "caption": "Kaba yapıların ve dış duvar işlerinin aşamalı olarak tamamlanması."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp",
+          "alt": "Açık mavi bir gökyüzü altında, siyah korkuluklu balkonlara sahip, yeni inşa edilmiş çok katlı, açık bej rengi bir konut binası. Zemin seviyesinde inşaat malzemeleri görünmektedir.",
+          "caption": "Dış cephe kaplamalarının ve balkon korkuluklarının detaylı görünümü."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+          "alt": "Açık mavi bir gökyüzü altında, bazıları kapalı panjurlu çok sayıda balkona ve pencereye sahip, açık renkli yüksek bir konut binası. Binanın önündeki kaplamasız zeminde sarı ve siyah renkli bir kazıcı yükleyici park edilmiş durumda, sağda ise bir araç kısmen görünmektedir.",
+          "caption": "Nihai altyapı ve çevre düzenleme (VRD) kurulumu için saha tesviyesi ve hazırlığı."
+        },
+        {
+          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+          "alt": "Açık mavi bir gökyüzüne karşı, çok sayıda pencereye ve bazı balkonlara sahip, açık renkli birkaç yüksek apartman binasının aşağıdan görünümü. Ön plandaki zeminin toprak olması, yakın zamanda yapılan inşaat çalışmalarını göstermektedir.",
+          "caption": "Konut bloklarının saha sınırına göre yapısal hizalanması."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+          "alt": "Açık mavi bir gökyüzü altında, açık renkli cephelere ve çok sayıda pencereye sahip, yeni inşa edilmiş çok katlı bir konut binasının dıştan görünümü. Binanın önündeki toprak zeminde yer alan inşaat ekipmanları ve bir araç, Boudouaou proje sahasında devam eden çalışmaları göstermektedir.",
+          "caption": "R+8 konut bloklarının tamamlanmış kaba yapıları."
+        }
+      ]
+    }
+  }
+}

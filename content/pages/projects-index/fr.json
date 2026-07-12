@@ -1,0 +1,21 @@
+{
+  "pageId": "projects-index",
+  "locale": "fr",
+  "sourceRevision": "v1-d5c4bd00",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-192414f6718a287a",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:28.749Z",
+  "seo": {
+    "title": "Projets | SARL Igloo Yapi Construction",
+    "description": "Découvrez nos réalisations en Algérie : programmes résidentiels, villas, locaux commerciaux et travaux de voirie et réseaux divers (VRD).",
+    "socialTitle": "Projets | SARL Igloo Yapi Construction",
+    "socialDescription": "Découvrez nos réalisations en Algérie : programmes résidentiels, villas, locaux commerciaux et travaux de voirie et réseaux divers (VRD)."
+  },
+  "content": {
+    "eyebrow": "Nos réalisations",
+    "heading": "Un portefeuille de projets concrétisés",
+    "lead": "Nos interventions englobent la réalisation de programmes résidentiels, de villas individuelles, de locaux commerciaux ainsi que des travaux de VRD à travers le territoire national."
+  }
+}

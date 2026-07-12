@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: igloo-construction\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. Contact channel label for the local office phone.
+#: src/i18n/messages.ts:9
+msgid "contact.channel.algeria.label"
+msgstr "Algeria office"
+
+#: src/i18n/messages.ts:46
+msgid "projects.all"
+msgstr "All projects"
+
+#: src/i18n/messages.ts:60
+msgid "project.architect"
+msgstr "Architect"
+
+#. Project-information checklist item.
+#: src/i18n/messages.ts:25
+msgid "contact.brief.include.documents"
+msgstr "Available drawings or photos"
+
+#. Office section eyebrow.
+#: src/i18n/messages.ts:13
+msgid "contact.office.label"
+msgstr "Bir Khadem office"
+
+#. Home hero rotating statement. Full sentence; do not split into separate words.
+#: src/i18n/messages.ts:33
+msgid "home.hero.phrase.build"
+msgstr "Building the future"
+
+#. Button calling the local office.
+#: src/i18n/messages.ts:16
+msgid "contact.office.call"
+msgstr "Call the office"
+
+#: src/i18n/messages.ts:59
+msgid "project.client"
+msgstr "Client"
+
+#: src/i18n/messages.ts:38
+msgid "nav.company"
+msgstr "Company"
+
+#: src/i18n/messages.ts:65
+msgid "project.completion"
+msgstr "Completion"
+
+#: src/i18n/messages.ts:52
+msgid "project.construction"
+msgstr "Construction delivery"
+
+#. Contact page eyebrow.
+#: src/i18n/messages.ts:4
+msgid "contact.eyebrow"
+msgstr "Contact"
+
+#: src/i18n/messages.ts:41
+msgid "nav.contact"
+msgstr "Contact"
+
+#. Home hero rotating statement. Full sentence; do not split into separate words.
+#: src/i18n/messages.ts:34
+msgid "home.hero.phrase.craft"
+msgstr "Crafting the future"
+
+#. Project-information checklist item.
+#: src/i18n/messages.ts:24
+msgid "contact.brief.include.stage"
+msgstr "Current stage"
+
+#: src/i18n/messages.ts:51
+msgid "project.details"
+msgstr "Details & location"
+
+#. Supporting detail for the international phone.
+#: src/i18n/messages.ts:12
+msgid "contact.channel.international.detail"
+msgstr "Direct international contact"
+
+#: src/i18n/messages.ts:66
+msgid "project.chat"
+msgstr "Discuss a project"
+
+#. Supporting detail for the email contact channel.
+#: src/i18n/messages.ts:8
+msgid "contact.channel.email.detail"
+msgstr "Drawings, photos and project briefs"
+
+#. Home hero rotating statement. Full sentence; do not split into separate words.
+#: src/i18n/messages.ts:35
+msgid "home.hero.phrase.dream"
+msgstr "Dreaming of the future"
+
+#. Contact channel label.
+#: src/i18n/messages.ts:7
+msgid "contact.channel.email.label"
+msgstr "Email"
+
+#: src/i18n/messages.ts:57
+msgid "project.related"
+msgstr "Featured projects"
+
+#: src/i18n/messages.ts:58
+msgid "project.formOfContract"
+msgstr "Form of contract"
+
+#: src/i18n/messages.ts:56
+msgid "project.faq"
+msgstr "Frequently asked questions"
+
+#: src/i18n/messages.ts:36
+msgid "nav.home"
+msgstr "Home"
+
+#: src/i18n/messages.ts:54
+msgid "project.facilities"
+msgstr "Housing & infrastructure"
+
+#. Contact channel label for the international phone.
+#: src/i18n/messages.ts:11
+msgid "contact.channel.international.label"
+msgstr "International line"
+
+#: src/i18n/messages.ts:67
+msgid "shared.languageSelector"
+msgstr "Language selector"
+
+#: src/i18n/messages.ts:63
+msgid "project.location"
+msgstr "Location"
+
+#. Project email form placeholder.
+#: src/i18n/messages.ts:30
+msgid "contact.form.messagePlaceholder"
+msgstr "Location, programme, area, current stage and available documents..."
+
+#. Accessible label for the office map.
+#: src/i18n/messages.ts:17
+msgid "contact.office.mapLabel"
+msgstr "Map of the Igloo office in Bir Khadem"
+
+#. Project email form field label.
+#: src/i18n/messages.ts:26
+msgid "contact.form.name"
+msgstr "Name"
+
+#: src/i18n/messages.ts:43
+msgid "footer.navigation"
+msgstr "Navigation"
+
+#. Subject line of the generated project enquiry email.
+#: src/i18n/messages.ts:32
+msgid "contact.form.emailSubject"
+msgstr "New Igloo project enquiry"
+
+#: src/i18n/messages.ts:45
+msgid "shared.next"
+msgstr "Next"
+
+#: src/i18n/messages.ts:42
+msgid "footer.office"
+msgstr "Office"
+
+#. Button opening the office location in Google Maps.
+#: src/i18n/messages.ts:15
+msgid "contact.office.openMaps"
+msgstr "Open in Maps"
+
+#: src/i18n/messages.ts:47
+msgid "projects.open"
+msgstr "Open project"
+
+#. Office section title.
+#: src/i18n/messages.ts:14
+msgid "contact.office.title"
+msgstr "Our address in Algiers."
+
+#. Project email form field label.
+#: src/i18n/messages.ts:27
+msgid "contact.form.replyTo"
+msgstr "Phone or email"
+
+#. Project email form title.
+#: src/i18n/messages.ts:19
+msgid "contact.brief.title"
+msgstr "Prepare a clear project email."
+
+#. Button that opens a prepared email draft; it does not send an email.
+#: src/i18n/messages.ts:31
+msgid "contact.form.submit"
+msgstr "Prepare email"
+
+#: src/i18n/messages.ts:44
+msgid "shared.previous"
+msgstr "Previous"
+
+#. Supporting detail for the local office phone.
+#: src/i18n/messages.ts:10
+msgid "contact.channel.algeria.detail"
+msgstr "Primary project line"
+
+#. Project-information checklist item.
+#: src/i18n/messages.ts:23
+msgid "contact.brief.include.programme"
+msgstr "Programme type"
+
+#. Project email form eyebrow.
+#: src/i18n/messages.ts:18
+msgid "contact.brief.label"
+msgstr "Project enquiry"
+
+#: src/i18n/messages.ts:53
+msgid "project.gallery"
+msgstr "Project gallery"
+
+#. Project-information checklist item.
+#: src/i18n/messages.ts:22
+msgid "contact.brief.include.location"
+msgstr "Project location"
+
+#: src/i18n/messages.ts:50
+msgid "project.overview"
+msgstr "Project overview"
+
+#. Project email form field label.
+#: src/i18n/messages.ts:28
+msgid "contact.form.message"
+msgstr "Project summary"
+
+#: src/i18n/messages.ts:62
+msgid "project.projectType"
+msgstr "Project type"
+
+#: src/i18n/messages.ts:37
+msgid "nav.projects"
+msgstr "Projects"
+
+#: src/i18n/messages.ts:49
+msgid "projects.readMore"
+msgstr "Read more"
+
+#: src/i18n/messages.ts:61
+msgid "project.repeatOrNew"
+msgstr "Repeat / new"
+
+#: src/i18n/messages.ts:48
+msgid "projects.seeAll"
+msgstr "See all projects"
+
+#: src/i18n/messages.ts:39
+msgid "nav.services"
+msgstr "Services"
+
+#. Contact page introductory paragraph.
+#: src/i18n/messages.ts:6
+msgid "contact.lead"
+msgstr "Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the right person."
+
+#. Contact page main headline. Formal and welcoming.
+#: src/i18n/messages.ts:5
+msgid "contact.title"
+msgstr "Start a project conversation."
+
+#: src/i18n/messages.ts:64
+msgid "project.status"
+msgstr "Status"
+
+#: src/i18n/messages.ts:40
+msgid "nav.tenders"
+msgstr "Tenders"
+
+#. Project email form explanatory copy.
+#: src/i18n/messages.ts:20
+msgid "contact.brief.lead"
+msgstr "Three fields are enough. The button opens your email app with a structured draft; nothing is sent automatically."
+
+#. Label introducing the project-information checklist.
+#: src/i18n/messages.ts:21
+msgid "contact.brief.includeLabel"
+msgstr "Useful information"
+
+#: src/i18n/messages.ts:55
+msgid "project.nearby"
+msgstr "What's around"
+
+#. Project email form placeholder.
+#: src/i18n/messages.ts:29
+msgid "contact.form.namePlaceholder"
+msgstr "Your name"

@@ -1,0 +1,184 @@
+{
+  "jobId": "20260712000500-staoueli-source-flash",
+  "pageId": "projects/staoueli-11-41-villas",
+  "locale": "en",
+  "sourceRevision": "v1-0b57b86a",
+  "generatedAt": "2026-07-11T21:05:30.671Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "467e4526ceac2768",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "11/41 Villas and Network Works",
+    "description": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a residential and mixed-use delivery model.",
+    "socialTitle": "11/41 Villas and Network Works",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "staoueli-11-41-villas",
+    "title": "11/41 Villas and Network Works",
+    "eyebrow": "RESIDENTIAL PROJECT",
+    "summary": [
+      "Eleven villas delivered within the Les Pastorales development in Staoueli, combining individual R+2 residences with VRD, exterior works, and refined finishes.",
+      "Staoueli shifts the portfolio to a more intimate scale: individual villas, private residential comfort, and exterior works designed for access and durability."
+    ],
+    "description": [
+      "The 11 villas are situated within a 41-villa development and rely on a precise sequence of TCES, VRD, façade work, and exterior networks to create a finished residential setting.",
+      "Their R+2 scale lends the project a domestic character: balconies, guardrails, coatings, and access works are treated as integral to the overall residential identity."
+    ],
+    "authority": "A villa development delivered with attention to the details that make individual housing feel complete: access, networks, façades, and carefully finished exterior spaces.",
+    "seo": "Explore the gallery, technical details, and location notes for 11/41 Villas and Network Works. The project showcases a residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Project type",
+        "value": "Free promotional villas"
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Free promotional villas"
+      },
+      {
+        "label": "Location",
+        "value": "Les Pastorales, Staoueli, Algiers"
+      },
+      {
+        "label": "Programme",
+        "value": "11 villas within a 41-villa development"
+      },
+      {
+        "label": "Completion",
+        "value": "2022"
+      },
+      {
+        "label": "Typology",
+        "value": "R+2 individual villas"
+      },
+      {
+        "label": "Works",
+        "value": "Secondary trades and VRD"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Scope",
+        "items": [
+          "11 R+2 villas delivered within Les Pastorales",
+          "VRD, water, electricity, and exterior networks",
+          "Modern façades with balconies and guardrails",
+          "Completed in 2022 with controlled finish quality"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is 11/41 Villas and Network Works?",
+        "answer": "Eleven villas delivered within the Les Pastorales development in Staoueli, combining individual R+2 residences with VRD, exterior works, and refined finishes."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "The 11 villas are situated within a 41-villa development and rely on a precise sequence of TCES, VRD, façade work, and exterior networks to create a finished residential setting."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "Staoueli shifts the portfolio to a more intimate scale: individual villas, private residential comfort, and exterior works designed for access and durability."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light façades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed residential villas with modern design and balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Modern residential villas with elegant finishes and private balconies."
+        }
+      ],
+      "intro": {
+        "src": "/projects/staoueli-11-41-villas/01-staouali-1.webp",
+        "alt": "A row of modern, light-colored residential villas featuring dark accents, glass balconies, and terracotta tile roofs, with a clear blue sky overhead.",
+        "caption": "Completed residential villas with modern design and glass balconies."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+          "alt": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+          "caption": "Modern kitchen interior with patterned backsplash and dark marble-look floor."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp",
+          "alt": "A multi-story residential villa under construction with scaffolding on the façade, exposed concrete at the base, and two workers relaxing on an upper balcony.",
+          "caption": "Progress on a residential villa, showcasing exterior finishing and scaffolding."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Modern residential villas with elegant finishes and private balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light façades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed residential villas with modern design and balconies."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/staoueli-11-41-villas/03-staoualii.webp",
+          "alt": "A contemporary L-shaped kitchen in a residential villa, showcasing dark granite countertops, light cream base cabinets, white upper cabinets, and dark brown wood-effect wall cabinets. A gas hob, double stainless steel sink, and a decorative patterned tile backsplash are visible, along with dark marble-effect floor tiles.",
+          "caption": "Modern kitchen with patterned backsplash and dark finishes."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp",
+          "alt": "Exterior of a multi-story residential villa with light beige walls, dark window frames, and balconies with glass and metal railings. A terracotta-tiled roof is visible, and a large concrete beam obstructs the top of the frame. A timestamp '2022.9.21 11:52' is in the bottom right.",
+          "caption": "Completed villa exterior with modern finishes."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Modern residential villas with elegant finishes and private balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light façades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed residential villas with modern design and balconies."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp",
+          "alt": "Exterior view of several newly built, multi-story residential villas featuring white walls, dark grey architectural accents, terracotta roof tiles, and glass-paneled balconies under a bright blue sky. A person is partially visible on the ground floor to the right.",
+          "caption": "Modern villas completed and ready for occupancy."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light façades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed residential villas with modern design and balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
+          "alt": "Exterior of a multi-story residential building with white and light pink walls, dark grey architectural details, glass-fronted balconies, and wooden canopies over ground-floor entrances and garage doors. A paved pathway is visible in the foreground.",
+          "caption": "Modern residential villas with elegant finishes and private balconies."
+        },
+        {
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
+          "alt": "A newly finished kitchen featuring dark, glossy marble-patterned floor tiles, light cream-colored base cabinets, dark countertops, a grey and white geometric patterned backsplash, and dark brown wood-grain upper cabinets. A blue cloth is visible on the floor in the foreground.",
+          "caption": "Modern kitchen interior with patterned backsplash and dark marble-look floor."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
+          "alt": "Exterior view of newly completed residential villas featuring light façades, dark accents, glass-railed balconies, and red-tiled roofs under a bright blue sky.",
+          "caption": "Completed residential villas with modern design and balconies."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

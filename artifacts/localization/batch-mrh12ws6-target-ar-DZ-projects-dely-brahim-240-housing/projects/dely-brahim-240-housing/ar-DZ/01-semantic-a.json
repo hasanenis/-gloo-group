@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrh12ws6-target-ar-DZ-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-ae0bb1f4",
+  "generatedAt": "2026-07-12T00:01:14.196Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas | Dely Brahim",
+      "draft": "240 وحدة سكنية ترقوية حرة مع مساحات تجارية | دالي إبراهيم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "المواصفات الفنية، والتنفيذ الإنشائي، ومخطط الموقع لـ 240 وحدة سكنية ترويجية حرة في دالي إبراهيم بالجزائر العاصمة، والتي تتميز بواجهة تجارية متكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "240 وحدة سكنية ترويجية حرة مع مساحات تجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "المواصفات الفنية، والتنفيذ الإنشائي، ومخطط الموقع لـ 240 وحدة سكنية ترويجية حرة في دالي إبراهيم بالجزائر العاصمة، والتي تتميز بواجهة تجارية متكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "dely-brahim-240-housing",
+      "draft": "مشروع 240 وحدة سكنية في دالي إبراهيم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "240 Free Promotional Housing Units with Commercial Areas",
+      "draft": "240 وحدة سكنية ترويجية حرة مع مساحات تجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "مشروع سكني متعدد الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A 33-storey mixed-use residential tower in Dely Brahim, Algiers, integrating 240 free promotional housing units with three commercial levels, three basement levels, and three parking mezzanine floors.",
+      "draft": "برج سكني متعدد الاستخدامات مكون من 33 طابقاً في دالي إبراهيم بالجزائر العاصمة، يضم 240 وحدة سكنية ترويجية (سكن حر)، بالإضافة إلى ثلاثة طوابق تجارية، وثلاثة طوابق سفلية (قبو)، وثلاثة طوابق ميزانين مخصصة لمواقف السيارات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "This high-rise development features residential units distributed from the 3rd to the 33rd floor, supported by a multi-level commercial podium and dedicated subterranean parking structures.",
+      "draft": "يضم هذا المشروع البرجي وحدات سكنية موزعة بين الطابقين الثالث والثالث والثلاثين، مدعومة بمنصة تجارية متعددة المستويات ومرافق مخصصة لمواقف السيارات تحت الأرض.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The architectural programme optimizes urban density by vertically zoning F3, F4, and F5 apartment typologies above a three-level commercial base. The lower levels incorporate three basement floors and three parking mezzanine levels to resolve site constraints and vehicle circulation.",
+      "draft": "يعمل البرنامج المعماري على تحسين الكثافة الحضرية من خلال التوزيع الرأسي لأنماط الشقق السكنية (F3 وF4 وF5) فوق قاعدة تجارية مكونة من ثلاثة مستويات. وتضم المستويات السفلية ثلاثة طوابق تحت الأرض وثلاثة مستويات \"ميزانين\" مخصصة لمواقف السيارات، وذلك لمعالجة قيود الموقع وتنظيم حركة المركبات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The structural execution required complex vertical coordination, managing the integration of reinforced concrete framing, vertical circulation shafts, fire safety compartments, mechanical, electrical, and plumbing (MEP) systems, and facade articulation.",
+      "draft": "تطلب التنفيذ الإنشائي تنسيقاً رأسياً معقداً، شمل إدارة التكامل بين الهيكل الخرساني المسلح، ومناور الحركة الرأسية، ومناطق الحماية من الحرائق، والأنظمة الميكانيكية والكهربائية وأنظمة السباكة (MEP)، وتشكيل الواجهات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A high-rise mixed-use development coordinating residential density, active street-level commercial frontage, and multi-level parking into a single vertical structure.",
+      "draft": "مشروع تطويري شاهق الارتفاع ومتعدد الاستخدامات يجمع بين الكثافة السكنية، وواجهات تجارية نشطة عند مستوى الشارع، ومواقف سيارات متعددة الطوابق، ضمن هيكل رأسي واحد.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical specifications, structural execution, and site layout for the 240 free promotional housing units in Dely Brahim, Algiers, featuring integrated commercial frontage.",
+      "draft": "المواصفات الفنية، والتنفيذ الإنشائي، ومخطط الموقع لـ 240 وحدة سكنية ترويجية حرة في دالي إبراهيم بالجزائر العاصمة، والتي تتميز بواجهة تجارية متكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Free promotional housing with commercial premises and services",
+      "draft": "سكن ترويجي مجاني يضم محلات تجارية وخدمات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Free promotional housing with commercial premises",
+      "draft": "سكن ترويجي حر مع محلات تجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bois des Cars, Dely Brahim, Algiers",
+      "draft": "بوا دي كار، دالي إبراهيم، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "وحدات سكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "240 units",
+      "draft": "240 وحدة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Vertical Zoning",
+      "draft": "التقسيم الرأسي للمناطق",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "Residential units from the 3rd to the 33rd floor, 8 units per floor",
+      "draft": "وحدات سكنية من الطابق الثالث إلى الطابق الثالث والثلاثين، بواقع 8 وحدات في كل طابق.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Commercial Base",
+      "draft": "قاعدة تجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "3 commercial levels with terrace",
+      "draft": "3 طوابق تجارية مع تراس",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Parking Infrastructure",
+      "draft": "البنية التحتية لمواقف السيارات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "3 basement levels and 3 parking mezzanine floors",
+      "draft": "3 طوابق سفلية و3 طوابق ميزانين لمواقف السيارات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.label",
+      "source": "Status",
+      "draft": "الحالة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.value",
+      "source": "Current",
+      "draft": "حالي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "33-storey mixed-use tower",
+      "draft": "برج متعدد الاستخدامات مكون من 33 طابقاً",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "240 residential units in F3, F4, and F5 configurations",
+      "draft": "240 وحدة سكنية بتصاميم F3 وF4 وF5",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Three basement levels and three parking mezzanine floors",
+      "draft": "ثلاثة طوابق سفلية (أقبية) وثلاثة طوابق ميزانين مخصصة لمواقف السيارات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including roads and utility networks (VRD), MEP, vertical transport, and safety systems",
+      "draft": "تنفيذ كافة الأعمال الإنشائية والتقنية (TCE)، بما في ذلك الطرق وشبكات المرافق (VRD)، والأنظمة الميكانيكية والكهربائية والصحية (MEP)، وأنظمة النقل الرأسي، وأنظمة السلامة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Local Infrastructure",
+      "draft": "البنية التحتية المحلية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Dely Brahim commercial district",
+      "draft": "المنطقة التجارية في دالي إبراهيم",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is 240 Free Promotional Housing with Commercial Areas?",
+      "draft": "ما المقصود بـ \"240 وحدة سكنية ترويجية مجانية مع مساحات تجارية\"؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project is a 33-storey mixed-use tower containing 240 free promotional housing units, supported by a three-level commercial podium, three basement levels, and three parking mezzanine floors.",
+      "draft": "يُعد المشروع برجاً متعدد الاستخدامات مكوناً من 33 طابقاً ويضم 240 وحدة سكنية حرة (متاحة للتملك الحر)، مدعوماً بمنصة تجارية من ثلاثة مستويات، وثلاثة طوابق سفلية (قبو)، وثلاثة طوابق ميزانين مخصصة لمواقف السيارات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "How are the residential and commercial zones distributed vertically?",
+      "draft": "كيف يتم توزيع المناطق السكنية والتجارية عمودياً؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The tower features vertical zoning with F3, F4, and F5 apartment layouts situated from the 3rd to the 33rd floor, positioned above three commercial levels with terrace access.",
+      "draft": "يتميز البرج بتوزيع رأسي للمساحات، حيث تتوزع الشقق بنماذج F3 وF4 وF5 بين الطابقين الثالث والثالث والثلاثين، وتستقر فوق ثلاثة طوابق تجارية تتيح الوصول إلى شرفات خارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What parking and circulation infrastructure is integrated into the site?",
+      "draft": "ما هي البنية التحتية لمواقف السيارات وحركة المرور المدمجة في الموقع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "Dely Brahim pushes the portfolio upward: a 33-storey tower with homes from the 3rd to the 33rd floor, eight homes per floor, three commercial levels with terrace, three basement levels and three parking entre-sols.",
+      "draft": "يرتقي مشروع \"دالي إبراهيم\" بمحفظة المشاريع إلى مستوى أعلى، إذ يضم برجاً مكوناً من 33 طابقاً تشتمل على وحدات سكنية تمتد من الطابق الثالث وحتى الطابق الثالث والثلاثين (بمعدل ثماني وحدات في كل طابق)، بالإضافة إلى ثلاثة طوابق تجارية مزودة بتراس، وثلاثة طوابق سفلية (قبو)، وثلاثة طوابق مخصصة لمواقف السيارات تقع بين الطوابق الرئيسية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "مشهد ليلي لمبنى عصري متعدد الاستخدامات يضم شرفات سكنية مضاءة، وواجهات محلات تجارية نابضة بالحياة، وموقف سيارات تحت الأرض متعدد الطوابق، وذلك بمحاذاة شارع تملؤه الأشجار والسيارات المتحركة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Night view of the mixed-use tower showing the illuminated residential balconies and active commercial frontage.",
+      "draft": "مشهد ليلي للبرج متعدد الاستخدامات يُظهر الشرفات السكنية المضاءة والواجهة التجارية النابضة بالحياة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "مبنى عصري متعدد الطوابق ليلاً، يضم واجهات محلات تجارية مضاءة بوضوح في الطابق الأرضي تظهر بداخلها حركة الناس، وتعلوها وحدات سكنية ذات شرفات. تظهر السيارات في الشارع بهيئة ضبابية نتيجة الحركة، بينما يسير أحد المشاة بجوار المبنى.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Detail of the active street-level commercial frontage and upper residential balconies at night.",
+      "draft": "تفاصيل الواجهة التجارية النابضة بالحياة عند مستوى الشارع والشرفات السكنية العلوية ليلاً.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بشرفات مضاءة بوضوح ومساحات تجارية في الطابق الأرضي، ويبرز أمام سماء مسائية زرقاء داكنة، مع وجود أشجار وطريق في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Elevation view of the 33-storey tower showing the vertical transition from the commercial base to the residential levels.",
+      "draft": "مخطط واجهة البرج المكون من 33 طابقاً، يوضح الانتقال الرأسي من القاعدة التجارية إلى الطوابق السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "مبنى سكني شاهق وعصري يزدان بالإضاءة ليلاً، ويتميز بشرفات متعددة وشرائط ضوئية عمودية ساطعة على واجهته. يضم الطابق الأرضي متاجر تجارية مضاءة بوضوح ذات واجهات عرض كبيرة، ويمتد أمامه شارع تظهر فيه أضواء السيارات بشكل ضبابي. تحيط الأشجار بالمبنى، وتظهر في الأعلى سماء الليل المرصعة بالنجوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Facade articulation and vertical lighting elements on the residential elevation.",
+      "draft": "تشكيل الواجهة وعناصر الإضاءة الرأسية في الواجهة السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "مشهد ليلي لمبنى عصري متعدد الاستخدامات يضم شرفات سكنية مضاءة، وواجهات محلات تجارية نابضة بالحياة، وموقف سيارات تحت الأرض متعدد الطوابق، وذلك بمحاذاة شارع تملؤه الأشجار والسيارات المتحركة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Integration of the multi-level parking structure and commercial podium.",
+      "draft": "دمج مبنى المواقف متعدد الطوابق والمنصة التجارية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بشرفات مضاءة بوضوح ومساحات تجارية في الطابق الأرضي، ويبرز أمام سماء مسائية زرقاء داكنة، مع وجود أشجار وطريق في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "The tower profile against the evening sky, highlighting the residential massing.",
+      "draft": "صورة ظلية للبرج على خلفية سماء المساء، تُبرز الكتلة السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "مبنى عصري متعدد الطوابق ليلاً، يضم واجهات محلات تجارية مضاءة بوضوح في الطابق الأرضي تظهر بداخلها حركة الناس، وتعلوها وحدات سكنية ذات شرفات. تظهر السيارات في الشارع بهيئة ضبابية نتيجة الحركة، بينما يسير أحد المشاة بجوار المبنى.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Pedestrian perspective of the glazed commercial storefronts.",
+      "draft": "منظور المشاة لواجهات المحلات التجارية الزجاجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "مبنى سكني شاهق وعصري يزدان بالإضاءة ليلاً، ويتميز بشرفات متعددة وشرائط ضوئية عمودية ساطعة على واجهته. يضم الطابق الأرضي متاجر تجارية مضاءة بوضوح ذات واجهات عرض كبيرة، ويمتد أمامه شارع تظهر فيه أضواء السيارات بشكل ضبابي. تحيط الأشجار بالمبنى، وتظهر في الأعلى سماء الليل المرصعة بالنجوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Night view showing the vertical lighting integrated into the facade panels.",
+      "draft": "مشهد ليلي يُظهر الإضاءة العمودية المدمجة في ألواح الواجهة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "مشهد ليلي لمبنى عصري متعدد الاستخدامات يضم شرفات سكنية مضاءة، وواجهات محلات تجارية نابضة بالحياة، وموقف سيارات تحت الأرض متعدد الطوابق، وذلك بمحاذاة شارع تملؤه الأشجار والسيارات المتحركة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "The relationship between the active commercial base and the residential tower above.",
+      "draft": "العلاقة بين القاعدة التجارية الحيوية والبرج السكني الذي يعلوها.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بشرفات مضاءة بوضوح ومساحات تجارية في الطابق الأرضي، ويبرز أمام سماء مسائية زرقاء داكنة، مع وجود أشجار وطريق في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Exterior view of the residential balconies and structural framing.",
+      "draft": "منظر خارجي للشرفات السكنية والهيكل الإنشائي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "مبنى عصري متعدد الطوابق ليلاً، يضم واجهات محلات تجارية مضاءة بوضوح في الطابق الأرضي تظهر بداخلها حركة الناس، وتعلوها وحدات سكنية ذات شرفات. تظهر السيارات في الشارع بهيئة ضبابية نتيجة الحركة، بينما يسير أحد المشاة بجوار المبنى.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Ground-level view of the commercial glazing and pedestrian access.",
+      "draft": "مشهد من مستوى الأرض للواجهات الزجاجية التجارية ومدخل المشاة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "مشهد ليلي لمبنى عصري متعدد الاستخدامات يضم شرفات سكنية مضاءة، وواجهات محلات تجارية نابضة بالحياة، وموقف سيارات تحت الأرض متعدد الطوابق، وذلك بمحاذاة شارع تملؤه الأشجار والسيارات المتحركة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Completed structural envelope and external works.",
+      "draft": "تم إنجاز الغلاف الإنشائي والأعمال الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "draft": "/projects/dely-brahim-240-housing/01-final-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, contemporary residential building illuminated at night, featuring multiple balconies and bright vertical light strips on its facade. The ground floor houses brightly lit commercial shops with large display windows, and a street with blurred car lights runs in front. Trees frame the building, and a starry night sky is visible above.",
+      "draft": "مبنى سكني شاهق وعصري يزدان بالإضاءة ليلاً، ويتميز بشرفات متعددة وشرائط ضوئية عمودية ساطعة على واجهته. يضم الطابق الأرضي متاجر تجارية مضاءة بوضوح ذات واجهات عرض كبيرة، ويمتد أمامه شارع تظهر فيه أضواء السيارات بشكل ضبابي. تحيط الأشجار بالمبنى، وتظهر في الأعلى سماء الليل المرصعة بالنجوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Facade finishing and external lighting installation.",
+      "draft": "تشطيب الواجهات وتركيب الإضاءة الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "draft": "/projects/dely-brahim-240-housing/04-final-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, contemporary residential building with brightly lit balconies and ground-floor commercial areas, set against a dark blue evening sky with trees and a road in the foreground.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بشرفات مضاءة بوضوح ومساحات تجارية في الطابق الأرضي، ويبرز أمام سماء مسائية زرقاء داكنة، مع وجود أشجار وطريق في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Completed structural frame and exterior cladding.",
+      "draft": "تم إنجاز الهيكل الإنشائي والكسوة الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "draft": "/projects/dely-brahim-240-housing/02-final-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A modern, multi-story building at night, featuring brightly lit commercial storefronts on the ground floor with people inside, and residential units with balconies above. Cars are blurred on the street, and a pedestrian walks by.",
+      "draft": "مبنى عصري متعدد الطوابق ليلاً، يضم واجهات محلات تجارية مضاءة بوضوح في الطابق الأرضي تظهر بداخلها حركة الناس، وتعلوها وحدات سكنية ذات شرفات. تظهر السيارات في الشارع بهيئة ضبابية نتيجة الحركة، بينما يسير أحد المشاة بجوار المبنى.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Detail of the completed ground-floor commercial envelope.",
+      "draft": "تفاصيل الغلاف التجاري المنجز للطابق الأرضي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "draft": "/projects/dely-brahim-240-housing/03-final-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Night view of a contemporary mixed-use building with illuminated residential balconies, vibrant commercial storefronts, and a multi-level underground parking garage, alongside a street with moving cars and trees.",
+      "draft": "مشهد ليلي لمبنى عصري متعدد الاستخدامات يضم شرفات سكنية مضاءة، وواجهات محلات تجارية نابضة بالحياة، وموقف سيارات تحت الأرض متعدد الطوابق، وذلك بمحاذاة شارع تملؤه الأشجار والسيارات المتحركة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "The 33-storey mixed-use tower integrating residential, commercial, and parking levels.",
+      "draft": "البرج متعدد الاستخدامات المكون من 33 طابقاً، والذي يجمع بين طوابق سكنية وتجارية ومواقف للسيارات.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

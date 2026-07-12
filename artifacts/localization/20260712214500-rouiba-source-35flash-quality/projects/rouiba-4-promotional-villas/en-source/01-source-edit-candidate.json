@@ -1,0 +1,180 @@
+{
+  "jobId": "20260712214500-rouiba-source-35flash-quality",
+  "pageId": "projects/rouiba-4-promotional-villas",
+  "locale": "en",
+  "sourceRevision": "v1-18192590",
+  "generatedAt": "2026-07-11T21:27:37.833Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "75ee7937d8ec6082",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "4 Promotional Villas and Network Works | Rouiba",
+    "description": "Technical specifications and execution details for the construction of four promotional villas in Rouiba, featuring comprehensive all-trades delivery and integrated roads and utility networks.",
+    "socialTitle": "4 Promotional Villas and Network Works | Rouiba",
+    "socialDescription": "Technical specifications and execution details for the construction of four promotional villas in Rouiba, featuring comprehensive all-trades delivery and integrated roads and utility networks."
+  },
+  "content": {
+    "slug": "rouiba-4-promotional-villas",
+    "title": "4 Promotional Villas and Network Works",
+    "eyebrow": "RESIDENTIAL DEVELOPMENT",
+    "summary": [
+      "The construction of four promotional villas in Rouiba, executed under a comprehensive all-trades package (TCE) including integrated roads and utility networks (VRD).",
+      "This residential development in Rouiba balances structural execution with site-wide civil works, ensuring robust utility connections and dedicated access routes for each plot."
+    ],
+    "description": [
+      "The scope of works comprised reinforced concrete structural framing, interior and exterior masonry, MEP installations, and high-durability architectural finishes. The civil engineering package included the complete installation of roads and utility networks (VRD) to secure independent service connections.",
+      "Designed with contemporary massing and clean geometric facades, the villas integrate private outdoor spaces with functional circulation. The site layout optimizes plot boundaries to balance individual privacy with efficient vehicular and pedestrian access."
+    ],
+    "authority": "A precise residential programme where structural integrity is matched by civil execution, delivering fully serviced plots and coordinated architectural finishes from foundation to handover.",
+    "seo": "Technical specifications and execution details for the construction of four promotional villas in Rouiba, featuring comprehensive all-trades delivery and integrated roads and utility networks.",
+    "meta": [
+      {
+        "label": "Project Type",
+        "value": "Promotional Villas"
+      }
+    ],
+    "details": [
+      {
+        "label": "Project Type",
+        "value": "Promotional Villas"
+      },
+      {
+        "label": "Location",
+        "value": "Rouiba, Algiers"
+      },
+      {
+        "label": "Units",
+        "value": "4 Individual Villas"
+      },
+      {
+        "label": "Completion Year",
+        "value": "2023"
+      },
+      {
+        "label": "Scope of Works",
+        "value": "All-Trades Package (TCE) & Roads and Utility Networks (VRD)"
+      },
+      {
+        "label": "Primary Use",
+        "value": "Private Residential"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project Programme",
+        "items": [
+          "Four individual promotional villas",
+          "Integrated roads and utility networks (VRD) with dedicated pedestrian and vehicular access",
+          "Reinforced concrete framing with contemporary facade articulation",
+          "Full all-trades delivery (TCE) completed in 2023"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What does the Rouiba residential project consist of?",
+        "answer": "The project consists of four individual promotional villas in Rouiba, delivered under a complete all-trades package (TCE) including dedicated roads and utility networks (VRD)."
+      },
+      {
+        "question": "What was the technical scope of the construction works?",
+        "answer": "The contract covered reinforced concrete structural works, interior and exterior masonry, MEP installations, architectural finishes, and site-wide civil works for utility connections and access roads."
+      },
+      {
+        "question": "How are the villas configured on-site?",
+        "answer": "The villas feature contemporary geometric massing, flat roofs, and integrated balconies, arranged to optimize plot boundaries, private outdoor spaces, and vehicular circulation."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Architectural drawing of the promotional villa development in Rouiba."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed windows and decorative pergolas.",
+          "caption": "Completed facade showing contemporary massing and recessed window details."
+        }
+      ],
+      "intro": {
+        "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+        "alt": "Elevated view of the four contemporary villas nearing completion, showing flat roof structures and balcony balustrades.",
+        "caption": "Elevated perspective of the residential development during the final finishing phases."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "Construction site view showing reinforced concrete foundations and column formwork in progress.",
+          "caption": "Execution of reinforced concrete foundations and structural framing."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed windows and decorative pergolas.",
+          "caption": "Completed facade showing contemporary massing and recessed window details."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated view of the four contemporary villas nearing completion, showing flat roof structures and balcony balustrades.",
+          "caption": "Elevated perspective of the residential development during the final finishing phases."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Architectural drawing of the promotional villa development in Rouiba."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
+          "alt": "Exterior view of the villa structure during facade finishing, with a tower crane visible on site.",
+          "caption": "Facade rendering and plastering works underway."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed windows and decorative pergolas.",
+          "caption": "Completed facade showing contemporary massing and recessed window details."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated view of the four contemporary villas nearing completion, showing flat roof structures and balcony balustrades.",
+          "caption": "Elevated perspective of the residential development during the final finishing phases."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Architectural drawing of the promotional villa development in Rouiba."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
+          "alt": "The villa structure during the final stages of external plastering and site clearance.",
+          "caption": "External finishing and site preparation works."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
+          "alt": "Exterior facade of a completed multi-storey promotional villa in Rouiba, showing recessed windows and decorative pergolas.",
+          "caption": "Completed facade showing contemporary massing and recessed window details."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
+          "alt": "Elevated view of the four contemporary villas nearing completion, showing flat roof structures and balcony balustrades.",
+          "caption": "Elevated perspective of the residential development during the final finishing phases."
+        },
+        {
+          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
+          "alt": "Construction site view showing reinforced concrete foundations and column formwork in progress.",
+          "caption": "Execution of reinforced concrete foundations and structural framing."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
+          "alt": "Architectural drawing of the promotional villa development in Rouiba."
+        }
+      ]
+    }
+  },
+  "model": "gemini-3.5-flash"
+}

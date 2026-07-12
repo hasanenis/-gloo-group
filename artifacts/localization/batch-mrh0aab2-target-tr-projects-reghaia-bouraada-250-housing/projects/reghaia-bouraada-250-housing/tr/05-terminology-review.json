@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrh0aab2-target-tr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T23:38:58.872Z",
+  "status": "pass",
+  "issues": []
+}

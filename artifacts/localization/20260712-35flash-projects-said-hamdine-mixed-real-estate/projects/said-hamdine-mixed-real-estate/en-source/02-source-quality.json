@@ -1,0 +1,40 @@
+{
+  "jobId": "20260712-35flash-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "locale": "en",
+  "sourceRevision": "v1-b0c8c08a",
+  "generatedAt": "2026-07-11T21:41:05.394Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.1",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.1",
+      "severity": "blocker",
+      "type": "unsupported-enrichment",
+      "phrase": "site drainage",
+      "message": "Candidate introduces a technical, ownership or performance claim not present in the English source."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.faq.0.question",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

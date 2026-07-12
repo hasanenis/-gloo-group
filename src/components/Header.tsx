@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { Link, useLocation } from 'react-router-dom';
 import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { useLocale, LOCALE_CODES, LOCALE_LABELS } from '../i18n';
+import { localizedPath, useLocale, LOCALE_CODES, LOCALE_LABELS } from '../i18n';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +18,8 @@ import {
  *  (e.g. the projects listing, which opens on a white filter bar) forces the
  *  solid state immediately since there's no dark backdrop to sit on. */
 function hasHeroBackdrop(pathname: string) {
-  return pathname === '/' || pathname === '/projects1' || pathname.startsWith('/projects/');
+  const unprefixed = pathname.replace(/^\/(?:en|fr|tr|ar)(?=\/|$)/, '') || '/';
+  return unprefixed === '/' || unprefixed.startsWith('/projects/');
 }
 
 function NavUnderlineItem({
@@ -141,7 +142,7 @@ function LocaleMenu({ isScrolled }: { isScrolled: boolean }) {
 export default function Header() {
   const location = useLocation();
   const goTo = useSiteNavigate();
-  const { t } = useLocale();
+  const { locale, t } = useLocale();
   const heroBackdrop = hasHeroBackdrop(location.pathname);
   const [isScrolled, setIsScrolled] = useState(!heroBackdrop);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -213,7 +214,8 @@ export default function Header() {
   const navToneClass = isScrolled ? 'text-[color:var(--igloo-header-text)]' : 'text-white';
   // About and Contact open on white editorial surfaces. Keep their wordmark
   // dark even while the shared header is settling after a route transition.
-  const useDarkLogo = isScrolled || location.pathname === '/about' || location.pathname === '/contact';
+  const unprefixedPath = location.pathname.replace(/^\/(?:en|fr|tr|ar)(?=\/|$)/, '') || '/';
+  const useDarkLogo = isScrolled || unprefixedPath === '/about' || unprefixedPath === '/contact';
   const logoSrc = useDarkLogo
     ? 'https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png'
     : 'https://i.ibb.co/fY50LKcW/Chat-GPT-mage-5-May-2026-21-15-03-removebg-preview.png';
@@ -229,10 +231,10 @@ export default function Header() {
     >
       <div className="brand-logo flex cursor-pointer select-none items-center lg:ml-[-6px]">
         <Link
-          to="/"
+          to={localizedPath(locale, '/')}
           onClick={(event) => {
             event.preventDefault();
-            goTo('/');
+            goTo(localizedPath(locale, '/'));
           }}
         >
           <img
@@ -249,16 +251,16 @@ export default function Header() {
 
       <div className="ml-auto hidden items-center gap-4 lg:flex">
         <nav className={`nav-menu flex items-center gap-5 text-[15px] font-medium tracking-[0.01em] xl:gap-6 xl:text-[16px] ${navToneClass}`}>
-          <NavUnderlineItem to="/" onNavigate={() => goTo('/')}>
+          <NavUnderlineItem to={localizedPath(locale, '/')} onNavigate={() => goTo(localizedPath(locale, '/'))}>
             {t('home')}
           </NavUnderlineItem>
-          <NavUnderlineItem to="/about" onNavigate={() => goTo('/about')}>
+          <NavUnderlineItem to={localizedPath(locale, '/about')} onNavigate={() => goTo(localizedPath(locale, '/about'))}>
             {t('company')}
           </NavUnderlineItem>
-          <NavUnderlineItem to="/projects" onNavigate={() => goTo('/projects')}>
+          <NavUnderlineItem to={localizedPath(locale, '/projects')} onNavigate={() => goTo(localizedPath(locale, '/projects'))}>
             {t('projects')}
           </NavUnderlineItem>
-          <NavUnderlineItem to="/contact" onNavigate={() => goTo('/contact')}>
+          <NavUnderlineItem to={localizedPath(locale, '/contact')} onNavigate={() => goTo(localizedPath(locale, '/contact'))}>
             {t('contact')}
           </NavUnderlineItem>
         </nav>

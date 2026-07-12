@@ -1,0 +1,24 @@
+{
+  "jobId": "20260712-35flash-contact",
+  "pageId": "contact",
+  "locale": "en",
+  "sourceRevision": "v1-e4126a65",
+  "generatedAt": "2026-07-11T21:38:42.619Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "4eaa30c65320af6c",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Contact | SARL Igloo Yapi Construction",
+    "description": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation.",
+    "socialTitle": "Contact | SARL Igloo Yapi Construction",
+    "socialDescription": "Contact our head office in Birkhadem to submit site locations, programme requirements and technical documentation for project evaluation."
+  },
+  "content": {
+    "eyebrow": "Contact",
+    "heading": "Initiate a project consultation.",
+    "lead": "Connect with our technical team in Birkhadem. Submit your site coordinates, development programme and available design documentation to initiate our internal engineering and estimation review."
+  },
+  "model": "gemini-3.5-flash"
+}

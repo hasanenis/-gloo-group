@@ -1,0 +1,22 @@
+{
+  "jobId": "batch-mrgzisnz-target-tr-home",
+  "pageId": "home",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9436d9e2",
+  "generatedAt": "2026-07-11T23:17:36.050Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.manifesto.metrics.0.detail",
+      "severity": "warning",
+      "message": "The word 'harekat' (military operation/maneuver) is used incorrectly for 'operations base'. It should be 'operasyon' or 'faaliyet' (e.g., 'faaliyet üssü') to fit the construction context."
+    },
+    {
+      "id": "content.about.proofs.1.body",
+      "severity": "warning",
+      "message": "Typo detected: 'dos mimar' contains a typo, likely meant to be 'iki mimar' (two architects) or 'baş mimar' (lead architect) depending on the source text."
+    }
+  ]
+}

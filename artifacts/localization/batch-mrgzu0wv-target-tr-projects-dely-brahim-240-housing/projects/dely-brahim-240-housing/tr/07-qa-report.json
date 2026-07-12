@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrgzu0wv-target-tr-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-ae0bb1f4",
+  "generatedAt": "2026-07-11T23:26:20.056Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.faq.2.answer",
+      "severity": "warning",
+      "message": "The translation contains marketing-style filler text ('Dely Brahim portföyü yukarı taşıyor:') that is not present in the source facts and violates the professional, restrained tone guidelines."
+    }
+  ]
+}

@@ -26,14 +26,16 @@ const SEA_BG           = '#ffffff';   // white — matches page section backgrou
 const NEIGHBOR_FILL = '#e7e2d3';
 const NEIGHBOR_LINE = 'rgba(107, 92, 63, 0.4)';
 
+type MapLabel = { en: string; fr: string; 'ar-DZ': string; tr: string; coord: [number, number] };
+
 // Hand-placed so labels sit on real landmass near Algeria's border rather than at a raw polygon centroid
 // (several of these countries extend far beyond the frame, e.g. deep into the Sahara or northern Europe).
-const NEIGHBOR_LABELS: { name: string; name_fr: string; coord: [number, number] }[] = [
-  { name: 'MOROCCO', name_fr: 'MAROC',     coord: [-2.7, 34.9] },
-  { name: 'TUNISIA', name_fr: 'TUNISIE',   coord: [8.9, 36.2] },
-  { name: 'SPAIN',   name_fr: 'ESPAGNE',   coord: [-2.6, 37.05] },
-  { name: 'SARDINIA',name_fr: 'SARDAIGNE', coord: [9.05, 40.05] },
-  { name: 'SICILY',  name_fr: 'SICILE',    coord: [14.0, 37.55] },
+const NEIGHBOR_LABELS: MapLabel[] = [
+  { en: 'MOROCCO', 'ar-DZ': 'المغرب', fr: 'MAROC', tr: 'FAS', coord: [-2.7, 34.9] },
+  { en: 'TUNISIA', 'ar-DZ': 'تونس', fr: 'TUNISIE', tr: 'TUNUS', coord: [8.9, 36.2] },
+  { en: 'SPAIN', 'ar-DZ': 'إسبانيا', fr: 'ESPAGNE', tr: 'İSPANYA', coord: [-2.6, 37.05] },
+  { en: 'SARDINIA', 'ar-DZ': 'سردينيا', fr: 'SARDAIGNE', tr: 'SARDİNYA', coord: [9.05, 40.05] },
+  { en: 'SICILY', 'ar-DZ': 'صقلية', fr: 'SICILE', tr: 'SİCİLYA', coord: [14.0, 37.55] },
 ];
 
 // Uniform height — very low, just enough for a subtle 3D edge at the coast
@@ -235,7 +237,7 @@ export default function ProjectFootprintMap({
           type: 'FeatureCollection',
           features: NEIGHBOR_LABELS.map((label) => ({
             type: 'Feature' as const,
-            properties: { en: label.name, fr: label.name_fr },
+            properties: { en: label.en, fr: label.fr, 'ar-DZ': label['ar-DZ'], tr: label.tr },
             geometry: { type: 'Point' as const, coordinates: label.coord },
           })),
         },
@@ -334,7 +336,7 @@ export default function ProjectFootprintMap({
           type: 'FeatureCollection',
           features: [{
             type: 'Feature',
-            properties: { en: 'ALGERIA', fr: 'ALGÉRIE' },
+            properties: { en: 'ALGERIA', fr: 'ALGÉRIE', 'ar-DZ': 'الجزائر', tr: 'CEZAYİR' },
             geometry: { type: 'Point', coordinates: COUNTRY_LABEL_POINT },
           }],
         },
@@ -363,7 +365,7 @@ export default function ProjectFootprintMap({
           type: 'FeatureCollection',
           features: [{
             type: 'Feature',
-            properties: { en: 'MEDITERRANEAN SEA', fr: 'MER MÉDITERRANÉE' },
+            properties: { en: 'MEDITERRANEAN SEA', fr: 'MER MÉDITERRANÉE', 'ar-DZ': 'البحر الأبيض المتوسط', tr: 'AKDENİZ' },
             geometry: { type: 'Point', coordinates: SEA_LABEL_POINT },
           }],
         },

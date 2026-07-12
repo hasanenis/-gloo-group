@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrh0kcqd-target-tr-projects-bas-mazagran-200-38-housing",
+  "pageId": "projects/bas-mazagran-200-38-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-9524b136",
+  "generatedAt": "2026-07-11T23:46:48.493Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Bas Mazagran | 200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi"
+    },
+    {
+      "id": "seo.description",
+      "text": "Mostaganem, Bas Mazagran'da 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşan 238 konutluk yerleşim projesinin teknik uygulaması."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Bas Mazagran | 200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Mostaganem, Bas Mazagran'da 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşan 238 konutluk yerleşim projesinin teknik uygulaması."
+    },
+    {
+      "id": "content.slug",
+      "text": "bas-mazagran-200-38-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi, Bas Mazagran"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "KONUT PROJESİ"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Mostaganem, Bas Mazagran'da yer alan bu konut projesi, zemin kat ticari alanlarıyla entegre edilmiş, 200 destekli konut ve 38 serbest promosyonel konut ünitesini barındıran yedi taşıyıcı bloktan oluşmaktadır."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Proje, yapısal kütlesi ve cephe tasarımıyla dikey yoğunluğu optimize ederken, yeni yerleşim alanını desteklemek için özel yaya erişim yolları ile yol ve altyapı şebekelerini (VRD) entegre etmektedir."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Mimari yerleşim, iç sirkülasyonu ve yapısal verimliliği optimize etmek amacıyla her katta dört daire bulunacak şekilde tasarlanmış, yedi betonarme taşıyıcı blok üzerine dağıtılmış 238 daireden oluşmaktadır."
+    },
+    {
+      "id": "content.description.1",
+      "text": "İnşaat programı; ince yapı işleri, cephe duvar örümü, iç teknik tesisatlar ve yol ile altyapı şebekelerinin (VRD) tamamlanmasına odaklanarak ince işler aşamasında ilerlemektedir."
+    },
+    {
+      "id": "content.authority",
+      "text": "OFFICE DE PROMOTION ET DE GESTION IMMOBILIÈRE (OPGI)"
+    },
+    {
+      "id": "content.seo",
+      "text": "Mostaganem, Bas Mazagran'daki 200 destekli konut ve 38 serbest promosyonel konut ünitesine ait teknik şartnameler, inşaat ilerlemesi ve şantiye detayları."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "İşveren"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "OPGI"
+    },
+    {
+      "id": "content.meta.1.label",
+      "text": "Proje Tipi"
+    },
+    {
+      "id": "content.meta.1.value",
+      "text": "Destekli ve Promosyonel Konut"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Proje Tipi"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Destekli ve Promosyonel Konut"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Konum"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Bas Mazagran, Mostaganem"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Program"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "200 Destekli Konut Ünitesi ve 38 Serbest Promosyonel Konut Ünitesi"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Bloklar"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "7 Blok (Zemin+5 ila Zemin+9 Kat)"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Durum"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "Devam Ediyor"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Proje Programı"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "Sosyal ve serbest segmentleri kapsayan 238 programlı konut ünitesi"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "Zemin kat artı 5 ila zemin kat artı 9 üst kat (R+5 ila R+9) arasında değişen yedi betonarme taşıyıcı blok"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "Zemin kat ticari alanları"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "Entegre yol ve altyapı şebekeleri (VRD) ile yaya erişim yolları"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "Konum Bağlamı"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "Mostaganem, Bas Mazagran kıyı bölgesi (teslim aşamasındaki kıyı yerleşim projesi)"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi projesi nedir?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Proje, zemin katında ticari alanlar bulunan yedi taşıyıcı blokta dağıtılmış 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşmaktadır."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Blokların yapısal konfigürasyonu nasıldır?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Proje, her katta dört daire olacak şekilde yüksek verimli bir mekansal oran koruyarak, yedi blokta toplam 238 bağımsız dairenin mekansal ve yapısal uygulamasını kapsamaktadır."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Bu konut projesinin işvereni kimdir?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Proje, bölgedeki konut ihtiyaçlarını karşılamak üzere Office de Promotion et de Gestion Immobilière (OPGI) için inşa edilmektedir."
+    },
+    {
+      "id": "content.faq.3.question",
+      "text": "İnşaat çalışmalarının güncel durumu nedir?"
+    },
+    {
+      "id": "content.faq.3.answer",
+      "text": "Proje şu anda yapım aşamasında olup, çalışmalar ince yapı işleri, cephe duvar örümü ve yol ile altyapı şebekelerinin (VRD) kurulumuna odaklanmıştır."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Betonarme karkas ve tuğla dolgu duvar işlerini gösteren konut bloklarının yapısal uygulaması."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Zemin+5 ila Zemin+9 katlı (R+5 ila R+9) konut bloklarının karkas inşaatı sırasında çalışan kule vinç."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Ön planda büyük toprak yığınlarının, arka planda ise bulutlu bir gökyüzü altında yapım aşamasındaki binaların ve çalışan iki vincin (biri kule, diğeri mobil vinç) yer aldığı şantiye görünümü."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Proje sahası genelinde kazı işleri ve alt yapı hazırlığı."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Geniş ve kumlu bir kazı çukurunda kazı yapan büyük gri bir HIDROMEK ekskavatörün yer aldığı şantiyenin havadan görünümü. Yakınlarda biri toprak yüklü iki turuncu damperli kamyon park etmiş durumda. Arka planda yapım aşamasındaki betonarme bir bina, uzakta ise konutlar ve tepeler görünüyor. Kamyonların yanında iki inşaat işçisi bulunuyor."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Yedi bloğun temelleri için kazı ve saha tesviye çalışmaları."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Kumlu toprakta derin bir hendek kazan büyük kovalı bir ekskavatör. Hendek yakınında duran iki inşaat işçisi çalışmayı izliyor. Ekskavatör kabininin içinde başka bir işçi görünüyor. Arka planda üstü dikenli telli beton bir duvar var."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Yeraltı altyapı şebekelerinin kurulumu için hendek kazısı."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Toprak sahada inşaat malzemeleri yüklü beyaz bir pikabın yanında iki işçi; arka planda parçalı bulutlu bir gökyüzü altında büyük mavi bir kule vinç ve yapım aşamasındaki çok katlı binalar."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Şantiye içi malzeme lojistiği ve ince yapı bileşenlerinin teslimatı."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Konut ünitelerinin dış duvar örümü ve taşıyıcı karkaslarındaki ilerleme."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Bulutlu bir gökyüzü altında, arka planda kısmen inşa edilmiş betonarme bir binanın yer aldığı kumlu şantiyede bir ekskavatör ve iki damperli kamyon."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Yol ve altyapı şebekeleri (VRD) için saha topografyasını hazırlayan hafriyat makineleri."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Bulutlu bir gökyüzü altında, kazı çukuru ve kısmen inşa edilmiş betonarme bir binanın bulunduğu şantiyede ekskavatör ve damperli kamyonlar."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "İlk temel kazısı ve yapısal zemin çalışmaları."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Çok katlı bloklarda cephe tasarımı ve duvar dolgusu."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Beton döküm aşamasında yedi bloğun yapısal kütlesi."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Kolunda 'HIDROMEK' yazısı görünen bir ekskavatör kumlu toprakta derin bir hendek kazıyor. Hendekte iki işçi var ve ekskavatörün yakınında kırmızı tişörtlü başka bir işçi duruyor. Arka planda üstü dikenli telli beton bir duvar var."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Altyapı bağlantıları için inşaat mühendisliği işleri ve hendek kazıları."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Toprak şantiyede, üzerinde inşaat malzemesi torbaları yüklü beyaz bir JMC pikap ve yanında iki adam. Arka planda parçalı bulutlu bir gökyüzü altında büyük mavi bir kule vinç ve yapım aşamasındaki çok katlı binalar görünüyor."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Aktif inşaat sektörlerine ince iş malzemelerinin teslimatı."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Dış duvar örümü ve pencere boşluklarının uygulanması."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Yapım aşamasındaki yedi konut bloğunun genel görünümü."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Duvar örümü aşamasında Bas Mazagran projesinin taşıyıcı blokları."
+    }
+  ]
+}

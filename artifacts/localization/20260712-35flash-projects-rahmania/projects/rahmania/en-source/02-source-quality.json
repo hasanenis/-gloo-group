@@ -1,0 +1,47 @@
+{
+  "jobId": "20260712-35flash-projects-rahmania",
+  "pageId": "projects/rahmania",
+  "locale": "en",
+  "sourceRevision": "v1-2f4fddef",
+  "generatedAt": "2026-07-11T21:39:52.623Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.faq.0.answer",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.summary.1",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

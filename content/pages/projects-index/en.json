@@ -1,0 +1,21 @@
+{
+  "pageId": "projects-index",
+  "locale": "en",
+  "sourceRevision": "v1-d5c4bd00",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-7528e25c",
+  "status": "approved",
+  "updatedAt": "2026-07-11T22:10:06.718Z",
+  "seo": {
+    "title": "Projects | SARL Igloo Yapi Construction",
+    "description": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+    "socialTitle": "Projects | SARL Igloo Yapi Construction",
+    "socialDescription": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria."
+  },
+  "content": {
+    "eyebrow": "Projects",
+    "heading": "A portfolio built on delivery.",
+    "lead": "Our completed works encompass residential programmes, villas, commercial premises, and roads and utility networks (VRD) executed across Algeria."
+  }
+}

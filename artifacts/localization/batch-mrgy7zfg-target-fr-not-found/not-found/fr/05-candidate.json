@@ -1,0 +1,20 @@
+{
+  "pageId": "not-found",
+  "locale": "fr",
+  "sourceRevision": "v1-514277f8",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "511b3fe587a45e67",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:05.124Z",
+  "seo": {
+    "title": "Page introuvable | SARL Igloo Yapi Construction",
+    "description": "La page demandée est introuvable. Retournez sur le portail de la SARL Igloo Yapi Construction pour consulter nos programmes de logements et nos projets de construction.",
+    "socialTitle": "Page introuvable | SARL Igloo Yapi Construction",
+    "socialDescription": "La page demandée est introuvable. Retournez sur le portail de la SARL Igloo Yapi Construction pour consulter nos programmes de logements et nos projets de construction."
+  },
+  "content": {
+    "heading": "Page introuvable",
+    "cta": "Retourner à la page d’accueil"
+  }
+}

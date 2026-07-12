@@ -1,0 +1,53 @@
+{
+  "jobId": "batch-mrh0zb9y-target-ar-DZ-about",
+  "pageId": "about",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:58:26.410Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "SARL Igloo Yapi Construction | Corporate Profile",
+      "draft": "شركة إغلو يابي للإنشاءات (ذ.م.م) | الملف التعريفي للشركة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+      "draft": "شركة إنشاءات جزائرية تتولى تنفيذ مشاريع سكنية ومتعددة الاستخدامات من خلال عمليات متكاملة تشمل الهندسة، والتوريد، والعمليات الميدانية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "SARL Igloo Yapi Construction | Corporate Profile",
+      "draft": "شركة إغلو يابي للإنشاءات (ذ.م.م) | الملف التعريفي للشركة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "An Algerian construction company delivering residential and mixed-use developments through integrated engineering, procurement and site operations.",
+      "draft": "شركة إنشاءات جزائرية تتولى تنفيذ مشاريع سكنية ومتعددة الاستخدامات من خلال عمليات متكاملة تشمل الهندسة، والتوريد، والعمليات الميدانية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "Corporate Profile",
+      "draft": "الملف التعريفي للشركة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Integrated engineering and site execution teams.",
+      "draft": "فرق متكاملة للهندسة والتنفيذ الميداني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.body",
+      "source": "Founded in 2018 in Algiers, SARL Igloo Yapi Construction delivers residential and mixed-use projects through coordinated engineering, procurement and site teams.",
+      "draft": "تأسست شركة \"إغلو يابي للإنشاءات\" (SARL Igloo Yapi Construction) في الجزائر العاصمة عام 2018، وهي تتولى تنفيذ مشاريع سكنية وأخرى متعددة الاستخدامات من خلال فرق عمل متكاملة تشمل أقسام الهندسة والمشتريات والعمليات الميدانية.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

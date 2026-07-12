@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgz7h0u-target-fr-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-11T23:08:47.924Z",
+  "status": "pass",
+  "issues": []
+}

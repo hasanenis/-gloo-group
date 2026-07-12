@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "pageId": "contact",
+  "path": "/contact",
+  "sourceLocale": "en",
+  "fields": [
+    {
+      "key": "content.eyebrow",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.heading",
+      "kind": "heading",
+      "required": true
+    },
+    {
+      "key": "content.lead",
+      "kind": "body",
+      "required": true
+    }
+  ]
+}

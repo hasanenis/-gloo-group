@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrh19gli-target-ar-DZ-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-12T00:06:19.854Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 وحدة سكنية مع خدمات التأجير التجاري وخدمات الكونسيرج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "التفاصيل الفنية، وسير أعمال البناء، والمواصفات المعمارية للمشروع السكني المكون من 250 وحدة في \"بورادة\"، الرغاية، ولاية الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 وحدة سكنية مع خدمات التأجير التجاري وخدمات الكونسيرج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "التفاصيل الفنية، وسير أعمال البناء، والمواصفات المعمارية للمشروع السكني المكون من 250 وحدة في \"بورادة\"، الرغاية، ولاية الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "reghaia-bouraada-250-housing",
+      "draft": "مشروع 250 وحدة سكنية في رغاية-بوراعدة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 وحدة سكنية مع خدمات التأجير التجاري وخدمات الكونسيرج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL",
+      "draft": "سكني متعدد الاستخدامات",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A residential development comprising 250 rent-to-own housing units at the Bouraada site in Reghaia, delivered with integrated ground-floor commercial premises and dedicated concierge facilities.",
+      "draft": "مشروع سكني يضم 250 وحدة سكنية بنظام \"الإيجار المنتهي بالتمليك\" في موقع \"بورادة\" بمنطقة رغاية، ويشمل مساحات تجارية متكاملة في الطابق الأرضي ومرافق مخصصة لخدمات الاستقبال والإشراف (الكونسيرج).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The master plan organises seven R+9 blocks—each consisting of a ground floor plus 9 upper floors—to balance high-density residential accommodation with active street-level commercial frontage.",
+      "draft": "ينظم المخطط العام سبعة مبانٍ سكنية (تتألف كل منها من طابق أرضي وتسعة طوابق علوية)، وذلك لتحقيق التوازن بين الوحدات السكنية عالية الكثافة وواجهات تجارية نشطة تطل على مستوى الشارع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The residential programme provides 250 rent-to-own apartments distributed across seven blocks, featuring a standardised floor plate of four units per level in a balanced F3 and F4 configuration. The ground-floor levels are structurally configured to support commercial rental units and dedicated concierge offices, enhancing the active street-level frontage.",
+      "draft": "يوفر المشروع السكني 250 شقة بنظام \"الإيجار المنتهي بالتملك\" موزعة على سبعة مبانٍ، وتتميز بتصميم موحد للطابق يضم أربع وحدات، مع توزيع متوازن بين فئتي الشقق (F3 وF4). وقد صُممت الطوابق الأرضية إنشائياً لتضم وحدات تجارية للإيجار ومكاتب مخصصة لخدمات الاستقبال والإدارة (الكونسيرج)، مما يعزز حيوية الواجهة المطلة على الشارع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of execution encompasses all-trades delivery (TCE), including structural completion, facade articulation, internal secondary works, technical building services, and the installation of roads and utility networks (VRD) to integrate the development with the surrounding municipal infrastructure.",
+      "draft": "يشمل نطاق التنفيذ تسليم كافة الأعمال الإنشائية والمعمارية والخدمية (TCE)، بما في ذلك إنجاز الهيكل الإنشائي، وتنفيذ الواجهات، والأعمال الثانوية الداخلية، والخدمات الفنية للمبنى، بالإضافة إلى إنشاء الطرق وشبكات المرافق (VRD) لربط المشروع بالبنية التحتية البلدية المحيطة ودمجه فيها.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "This seven-block residential development was executed under a comprehensive all-trades contract, managing structural works, facade finishes, internal services, and site-wide utility connections.",
+      "draft": "تم تنفيذ هذا المشروع السكني -المكون من سبعة مبانٍ- بموجب عقد شامل يغطي كافة التخصصات الإنشائية والفنية، بما في ذلك إدارة الأعمال الهيكلية، وتشطيبات الواجهات، والخدمات الداخلية، وتوصيلات المرافق في الموقع بأكمله.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "التفاصيل الفنية، وسير أعمال البناء، والمواصفات المعمارية للمشروع السكني المكون من 250 وحدة في \"بورادة\"، الرغاية، ولاية الجزائر.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "عميل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Rent-to-own housing with commercial premises and concierge services",
+      "draft": "وحدات سكنية بنظام الإيجار المنتهي بالتملك، مع مساحات تجارية وخدمات كونسيرج.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Rent-to-own housing with commercial premises",
+      "draft": "وحدات سكنية بنظام الإيجار المنتهي بالتملك مع مساحات تجارية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bouraada, Reghaia, Algiers Province",
+      "draft": "بورادة، رغاية، ولاية الجزائر",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "وحدات سكنية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "250 units",
+      "draft": "250 وحدة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Blocks",
+      "draft": "كتل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "7 R+9 blocks",
+      "draft": "7 مبانٍ بارتفاع (أرضي + 9 طوابق)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Completion",
+      "draft": "الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "عميل",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "250 rent-to-own housing units",
+      "draft": "250 وحدة سكنية بنظام الإيجار المنتهي بالتمليك",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Seven R+9 residential blocks (ground floor plus 9 upper floors)",
+      "draft": "سبعة مبانٍ سكنية مكونة من طابق أرضي و9 طوابق علوية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial premises and concierge spaces",
+      "draft": "مساحات تجارية في الطابق الأرضي ومساحات مخصصة لخدمات الاستقبال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2025 with secondary works and facades",
+      "draft": "اكتمل في عام 2025، بما في ذلك الأعمال الثانوية والواجهات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 250 Housing Units project in Reghaia?",
+      "draft": "ما هو نطاق مشروع الـ 250 وحدة سكنية في رغاية؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project comprises the construction of 250 rent-to-own residential apartments across seven R+9 blocks, complete with ground-floor commercial premises and dedicated concierge spaces.",
+      "draft": "يتضمن المشروع إنشاء 250 شقة سكنية بنظام \"الإيجار المنتهي بالتملك\" موزعة على سبعة مبانٍ (تتألف كل منها من طابق أرضي وتسعة طوابق علوية)، مع توفير مساحات تجارية في الطوابق الأرضية ومناطق مخصصة لخدمات الاستقبال (الكونسيرج).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What are the architectural and structural specifications of the blocks?",
+      "draft": "ما هي المواصفات المعمارية والإنشائية للكتل؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The programme delivers 250 rent-to-own homes, with four units per floor and a clear F3/F4 mix supported by commercial premises and concierge spaces.",
+      "draft": "يوفر البرنامج 250 وحدة سكنية بنظام \"الإيجار المنتهي بالتملك\"، بواقع أربع وحدات في كل طابق ومزيج واضح من فئات F3 وF4، مدعومة بمساحات تجارية ومرافق لخدمات الاستقبال (الكونسيرج).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Which construction works were executed on this site?",
+      "draft": "ما هي أعمال البناء التي نُفِّذت في هذا الموقع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The contract was executed as an all-trades package (TCE), covering structural works, facade articulation, internal secondary works, technical building services, and site-wide roads and utility networks (VRD).",
+      "draft": "تم تنفيذ العقد كحزمة أعمال شاملة (TCE)، شملت الأعمال الإنشائية، وتشكيل الواجهات، والأعمال الداخلية الثانوية، والخدمات الفنية للمبنى، بالإضافة إلى شبكات الطرق والمرافق في الموقع بأكمله (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How is the ground floor of the development utilised?",
+      "draft": "كيف يتم استغلال الطابق الأرضي من المشروع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Reghaia organises seven R+9 blocks around practical family housing, local services and concierge spaces that make the residence easier to live in.",
+      "draft": "يضم مشروع \"رغاية\" سبعة مبانٍ سكنية (بارتفاع أرضي + 9 طوابق) تتمحور حول وحدات سكنية عائلية عملية، وخدمات محلية، ومساحات مخصصة لخدمات الاستقبال والإرشاد، مما يضفي مزيداً من الراحة والسهولة على الحياة اليومية في المجمع السكني.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "تصميم ثلاثي الأبعاد يظهر الواجهة الخارجية لمبنى سكني وتجاري متعدد الطوابق ذي تصميم عصري، يتميز بألواح باللون الأصفر والأبيض والرمادي الداكن، وشرفات، ومساحات تجارية في الطابق الأرضي، وذلك على خلفية سماء داكنة وملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Architectural rendering showing the facade articulation and ground-floor commercial frontage of the R+9 blocks.",
+      "draft": "تصور معماري يوضح تشكيلات الواجهات والواجهات التجارية في الطابق الأرضي لمباني المجمعات السكنية المكونة من 9 طوابق فوق الطابق الأرضي (R+9).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "تصور معماري ثلاثي الأبعاد يظهر الواجهة الكاملة لمبنى سكني عصري متعدد الطوابق يتميز بألواح باللون الأبيض والأصفر والرمادي الداكن، ومساحات تجارية في الطابق الأرضي، بالإضافة إلى منطقة ممهدة تضم مواقف للسيارات ومساحات خضراء في المقدمة، وذلك تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Architectural rendering of the complete residential block showing the integration of commercial spaces and surrounding circulation areas.",
+      "draft": "تصور معماري للمجمع السكني المتكامل يوضح دمج المساحات التجارية ومناطق الحركة المحيطة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بواجهة لافتة تجمع بين الألوان الأصفر والأسود والأبيض وتضم شرفات متعددة، وذلك على خلفية سماء زرقاء صافية. وتظهر في المقدمة أعمال بناء جارية، حيث تتناثر الأتربة وتوجد أحجار رصيف تم تركيبها حديثاً.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Completed facade execution on one of the R+9 residential blocks, showing the external colour scheme and balcony detailing.",
+      "draft": "اكتمال تنفيذ الواجهة لأحد المباني السكنية المكونة من طابق أرضي و9 طوابق علوية، مع إظهار نظام الألوان الخارجي وتفاصيل الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "High-angle view of a multi-story building under construction with exposed brickwork and concrete frames, a large blue tower crane, construction vehicles, and temporary site offices on a dirt ground.",
+      "draft": "لقطة علوية لمبنى متعدد الطوابق قيد الإنشاء تظهر فيه أعمال الطوب والهياكل الخرسانية المكشوفة، ورافعة برجية زرقاء كبيرة، ومركبات إنشائية، ومكاتب موقع مؤقتة على أرض ترابية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural execution phase showing reinforced concrete frames and brick infill masonry.",
+      "draft": "مرحلة التنفيذ الإنشائي تُظهر إطارات من الخرسانة المسلحة وجدران حشو من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Exterior view of a multi-story residential building under construction, showing light-colored walls, balconies with black railings, and windows, with construction materials and activity at the base.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يُظهر جدرانًا فاتحة اللون وشرفات ذات درابزين أسود ونوافذ، مع وجود مواد وأعمال بناء عند قاعدة المبنى.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Facade rendering and external finishing works in progress on the residential blocks.",
+      "draft": "تجري حالياً أعمال لياسة الواجهات والتشطيبات الخارجية للمباني السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Tall residential building with yellow, black, and white exterior, featuring balconies and windows, with construction materials and dirt visible in the foreground under a clear blue sky.",
+      "draft": "مبنى سكني شاهق يتميز بواجهة خارجية بألوان الأصفر والأسود والأبيض، ويضم شرفات ونوافذ، مع ظهور مواد بناء وأتربة في المقدمة تحت سماء زرقاء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Completed external envelope of an R+9 block during the final site clearance phase.",
+      "draft": "الواجهة الخارجية المكتملة لمبنى مكوّن من طابق أرضي و9 طوابق علوية، وذلك خلال مرحلة الإخلاء النهائي للموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "تصور معماري ثلاثي الأبعاد يظهر الواجهة الكاملة لمبنى سكني عصري متعدد الطوابق يتميز بألواح باللون الأبيض والأصفر والرمادي الداكن، ومساحات تجارية في الطابق الأرضي، بالإضافة إلى منطقة ممهدة تضم مواقف للسيارات ومساحات خضراء في المقدمة، وذلك تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Architectural visualization of the residential blocks and ground-level public realm.",
+      "draft": "تصور معماري للكتل السكنية والمساحات العامة على مستوى الأرض.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A newly constructed, multi-story apartment building with a striking facade featuring horizontal bands of yellow, black, and white. The building has numerous balconies and windows. The foreground shows a dirt construction site with some curb stones and a pallet of concrete blocks.",
+      "draft": "مبنى سكني متعدد الطوابق شُيِّد حديثاً، يتميز بواجهة لافتة للنظر تتألف من أشرطة أفقية بألوان الأصفر والأسود والأبيض. يضم المبنى العديد من الشرفات والنوافذ، وتظهر في المقدمة ساحة موقع بناء ترابية تحتوي على بعض أحجار الرصيف ومنصة محملة بكتل خرسانية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Detail of the completed facade articulation and balcony balustrades.",
+      "draft": "تفاصيل تشكيلات الواجهة المنجزة ودرابزينات الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A tall, modern residential building with yellow, black, and white sections on its facade, seen from a low angle against a clear blue sky, with construction work visible at the base.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بواجهة ذات أجزاء صفراء وسوداء وبيضاء، يظهر من زاوية منخفضة مقابل سماء زرقاء صافية، مع أعمال بناء مرئية عند القاعدة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Low-angle view of the completed R+9 block showing the vertical massing and external finishes.",
+      "draft": "لقطة من زاوية منخفضة للمبنى المكتمل (المكون من طابق أرضي وتسعة طوابق علوية)، تُظهر الكتلة الرأسية والتشطيبات الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بواجهة لافتة تجمع بين الألوان الأصفر والأسود والأبيض وتضم شرفات متعددة، وذلك على خلفية سماء زرقاء صافية. وتظهر في المقدمة أعمال بناء جارية، حيث تتناثر الأتربة وتوجد أحجار رصيف تم تركيبها حديثاً.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Completed external works on the residential block prior to final landscaping.",
+      "draft": "تم إنجاز الأعمال الخارجية للمبنى السكني قبل أعمال تنسيق الموقع النهائية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "تصور معماري ثلاثي الأبعاد يظهر الواجهة الكاملة لمبنى سكني عصري متعدد الطوابق يتميز بألواح باللون الأبيض والأصفر والرمادي الداكن، ومساحات تجارية في الطابق الأرضي، بالإضافة إلى منطقة ممهدة تضم مواقف للسيارات ومساحات خضراء في المقدمة، وذلك تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Architectural rendering illustrating the planned integration of the residential blocks with the local streetscape.",
+      "draft": "تصور معماري يوضح التكامل المخطط له بين الكتل السكنية والمشهد العمراني للشارع المحلي.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "High-angle view of a multi-building construction site with a blue tower crane, exposed concrete structures, brick infill, construction vehicles, and temporary site offices under a clear sky.",
+      "draft": "لقطة علوية لموقع بناء يضم مباني متعددة، ويظهر فيه رافعة برجية زرقاء، وهياكل خرسانية مكشوفة، وجدران حشو من الطوب، ومركبات إنشائية، ومكاتب موقع مؤقتة تحت سماء صافية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Site-wide view of structural works, showing reinforced concrete frames under construction.",
+      "draft": "مشهد عام للموقع يوضح الأعمال الإنشائية وإطارات الخرسانة المسلحة قيد التنفيذ.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, modern residential building featuring a striking black, yellow, and white facade, viewed from a low angle against a clear blue sky. The foreground shows an unpaved construction site with dirt and some construction materials, indicating ongoing site work.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بواجهة لافتة تجمع بين الألوان الأسود والأصفر والأبيض، ويظهر في لقطة من زاوية منخفضة مقابل سماء زرقاء صافية. وتُظهر المقدمة موقع بناء غير ممهد يضم أتربة وبعض مواد البناء، مما يشير إلى استمرار الأعمال الإنشائية في الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Progress photo showing the completed external envelope and ongoing ground-level civil works.",
+      "draft": "صورة توضح تقدم العمل، وتُظهر الغلاف الخارجي المكتمل والأعمال المدنية الجارية على مستوى الأرض.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "مبنى سكني شاهق وعصري يتميز بواجهة لافتة تجمع بين الألوان الأصفر والأسود والأبيض وتضم شرفات متعددة، وذلك على خلفية سماء زرقاء صافية. وتظهر في المقدمة أعمال بناء جارية، حيث تتناثر الأتربة وتوجد أحجار رصيف تم تركيبها حديثاً.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "View of the R+9 block during the final stages of external works and site integration.",
+      "draft": "مشهد للمبنى المكون من طابق أرضي وتسعة طوابق علوية (R+9) خلال المراحل النهائية للأعمال الخارجية ودمج الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "تصور معماري ثلاثي الأبعاد يظهر الواجهة الكاملة لمبنى سكني عصري متعدد الطوابق يتميز بألواح باللون الأبيض والأصفر والرمادي الداكن، ومساحات تجارية في الطابق الأرضي، بالإضافة إلى منطقة ممهدة تضم مواقف للسيارات ومساحات خضراء في المقدمة، وذلك تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Architectural rendering showing the design intent for the completed facade and surrounding public realm.",
+      "draft": "تصور معماري يوضح الرؤية التصميمية للواجهة المكتملة والحيز العام المحيط بها.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "تصميم ثلاثي الأبعاد يظهر الواجهة الخارجية لمبنى سكني وتجاري متعدد الطوابق ذي تصميم عصري، يتميز بألواح باللون الأصفر والأبيض والرمادي الداكن، وشرفات، ومساحات تجارية في الطابق الأرضي، وذلك على خلفية سماء داكنة وملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Architectural rendering of the 250-unit mixed-use residential development at Reghaia.",
+      "draft": "تصور معماري للمشروع السكني متعدد الاستخدامات في \"رغاية\"، والذي يضم 250 وحدة.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

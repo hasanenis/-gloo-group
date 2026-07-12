@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrh0ztmn-target-ar-DZ-projects-index",
+  "pageId": "projects-index",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T23:58:50.199Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "المشاريع | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "محفظة من البرامج السكنية، الفيلات، المحلات التجارية، وأعمال الطرقات والشبكات المختلفة (VRD) المنجزة عبر الجزائر."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "المشاريع | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "محفظة من البرامج السكنية، الفيلات، المحلات التجارية، وأعمال الطرقات والشبكات المختلفة (VRD) المنجزة عبر الجزائر."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "المشاريع"
+    },
+    {
+      "id": "content.heading",
+      "text": "محفظة مشاريع مبنية على الإنجاز الفعلي."
+    },
+    {
+      "id": "content.lead",
+      "text": "تشمل أعمالنا المنجزة البرامج السكنية، الفيلات، المحلات التجارية، وأشغال الطرقات والشبكات المختلفة (VRD) المنفذة عبر الجزائر."
+    }
+  ]
+}

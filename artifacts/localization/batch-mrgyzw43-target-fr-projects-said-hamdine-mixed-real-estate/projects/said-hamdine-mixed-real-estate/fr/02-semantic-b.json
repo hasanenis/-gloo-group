@@ -1,0 +1,371 @@
+{
+  "jobId": "batch-mrgyzw43-target-fr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:02:54.446Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Complexe immobilier mixte avec 202 logements promotionnels libres"
+    },
+    {
+      "id": "seo.description",
+      "text": "Spécifications techniques, exécution des structures et contraintes de site pour le projet mixte à Saïd Hamdine, Alger, comprenant 202 logements promotionnels libres."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Complexe immobilier mixte avec 202 logements promotionnels libres"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Spécifications techniques, exécution des structures et contraintes de site pour le projet mixte à Saïd Hamdine, Alger, comprenant 202 logements promotionnels libres."
+    },
+    {
+      "id": "content.slug",
+      "text": "said-hamdine-mixed-real-estate"
+    },
+    {
+      "id": "content.title",
+      "text": "Complexe immobilier mixte avec 202 logements promotionnels libres"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "PROJET MIXTE"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "Un projet mixte de cinq blocs à Saïd Hamdine, intégrant 202 unités résidentielles sur un terrain en forte pente avec 01 sous-sol parking et 03 entre-sols commerces avec mezzanine."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "Le projet résout la topographie complexe du site par un épaulement des volumes, intégrant des commerces actifs au niveau de la rue avec un parking souterrain sécurisé et des circulations résidentielles."
+    },
+    {
+      "id": "content.description.0",
+      "text": "Ce projet de développement urbain comprend cinq blocs résidentiels abritant 202 logements promotionnels libres, édifiés sur 03 entre-sols commerces avec mezzanine et 01 sous-sol parking. L'exécution de la structure a été étudiée pour s'adapter à un terrain en forte pente à Alger, nécessitant des ouvrages de soutènement spécialisés et une ingénierie de fondation précise."
+    },
+    {
+      "id": "content.description.1",
+      "text": "Les travaux ont été exécutés dans le cadre d'un marché en tout corps d'état (TCE), incluant le gros œuvre en béton armé, le traitement des façades, les systèmes de vitrage, ainsi que les travaux de voirie et réseaux divers (VRD) pour la gestion de l'assainissement du site et la circulation des véhicules."
+    },
+    {
+      "id": "content.authority",
+      "text": "Un projet urbain mixte caractérisé par une ingénierie des structures rigoureuse, des circulations intégrées et une exécution complexe du terrassement."
+    },
+    {
+      "id": "content.seo",
+      "text": "Spécifications techniques, exécution des structures et contraintes de site pour le projet mixte à Saïd Hamdine, Alger, comprenant 202 logements promotionnels libres."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "Complexe immobilier mixte"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "Type de projet"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "Complexe immobilier mixte"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "Localisation"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "Saïd Hamdine, Bir Mourad Raïs, Alger"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "Logements"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "202 logements promotionnels libres"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "Blocs"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "5 blocs résidentiels"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "Parking"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "01 sous-sol parking"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "Contrainte du site"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "Terrain en forte pente ; 03 entre-sols commerces avec mezzanine"
+    },
+    {
+      "id": "content.details.6.label",
+      "text": "Livraison"
+    },
+    {
+      "id": "content.details.6.value",
+      "text": "2023"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "Programme du projet"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "Réalisation de la structure de cinq blocs mixtes"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "202 logements promotionnels libres"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "03 entre-sols commerces avec mezzanine"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "01 sous-sol parking"
+    },
+    {
+      "id": "content.nearby.title",
+      "text": "À proximité"
+    },
+    {
+      "id": "content.nearby.items.0",
+      "text": "Quartier commercial local"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "Qu'est-ce que le Complexe immobilier mixte avec 202 logements promotionnels libres ?"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "Le projet comprend cinq blocs résidentiels abritant 202 logements promotionnels libres, construits sur trois niveaux d'entre-sols commerciaux et un niveau de parking en sous-sol."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "Comment la topographie du site a-t-elle influencé l'ingénierie ?"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "Le projet rassemble cinq blocs résidentiels, 202 logements promotionnels libres, 03 entre-sols commerces avec mezzanine et 01 sous-sol parking sur un terrain en forte pente à Alger."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "Quel était le périmètre du contrat de construction ?"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "Le projet a été livré dans le cadre d'un marché en tout corps d'état (TCE), comprenant les travaux de gros œuvre en béton, le traitement des façades, la vitrerie et les travaux de voirie et réseaux divers (VRD)."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "Vue de dessus d'une dalle en béton armé avec ferraillage, montrant des ouvriers de chantier, une pompe à béton et des bâtiments résidentiels à l'arrière-plan au coucher du soleil."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "Ferraillage de la dalle structurelle et pose des aciers sur le chantier."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "Vue en contre-plongée de deux bâtiments modernes de grande hauteur avec balcons, façades blanches, beiges et grises, et un rez-de-chaussée commercial vitré réfléchissant."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "Traitement de la façade et vitrage des commerces au rez-de-chaussée."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "Ouvriers de chantier sur un site de construction au coucher du soleil, préparant une dalle de béton avec un réseau dense de ferraillage et une pompe à béton à l'arrière-plan."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "Travaux de ferraillage pour la dalle de plancher en béton."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "Vue aérienne d'un chantier de construction montrant une grande fouille avec une dalle de propreté en béton. De nombreux ouvriers en gilets de sécurité orange posent et lient les nappes de ferraillage pour les fondations du bâtiment. Les parois de terre stabilisées de la fouille sont visibles à l'arrière-plan."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "Terrassement des fondations et pose de la nappe de ferraillage."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "Un balcon moderne avec revêtement de sol en carrelage imitation bois, garde-corps en verre, une petite table ronde et trois chaises sombres. À l'arrière-plan, d'autres immeubles d'habitation sont visibles."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "Détail d'un balcon résidentiel avec garde-corps en verre."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "Vue de dessous d'un grand immeuble résidentiel moderne avec balcons vitrés et un rez-de-chaussée commercial en verre réfléchissant, sous un ciel bleu clair avec une lune discrète. Un arbre vert cadre partiellement le côté droit."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "Élévation montrant les balcons résidentiels et les vitrages du rez-de-chaussée."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "Vue de dessus d'une dalle en béton armé avec ferraillage, montrant des ouvriers de chantier, une pompe à béton et des bâtiments résidentiels à l'arrière-plan au coucher du soleil."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "Travaux de ferraillage de dalle en cours."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "Ouvriers de chantier en gilets de sécurité installant le ferraillage en acier pour les fondations d'un grand bâtiment dans une fouille profonde, avec des murs de soutènement visibles."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "Ferraillage des fondations dans la zone excavée."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "Vue d'un couloir vide et propre avec des murs blancs, un sol en carrelage brillant marron foncé et plusieurs portes ouvertes menant à d'autres pièces, dont un coin repas et une chambre."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "Circulation intérieure et finitions du couloir de l'appartement."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "Vue aérienne d'un chantier de construction montrant une grande fouille avec une dalle de propreté en béton. De nombreux ouvriers en gilets de sécurité orange posent et lient les nappes de ferraillage pour les fondations du bâtiment. Les parois de terre stabilisées de la fouille sont visibles à l'arrière-plan."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "Travaux d'infrastructure et ferraillage des fondations."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "Un balcon moderne avec revêtement de sol en carrelage imitation bois, garde-corps en verre, une petite table ronde et trois chaises sombres. À l'arrière-plan, d'autres immeubles d'habitation sont visibles."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "Détail du balcon et revêtement de sol extérieur."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "Un bâtiment de plusieurs étages en cours de construction, montrant des dalles en béton, des poteaux et des murs en briques rouges. Des goulottes à gravats jaunes descendent sur le côté, et des matériaux de construction sont visibles aux étages inférieurs. Une grue est présente à l'arrière-plan."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "Réalisation de l'ossature structurelle et remplissage en briques."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "Un grand bâtiment en cours de construction, présentant une structure en béton, des murs partiellement achevés en briques rouges et des goulottes à gravats jaunes, sous un ciel nuageux."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "Structure en béton armé et maçonnerie de l'enveloppe en cours de réalisation."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/01-12.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "Vue aérienne d'un chantier de construction montrant une grande fouille avec une dalle de propreté en béton. De nombreux ouvriers en gilets de sécurité orange posent et lient les nappes de ferraillage pour les fondations du bâtiment. Les parois de terre stabilisées de la fouille sont visibles à l'arrière-plan."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "Terrassement et préparation du radier de fondation."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "Ouvriers de chantier en gilets de sécurité installant le ferraillage en acier pour les fondations d'un grand bâtiment dans une fouille profonde, avec des murs de soutènement visibles."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "Pose du ferraillage de l'infrastructure."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "Vue de dessus d'une dalle en béton armé avec ferraillage, montrant des ouvriers de chantier, une pompe à béton et des bâtiments résidentiels à l'arrière-plan au coucher du soleil."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "Ferraillage de la dalle et préparation du coulage du béton."
+    }
+  ]
+}

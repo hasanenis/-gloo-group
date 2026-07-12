@@ -1,0 +1,21 @@
+{
+  "pageId": "projects-index",
+  "locale": "tr",
+  "sourceRevision": "v1-7528e25c",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "e31a8cf2191e69d3",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:06.718Z",
+  "seo": {
+    "title": "Projeler | SARL Igloo Yapi Construction",
+    "description": "Cezayir genelinde tamamlanan konut projeleri, villalar, ticari alanlar ile yol ve altyapı şebekeleri (VRD) portföyümüz.",
+    "socialTitle": "Projeler | SARL Igloo Yapi Construction",
+    "socialDescription": "Cezayir genelinde tamamlanan konut projeleri, villalar, ticari alanlar ile yol ve altyapı şebekeleri (VRD) portföyümüz."
+  },
+  "content": {
+    "eyebrow": "Projelerimiz",
+    "heading": "Teslimat esaslı bir portföy.",
+    "lead": "Tamamlanan işlerimiz, Cezayir genelinde inşa edilen konut programlarını, villaları, ticari alanları ve yol ve altyapı şebekelerini (VRD) kapsamaktadır."
+  }
+}

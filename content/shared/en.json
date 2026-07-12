@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "sourceLocale": "en",
+  "revision": "v1-2aa11ee9",
+  "sourceRevision": "v1-2aa11ee9",
+  "status": "approved",
+  "content": {
+    "home": "Home",
+    "projects": "Projects",
+    "company": "Company",
+    "contact": "Contact",
+    "services": "Services",
+    "allProjects": "All projects",
+    "openProject": "Open project",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "languageSelector": "Language selector",
+    "projectOverview": "Project overview",
+    "projectDetails": "Details & location",
+    "construction": "Construction delivery",
+    "projectGallery": "Project gallery",
+    "facilities": "Housing & infrastructure",
+    "nearby": "What's around",
+    "faq": "Frequently asked questions",
+    "relatedProjects": "Featured projects",
+    "discuss": "Discuss a project"
+  }
+}

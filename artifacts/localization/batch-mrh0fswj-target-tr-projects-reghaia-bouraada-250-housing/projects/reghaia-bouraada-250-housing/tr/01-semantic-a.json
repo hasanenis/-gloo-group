@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrh0fswj-target-tr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T23:43:16.279Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "Ticari Kiralama ve Konsiyerj Hizmetleri Sunan 250 Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Cezayir Vilayeti, Reghaia, Bouraada'daki 250 konutluk proje için teknik detaylar, inşaat ilerleme durumu ve mimari özellikler.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "Ticari Kiralama ve Konsiyerj Hizmetleri Sunan 250 Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Cezayir Vilayeti, Reghaia, Bouraada'daki 250 konutluk proje için teknik detaylar, inşaat ilerleme durumu ve mimari özellikler.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "reghaia-bouraada-250-housing",
+      "draft": "Reghaia-Bouraada 250 Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "Ticari Kiralama ve Konsiyerj Hizmetleri Sunan 250 Konut Birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL",
+      "draft": "Karma Kullanımlı Konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A residential development comprising 250 rent-to-own housing units at the Bouraada site in Reghaia, delivered with integrated ground-floor commercial premises and dedicated concierge facilities.",
+      "draft": "Reghaia'daki Bouraada sahasında yer alan; zemin katında entegre ticari alanlar ve özel konsiyerj olanakları ile sunulan, 250 adet \"kirala-satın al\" (rent-to-own) konut biriminden oluşan bir konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The master plan organises seven R+9 blocks—each consisting of a ground floor plus 9 upper floors—to balance high-density residential accommodation with active street-level commercial frontage.",
+      "draft": "Master plan, yüksek yoğunluklu konut kullanımı ile sokak seviyesindeki hareketli ticari cepheleri dengelemek amacıyla, her biri zemin kat ve üzerindeki 9 kattan oluşan yedi adet R+9 bloğu düzenlemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The residential programme provides 250 rent-to-own apartments distributed across seven blocks, featuring a standardised floor plate of four units per level in a balanced F3 and F4 configuration. The ground-floor levels are structurally configured to support commercial rental units and dedicated concierge offices, enhancing the active street-level frontage.",
+      "draft": "Konut programı, yedi blokta dağılmış 250 adet \"kirala-satın al\" (rent-to-own) modeline uygun daire sunmakta olup, her katta dengeli bir F3 ve F4 konfigürasyonunda dört birimden oluşan standart bir kat planına sahiptir. Zemin katlar, ticari kiralama birimlerine ve özel konsiyerj ofislerine olanak tanıyacak şekilde yapılandırılmış ve böylece sokak seviyesindeki aktif cephe görünümü güçlendirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of execution encompasses all-trades delivery (TCE), including structural completion, facade articulation, internal secondary works, technical building services, and the installation of roads and utility networks (VRD) to integrate the development with the surrounding municipal infrastructure.",
+      "draft": "Uygulama kapsamı; yapısal tamamlanma, cephe düzenlemesi, iç mekan ikincil imalatları ve teknik bina tesisatlarının yanı sıra, projenin çevredeki belediye altyapısı ile entegrasyonunu sağlayacak yol ve altyapı şebekelerinin kurulumu dahil olmak üzere tüm yapım işlerini (TCE) ve saha düzenleme çalışmalarını (VRD) kapsar.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "This seven-block residential development was executed under a comprehensive all-trades contract, managing structural works, facade finishes, internal services, and site-wide utility connections.",
+      "draft": "Yedi bloktan oluşan bu konut projesi; yapısal işler, cephe kaplamaları, iç tesisat sistemleri ve saha genelindeki altyapı bağlantılarının yönetimini kapsayan, tüm yapım kalemlerini içeren kapsamlı bir sözleşme çerçevesinde gerçekleştirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Cezayir Vilayeti, Reghaia, Bouraada'daki 250 konutluk proje için teknik detaylar, inşaat ilerleme durumu ve mimari özellikler.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Rent-to-own housing with commercial premises and concierge services",
+      "draft": "Ticari alanlar ve konsiyerj hizmetleri içeren, satın alma opsiyonlu konutlar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Rent-to-own housing with commercial premises",
+      "draft": "Ticari alanlar içeren, satın alma opsiyonlu konutlar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bouraada, Reghaia, Algiers Province",
+      "draft": "Bouraada, Reghaia, Cezayir Vilayeti",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "Konut Birimleri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "250 units",
+      "draft": "250 birim",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Blocks",
+      "draft": "Bloklar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "7 R+9 blocks",
+      "draft": "7 adet Z+9 blok",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Completion",
+      "draft": "Tamamlama",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Proje Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "250 rent-to-own housing units",
+      "draft": "250 adet satın alma opsiyonlu kiralık konut",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Seven R+9 residential blocks (ground floor plus 9 upper floors)",
+      "draft": "Yedi adet R+9 konut bloğu (zemin kat artı 9 üst kat)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial premises and concierge spaces",
+      "draft": "Zemin kat ticari alanlar ve resepsiyon/danışma alanları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2025 with secondary works and facades",
+      "draft": "İkincil işler ve cephelerle birlikte 2025 yılında tamamlandı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 250 Housing Units project in Reghaia?",
+      "draft": "Reghaia'daki 250 konutluk projenin kapsamı nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project comprises the construction of 250 rent-to-own residential apartments across seven R+9 blocks, complete with ground-floor commercial premises and dedicated concierge spaces.",
+      "draft": "Proje; zemin kat ticari alanları ve özel resepsiyon/danışma (concierge) bölümleriyle birlikte, Z+9 katlı yedi blokta yer alan 250 adet \"kirala-satın al\" (rent-to-own) modeline uygun konutun inşasını kapsamaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What are the architectural and structural specifications of the blocks?",
+      "draft": "Blokların mimari ve yapısal özellikleri nelerdir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The programme delivers 250 rent-to-own homes, with four units per floor and a clear F3/F4 mix supported by commercial premises and concierge spaces.",
+      "draft": "Program; ticari alanlar ve konsiyerj bölümleriyle desteklenen, kat başına dört birimden oluşan ve net bir F3/F4 konut dağılımı içeren 250 adet \"kirala-satın al\" (rent-to-own) konutu sunmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Which construction works were executed on this site?",
+      "draft": "Bu sahada hangi inşaat çalışmaları gerçekleştirildi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The contract was executed as an all-trades package (TCE), covering structural works, facade articulation, internal secondary works, technical building services, and site-wide roads and utility networks (VRD).",
+      "draft": "Sözleşme; yapısal işler, cephe düzenlemeleri, iç mekan ikincil işleri, teknik bina tesisatları ile saha genelindeki yollar ve altyapı şebekelerini kapsayan, tüm yapım kalemlerini içeren bir paket (TCE) olarak gerçekleştirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How is the ground floor of the development utilised?",
+      "draft": "Projenin zemin katı nasıl kullanılıyor?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Reghaia organises seven R+9 blocks around practical family housing, local services and concierge spaces that make the residence easier to live in.",
+      "draft": "Reghaia; yedi adet Z+9 bloğu, pratik aile konutları, yerel hizmetler ve yaşamı kolaylaştıran konsiyerj alanları etrafında kurguluyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "Karanlık ve bulutlu bir gökyüzü fonunda; sarı, beyaz ve koyu gri paneller, balkonlar ve zemin katında ticari alanlar içeren, modern tasarımlı, çok katlı bir konut ve ticari binanın dış cephesini gösteren bir 3D görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Architectural rendering showing the facade articulation and ground-floor commercial frontage of the R+9 blocks.",
+      "draft": "R+9 blokların cephe kurgusunu ve zemin kat ticari cephelerini gösteren mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; beyaz, sarı ve koyu gri panellere, zemin katında ticari alanlara ve ön planda otopark ile peyzaj düzenlemesini içeren sert zeminli bir alana sahip modern, çok katlı bir konut binasının tüm cephesini gösteren 3 boyutlu mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Architectural rendering of the complete residential block showing the integration of commercial spaces and surrounding circulation areas.",
+      "draft": "Ticari alanların ve çevredeki sirkülasyon alanlarının entegrasyonunu gösteren, konut bloğunun tamamına ait mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Açık mavi bir gökyüzü fonunda; sarı, siyah ve beyaz renklerin çarpıcı bir uyumunu sergileyen cephesi ve çok sayıda balkonuyla dikkat çeken, yüksek ve modern bir konut binası. Ön planda ise toprak zemin ve yeni yerleştirilmiş bordür taşlarıyla aktif bir şantiye alanı görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Completed facade execution on one of the R+9 residential blocks, showing the external colour scheme and balcony detailing.",
+      "draft": "Dış cephe renk düzenini ve balkon detaylarını gösteren, Z+9 katlı konut bloklarından birindeki tamamlanmış cephe uygulaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "High-angle view of a multi-story building under construction with exposed brickwork and concrete frames, a large blue tower crane, construction vehicles, and temporary site offices on a dirt ground.",
+      "draft": "Çıplak tuğla duvarları ve beton iskeletiyle yapım aşamasındaki çok katlı bir binanın; büyük mavi bir kule vincin, iş makinelerinin ve toprak zemin üzerindeki geçici şantiye ofislerinin yüksek açıdan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural execution phase showing reinforced concrete frames and brick infill masonry.",
+      "draft": "Betonarme çerçeveleri ve tuğla dolgu duvarları gösteren yapısal uygulama aşaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Exterior view of a multi-story residential building under construction, showing light-colored walls, balconies with black railings, and windows, with construction materials and activity at the base.",
+      "draft": "İnşaat halindeki çok katlı bir konut binasının dış görünümü; açık renkli duvarlar, siyah korkuluklu balkonlar ve pencereler ile zemin seviyesindeki inşaat malzemeleri ve çalışmaları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Facade rendering and external finishing works in progress on the residential blocks.",
+      "draft": "Konut bloklarında cephe sıvası ve dış cephe bitirme çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Tall residential building with yellow, black, and white exterior, featuring balconies and windows, with construction materials and dirt visible in the foreground under a clear blue sky.",
+      "draft": "Açık mavi bir gökyüzü altında; sarı, siyah ve beyaz dış cepheye, balkonlara ve pencerelere sahip yüksek bir konut binası; ön planda ise inşaat malzemeleri ve toprak görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Completed external envelope of an R+9 block during the final site clearance phase.",
+      "draft": "Son saha temizliği aşamasında, Z+9 katlı bir bloğun tamamlanmış dış cephe kabuğu.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; beyaz, sarı ve koyu gri panellere, zemin katında ticari alanlara ve ön planda otopark ile peyzaj düzenlemesini içeren sert zeminli bir alana sahip modern, çok katlı bir konut binasının tüm cephesini gösteren 3 boyutlu mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Architectural visualization of the residential blocks and ground-level public realm.",
+      "draft": "Konut bloklarının ve zemin seviyesindeki kamusal alanın mimari görselleştirmesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A newly constructed, multi-story apartment building with a striking facade featuring horizontal bands of yellow, black, and white. The building has numerous balconies and windows. The foreground shows a dirt construction site with some curb stones and a pallet of concrete blocks.",
+      "draft": "Sarı, siyah ve beyaz yatay şeritlerden oluşan çarpıcı bir cepheye sahip, yeni inşa edilmiş çok katlı bir apartman. Binada çok sayıda balkon ve pencere bulunuyor. Ön planda ise kaldırım taşları ve bir palet beton blokun yer aldığı, toprak zeminli bir şantiye alanı görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Detail of the completed facade articulation and balcony balustrades.",
+      "draft": "Tamamlanmış cephe eklemlenmesi ve balkon korkuluklarının detayı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A tall, modern residential building with yellow, black, and white sections on its facade, seen from a low angle against a clear blue sky, with construction work visible at the base.",
+      "draft": "Cephesinde sarı, siyah ve beyaz bölümler bulunan, açık mavi bir gökyüzü fonunda alttan bir açıyla görülen yüksek ve modern bir konut binası; binanın tabanında ise inşaat çalışmaları göze çarpıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Low-angle view of the completed R+9 block showing the vertical massing and external finishes.",
+      "draft": "Tamamlanmış R+9 bloğun dikey kütlelenmesini ve dış cephe kaplamalarını gösteren, aşağıdan yukarıya doğru çekilmiş görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Açık mavi bir gökyüzü fonunda; sarı, siyah ve beyaz renklerin çarpıcı bir uyumunu sergileyen cephesi ve çok sayıda balkonuyla dikkat çeken, yüksek ve modern bir konut binası. Ön planda ise toprak zemin ve yeni yerleştirilmiş bordür taşlarıyla aktif bir şantiye alanı görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Completed external works on the residential block prior to final landscaping.",
+      "draft": "Nihai peyzaj düzenlemesinden önce, konut bloğunun dış cephe çalışmalarını tamamladı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; beyaz, sarı ve koyu gri panellere, zemin katında ticari alanlara ve ön planda otopark ile peyzaj düzenlemesini içeren sert zeminli bir alana sahip modern, çok katlı bir konut binasının tüm cephesini gösteren 3 boyutlu mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Architectural rendering illustrating the planned integration of the residential blocks with the local streetscape.",
+      "draft": "Konut bloklarının yerel sokak dokusuyla planlanan bütünleşmesini gösteren mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "High-angle view of a multi-building construction site with a blue tower crane, exposed concrete structures, brick infill, construction vehicles, and temporary site offices under a clear sky.",
+      "draft": "Açık bir gökyüzü altında; mavi bir kule vinç, brüt beton yapılar, tuğla dolgular, iş makineleri ve geçici şantiye ofislerinin yer aldığı, çok yapılı bir şantiyenin yüksek açıdan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Site-wide view of structural works, showing reinforced concrete frames under construction.",
+      "draft": "Yapım aşamasındaki betonarme çerçeveleri gösteren, yapısal çalışmaların şantiye genelindeki görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, modern residential building featuring a striking black, yellow, and white facade, viewed from a low angle against a clear blue sky. The foreground shows an unpaved construction site with dirt and some construction materials, indicating ongoing site work.",
+      "draft": "Açık mavi bir gökyüzü fonunda, siyah, sarı ve beyaz renklerin hakim olduğu çarpıcı bir cepheye sahip, yüksek ve modern bir konut binasının aşağıdan yukarıya doğru görünümü. Ön planda, devam eden çalışmaları yansıtan; toprak ve çeşitli inşaat malzemelerinin bulunduğu, henüz düzenlenmemiş bir şantiye alanı yer alıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Progress photo showing the completed external envelope and ongoing ground-level civil works.",
+      "draft": "Tamamlanmış dış cepheyi ve zemin seviyesinde devam eden inşaat işlerini gösteren ilerleme fotoğrafı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Açık mavi bir gökyüzü fonunda; sarı, siyah ve beyaz renklerin çarpıcı bir uyumunu sergileyen cephesi ve çok sayıda balkonuyla dikkat çeken, yüksek ve modern bir konut binası. Ön planda ise toprak zemin ve yeni yerleştirilmiş bordür taşlarıyla aktif bir şantiye alanı görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "View of the R+9 block during the final stages of external works and site integration.",
+      "draft": "Dış cephe çalışmaları ve saha entegrasyonunun son aşamalarındaki R+9 bloğunun görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü altında; beyaz, sarı ve koyu gri panellere, zemin katında ticari alanlara ve ön planda otopark ile peyzaj düzenlemesini içeren sert zeminli bir alana sahip modern, çok katlı bir konut binasının tüm cephesini gösteren 3 boyutlu mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Architectural rendering showing the design intent for the completed facade and surrounding public realm.",
+      "draft": "Tamamlanmış cephe ve çevresindeki kamusal alan için tasarım niyetini gösteren mimari görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "Karanlık ve bulutlu bir gökyüzü fonunda; sarı, beyaz ve koyu gri paneller, balkonlar ve zemin katında ticari alanlar içeren, modern tasarımlı, çok katlı bir konut ve ticari binanın dış cephesini gösteren bir 3D görselleştirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Architectural rendering of the 250-unit mixed-use residential development at Reghaia.",
+      "draft": "Reghaia'daki 250 birimlik karma kullanımlı konut projesinin mimari görselleştirmesi.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrgzorie-target-tr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:22:14.604Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "70 Assisted Housing and 10 Free Promotional Housing Units",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu birimine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "70 Assisted Housing and 10 Free Promotional Housing Units",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu birimine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "boudouaou-70-10-housing",
+      "draft": "Boudouaou 70-10 konut projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "70 Assisted Housing and 10 Free Promotional Housing Units",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+      "draft": "Karma Kullanımlı Konut Projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "An 80-home mixed residential scheme in Boudouaou, combining assisted and free promotional housing with ground-floor professional and commercial premises.",
+      "draft": "Boudouaou'da; destekli konutlar ile serbest piyasa konutlarını, zemin kattaki mesleki ve ticari alanlarla bir araya getiren 80 konutluk karma bir yerleşim projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The development integrates 70 LPA assisted housing units, 10 LPL housing units and 10 commercial premises across three distinct blocks.",
+      "draft": "Proje, üç ayrı blokta 70 adet LPA destekli konut birimini, 10 adet LPL konut birimini ve 10 adet ticari birimi bir araya getirmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The architectural massing is distributed across three blocks: Block A and Block B, each designed as ground floor plus 8 upper floors (R+8), and Block C, designed as ground floor plus 5 upper floors (R+5). Floor plates are configured with four apartments per level, providing a balanced distribution of F3 and F4 typologies.",
+      "draft": "Mimari kütle yerleşimi üç blok halinde düzenlenmiştir: Her biri zemin kat ve üzerinde 8 kat (Z+8) olacak şekilde tasarlanan A ve B blokları ile zemin kat ve üzerinde 5 kat (Z+5) olarak tasarlanan C bloğu. Kat planları, her katta dört daire yer alacak ve F3 ile F4 daire tipleri arasında dengeli bir dağılım sağlayacak şekilde kurgulanmıştır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of execution covers all-trades delivery (TCE), including secondary trades, waterproofing, internal joinery, mechanical, electrical and plumbing (MEP) installations, alongside roads and utility networks (VRD) and external site works to integrate the mixed-use programme.",
+      "draft": "Uygulama kapsamı; karma kullanımlı projeyi entegre etmeye yönelik yol ve altyapı ağları (VRD) ile dış saha işlerinin yanı sıra, ikincil imalatlar, su yalıtımı, iç mekan doğrama işleri ve mekanik, elektrik ve sıhhi tesisat (MEP) sistemleri dahil olmak üzere tüm yapım işlerinin (TCE) gerçekleştirilmesini kapsar.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A coordinated residential development where three structural blocks, commercial frontages and site utility networks are executed as a unified urban insertion.",
+      "draft": "Üç yapı bloğu, ticari cepheler ve saha altyapı ağlarının bütünleşik bir kentsel müdahale olarak hayata geçirildiği, koordineli bir konut projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu birimine ait galeriyi, teknik detayları ve konum bilgilerini inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım geliştirme modelini sergilemektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "LPA assisted housing and LPL promotional housing with commercial and professional premises",
+      "draft": "Ticari ve mesleki alanları da içeren, LPA destekli konutlar ve LPL teşvikli konutlar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Proje Türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "LPA and LPL housing with commercial premises",
+      "draft": "Ticari alanlar içeren LPA ve LPL konutları",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Boudouaou, Boumerdes",
+      "draft": "Boudouaou, Boumerdes",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "Konut Birimleri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "80 units (70 LPA + 10 LPL)",
+      "draft": "80 birim (70 LPA + 10 LPL)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Structural Massing",
+      "draft": "Yapısal Kütlelendirme",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "3 blocks: R+8, R+8 and R+5",
+      "draft": "3 blok: Z+8, Z+8 ve Z+5",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Completion Year",
+      "draft": "Tamamlanma Yılı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "Müşteri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Proje Programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "80 residential units, comprising 70 LPA and 10 LPL apartments",
+      "draft": "70 LPA ve 10 LPL dairesinden oluşan 80 konut birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Three structural blocks built to R+8 and R+5 height profiles",
+      "draft": "Zemin+8 ve Zemin+5 kat yüksekliğinde inşa edilmiş üç yapı bloğu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "10 ground-floor commercial and professional premises",
+      "draft": "Zemin katta 10 adet ticari ve mesleki faaliyet alanı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "All-trades delivery (TCE) including roads and utility networks (VRD)",
+      "draft": "Yollar ve altyapı şebekeleri (VRD) dahil olmak üzere tüm yapım işlerinin (TCE) gerçekleştirilmesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is 70 Assisted Housing and 10 Free Promotional Housing Units?",
+      "draft": "70 adet destekli konut ve 10 adet ücretsiz tanıtım konutu nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The development is an 80-home mixed residential scheme in Boudouaou, combining 70 LPA assisted housing units and 10 LPL promotional housing units with ground-floor commercial premises.",
+      "draft": "Bu proje, Boudouaou'da yer alan ve 70 adet LPA destekli konut birimi ile 10 adet LPL teşvikli konut birimini zemin kat ticari alanlarıyla birleştiren, 80 konutluk karma bir yerleşim projesidir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What are the structural heights and block configurations?",
+      "draft": "Yapı yükseklikleri ve blok konfigürasyonları nelerdir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project comprises three blocks: Block A and Block B are configured as ground floor plus 8 upper floors (R+8), while Block C is built as ground floor plus 5 upper floors (R+5).",
+      "draft": "Proje üç bloktan oluşmaktadır: A ve B blokları zemin kat artı 8 kat (Z+8) olarak tasarlanmışken, C bloğu zemin kat artı 5 kat (Z+5) olarak inşa edilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What was the technical scope of the construction works?",
+      "draft": "İnşaat çalışmalarının teknik kapsamı neydi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The contract was executed under an all-trades delivery (TCE) framework, encompassing secondary trades, interior finishes, MEP installations, and roads and utility networks (VRD).",
+      "draft": "Sözleşme; ikincil imalatlar, iç mekan bitiş işleri, MEP (mekanik, elektrik ve sıhhi tesisat) sistemleri ile yol ve altyapı şebekelerini (VRD) kapsayan, tüm yapım kalemlerini içeren bir teslim modeli (TCE) çerçevesinde gerçekleştirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How are the individual apartment layouts distributed?",
+      "draft": "Bireysel daire yerleşimleri nasıl dağıtılmış?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Boudouaou combines 70 LPA homes, 10 LPL homes and 10 professional/commercial premises across three blocks with different heights.",
+      "draft": "Boudouaou projesi, farklı yüksekliklerdeki üç blokta 70 LPA konut, 10 LPL konut ve 10 mesleki/ticari birimi bir araya getiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+      "draft": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
+      "draft": "Parlak mavi bir gökyüzü altında; açık renkli cephelere ve çok sayıda pencereye sahip, yeni inşa edilmiş, çok katlı bir konut binasının dış görünümü. Binanın önündeki toprak zeminde bulunan iş makineleri ve bir otomobil, Boudouaou proje sahasında çalışmaların devam ettiğini gösteriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Facade articulation and exterior site works on the R+8 residential blocks.",
+      "draft": "Zemin+8 katlı konut bloklarında cephe düzenlemesi ve dış saha çalışmaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp",
+      "draft": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A modern, multi-story residential building with a light-colored facade and dark, patterned balcony railings, seen from a low angle against a bright blue sky with a sun flare.",
+      "draft": "Güneş parlaması içeren parlak mavi bir gökyüzü fonunda, açık renkli cephesi ve koyu renkli, desenli balkon korkuluklarıyla modern, çok katlı bir konut binası; alçak açıdan görünüm.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Low-angle view of the completed facade and balcony balustrades.",
+      "draft": "Tamamlanmış cephenin ve balkon korkuluklarının alttan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "draft": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+      "draft": "Parlak mavi bir gökyüzü fonunda, çok sayıda penceresi ve bazı balkonları olan, açık renkli ve yüksek birkaç apartman binasının aşağıdan görünümü. Ön plandaki zemin topraktır; bu da yakın zamanda inşaat yapıldığını göstermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Elevation view of the multi-storey residential blocks during final site grading.",
+      "draft": "Arazi tesviyesinin son aşamasında çok katlı konut bloklarının cephe görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "draft": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+      "draft": "Masmavi bir gökyüzü altında; çok sayıda balkonu ve —bazıları kapalı panjurlara sahip— pencereleri bulunan, açık renkli ve yüksek bir konut binası. Binanın önündeki toprak zeminde sarı-siyah bir kazıcı-yükleyici park etmiş durumda; sağ tarafta ise kısmen görünen bir otomobil yer alıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Active site works and external utility connections in front of the R+8 block.",
+      "draft": "R+8 bloğunun önündeki aktif şantiye çalışmaları ve dış altyapı bağlantıları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp",
+      "draft": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "View of several multi-story residential buildings in various stages of construction, with a yellow tower crane visible between them, set against a clear blue sky.",
+      "draft": "Açık mavi bir gökyüzü fonunda, aralarında sarı bir kule vincin görüldüğü, inşaatın çeşitli aşamalarındaki birkaç çok katlı konut binasının görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Structural execution and tower crane operations during the concrete framing phase.",
+      "draft": "Betonarme karkas aşamasında yapısal uygulama ve kule vinç operasyonları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp",
+      "draft": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A dynamic, low-angle shot of several tall residential buildings in various stages of construction. The building on the left has exposed concrete, while the central buildings show finished light-colored facades with windows and balconies. A large blue construction crane extends into the bright, overcast sky on the right. A pile of dirt is visible in the foreground.",
+      "draft": "İnşaatın çeşitli aşamalarındaki birkaç yüksek konut binasının, aşağıdan yukarıya doğru çekilmiş dinamik bir görüntüsü. Soldaki bina ham beton görünümündeyken, ortadaki binalar pencereleri ve balkonlarıyla tamamlanmış açık renkli cephelere sahip. Sağ tarafta, büyük mavi bir inşaat vinci parlak ama bulutlu gökyüzüne doğru uzanıyor. Ön planda bir toprak yığını görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Simultaneous structural framing and facade finishing across the three blocks.",
+      "draft": "Üç blok genelinde eş zamanlı yapısal iskelet kurulumu ve cephe kaplama işlemleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "draft": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+      "draft": "Parlak mavi bir gökyüzü fonunda, çok sayıda penceresi ve bazı balkonları olan, açık renkli ve yüksek birkaç apartman binasının aşağıdan görünümü. Ön plandaki zemin topraktır; bu da yakın zamanda inşaat yapıldığını göstermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Completed structural envelopes awaiting final external works.",
+      "draft": "Nihai dış cephe işlerini bekleyen tamamlanmış yapı kabukları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp",
+      "draft": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Newly built, tall white apartment buildings with multiple windows and balconies, set against a bright blue sky. The ground in the foreground is unpaved earth, indicating ongoing site development. A small white truck is visible on the dirt road.",
+      "draft": "Parlak mavi bir gökyüzü fonunda, çok sayıda penceresi ve balkonu olan, yeni inşa edilmiş yüksek beyaz apartmanlar. Ön plandaki zemin, devam eden bir yapılaşma sürecine işaret eden, henüz kaplanmamış toprak bir alandır. Toprak yolda küçük, beyaz bir kamyonet görülmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "External site preparation and road alignment works.",
+      "draft": "Dış saha hazırlık ve yol güzergahı belirleme çalışmaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp",
+      "draft": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "Tall residential buildings under construction, with some sections having white finished facades and others still raw concrete. Two construction workers are visible, one on a balcony and another on a scaffold. A crane boom is partially visible against a clear blue sky.",
+      "draft": "İnşaat halindeki yüksek konut binalarının bazı bölümleri beyaz kaplamalı cephelere sahipken, diğer kısımları henüz ham beton halindedir. Biri balkonda, diğeri ise iskelede olmak üzere iki inşaat işçisi görülmektedir. Açık mavi gökyüzü fonunda bir vincin kolu kısmen seçilebilmektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Facade rendering and external insulation application.",
+      "draft": "Cephe sıvası ve dış cephe yalıtımı uygulaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "draft": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+      "draft": "Masmavi bir gökyüzü altında; çok sayıda balkonu ve —bazıları kapalı panjurlara sahip— pencereleri bulunan, açık renkli ve yüksek bir konut binası. Binanın önündeki toprak zeminde sarı-siyah bir kazıcı-yükleyici park etmiş durumda; sağ tarafta ise kısmen görünen bir otomobil yer alıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Excavation and trenching for the primary utility networks.",
+      "draft": "Ana altyapı şebekeleri için kazı ve kanal açma çalışmaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "draft": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+      "draft": "Parlak mavi bir gökyüzü fonunda, çok sayıda penceresi ve bazı balkonları olan, açık renkli ve yüksek birkaç apartman binasının aşağıdan görünümü. Ön plandaki zemin topraktır; bu da yakın zamanda inşaat yapıldığını göstermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Massing and spatial separation between the R+8 residential blocks.",
+      "draft": "Z+8 katlı konut blokları arasındaki kütleleşme ve mekânsal ayrım.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp",
+      "draft": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "Several multi-story residential buildings in various stages of construction. The buildings on the left and center are painted light beige with white window frames and balconies, appearing largely complete. The building on the far right is still in a raw concrete and brick state. A clear blue sky is visible above, and power lines cross the frame. A small truck is parked in the foreground on a dirt construction site.",
+      "draft": "İnşaatın çeşitli aşamalarında olan birkaç çok katlı konut binası görülüyor. Soldaki ve ortadaki binalar açık bej rengine boyanmış, beyaz pencere çerçeveleri ve balkonlarıyla büyük ölçüde tamamlanmış bir görünüme sahip. En sağdaki bina ise hâlâ ham beton ve tuğla aşamasında. Yukarıda açık mavi bir gökyüzü ve kadraj boyunca uzanan elektrik hatları yer alıyor. Ön planda, toprak zeminli şantiyede küçük bir kamyon park etmiş durumda.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Progressive completion of the structural frames and external masonry.",
+      "draft": "Yapısal iskeletlerin ve dış cephe duvarlarının kademeli olarak tamamlanması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp",
+      "draft": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A newly constructed, light-beige residential building with multiple stories and balconies featuring black railings, under a bright blue sky. Construction materials are visible at the ground level.",
+      "draft": "Parlak mavi bir gökyüzü altında; çok katlı, açık bej renkli, siyah korkuluklu balkonlara sahip, yeni inşa edilmiş bir konut binası. Zemin seviyesinde inşaat malzemeleri görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Detailed view of the exterior facade finishes and balcony balustrades.",
+      "draft": "Dış cephe kaplamalarının ve balkon korkuluklarının detaylı görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "draft": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
+      "draft": "Masmavi bir gökyüzü altında; çok sayıda balkonu ve —bazıları kapalı panjurlara sahip— pencereleri bulunan, açık renkli ve yüksek bir konut binası. Binanın önündeki toprak zeminde sarı-siyah bir kazıcı-yükleyici park etmiş durumda; sağ tarafta ise kısmen görünen bir otomobil yer alıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Site grading and preparation for the final road and utility network (VRD) installation.",
+      "draft": "Saha tesviyesi ve nihai yol ve altyapı şebekesi (VRD) kurulumuna hazırlık.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "draft": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
+      "draft": "Parlak mavi bir gökyüzü fonunda, çok sayıda penceresi ve bazı balkonları olan, açık renkli ve yüksek birkaç apartman binasının aşağıdan görünümü. Ön plandaki zemin topraktır; bu da yakın zamanda inşaat yapıldığını göstermektedir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Structural alignment of the residential blocks against the site boundary.",
+      "draft": "Konut bloklarının arazi sınırına göre yapısal hizalanması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+      "draft": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
+      "draft": "Parlak mavi bir gökyüzü altında; açık renkli cephelere ve çok sayıda pencereye sahip, yeni inşa edilmiş, çok katlı bir konut binasının dış görünümü. Binanın önündeki toprak zeminde bulunan iş makineleri ve bir otomobil, Boudouaou proje sahasında çalışmaların devam ettiğini gösteriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Completed structural envelopes of the R+8 residential blocks.",
+      "draft": "Z+8 katlı konut bloklarının tamamlanmış yapısal dış kabukları.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

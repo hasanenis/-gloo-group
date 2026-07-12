@@ -1,0 +1,56 @@
+{
+  "jobId": "20260712-35flash-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "locale": "en",
+  "sourceRevision": "v1-7da09a51",
+  "generatedAt": "2026-07-11T21:40:09.635Z",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.summary.1",
+      "severity": "blocker",
+      "type": "unsupported-enrichment",
+      "phrase": "high-density",
+      "message": "Candidate introduces a technical, ownership or performance claim not present in the English source."
+    },
+    {
+      "id": "content.description.0",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.description.1",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "severity": "blocker",
+      "type": "length-expansion",
+      "message": "Candidate is substantially longer than its source field; check for invented scope or unsupported detail."
+    }
+  ],
+  "note": "Human review is required for any semantic enrichment flagged here.",
+  "sanitizedFallbacks": [
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "reason": "source-number-preservation"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "reason": "source-number-preservation"
+    }
+  ]
+}

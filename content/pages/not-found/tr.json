@@ -1,0 +1,20 @@
+{
+  "pageId": "not-found",
+  "locale": "tr",
+  "sourceRevision": "v1-c31f61e7",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-b7fd697271870ccc",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:30.102Z",
+  "seo": {
+    "title": "Sayfa Bulunamadı | SARL Igloo Yapi Construction",
+    "description": "Aradığınız sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi incelemek için SARL Igloo Yapi Construction portalına geri dönebilirsiniz.",
+    "socialTitle": "Sayfa Bulunamadı | SARL Igloo Yapi Construction",
+    "socialDescription": "Aradığınız sayfa bulunamadı. Konut programlarımızı ve inşaat projelerimizi incelemek için SARL Igloo Yapi Construction portalına geri dönebilirsiniz."
+  },
+  "content": {
+    "heading": "Sayfa Bulunamadı",
+    "cta": "Ana sayfaya dönün"
+  }
+}

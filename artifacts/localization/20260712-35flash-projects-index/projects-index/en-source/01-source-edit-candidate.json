@@ -1,0 +1,24 @@
+{
+  "jobId": "20260712-35flash-projects-index",
+  "pageId": "projects-index",
+  "locale": "en",
+  "sourceRevision": "v1-88f3a04d",
+  "generatedAt": "2026-07-11T21:38:46.543Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "10b1b335aa330926",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Projects | SARL Igloo Yapi Construction",
+    "description": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria.",
+    "socialTitle": "Projects | SARL Igloo Yapi Construction",
+    "socialDescription": "A portfolio of residential programmes, villas, commercial premises, and roads and utility networks (VRD) delivered across Algeria."
+  },
+  "content": {
+    "eyebrow": "Projects",
+    "heading": "A portfolio built on delivery.",
+    "lead": "Our completed works encompass residential programmes, villas, commercial premises, and roads and utility networks (VRD) executed across Algeria."
+  },
+  "model": "gemini-3.5-flash"
+}

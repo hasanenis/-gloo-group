@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrgxkwq6-target-fr-not-found",
+  "pageId": "not-found",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T22:23:15.379Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

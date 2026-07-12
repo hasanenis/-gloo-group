@@ -12,7 +12,7 @@ import {
 import { useLocation } from 'react-router-dom';
 import { companyProfile } from '../data/projects';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { useLocale, type Locale } from '../i18n';
+import { legacyLocale, pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 import { cn } from '../lib/utils';
 import { Dialog, DialogContent } from './ui/dialog';
 import { Input } from './ui/input';
@@ -79,11 +79,13 @@ type AssistantContent = {
   answers: PreAnswer[];
 };
 
-const assistantProfile = {
+const assistantProfile: { name: string; role: LocalizedString; image: string } = {
   name: 'Lina',
   role: {
     en: 'Algeria project desk',
-    fr: 'Bureau projets Algerie',
+    fr: 'Bureau projets Algérie',
+    'ar-DZ': 'مكتب مشاريع الجزائر',
+    tr: 'Cezayir proje masası',
   },
   image: '/assistant/igloo-assistant-lina.png',
 };
@@ -542,7 +544,7 @@ const buildAssistantContent = (
         id: 'newProject',
         label: 'Démarrer un projet / devis',
         description:
-          'Preparez les premières informations utiles pour une demande de construction résidentielle, commerciale ou mixte.',
+          'Préparez les premières informations utiles pour une demande de construction résidentielle, commerciale ou mixte.',
         answerIds: ['quote-info', 'quote-documents', 'site-visit'],
         keywords: ['devis', 'estimation', 'nouveau projet', 'prix', 'coût', 'teklif'],
       },
@@ -566,7 +568,7 @@ const buildAssistantContent = (
         id: 'infrastructure',
         label: 'Routes & réseaux',
         description:
-          'Pour VRD, accès, réseaux techniques, travaux exterieurs et infrastructure autour du projet.',
+          'Pour les VRD, les accès, les réseaux techniques, les travaux extérieurs et l’infrastructure autour du projet.',
         answerIds: ['roads-networks', 'site-infrastructure'],
         keywords: ['routes', 'réseaux', 'vrd', 'infrastructure', 'yol', 'altyapi'],
       },
@@ -590,7 +592,7 @@ const buildAssistantContent = (
         id: 'company',
         label: 'Entreprise & capacités',
         description:
-          'Comprendre qui est Igloo, ce que l entreprise construit et quels projets clients peuvent etre discutes.',
+          'Comprendre qui est Igloo, ce que l’entreprise construit et quels projets clients peuvent être discutés.',
         answerIds: ['why-choose-igloo', 'company-profile', 'capabilities'],
         keywords: [
           'entreprise',
@@ -634,7 +636,7 @@ const buildAssistantContent = (
         topicId: 'newProject',
         label: 'Quels documents aident ?',
         answer:
-          'Plans architecturaux, localisation, statut permis, programme cible, photos site, scope souhaite et contraintes connues sont utiles.',
+          'Les plans architecturaux, la localisation, le statut du permis, le programme visé, les photos du site, le périmètre souhaité et les contraintes connues sont utiles.',
         nextStep:
           'Sans plans, envoyez localisation, type de projet, surface approximative et courte description.',
         actions: [
@@ -648,9 +650,9 @@ const buildAssistantContent = (
         topicId: 'newProject',
         label: 'Demander une revue de site',
         answer:
-          'Oui. Envoyez localisation exacte, conditions d accès, type de projet, etat actuel du terrain/site et horaire de contact préféré.',
+          'Oui. Envoyez la localisation exacte, les conditions d’accès, le type de projet, l’état actuel du terrain ou du site et l’horaire de contact préféré.',
         nextStep:
-          'L équipe pourra proposer appel, revue documents ou discussion de site selon le dossier.',
+          'L’équipe pourra proposer un appel, une revue des documents ou une discussion sur site selon le dossier.',
         actions: [
           { label: 'Demander revue', href: emailHref },
           { label: 'Contact', path: '/#contact' },
@@ -676,7 +678,7 @@ const buildAssistantContent = (
         topicId: 'residential',
         label: 'Villas et réseaux',
         answer:
-          'Pour des villas, indiquez nombre de villas, parcelle, routes d accès, réseaux, limites de terrain et scope souhaite.',
+          'Pour des villas, indiquez le nombre de villas, la parcelle, les routes d’accès, les réseaux, les limites du terrain et le périmètre souhaité.',
         nextStep:
           'Photos, plan de site et informations réseaux rendent la première revue plus solide.',
         actions: [
@@ -690,9 +692,9 @@ const buildAssistantContent = (
         topicId: 'residential',
         label: 'Appartements ou résidentiel mixte',
         answer:
-          'Pour appartements ou résidentiel mixte, envoyez nombre d unités, blocs, niveaux parking, surfaces commerciales, services et phasage.',
+          'Pour des appartements ou un programme résidentiel mixte, envoyez le nombre d’unités, les blocs, les niveaux de parking, les surfaces commerciales, les services et le phasage.',
         nextStep:
-          'Précisez si vous cherchez construction complète, travaux secondaires, infrastructure ou lot specifique.',
+          'Précisez si vous cherchez une construction complète, des travaux secondaires, une infrastructure ou un lot spécifique.',
         actions: [
           { label: 'Envoyer données projet', href: emailHref },
           { label: 'Exemples projets', path: '/projects' },
@@ -704,9 +706,9 @@ const buildAssistantContent = (
         topicId: 'commercial',
         label: 'Scope projet commercial',
         answer:
-          'Pour espaces commerciaux, Igloo peut discuter centres, locaux de service, finitions, réseaux techniques, circulation et integration avec logements.',
+          'Pour les espaces commerciaux, Igloo peut étudier les centres, les locaux de service, les finitions, les réseaux techniques, la circulation et l’intégration avec les logements.',
         nextStep:
-          'Envoyez localisation, surface, usage prévu, etat actuel, date d ouverture visée et scope.',
+          'Envoyez la localisation, la surface, l’usage prévu, l’état actuel, la date d’ouverture souhaitée et le périmètre des travaux.',
         actions: [
           { label: 'Envoyer brief commercial', href: emailHref },
           { label: 'Contact', path: '/#contact' },
@@ -720,7 +722,7 @@ const buildAssistantContent = (
         answer:
           'Pour un développement mixte, indiquez logements, surfaces commerciales, parking, accès, services et contraintes de phasage.',
         nextStep:
-          'La première revue doit separer structure, finitions et infrastructure.',
+          'La première revue doit séparer la structure, les finitions et l’infrastructure.',
         actions: [
           { label: 'Envoyer brief mixte', href: emailHref },
           { label: 'Voir exemples', path: '/projects' },
@@ -732,9 +734,9 @@ const buildAssistantContent = (
         topicId: 'commercial',
         label: 'Finitions et travaux secondaires',
         answer:
-          'Pour finitions ou travaux secondaires, envoyez etat du site, plans, attentes matériaux, réseaux techniques, quantites et délai.',
+          'Pour les finitions ou les travaux secondaires, envoyez l’état du site, les plans, vos attentes en matière de matériaux, les réseaux techniques, les quantités et le délai.',
         nextStep:
-          'Si la structure existe déjà, photos et notes sur l etat actuel sont très utiles.',
+          'Si la structure existe déjà, des photos et des notes sur l’état actuel sont très utiles.',
         actions: [
           { label: 'Envoyer scope', href: emailHref },
           { label: 'Appeler', href: phoneHref },
@@ -748,7 +750,7 @@ const buildAssistantContent = (
         answer:
           'Pour routes et réseaux, envoyez plan de site, accès, drainage, besoins techniques, longueurs, points de connexion et contraintes.',
         nextStep:
-          'L équipe peut verifier si ces travaux font partie d un package bâtiment ou d un scope separe.',
+          'L’équipe peut vérifier si ces travaux font partie d’un lot bâtiment ou d’un périmètre séparé.',
         actions: [
           { label: 'Envoyer brief VRD', href: emailHref },
           { label: 'Voir projets', path: '/projects' },
@@ -760,9 +762,9 @@ const buildAssistantContent = (
         topicId: 'infrastructure',
         label: 'Infrastructure autour du projet',
         answer:
-          'Mentionnez routes d accès, plateformes, travaux exterieurs, réseaux, parking, espaces publics et contraintes administratives.',
+          'Mentionnez les routes d’accès, les plateformes, les travaux extérieurs, les réseaux, le parking, les espaces publics et les contraintes administratives.',
         nextStep:
-          'Un scope bâtiment + infrastructure doit etre explique clairement des le premier brief.',
+          'Un périmètre bâtiment et infrastructure doit être expliqué clairement dès le premier brief.',
         actions: [
           { label: 'Envoyer brief site', href: emailHref },
           { label: 'Contact', path: '/#contact' },
@@ -788,7 +790,7 @@ const buildAssistantContent = (
         topicId: 'process',
         label: 'Délai de réponse',
         answer:
-          'Le délai depend de la clarte du brief. Localisation, plans, scope et dates cibles accelerent la première revue.',
+          'Le délai dépend de la clarté du brief. La localisation, les plans, le périmètre et les dates cibles accélèrent la première revue.',
         nextStep:
           'Pour une demande urgente, envoyez le brief par email puis appelez avec la même référence projet.',
         actions: [
@@ -804,7 +806,7 @@ const buildAssistantContent = (
         answer:
           'Igloo travaille par revue technique, gestion chantier et communication claire entre client, conception et construction.',
         nextStep:
-          'Pour un dossier sérieux, partagez plans et niveau de qualité attendu des le debut.',
+          'Pour un dossier sérieux, partagez les plans et le niveau de qualité attendu dès le début.',
         actions: [
           { label: 'Section entreprise', path: '/#about' },
           { label: 'Contact', path: '/#contact' },
@@ -816,9 +818,9 @@ const buildAssistantContent = (
         topicId: 'portfolio',
         label: 'Voir des exemples',
         answer:
-          'L index projets inclut logements, villas, mixte, centres commerciaux, routes, réseaux et projets en cours en Algérie.',
+          'L’index des projets inclut des logements, des villas, des programmes mixtes, des centres commerciaux, des routes, des réseaux et des projets en cours en Algérie.',
         nextStep:
-          'Ouvrez l index pour comparer type, statut, localisation et scope.',
+          'Ouvrez l’index pour comparer le type, le statut, la localisation et le périmètre.',
         actions: [
           { label: 'Ouvrir projets', path: '/projects' },
           { label: 'Demander devis', href: emailHref },
@@ -832,7 +834,7 @@ const buildAssistantContent = (
         answer:
           'Igloo présente des projets terminés et en cours: résidentiel, logements promotionnels, locaux commerciaux et infrastructure coordonnée.',
         nextStep:
-          'Si un projet ressemble au votre, citez-le dans votre message comme référence.',
+          'Si un projet ressemble au vôtre, citez-le dans votre message comme référence.',
         actions: [
           { label: 'Voir projets', path: '/projects' },
           { label: 'Envoyer référence', href: emailHref },
@@ -844,9 +846,9 @@ const buildAssistantContent = (
         topicId: 'company',
         label: 'Pourquoi choisir Igloo ?',
         answer:
-          'Choisissez Igloo si vous cherchez une équipe de construction basée en Algérie, capable de relier bâtiment, routes, réseaux, coordination de chantier et communication client dans une discussion projet concrete.',
+          'Choisissez Igloo si vous cherchez une équipe de construction basée en Algérie, capable de relier bâtiment, routes, réseaux, coordination de chantier et communication client dans une discussion de projet concrète.',
         nextStep:
-          'Partagez le type de projet, la localisation, la surface, l étape actuelle et la date cible. Lina peut orienter la demande vers le bon conseiller projet.',
+          'Partagez le type de projet, la localisation, la surface, l’étape actuelle et la date cible. Lina peut orienter la demande vers le bon conseiller projet.',
         actions: [
           { label: 'Voir projets', path: '/projects' },
           { label: 'Email bureau projets', href: emailHref },
@@ -884,7 +886,7 @@ const buildAssistantContent = (
         answer:
           'Igloo peut discuter logements, villas, immobilier mixte, locaux commerciaux, travaux secondaires, routes, réseaux et infrastructure site.',
         nextStep:
-          'Pour un projet precis, envoyez localisation, type, taille, plans et planning cible.',
+          'Pour un projet précis, envoyez la localisation, le type, la taille, les plans et le planning cible.',
         actions: [
           { label: 'Voir projets', path: '/projects' },
           { label: 'Contact', path: '/#contact' },
@@ -920,6 +922,155 @@ const buildAssistantContent = (
       },
     ],
   },
+});
+
+const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): AssistantContent => ({
+  labels: {
+    title: 'Igloo Asistan',
+    eyebrow: 'Proje danışma masası',
+    launcher: 'Nasıl yardımcı olabilirim?',
+    placeholder: 'Projeniz, teklif veya konum hakkında sorun…',
+    chooseTopic: 'Bir konu seçin veya sorunuzu yazın.',
+    chooseAnswer: 'Aşağıdaki başlıklardan birini seçin.',
+    preparedAnswer: 'Hazır yanıt',
+    notSureTitle: 'Proje danışma masası',
+    fallback: 'Sorunuzu tam olarak eşleştiremedim. Proje türünü, konumu ve ihtiyacınızı kısaca yazabilir ya da aşağıdaki başlıklardan birini seçebilirsiniz.',
+  },
+  topics: [
+    {
+      id: 'newProject',
+      label: 'Yeni proje ve teklif',
+      description: 'İlk görüşme için gereken proje bilgilerini hazırlayın.',
+      answerIds: ['tr-quote-info'],
+      keywords: ['teklif', 'fiyat', 'yeni proje', 'maliyet', 'başlamak'],
+    },
+    {
+      id: 'residential',
+      label: 'Konut, villa ve apartman',
+      description: 'Konut blokları, villalar, otoparklar ve ortak alanlar.',
+      answerIds: ['tr-housing-scope'],
+      keywords: ['konut', 'villa', 'apartman', 'daire', 'otopark'],
+    },
+    {
+      id: 'commercial',
+      label: 'Ticari ve karma kullanım',
+      description: 'Ticaret merkezleri, dükkânlar, ofisler ve karma projeler.',
+      answerIds: ['tr-commercial-scope'],
+      keywords: ['ticari', 'karma kullanım', 'dükkan', 'dükkân', 'ofis', 'mağaza'],
+    },
+    {
+      id: 'infrastructure',
+      label: 'Yol ve altyapı',
+      description: 'Saha yolları, şebekeler, erişim ve çevre düzenlemesi.',
+      answerIds: ['tr-infrastructure'],
+      keywords: ['yol', 'altyapı', 'şebeke', 'vrd', 'çevre düzenleme'],
+    },
+    {
+      id: 'process',
+      label: 'Çalışma süreci',
+      description: 'İlk temastan saha uygulamasına kadar izlenen adımlar.',
+      answerIds: ['tr-process'],
+      keywords: ['süreç', 'takvim', 'süre', 'aşama', 'nasıl çalışıyor'],
+    },
+    {
+      id: 'portfolio',
+      label: 'Proje örnekleri',
+      description: 'Tamamlanan ve devam eden işleri inceleyin.',
+      answerIds: ['tr-portfolio'],
+      keywords: ['proje', 'referans', 'portföy', 'örnek'],
+    },
+    {
+      id: 'company',
+      label: 'Igloo hakkında',
+      description: 'Şirketin ekibi, uzmanlığı ve mesleki sınıflandırması.',
+      answerIds: ['tr-company'],
+      keywords: ['şirket', 'igloo', 'ekip', 'hakkında', 'kategori'],
+    },
+    {
+      id: 'contact',
+      label: 'İletişim',
+      description: 'Proje ekibine e-posta veya telefonla ulaşın.',
+      answerIds: ['tr-contact'],
+      keywords: ['iletişim', 'telefon', 'e-posta', 'adres', 'ulaşmak'],
+    },
+  ],
+  answers: [
+    {
+      id: 'tr-quote-info',
+      topicId: 'newProject',
+      label: 'Teklif için hangi bilgiler gerekli?',
+      answer: 'Projenin konumu, türü, yaklaşık büyüklüğü, mevcut aşaması ve elinizdeki çizim veya fotoğraflar ilk değerlendirme için yeterlidir.',
+      nextStep: 'Bu bilgileri proje ekibine iletebilirsiniz.',
+      actions: [{ label: 'Proje talebi oluştur', path: '/contact' }],
+      keywords: ['teklif', 'bilgi', 'belge', 'çizim', 'fiyat'],
+    },
+    {
+      id: 'tr-housing-scope',
+      topicId: 'residential',
+      label: 'Konut projelerinde hangi işleri yapıyorsunuz?',
+      answer: 'Konut blokları ve villalarda taşıyıcı sistem, ince işler, teknik tesisatlar, otopark, saha yolları ve çevre düzenlemesini proje kapsamına göre koordine ediyoruz.',
+      nextStep: 'Benzer konut projelerini inceleyebilirsiniz.',
+      actions: [{ label: 'Konut projelerini gör', path: '/projects' }],
+      keywords: ['konut', 'villa', 'apartman', 'daire'],
+    },
+    {
+      id: 'tr-commercial-scope',
+      topicId: 'commercial',
+      label: 'Ticari ve karma projelerin kapsamı nedir?',
+      answer: 'Ticari birimler, hizmet alanları, otoparklar ve konut bloklarının aynı proje içinde teknik olarak koordine edildiği yapım işlerini üstleniyoruz.',
+      nextStep: 'Karma kullanım projelerimizi inceleyebilirsiniz.',
+      actions: [{ label: 'Projeleri incele', path: '/projects' }],
+      keywords: ['ticari', 'karma', 'ofis', 'mağaza'],
+    },
+    {
+      id: 'tr-infrastructure',
+      topicId: 'infrastructure',
+      label: 'Yol ve altyapı işleri neleri kapsar?',
+      answer: 'İş kapsamına göre saha erişimi, yollar, yağmur suyu ve atık su hatları, elektrik ve diğer hizmet şebekeleri ile çevre düzenlemesi birlikte planlanır.',
+      nextStep: 'Sahanızın ihtiyaçlarını proje ekibiyle paylaşabilirsiniz.',
+      actions: [{ label: 'Ekiple görüş', path: '/contact' }],
+      keywords: ['yol', 'altyapı', 'şebeke', 'vrd'],
+    },
+    {
+      id: 'tr-process',
+      topicId: 'process',
+      label: 'Süreç nasıl ilerliyor?',
+      answer: 'İlk değerlendirmede kapsam ve belgeler incelenir. Ardından metraj, teknik koordinasyon, satın alma ve saha planı netleştirilir; uygulama düzenli saha kontrolleriyle yürütülür.',
+      nextStep: 'İlk değerlendirme için proje bilgilerinizi gönderebilirsiniz.',
+      actions: [{ label: 'Proje talebi oluştur', path: '/contact' }],
+      keywords: ['süreç', 'aşama', 'takvim', 'süre'],
+    },
+    {
+      id: 'tr-portfolio',
+      topicId: 'portfolio',
+      label: 'Hangi projeleri inceleyebilirim?',
+      answer: 'Portföyde Cezayir’in farklı vilayetlerinde tamamlanan ve devam eden konut, villa, ticari yapı ve altyapı projeleri bulunuyor.',
+      nextStep: 'Tüm proje kayıtlarına göz atabilirsiniz.',
+      actions: [{ label: 'Tüm projeler', path: '/projects' }],
+      keywords: ['proje', 'portföy', 'referans', 'örnek'],
+    },
+    {
+      id: 'tr-company',
+      topicId: 'company',
+      label: 'Igloo Construction kimdir?',
+      answer: '2018’de Cezayir’de kurulan Igloo Construction; mühendis, mimar, şantiye yönetimi ve saha ekipleriyle konut ve karma kullanım projeleri yürütür. Şirket Kategori 6 mesleki sınıflandırmasına sahiptir.',
+      nextStep: 'Şirket profili ve ekibi hakkında daha fazla bilgi alabilirsiniz.',
+      actions: [{ label: 'Kurumsal profil', path: '/about' }],
+      keywords: ['şirket', 'igloo', 'ekip', 'kategori'],
+    },
+    {
+      id: 'tr-contact',
+      topicId: 'contact',
+      label: 'Proje ekibine nasıl ulaşabilirim?',
+      answer: `Bir Khadem ofisine ${companyProfile.email} adresinden veya ${companyProfile.phones[0]} numaralı telefondan ulaşabilirsiniz.`,
+      nextStep: 'Size uygun iletişim kanalını seçin.',
+      actions: [
+        { label: 'E-posta gönder', href: emailHref },
+        { label: 'Ofisi ara', href: phoneHref },
+      ],
+      keywords: ['iletişim', 'telefon', 'e-posta', 'adres'],
+    },
+  ],
 });
 
 const makeBotMessage = (
@@ -993,18 +1144,31 @@ export default function AssistantDock() {
   const officePhone = companyProfile.phones[0];
   const phoneHref = `tel:${officePhone.replace(/\s/g, '')}`;
   const emailHref = `mailto:${companyProfile.email}`;
-  const assistantContent = useMemo(
-    () => buildAssistantContent(emailHref, phoneHref)[locale] ?? buildAssistantContent(emailHref, phoneHref).en,
-    [emailHref, locale, phoneHref],
-  );
+  const assistantContent = useMemo(() => {
+    if (locale === 'tr') return buildTurkishAssistantContent(emailHref, phoneHref);
+    const content = buildAssistantContent(emailHref, phoneHref);
+    return content[legacyLocale(locale)] ?? content.en;
+  }, [emailHref, locale, phoneHref]);
   const { labels, topics, answers } = assistantContent;
+  const launcherLabel = pickLocaleText(locale, {
+    en: 'Can I help?',
+    fr: "Besoin d'aide ?",
+    'ar-DZ': 'نقدر نعاونك؟',
+    tr: 'Nasıl yardımcı olabilirim?',
+  });
+  const openAssistantLabel = pickLocaleText(locale, {
+    en: 'Open Igloo assistant',
+    fr: "Ouvrir l'assistant Igloo",
+    'ar-DZ': 'افتح مساعد Igloo',
+    tr: 'Igloo asistanını aç',
+  });
   const selectedTopic = selectedTopicId
     ? topics.find((topic) => topic.id === selectedTopicId) ?? null
     : null;
 
   const introBody =
     locale === 'fr'
-      ? `Bonjour, je suis ${assistantProfile.name}, votre assistant projet Igloo en Algerie. ${labels.chooseTopic}`
+      ? `Bonjour, je suis ${assistantProfile.name}, votre assistant projet Igloo en Algérie. ${labels.chooseTopic}`
       : `Hi, I'm ${assistantProfile.name}, your Igloo project assistant in Algeria. ${labels.chooseTopic}`;
 
   const navigateAndClose = (path: string) => {
@@ -1221,22 +1385,22 @@ export default function AssistantDock() {
             <button
               type="button"
               className="assistant-floating assistant-floating--desktop"
-              aria-label="Open Igloo assistant"
+              aria-label={openAssistantLabel}
               aria-expanded={panelMode === 'assistant'}
               onClick={openAssistant}
             >
               <span className="assistant-floating__avatar" aria-hidden="true">
                 <img src={assistantProfile.image} alt="" />
               </span>
-              <span className="assistant-floating__label">{labels.launcher}</span>
+              <span className="assistant-floating__label">{launcherLabel}</span>
               <MessageCircle className="assistant-floating__icon h-4 w-4" strokeWidth={2.3} />
             </button>
           </TooltipTrigger>
-          <TooltipContent>Open assistant</TooltipContent>
+          <TooltipContent>{openAssistantLabel}</TooltipContent>
         </Tooltip>
       </TooltipProvider>
 
-      <nav className="mobile-bottom-nav" aria-label="Mobile navigation">
+      <nav className="mobile-bottom-nav" aria-label={pickLocaleText(locale, { en: 'Mobile navigation', fr: 'Navigation mobile', 'ar-DZ': 'التنقل عبر الهاتف', tr: 'Mobil menü' })}>
         <button
           type="button"
           className={cn(isHomeActive && 'is-active')}
@@ -1258,7 +1422,7 @@ export default function AssistantDock() {
         <button
           type="button"
           className={cn('mobile-bottom-nav__assistant', panelMode === 'assistant' && 'is-active')}
-          aria-label="Open Igloo assistant"
+          aria-label={openAssistantLabel}
           aria-expanded={panelMode === 'assistant'}
           onClick={openAssistant}
         >
@@ -1294,7 +1458,7 @@ export default function AssistantDock() {
             </div>
             <div className="assistant-panel__identity">
               <p>{labels.title}</p>
-              <span>{assistantProfile.name} - {assistantProfile.role[locale]}</span>
+              <span>{assistantProfile.name} - {pickLocaleText(locale, assistantProfile.role)}</span>
             </div>
             <button
               type="button"

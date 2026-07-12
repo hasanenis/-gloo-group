@@ -13,7 +13,7 @@ import ProjectFootprintMap from './ProjectFootprintMap';
 
 type ClusterId = ProjectMapPoint['cluster'];
 
-const CLUSTERS: { id: ClusterId | 'all'; en: string; fr: string }[] = [
+const CLUSTERS: Array<{ id: ClusterId | 'all' } & LocalizedString> = [
   { id: 'all', en: 'All locations', fr: 'Tous les sites' },
   { id: 'west-algiers', en: 'West Algiers / Tipaza', fr: 'Alger Ouest / Tipaza' },
   { id: 'central-algiers', en: 'Central Algiers', fr: 'Alger Centre' },
@@ -22,7 +22,7 @@ const CLUSTERS: { id: ClusterId | 'all'; en: string; fr: string }[] = [
   { id: 'boumerdes', en: 'Boumerdes', fr: 'Boumerdès' },
 ];
 
-const CLUSTER_LABELS: Record<ClusterId, { en: string; fr: string }> = {
+const CLUSTER_LABELS: Record<ClusterId, LocalizedString> = {
   'west-algiers': { en: 'West Algiers / Tipaza', fr: 'Alger Ouest / Tipaza' },
   'central-algiers': { en: 'Central Algiers', fr: 'Alger Centre' },
   'east-algiers': { en: 'East Algiers / Boumerdes', fr: 'Alger Est / Boumerdès' },
@@ -106,7 +106,7 @@ export default function ProjectFootprintSection() {
               )}
               aria-pressed={clusterFilter === cluster.id}
             >
-              {locale === 'fr' ? cluster.fr : cluster.en}
+              {pickLocaleText(locale, cluster)}
               <span className="ml-1.5 text-[11px] font-normal opacity-55">{clusterCount(cluster.id)}</span>
               {clusterFilter === cluster.id && (
                 <span className="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[#c22026]" />
@@ -193,7 +193,7 @@ export default function ProjectFootprintSection() {
                   data-home-text-reveal
                   data-home-text-reveal-mode="block"
                 >
-                  {localize(CLUSTER_LABELS[activePoint.cluster], locale)}
+                  {pickLocaleText(locale, CLUSTER_LABELS[activePoint.cluster])}
                 </span>
                 <span className="text-black/20">|</span>
                 <span
@@ -212,7 +212,7 @@ export default function ProjectFootprintSection() {
                 <div className="mb-5 overflow-hidden rounded-md">
                   <img
                     src={activeImage.src}
-                    alt={activeImage.alt[locale]}
+                    alt={pickLocaleText(locale, activeImage.alt)}
                     className="aspect-[4/3] w-full object-cover"
                     loading="lazy"
                   />

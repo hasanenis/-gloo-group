@@ -1,0 +1,47 @@
+{
+  "jobId": "batch-mrh102h9-target-ar-DZ-not-found",
+  "pageId": "not-found",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-514277f8",
+  "generatedAt": "2026-07-11T23:59:01.683Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "الصفحة غير موجودة | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "الصفحة المطلوبة غير موجودة. يرجى العودة إلى بوابة شركة \"SARL Igloo Yapi Construction\" للاطلاع على برامجنا السكنية ومشاريعنا الإنشائية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Page Not Found | SARL Igloo Yapi Construction",
+      "draft": "الصفحة غير موجودة | شركة إغلو يابي للإنشاءات (SARL Igloo Yapi Construction)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "The requested page cannot be found. Return to the SARL Igloo Yapi Construction portal to view our housing programmes and construction projects.",
+      "draft": "الصفحة المطلوبة غير موجودة. يرجى العودة إلى بوابة شركة \"SARL Igloo Yapi Construction\" للاطلاع على برامجنا السكنية ومشاريعنا الإنشائية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.heading",
+      "source": "Page Not Found",
+      "draft": "الصفحة غير موجودة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.cta",
+      "source": "Return to the homepage",
+      "draft": "العودة إلى الصفحة الرئيسية",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

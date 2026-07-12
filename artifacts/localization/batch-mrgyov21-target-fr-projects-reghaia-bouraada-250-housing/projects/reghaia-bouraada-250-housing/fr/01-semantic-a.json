@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrgyov21-target-fr-projects-reghaia-bouraada-250-housing",
+  "pageId": "projects/reghaia-bouraada-250-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-12067e84",
+  "generatedAt": "2026-07-11T22:54:19.510Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 logements avec espaces commerciaux à louer et services de conciergerie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Détails techniques, avancement des travaux et spécifications architecturales du projet résidentiel de 250 logements à Bouraada, Reghaïa (wilaya d'Alger).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 logements avec espaces commerciaux à louer et services de conciergerie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Détails techniques, avancement des travaux et spécifications architecturales du projet résidentiel de 250 logements à Bouraada, Reghaïa (wilaya d'Alger).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "reghaia-bouraada-250-housing",
+      "draft": "Reghaïa-Bouraada : 250 logements",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "250 Housing Units with Commercial Rental and Concierge Services",
+      "draft": "250 logements avec espaces commerciaux à louer et services de conciergerie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE RESIDENTIAL",
+      "draft": "Résidentiel à usage mixte",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A residential development comprising 250 rent-to-own housing units at the Bouraada site in Reghaia, delivered with integrated ground-floor commercial premises and dedicated concierge facilities.",
+      "draft": "Un projet résidentiel de 250 logements en location-accession sur le site de Bouraada à Reghaia, livré avec des locaux commerciaux intégrés au rez-de-chaussée et des installations dédiées à la conciergerie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The master plan organises seven R+9 blocks—each consisting of a ground floor plus 9 upper floors—to balance high-density residential accommodation with active street-level commercial frontage.",
+      "draft": "Le plan directeur organise sept immeubles de neuf étages sur rez-de-chaussée (R+9) afin d'équilibrer logements à haute densité et façades commerciales actives au niveau de la rue.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The residential programme provides 250 rent-to-own apartments distributed across seven blocks, featuring a standardised floor plate of four units per level in a balanced F3 and F4 configuration. The ground-floor levels are structurally configured to support commercial rental units and dedicated concierge offices, enhancing the active street-level frontage.",
+      "draft": "Le programme résidentiel comprend 250 appartements en accession locative répartis sur sept bâtiments, selon une typologie d'étage standardisée de quatre logements par niveau, offrant une répartition équilibrée entre typologies F3 et F4. Les rez-de-chaussée sont conçus pour accueillir des locaux commerciaux et des espaces de conciergerie, favorisant ainsi l'animation de la façade sur rue.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of execution encompasses all-trades delivery (TCE), including structural completion, facade articulation, internal secondary works, technical building services, and the installation of roads and utility networks (VRD) to integrate the development with the surrounding municipal infrastructure.",
+      "draft": "Le périmètre d'exécution couvre la réalisation tous corps d'état (TCE), incluant le gros œuvre, le traitement des façades, les travaux de second œuvre intérieur, les équipements techniques du bâtiment ainsi que les travaux de voirie et réseaux divers (VRD) visant à intégrer le projet aux infrastructures municipales environnantes.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "This seven-block residential development was executed under a comprehensive all-trades contract, managing structural works, facade finishes, internal services, and site-wide utility connections.",
+      "draft": "Ce projet résidentiel composé de sept bâtiments a été réalisé dans le cadre d'un contrat global tous corps d'état, couvrant le gros œuvre, les finitions de façade, les installations intérieures et les raccordements aux réseaux pour l'ensemble du site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical details, construction progress and architectural specifications for the 250-unit residential development in Bouraada, Reghaia, Algiers Province.",
+      "draft": "Détails techniques, avancement des travaux et spécifications architecturales du projet résidentiel de 250 logements à Bouraada, Reghaïa (wilaya d'Alger).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Client",
+      "draft": "Client",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.1.value",
+      "source": "Rent-to-own housing with commercial premises and concierge services",
+      "draft": "Logements en location-accession avec locaux commerciaux et services de conciergerie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project Type",
+      "draft": "Type de projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Rent-to-own housing with commercial premises",
+      "draft": "Logements en location-accession avec locaux commerciaux",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Emplacement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Bouraada, Reghaia, Algiers Province",
+      "draft": "Bouraada, Reghaia, wilaya d'Alger",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing Units",
+      "draft": "Unités de logement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "250 units",
+      "draft": "250 unités",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Blocks",
+      "draft": "Blocs",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "7 R+9 blocks",
+      "draft": "7 immeubles R+9",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Completion",
+      "draft": "Achèvement",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Client",
+      "draft": "Client",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "AADL",
+      "draft": "AADL",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project Programme",
+      "draft": "Programme du projet",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "250 rent-to-own housing units",
+      "draft": "250 logements en location-accession",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Seven R+9 residential blocks (ground floor plus 9 upper floors)",
+      "draft": "Sept immeubles résidentiels R+9 (rez-de-chaussée plus 9 étages)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Ground-floor commercial premises and concierge spaces",
+      "draft": "Locaux commerciaux en rez-de-chaussée et espaces de conciergerie",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2025 with secondary works and facades",
+      "draft": "Achèvement en 2025, incluant les travaux de second œuvre et les façades.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 250 Housing Units project in Reghaia?",
+      "draft": "Quelle est l'envergure du projet de 250 logements à Reghaia ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The project comprises the construction of 250 rent-to-own residential apartments across seven R+9 blocks, complete with ground-floor commercial premises and dedicated concierge spaces.",
+      "draft": "Le projet porte sur la construction de 250 appartements résidentiels en accession progressive à la propriété, répartis sur sept immeubles de neuf étages (R+9) et incluant des locaux commerciaux en rez-de-chaussée ainsi que des espaces dédiés à la conciergerie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What are the architectural and structural specifications of the blocks?",
+      "draft": "Quelles sont les spécifications architecturales et structurelles des blocs ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The programme delivers 250 rent-to-own homes, with four units per floor and a clear F3/F4 mix supported by commercial premises and concierge spaces.",
+      "draft": "Le programme livre 250 logements en accession locative, avec quatre unités par étage et une répartition équilibrée entre appartements de type F3 et F4, complétée par des locaux commerciaux et des espaces de conciergerie.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "Which construction works were executed on this site?",
+      "draft": "Quels travaux de construction ont été réalisés sur ce site ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The contract was executed as an all-trades package (TCE), covering structural works, facade articulation, internal secondary works, technical building services, and site-wide roads and utility networks (VRD).",
+      "draft": "Le marché a été exécuté sous forme d'un lot « tous corps d'état » (TCE), couvrant le gros œuvre, la façade, les travaux de second œuvre intérieur, les lots techniques et les travaux de voirie et réseaux divers (VRD).",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.question",
+      "source": "How is the ground floor of the development utilised?",
+      "draft": "Comment le rez-de-chaussée du projet immobilier est-il utilisé ?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.3.answer",
+      "source": "Reghaia organises seven R+9 blocks around practical family housing, local services and concierge spaces that make the residence easier to live in.",
+      "draft": "Reghaia articule sept immeubles de neuf étages autour de logements familiaux fonctionnels, de services de proximité et d'espaces de conciergerie qui facilitent la vie au sein de la résidence.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "Un rendu 3D montrant l'extérieur d'un immeuble résidentiel et commercial à plusieurs étages au design moderne, avec des panneaux jaunes, blancs et gris foncé, des balcons et des espaces commerciaux au rez-de-chaussée, le tout sur fond de ciel sombre et nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Architectural rendering showing the facade articulation and ground-floor commercial frontage of the R+9 blocks.",
+      "draft": "Rendu architectural illustrant l'articulation des façades et les façades commerciales en rez-de-chaussée des immeubles en R+9.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Une visualisation architecturale en 3D montrant la façade complète d'un immeuble résidentiel moderne à plusieurs étages, doté de panneaux blancs, jaunes et gris foncé, d'espaces commerciaux au rez-de-chaussée et, au premier plan, d'une zone aménagée comprenant un parking et des espaces paysagers, le tout sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Architectural rendering of the complete residential block showing the integration of commercial spaces and surrounding circulation areas.",
+      "draft": "Rendu architectural de l'îlot résidentiel complet, illustrant l'intégration des espaces commerciaux et des zones de circulation environnantes.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Un immeuble résidentiel moderne et élevé, doté d'une façade saisissante aux couleurs jaune, noire et blanche et de nombreux balcons, se détache sur un ciel bleu limpide. Au premier plan, on aperçoit un chantier en activité, avec de la terre et des bordures de trottoir récemment posées.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Completed facade execution on one of the R+9 residential blocks, showing the external colour scheme and balcony detailing.",
+      "draft": "Façade achevée de l'un des immeubles résidentiels (R+9), illustrant la palette de couleurs extérieures et les détails des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/17-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "High-angle view of a multi-story building under construction with exposed brickwork and concrete frames, a large blue tower crane, construction vehicles, and temporary site offices on a dirt ground.",
+      "draft": "Vue en plongée d'un immeuble à plusieurs étages en construction, avec maçonnerie en briques et structures en béton apparentes, une grande grue à tour bleue, des engins de chantier et des bureaux de chantier temporaires sur un sol en terre.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural execution phase showing reinforced concrete frames and brick infill masonry.",
+      "draft": "Phase de réalisation de la structure montrant les cadres en béton armé et la maçonnerie de remplissage en briques.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/16-reghaia.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Exterior view of a multi-story residential building under construction, showing light-colored walls, balconies with black railings, and windows, with construction materials and activity at the base.",
+      "draft": "Vue extérieure d'un immeuble résidentiel à plusieurs étages en construction, montrant des murs de couleur claire, des balcons aux garde-corps noirs et des fenêtres, avec des matériaux de construction et de l'activité au pied du bâtiment.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Facade rendering and external finishing works in progress on the residential blocks.",
+      "draft": "Travaux d'enduit de façade et de finition extérieure en cours sur les bâtiments résidentiels.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/06-img-20251111-wa0028.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "Tall residential building with yellow, black, and white exterior, featuring balconies and windows, with construction materials and dirt visible in the foreground under a clear blue sky.",
+      "draft": "Immeuble résidentiel élevé à la façade jaune, noire et blanche, doté de balcons et de fenêtres, avec des matériaux de construction et de la terre visibles au premier plan sous un ciel bleu dégagé.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Completed external envelope of an R+9 block during the final site clearance phase.",
+      "draft": "Enveloppe extérieure achevée d'un immeuble de neuf étages (R+9) durant la phase finale de libération du site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Une visualisation architecturale en 3D montrant la façade complète d'un immeuble résidentiel moderne à plusieurs étages, doté de panneaux blancs, jaunes et gris foncé, d'espaces commerciaux au rez-de-chaussée et, au premier plan, d'une zone aménagée comprenant un parking et des espaces paysagers, le tout sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Architectural visualization of the residential blocks and ground-level public realm.",
+      "draft": "Visualisation architecturale des îlots résidentiels et des espaces publics au niveau du sol.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/01-img-20251111-wa0023.webp",
+      "draft": "/projects/reghaia-bouraada-250-logements/01-img-20251111-wa0023.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "A newly constructed, multi-story apartment building with a striking facade featuring horizontal bands of yellow, black, and white. The building has numerous balconies and windows. The foreground shows a dirt construction site with some curb stones and a pallet of concrete blocks.",
+      "draft": "Un immeuble résidentiel de plusieurs étages récemment construit, doté d'une façade remarquable aux bandes horizontales jaunes, noires et blanches. Le bâtiment compte de nombreux balcons et fenêtres. Au premier plan, on aperçoit un chantier en terre battue avec quelques bordures de trottoir et une palette de blocs de béton.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Detail of the completed facade articulation and balcony balustrades.",
+      "draft": "Détail de l'articulation achevée de la façade et des garde-corps des balcons.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/04-img-20251111-wa0026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A tall, modern residential building with yellow, black, and white sections on its facade, seen from a low angle against a clear blue sky, with construction work visible at the base.",
+      "draft": "Un immeuble résidentiel moderne et élevé, présentant des sections jaunes, noires et blanches sur sa façade, vu en contre-plongée sur fond de ciel bleu dégagé, avec des travaux de construction visibles à sa base.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Low-angle view of the completed R+9 block showing the vertical massing and external finishes.",
+      "draft": "Vue en contre-plongée du bâtiment achevé (R+9), montrant la volumétrie verticale et les finitions extérieures.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Un immeuble résidentiel moderne et élevé, doté d'une façade saisissante aux couleurs jaune, noire et blanche et de nombreux balcons, se détache sur un ciel bleu limpide. Au premier plan, on aperçoit un chantier en activité, avec de la terre et des bordures de trottoir récemment posées.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Completed external works on the residential block prior to final landscaping.",
+      "draft": "Achèvement des travaux extérieurs du bâtiment résidentiel avant l'aménagement paysager final.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Une visualisation architecturale en 3D montrant la façade complète d'un immeuble résidentiel moderne à plusieurs étages, doté de panneaux blancs, jaunes et gris foncé, d'espaces commerciaux au rez-de-chaussée et, au premier plan, d'une zone aménagée comprenant un parking et des espaces paysagers, le tout sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Architectural rendering illustrating the planned integration of the residential blocks with the local streetscape.",
+      "draft": "Rendu architectural illustrant l'intégration prévue des blocs résidentiels dans le paysage urbain local.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/10-reghaia-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "High-angle view of a multi-building construction site with a blue tower crane, exposed concrete structures, brick infill, construction vehicles, and temporary site offices under a clear sky.",
+      "draft": "Vue en plongée d'un chantier comprenant plusieurs bâtiments, avec une grue à tour bleue, des structures en béton apparent, des remplissages en brique, des engins de chantier et des bureaux de chantier temporaires, sous un ciel dégagé.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Site-wide view of structural works, showing reinforced concrete frames under construction.",
+      "draft": "Vue d'ensemble du chantier montrant les structures en béton armé en cours de réalisation.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/15-reghaia-4.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall, modern residential building featuring a striking black, yellow, and white facade, viewed from a low angle against a clear blue sky. The foreground shows an unpaved construction site with dirt and some construction materials, indicating ongoing site work.",
+      "draft": "Un immeuble résidentiel moderne et élevé, doté d'une façade saisissante aux couleurs noire, jaune et blanche, vu en contre-plongée sur fond de ciel bleu dégagé. Au premier plan, un chantier non aménagé présente de la terre et quelques matériaux de construction, témoignant de travaux en cours.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Progress photo showing the completed external envelope and ongoing ground-level civil works.",
+      "draft": "Photo d'avancement montrant l'enveloppe extérieure achevée et les travaux de génie civil en cours au niveau du sol.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/02-img-20251111-wa0024.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall, modern residential building with a striking yellow, black, and white facade, featuring multiple balconies, set against a clear blue sky. The foreground shows an active construction site with dirt and recently placed curb stones.",
+      "draft": "Un immeuble résidentiel moderne et élevé, doté d'une façade saisissante aux couleurs jaune, noire et blanche et de nombreux balcons, se détache sur un ciel bleu limpide. Au premier plan, on aperçoit un chantier en activité, avec de la terre et des bordures de trottoir récemment posées.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "View of the R+9 block during the final stages of external works and site integration.",
+      "draft": "Vue du bâtiment R+9 lors des dernières étapes des travaux extérieurs et de l'intégration au site.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/14-reghaia-3d-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "A 3D architectural rendering showing the full facade of a modern multi-story residential building with white, yellow, and dark grey panels, ground-floor commercial spaces, and a paved area with parking and landscaping in the foreground under a cloudy sky.",
+      "draft": "Une visualisation architecturale en 3D montrant la façade complète d'un immeuble résidentiel moderne à plusieurs étages, doté de panneaux blancs, jaunes et gris foncé, d'espaces commerciaux au rez-de-chaussée et, au premier plan, d'une zone aménagée comprenant un parking et des espaces paysagers, le tout sous un ciel nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Architectural rendering showing the design intent for the completed facade and surrounding public realm.",
+      "draft": "Rendu architectural illustrant l'intention de conception pour la façade achevée et l'espace public environnant.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "draft": "/projects/reghaia-bouraada-250-housing/12-reghaia-3d.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "A 3D render showing the exterior of a multi-story residential and commercial building with a modern design, featuring yellow, white, and dark grey panels, balconies, and ground-level commercial spaces, set against a dark, cloudy sky.",
+      "draft": "Un rendu 3D montrant l'extérieur d'un immeuble résidentiel et commercial à plusieurs étages au design moderne, avec des panneaux jaunes, blancs et gris foncé, des balcons et des espaces commerciaux au rez-de-chaussée, le tout sur fond de ciel sombre et nuageux.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Architectural rendering of the 250-unit mixed-use residential development at Reghaia.",
+      "draft": "Rendu architectural du projet immobilier à usage mixte de 250 logements à Reghaia.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

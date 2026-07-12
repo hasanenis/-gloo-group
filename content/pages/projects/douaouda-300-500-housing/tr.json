@@ -1,0 +1,195 @@
+{
+  "pageId": "projects/douaouda-300-500-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-f1eb4962",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-7fa240b7dd0ddd68",
+  "status": "approved",
+  "updatedAt": "2026-07-12T00:21:31.306Z",
+  "seo": {
+    "title": "300/500 Destekli Tanıtım Konutları (LPA) | Douaouda",
+    "description": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir.",
+    "socialTitle": "300/500 Destekli Tanıtım Konutları (LPA) | Douaouda",
+    "socialDescription": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir."
+  },
+  "content": {
+    "slug": "douaouda-300-500-housing",
+    "title": "300/500 Destekli Tanıtım Konutları",
+    "eyebrow": "KONUT VE TİCARİ PROJE PROGRAMI",
+    "summary": [
+      "Douaouda'da yer alan, zemin kat artı 8 üst kattan (R+8) oluşan konut bloklarını, entegre ticari alanları ve kapsamlı altyapı ile çevre düzenleme (VRD) işlerini içeren 500 konutluk Destekli Tanıtım Konutları (LPA) programının tamamlanan 300 konutluk aşamasıdır. 500 konutun 300’ü tamamlandı.",
+      "Douaouda projesi, 500 konutluk destekli tanıtım konutları programının tamamlanan 300 konutluk aşamasını kıyı bölgesine taşımakta; aile konutlarını ticari alanlar ve düzenli dış mekan çalışmalarıyla bir araya getirmektedir."
+    ],
+    "description": [
+      "Proje; betonarme taşıyıcı sistem işleri, ince inşaat işleri, bina tesisat koordinasyonu ve dış cephe bitirme işlerini kapsayan eksiksiz bir anahtar teslim (TCE) paketi kapsamında yürütülmüştür.",
+      "R+8 bloklar, F3 ve F4 daire planlarına göre yapılandırılmıştır. Zemin seviyesindeki ticari alanlar, yerel perakende ve hizmetleri doğrudan konut dokusuna entegre ederek aktif bir sokak cephesi oluşturmaktadır."
+    ],
+    "authority": "Bütünleşik yapı mühendisliği, bina tesisat entegrasyonu ve saha içi sirkülasyon çalışmalarıyla teslim edilmiş çok katlı bir konut projesi.",
+    "seo": "300/500 Destekli Tanıtım Konutları projesine ait galeriyi, teknik detayları ve konum notlarını inceleyin. Proje, kaynak odaklı bir konut ve karma kullanım teslim modelini sergilemektedir.",
+    "meta": [
+      {
+        "label": "İşveren",
+        "value": "AADL"
+      },
+      {
+        "label": "Proje Tipi",
+        "value": "Destekli Tanıtım Konutları (LPA)"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje Tipi",
+        "value": "Destekli Tanıtım Konutları (LPA)"
+      },
+      {
+        "label": "Konum",
+        "value": "Douaouda, Tipaza, Cezayir"
+      },
+      {
+        "label": "Program",
+        "value": "500 konutluk imar planı kapsamında teslim edilen 300 konut"
+      },
+      {
+        "label": "Tamamlanma",
+        "value": "2019"
+      },
+      {
+        "label": "İş Kapsamı",
+        "value": "Anahtar teslim (TCE) yapım ve altyapı ile çevre düzenleme (VRD) işleri"
+      },
+      {
+        "label": "İşveren",
+        "value": "AADL"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Programı",
+        "items": [
+          "LPA çerçevesinde tamamlanan 300 konut (500 konutun 300’ü tamamlandı)",
+          "F3 ve F4 plan şemalarına sahip zemin kat artı 8 üst katlı (R+8) bloklar",
+          "Zemin seviyesinde ticari ve mesleki alanlar",
+          "İnşaat, taşıyıcı sistem ve VRD işlerini içeren anahtar teslim (TCE) yapım"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Saha Bağlamı",
+      "items": [
+        "Bölgesel yol altyapısına doğrudan bağlantı",
+        "Akdeniz manzaralı kıyı yönelimi"
+      ]
+    },
+    "faq": [
+      {
+        "question": "300/500 Destekli Tanıtım Konutları projesinin kapsamı nedir?",
+        "answer": "Douaouda'da yer alan, R+8 konut blokları ve entegre ticari alanları içeren, 500 konutluk Destekli Tanıtım Konutları (LPA) projesinin tamamlanan 300 konutluk aşamasını temsil etmektedir. 500 konutun 300’ü tamamlandı."
+      },
+      {
+        "question": "Bu proje kapsamında hangi inşaat hizmetleri sunulmuştur?",
+        "answer": "Proje; betonarme taşıyıcı sistem, ince inşaat işleri, bina tesisat işleri ile altyapı ve çevre düzenleme (VRD) işlerini kapsayan anahtar teslim (TCE) sözleşmesi altında yürütülmüştür."
+      },
+      {
+        "question": "Bu konut programının işvereni kimdir?",
+        "answer": "Proje, devlet destekli tanıtım konutları çerçevesinde Ulusal Konut İyileştirme ve Geliştirme Ajansı (AADL) için teslim edilmiştir."
+      },
+      {
+        "question": "Konut blokları nasıl yapılandırılmıştır?",
+        "answer": "Douaouda projesi, 500 konutluk destekli tanıtım konutları programının tamamlanan 300 konutluk aşamasını kıyı bölgesine taşımakta; aile konutlarını ticari alanlar ve düzenli dış mekan çalışmalarıyla bir araya getirmektedir."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Kaba inşaat aşamalarının farklı seviyelerinde olan birkaç çok katlı betonarme konut binasının yer aldığı geniş bir şantiye alanı. Arka planda binaların üzerine uzanan yüksek bir kule vinç görünmektedir. Zemin kızıl-kahverengi toprak olup gökyüzü kapalıdır.",
+          "caption": "Konut bloklarında devam eden betonarme taşıyıcı sistem işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Açık mavi bir gökyüzü altında şantiyenin dikey çekimi. Ön planda kızıl-kahverengi kazılmış toprak ve bazı yeşil bitkiler. Orta planda, üst kısmında kırmızı kalıplar bulunan yüksek, gri bir betonarme yapı (muhtemelen çekirdek) ve bunun sağında betonarme karkas ve kırmızı tuğla dolgulu başka bir çok katlı bina. Bomu üzerinde 'UNEN COMANSA' yazısı görünen büyük mavi bir kule vinç gökyüzüne uzanmaktadır. Vincin altında bir beton pompası kamyonu ve iki çimento mikseri kamyonu görünmektedir. Uzak arka planda mavi deniz seçilmektedir.",
+          "caption": "Kıyı şantiyesi bağlamını gösteren, devam eden taşıyıcı karkas ve tuğla duvar dolgu işleri."
+        }
+      ],
+      "intro": {
+        "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+        "alt": "Etrafı kaplanmamış zemin ve bazı inşaat malzemeleriyle çevrili, kahverengi çatılı birkaç büyük bej apartman bloğunu gösteren havadan çekim. Ön planda daha eski, daha küçük binalar yer almakta ve bulutlu gökyüzünün altında uzak arka planda bir su kütlesi görünmektedir.",
+        "caption": "Douaouda'da tamamlanan R+8 konut bloklarının havadan görünümü."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Açık renkli cephelere ve kahverengi detaylara sahip, düşük açıdan çekilmiş birkaç çok katlı konut binası. Ön planda kum, tuğla ve beyaz torba yığınlarının bulunduğu toprak bir şantiye alanı yer almaktadır. Binaların üzerinde kapalı bir gökyüzü görünmektedir.",
+          "caption": "Tamamlanan bloklarda cephe hareketleri ve dış cephe bitirme işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Kaba inşaat aşamalarının farklı seviyelerinde olan birkaç çok katlı betonarme konut binasının yer aldığı geniş bir şantiye alanı. Arka planda binaların üzerine uzanan yüksek bir kule vinç görünmektedir. Zemin kızıl-kahverengi toprak olup gökyüzü kapalıdır.",
+          "caption": "Konut bloklarında devam eden betonarme taşıyıcı sistem işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Açık mavi bir gökyüzü altında şantiyenin dikey çekimi. Ön planda kızıl-kahverengi kazılmış toprak ve bazı yeşil bitkiler. Orta planda, üst kısmında kırmızı kalıplar bulunan yüksek, gri bir betonarme yapı (muhtemelen çekirdek) ve bunun sağında betonarme karkas ve kırmızı tuğla dolgulu başka bir çok katlı bina. Bomu üzerinde 'UNEN COMANSA' yazısı görünen büyük mavi bir kule vinç gökyüzüne uzanmaktadır. Vincin altında bir beton pompası kamyonu ve iki çimento mikseri kamyonu görünmektedir. Uzak arka planda mavi deniz seçilmektedir.",
+          "caption": "Kıyı şantiyesi bağlamını gösteren, devam eden taşıyıcı karkas ve tuğla duvar dolgu işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Etrafı kaplanmamış zemin ve bazı inşaat malzemeleriyle çevrili, kahverengi çatılı birkaç büyük bej apartman bloğunu gösteren havadan çekim. Ön planda daha eski, daha küçük binalar yer almakta ve bulutlu gökyüzünün altında uzak arka planda bir su kütlesi görünmektedir.",
+          "caption": "Douaouda'da tamamlanan R+8 konut bloklarının havadan görünümü."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/05-whatsapp-image-2025-11-10-a-11-58-44-e480efaf.webp",
+          "alt": "Kapalı bir gökyüzü altında, açık renkli cephelere ve kahverengi detaylara sahip birkaç modern, çok katlı konut binasının görünümü. Ön planda tuğla, kum ve beyaz torbalar gibi inşaat malzemeleri görünmektedir.",
+          "caption": "Saha temizliği ve çevre düzenlemesi öncesinde tamamlanan konut blokları."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Açık mavi bir gökyüzü altında şantiyenin dikey çekimi. Ön planda kızıl-kahverengi kazılmış toprak ve bazı yeşil bitkiler. Orta planda, üst kısmında kırmızı kalıplar bulunan yüksek, gri bir betonarme yapı (muhtemelen çekirdek) ve bunun sağında betonarme karkas ve kırmızı tuğla dolgulu başka bir çok katlı bina. Bomu üzerinde 'UNEN COMANSA' yazısı görünen büyük mavi bir kule vinç gökyüzüne uzanmaktadır. Vincin altında bir beton pompası kamyonu ve iki çimento mikseri kamyonu görünmektedir. Uzak arka planda mavi deniz seçilmektedir.",
+          "caption": "Kıyı şantiyesi bağlamını gösteren, devam eden taşıyıcı karkas ve tuğla duvar dolgu işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Kaba inşaat aşamalarının farklı seviyelerinde olan birkaç çok katlı betonarme konut binasının yer aldığı geniş bir şantiye alanı. Arka planda binaların üzerine uzanan yüksek bir kule vinç görünmektedir. Zemin kızıl-kahverengi toprak olup gökyüzü kapalıdır.",
+          "caption": "Konut bloklarında devam eden betonarme taşıyıcı sistem işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Etrafı kaplanmamış zemin and bazı inşaat malzemeleriyle çevrili, kahverengi çatılı birkaç büyük bej apartman bloğunu gösteren havadan çekim. Ön planda daha eski, daha küçük binalar yer almakta ve bulutlu gökyüzünün altında uzak arka planda bir su kütlesi görünmektedir.",
+          "caption": "Douaouda'da tamamlanan R+8 konut bloklarının havadan görünümü."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/douaouda-300-500-housing/04-whatsapp-image-2025-11-10-a-11-58-44-45910f32.webp",
+          "alt": "Açık mavi bir gökyüzü altında şantiyenin dikey çekimi. Ön planda kızıl-kahverengi kazılmış toprak ve bazı yeşil bitkiler. Orta planda, üst kısmında kırmızı kalıplar bulunan yüksek, gri bir betonarme yapı (muhtemelen çekirdek) ve bunun sağında betonarme karkas ve kırmızı tuğla dolgulu başka bir çok katlı bina. Bomu üzerinde 'UNEN COMANSA' yazısı görünen büyük mavi bir kule vinç gökyüzüne uzanmaktadır. Vincin altında bir beton pompası kamyonu ve iki çimento mikseri kamyonu görünmektedir. Uzak arka planda mavi deniz seçilmektedir.",
+          "caption": "Kıyı şantiyesi bağlamını gösteren, devam eden taşıyıcı karkas ve tuğla duvar dolgu işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Kaba inşaat aşamalarının farklı seviyelerinde olan birkaç çok katlı betonarme konut binasının yer aldığı geniş bir şantiye alanı. Arka planda binaların üzerine uzanan yüksek bir kule vinç görünmektedir. Zemin kızıl-kahverengi toprak olup gökyüzü kapalıdır.",
+          "caption": "Konut bloklarında devam eden betonarme taşıyıcı sistem işleri."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/01-douaouda-1.webp",
+          "alt": "Etrafı kaplanmamış zemin ve bazı inşaat malzemeleriyle çevrili, kahverengi çatılı birkaç büyük bej apartman bloğunu gösteren havadan çekim. Ön planda daha eski, daha küçük binalar yer almakta ve bulutlu gökyüzünün altında uzak arka planda bir su kütlesi görünmektedir.",
+          "caption": "Douaouda'da tamamlanan R+8 konut bloklarının havadan görünümü."
+        },
+        {
+          "src": "/projects/douaouda-300-500-housing/03-douaouda.webp",
+          "alt": "Açık renkli cephelere ve kahverengi detaylara sahip, düşük açıdan çekilmiş birkaç çok katlı konut binası. Ön planda kum, tuğla ve beyaz torba yığınlarının bulunduğu toprak bir şantiye alanı yer almaktadır. Binaların üzerinde kapalı bir gökyüzü görünmektedir.",
+          "caption": "Tamamlanan bloklarda cephe hareketleri ve dış cephe bitirme işleri."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/douaouda-300-500-housing/02-douaouda-2.webp",
+          "alt": "Kaba inşaat aşamalarının farklı seviyelerinde olan birkaç çok katlı betonarme konut binasının yer aldığı geniş bir şantiye alanı. Arka planda binaların üzerine uzanan yüksek bir kule vinç görünmektedir. Zemin kızıl-kahverengi toprak olup gökyüzü kapalıdır.",
+          "caption": "Konut bloklarında devam eden betonarme taşıyıcı sistem işleri."
+        }
+      ]
+    }
+  }
+}

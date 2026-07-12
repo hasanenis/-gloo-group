@@ -1,0 +1,11 @@
+{
+  "jobId": "batch-mrh12ws6-target-ar-DZ-projects-dely-brahim-240-housing",
+  "pageId": "projects/dely-brahim-240-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-ae0bb1f4",
+  "generatedAt": "2026-07-12T00:01:14.196Z",
+  "model": "gemini-3.5-flash",
+  "status": "pass",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrgy86hz-target-fr-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T22:41:21.192Z",
+  "status": "pass",
+  "issues": []
+}

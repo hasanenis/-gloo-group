@@ -1,0 +1,551 @@
+{
+  "jobId": "batch-mrh0mawq-target-tr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:48:19.361Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "202 adet ücretsiz tanıtım konutu içeren karma gayrimenkul kompleksi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Cezayir, Said Hamdine'de yer alan ve 202 adet serbest piyasa konut birimini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve arazi kısıtlamaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "202 adet ücretsiz tanıtım konutu içeren karma gayrimenkul kompleksi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Cezayir, Said Hamdine'de yer alan ve 202 adet serbest piyasa konut birimini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve arazi kısıtlamaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "said-hamdine-mixed-real-estate",
+      "draft": "Said Hamdine karma kullanımlı gayrimenkul projesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+      "draft": "202 adet ücretsiz tanıtım konutu içeren karma gayrimenkul kompleksi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "MIXED-USE PROJECT",
+      "draft": "Karma Kullanımlı Proje",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A five-block mixed-use development in Said Hamdine, integrating 202 residential units on a steeply sloping site with one basement parking level and three commercial mezzanine floors.",
+      "draft": "Said Hamdine'de; dik eğimli bir arazide yer alan, 202 konut birimini bir bodrum otopark katı ve üç ticari asma kat ile bütünleştiren, beş bloklu karma kullanımlı bir proje.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The scheme resolves complex site topography by stepping the massing, integrating active street-level commercial frontage with secure subterranean parking and residential circulation.",
+      "draft": "Proje, kütleleri kademelendirerek karmaşık arazi topografyasına çözüm getirirken; sokak seviyesindeki hareketli ticari cepheleri, güvenli yeraltı otoparkı ve konut sirkülasyonu ile bütünleştiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "This urban development comprises five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and a single basement parking level. The structural execution was engineered to negotiate a steeply sloping site in Algiers, requiring specialized retaining structures and precise foundation engineering.",
+      "draft": "Bu kentsel proje; üç ticari asma kat ve tek bir yeraltı otopark katı üzerine inşa edilmiş, 202 adet serbest statülü konut birimini barındıran beş konut bloğundan oluşmaktadır. Yapısal uygulama, Cezayir'deki dik eğimli bir arazinin koşullarına uyum sağlayacak şekilde tasarlanmış olup, bu süreç özel istinat yapıları ve hassas bir temel mühendisliği gerektirmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The scope of works was executed under an all-trades package (TCE - Tout Corps d'État), including structural concrete, facade articulation, glazing systems, and integrated roads and utility networks (VRD - Voirie et Réseaux Divers) to manage site drainage and vehicular circulation.",
+      "draft": "İş kapsamı; yapısal beton, cephe düzenlemeleri, cam sistemleri ile saha drenajı ve araç trafiğini yönetmeye yönelik entegre yollar ve altyapı ağlarını (VRD) içeren, tüm yapım kalemlerini kapsayan bir paket (TCE - Tout Corps d'État) dahilinde gerçekleştirilmiştir.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A mixed-use urban development defined by structural engineering, integrated circulation, and complex site-grading execution.",
+      "draft": "Yapısal mühendislik, entegre sirkülasyon ve karmaşık arazi düzenleme uygulamalarıyla şekillenen, karma kullanımlı bir kentsel gelişim projesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
+      "draft": "Cezayir, Said Hamdine'de yer alan ve 202 adet serbest piyasa konut birimini içeren karma kullanımlı projenin teknik özellikleri, yapısal uygulaması ve arazi kısıtlamaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project type",
+      "draft": "Proje türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Mixed real-estate complex",
+      "draft": "Karma kullanımlı gayrimenkul kompleksi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project type",
+      "draft": "Proje türü",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Mixed real-estate complex",
+      "draft": "Karma kullanımlı gayrimenkul kompleksi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "Konum",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Said Hamdine, Bir Mourad Rais, Algiers",
+      "draft": "Said Hamdine, Bir Mourad Rais, Cezayir",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Housing units",
+      "draft": "Konut birimleri",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "202 free promotional housing units",
+      "draft": "202 adet ücretsiz tanıtım amaçlı konut birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Blocks",
+      "draft": "Bloklar",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "5 residential blocks",
+      "draft": "5 konut bloğu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Parking",
+      "draft": "Otopark",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "1 basement parking level",
+      "draft": "1 bodrum otopark katı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Site challenge",
+      "draft": "Saha zorluğu",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "Steeply sloping site; 3 commercial mezzanine levels",
+      "draft": "Dik eğimli arazi; 3 ticari asma kat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.label",
+      "source": "Completion",
+      "draft": "Tamamlama",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.6.value",
+      "source": "2023",
+      "draft": "2023",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project programme",
+      "draft": "Proje programı",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "Five-block mixed-use structural delivery",
+      "draft": "Beş bloklu karma kullanımlı yapı teslimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "202 free promotional housing units",
+      "draft": "202 adet ücretsiz tanıtım amaçlı konut birimi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "Three commercial mezzanine levels",
+      "draft": "Üç ticari asma kat",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "One basement parking level",
+      "draft": "Bir bodrum katı otopark",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.title",
+      "source": "Nearby places",
+      "draft": "Yakındaki yerler",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.nearby.items.0",
+      "source": "Local commercial district",
+      "draft": "Yerel ticaret bölgesi",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is Mixed Real Estate Complex with 202 Free Promotional Housing?",
+      "draft": "202 adet ücretsiz tanıtım konutu içeren karma gayrimenkul kompleksi nedir?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "The development consists of five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and one basement parking level.",
+      "draft": "Proje; üç ticari asma kat ve bir bodrum otopark katı üzerine inşa edilmiş, 202 adet serbest promosyonel konut birimini barındıran beş konut bloğundan oluşmaktadır.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "How did the site topography influence the engineering?",
+      "draft": "Arazi topografyası mühendisliği nasıl etkiledi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project brings together five residential blocks, 202 free promotional homes, three commercial entre-sols with mezzanine and one basement parking level on a steeply sloping Algerian site.",
+      "draft": "Proje; Cezayir'de dik eğimli bir arazide beş konut bloğunu, 202 adet promosyonel konutu, asma katlı üç ticari birimi ve bir bodrum otopark katını bir araya getiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "What was the scope of the construction contract?",
+      "draft": "İnşaat sözleşmesinin kapsamı neydi?",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The project was delivered under an all-trades package (TCE), encompassing structural concrete works, facade articulation, glazing, and integrated roads and utility networks (VRD).",
+      "draft": "Proje; yapısal beton işleri, cephe düzenlemeleri, cam montajı ile entegre yollar ve altyapı şebekelerini (VRD) kapsayan, tüm yapım kalemlerini içeren bir paket (TCE) kapsamında teslim edildi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Gün batımı sırasında; inşaat işçilerini, bir beton pompasını ve arka plandaki konutları gösteren, donatı demiriyle güçlendirilmiş bir beton plakanın yukarıdan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Structural slab reinforcement and rebar installation on site.",
+      "draft": "Şantiyede yapısal döşeme donatısı ve demir montajı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "Low-angle view of two modern high-rise buildings featuring balconies, a mix of white, beige, and grey facades, and a reflective glass ground floor.",
+      "draft": "Balkonları, beyaz, bej ve gri cephelerin birleşiminden oluşan dış yüzeyleri ve yansıtıcı camlı zemin katlarıyla iki modern yüksek binanın aşağıdan yukarıya doğru görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Facade articulation and glazed commercial frontage.",
+      "draft": "Cephe eklemlenmesi ve camlı ticari cephe.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "Construction workers on a building site at sunset, preparing a concrete slab with a dense rebar grid and a concrete pump in the background.",
+      "draft": "Gün batımında bir şantiyede; sık bir donatı ağına sahip beton bir döşemeyi hazırlayan inşaat işçileri ve arka planda bir beton pompası.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Reinforcement works for the concrete floor slab.",
+      "draft": "Beton döşeme plağı için donatı işleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projects/said-hamdine-karma-kullanimli-gayrimenkul/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Beton bir taban plakasına sahip geniş bir kazı çukurunu gösteren şantiye alanının yukarıdan görünümü. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için donatı demiri ağlarını titizlikle yerleştirip birbirine bağlıyor. Arka planda ise çukurun dik ve stabilize edilmiş toprak duvarları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Foundation excavation and reinforcement grid installation.",
+      "draft": "Temel kazısı ve donatı ağı montajı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
+      "draft": "Ahşap görünümlü karo zemin, cam korkuluk, küçük yuvarlak bir masa ve üç koyu renkli sandalyeye sahip temiz ve modern bir balkon. Arka planda diğer apartmanlar görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Residential balcony detailing with glass balustrades.",
+      "draft": "Cam korkuluklu konut balkonu detaylandırması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "View from below of a tall, modern residential building featuring balconies with glass railings and a reflective glass commercial ground floor, set against a clear blue sky with a faint moon. A green tree partially frames the right side.",
+      "draft": "Cam korkuluklu balkonlara ve yansıtıcı camlı ticari bir zemin kata sahip, yüksek ve modern bir konut binasının aşağıdan görünümü; bina, silik bir ayın da yer aldığı açık mavi bir gökyüzü fonunda yükseliyor. Yeşil bir ağaç, sağ tarafı kısmen çevreliyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Elevation showing residential balconies and ground-level glazing.",
+      "draft": "Konut balkonlarını ve zemin seviyesindeki cam yüzeyleri gösteren cephe görünüşü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Gün batımı sırasında; inşaat işçilerini, bir beton pompasını ve arka plandaki konutları gösteren, donatı demiriyle güçlendirilmiş bir beton plakanın yukarıdan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Slab reinforcement works in progress.",
+      "draft": "Döşeme donatı çalışmaları devam ediyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
+      "draft": "İstinat duvarlarının görülebildiği derin bir kazı çukurunda, güvenlik yelekli inşaat işçileri büyük bir bina temeli için çelik donatı yerleştiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Foundation reinforcement within the excavated site.",
+      "draft": "Kazı alanında temel güçlendirmesi.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "View of a clean, empty hallway with white walls, dark brown glossy tiled floor, and several open doors leading to other rooms, including a dining area and a bedroom.",
+      "draft": "Beyaz duvarları, koyu kahverengi parlak karo zemini ve yemek alanı ile yatak odası dahil olmak üzere diğer odalara açılan birkaç açık kapısı bulunan temiz ve boş bir koridorun görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Internal circulation and apartment hallway finishes.",
+      "draft": "İç sirkülasyon ve daire koridoru kaplamaları.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projects/said-hamdine-karma-kullanimli-gayrimenkul/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Beton bir taban plakasına sahip geniş bir kazı çukurunu gösteren şantiye alanının yukarıdan görünümü. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için donatı demiri ağlarını titizlikle yerleştirip birbirine bağlıyor. Arka planda ise çukurun dik ve stabilize edilmiş toprak duvarları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Substructure works and foundation reinforcement.",
+      "draft": "Altyapı çalışmaları ve temel güçlendirme.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
+      "draft": "Ahşap görünümlü karo zemin, cam korkuluk, küçük yuvarlak bir masa ve üç koyu renkli sandalyeye sahip temiz ve modern bir balkon. Arka planda diğer apartmanlar görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Balcony detailing and external tiling.",
+      "draft": "Balkon detaylandırması ve dış cephe kaplaması.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp",
+      "draft": "/projects/said-hamdine-karma-kullanimli-gayrimenkul/06-sidi-yahia-1.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A multi-story building under construction, showing concrete slabs, columns, and red brick walls. Yellow debris chutes run down the side, and construction materials are visible on lower floors. A crane is in the background.",
+      "draft": "İnşaat halindeki çok katlı bir binada beton döşemeler, kolonlar ve kırmızı tuğla duvarlar görülüyor. Binanın yan cephesinden aşağıya doğru uzanan sarı moloz atım olukları ve alt katlarda inşaat malzemeleri göze çarpıyor; arka planda ise bir vinç yer alıyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural frame execution and brickwork infill.",
+      "draft": "Yapısal iskeletin uygulanması ve tuğla dolgu işleri.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A tall building under construction, featuring a concrete skeleton, partially completed red brick walls, and yellow debris chutes, set against a cloudy sky.",
+      "draft": "Bulutlu bir gökyüzü fonunda; beton iskeleti, kısmen tamamlanmış kırmızı tuğla duvarları ve sarı moloz atma oluklarıyla inşaat halindeki yüksek bir bina.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Reinforced concrete frame and masonry envelope under construction.",
+      "draft": "İnşa halindeki betonarme karkas ve yığma dış cephe.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
+      "draft": "/projects/said-hamdine-karma-kullanimli-gayrimenkul/01-12.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
+      "draft": "Beton bir taban plakasına sahip geniş bir kazı çukurunu gösteren şantiye alanının yukarıdan görünümü. Turuncu güvenlik yelekli çok sayıda işçi, binanın temeli için donatı demiri ağlarını titizlikle yerleştirip birbirine bağlıyor. Arka planda ise çukurun dik ve stabilize edilmiş toprak duvarları görülüyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Excavation and foundation slab preparation.",
+      "draft": "Kazı ve temel radye hazırlığı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
+      "draft": "İstinat duvarlarının görülebildiği derin bir kazı çukurunda, güvenlik yelekli inşaat işçileri büyük bir bina temeli için çelik donatı yerleştiriyor.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Substructure reinforcement installation.",
+      "draft": "Alt yapı donatı montajı.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "draft": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
+      "draft": "Gün batımı sırasında; inşaat işçilerini, bir beton pompasını ve arka plandaki konutları gösteren, donatı demiriyle güçlendirilmiş bir beton plakanın yukarıdan görünümü.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Slab reinforcement and concrete pouring preparation.",
+      "draft": "Döşeme donatısı ve beton dökümü hazırlığı.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

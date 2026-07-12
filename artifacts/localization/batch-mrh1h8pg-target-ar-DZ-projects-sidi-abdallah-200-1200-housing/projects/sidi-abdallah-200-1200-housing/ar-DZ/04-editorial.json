@@ -1,0 +1,355 @@
+{
+  "jobId": "batch-mrh1h8pg-target-ar-DZ-projects-sidi-abdallah-200-1200-housing",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-b6378a0d",
+  "generatedAt": "2026-07-12T00:12:22.806Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "200/1200 سكن ترقوي عمومي (LPP) | سيدي عبد الله"
+    },
+    {
+      "id": "seo.description",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 200/1200 سكن ترقوي عمومي. يعرض المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "200/1200 سكن ترقوي عمومي (LPP) | سيدي عبد الله"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 200/1200 سكن ترقوي عمومي. يعرض المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.slug",
+      "text": "sidi-abdallah-200-1200-housing"
+    },
+    {
+      "id": "content.title",
+      "text": "200/1200 سكن ترقوي عمومي (LPP)"
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "تطوير سكني متعدد الاستخدامات"
+    },
+    {
+      "id": "content.summary.0",
+      "text": "تسليم 200 وحدة سكنية ضمن البرنامج الرئيسي الأوسع لـ 1,200 مسكن بسيدي عبد الله، مع دمج السكن الترقوي العمومي (LPP) مع محلات تجارية ومهنية بالطابق الأرضي."
+    },
+    {
+      "id": "content.summary.1",
+      "text": "يتميز المشروع بكتل سكنية عالية الكثافة مهيأة كطابق أرضي زائد 9 طوابق علوية (R+9)، وتضم شققاً من نوع F3 وF4 إلى جانب واجهة تجارية نشطة على مستوى الشارع."
+    },
+    {
+      "id": "content.description.0",
+      "text": "ركز نطاق البناء على تنفيذ الأشغال الثانوية وأشغال التهيئة الداخلية للكتل السكنية الكثيفة. تم تنسيق مظهر الواجهات، نوى الحركة الداخلية، والشبكات التقنية لتتوافق مع القيود الهيكلية والمكانية للمخطط التوجيهي."
+    },
+    {
+      "id": "content.description.1",
+      "text": "من خلال دمج محلات تجارية ومهنية بالطابق الأرضي مباشرة أسفل الكتلة السكنية ذات الصيغة R+9، يضمن المخطط المعماري طابعاً وظيفياً مختلط الاستخدام يدعم النشاط الاقتصادي المحلي داخل القطب الحضري."
+    },
+    {
+      "id": "content.authority",
+      "text": "مشروع تسليم سكن عمومي تتكامل فيه الأشغال الثانوية، المحلات الخدمية، والكثافة العمرانية بصيغة R+9 لدعم حي حضري جديد."
+    },
+    {
+      "id": "content.seo",
+      "text": "اكتشف معرض الصور، التفاصيل التقنية، وملاحظات الموقع الخاصة بمشروع 200/1200 سكن ترقوي عمومي. يعرض المشروع نموذج تسليم سكني ومتعدد الاستخدامات."
+    },
+    {
+      "id": "content.meta.0.label",
+      "text": "صيغة البرنامج"
+    },
+    {
+      "id": "content.meta.0.value",
+      "text": "سكن ترقوي عمومي (LPP)"
+    },
+    {
+      "id": "content.details.0.label",
+      "text": "صيغة البرنامج"
+    },
+    {
+      "id": "content.details.0.value",
+      "text": "سكن ترقوي عمومي (LPP)"
+    },
+    {
+      "id": "content.details.1.label",
+      "text": "الموقع"
+    },
+    {
+      "id": "content.details.1.value",
+      "text": "سيدي عبد الله، المحالمة، الجزائر العاصمة"
+    },
+    {
+      "id": "content.details.2.label",
+      "text": "نطاق البرنامج"
+    },
+    {
+      "id": "content.details.2.value",
+      "text": "200 مسكن ضمن مخطط توجيهي يضم 1,200 مسكن"
+    },
+    {
+      "id": "content.details.3.label",
+      "text": "سنة الإنجاز"
+    },
+    {
+      "id": "content.details.3.value",
+      "text": "2022"
+    },
+    {
+      "id": "content.details.4.label",
+      "text": "تهيئة المبنى"
+    },
+    {
+      "id": "content.details.4.value",
+      "text": "طابق أرضي زائد 9 طوابق علوية (R+9)"
+    },
+    {
+      "id": "content.details.5.label",
+      "text": "نطاق الصفقة"
+    },
+    {
+      "id": "content.details.5.value",
+      "text": "الأشغال الثانوية (باستثناء الطرق والشبكات المختلفة / VRD)"
+    },
+    {
+      "id": "content.facilityGroups.0.title",
+      "text": "برنامج المشروع"
+    },
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "text": "تسليم 200 وحدة سكنية بصيغة LPP ضمن مخطط توجيهي يضم 1,200 مسكن"
+    },
+    {
+      "id": "content.facilityGroups.0.items.1",
+      "text": "كتل سكنية بصيغة R+9 تحتوي على شقق من نوع F3 وF4"
+    },
+    {
+      "id": "content.facilityGroups.0.items.2",
+      "text": "محلات تجارية ومهنية بالطابق الأرضي"
+    },
+    {
+      "id": "content.facilityGroups.0.items.3",
+      "text": "تم الإنجاز في سنة 2022 وفقاً للمعايير التقنية الوطنية المعمول بها"
+    },
+    {
+      "id": "content.faq.0.question",
+      "text": "ما هو نطاق مشروع السكن LPP 200/1200؟"
+    },
+    {
+      "id": "content.faq.0.answer",
+      "text": "يشمل تسليم 200 وحدة سكنية بصيغة السكن الترقوي العمومي (LPP)، مهيأة بمحلات تجارية في الطابق الأرضي، ضمن مشروع تطوير حضري أكبر يضم 1,200 وحدة في سيدي عبد الله."
+    },
+    {
+      "id": "content.faq.1.question",
+      "text": "ما هي أشغال البناء التي تم تنفيذها في هذا الموقع؟"
+    },
+    {
+      "id": "content.faq.1.answer",
+      "text": "شملت الصفقة الأشغال الثانوية وأشغال التهيئة الداخلية للكتل السكنية ذات الصيغة R+9، باستثناء حصة الطرق والشبكات المختلفة (VRD)."
+    },
+    {
+      "id": "content.faq.2.question",
+      "text": "كيف تم تصميم وتهيئة المباني السكنية؟"
+    },
+    {
+      "id": "content.faq.2.answer",
+      "text": "تم تصميم المباني بهيكل يتكون من طابق أرضي زائد 9 طوابق علوية (R+9)، وتضم شققاً من نوع F3 وF4 مصممة لتتكامل مع القطب الحضري المحيط بها."
+    },
+    {
+      "id": "content.images.hero.0.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
+    },
+    {
+      "id": "content.images.hero.0.alt",
+      "text": "لقطة من زاوية منخفضة لواجهة كتلة سكنية بصيغة R+9 في سيدي عبد الله، تظهر طلاءً باللونين البيج والخوخي، شرفات غائرة بدرابزين معدني داكن، وإضاءة خارجية."
+    },
+    {
+      "id": "content.images.hero.0.caption",
+      "text": "تفاصيل واجهة الكتل السكنية الترقوية العمومية بصيغة R+9."
+    },
+    {
+      "id": "content.images.hero.1.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
+    },
+    {
+      "id": "content.images.hero.1.alt",
+      "text": "منظور من زاوية منخفضة للمبنى السكني المكتمل بصيغة R+9, يظهر الطلاء الخارجي، توزيع الشرفات، وفتحات النوافذ تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.hero.1.caption",
+      "text": "واجهة خارجية تظهر الكتل العمودية وتناسق الشرفات."
+    },
+    {
+      "id": "content.images.intro.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
+    },
+    {
+      "id": "content.images.intro.alt",
+      "text": "بهو داخلي لكتلة سكنية LPP، يتميز بكسوة جدران حجرية، لمسات خشبية عمودية، حوض نباتات مدمج، وأرضية رخامية مزخرفة تؤدي إلى باب أمان معدني مزخرف."
+    },
+    {
+      "id": "content.images.intro.caption",
+      "text": "التصميم الداخلي لبهو المدخل يظهر الكسوة الحجرية والتفاصيل الخشبية."
+    },
+    {
+      "id": "content.images.mosaic.0.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp"
+    },
+    {
+      "id": "content.images.mosaic.0.alt",
+      "text": "منطقة حركة مشتركة داخل المبنى السكني، تظهر بئر المصعد، صناديق بريد خشبية مدمجة، تشطيبات جدران حجرية، ودرابزين معدني مزخرف."
+    },
+    {
+      "id": "content.images.mosaic.0.caption",
+      "text": "نواة الحركة الداخلية وصناديق البريد المدمجة."
+    },
+    {
+      "id": "content.images.mosaic.1.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp"
+    },
+    {
+      "id": "content.images.mosaic.1.alt",
+      "text": "لقطة واسعة لعدة كتل سكنية بصيغة R+9 خلال المراحل النهائية من البناء، مع ظهور أعمال الحفر، أنابيب الشبكات، وآليات البناء في المقدمة."
+    },
+    {
+      "id": "content.images.mosaic.1.caption",
+      "text": "الكتل السكنية خلال مرحلة التنسيق النهائي للموقع والأشغال الخارجية."
+    },
+    {
+      "id": "content.images.mosaic.2.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
+    },
+    {
+      "id": "content.images.mosaic.2.alt",
+      "text": "بهو داخلي لكتلة سكنية LPP، يتميز بكسوة جدران حجرية، لمسات خشبية عمودية، حوض نباتات مدمج، وأرضية رخامية مزخرفة تؤدي إلى باب أمان معدني مزخرف."
+    },
+    {
+      "id": "content.images.mosaic.2.caption",
+      "text": "التصميم الداخلي لبهو المدخل يظهر الكسوة الحجرية والتفاصيل الخشبية."
+    },
+    {
+      "id": "content.images.mosaic.3.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
+    },
+    {
+      "id": "content.images.mosaic.3.alt",
+      "text": "منظور من زاوية منخفضة للمبنى السكني المكتمل بصيغة R+9, يظهر الطلاء الخارجي، توزيع الشرفات، وفتحات النوافذ تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.mosaic.3.caption",
+      "text": "واجهة خارجية تظهر الكتل العمودية وتناسق الشرفات."
+    },
+    {
+      "id": "content.images.featureGallery.0.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/02-13.webp"
+    },
+    {
+      "id": "content.images.featureGallery.0.alt",
+      "text": "كتلتان سكنيتان مكتملتان بصيغة R+9 بواجهات بيضاء، زرقاء، وخوخية، تظهران من منطقة غير معبدة بالموقع تحتوي على مواد بناء."
+    },
+    {
+      "id": "content.images.featureGallery.0.caption",
+      "text": "الكتل السكنية المكتملة قبل التنظيف النهائي للموقع."
+    },
+    {
+      "id": "content.images.featureGallery.1.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
+    },
+    {
+      "id": "content.images.featureGallery.1.alt",
+      "text": "بهو داخلي لكتلة سكنية LPP، يتميز بكسوة جدران حجرية، لمسات خشبية عمودية، حوض نباتات مدمج، وأرضية رخامية مزخرفة تؤدي إلى باب أمان معدني مزخرف."
+    },
+    {
+      "id": "content.images.featureGallery.1.caption",
+      "text": "التصميم الداخلي لبهو المدخل يظهر الكسوة الحجرية والتفاصيل الخشبية."
+    },
+    {
+      "id": "content.images.featureGallery.2.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
+    },
+    {
+      "id": "content.images.featureGallery.2.alt",
+      "text": "منظور من زاوية منخفضة للمبنى السكني المكتمل بصيغة R+9, يظهر الطلاء الخارجي، توزيع الشرفات، وفتحات النوافذ تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.featureGallery.2.caption",
+      "text": "واجهة خارجية تظهر الكتل العمودية وتناسق الشرفات."
+    },
+    {
+      "id": "content.images.featureGallery.3.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
+    },
+    {
+      "id": "content.images.featureGallery.3.alt",
+      "text": "لقطة من زاوية منخفضة لواجهة كتلة سكنية بصيغة R+9 في سيدي عبد الله، تظهر طلاءً باللونين البيج والخوخي، شرفات غائرة بدرابزين معدني داكن، وإضاءة خارجية."
+    },
+    {
+      "id": "content.images.featureGallery.3.caption",
+      "text": "تفاصيل واجهة الكتل السكنية الترقوية العمومية بصيغة R+9."
+    },
+    {
+      "id": "content.images.constructionGallery.0.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.0.alt",
+      "text": "بوابة مدخل لكتلة سكنية مكتملة حديثاً، تظهر باب أمان معدني داكن، إطارات مكسوة بالحجر، وأرضية داخلية مبلطة."
+    },
+    {
+      "id": "content.images.constructionGallery.0.caption",
+      "text": "بوابة المدخل المكتملة ونظام مراقبة الدخول بالطابق الأرضي."
+    },
+    {
+      "id": "content.images.constructionGallery.1.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.1.alt",
+      "text": "بهو داخلي لكتلة سكنية LPP، يتميز بكسوة جدران حجرية، لمسات خشبية عمودية، حوض نباتات مدمج، وأرضية رخامية مزخرفة تؤدي إلى باب أمان معدني مزخرف."
+    },
+    {
+      "id": "content.images.constructionGallery.1.caption",
+      "text": "التصميم الداخلي لبهو المدخل يظهر الكسوة الحجرية والتفاصيل الخشبية."
+    },
+    {
+      "id": "content.images.constructionGallery.2.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.2.alt",
+      "text": "منظور من زاوية منخفضة للمبنى السكني المكتمل بصيغة R+9, يظهر الطلاء الخارجي، توزيع الشرفات، وفتحات النوافذ تحت سماء غائمة."
+    },
+    {
+      "id": "content.images.constructionGallery.2.caption",
+      "text": "واجهة خارجية تظهر الكتل العمودية وتناسق الشرفات."
+    },
+    {
+      "id": "content.images.constructionGallery.3.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
+    },
+    {
+      "id": "content.images.constructionGallery.3.alt",
+      "text": "لقطة من زاوية منخفضة لواجهة كتلة سكنية بصيغة R+9 في سيدي عبد الله، تظهر طلاءً باللونين البيج والخوخي، شرفات غائرة بدرابزين معدني داكن، وإضاءة خارجية."
+    },
+    {
+      "id": "content.images.constructionGallery.3.caption",
+      "text": "تفاصيل واجهة الكتل السكنية الترقوية العمومية بصيغة R+9."
+    },
+    {
+      "id": "content.images.featured.0.src",
+      "text": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
+    },
+    {
+      "id": "content.images.featured.0.alt",
+      "text": "لقطة من زاوية منخفضة لواجهة كتلة سكنية بصيغة R+9 في سيدي عبد الله، تظهر طلاءً باللونين البيج والخوخي، شرفات غائرة بدرابزين معدني داكن، وإضاءة خارجية."
+    },
+    {
+      "id": "content.images.featured.0.caption",
+      "text": "تفاصيل واجهة الكتل السكنية الترقوية العمومية بصيغة R+9."
+    }
+  ]
+}

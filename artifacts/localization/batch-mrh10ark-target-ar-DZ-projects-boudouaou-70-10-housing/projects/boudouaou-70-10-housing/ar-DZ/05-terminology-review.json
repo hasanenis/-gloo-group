@@ -1,0 +1,10 @@
+{
+  "jobId": "batch-mrh10ark-target-ar-DZ-projects-boudouaou-70-10-housing",
+  "pageId": "projects/boudouaou-70-10-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fea0f87f",
+  "generatedAt": "2026-07-11T23:59:12.382Z",
+  "status": "pass",
+  "issues": []
+}

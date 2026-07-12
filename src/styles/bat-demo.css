@@ -42,6 +42,34 @@ html.bat-demo-scroll-locked body {
   overflow-x: clip;
 }
 
+html[lang='ar-DZ'] .bat-demo-page {
+  --bat-font-display: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+  --bat-font-sans: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+  --bat-font-hero: 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif;
+}
+
+html[lang='ar-DZ'] .bat-demo-hero__copy,
+html[lang='ar-DZ'] .bat-demo-hero__info,
+html[lang='ar-DZ'] .bat-demo-menu__panel,
+html[lang='ar-DZ'] .bat-demo-footer {
+  direction: rtl;
+}
+
+html[lang='ar-DZ'] .bat-demo-hero__title,
+html[lang='ar-DZ'] .bat-demo-hero__pretitle,
+html[lang='ar-DZ'] .bat-demo-hero__tab,
+html[lang='ar-DZ'] .bat-demo-hero__fact-label,
+html[lang='ar-DZ'] .bat-demo-hero__fact-value,
+html[lang='ar-DZ'] .bat-demo-menu__link,
+html[lang='ar-DZ'] .bat-demo-menu__section-link,
+html[lang='ar-DZ'] .bat-demo-menu__small,
+html[lang='ar-DZ'] .bat-demo-footer__title,
+html[lang='ar-DZ'] .bat-demo-footer__small {
+  letter-spacing: 0;
+  text-transform: none;
+  unicode-bidi: plaintext;
+}
+
 .bat-demo-shell {
   position: relative;
   isolation: isolate;

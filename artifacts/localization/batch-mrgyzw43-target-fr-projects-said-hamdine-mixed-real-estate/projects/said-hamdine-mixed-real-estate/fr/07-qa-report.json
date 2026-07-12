@@ -1,0 +1,17 @@
+{
+  "jobId": "batch-mrgyzw43-target-fr-projects-said-hamdine-mixed-real-estate",
+  "pageId": "projects/said-hamdine-mixed-real-estate",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-09f6117f",
+  "generatedAt": "2026-07-11T23:02:54.446Z",
+  "model": "gemini-3.5-flash",
+  "status": "review",
+  "issues": [
+    {
+      "id": "content.facilityGroups.0.items.0",
+      "severity": "blocker",
+      "message": "The field contains untranslated English text: 'five-block mixed-use structural delivery'. It must be translated into formal French used in Algeria."
+    }
+  ]
+}

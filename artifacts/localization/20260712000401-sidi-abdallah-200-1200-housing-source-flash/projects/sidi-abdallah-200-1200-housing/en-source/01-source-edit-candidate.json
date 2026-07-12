@@ -1,0 +1,184 @@
+{
+  "jobId": "20260712000401-sidi-abdallah-200-1200-housing-source-flash",
+  "pageId": "projects/sidi-abdallah-200-1200-housing",
+  "locale": "en",
+  "sourceRevision": "v1-8e82a8d4",
+  "generatedAt": "2026-07-11T21:04:02.880Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "bbf015bdee07a17c",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "200/1200 Promotional Public Housing",
+    "description": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a residential and mixed-use delivery model.",
+    "socialTitle": "200/1200 Promotional Public Housing",
+    "socialDescription": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a residential and mixed-use delivery model."
+  },
+  "content": {
+    "slug": "sidi-abdallah-200-1200-housing",
+    "title": "200/1200 Promotional Public Housing",
+    "eyebrow": "MIXED-USE PROJECT",
+    "summary": [
+      "A 200-home delivery within the wider 1,200-home Sidi Abdallah programme, combining public promotional housing with commercial and professional premises.",
+      "Sidi Abdallah integrates public promotional housing within a growing urban hub, featuring R+9 buildings, F3 and F4 apartments, and everyday service spaces."
+    ],
+    "description": [
+      "The project focuses on finishing works for a dense housing development, integrating facades, interiors, technical trades, and commercial premises within a larger master programme.",
+      "By pairing family housing with professional and retail spaces, the development supports a local economy rather than a purely residential block structure."
+    ],
+    "authority": "A public housing delivery where secondary trades, service premises, and R+9 density work together to support a new urban district.",
+    "seo": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a residential and mixed-use delivery model.",
+    "meta": [
+      {
+        "label": "Project type",
+        "value": "Promotional Public Housing (LPP) units."
+      }
+    ],
+    "details": [
+      {
+        "label": "Project type",
+        "value": "Public promotional housing (LPP)"
+      },
+      {
+        "label": "Location",
+        "value": "Sidi Abdallah, Algiers, Algeria"
+      },
+      {
+        "label": "Programme",
+        "value": "200 homes within a 1,200-home programme"
+      },
+      {
+        "label": "Completion",
+        "value": "2022"
+      },
+      {
+        "label": "Building type",
+        "value": "R+9 residential buildings"
+      },
+      {
+        "label": "Works",
+        "value": "Secondary trades, excluding VRD."
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Project programme",
+        "items": [
+          "200 LPP homes delivered within a 1,200-home programme",
+          "R+9 buildings with F3 and F4 apartments",
+          "Commercial and professional premises",
+          "Completed in 2022 to technical standards"
+        ]
+      }
+    ],
+    "nearby": null,
+    "faq": [
+      {
+        "question": "What is 200/1200 Promotional Public Housing?",
+        "answer": "A 200-home delivery within the wider 1,200-home Sidi Abdallah programme, combining public promotional housing with commercial and professional premises."
+      },
+      {
+        "question": "What was the project scope?",
+        "answer": "The project focuses on finishing works for a dense housing development, integrating facades, interiors, technical trades, and commercial premises within a larger master programme."
+      },
+      {
+        "question": "What makes the project notable?",
+        "answer": "Sidi Abdallah integrates public promotional housing within a growing urban hub, featuring R+9 buildings, F3 and F4 apartments, and everyday service spaces."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows.",
+          "caption": "Modern public housing facade with distinctive architectural elements."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "A tall, modern public housing building viewed from a low angle, featuring light-colored walls with black and peach accents, multiple balconies with dark railings, and illuminated interior lights visible through some windows, set against a grey, overcast sky.",
+          "caption": "Modern public housing architecture with distinctive facade and balconies."
+        }
+      ],
+      "intro": {
+        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+        "alt": "Interior common area of a public housing building with light-colored stone walls, vertical wooden accents, a built-in planter, and a patterned marble floor leading to an ornate metal screen door.",
+        "caption": "Modern and inviting common area interior."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
+          "alt": "Interior common area of a public housing building with a central elevator, wooden mailboxes on the left, and a decorative metal railing on an upper floor. The space features marble and stone cladding, recessed lighting, and a tree-motif mural.",
+          "caption": "Elegant common areas and amenities in the public housing development."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
+          "alt": "A wide shot showing several tall, multi-story apartment buildings with beige, dark blue, and peach-colored facades. The buildings are set on a construction site with reddish-brown dirt, piles of red pipes, concrete blocks, and a white construction truck and yellow excavator visible. Two men are walking in the foreground. The sky is overcast.",
+          "caption": "Public housing development nearing completion with ongoing site infrastructure work."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Interior common area of a public housing building with light-colored stone walls, vertical wooden accents, a built-in planter, and a patterned marble floor leading to an ornate metal screen door.",
+          "caption": "Modern and inviting common area interior."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "A tall, modern public housing building viewed from a low angle, featuring light-colored walls with black and peach accents, multiple balconies with dark railings, and illuminated interior lights visible through some windows, set against a grey, overcast sky.",
+          "caption": "Modern public housing architecture with distinctive facade and balconies."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
+          "alt": "Two tall, modern public housing buildings with white, blue, and peach-colored facades against a bright blue sky. The foreground shows dirt piles and construction materials, indicating ongoing site work.",
+          "caption": "Modern public housing buildings with ongoing site work."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Interior common area of a public housing building with light-colored stone walls, vertical wooden accents, a built-in planter, and a patterned marble floor leading to an ornate metal screen door.",
+          "caption": "Modern and inviting common area interior."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "A tall, modern public housing building viewed from a low angle, featuring light-colored walls with black and peach accents, multiple balconies with dark railings, and illuminated interior lights visible through some windows, set against a grey, overcast sky.",
+          "caption": "Modern public housing architecture with distinctive facade and balconies."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows.",
+          "caption": "Modern public housing facade with distinctive architectural elements."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
+          "alt": "Front entrance of a newly constructed public housing unit with a dark metal door, stone-clad exterior walls, and a view into a bright, tiled interior.",
+          "caption": "Welcoming entrance to a new public housing unit."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
+          "alt": "Interior common area of a public housing building with light-colored stone walls, vertical wooden accents, a built-in planter, and a patterned marble floor leading to an ornate metal screen door.",
+          "caption": "Modern and inviting common area interior."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
+          "alt": "A tall, modern public housing building viewed from a low angle, featuring light-colored walls with black and peach accents, multiple balconies with dark railings, and illuminated interior lights visible through some windows, set against a grey, overcast sky.",
+          "caption": "Modern public housing architecture with distinctive facade and balconies."
+        },
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows.",
+          "caption": "Modern public housing facade with distinctive architectural elements."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
+          "alt": "A tall, contemporary apartment building viewed from below, showcasing its beige and peach exterior with black accents, multiple balconies, and illuminated windows.",
+          "caption": "Modern public housing facade with distinctive architectural elements."
+        }
+      ]
+    }
+  },
+  "model": "gemini-2.5-flash"
+}

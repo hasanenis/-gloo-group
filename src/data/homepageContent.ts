@@ -1,4 +1,5 @@
 import { pickLocaleText, type Locale } from '../i18n/runtime';
+import { getPageContent } from '../content';
 
 /**
  * Localized homepage/about/contact copy. English and French are always
@@ -29,132 +30,132 @@ export type HomepageProof = {
   body: HomepageText;
 };
 
-export const homepageContent = {
+const legacyHomepageContent = {
   hero: {
     eyebrow: {
       en: 'SARL Igloo Yapi Construction',
       fr: 'SARL Igloo Yapi Construction',
       dz: 'SARL Igloo Yapi Construction',
-      tr: 'SARL Igloo Yapi Construction',
+      tr: 'SARL Igloo Yapı Construction',
     },
     title: {
       en: 'Building for Algeria. Built to last.',
-      fr: 'Construire pour l’Algérie. Bâtir pour durer.',
+      fr: "Construire pour l'Algérie. Bâtir pour durer.",
       dz: 'نبنيو للجزائر. بناء يدوم.',
-      tr: 'Cezayir için inşa ediyoruz. Kalıcı olsun diye.',
+      tr: 'Cezayir için inşa ediyoruz. Sağlam ve uzun ömürlü.',
     },
     lead: {
       en: 'Residential and mixed-use programmes delivered with engineering control, site discipline and long-term construction quality across Algeria.',
-      fr: 'Des programmes résidentiels et mixtes réalisés avec maîtrise technique, discipline de chantier et qualité durable en Algérie.',
+      fr: "Partout en Algérie, nous réalisons des programmes résidentiels et mixtes avec une maîtrise rigoureuse des études, du chantier et de la qualité d'exécution.",
       dz: 'برامج سكنية ومختلطة نسلّموها بمراقبة هندسية، انضباط في الورشة وجودة بناء تدوم عبر كامل الجزائر.',
-      tr: 'Cezayir genelinde mühendislik kontrolü, saha disiplini ve uzun ömürlü inşaat kalitesiyle teslim edilen konut ve karma kullanım programları.',
+      tr: "Cezayir'in farklı bölgelerinde, mühendislik disiplini, şantiye kontrolü ve uzun ömürlü kalite anlayışıyla konut ve karma kullanım projeleri inşa ediyoruz.",
     },
     primaryCta: {
       en: 'Explore projects',
-      fr: 'Voir les projets',
+      fr: 'Découvrir nos projets',
       dz: 'شوف المشاريع',
-      tr: 'Projeleri keşfedin',
+      tr: 'Projeleri İnceleyin',
     },
     secondaryCta: {
       en: 'Contact team',
-      fr: 'Contacter l’équipe',
+      fr: 'Contacter notre équipe',
       dz: 'تواصل مع الفريق',
-      tr: 'Ekiple iletişime geçin',
+      tr: 'Bize Ulaşın',
     },
     trustFacts: [
-      { value: 'Est. 2018', label: { en: 'Algiers-based', fr: 'Basée à Alger', dz: 'مقرها الجزائر العاصمة', tr: 'Cezayir merkezli' } },
+      { value: 'Est. 2018', label: { en: 'Algiers-based', fr: 'Implantée à Alger', dz: 'مقرها الجزائر العاصمة', tr: 'Cezayir merkezli' } },
       { value: '11', label: { en: 'projects', fr: 'projets', dz: 'مشاريع', tr: 'proje' } },
-      { value: '2,500+', label: { en: 'housing units', fr: 'logements', dz: 'وحدة سكنية', tr: 'konut birimi' } },
-      { value: '4', label: { en: 'wilayas covered', fr: 'wilayas couvertes', dz: 'ولايات مغطّاة', tr: 'kapsanan il' } },
-      { value: 'Category 6', label: { en: 'certified contractor', fr: 'entreprise certifiée', dz: 'مقاول مصنّف', tr: 'sertifikalı yüklenici' } },
+      { value: '2,500+', label: { en: 'housing units', fr: 'logements', dz: 'وحدة سكنية', tr: 'konut' } },
+      { value: '4', label: { en: 'wilayas covered', fr: 'wilayas couvertes', dz: 'ولايات مغطّاة', tr: 'vilayet' } },
+      { value: 'Category 6', label: { en: 'certified contractor', fr: 'Entreprise qualifiée', dz: 'مقاول مصنّف', tr: 'sertifikalı yüklenici' } },
     ] satisfies HomepageMetric[],
   },
   manifesto: {
     eyebrow: {
       en: 'Construction with proof',
-      fr: 'Construction avec preuves',
+      fr: 'Le savoir-faire en actes',
       dz: 'بناء بالدليل',
-      tr: 'Kanıtlı inşaat',
+      tr: 'İşimiz, kanıtımız.',
     },
     title: {
       en: 'We build the framework for durable everyday life.',
-      fr: 'Nous bâtissons le cadre d’une vie quotidienne durable.',
+      fr: 'Nous bâtissons des lieux de vie pensés pour durer.',
       dz: 'نبنيو الإطار تاع حياة يومية تدوم.',
-      tr: 'Kalıcı bir günlük yaşamın çerçevesini inşa ediyoruz.',
+      tr: 'Uzun ömürlü bir yaşamın temellerini atıyoruz.',
     },
     body: {
       en: 'From housing blocks and villas to commercial premises, roads and networks, Igloo coordinates the trades that turn a programme into a place that works.',
-      fr: 'Des immeubles résidentiels aux villas, des locaux commerciaux aux voiries et réseaux, Igloo coordonne les corps de métier qui transforment un programme en lieu fonctionnel.',
+      fr: "Immeubles résidentiels, villas, locaux commerciaux, voiries et réseaux : Igloo coordonne l'ensemble des corps de métier pour livrer des projets cohérents, fonctionnels et durables.",
       dz: 'من العمارات السكنية والفيلات للمحلات التجارية، الطرقات والشبكات، Igloo تنسّق بين الحرفيين باش تحوّل البرنامج لمكان يخدم بصحّ.',
-      tr: 'Konut bloklarından villalara, ticari alanlardan yollara ve altyapı ağlarına kadar Igloo, bir programı işleyen bir mekâna dönüştüren tüm iş kollarını koordine eder.',
+      tr: 'Konut bloklarından villalara, ticari birimlerden yol ve altyapı işlerine kadar Igloo, bir projeyi sahada işler hale getiren tüm disiplinleri aynı yapım düzeni içinde koordine eder.',
     },
     credential: {
       en: 'Professional Qualification and Classification Certificate, Category 6',
-      fr: 'Certificat de qualification et de classification professionnelles, catégorie 6',
+      fr: 'Certificat de qualification et de classification professionnelles – Catégorie 6',
       dz: 'شهادة التأهيل والتصنيف المهني، الفئة 6',
       tr: 'Mesleki Yeterlilik ve Sınıflandırma Belgesi, Kategori 6',
     },
     metrics: [
       {
         value: '2018',
-        label: { en: 'founded in Algiers', fr: 'création à Alger', dz: 'تأسّست في الجزائر العاصمة', tr: 'Cezayir\'de kuruldu' },
-        detail: { en: 'Bir Khadem operational base', fr: 'base opérationnelle à Bir Khadem', dz: 'قاعدة العمل في بئر خادم', tr: 'Bir Khadem operasyon merkezi' },
+        label: { en: 'founded in Algiers', fr: 'Fondée à Alger', dz: 'تأسّست في الجزائر العاصمة', tr: 'Kuruluş: Cezayir' },
+        detail: { en: 'Bir Khadem operational base', fr: 'Base opérationnelle à Bir Khadem', dz: 'قاعدة العمل في بئر خادم', tr: 'Bir Khadem Merkez Ofis' },
       },
       {
         value: '11',
-        label: { en: 'portfolio projects', fr: 'projets au portefeuille', dz: 'مشاريع في المحفظة', tr: 'portföy projesi' },
-        detail: { en: 'completed and current programmes', fr: 'programmes livrés et en cours', dz: 'برامج مسلّمة وأخرى قيد الإنجاز', tr: 'tamamlanan ve devam eden programlar' },
+        label: { en: 'portfolio projects', fr: 'Projets réalisés ou en cours', dz: 'مشاريع في المحفظة', tr: 'Proje' },
+        detail: { en: 'completed and current programmes', fr: 'Programmes livrés et en cours', dz: 'برامج مسلّمة وأخرى قيد الإنجاز', tr: 'Tamamlanan ve Devam Eden Projeler' },
       },
       {
         value: '2,500+',
-        label: { en: 'housing units connected to programmes', fr: 'logements liés aux programmes', dz: 'وحدة سكنية مرتبطة بالبرامج', tr: 'programlara bağlı konut birimi' },
-        detail: { en: 'residential and mixed-use scope', fr: 'portée résidentielle et mixte', dz: 'نطاق سكني ومختلط', tr: 'konut ve karma kullanım kapsamı' },
+        label: { en: 'housing units connected to programmes', fr: 'Logements réalisés ou en cours', dz: 'وحدة سكنية مرتبطة بالبرامج', tr: 'Konut' },
+        detail: { en: 'residential and mixed-use scope', fr: 'Programmes résidentiels et mixtes', dz: 'نطاق سكني ومختلط', tr: 'Konut ve Karma Kullanım Projeleri' },
       },
       {
         value: '4',
-        label: { en: 'wilayas represented', fr: 'wilayas représentées', dz: 'ولايات ممثّلة', tr: 'temsil edilen il' },
-        detail: { en: 'Tipaza, Algiers, Mostaganem, Boumerdes', fr: 'Tipaza, Alger, Mostaganem, Boumerdes', dz: 'تيبازة، الجزائر العاصمة، مستغانم، بومرداس', tr: 'Tipaza, Cezayir, Mostaganem, Bumerdes' },
+        label: { en: 'wilayas represented', fr: 'Wilayas couvertes', dz: 'ولايات ممثّلة', tr: 'Vilayet' },
+        detail: { en: 'Tipaza, Algiers, Mostaganem, Boumerdes', fr: 'Tipaza, Alger, Mostaganem, Boumerdès', dz: 'تيبازة، الجزائر العاصمة، مستغانم، بومرداس', tr: 'Tipaza, Cezayir, Mostaganem, Bumerdes' },
       },
     ] satisfies HomepageMetric[],
   },
   featuredProjects: {
     eyebrow: {
       en: 'Selected work',
-      fr: 'Réalisations sélectionnées',
+      fr: 'Projets sélectionnés',
       dz: 'أعمال مختارة',
-      tr: 'Seçilmiş çalışmalar',
+      tr: 'Örnek Projeler',
     },
     title: {
       en: 'Built evidence, not promises.',
-      fr: 'Des références construites, pas des promesses.',
+      fr: 'Des réalisations concrètes, pas de simples promesses.',
       dz: 'دليل مبني، ماشي وعود.',
-      tr: 'Vaat değil, inşa edilmiş kanıt.',
+      tr: 'Söz değil, tamamlanmış işler.',
     },
     lead: {
       en: 'A portfolio of housing, villas, commercial premises, roads and networks, shown through real project scope and location proof.',
-      fr: 'Un portefeuille de logements, villas, locaux commerciaux, voiries et réseaux, présenté par portée réelle et localisation.',
+      fr: 'Explorez notre portfolio : logements, villas, locaux commerciaux, voiries et réseaux. Chaque projet est présenté avec son envergure et sa localisation réelles.',
       dz: 'محفظة تحتوي سكنات، فيلات، محلات تجارية، طرقات وشبكات، معروضة بنطاق حقيقي ودليل الموقع.',
-      tr: 'Gerçek proje kapsamı ve konum kanıtıyla gösterilen konut, villa, ticari alan, yol ve altyapı ağlarından oluşan bir portföy.',
+      tr: 'Gerçek proje verileri ve konum bilgileriyle desteklenen konut, villa, ticari yapı, yol ve altyapı projelerimiz.',
     },
   },
   process: {
     eyebrow: {
       en: 'Delivery discipline',
-      fr: 'Discipline de livraison',
+      fr: "Maîtrise de l'exécution",
       dz: 'انضباط التسليم',
-      tr: 'Teslim disiplini',
+      tr: 'Planlı ve Kontrollü Yapım',
     },
     title: {
       en: 'From first coordination to handover.',
-      fr: 'De la coordination initiale à la réception.',
+      fr: 'Des premières études à la réception des travaux',
       dz: 'من أول تنسيق حتى التسليم.',
-      tr: 'İlk koordinasyondan teslime kadar.',
+      tr: 'Planlamadan anahtar teslime.',
     },
     lead: {
       en: 'A clear technical structure keeps each programme moving through planning, engineering control, site execution and final delivery.',
-      fr: 'Une structure technique claire accompagne chaque programme de la planification au contrôle d’exécution, jusqu’à la livraison.',
+      fr: "Une organisation technique claire accompagne chaque opération, des études et de la coordination jusqu'à l'exécution, au contrôle et à la livraison.",
       dz: 'هيكلة تقنية واضحة تخلّي كل برنامج يتقدّم من التخطيط، المراقبة الهندسية، تنفيذ الورشة حتى التسليم النهائي.',
-      tr: 'Net bir teknik yapı, her programı planlamadan mühendislik kontrolüne, saha uygulamasından nihai teslime kadar ilerletir.',
+      tr: 'Her projeyi; planlama, mühendislik denetimi, şantiye uygulamaları ve tamamlama süreçlerini içeren net bir teknik yapıyla yönetiriz.',
     },
     steps: [
       {
@@ -163,13 +164,13 @@ export const homepageContent = {
           en: 'Pre-construction coordination',
           fr: 'Coordination avant travaux',
           dz: 'التنسيق قبل الانطلاق',
-          tr: 'İnşaat öncesi koordinasyon',
+          tr: 'İnşaat Öncesi Planlama',
         },
         body: {
           en: 'Scope, programme requirements, quantities and site constraints are aligned before work moves on site.',
           fr: 'La portée, les exigences du programme, les quantités et les contraintes du site sont alignées avant l’intervention.',
           dz: 'النطاق، متطلبات البرنامج، الكميات وقيود الورشة يتنسّقوا قبل ما تبدا الأشغال.',
-          tr: 'Kapsam, program gereksinimleri, miktarlar ve saha kısıtları, çalışma başlamadan önce uyumlu hale getirilir.',
+          tr: 'Saha çalışmalarına başlamadan önce işin kapsamını, proje gereksinimlerini, metrajları ve şantiye koşullarını netleştiririz.',
         },
       },
       {
@@ -178,13 +179,13 @@ export const homepageContent = {
           en: 'Engineering & TCE control',
           fr: 'Ingénierie & contrôle TCE',
           dz: 'الهندسة ومراقبة الأشغال الثانوية',
-          tr: 'Mühendislik ve TCE kontrolü',
+          tr: 'Mühendislik ve Tüm Disiplinlerin Kontrolü',
         },
         body: {
           en: 'Engineers, architects and technical managers coordinate secondary trades, structures, MEP, roads and networks.',
           fr: 'Ingénieurs, architectes et responsables techniques coordonnent les corps d’état, structures, MEP, voiries et réseaux.',
           dz: 'المهندسين، المعماريين والمسؤولين التقنيين ينسّقوا بين الحرف الثانوية، الهياكل، الشبكات، الطرقات.',
-          tr: 'Mühendisler, mimarlar ve teknik yöneticiler; ikincil işleri, yapıyı, tesisatı, yolları ve altyapı ağlarını koordine eder.',
+          tr: 'Mühendis, mimar ve teknik yöneticilerimiz; taşıyıcı sistem, tesisat (MEP), yollar, altyapı ve diğer tüm imalatların uyum içinde ilerlemesini sağlar.',
         },
       },
       {
@@ -193,13 +194,13 @@ export const homepageContent = {
           en: 'Site execution',
           fr: 'Exécution de chantier',
           dz: 'تنفيذ الورشة',
-          tr: 'Saha uygulaması',
+          tr: 'Şantiye Uygulamaları',
         },
         body: {
           en: 'Construction managers and site teams organise daily progress, trade sequencing and material movement.',
           fr: 'Les conducteurs de travaux et équipes de chantier organisent l’avancement, les enchaînements et les approvisionnements.',
           dz: 'مسؤولي الورشة والفرق ينظّموا التقدّم اليومي، ترتيب الحرف وحركة المواد.',
-          tr: 'Şantiye şefleri ve saha ekipleri, günlük ilerlemeyi, iş sıralamasını ve malzeme akışını düzenler.',
+          tr: 'Şantiye yöneticileri ve saha ekiplerimiz, günlük ilerlemeyi, imalatların sıralamasını ve malzeme akışını organize eder.',
         },
       },
       {
@@ -208,28 +209,28 @@ export const homepageContent = {
           en: 'Quality, safety & schedule monitoring',
           fr: 'Qualité, sécurité & planning',
           dz: 'مراقبة الجودة، السلامة والجدول الزمني',
-          tr: 'Kalite, güvenlik ve program takibi',
+          tr: 'Kalite, İş Güvenliği ve İş Programı Kontrolü',
         },
         body: {
           en: 'Delivery is tracked against technical requirements, safety rules, finish quality and contractual milestones.',
           fr: 'La livraison est suivie selon les exigences techniques, les règles de sécurité, la qualité de finition et les jalons contractuels.',
           dz: 'التسليم يتراقب حسب المتطلبات التقنية، قواعد السلامة، جودة التشطيب والمحطات التعاقدية.',
-          tr: 'Teslimat; teknik gereklilikler, güvenlik kuralları, işçilik kalitesi ve sözleşme kilometre taşlarına göre izlenir.',
+          tr: 'İmalatların ilerleyişini; teknik şartnamelere, güvenlik kurallarına, işçilik kalitesine ve sözleşmedeki terminlere göre denetleriz.',
         },
       },
       {
         id: 'handover',
         title: {
           en: 'Handover & aftercare',
-          fr: 'Réception & suivi',
+          fr: 'Réception et suivi',
           dz: 'التسليم والمتابعة',
-          tr: 'Teslim ve sonrası takip',
+          tr: 'Teslim ve Garanti Süreci',
         },
         body: {
           en: 'Final works are closed with practical readiness, documentation and attention to the long-term use of each place.',
-          fr: 'Les travaux finaux sont clôturés avec préparation pratique, documentation et attention à l’usage durable de chaque lieu.',
+          fr: "La réception des travaux finaux s'accompagne d'une préparation opérationnelle, d'une documentation complète et d'une attention particulière à la pérennité de chaque lieu.",
           dz: 'الأشغال الأخيرة تتقفل بجاهزية عملية، توثيق واهتمام بالاستعمال طويل المدى تاع كل مكان.',
-          tr: 'Son işler; pratik hazırlık, dokümantasyon ve her mekânın uzun vadeli kullanımına özen gösterilerek kapatılır.',
+          tr: 'Projelerimizi, yapıları kullanıma hazır hale getirerek, tüm belgeleri tamamlayarak ve her mekanın uzun ömürlü kullanımını gözeterek teslim ederiz.',
         },
       },
     ] satisfies HomepageProcessStep[],
@@ -237,19 +238,19 @@ export const homepageContent = {
   about: {
     eyebrow: {
       en: 'Company profile',
-      fr: 'Profil entreprise',
+      fr: "Présentation de l'entreprise",
       dz: 'ملف الشركة',
-      tr: 'Şirket profili',
+      tr: 'Şirket Profili',
     },
     title: {
       en: 'Built with expertise. Delivered with control.',
-      fr: 'Construit avec expertise. Livre avec maitrise.',
+      fr: 'Réalisé avec expertise. Livré avec maîtrise.',
       dz: 'مبني بالخبرة. مسلّم بمراقبة.',
-      tr: 'Uzmanlıkla inşa edildi. Kontrolle teslim edildi.',
+      tr: 'Uzmanlıkla inşa ederiz. Süreci kontrolle yönetiriz.',
     },
     credential: {
       en: 'Professional Qualification & Classification Certificate - Category 6',
-      fr: 'Certificat de qualification et classification - categorie 6',
+      fr: 'Certificat de qualification et de classification professionnelles – Catégorie 6',
       dz: 'شهادة التأهيل والتصنيف المهني - الفئة 6',
       tr: 'Mesleki Yeterlilik ve Sınıflandırma Belgesi - Kategori 6',
     },
@@ -258,55 +259,55 @@ export const homepageContent = {
         en: 'Founded in 2018 and managed by civil engineer Adem Talay, SARL Igloo Yapi Construction works from Bir Khadem, Algiers, on residential and mixed-use programmes across Algeria.',
         fr: 'Fondée en 2018 et dirigée par l’ingénieur en génie civil Adem Talay, SARL Igloo Yapi Construction intervient depuis Bir Khadem, Alger, sur des programmes résidentiels et mixtes en Algérie.',
         dz: 'تأسّست سنة 2018 ويسيّرها المهندس المدني آدم طالاي، SARL Igloo Yapi Construction تخدم من بئر خادم، الجزائر العاصمة، على برامج سكنية ومختلطة عبر كامل الجزائر.',
-        tr: 'İnşaat mühendisi Adem Talay tarafından yönetilen SARL Igloo Yapi Construction, 2018\'de kuruldu ve Bir Khadem, Cezayir merkezinden Cezayir genelinde konut ve karma kullanım programları yürütüyor.',
+        tr: "SARL Igloo Yapi Construction, 2018 yılında inşaat mühendisi Adem Talay tarafından kurulmuştur. Şirket, Cezayir'in Bir Khadem kentindeki merkezinden, ülke genelinde konut ve karma kullanım projeleri yürütmektedir.",
       },
       {
         en: 'The company holds a Professional Qualification and Classification Certificate, Category 6, and operates with a qualified building manager, engineers, architects, construction managers and site staff.',
-        fr: 'L’entreprise détient un Certificat de qualification et de classification professionnelles, catégorie 6, et s’appuie sur un responsable bâtiment, des ingénieurs, architectes, conducteurs de travaux et équipes de chantier.',
+        fr: 'L’entreprise détient un Certificat de qualification et de classification professionnelles, Catégorie 6, et s’appuie sur un responsable bâtiment, des ingénieurs, architectes, conducteurs de travaux et équipes de chantier.',
         dz: 'الشركة عندها شهادة التأهيل والتصنيف المهني، الفئة 6، وتخدم بمسؤول بناية مؤهّل، مهندسين، معماريين، مسؤولي ورشة وفرق ميدانية.',
-        tr: 'Şirket, Kategori 6 Mesleki Yeterlilik ve Sınıflandırma Belgesine sahiptir; yetkin bir bina yöneticisi, mühendisler, mimarlar, şantiye şefleri ve saha ekibiyle faaliyet gösterir.',
+        tr: 'Şirketimiz, Kategori 6 Mesleki Yeterlilik ve Sınıflandırma Belgesine sahiptir. Bünyesinde yetkin bir teknik müdür, mühendisler, mimarlar, şantiye yöneticileri ve saha personeli görev yapmaktadır.',
       },
     ] satisfies HomepageText[],
     metrics: [
       {
         value: '2018',
-        label: { en: 'Established', fr: 'Etablie', dz: 'تأسّست', tr: 'Kuruluş' },
+        label: { en: 'Established', fr: 'Établie', dz: 'تأسّست', tr: 'Kuruluş' },
       },
       {
         value: '11',
-        label: { en: 'Projects delivered and underway', fr: 'Projets livres et en cours', dz: 'مشاريع مسلّمة وقيد الإنجاز', tr: 'Teslim edilen ve devam eden proje' },
+        label: { en: 'Projects delivered and underway', fr: 'Projets livrés et en cours', dz: 'مشاريع مسلّمة وقيد الإنجاز', tr: 'Tamamlanan ve Devam Eden Projeler' },
       },
       {
         value: '2,500+',
-        label: { en: 'Homes delivered or underway', fr: 'Logements livres ou en cours', dz: 'سكنات مسلّمة أو قيد الإنجاز', tr: 'Teslim edilen veya devam eden konut' },
+        label: { en: 'Homes delivered or underway', fr: 'Logements livrés ou en cours', dz: 'سكنات مسلّمة أو قيد الإنجاز', tr: 'Tamamlanan ve İnşa Halindeki Konutlar' },
       },
     ] satisfies HomepageMetric[],
     proofs: [
       {
-        title: { en: 'Category 6 Contractor', fr: 'Entrepreneur categorie 6', dz: 'مقاول الفئة 6', tr: 'Kategori 6 Yüklenici' },
+        title: { en: 'Category 6 Contractor', fr: 'Entrepreneur Catégorie 6', dz: 'مقاول الفئة 6', tr: 'Kategori 6 Yüklenici' },
         body: {
           en: 'Professional Qualification and Classification Certificate, Category 6.',
-          fr: 'Certificat de qualification et de classification professionnelles, catégorie 6.',
+          fr: 'Certificat de qualification et de classification professionnelles, Catégorie 6.',
           dz: 'شهادة التأهيل والتصنيف المهني، الفئة 6.',
           tr: 'Mesleki Yeterlilik ve Sınıflandırma Belgesi, Kategori 6.',
         },
       },
       {
-        title: { en: 'Multidisciplinary Team', fr: 'Equipe pluridisciplinaire', dz: 'فريق متعدد الاختصاصات', tr: 'Çok Disiplinli Ekip' },
+        title: { en: 'Multidisciplinary Team', fr: 'Équipe pluridisciplinaire', dz: 'فريق متعدد الاختصاصات', tr: 'Çok Yönlü Ekip' },
         body: {
           en: 'Building manager, three engineers, two architects, construction managers, HR, accountant, buyer and site teams.',
-          fr: 'Responsable bâtiment, trois ingénieurs, deux architectes, conducteurs de travaux, RH, comptable, acheteur et équipes chantier.',
+          fr: 'Responsable de la construction, trois ingénieurs, deux architectes, conducteurs de travaux, RH, comptable, acheteur et équipes de chantier.',
           dz: 'مسؤول بناية، ثلاثة مهندسين، معماريّين، مسؤولي ورشة، موارد بشرية، محاسب، مشتري وفرق ميدانية.',
-          tr: 'Bina yöneticisi, üç mühendis, iki mimar, şantiye şefleri, İK, muhasebeci, satın alma sorumlusu ve saha ekipleri.',
+          tr: 'Proje yöneticisi, üç mühendis, iki mimar, şantiye şefleri, İK, muhasebe, satın alma ve saha ekipleri.',
         },
       },
       {
-        title: { en: 'Residential & Mixed-use Expertise', fr: 'Expertise residentielle et mixte', dz: 'خبرة سكنية ومختلطة', tr: 'Konut ve Karma Kullanım Uzmanlığı' },
+        title: { en: 'Residential & Mixed-use Expertise', fr: 'Expertise résidentielle et mixte', dz: 'خبرة سكنية ومختلطة', tr: 'Konut ve Karma Kullanım Uzmanlığı' },
         body: {
           en: 'Housing, villas, commercial premises, roads, networks, services and exterior works.',
           fr: 'Logements, villas, locaux commerciaux, voiries, réseaux, services et aménagements extérieurs.',
           dz: 'سكنات، فيلات، محلات تجارية، طرقات، شبكات، خدمات وتهيئة خارجية.',
-          tr: 'Konut, villa, ticari alan, yol, altyapı ağı, hizmetler ve dış mekân işleri.',
+          tr: 'Konutlar, villalar, ticari mekanlar, yollar, altyapı ağları ve çevre düzenleme işleri.',
         },
       },
     ] satisfies HomepageProof[],
@@ -314,21 +315,21 @@ export const homepageContent = {
   footprint: {
     eyebrow: {
       en: 'Project footprint',
-      fr: 'Empreinte projet',
+      fr: 'Empreinte du projet',
       dz: 'انتشار المشاريع',
-      tr: 'Proje ayak izi',
+      tr: 'Faaliyet Coğrafyamız',
     },
     title: {
       en: 'Algeria & Beyond',
-      fr: 'Algérie & au-delà',
+      fr: 'Algérie et au-delà',
       dz: 'الجزائر وأبعد',
-      tr: 'Cezayir ve Ötesi',
+      tr: 'Cezayir ve Çevresi',
     },
     lead: {
       en: 'Eleven project locations across four highlighted wilayas, with a dense Algiers delivery belt and active reach toward Mostaganem and Boumerdes.',
       fr: 'Onze implantations de projets dans quatre wilayas mises en évidence, avec une forte concentration autour d’Alger et une présence vers Mostaganem et Boumerdès.',
       dz: 'حداش موقع مشروع عبر أربع ولايات، بتركيز كبير حول الجزائر العاصمة وحضور فعّال نحو مستغانم وبومرداس.',
-      tr: 'Yoğun bir Cezayir teslim hattı ve Mostaganem ile Bumerdes\'e uzanan aktif kapsamla, dört öne çıkan ilde on bir proje konumu.',
+      tr: "Cezayir'in öne çıkan dört vilayetinde, on bir farklı lokasyonda projelerimiz bulunuyor. Başta Cezayir şehri çevresinde yoğunlaşan faaliyetlerimiz, Mostaganem ve Bumerdes yönünde genişleyerek devam ediyor.",
     },
     selectedLabel: {
       en: 'Selected project',
@@ -340,7 +341,7 @@ export const homepageContent = {
       en: 'Open project',
       fr: 'Voir le projet',
       dz: 'افتح المشروع',
-      tr: 'Projeyi aç',
+      tr: 'Projeyi Görüntüle',
     },
     statusCompleted: {
       en: 'Completed',
@@ -355,47 +356,47 @@ export const homepageContent = {
       tr: 'Devam ediyor',
     },
     stats: [
-      { value: '11', label: { en: 'project pins', fr: 'pins projet', dz: 'مواقع مشاريع', tr: 'proje işareti' } },
-      { value: '4', label: { en: 'highlighted wilayas', fr: 'wilayas mises en évidence', dz: 'ولايات بارزة', tr: 'öne çıkan il' } },
-      { value: '1', label: { en: 'north-coast delivery belt', fr: 'axe de livraison nord', dz: 'حزام التسليم الشمالي', tr: 'kuzey kıyı teslim hattı' } },
+      { value: '11', label: { en: 'project pins', fr: 'Marqueurs de projet', dz: 'مواقع مشاريع', tr: 'Proje Konumu' } },
+      { value: '4', label: { en: 'highlighted wilayas', fr: 'Wilayas phares', dz: 'ولايات بارزة', tr: 'Öne Çıkan Vilayetler' } },
+      { value: '1', label: { en: 'north-coast delivery belt', fr: 'Axe de livraison nord', dz: 'حزام التسليم الشمالي', tr: 'Kuzey Sahili Proje Bölgesi' } },
     ] satisfies HomepageMetric[],
   },
   footer: {
     eyebrow: {
       en: 'Project discussion',
-      fr: 'Discussion projet',
+      fr: 'Parlons projet',
       dz: 'نقاش مشروع',
-      tr: 'Proje görüşmesi',
+      tr: 'Proje Görüşmesi',
     },
     title: {
       en: 'Let’s discuss the next durable programme.',
       fr: 'Parlons du prochain programme durable.',
       dz: 'خلينا نحكيو على البرنامج الجاي اللي يدوم.',
-      tr: 'Bir sonraki kalıcı programı konuşalım.',
+      tr: 'Bir sonraki projeniz için görüşelim.',
     },
     lead: {
       en: 'Speak with an Algiers-based team experienced in residential, mixed-use, roads, networks and coordinated site delivery.',
       fr: 'Échangez avec une équipe basée à Alger, expérimentée dans les programmes résidentiels et mixtes, les voiries, les réseaux et la coordination de chantier.',
       dz: 'تواصل مع فريق مقره في الجزائر العاصمة، عنده خبرة في السكن، البرامج المختلطة، الطرقات، الشبكات وتنسيق الورشات.',
-      tr: 'Konut, karma kullanım, yollar, altyapı ağları ve koordineli saha tesliminde deneyimli Cezayir merkezli ekiple görüşün.',
+      tr: 'Konut, karma kullanım projeleri, yol, altyapı ağları ve koordineli şantiye yönetimi konularında deneyimli, Cezayir merkezli ekibimizle iletişime geçin.',
     },
     emailLabel: {
       en: 'Email Igloo',
       fr: 'E-mail Igloo',
       dz: 'راسل Igloo',
-      tr: 'Igloo’ya e-posta',
+      tr: 'E-posta Gönderin',
     },
     phoneLabel: {
       en: 'Call Algeria office',
-      fr: 'Appeler le bureau Algérie',
+      fr: "Appeler le bureau d'Alger",
       dz: 'عيّط لمكتب الجزائر',
-      tr: 'Cezayir ofisini ara',
+      tr: 'Cezayir Ofisini Arayın',
     },
     proofLine: {
       en: 'Bir Khadem, Algiers · Category 6 certified contractor · Residential and mixed-use delivery',
-      fr: 'Bir Khadem, Alger · Entreprise certifiée catégorie 6 · Réalisation résidentielle et mixte',
+      fr: 'Bir Khadem, Alger · Entreprise certifiée catégorie 6 · Réalisations résidentielles et mixtes',
       dz: 'بئر خادم، الجزائر · مقاول مصنّف درجة 6 · إنجاز سكني ومختلط',
-      tr: 'Bir Khadem, Cezayir · Kategori 6 sertifikalı yüklenici · Konut ve karma kullanım teslimi',
+      tr: 'Bir Khadem, Cezayir · Kategori 6 sertifikalı yüklenici · Konut ve karma kullanım projeleri',
     },
   },
 };
@@ -403,71 +404,99 @@ export const homepageContent = {
 export const homepageProjectProofs: Record<string, HomepageText> = {
   'douaouda-300-500-housing': {
     en: 'Assisted promotional housing in Douaouda with professional premises, exterior works and TCE delivery.',
-    fr: 'Logements promotionnels aidés à Douaouda avec locaux professionnels, aménagements extérieurs et réalisation TCE.',
+    fr: 'Logements promotionnels aidés à Douaouda, incluant locaux professionnels, aménagements extérieurs et réalisation TCE.',
     dz: 'سكنات ترقوية مدعّمة في الدواودة بمحلات مهنية، تهيئة خارجية وتسليم كامل الأشغال.',
-    tr: 'Douaouda\'da profesyonel alanlar, dış mekân işleri ve TCE teslimatıyla desteklenen promosyonel konut.',
+    tr: "Douaouda'da destekli konut (LPA) projesi: İş yerleri, çevre düzenlemesi ve tüm iş kalemlerini kapsayan anahtar teslimi uygulama.",
   },
   'sidi-abdallah-200-1200-housing': {
     en: 'Public promotional housing in Sidi Abdallah with R+9 buildings and commercial/professional premises.',
-    fr: 'Logements promotionnels publics à Sidi Abdellah avec bâtiments R+9 et locaux commerciaux/professionnels.',
+    fr: 'Logements promotionnels publics à Sidi Abdellah, avec bâtiments R+9 et locaux commerciaux/professionnels.',
     dz: 'سكنات ترقوية عمومية في سيدي عبد الله بعمارات أرضي+9 ومحلات تجارية/مهنية.',
-    tr: 'Sidi Abdallah\'da R+9 binalar ve ticari/profesyonel alanlarla kamu promosyonel konutu.',
+    tr: "Sidi Abdallah'da kamu konutu (LPP) projesi: Zemin+9 katlı binalar, ticari alanlar ve iş yerleri.",
   },
   'staoueli-11-41-villas': {
     en: 'Standing villa delivery at Les Pastorales with secondary trades, roads and utility networks.',
-    fr: 'Villas de standing aux Pastorales avec corps d’état secondaires, voiries et réseaux divers.',
+    fr: 'Villas de standing aux Pastorales, incluant corps d’état secondaires, voiries et réseaux divers.',
     dz: 'تسليم فيلات راقية في لي باستورال بحرف ثانوية، طرقات وشبكات متنوعة.',
-    tr: 'Les Pastorales\'de ikincil işler, yollar ve altyapı ağlarıyla üst düzey villa teslimatı.',
+    tr: "Les Pastorales'de lüks villa projesi: İnce işlerin, yolların ve altyapı ağlarının yapımı.",
   },
   rahmania: {
     en: 'Two commercial centres serving a 2,500-home residential programme in Douira, Algiers.',
-    fr: 'Deux centres commerciaux au sein d’un programme de 2 500 logements à Douera, Alger.',
+    fr: 'Deux centres commerciaux au sein d’un programme résidentiel de 2 500 logements à Douera, Alger.',
     dz: 'مركزين تجاريين يخدموا برنامج سكني تاع 2500 مسكن في الدويرة، الجزائر العاصمة.',
-    tr: 'Cezayir Douira\'da 2.500 konutluk bir yerleşim programına hizmet eden iki ticaret merkezi.',
+    tr: "Cezayir, Douira'daki 2.500 konutluk yerleşim alanına hizmet veren iki ticaret merkezi.",
   },
   'said-hamdine-mixed-real-estate': {
-    en: 'Five residential blocks, 202 free promotional units, commercial levels and two basement parking floors.',
-    fr: 'Cinq blocs résidentiels, 202 logements promotionnels libres, niveaux commerciaux et deux sous-sols de parking.',
-    dz: 'خمسة عمارات سكنية، 202 وحدة ترقوية حرة، طوابق تجارية وطابقين بارك تحت الأرض.',
-    tr: 'Beş konut bloğu, 202 serbest promosyonel birim, ticari katlar ve iki bodrum katı otopark.',
+    en: 'Five residential blocks, 202 free promotional units, one basement parking level and three commercial entre-sols with a mezzanine on a steeply sloping site.',
+    fr: 'Cinq blocs résidentiels, 202 logements promotionnels libres, un sous-sol de parking et trois entre-sols commerciaux avec mezzanine sur un terrain à forte pente.',
+    dz: 'خمسة عمارات سكنية، 202 وحدة ترقوية حرة، طابق سفلي واحد للمواقف وثلاثة طوابق تجارية نصفية مع ميزانين على أرضية شديدة الانحدار.',
+    tr: 'Beş konut bloğu, 202 serbest satışlı daire, bir bodrum otoparkı ve mezzaninli üç ticari ara kat; proje eğimli bir arazide yer alıyor.',
   },
   'rouiba-4-promotional-villas': {
     en: 'Four promotional villas in Rouiba delivered with TCE, VRD and exterior site works.',
-    fr: 'Quatre villas promotionnelles à Rouiba réalisées avec TCE, VRD et aménagements extérieurs.',
+    fr: 'Quatre villas promotionnelles à Rouiba, livrées avec TCE, VRD et aménagements extérieurs.',
     dz: 'أربع فيلات ترقوية في الرويبة، مسلّمة بكامل الأشغال، الشبكات والتهيئة الخارجية.',
-    tr: 'Ruiba\'da TCE, VRD ve dış saha işleriyle teslim edilen dört promosyonel villa.',
+    tr: "Rouiba'da dört serbest satışlı villa; tüm mühendislik (TCE), altyapı (VRD) ve çevre düzenleme işleriyle birlikte tamamlandı.",
   },
   'sidi-benour-50-housing': {
     en: 'High-rise R+13 residential delivery within the Sidi Benour promotional housing programme.',
-    fr: 'Réalisation résidentielle R+13 au sein du programme de logements promotionnels de Sidi Benour.',
+    fr: "Construction d'un ensemble résidentiel R+13 dans le cadre du programme de logements promotionnels de Sidi Benour.",
     dz: 'إنجاز سكني شاهق أرضي+13 ضمن برنامج سيدي بنور للسكن الترقوي.',
-    tr: 'Sidi Benour promosyonel konut programı kapsamında R+13 yüksek katlı konut teslimatı.',
+    tr: 'Sidi Benour serbest satışlı konut projesi kapsamında 13 katlı (R+13) bir konut bloğu tamamlandı.',
   },
   'dely-brahim-240-housing': {
     en: 'A 240-unit vertical residential programme with commercial areas, services and underground parking.',
-    fr: 'Un programme résidentiel vertical de 240 logements avec commerces, services et parking en sous-sol.',
+    fr: 'Un programme résidentiel vertical de 240 logements, comprenant des commerces, des services et un parking en sous-sol.',
     dz: 'برنامج سكني عمودي تاع 240 وحدة بمساحات تجارية، خدمات وبارك تحت الأرض.',
-    tr: 'Ticari alanlar, hizmetler ve yeraltı otoparkıyla 240 birimlik dikey konut programı.',
+    tr: '240 daireli konut projesi; ticari alanlar, sosyal donatılar ve kapalı otopark içeriyor.',
   },
   'bas-mazagran-200-38-housing': {
-    en: 'A seven-block Mostaganem programme combining assisted and free promotional housing with commercial premises.',
-    fr: 'Un programme de sept blocs à Mostaganem associant logements aidés, logements libres et locaux commerciaux.',
-    dz: 'برنامج سبعة عمارات في مستغانم يجمع بين السكن المدعّم، الحر ومحلات تجارية.',
-    tr: 'Mostaganem\'de yardımlı ve serbest promosyonel konutu ticari alanlarla birleştiren yedi bloklu program.',
+    en: 'A seven-block seaside programme in Mostaganem, combining assisted and free promotional housing with commercial premises and now entering delivery phase.',
+    fr: 'Un programme balnéaire de sept blocs à Mostaganem, associant logements aidés, logements libres et locaux commerciaux, actuellement en phase de livraison.',
+    dz: 'برنامج ساحلي من سبع عمارات في مستغانم يجمع بين السكن المدعّم والسكن الحر والمحلات التجارية، وهو الآن في مرحلة التسليم.',
+    tr: "Mostaganem'de deniz kıyısındaki yedi bloklu proje; LPA ve LPL konutları ile ticari alanları kapsıyor ve teslim aşamasına girdi.",
   },
   'reghaia-bouraada-250-housing': {
     en: 'A 250-unit Reghaia programme with commercial premises, concierge spaces and multi-block execution.',
-    fr: 'Un programme de 250 logements à Reghaia avec locaux commerciaux, conciergeries et exécution multi-blocs.',
+    fr: 'Un programme de 250 logements à Reghaia, incluant des locaux commerciaux, des conciergeries et une réalisation sur plusieurs blocs.',
     dz: 'برنامج 250 وحدة في الرغاية بمحلات تجارية، فضاءات حراسة وتنفيذ متعدد العمارات.',
-    tr: 'Ticari alanlar, kapıcı bölümleri ve çok bloklu uygulamayla Reghaia\'da 250 birimlik program.',
+    tr: "Reghaia'da 250 konutluk, çok bloklu bir proje. Ticari alanlar ve danışma hizmet birimleri de içeriyor.",
   },
   'boudouaou-70-10-housing': {
     en: 'A Boumerdes programme of 70 assisted and 10 free promotional units with commercial/professional premises.',
-    fr: 'Un programme à Boumerdès de 70 logements aidés et 10 libres avec locaux commerciaux/professionnels.',
+    fr: 'Un programme à Boumerdès de 70 logements aidés et 10 logements promotionnels libres, avec des locaux commerciaux ou professionnels.',
     dz: 'برنامج في بومرداس تاع 70 وحدة مدعّمة و10 حرة بمحلات تجارية/مهنية.',
-    tr: 'Bumerdes\'de ticari/profesyonel alanlarla 70 yardımlı ve 10 serbest promosyonel birim programı.',
+    tr: "Boumerdes'te 70 destekli (LPA) ve 10 serbest satışlı (LPL) konutun yanı sıra ticari ve ofis alanlarını barındıran bir proje.",
   },
 };
+
+function localizedHomeNode(path: string, locale: Locale): unknown {
+  const content = getPageContent<Record<string, unknown>>('home', locale).content;
+  if (!path) return content;
+  return path.split('.').reduce<unknown>((current, segment) => {
+    if (!current || typeof current !== 'object') return undefined;
+    return (current as Record<string, unknown>)[segment];
+  }, content);
+}
+
+function buildLocalizedHomeNode(path = ''): unknown {
+  const english = localizedHomeNode(path, 'en');
+  if (typeof english === 'string') {
+    // Numeric metrics and stable step identifiers are facts/keys, not copy.
+    // Keep them scalar so existing presentation components never receive a
+    // `{ en, fr, ... }` object where they expect a React key or a number.
+    if (path.endsWith('.value') || path.endsWith('.id')) return english;
+    return Object.fromEntries((['en', 'fr', 'tr', 'ar-DZ'] as const).map((locale) => [locale, localizedHomeNode(path, locale)]));
+  }
+  if (Array.isArray(english)) return english.map((_, index) => buildLocalizedHomeNode(path ? `${path}.${index}` : String(index)));
+  if (english && typeof english === 'object') {
+    return Object.fromEntries(Object.keys(english as Record<string, unknown>).map((key) => [key, buildLocalizedHomeNode(path ? `${path}.${key}` : key)]));
+  }
+  return english;
+}
+
+/** Canonical page JSON projected into the legacy component shape during migration. */
+export const homepageContent = buildLocalizedHomeNode() as typeof legacyHomepageContent;
 
 export function localize(value: HomepageText, locale: Locale): string {
   return pickLocaleText(locale, value);

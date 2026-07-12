@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrgznrga-target-tr-about",
+  "pageId": "about",
+  "target": "tr",
+  "shared": false,
+  "sourceRevision": "v1-b8ec0e5d",
+  "generatedAt": "2026-07-11T23:21:27.914Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "SARL Igloo Yapi Construction | Kurumsal Profil"
+    },
+    {
+      "id": "seo.description",
+      "text": "Entegre mühendislik, tedarik ve şantiye operasyonları aracılığıyla konut ve karma kullanım projeleri gerçekleştiren Cezayirli inşaat şirketi."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "SARL Igloo Yapi Construction | Kurumsal Profil"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Entegre mühendislik, tedarik ve şantiye operasyonları aracılığıyla konut ve karma kullanım projeleri gerçekleştiren Cezayirli inşaat şirketi."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "Kurumsal Profil"
+    },
+    {
+      "id": "content.heading",
+      "text": "Entegre mühendislik ve şantiye uygulama ekipleri."
+    },
+    {
+      "id": "content.body",
+      "text": "2018 yılında Cezayir'de kurulan SARL Igloo Yapi Construction, koordineli mühendislik, tedarik ve şantiye ekipleri aracılığıyla konut ve karma kullanım projeleri gerçekleştirmektedir."
+    }
+  ]
+}

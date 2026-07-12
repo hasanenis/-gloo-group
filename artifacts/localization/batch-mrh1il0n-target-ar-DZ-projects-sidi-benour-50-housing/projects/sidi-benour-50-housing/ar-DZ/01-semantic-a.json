@@ -1,0 +1,527 @@
+{
+  "jobId": "batch-mrh1il0n-target-ar-DZ-projects-sidi-benour-50-housing",
+  "pageId": "projects/sidi-benour-50-housing",
+  "target": "ar-DZ",
+  "shared": false,
+  "sourceRevision": "v1-fae028a7",
+  "generatedAt": "2026-07-12T00:13:25.520Z",
+  "provider": "google-cloud-translation",
+  "segments": [
+    {
+      "path": "seo.title",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 وحدة سكنية ترويجية مجانية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.description",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "التفاصيل الفنية، والتنفيذ الإنشائي، ومراحل الإنجاز في الموقع لمشروع الوحدات السكنية الترقوية الحرة الخمسين في سيدي بنور، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialTitle",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 وحدة سكنية ترويجية مجانية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "seo.socialDescription",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "التفاصيل الفنية، والتنفيذ الإنشائي، ومراحل الإنجاز في الموقع لمشروع الوحدات السكنية الترقوية الحرة الخمسين في سيدي بنور، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.slug",
+      "source": "sidi-benour-50-housing",
+      "draft": "مشروع 50 وحدة سكنية في سيدي بنور",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.title",
+      "source": "50 Free Promotional Housing Units",
+      "draft": "50 وحدة سكنية ترويجية مجانية",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.eyebrow",
+      "source": "RESIDENTIAL PROJECT",
+      "draft": "مشروع سكني",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.0",
+      "source": "A 50-home R+13 residential delivery in Sidi Benour, part of a wider 362-home free promotional housing programme.",
+      "draft": "تسليم مشروع سكني يضم 50 وحدة سكنية (مبنى مكون من طابق أرضي و13 طابقاً علوياً) في سيدي بنور، وذلك ضمن برنامج أوسع للسكن الترويجي الحر يشمل 362 وحدة سكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.summary.1",
+      "source": "The Sidi Benour scheme addresses urban residential demand through vertical massing, integrated utility networks, and coordinated site circulation.",
+      "draft": "يلبي مشروع \"سيدي بنور\" الطلب على السكن الحضري من خلال الكتل العمرانية الرأسية، وشبكات المرافق المتكاملة، ونظام منسق لحركة التنقل داخل الموقع.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.0",
+      "source": "The project scope encompasses all-trades delivery (TCE) and roads and utility networks (VRD) for the R+13 residential block, coordinating structural execution, facade articulation, building services, and external works.",
+      "draft": "يشمل نطاق المشروع تنفيذ كافة الأعمال الإنشائية والمعمارية والخدمية (TCE) وشبكات الطرق والمرافق (VRD) للمبنى السكني المكون من طابق أرضي و13 طابقاً علوياً، مع تنسيق تنفيذ الهيكل الإنشائي، وتشكيل الواجهات، وخدمات المبنى، والأعمال الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.description.1",
+      "source": "The facade articulation is defined by vertical lines and projecting balconies, supported by comprehensive site grading, utility connections, and dedicated access roads.",
+      "draft": "تتميز تشكيلات الواجهة بخطوط رأسية وشرفات بارزة، وتدعمها أعمال شاملة لتسوية الموقع، وتوصيلات للمرافق، وطرق وصول مخصصة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.authority",
+      "source": "A high-rise residential development where structural engineering, facade rhythm, VRD, and technical systems are integrated to meet dense urban housing requirements.",
+      "draft": "مشروع سكني شاهق الارتفاع تتكامل فيه الهندسة الإنشائية، وإيقاع الواجهات، وأعمال البنية التحتية (VRD)، والأنظمة الفنية، لتلبية متطلبات السكن الحضري عالي الكثافة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.seo",
+      "source": "Technical details, structural execution, and site progress for the 50 free promotional housing units in Sidi Benour, Algiers.",
+      "draft": "التفاصيل الفنية، والتنفيذ الإنشائي، ومراحل الإنجاز في الموقع لمشروع الوحدات السكنية الترقوية الحرة الخمسين في سيدي بنور، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.label",
+      "source": "Project type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.meta.0.value",
+      "source": "Free promotional housing (LPL)",
+      "draft": "سكن ترويجي مجاني (LPL)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.label",
+      "source": "Project type",
+      "draft": "نوع المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.0.value",
+      "source": "Free promotional housing (LPL)",
+      "draft": "سكن ترويجي مجاني (LPL)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.label",
+      "source": "Location",
+      "draft": "الموقع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.1.value",
+      "source": "Sidi Benour, Mehelma, Algiers",
+      "draft": "سيدي بنور، المحالمة، الجزائر العاصمة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.label",
+      "source": "Programme",
+      "draft": "برنامج",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.2.value",
+      "source": "50 homes within a 362-home programme",
+      "draft": "50 منزلاً ضمن برنامج يضم 362 منزلاً",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.label",
+      "source": "Completion",
+      "draft": "الإنجاز",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.3.value",
+      "source": "2025",
+      "draft": "2025",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.label",
+      "source": "Typology",
+      "draft": "علم التصنيف",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.4.value",
+      "source": "Ground floor plus 13 upper floors (R+13) residential building",
+      "draft": "مبنى سكني مكون من طابق أرضي و13 طابقاً علوياً (R+13)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.label",
+      "source": "Works",
+      "draft": "أعمال",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.details.5.value",
+      "source": "All-trades delivery (TCE) with roads and utility networks (VRD)",
+      "draft": "تنفيذ كافة الأعمال الإنشائية (TCE) بما في ذلك الطرق وشبكات المرافق (VRD)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.title",
+      "source": "Project programme",
+      "draft": "برنامج المشروع",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.0",
+      "source": "50 homes delivered within a 362-home programme",
+      "draft": "تسليم 50 وحدة سكنية ضمن برنامج يشمل 362 وحدة",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.1",
+      "source": "Ground floor plus 13 upper floors (R+13) residential building",
+      "draft": "مبنى سكني مكون من طابق أرضي و13 طابقاً علوياً (R+13)",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.2",
+      "source": "TCE, VRD, MEP, and exterior access",
+      "draft": "اتفاقية حق الدخول المؤقت (TCE)، وأعمال الطرق والمرافق (VRD)، والأنظمة الميكانيكية والكهربائية والسباكة (MEP)، والوصول الخارجي",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.facilityGroups.0.items.3",
+      "source": "Completed in 2025 with coordinated execution",
+      "draft": "أُنجز في عام 2025 بتنفيذٍ منسَّق",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.question",
+      "source": "What is the scope of the 50 Free Promotional Housing Units project?",
+      "draft": "ما هو نطاق مشروع الوحدات السكنية الترويجية المجانية الخمسين؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.0.answer",
+      "source": "A 50-home R+13 residential delivery in Sidi Benour, part of a wider 362-home free promotional housing programme.",
+      "draft": "تسليم مشروع سكني يضم 50 وحدة سكنية (مبنى مكون من طابق أرضي و13 طابقاً علوياً) في سيدي بنور، وذلك ضمن برنامج أوسع للسكن الترويجي الحر يشمل 362 وحدة سكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.question",
+      "source": "What construction works were executed on this site?",
+      "draft": "ما هي أعمال البناء التي نُفِّذت في هذا الموقع؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.1.answer",
+      "source": "The project combines TCE and VRD delivery for a R+13 residential building, coordinating structure, facades, technical systems and exterior circulation.",
+      "draft": "يجمع المشروع بين تنفيذ أعمال البناء الشاملة (TCE) وأعمال الطرق والشبكات الخارجية (VRD) لمبنى سكني مكوّن من طابق أرضي و13 طابقاً علوياً، مع تنسيق الهيكل الإنشائي والواجهات والأنظمة الفنية ومسارات الحركة الخارجية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.question",
+      "source": "How does the development integrate with the surrounding site?",
+      "draft": "كيف يندمج المشروع التطويري مع الموقع المحيط؟",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.faq.2.answer",
+      "source": "The design utilizes vertical massing to optimize land use, supported by dedicated access roads and integrated utility connections to ensure full operational readiness.",
+      "draft": "يعتمد التصميم على التشكيل الكتلي الرأسي لتحقيق الاستخدام الأمثل للأرض، مدعوماً بطرق وصول مخصصة وشبكات مرافق متكاملة لضمان الجاهزية التشغيلية الكاملة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يظهر فيه الهيكل الخرساني المكشوف وجدران الحشو من الطوب الأحمر، تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.0.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "مبنى سكني قيد الإنشاء مع حشوات من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.src",
+      "source": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+      "draft": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.alt",
+      "source": "View of a multi-story residential building under construction, featuring large concrete retaining walls, intricate rebar structures, and workers on the upper level, with a crane boom overhead and other buildings in the background.",
+      "draft": "مشهد لمبنى سكني متعدد الطوابق قيد الإنشاء، يضم جدرانًا خرسانية استنادية ضخمة وهياكل معقدة من قضبان التسليح، مع وجود عمال في الطابق العلوي، وذراع رافعة تعلو الموقع، ومبانٍ أخرى تظهر في الخلفية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.hero.1.caption",
+      "source": "Structural progress on residential units in Sidi Benour.",
+      "draft": "تقدم في الأعمال الإنشائية للوحدات السكنية في سيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "مبنى سكني شاهق قيد الإنشاء، يبرز فيه هيكل خرساني مكشوف وجدران حشو من الطوب الأحمر، بالإضافة إلى رافعة برجية حمراء تظهر على خلفية سماء زرقاء صافية؛ كما تظهر أكوام من الطوب الأحمر على الأرض في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.intro.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "تقدم في الأعمال الإنشائية للوحدات السكنية الخمسين في سيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.src",
+      "source": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+      "draft": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.alt",
+      "source": "A large tower crane overlooks a multi-story concrete building under construction, with exposed rebar and scaffolding on the upper levels, under an overcast sky.",
+      "draft": "تُشرف رافعة برجية ضخمة على مبنى خرساني متعدد الطوابق قيد الإنشاء، تظهر فيه قضبان التسليح والسقالات في الطوابق العليا، وذلك تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.0.caption",
+      "source": "Structural work underway for residential housing units.",
+      "draft": "تجري الأعمال الإنشائية للوحدات السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.src",
+      "source": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+      "draft": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.alt",
+      "source": "Full exterior view of a tall, modern, light-colored residential building with many balconies and windows, seen from ground level behind a low concrete wall and paved area.",
+      "draft": "مشهد خارجي كامل لمبنى سكني شاهق وعصري فاتح اللون، يضم العديد من الشرفات والنوافذ، ويُرى من مستوى الأرض من خلف جدار خرساني منخفض ومساحة مبلطة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.1.caption",
+      "source": "Completed residential building in Sidi Benour, Algiers.",
+      "draft": "مبنى سكني مُنجَز في سيدي بنور، الجزائر العاصمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.src",
+      "source": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+      "draft": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.alt",
+      "source": "A tall residential building under construction, showing concrete columns and slabs, red brick walls, and balconies. A large red construction crane is partially visible on the left side, extending upwards. A worker is visible on one of the upper balconies.",
+      "draft": "مبنى سكني شاهق قيد الإنشاء، تظهر فيه الأعمدة والأسقف الخرسانية وجدران من الطوب الأحمر وشرفات. وتظهر جزئياً رافعة بناء حمراء كبيرة على الجانب الأيسر وهي تمتد نحو الأعلى، كما يظهر عامل على إحدى الشرفات العلوية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.2.caption",
+      "source": "Structural work and brick infill progress on residential units.",
+      "draft": "تتواصل الأعمال الإنشائية وأعمال بناء الجدران (الطوب) في الوحدات السكنية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يظهر فيه الهيكل الخرساني المكشوف وجدران الحشو من الطوب الأحمر، تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.mosaic.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "مبنى سكني قيد الإنشاء مع حشوات من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.src",
+      "source": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+      "draft": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.alt",
+      "source": "An aerial view of a construction site with a large concrete foundation and rebar cages for a new floor, a red tower crane on the left, and workers on the structure. Distant residential buildings and green hills are visible under a hazy sky.",
+      "draft": "لقطة جوية لموقع بناء يضم أساساً خرسانياً ضخماً وهياكل من حديد التسليح لطابق جديد، مع رافعة برجية حمراء على اليسار وعمال يتواجدون فوق الهيكل الإنشائي. وتظهر في الخلفية مبانٍ سكنية وتلال خضراء تحت سماء يغشاها الضباب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.0.caption",
+      "source": "Structural work in progress for residential units, featuring rebar and formwork.",
+      "draft": "أعمال إنشائية جارية للوحدات السكنية، تشمل حديد التسليح والقوالب الخرسانية.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.src",
+      "source": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+      "draft": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.alt",
+      "source": "A construction worker in a striped shirt and cap stands between large stacks of hollow red bricks inside a building under construction, with distant residential buildings and greenery visible through an open section.",
+      "draft": "يقف عامل بناء يرتدي قميصاً مخططاً وقبعة بين أكوام كبيرة من الطوب الأحمر المفرغ داخل مبنى قيد الإنشاء، حيث تظهر مبانٍ سكنية ومساحات خضراء في الأفق عبر جزء مفتوح.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.1.caption",
+      "source": "Worker with bricks at Sidi Benour housing site.",
+      "draft": "عامل يحمل طوباً في موقع سكني بسيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "مبنى سكني شاهق قيد الإنشاء، يبرز فيه هيكل خرساني مكشوف وجدران حشو من الطوب الأحمر، بالإضافة إلى رافعة برجية حمراء تظهر على خلفية سماء زرقاء صافية؛ كما تظهر أكوام من الطوب الأحمر على الأرض في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.2.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "تقدم في الأعمال الإنشائية للوحدات السكنية الخمسين في سيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يظهر فيه الهيكل الخرساني المكشوف وجدران الحشو من الطوب الأحمر، تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featureGallery.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "مبنى سكني قيد الإنشاء مع حشوات من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.src",
+      "source": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+      "draft": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.alt",
+      "source": "A tall residential building under construction, showing multiple floors with exposed concrete structures and some red brick infill. A large tower crane is visible in the upper left, and the sky is grey and overcast. Construction materials are visible on some balconies.",
+      "draft": "مبنى سكني شاهق قيد الإنشاء، تظهر فيه طوابق متعددة بهياكل خرسانية مكشوفة وبعض أعمال البناء بالطوب الأحمر. تظهر رافعة برجية كبيرة في الزاوية العلوية اليسرى، والسماء رمادية وملبدة بالغيوم، كما تبدو مواد البناء موجودة على بعض الشرفات.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.0.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "تقدم في الأعمال الإنشائية للوحدات السكنية الخمسين في سيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.src",
+      "source": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+      "draft": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.alt",
+      "source": "A low-angle shot of a multi-story concrete building under construction, showing exposed concrete slabs, columns, and wooden scaffolding on the upper floors. A crane boom is visible in the top right, and the sun shines brightly from behind the building, creating a silhouette effect against a partly cloudy blue sky.",
+      "draft": "لقطة من زاوية منخفضة لمبنى خرساني متعدد الطوابق قيد الإنشاء، تُظهر ألواحاً خرسانية مكشوفة وأعمدة وسقالات خشبية في الطوابق العليا. تظهر ذراع رافعة في الزاوية اليمنى العلوية، بينما تسطع الشمس بقوة من خلف المبنى، مما يخلق تأثيراً ظلياً (صورة ظلية) أمام سماء زرقاء تتخللها بعض السحب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.1.caption",
+      "source": "Concrete structure rising against the sky.",
+      "draft": "هيكل خرساني يرتفع نحو السماء.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.src",
+      "source": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "draft": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.alt",
+      "source": "A tall residential building under construction, featuring an exposed concrete structure, red brick infill walls, and a red tower crane against a clear blue sky. Stacks of red bricks are visible on the ground in the foreground.",
+      "draft": "مبنى سكني شاهق قيد الإنشاء، يبرز فيه هيكل خرساني مكشوف وجدران حشو من الطوب الأحمر، بالإضافة إلى رافعة برجية حمراء تظهر على خلفية سماء زرقاء صافية؛ كما تظهر أكوام من الطوب الأحمر على الأرض في المقدمة.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.2.caption",
+      "source": "Structural progress on the 50 housing units in Sidi Benour.",
+      "draft": "تقدم في الأعمال الإنشائية للوحدات السكنية الخمسين في سيدي بنور.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يظهر فيه الهيكل الخرساني المكشوف وجدران الحشو من الطوب الأحمر، تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.constructionGallery.3.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "مبنى سكني قيد الإنشاء مع حشوات من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.src",
+      "source": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "draft": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.alt",
+      "source": "Exterior view of a multi-story residential building under construction, featuring exposed concrete structure and red brick infill walls, under a cloudy sky.",
+      "draft": "مشهد خارجي لمبنى سكني متعدد الطوابق قيد الإنشاء، يظهر فيه الهيكل الخرساني المكشوف وجدران الحشو من الطوب الأحمر، تحت سماء ملبدة بالغيوم.",
+      "provider": "cloud-translation-translation-llm"
+    },
+    {
+      "path": "content.images.featured.0.caption",
+      "source": "Residential building under construction with brick infill.",
+      "draft": "مبنى سكني قيد الإنشاء مع حشوات من الطوب.",
+      "provider": "cloud-translation-translation-llm"
+    }
+  ]
+}

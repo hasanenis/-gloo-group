@@ -1,0 +1,39 @@
+{
+  "jobId": "batch-mrgy7r2w-target-fr-projects-index",
+  "pageId": "projects-index",
+  "target": "fr",
+  "shared": false,
+  "sourceRevision": "v1-7528e25c",
+  "generatedAt": "2026-07-11T22:41:01.207Z",
+  "model": "gemini-3.5-flash",
+  "segments": [
+    {
+      "id": "seo.title",
+      "text": "Projets | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.description",
+      "text": "Un portefeuille de programmes résidentiels, villas, locaux commerciaux et voirie et réseaux divers (VRD) livrés à travers l’Algérie."
+    },
+    {
+      "id": "seo.socialTitle",
+      "text": "Projets | SARL Igloo Yapi Construction"
+    },
+    {
+      "id": "seo.socialDescription",
+      "text": "Un portefeuille de programmes résidentiels, villas, locaux commerciaux et voirie et réseaux divers (VRD) livrés à travers l’Algérie."
+    },
+    {
+      "id": "content.eyebrow",
+      "text": "Projets"
+    },
+    {
+      "id": "content.heading",
+      "text": "Un portefeuille fondé sur la livraison."
+    },
+    {
+      "id": "content.lead",
+      "text": "Nos travaux achevés comprennent des programmes résidentiels, des villas, des locaux commerciaux ainsi que des travaux de voirie et réseaux divers (VRD) exécutés à travers l’Algérie."
+    }
+  ]
+}

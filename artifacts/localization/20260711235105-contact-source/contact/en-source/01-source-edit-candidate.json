@@ -1,0 +1,24 @@
+{
+  "jobId": "20260711235105-contact-source",
+  "pageId": "contact",
+  "locale": "en",
+  "sourceRevision": "v1-e4126a65",
+  "generatedAt": "2026-07-11T20:51:06.768Z",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "f69c25e1a816c789",
+  "status": "review",
+  "updatedAt": "2026-07-11T18:25:36.794Z",
+  "seo": {
+    "title": "Contact | Igloo Construction",
+    "description": "Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the appropriate person.",
+    "socialTitle": "Contact | Igloo Construction",
+    "socialDescription": "Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the appropriate person."
+  },
+  "content": {
+    "eyebrow": "Contact",
+    "heading": "Start a project conversation.",
+    "lead": "Speak directly with the Igloo team in Bir Khadem. Send the location, programme and available documents; we will route the request to the appropriate person."
+  },
+  "model": "gemini-2.5-pro"
+}

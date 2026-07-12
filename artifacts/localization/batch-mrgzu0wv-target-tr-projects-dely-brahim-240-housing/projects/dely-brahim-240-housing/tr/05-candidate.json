@@ -1,0 +1,190 @@
+{
+  "pageId": "projects/dely-brahim-240-housing",
+  "locale": "tr",
+  "sourceRevision": "v1-ae0bb1f4",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "901aad4432df0086",
+  "status": "review",
+  "updatedAt": "2026-07-11T22:10:05.532Z",
+  "seo": {
+    "title": "Ticari Alanlı 240 Serbest Promosyonel Konut Projesi | Dely Brahim",
+    "description": "Cezayir, Dely Brahim'deki entegre ticari cepheli 240 serbest promosyonel konut projesinin teknik şartnameleri, yapısal uygulaması ve saha yerleşimi.",
+    "socialTitle": "Ticari Alanlı 240 Serbest Promosyonel Konut Projesi",
+    "socialDescription": "Cezayir, Dely Brahim'deki entegre ticari cepheli 240 serbest promosyonel konut projesinin teknik şartnameleri, yapısal uygulaması ve saha yerleşimi."
+  },
+  "content": {
+    "slug": "dely-brahim-240-housing",
+    "title": "Ticari Alanlı 240 Serbest Promosyonel Konut Projesi",
+    "eyebrow": "ÇOK AMAÇLI KONUT PROJESİ",
+    "summary": [
+      "Cezayir, Dely Brahim'de yer alan 33 katlı çok amaçlı konut kulesi; 240 serbest promosyonel konut ünitesini, 3 ticari katı, 3 bodrum katını ve 3 ara otopark katını bir araya getirmektedir.",
+      "Bu yüksek katlı projede konut üniteleri 3. kattan 33. kata kadar dağılmakta olup, çok katlı bir ticari podyum ve özel yer altı otopark yapılarıyla desteklenmektedir."
+    ],
+    "description": [
+      "Mimari program, üç katlı ticari bazanın üzerinde F3, F4 ve F5 daire tiplerini dikey olarak bölgeleyerek kentsel yoğunluğu optimize etmektedir. Alt seviyeler, saha kısıtlamalarını ve araç sirkülasyonunu çözmek amacıyla 3 bodrum ve 3 ara otopark katı içermektedir.",
+      "Yapısal uygulama; betonarme karkas, dikey sirkülasyon şaftları, yangın güvenliği kompartımanları, mekanik, elektrik ve tesisat (MEP) sistemleri ile cephe artikülasyonunun entegrasyonunu yöneten karmaşık bir dikey koordinasyon gerektirmiştir."
+    ],
+    "authority": "Konut yoğunluğunu, aktif sokak seviyesi ticari cepheyi ve çok katlı otoparkı tek bir dikey yapıda koordine eden yüksek katlı karma kullanım projesi.",
+    "seo": "Cezayir, Dely Brahim'deki entegre ticari cepheli 240 serbest promosyonel konut projesinin teknik şartnameleri, yapısal uygulaması ve saha yerleşimi.",
+    "meta": [
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari alanlar ve hizmetler içeren serbest promosyonel konut"
+      }
+    ],
+    "details": [
+      {
+        "label": "Proje Tipi",
+        "value": "Ticari alanlar içeren serbest promosyonel konut"
+      },
+      {
+        "label": "Konum",
+        "value": "Bois des Cars, Dely Brahim, Cezayir"
+      },
+      {
+        "label": "Konut Üniteleri",
+        "value": "240 ünite"
+      },
+      {
+        "label": "Dikey Bölgeleme",
+        "value": "Konutlar 3. kattan 33. kata kadar, her katta 8 daire"
+      },
+      {
+        "label": "Ticari Baza",
+        "value": "Zemin kattan 2. kata kadar teraslı 3 ticari kat"
+      },
+      {
+        "label": "Otopark Altyapısı",
+        "value": "3 bodrum ve 3 ara otopark katı"
+      },
+      {
+        "label": "Durum",
+        "value": "Devam Ediyor"
+      }
+    ],
+    "facilityGroups": [
+      {
+        "title": "Proje Programı",
+        "items": [
+          "33 katlı çok amaçlı kule",
+          "F3, F4 ve F5 konfigürasyonlarında 240 konut ünitesi",
+          "3 bodrum ve 3 ara otopark katı",
+          "Yollar ve altyapı ağları (VRD), MEP, dikey taşıma ve güvenlik sistemlerini içeren anahtar teslim (TCE) uygulama"
+        ]
+      }
+    ],
+    "nearby": {
+      "title": "Yerel Altyapı",
+      "items": [
+        "Dely Brahim ticari bölgesi"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Ticari Alanlı 240 Serbest Promosyonel Konut Projesi nedir?",
+        "answer": "Proje; 240 serbest promosyonel konut ünitesini barındıran, üç katlı ticari podyum, 3 bodrum katı ve 3 ara otopark katı ile desteklenen 33 katlı çok amaçlı bir kuledir."
+      },
+      {
+        "question": "Konut ve ticari alanlar dikey olarak nasıl dağıtılmaktadır?",
+        "answer": "Kule, teras erişimli 3 ticari katın üzerinde yer alan, 3. kattan 33. kata kadar konumlandırılmış F3, F4 ve F5 daire planları ile dikey bölgeleme özelliğine sahiptir."
+      },
+      {
+        "question": "Sahaya hangi otopark ve sirkülasyon altyapısı entegre edilmiştir?",
+        "answer": "Dely Brahim portföyü yukarı taşıyor: Konutların 3. kattan 33. kata kadar yer aldığı, her katta 8 dairenin bulunduğu, zemin kattan 2. kata kadar teraslı 3 ticari kat, 3 bodrum ve 3 ara otopark katı içeren 33 katlı bir kule."
+      }
+    ],
+    "images": {
+      "hero": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Işıklandırılmış konut balkonlarını ve aktif ticari cepheyi gösteren karma kullanım kulesinin gece görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Gece vakti, zemin katında içeride insanların olduğu parlak ışıklı ticari vitrinler ve üzerinde balkonlu konut üniteleri bulunan modern, çok katlı bir bina. Caddede arabalar bulanık görünmekte ve bir yaya yürümektedir.",
+          "caption": "Gece vakti aktif sokak seviyesi ticari cephenin ve üst konut balkonlarının detayı."
+        }
+      ],
+      "intro": {
+        "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+        "alt": "Ön planda ağaçlar ve bir yol ile koyu mavi akşam gökyüzüne karşı konumlanmış, parlak ışıklı balkonları ve zemin kat ticari alanları olan yüksek, çağdaş bir konut binası.",
+        "caption": "Ticari bazadan konut seviyelerine dikey geçişi gösteren 33 katlı kulenin görünüşü."
+      },
+      "mosaic": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Gece ışıklandırılmış, cephesinde çok sayıda balkon ve parlak dikey ışık şeritleri bulunan yüksek, çağdaş bir konut binası. Zemin katta geniş vitrinli parlak ışıklı ticari dükkanlar yer almakta ve önünden bulanık araba ışıklarının geçtiği bir cadde uzanmaktadır. Ağaçlar binayı çevrelemekte ve üzerinde yıldızlı bir gece gökyüzü görünmektedir.",
+          "caption": "Konut cephesindeki cephe artikülasyonu ve dikey aydınlatma elemanları."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Çok katlı otopark yapısı ile ticari podyumun entegrasyonu."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Ön planda ağaçlar ve bir yol ile koyu mavi akşam gökyüzüne karşı konumlanmış, parlak ışıklı balkonları ve zemin kat ticari alanları olan yüksek, çağdaş bir konut binası.",
+          "caption": "Kulenin akşam gökyüzündeki profili, konut kütlesini vurgulamaktadır."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Gece vakti, zemin katında içeride insanların olduğu parlak ışıklı ticari vitrinler and üzerinde balkonlu konut üniteleri bulunan modern, çok katlı bir bina. Caddede arabalar bulanık görünmekte ve bir yaya yürümektedir.",
+          "caption": "Cam kaplı ticari vitrinlerin yaya perspektifinden görünümü."
+        }
+      ],
+      "featureGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Gece ışıklandırılmış, cephesinde çok sayıda balkon ve parlak dikey ışık şeritleri bulunan yüksek, çağdaş bir konut binası. Zemin katta geniş vitrinli parlak ışıklı ticari dükkanlar yer almakta ve önünden bulanık araba ışıklarının geçtiği bir cadde uzanmaktadır. Ağaçlar binayı çevrelemekte ve üzerinde yıldızlı bir gece gökyüzü görünmektedir.",
+          "caption": "Cephe panellerine entegre edilmiş dikey aydınlatmayı gösteren gece görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Aktif ticari baza ile üzerindeki konut kulesi arasındaki ilişki."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Ön planda ağaçlar ve bir yol ile koyu mavi akşam gökyüzüne karşı konumlanmış, parlak ışıklı balkonları ve zemin kat ticari alanları olan yüksek, çağdaş bir konut binası.",
+          "caption": "Konut balkonlarının ve taşıyıcı karkasın dış görünümü."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Gece vakti, zemin katında içeride insanların olduğu parlak ışıklı ticari vitrinler ve üzerinde balkonlu konut üniteleri bulunan modern, çok katlı bir bina. Caddede arabalar bulanık görünmekte ve bir yaya yürümektedir.",
+          "caption": "Ticari cam cephenin ve yaya girişinin zemin seviyesinden görünümü."
+        }
+      ],
+      "constructionGallery": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Tamamlanan yapısal kabuk ve dış cephe işleri."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
+          "alt": "Gece ışıklandırılmış, cephesinde çok sayıda balkon ve parlak dikey ışık şeritleri bulunan yüksek, çağdaş bir konut binası. Zemin katta geniş vitrinli parlak ışıklı ticari dükkanlar yer almakta ve önünden bulanık araba ışıklarının geçtiği bir cadde uzanmaktadır. Ağaçlar binayı çevrelemekte ve üzerinde yıldızlı bir gece gökyüzü görünmektedir.",
+          "caption": "Cephe kaplama ve dış aydınlatma montajı."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
+          "alt": "Ön planda ağaçlar ve bir yol ile koyu mavi akşam gökyüzüne karşı konumlanmış, parlak ışıklı balkonları ve zemin kat ticari alanları olan yüksek, çağdaş bir konut binası.",
+          "caption": "Tamamlanan taşıyıcı karkas ve dış cephe kaplaması."
+        },
+        {
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
+          "alt": "Gece vakti, zemin katında içeride insanların olduğu parlak ışıklı ticari vitrinler ve üzerinde balkonlu konut üniteleri bulunan modern, çok katlı bir bina. Caddede arabalar bulanık görünmekte ve bir yaya yürümektedir.",
+          "caption": "Tamamlanan zemin kat ticari kabuğunun detayı."
+        }
+      ],
+      "featured": [
+        {
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
+          "alt": "Işıklandırılmış konut balkonları, hareketli ticari vitrinleri ve çok katlı yer altı otoparkı ile yanından geçen arabaların ve ağaçların bulunduğu bir caddede modern bir karma kullanım binasının gece görünümü.",
+          "caption": "Konut, ticari ve otopark katlarını entegre eden 33 katlı çok amaçlı kule."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "sourceLocale": "en",
+  "revision": "v1-9ac4a3cd",
+  "sourceRevision": "v1-2aa11ee9",
+  "status": "approved",
+  "content": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "services": "Services",
+    "allProjects": "Tous les projets",
+    "openProject": "Ouvrir le projet",
+    "readMore": "Lire la suite",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "languageSelector": "Sélecteur de langue",
+    "projectOverview": "Présentation du projet",
+    "projectDetails": "Détails et localisation",
+    "construction": "Réalisation des travaux",
+    "projectGallery": "Galerie du projet",
+    "facilities": "Logements et infrastructures",
+    "nearby": "À proximité",
+    "faq": "Questions fréquentes",
+    "relatedProjects": "Projets sélectionnés",
+    "discuss": "Parler d’un projet"
+  }
+}
