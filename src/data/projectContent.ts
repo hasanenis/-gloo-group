@@ -110,8 +110,34 @@ function canonicalProjectNode(slug: string, path = ''): unknown {
   return english;
 }
 
+function mergeProjectNodes(fallback: unknown, canonical: unknown): unknown {
+  if (canonical === undefined) return fallback;
+
+  if (Array.isArray(canonical)) {
+    const fallbackItems = Array.isArray(fallback) ? fallback : [];
+    return canonical.map((value, index) => mergeProjectNodes(fallbackItems[index], value));
+  }
+
+  if (canonical && typeof canonical === 'object') {
+    const fallbackRecord = fallback && typeof fallback === 'object' && !Array.isArray(fallback)
+      ? fallback as Record<string, unknown>
+      : {};
+    const canonicalRecord = canonical as Record<string, unknown>;
+    const keys = new Set([...Object.keys(fallbackRecord), ...Object.keys(canonicalRecord)]);
+
+    return Object.fromEntries(
+      [...keys].map((key) => [key, mergeProjectNodes(fallbackRecord[key], canonicalRecord[key])]),
+    );
+  }
+
+  return canonical;
+}
+
 const canonicalProjectContent: ProjectContentBySlug = Object.fromEntries(
-  projects.map((project) => [project.slug, canonicalProjectNode(project.slug) as ProjectContent]),
+  projects.map((project) => [
+    project.slug,
+    mergeProjectNodes(getLegacyProjectContent(project), canonicalProjectNode(project.slug)) as ProjectContent,
+  ]),
 );
 
 export function getProjectContent(project: ProjectRecord) {
