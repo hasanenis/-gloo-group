@@ -42,7 +42,7 @@ export default function DeliveryProcessSection() {
 
             <h2
               id="delivery-process-title"
-              className="mt-8 max-w-[14ch] font-serif text-[clamp(2.2rem,4.8vw,5.9rem)] font-normal leading-[0.92] tracking-[-0.035em] text-black md:max-w-[10.5ch] md:text-[clamp(3rem,4.8vw,5.9rem)] md:leading-[0.96]"
+              className="mt-8 max-w-[14ch] font-serif text-[clamp(2.2rem,4.8vw,5.9rem)] font-normal leading-[0.92] tracking-[-0.035em] text-balance text-black md:max-w-[10.5ch] md:text-[clamp(3rem,4.8vw,5.9rem)] md:leading-[0.96]"
               data-home-text-reveal
               data-home-text-reveal-start="top 84%"
             >
@@ -50,7 +50,7 @@ export default function DeliveryProcessSection() {
             </h2>
 
             <p
-              className="mt-7 max-w-[34rem] text-[15px] leading-[1.72] text-black/58 md:text-[16px]"
+              className="mt-7 max-w-[34rem] text-pretty text-[15px] leading-[1.72] text-black/58 md:text-[16px]"
               data-home-text-reveal
               data-home-text-reveal-start="top 88%"
             >
@@ -98,7 +98,7 @@ export default function DeliveryProcessSection() {
                   </div>
 
                   <h3
-                    className="mx-auto mt-4 max-w-[13ch] text-center font-serif text-[clamp(1.05rem,1.8vw,1.95rem)] font-normal leading-[1.04] tracking-[-0.02em] text-black md:mt-6 md:text-[clamp(1.2rem,1.8vw,1.95rem)]"
+                    className="mx-auto mt-4 max-w-[13ch] text-center font-serif text-[clamp(1.05rem,1.8vw,1.95rem)] font-normal leading-[1.04] tracking-[-0.02em] text-balance text-black md:mt-6 md:text-[clamp(1.2rem,1.8vw,1.95rem)]"
                     data-home-text-reveal
                     data-home-text-reveal-start="top 88%"
                   >
@@ -108,7 +108,7 @@ export default function DeliveryProcessSection() {
                   <div className="mx-auto mt-2.5 h-px w-8 bg-[#c22026]" />
 
                   <p
-                    className="mx-auto mt-2.5 max-w-[18rem] text-center text-[12px] leading-[1.5] text-black/62 md:max-w-[17rem] md:text-[14px] md:leading-[1.65] xl:text-[15px] xl:leading-[1.72]"
+                    className="mx-auto mt-2.5 max-w-[18rem] text-center text-pretty text-[12px] leading-[1.5] text-black/62 md:max-w-[17rem] md:text-[14px] md:leading-[1.65] xl:text-[15px] xl:leading-[1.72]"
                     data-home-text-reveal
                     data-home-text-reveal-start="top 88%"
                   >

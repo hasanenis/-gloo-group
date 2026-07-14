@@ -60,6 +60,74 @@
       "fr": "SARL Igloo Yapi Construction",
       "tr": "SARL Igloo Yapi Construction",
       "ar-DZ": "SARL Igloo Yapi Construction"
+    },
+    {
+      "source": "TCE",
+      "protected": true,
+      "domain": "construction",
+      "fr": "TCE",
+      "tr": "TCE",
+      "ar-DZ": "TCE",
+      "notes": "Preserve the all-trades scope acronym."
+    },
+    {
+      "source": "R+13",
+      "protected": true,
+      "domain": "construction",
+      "fr": "R+13",
+      "tr": "R+13",
+      "ar-DZ": "R+13"
+    },
+    {
+      "source": "F3",
+      "protected": true,
+      "domain": "housing",
+      "fr": "F3",
+      "tr": "F3",
+      "ar-DZ": "F3"
+    },
+    {
+      "source": "F4",
+      "protected": true,
+      "domain": "housing",
+      "fr": "F4",
+      "tr": "F4",
+      "ar-DZ": "F4"
+    },
+    {
+      "source": "F5",
+      "protected": true,
+      "domain": "housing",
+      "fr": "F5",
+      "tr": "F5",
+      "ar-DZ": "F5"
+    },
+    {
+      "source": "Algiers",
+      "protected": true,
+      "domain": "location",
+      "accepted": {
+        "fr": ["Alger"],
+        "tr": ["Cezayir", "Algiers"],
+        "ar-DZ": ["الجزائر", "Algiers"]
+      },
+      "notes": "Use the approved locale form when one exists; do not force the English place name."
+    },
+    {
+      "source": "Les Pastorales",
+      "protected": true,
+      "domain": "project",
+      "fr": "Les Pastorales",
+      "tr": "Les Pastorales",
+      "ar-DZ": "Les Pastorales"
+    },
+    {
+      "source": "Rahmania Commercial Centres",
+      "protected": true,
+      "domain": "project",
+      "fr": "Centres commerciaux de Rahmania",
+      "tr": "Rahmania Ticaret Merkezleri",
+      "ar-DZ": "مراكز رحمانية التجارية"
     }
   ]
 }

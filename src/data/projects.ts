@@ -276,7 +276,7 @@ const projectCopy: Record<string, ProjectLocalizedCopy> = {
     shortTitle: { en: 'Sidi Abdallah', fr: 'Sidi Abdallah', dz: 'سيدي عبد الله', tr: 'Sidi Abdallah' },
     status: { en: 'Completed', fr: 'Livré', dz: 'مكمّل', tr: 'Tamamlandı' },
     scope: { en: 'Large-scale public housing with integrated construction support packages.', fr: 'Programme public de grande échelle avec lots d’accompagnement intégrés.', dz: 'برنامج سكن عمومي كبير مع حزم دعم البناء مدمجة.', tr: 'Büyük ölçekli kamu konutlarının altyapı ve destekleyici tüm işleriyle yapımı.' },
-    summary: { en: 'Construction works for all secondary state bodies within the 200/1200 promotional public housing development in Sidi Abdallah - Mahalma.', fr: 'Travaux de tous corps d’état secondaires du programme 200/1 200 logements promotionnels publics à Sidi Abdellah - Mahalma.', dz: 'أشغال الهيئات الثانوية لبرنامج 200/1200 سكن ترقوي عمومي في سيدي عبد الله - محالمة.', tr: "Sidi Abdallah - Mahalma'daki 200/1200 Kamu Konutu (LPP) projesinin tüm ince inşaat işleri." },
+    summary: { en: 'Construction works for all secondary state bodies within the 200/1200 promotional public housing development in Sidi Abdallah - Mahalma.', fr: 'Travaux de tous corps d’état secondaires du programme 200/1 200 logements promotionnels publics à Sidi Abdallah - Mahalma.', dz: 'أشغال الهيئات الثانوية لبرنامج 200/1200 سكن ترقوي عمومي في سيدي عبد الله - محالمة.', tr: "Sidi Abdallah - Mahalma'daki 200/1200 Kamu Konutu (LPP) projesinin tüm ince inşaat işleri." },
   },
   'staoueli-11-41-villas': {
     title: { en: '11/41 Villas and Network Works', fr: '11/41 villas à Staoueli - CES et VRD', dz: '11/41 فيلا وأشغال الشبكات', tr: '11/41 Villa ve Altyapı İşleri' },

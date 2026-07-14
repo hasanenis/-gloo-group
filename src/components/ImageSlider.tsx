@@ -89,7 +89,7 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
   return (
     <div
       ref={frameRef}
-      className={['relative aspect-[16/10] w-full overflow-hidden bg-[#ebe7df]', className].filter(Boolean).join(' ')}
+      className={['relative aspect-[16/10] w-full overflow-hidden bg-[#ebe7df] outline outline-1 -outline-offset-1 outline-[oklch(0_0_0_/_0.1)]', className].filter(Boolean).join(' ')}
     >
       <div data-image-parallax className="absolute inset-x-0 -inset-y-[6%]">
         {IMAGES.map((image, index) => (

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "tr",
+  "status": "editorial-seed",
+  "pairs": [
+    { "id": "rahmania-summary-tr", "archetype": "commercial-fit-out", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "Douira'da, 2.500 konutluk bir yerleşim programı içinde tamamlanan iki ticaret merkezi.", "why": ["Türkçe bilgi sırasını korur", "Sayıyı ve konumu açıkça taşır", "Reklam dili kullanmaz"], "bad": "Douira'nın şehir yaşamını yükselten prestijli simge projesi.", "whyBad": ["Desteklenmeyen önem ve prestij iddiası ekler", "Proje kapsamını söylemez"] },
+    { "id": "dely-summary-tr", "archetype": "mixed-use-tower", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "Dely Brahim'de 240 konut ve üç ticari kat içeren karma kullanımlı konut kulesi.", "why": ["Konum, tür ve programı doğal Türkçeyle verir", "İngilizce isim zinciri kurmaz", "Desteklenmeyen yoğunluk yorumu eklemez"], "bad": "Kentsel yoğunluğu optimize eden premium bir landmark kule.", "whyBad": ["İngilizce ve pazarlama sızıntısı içerir", "Mimari önem iddiası ekler"] },
+    { "id": "staoueli-summary-tr", "archetype": "low-rise-residential", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "Staoueli'de 41 villalık bir konut geliştirmesinin parçası olan 11 villa.", "why": ["Aşama ile daha büyük program arasındaki ilişkiyi açıklar", "Kısa ve kurumsal bir cümledir"], "bad": "Mükemmel cephe diliyle aile yaşamını yeniden tanımlayan seçkin villalar.", "whyBad": ["Yaşam tarzı ve kalite iddiası ekler", "Kaynakta olmayan yorumu büyütür"] }
+  ]
+}

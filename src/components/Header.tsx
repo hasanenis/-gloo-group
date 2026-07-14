@@ -75,7 +75,8 @@ function NavUnderlineItem({
     </>
   );
 
-  const className = 'relative inline-flex items-center gap-[4px] pb-1';
+  const className =
+    'relative inline-flex min-h-10 items-center gap-[4px] px-1 pb-1 transition-[color,transform] duration-200 focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[color:var(--igloo-red)]';
 
   if (to) {
     return (
@@ -115,7 +116,7 @@ function LocaleMenu({ isScrolled }: { isScrolled: boolean }) {
       <DropdownMenuTrigger asChild>
         <button
           type="button"
-          className={`locale-menu inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] transition-colors ${buttonClass}`}
+          className={`locale-menu inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] transition-[background-color,border-color,color,transform] duration-200 active:scale-[0.96] focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--igloo-red)] ${buttonClass}`}
         >
           <Languages className="h-3.5 w-3.5" />
           {locale.toUpperCase()}
@@ -224,7 +225,7 @@ export default function Header() {
     <header
       ref={headerRef}
       data-header-state={isScrolled ? 'solid' : 'overlay'}
-      className={`app-main-header fixed left-0 top-0 z-50 flex w-full items-center justify-between px-6 font-sans transition-all duration-300 xl:px-10 ${
+      className={`app-main-header fixed left-0 top-0 z-50 flex w-full items-center justify-between px-6 font-sans transition-[background-color,color,padding,box-shadow] duration-300 xl:px-10 ${
         isScrolled ? solidHeaderClass : overlayHeaderClass
       }`}
       style={!isScrolled ? { textShadow: '0 1px 18px rgba(0,0,0,0.4)' } : undefined}
@@ -240,7 +241,7 @@ export default function Header() {
           <img
             src={logoSrc}
             alt="Igloo Construction"
-            className="origin-left h-[54px] w-auto object-contain transition-all duration-300 drop-shadow-sm md:h-[62px] lg:h-[74px] xl:h-[82px]"
+            className="origin-left h-[54px] w-auto object-contain transition-[height,filter] duration-300 drop-shadow-sm md:h-[62px] lg:h-[74px] xl:h-[82px]"
           />
         </Link>
       </div>

@@ -22,7 +22,7 @@ const limit = limitIndex >= 0 ? Number(process.argv[limitIndex + 1]) : Number.PO
 const startIndex = process.argv.indexOf('--start');
 const start = startIndex >= 0 ? Number(process.argv[startIndex + 1]) : 0;
 const model = process.env.GEMINI_POLISH_MODEL || 'gemini-2.5-pro';
-const location = process.env.GOOGLE_CLOUD_LOCATION || 'global';
+const location = process.env.GOOGLE_CLOUD_LOCATION || 'us-central1';
 const ai = new GoogleGenAI({ vertexai: true, project: credential.project_id, location, apiVersion: 'v1' });
 
 const wait = (milliseconds: number) => new Promise((resolve) => setTimeout(resolve, milliseconds));

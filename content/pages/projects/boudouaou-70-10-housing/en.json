@@ -4,43 +4,32 @@
   "sourceRevision": "v1-1bd2397e",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-fea0f87f",
+  "revision": "v3-natural-editorial-en",
   "status": "approved",
-  "updatedAt": "2026-07-11T22:10:05.397Z",
+  "updatedAt": "2026-07-13T22:30:00Z",
   "seo": {
-    "title": "70 Assisted Housing and 10 Free Promotional Housing Units",
-    "description": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
-    "socialTitle": "70 Assisted Housing and 10 Free Promotional Housing Units",
-    "socialDescription": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model."
+    "title": "Boudouaou Residential Development — 80 Homes | Boumerdes",
+    "description": "80-unit mixed residential development in Boudouaou, Boumerdes — 70 social housing and 10 market-rate apartments across three blocks, with ground-floor commercial premises. Completed 2025.",
+    "socialTitle": "Boudouaou Residential Development — 80 Homes",
+    "socialDescription": "70 social housing and 10 market-rate apartments across three R+8 and R+5 blocks in Boudouaou, with ground-floor commercial premises. Completed 2025 for AADL."
   },
   "content": {
     "slug": "boudouaou-70-10-housing",
-    "title": "70 Assisted Housing and 10 Free Promotional Housing Units",
-    "eyebrow": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+    "title": "Boudouaou Residential Development — 80 Homes",
+    "eyebrow": "RESIDENTIAL AND COMMERCIAL PROJECT",
     "summary": [
-      "An 80-home mixed residential scheme in Boudouaou, combining assisted and free promotional housing with ground-floor professional and commercial premises.",
-      "The development integrates 70 LPA assisted housing units, 10 LPL housing units and 10 commercial premises across three distinct blocks."
+      "An 80-home mixed residential development in Boudouaou, Boumerdes, combining 70 social housing units and 10 market-rate apartments with 10 ground-floor commercial and professional premises.",
+      "Three reinforced concrete blocks — two at R+8 and one at R+5 — were delivered under an all-trades contract including site roads and infrastructure."
     ],
     "description": [
-      "The architectural massing is distributed across three blocks: Block A and Block B, each designed as ground floor plus 8 upper floors (R+8), and Block C, designed as ground floor plus 5 upper floors (R+5). Floor plates are configured with four apartments per level, providing a balanced distribution of F3 and F4 typologies.",
-      "The scope of execution covers all-trades delivery (TCE), including secondary trades, waterproofing, internal joinery, mechanical, electrical and plumbing (MEP) installations, alongside roads and utility networks (VRD) and external site works to integrate the mixed-use programme."
+      "The development is distributed across three blocks: Block A and Block B are each ground floor plus 8 upper floors (R+8), while Block C rises to ground floor plus 5 upper floors (R+5). Each floor plate is configured with four apartments per level, offering a balanced mix of F3 and F4 typologies.",
+      "The all-trades scope covered secondary trades, waterproofing, internal joinery, building services installations, and site roads and utility networks to fully integrate the mixed-use programme."
     ],
-    "authority": "A coordinated residential development where three structural blocks, commercial frontages and site utility networks are executed as a unified urban insertion.",
-    "seo": "Explore the gallery, technical details, and location notes for 70 Assisted Housing and 10 Free Promotional Housing Units. The project showcases a source-led residential and mixed-use delivery model.",
-    "meta": [
-      {
-        "label": "Client",
-        "value": "AADL"
-      },
-      {
-        "label": "Project Type",
-        "value": "LPA assisted housing and LPL promotional housing with commercial and professional premises"
-      }
-    ],
+    "authority": "A coordinated residential development where three structural blocks, commercial frontages, and site utility networks are executed as a unified urban delivery.",
     "details": [
       {
         "label": "Project Type",
-        "value": "LPA and LPL housing with commercial premises"
+        "value": "Social and market-rate housing with commercial premises"
       },
       {
         "label": "Location",
@@ -48,14 +37,14 @@
       },
       {
         "label": "Housing Units",
-        "value": "80 units (70 LPA + 10 LPL)"
+        "value": "80 units (70 social + 10 market-rate)"
       },
       {
-        "label": "Structural Massing",
+        "label": "Blocks",
         "value": "3 blocks: R+8, R+8 and R+5"
       },
       {
-        "label": "Completion Year",
+        "label": "Completion",
         "value": "2025"
       },
       {
@@ -67,122 +56,60 @@
       {
         "title": "Project Programme",
         "items": [
-          "80 residential units, comprising 70 LPA and 10 LPL apartments",
+          "80 residential units — 70 social housing and 10 market-rate apartments",
           "Three structural blocks built to R+8 and R+5 height profiles",
           "10 ground-floor commercial and professional premises",
-          "All-trades delivery (TCE) including roads and utility networks (VRD)"
+          "All-trades delivery including site roads and utility networks"
         ]
       }
     ],
     "nearby": null,
     "faq": [
       {
-        "question": "What is 70 Assisted Housing and 10 Free Promotional Housing Units?",
-        "answer": "The development is an 80-home mixed residential scheme in Boudouaou, combining 70 LPA assisted housing units and 10 LPL promotional housing units with ground-floor commercial premises."
+        "question": "What does the Boudouaou Residential Development include?",
+        "answer": "The development is an 80-home mixed residential scheme in Boudouaou, comprising 70 social housing units and 10 market-rate apartments across three structural blocks, with ground-floor commercial premises."
       },
       {
         "question": "What are the structural heights and block configurations?",
-        "answer": "The project comprises three blocks: Block A and Block B are configured as ground floor plus 8 upper floors (R+8), while Block C is built as ground floor plus 5 upper floors (R+5)."
+        "answer": "The project comprises three blocks: Block A and Block B are each ground floor plus 8 upper floors (R+8), while Block C is ground floor plus 5 upper floors (R+5), with four apartments per floor throughout."
       },
       {
         "question": "What was the technical scope of the construction works?",
-        "answer": "The contract was executed under an all-trades delivery (TCE) framework, encompassing secondary trades, interior finishes, MEP installations, and roads and utility networks (VRD)."
+        "answer": "The contract was executed under an all-trades framework, covering secondary trades, interior finishes, building services installations, and site roads and utility networks."
       },
       {
-        "question": "How are the individual apartment layouts distributed?",
-        "answer": "Boudouaou combines 70 LPA homes, 10 LPL homes and 10 professional/commercial premises across three blocks with different heights."
+        "question": "How are the apartment layouts distributed across the blocks?",
+        "answer": "Each floor plate across all three blocks is configured with four apartments per level, providing a balanced mix of F3 and F4 apartment typologies across 80 units."
       }
     ],
     "images": {
       "hero": [
-        {
-          "src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
-          "alt": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
-          "caption": "Facade articulation and exterior site works on the R+8 residential blocks."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp",
-          "alt": "A modern, multi-story residential building with a light-colored facade and dark, patterned balcony railings, seen from a low angle against a bright blue sky with a sun flare.",
-          "caption": "Low-angle view of the completed facade and balcony balustrades."
-        }
+        {"src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/23-whatsapp-image-2025-11-12-a-14-52-48-9f71d272.webp"}
       ],
       "intro": {
-        "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
-        "alt": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
-        "caption": "Elevation view of the multi-storey residential blocks during final site grading."
+        "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"
       },
       "mosaic": [
-        {
-          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
-          "alt": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
-          "caption": "Active site works and external utility connections in front of the R+8 block."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp",
-          "alt": "View of several multi-story residential buildings in various stages of construction, with a yellow tower crane visible between them, set against a clear blue sky.",
-          "caption": "Structural execution and tower crane operations during the concrete framing phase."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp",
-          "alt": "A dynamic, low-angle shot of several tall residential buildings in various stages of construction. The building on the left has exposed concrete, while the central buildings show finished light-colored facades with windows and balconies. A large blue construction crane extends into the bright, overcast sky on the right. A pile of dirt is visible in the foreground.",
-          "caption": "Simultaneous structural framing and facade finishing across the three blocks."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
-          "alt": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
-          "caption": "Completed structural envelopes awaiting final external works."
-        }
+        {"src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/19-whatsapp-image-2025-11-12-a-14-52-47-3c32ef3d.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/10-boudouaou-7.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"}
       ],
       "featureGallery": [
-        {
-          "src": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp",
-          "alt": "Newly built, tall white apartment buildings with multiple windows and balconies, set against a bright blue sky. The ground in the foreground is unpaved earth, indicating ongoing site development. A small white truck is visible on the dirt road.",
-          "caption": "External site preparation and road alignment works."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp",
-          "alt": "Tall residential buildings under construction, with some sections having white finished facades and others still raw concrete. Two construction workers are visible, one on a balcony and another on a scaffold. A crane boom is partially visible against a clear blue sky.",
-          "caption": "Facade rendering and external insulation application."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
-          "alt": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
-          "caption": "Excavation and trenching for the primary utility networks."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
-          "alt": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
-          "caption": "Massing and spatial separation between the R+8 residential blocks."
-        }
+        {"src": "/projects/boudouaou-70-10-housing/18-whatsapp-image-2025-11-12-a-14-52-46-fe914217.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/01-boudouaou-1.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"}
       ],
       "constructionGallery": [
-        {
-          "src": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp",
-          "alt": "Several multi-story residential buildings in various stages of construction. The buildings on the left and center are painted light beige with white window frames and balconies, appearing largely complete. The building on the far right is still in a raw concrete and brick state. A clear blue sky is visible above, and power lines cross the frame. A small truck is parked in the foreground on a dirt construction site.",
-          "caption": "Progressive completion of the structural frames and external masonry."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp",
-          "alt": "A newly constructed, light-beige residential building with multiple stories and balconies featuring black railings, under a bright blue sky. Construction materials are visible at the ground level.",
-          "caption": "Detailed view of the exterior facade finishes and balcony balustrades."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp",
-          "alt": "A tall, light-colored residential building with multiple balconies and windows, some with closed shutters, under a bright blue sky. A yellow and black backhoe loader is parked on the unpaved ground in front of the building, with a car partially visible on the right.",
-          "caption": "Site grading and preparation for the final road and utility network (VRD) installation."
-        },
-        {
-          "src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp",
-          "alt": "View from below of several tall, light-colored apartment buildings with many windows and some balconies, set against a bright blue sky. The ground in the foreground is dirt, indicating recent construction.",
-          "caption": "Structural alignment of the residential blocks against the site boundary."
-        }
+        {"src": "/projects/boudouaou-70-10-housing/25-whatsapp-image-2025-11-12-a-14-52-49-5ca31f0b.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/15-whatsapp-image-2025-11-12-a-14-52-46-3206f724.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/12-whatsapp-image-2025-11-12-a-14-52-45-16dbaed6.webp"},
+        {"src": "/projects/boudouaou-70-10-housing/17-whatsapp-image-2025-11-12-a-14-52-46-9674e10d.webp"}
       ],
       "featured": [
-        {
-          "src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp",
-          "alt": "Exterior view of a newly constructed, multi-story residential building with light-colored facades and numerous windows, under a bright blue sky. Construction equipment and a car are on the dirt ground in front of the building, indicating ongoing work at the Boudouaou project site.",
-          "caption": "Completed structural envelopes of the R+8 residential blocks."
-        }
+        {"src": "/projects/boudouaou-70-10-housing/13-whatsapp-image-2025-11-12-a-14-52-45-8e4328b8.webp"}
       ]
     }
   }

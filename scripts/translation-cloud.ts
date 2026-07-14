@@ -12,8 +12,6 @@ type TranslationSegment = {
 
 const ROOT = process.cwd();
 const DEFAULT_CREDENTIAL_PATH = path.join(ROOT, '.secrets', 'gcp', 'translation-service-account.json');
-const COST_PER_MILLION_NMT_USD = 20;
-const COST_PER_MILLION_TLLM_USD = 10;
 
 function option(name: string) {
   const index = process.argv.indexOf(name);
@@ -44,8 +42,12 @@ function clientFor(credentialPath: string) {
 
 function estimate(segments: TranslationSegment[], model: 'nmt' | 'translation-llm') {
   const characters = segments.reduce((total, segment) => total + [...segment.source].length, 0);
-  const rate = model === 'translation-llm' ? COST_PER_MILLION_TLLM_USD : COST_PER_MILLION_NMT_USD;
-  return { characters, usd: (characters / 1_000_000) * rate, model };
+  return {
+    characters,
+    estimatedInputTokens: Math.ceil(characters / 4),
+    model,
+    informationalOnly: true,
+  };
 }
 
 async function readSegments(file: string) {
@@ -85,17 +87,11 @@ async function draft() {
   const target = requireOption('--target') as TargetLocale;
   const model = (option('--model') || 'translation-llm') as 'nmt' | 'translation-llm';
   const location = option('--location') || (model === 'translation-llm' ? 'us-central1' : 'global');
-  const maxUsd = Number(requireOption('--max-usd'));
   if (!['fr', 'tr', 'ar-DZ'].includes(target)) throw new Error('--target must be fr, tr, or ar-DZ.');
   if (!['nmt', 'translation-llm'].includes(model)) throw new Error('--model must be nmt or translation-llm.');
-  if (!Number.isFinite(maxUsd) || maxUsd <= 0) throw new Error('--max-usd must be a positive number.');
 
   const segments = await readSegments(input);
   const forecast = estimate(segments, model);
-  if (forecast.usd > maxUsd) {
-    throw new Error(`Estimated NMT cost $${forecast.usd.toFixed(4)} exceeds --max-usd=$${maxUsd.toFixed(2)}.`);
-  }
-
   const credentialPath = process.env.GOOGLE_APPLICATION_CREDENTIALS || DEFAULT_CREDENTIAL_PATH;
   const projectId = await credentialProjectId(credentialPath);
   const client = clientFor(credentialPath);

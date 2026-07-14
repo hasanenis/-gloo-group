@@ -4,43 +4,32 @@
   "sourceRevision": "v1-ad166423",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-9524b136",
+  "revision": "v3-natural-editorial-en",
   "status": "approved",
-  "updatedAt": "2026-07-11T22:10:05.271Z",
+  "updatedAt": "2026-07-13T22:30:00Z",
   "seo": {
-    "title": "Bas Mazagran | 200 Assisted and 38 Free Promotional Housing Units",
-    "description": "Technical execution of the 238-unit residential development in Bas Mazagran, Mostaganem, comprising 200 assisted housing units and 38 free promotional housing units.",
-    "socialTitle": "Bas Mazagran | 200 Assisted and 38 Free Promotional Housing Units",
-    "socialDescription": "Technical execution of the 238-unit residential development in Bas Mazagran, Mostaganem, comprising 200 assisted housing units and 38 free promotional housing units."
+    "title": "Bas Mazagran Residential Development — 238 Homes | Mostaganem",
+    "description": "238-unit residential development in Bas Mazagran, Mostaganem — 200 social housing units and 38 market-rate apartments across seven blocks, with ground-floor commercial premises.",
+    "socialTitle": "Bas Mazagran Residential Development — 238 Homes",
+    "socialDescription": "200 social housing and 38 market-rate units across seven structural blocks in Bas Mazagran, Mostaganem. Ground-floor commercial premises. Currently under construction."
   },
   "content": {
     "slug": "bas-mazagran-200-38-housing",
-    "title": "200 Assisted Housing and 38 Free Promotional Housing Units, Bas Mazagran",
-    "eyebrow": "RESIDENTIAL DEVELOPMENT",
+    "title": "Bas Mazagran Residential Development — 238 Homes",
+    "eyebrow": "RESIDENTIAL AND COMMERCIAL PROJECT",
     "summary": [
-      "Located in Bas Mazagran, Mostaganem, this residential development comprises seven structural blocks containing 200 assisted housing units and 38 free promotional housing units, integrated with ground-floor commercial premises.",
-      "The project optimizes vertical density through its structural massing and facade articulation, incorporating dedicated pedestrian access and roads and utility networks (VRD) to support the new residential footprint."
+      "Located in Bas Mazagran, Mostaganem, this residential development comprises seven structural blocks delivering 200 social housing units and 38 market-rate apartments, alongside ground-floor commercial premises.",
+      "The project optimises vertical density across five to nine storey blocks, with dedicated pedestrian access and integrated site roads and services."
     ],
     "description": [
-      "The architectural layout distributes 238 apartments across seven concrete structural blocks, designed with a configuration of four apartments per landing to optimize internal circulation and structural efficiency.",
-      "The construction program is advancing through the final trades phase, focusing on secondary architectural works, facade masonry infill, internal technical installations, and the completion of roads and utility networks (VRD)."
+      "The 238 apartments are distributed across seven reinforced concrete blocks, with four apartments per landing to maximise internal circulation efficiency. Block heights range from R+5 to R+9.",
+      "Construction is advancing through the final trades phase, with secondary architectural works, facade masonry infill, building services installations, and site roads and utility networks underway."
     ],
     "authority": "OFFICE DE PROMOTION ET DE GESTION IMMOBILIÈRE (OPGI)",
-    "seo": "Technical specifications, construction progress, and site details for the 200 assisted housing and 38 free promotional housing units in Bas Mazagran, Mostaganem.",
-    "meta": [
-      {
-        "label": "Client",
-        "value": "OPGI"
-      },
-      {
-        "label": "Project Type",
-        "value": "Assisted and Promotional Housing"
-      }
-    ],
     "details": [
       {
         "label": "Project Type",
-        "value": "Assisted and Promotional Housing"
+        "value": "Social and market-rate housing"
       },
       {
         "label": "Location",
@@ -48,25 +37,25 @@
       },
       {
         "label": "Programme",
-        "value": "200 Assisted Housing Units and 38 Free Promotional Housing Units"
+        "value": "200 social housing units and 38 market-rate apartments"
       },
       {
         "label": "Blocks",
-        "value": "7 Blocks (R+5 to R+9)"
+        "value": "7 blocks (R+5 to R+9)"
       },
       {
         "label": "Status",
-        "value": "Current"
+        "value": "In progress"
       }
     ],
     "facilityGroups": [
       {
         "title": "Project Programme",
         "items": [
-          "238 programmatic housing units spanning social and premium tiers",
-          "Seven concrete structural blocks ranging from ground floor plus 5 to ground floor plus 9 upper floors (R+5 to R+9)",
+          "238 residential units across social and market-rate tiers",
+          "Seven reinforced concrete blocks ranging from R+5 to R+9",
           "Ground-floor commercial premises",
-          "Integrated roads and utility networks (VRD) and pedestrian access"
+          "Integrated site roads, services, and pedestrian access"
         ]
       }
     ],
@@ -78,112 +67,50 @@
     },
     "faq": [
       {
-        "question": "What is 200 Assisted Housing and 38 Free Promotional Housing Units?",
-        "answer": "The project consists of 200 assisted housing units and 38 free promotional housing units, distributed across seven structural blocks with ground-floor commercial premises."
+        "question": "What does the Bas Mazagran development include?",
+        "answer": "The project delivers 200 social housing units and 38 market-rate apartments across seven structural blocks, with ground-floor commercial premises integrated throughout."
       },
       {
         "question": "What is the structural configuration of the blocks?",
-        "answer": "The project encompasses the spatial and structural execution of 238 distinct apartments across seven blocks, maintaining a highly efficient spatial ratio of four residences per landing."
+        "answer": "Seven reinforced concrete blocks range from R+5 to R+9 in height, each with four apartments per landing, providing a total of 238 residential units."
       },
       {
-        "question": "Who is the client for this residential development?",
-        "answer": "The project is being delivered for the Office de Promotion et de Gestion Immobilière (OPGI) to address regional housing requirements."
+        "question": "Who is the client for this development?",
+        "answer": "The project is being delivered for the Office de Promotion et de Gestion Immobilière (OPGI) to address regional housing requirements in Mostaganem."
       },
       {
-        "question": "What is the current status of the construction works?",
-        "answer": "The project is currently in progress, with works focusing on secondary architectural trades, facade masonry, and the installation of roads and utility networks (VRD)."
+        "question": "What is the current construction status?",
+        "answer": "The project is currently in its final trades phase, with facade masonry, building services installations, and site roads and infrastructure works in progress."
       }
     ],
     "images": {
       "hero": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground.",
-          "caption": "Structural execution of the residential blocks showing reinforced concrete frames and brickwork infill."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "A wide shot of a construction site with multiple concrete housing structures in various stages of completion, rebar protruding from the tops, and a large blue tower crane on the left against a clear blue sky. Construction materials are scattered on the dirt ground.",
-          "caption": "Tower crane in operation during the structural framing of the R+5 to R+9 residential blocks."
-        }
+        {"src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"}
       ],
       "intro": {
-        "src": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp",
-        "alt": "View of a construction site with significant mounds of brown earth in the foreground, two cranes (one tower, one mobile) in operation, and buildings under construction in the background under an overcast sky.",
-        "caption": "Earthworks and substructure preparation across the development site."
+        "src": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp"
       },
       "mosaic": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp",
-          "alt": "An aerial view of a construction site featuring a large grey HIDROMEK excavator digging in a wide, sandy excavation pit. Two orange dump trucks are parked nearby, one loaded with earth. In the background, a concrete building under construction is visible, along with distant residential buildings and hills. Two construction workers are present near the trucks.",
-          "caption": "Excavation and site grading operations for the foundations of the seven blocks."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp",
-          "alt": "An excavator with a large bucket is digging a deep trench in sandy soil. Two construction workers stand near the trench, observing the operation. Another worker is visible inside the excavator's cabin. A concrete wall with barbed wire is in the background.",
-          "caption": "Trench excavation for the installation of subsurface utility networks."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp",
-          "alt": "Two workers near a white pickup truck loaded with construction materials on a dirt site, with a large blue tower crane and multi-story buildings under construction in the background under a partly cloudy sky.",
-          "caption": "On-site material logistics and delivery of secondary construction components."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground.",
-          "caption": "Progress on the external masonry and structural frames of the housing units."
-        }
+        {"src": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"}
       ],
       "featureGallery": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp",
-          "alt": "An excavator and two dump trucks on a sandy construction site, with a partially built concrete building in the background under a cloudy sky.",
-          "caption": "Earth-moving machinery preparing the site topography for roads and utility networks (VRD)."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp",
-          "alt": "An excavator and dump trucks on a construction site with an excavated pit and a partially built concrete building, under a cloudy sky.",
-          "caption": "Initial foundation excavation and structural groundwork."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground.",
-          "caption": "Facade articulation and masonry infill on the multi-story blocks."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "A wide shot of a construction site with multiple concrete housing structures in various stages of completion, rebar protruding from the tops, and a large blue tower crane on the left against a clear blue sky. Construction materials are scattered on the dirt ground.",
-          "caption": "Structural massing of the seven blocks during the concrete pouring phase."
-        }
+        {"src": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"}
       ],
       "constructionGallery": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp",
-          "alt": "An excavator with 'HIDROMEK' visible on its arm digs a deep trench in sandy soil. Two workers are in the trench, and another worker in a red shirt stands near the excavator. A concrete wall with barbed wire is in the background.",
-          "caption": "Civil engineering works and trenching for utility connections."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp",
-          "alt": "A white JMC pickup truck loaded with bags of construction materials, with two men near it, on a dirt construction site. In the background, a large blue tower crane and several multi-story buildings under construction are visible under a partly cloudy sky.",
-          "caption": "Delivery of finishing materials to the active construction sectors."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground.",
-          "caption": "Execution of external masonry and window openings."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "A wide shot of a construction site with multiple concrete housing structures in various stages of completion, rebar protruding from the tops, and a large blue tower crane on the left against a clear blue sky. Construction materials are scattered on the dirt ground.",
-          "caption": "Overview of the seven residential blocks under construction."
-        }
+        {"src": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"},
+        {"src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"}
       ],
       "featured": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "View of several multi-story residential buildings under construction, featuring concrete structural frames and red brick infill walls, with a clear blue sky overhead and a person walking in the foreground.",
-          "caption": "The structural blocks of the Bas Mazagran development during the masonry phase."
-        }
+        {"src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"}
       ]
     }
   }

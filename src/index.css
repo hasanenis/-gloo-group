@@ -21,6 +21,14 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: oklch(0.74 0.16 25 / 0.72);
+  color: var(--igloo-black);
 }
 
 :root[lang='ar-DZ'] {
@@ -674,6 +682,10 @@ body {
     outline: none;
     background: rgba(194, 32, 38, 0.07);
     color: #111;
+  }
+
+  .mobile-bottom-nav button:not(.mobile-bottom-nav__assistant):active {
+    transform: scale(0.96);
   }
 
   .mobile-bottom-nav button:not(.mobile-bottom-nav__assistant).is-active {
@@ -1416,6 +1428,7 @@ img {
   font-size: clamp(2.2rem, 4.8vw, 4.8rem);
   line-height: 0.98;
   color: #fff;
+  text-wrap: balance;
 }
 
 .app-footer__lead {
@@ -1424,6 +1437,7 @@ img {
   font-size: 15px;
   line-height: 1.85;
   color: rgba(255, 255, 255, 0.62);
+  text-wrap: pretty;
 }
 
 .app-footer__cta {
@@ -1448,6 +1462,7 @@ img {
   gap: 16px;
   margin-top: 14px;
   width: 100%;
+  min-height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 16px 20px;
   color: #fff;
@@ -1456,6 +1471,20 @@ img {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  transition: color 180ms ease, border-color 180ms ease, transform 180ms ease,
+    background-color 180ms ease;
+}
+
+.app-footer__cta-link:hover,
+.app-footer__cta-link:focus-visible {
+  border-color: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.app-footer__cta-link:active {
+  transform: scale(0.96);
 }
 
 .app-footer__middle {
@@ -1483,6 +1512,15 @@ img {
 .app-footer__navlinks a {
   color: inherit;
   text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.app-footer__links a:hover,
+.app-footer__links a:focus-visible,
+.app-footer__navlinks a:hover,
+.app-footer__navlinks a:focus-visible {
+  color: #fff;
+  transform: translateX(2px);
 }
 
 .app-footer__bottom {

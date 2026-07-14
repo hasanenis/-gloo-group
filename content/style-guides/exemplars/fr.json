@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "status": "editorial-seed",
+  "pairs": [
+    { "id": "rahmania-summary-fr", "archetype": "commercial-fit-out", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "Deux centres commerciaux à Douira, achevés en 2025 au sein d’un programme résidentiel de 2 500 logements.", "why": ["L’ordre de l’information est naturel en français", "Le nombre reste explicite", "Le ton reste factuel"], "bad": "Un pôle commercial emblématique qui optimise la vie urbaine.", "whyBad": ["Ajoute une portée urbaine non établie", "Emploie un vocabulaire promotionnel"] },
+    { "id": "dely-summary-fr", "archetype": "mixed-use-tower", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "Une tour résidentielle mixte à Dely Brahim, comprenant 240 logements et trois niveaux de commerces.", "why": ["Présente le type, le lieu et le programme", "Réserve le détail technique aux champs structurés"], "bad": "Une tour premium et emblématique qui optimise la densité urbaine.", "whyBad": ["Ajoute des claims non documentés", "Copie des formules de brochure"] },
+    { "id": "rouiba-scope-fr", "archetype": "villa-development", "field": "content.description", "sourceFacts": ["content.title", "content.description[0]"], "good": "Le contenu approuvé décrit quatre villas à Rouiba et un périmètre TCE intégrant les VRD.", "why": ["Conserve les sigles de portée", "Ne transforme pas le périmètre en argument commercial"], "bad": "Le projet crée un cadre résidentiel exclusif aux finitions haut de gamme.", "whyBad": ["Ajoute exclusivité et qualité non prouvées"] }
+  ]
+}

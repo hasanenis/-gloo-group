@@ -160,7 +160,7 @@ export async function preloadLocaleCatalogs(locales: ReadonlyArray<Locale> = LOC
 
 export function pickLocaleText(locale: Locale, value: LocalizedString): string {
   const direct = value[locale] ?? value[legacyLocale(locale)] ?? value.en;
-  return direct;
+  return repairMojibake(direct);
 }
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);

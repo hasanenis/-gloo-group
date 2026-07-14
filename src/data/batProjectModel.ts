@@ -167,7 +167,7 @@ function projectLabel(project: ProjectRecord, _locale: Locale) {
 
 function buildHeroFacts(project: ProjectRecord, content: ProjectContent, locale: Locale) {
   const fromContent = [
-    ...content.meta.map((fact) => ({
+    ...(content.meta ?? []).map((fact) => ({
       label: localized(fact.label, locale),
       value: localized(fact.value, locale),
     })),

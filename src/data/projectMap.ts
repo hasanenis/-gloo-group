@@ -60,11 +60,11 @@ export const projectMapCoordinates: Record<string, ProjectMapCoordinate & { clus
   'sidi-abdallah-200-1200-housing': {
     lat: 36.677591,
     lng: 2.8881867,
-    locality: 'Sidi Abdellah / Mahelma',
+    locality: 'Sidi Abdallah / Mahelma',
     wilaya: 'Algiers',
     accuracy: 'commune',
     cluster: 'west-algiers',
-    sourceNote: 'Sidi Abdellah published city coordinate; used for the Sidi Abdallah - Mahalma programme.',
+    sourceNote: 'Sidi Abdallah published city coordinate; used for the Sidi Abdallah - Mahalma programme.',
   },
   'staoueli-11-41-villas': {
     lat: 36.7532755,
@@ -78,7 +78,7 @@ export const projectMapCoordinates: Record<string, ProjectMapCoordinate & { clus
   rahmania: {
     lat: 36.6702433,
     lng: 2.9448509,
-    locality: 'Douera / Douira',
+    locality: 'Douira',
     wilaya: 'Algiers',
     accuracy: 'commune',
     cluster: 'west-algiers',

@@ -71,6 +71,7 @@ function SectionHeader({
             className={cn(
               'text-[clamp(1.9rem,3vw,3.1rem)] font-light uppercase leading-[0.95] tracking-[0.04em]',
               tone === 'inverse' ? 'text-white' : 'text-[#c22026]',
+              'text-balance',
               titleClassName,
             )}
             data-home-text-reveal={reveal ? '' : undefined}
@@ -82,6 +83,7 @@ function SectionHeader({
               className={cn(
                 'max-w-2xl text-sm leading-relaxed md:text-[15px]',
                 tone === 'inverse' ? 'text-white/58' : 'text-[color:var(--igloo-muted)]',
+                'text-pretty',
                 descriptionClassName,
               )}
               data-home-text-reveal={reveal ? '' : undefined}

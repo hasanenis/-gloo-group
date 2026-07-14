@@ -410,7 +410,7 @@ export const homepageProjectProofs: Record<string, HomepageText> = {
   },
   'sidi-abdallah-200-1200-housing': {
     en: 'Public promotional housing in Sidi Abdallah with R+9 buildings and commercial/professional premises.',
-    fr: 'Logements promotionnels publics à Sidi Abdellah, avec bâtiments R+9 et locaux commerciaux/professionnels.',
+    fr: 'Logements promotionnels publics à Sidi Abdallah, avec bâtiments R+9 et locaux commerciaux/professionnels.',
     dz: 'سكنات ترقوية عمومية في سيدي عبد الله بعمارات أرضي+9 ومحلات تجارية/مهنية.',
     tr: "Sidi Abdallah'da kamu konutu (LPP) projesi: Zemin+9 katlı binalar, ticari alanlar ve iş yerleri.",
   },
@@ -422,7 +422,7 @@ export const homepageProjectProofs: Record<string, HomepageText> = {
   },
   rahmania: {
     en: 'Two commercial centres serving a 2,500-home residential programme in Douira, Algiers.',
-    fr: 'Deux centres commerciaux au sein d’un programme résidentiel de 2 500 logements à Douera, Alger.',
+    fr: 'Deux centres commerciaux au sein d’un programme résidentiel de 2 500 logements à Douira, Alger.',
     dz: 'مركزين تجاريين يخدموا برنامج سكني تاع 2500 مسكن في الدويرة، الجزائر العاصمة.',
     tr: "Cezayir, Douira'daki 2.500 konutluk yerleşim alanına hizmet veren iki ticaret merkezi.",
   },
@@ -486,7 +486,15 @@ function buildLocalizedHomeNode(path = ''): unknown {
     // Keep them scalar so existing presentation components never receive a
     // `{ en, fr, ... }` object where they expect a React key or a number.
     if (path.endsWith('.value') || path.endsWith('.id')) return english;
-    return Object.fromEntries((['en', 'fr', 'tr', 'ar-DZ'] as const).map((locale) => [locale, localizedHomeNode(path, locale)]));
+    // The legacy homepage shape uses `dz` for Algerian Arabic. Keep that
+    // adapter key here so `pickLocaleText('ar-DZ', ...)` can resolve it.
+    const locales = [
+      ['en', 'en'],
+      ['fr', 'fr'],
+      ['tr', 'tr'],
+      ['dz', 'ar-DZ'],
+    ] as const;
+    return Object.fromEntries(locales.map(([key, locale]) => [key, localizedHomeNode(path, locale)]));
   }
   if (Array.isArray(english)) return english.map((_, index) => buildLocalizedHomeNode(path ? `${path}.${index}` : String(index)));
   if (english && typeof english === 'object') {

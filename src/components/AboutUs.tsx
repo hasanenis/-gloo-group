@@ -37,7 +37,7 @@ export default function AboutUs() {
             </div>
 
             <h2
-              className="mt-6 max-w-[40rem] font-serif text-[clamp(2.8rem,4.2vw,4.1rem)] font-semibold leading-[0.96] tracking-normal text-black md:mt-8"
+              className="mt-6 max-w-[40rem] font-serif text-[clamp(2.8rem,4.2vw,4.1rem)] font-semibold leading-[0.96] tracking-normal text-balance text-black md:mt-8"
             >
               {titleLines.map((line, index) => (
                 <span
@@ -59,6 +59,7 @@ export default function AboutUs() {
               {content.paragraphs.map((paragraph) => (
                 <p
                   key={paragraph.en}
+                  className="text-pretty"
                   data-home-text-reveal
                   data-home-text-reveal-start="top 88%"
                 >

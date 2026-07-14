@@ -3,12 +3,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {
   ROOT_DIR,
+  appendApprovalDecision,
   clone,
   documentPath,
   flattenStrings,
   readDocument,
   writeJsonAtomic,
 } from './localization-content.mjs';
+import { editorialRuleHashes, compareEditorialRuleHashes } from './localization-hashes.mjs';
 
 const args = process.argv.slice(2);
 const option = (name, fallback = '') => {
@@ -19,12 +21,24 @@ const pageId = String(option('--page')).replace(/^\/+|\/+$/g, '');
 const shared = args.includes('--shared');
 const dryRun = args.includes('--dry-run');
 const force = args.includes('--force');
+const forceReason = String(option('--force-reason')).trim();
 const jobId = option('--job-id');
-if (!pageId || !jobId) throw new Error('Usage: node scripts/localization-source-approve.mjs --page <page-id> --job-id <source-review-job-id> [--shared]');
+if (!pageId || !jobId) throw new Error('Usage: node scripts/localization-source-approve.mjs --page <page-id> --job-id <source-review-job-id> [--shared] [--force --force-reason "<explanation>"]');
+if (force && forceReason.length < 8) throw new Error('--force requires --force-reason with a meaningful non-empty explanation (at least 8 characters).');
 
 const source = await readDocument({ pageId: shared ? 'shared' : pageId, locale: 'en', shared });
 const artifact = path.join(ROOT_DIR, 'artifacts', 'localization', jobId, shared ? 'shared' : pageId, 'en-source', '01-source-edit-candidate.json');
 const candidate = JSON.parse(await fs.readFile(artifact, 'utf8'));
+const currentRuleHashes = await editorialRuleHashes('en');
+const candidateRuleHashes = {
+  rulesVersion: candidate.rulesVersion,
+  fieldContractsHash: candidate.fieldContractsHash,
+  styleGuideHash: candidate.styleGuideHash,
+  exemplarsHash: candidate.exemplarsHash,
+  terminologyHash: candidate.terminologyHash,
+};
+const staleRuleKeys = compareEditorialRuleHashes(currentRuleHashes, candidateRuleHashes);
+if (staleRuleKeys.length) throw new Error(`STALE_EDITORIAL_RULES: ${staleRuleKeys.join(', ')}`);
 const qualityArtifact = path.join(path.dirname(artifact), '02-source-quality.json');
 const quality = await fs.readFile(qualityArtifact, 'utf8').then(JSON.parse).catch(() => ({ issues: [] }));
 const blockers = Array.isArray(quality.issues) ? quality.issues.filter((issue) => issue.severity === 'blocker') : [];
@@ -62,6 +76,7 @@ delete next.jobId;
 delete next.generatedAt;
 delete next.artifactRoot;
 delete next.model;
+for (const key of ['rulesVersion', 'fieldContractsHash', 'styleGuideHash', 'exemplarsHash', 'terminologyHash', 'blind', 'inputs', 'origin', 'fallback', 'error']) delete next[key];
 next.schemaVersion = 1;
 next.pageId = shared ? undefined : pageId;
 next.locale = 'en';
@@ -78,6 +93,35 @@ if (dryRun) {
 }
 
 await writeJsonAtomic(documentPath({ pageId: shared ? 'shared' : pageId, locale: 'en', shared }), next);
+await writeJsonAtomic(path.join(path.dirname(artifact), '08-source-approval.json'), {
+  schemaVersion: 1,
+  jobId,
+  page: shared ? 'shared' : pageId,
+  locale: 'en',
+  sourceRevision: nextSourceRevision,
+  state: force ? 'forced' : 'human',
+  forceReason: force ? forceReason : null,
+  approvedAt: new Date().toISOString(),
+  editorialRules: currentRuleHashes,
+});
+await appendApprovalDecision({
+  approvalTime: new Date().toISOString(),
+  pageId: shared ? 'shared' : pageId,
+  page: shared ? 'shared' : pageId,
+  locale: 'en',
+  decision: 'approve',
+  sourceRevision: nextSourceRevision,
+  targetRevision: null,
+  jobId,
+  state: force ? 'forced' : 'human',
+  forceReason: force ? forceReason : null,
+  qaStatus: blockers.length ? 'review-with-force' : 'pass',
+  gateBlockers: blockers.length,
+  reason: force ? forceReason : 'Human source approval recorded.',
+  decidedAt: new Date().toISOString(),
+  approver: process.env.LOCALIZATION_APPROVER || null,
+  gateCounts: { sourceQualityBlockers: blockers.length },
+});
 
 // Existing translations are now explicitly review-only. Their old source
 // revision remains visible so the editor can see why they must be regenerated.

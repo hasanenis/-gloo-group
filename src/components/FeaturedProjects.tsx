@@ -55,7 +55,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
     <Link
       ref={cardRef}
       to={`/projects/${project.slug}`}
-      className="group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black"
+      className="group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black outline-none focus-visible:ring-2 focus-visible:ring-[#c22026] focus-visible:ring-offset-4"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={(event) => {
@@ -67,7 +67,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
         <img
           src={image.src}
           alt={localized(image.alt, locale)}
-          className="project-img absolute inset-0 h-full w-full origin-center object-cover will-change-transform"
+          className="project-img absolute inset-0 h-full w-full origin-center object-cover outline outline-1 -outline-offset-1 outline-[oklch(1_0_0_/_0.1)] will-change-transform"
         />
       )}
       <div className="overlay pointer-events-none absolute inset-0 bg-black/40" />
@@ -95,14 +95,14 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           </span>
         </div>
         <h3
-          className="mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-white drop-shadow-sm md:text-[24px]"
+          className="mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-balance text-white drop-shadow-sm md:text-[24px]"
           data-home-text-reveal
           data-home-text-reveal-start="top 88%"
         >
           {cardTitle}
         </h3>
         <p
-          className="text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]"
+          className="text-pretty text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]"
           data-home-text-reveal
           data-home-text-reveal-start="top 88%"
         >

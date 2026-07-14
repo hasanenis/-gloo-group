@@ -363,7 +363,7 @@ export default function ProjectDetail() {
     en: ['IN A THRIVING', 'MASTERPLANNED', 'NEIGHBOURHOOD'],
     fr: ['DANS UN QUARTIER', 'RÉSIDENTIEL STRUCTURÉ', 'ET DYNAMIQUE'],
     'ar-DZ': ['في حي', 'سكني منظم', 'ونشيط'],
-    tr: ['CANLI', 'PLANLI BİR', 'MAHALLEDE'],
+    tr: ['PLANLI KONUT', 'TİCARİ BİRİMLER', 'GÜNLÜK HİZMETLER'],
   }[locale];
   const editorialColumns = (useEditorialCopy ? editorial?.columns : undefined) ?? (content
     ? [content.summary[0] ?? content.seo, content.description[0] ?? content.summary[0] ?? content.seo]
@@ -379,9 +379,9 @@ export default function ProjectDetail() {
   const infoMetricLabel = (useEditorialCopy ? editorial?.metricLabel : undefined) ?? rahmaniaInfoMetricLabel;
   const projectEyebrow = content ? localized(content.eyebrow, locale) : project?.coverLines[0] ?? '';
   const metricKey = locale === 'fr' ? 'fr' : 'en';
-  const infoMetricCaptionLines = (locale === 'ar-DZ' || locale === 'tr')
-    ? rahmaniaMetricCaptionLines
-    : editorial?.metricCaptionLines[metricKey] ?? rahmaniaMetricCaptionLines;
+  const infoMetricCaptionLines = editorial?.metricCaptionLines[locale]
+    ?? editorial?.metricCaptionLines[metricKey]
+    ?? rahmaniaMetricCaptionLines;
 
   useEffect(() => {
     if (slug && canonicalSlug && slug !== canonicalSlug) {
@@ -692,6 +692,7 @@ export default function ProjectDetail() {
                   } : undefined}
                   loading="lazy"
                   decoding="async"
+                  aria-hidden="true"
                   data-editorial-parallax-image
                   data-fit={infoImageSettings?.fit}
                   data-manual-scale={infoImageSettings?.scale}

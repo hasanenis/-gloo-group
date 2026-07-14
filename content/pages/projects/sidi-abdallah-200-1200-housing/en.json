@@ -4,39 +4,32 @@
   "sourceRevision": "v1-1261b9dd",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-b6378a0d",
+  "revision": "v3-natural-editorial-en",
   "status": "approved",
-  "updatedAt": "2026-07-11T22:10:06.305Z",
+  "updatedAt": "2026-07-13T22:30:00Z",
   "seo": {
-    "title": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
-    "description": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
-    "socialTitle": "200/1200 Public Promotional Housing (LPP) | Sidi Abdallah",
-    "socialDescription": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model."
+    "title": "Sidi Abdallah State-Sponsored Housing — 200 Homes | 1,200-Unit Development",
+    "description": "200 state-sponsored housing units in Sidi Abdallah, delivered within a 1,200-home urban development — R+9 blocks, F3 and F4 apartments, and ground-floor commercial premises. Completed 2022.",
+    "socialTitle": "Sidi Abdallah State-Sponsored Housing — 200 Homes",
+    "socialDescription": "200 state-sponsored housing units in Sidi Abdallah — R+9 blocks with F3 and F4 apartments and ground-floor commercial premises, within a 1,200-home master plan. Completed 2022."
   },
   "content": {
     "slug": "sidi-abdallah-200-1200-housing",
-    "title": "200/1200 Public Promotional Housing (LPP)",
-    "eyebrow": "MIXED-USE RESIDENTIAL DEVELOPMENT",
+    "title": "Sidi Abdallah State-Sponsored Housing — 200 Homes",
+    "eyebrow": "RESIDENTIAL AND COMMERCIAL PROJECT",
     "summary": [
-      "Delivery of 200 residential units within the wider 1,200-home Sidi Abdallah master programme, integrating public promotional housing (LPP) with ground-floor commercial and professional premises.",
-      "The development introduces high-density residential blocks configured as ground floor plus 9 upper floors (R+9), accommodating F3 and F4 apartment layouts alongside active street-level commercial frontage."
+      "200 state-sponsored housing units delivered within the wider 1,200-home Sidi Abdallah urban development, integrating high-density R+9 residential blocks with ground-floor commercial and professional premises.",
+      "The secondary trades and interior fit-out scope was executed for F3 and F4 apartment layouts, coordinated to meet the master plan's structural and spatial constraints."
     ],
     "description": [
-      "The construction scope focused on the execution of secondary trades and interior fit-out works for the dense residential blocks. Facade articulation, internal circulation cores, and technical services were coordinated to align with the master plan's structural and spatial constraints.",
-      "By integrating ground-floor retail and professional spaces directly beneath the R+9 residential massing, the architectural layout establishes a functional mixed-use profile that supports local economic activity within the urban pole."
+      "The construction scope focused on secondary trades and interior fit-out works for the dense R+9 residential blocks. Facade articulation, internal circulation cores, and technical building services were coordinated to align with the wider master plan.",
+      "Ground-floor commercial and professional spaces integrated beneath the residential massing establish a mixed-use street profile that supports local economic activity within the new urban district. Completed in 2022."
     ],
-    "authority": "A public housing delivery where secondary trades, service premises, and R+9 density work together to support a new urban district.",
-    "seo": "Explore the gallery, technical details, and location notes for 200/1200 Promotional Public Housing. The project showcases a source-led residential and mixed-use delivery model.",
-    "meta": [
-      {
-        "label": "Programme Type",
-        "value": "Public Promotional Housing (LPP)"
-      }
-    ],
+    "authority": "A state-sponsored housing delivery where secondary trades, service premises, and R+9 residential density work together to support a new urban district.",
     "details": [
       {
         "label": "Programme Type",
-        "value": "Public Promotional Housing (LPP)"
+        "value": "State-Sponsored Housing"
       },
       {
         "label": "Location",
@@ -47,7 +40,7 @@
         "value": "200 homes within a 1,200-home master plan"
       },
       {
-        "label": "Completion Year",
+        "label": "Completion",
         "value": "2022"
       },
       {
@@ -56,15 +49,15 @@
       },
       {
         "label": "Contract Scope",
-        "value": "Secondary trades (excluding roads and utility networks / VRD)"
+        "value": "Secondary trades (site roads and utility networks excluded)"
       }
     ],
     "facilityGroups": [
       {
         "title": "Project Programme",
         "items": [
-          "200 LPP residential units delivered within a 1,200-home master plan",
-          "R+9 residential blocks containing F3 and F4 apartment layouts",
+          "200 state-sponsored housing units within a 1,200-home master plan",
+          "R+9 residential blocks with F3 and F4 apartment layouts",
           "Ground-floor commercial and professional premises",
           "Completed in 2022 in compliance with national technical standards"
         ]
@@ -73,108 +66,46 @@
     "nearby": null,
     "faq": [
       {
-        "question": "What is the scope of the 200/1200 LPP housing project?",
-        "answer": "It comprises the delivery of 200 public promotional housing (LPP) units, configured with ground-floor commercial spaces, within a larger 1,200-unit urban development in Sidi Abdallah."
+        "question": "What is the scope of the Sidi Abdallah housing project?",
+        "answer": "200 state-sponsored housing units delivered within a larger 1,200-home urban development in Sidi Abdallah, featuring R+9 residential blocks with ground-floor commercial spaces. Completed 2022."
       },
       {
         "question": "What construction works were executed on this site?",
-        "answer": "The contract encompassed secondary trades and interior fit-out works for the R+9 residential blocks, excluding the primary roads and utility networks (VRD) package."
+        "answer": "The contract covered secondary trades and interior fit-out works for the R+9 residential blocks, excluding the primary site roads and utility networks package."
       },
       {
         "question": "How are the residential buildings configured?",
-        "answer": "The buildings are structured as ground floor plus 9 upper floors (R+9), containing F3 and F4 apartment layouts designed to integrate with the surrounding urban pole."
+        "answer": "Buildings are ground floor plus 9 upper floors (R+9), housing F3 and F4 apartment layouts. Ground-floor levels accommodate commercial and professional premises integrated into the street frontage."
       }
     ],
     "images": {
       "hero": [
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
-          "caption": "Facade articulation of the R+9 public promotional housing blocks."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
-          "caption": "Exterior elevation showing the vertical massing and balcony alignment."
-        }
+        {"src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"}
       ],
       "intro": {
-        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-        "alt": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
-        "caption": "Entrance lobby interior showing stone cladding and timber detailing."
+        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
       },
       "mosaic": [
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
-          "alt": "Common circulation area inside the residential building, showing the elevator shaft, integrated timber mailboxes, stone wall finishes, and decorative metal balustrades.",
-          "caption": "Internal circulation core and integrated mailboxes."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
-          "alt": "Wide shot of multiple R+9 apartment blocks during the final stages of construction, with earthworks, utility piping, and construction machinery visible in the foreground.",
-          "caption": "Residential blocks during final site coordination and external works."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
-          "caption": "Entrance lobby interior showing stone cladding and timber detailing."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
-          "caption": "Exterior elevation showing the vertical massing and balcony alignment."
-        }
+        {"src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"}
       ],
       "featureGallery": [
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
-          "alt": "Two completed R+9 residential blocks with white, blue, and peach facades, viewed from an unpaved site area containing construction materials.",
-          "caption": "Completed residential blocks prior to final site clearance."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
-          "caption": "Entrance lobby interior showing stone cladding and timber detailing."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
-          "caption": "Exterior elevation showing the vertical massing and balcony alignment."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
-          "caption": "Facade articulation of the R+9 public promotional housing blocks."
-        }
+        {"src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"}
       ],
       "constructionGallery": [
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
-          "alt": "Entrance portal of a newly completed residential block, featuring a dark metal security door, stone-clad surrounds, and tiled interior flooring.",
-          "caption": "Completed entrance portal and ground-floor access control."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Interior lobby of an LPP residential block, featuring stone wall cladding, vertical timber accents, a built-in planter, and patterned marble flooring leading to a decorative metal security door.",
-          "caption": "Entrance lobby interior showing stone cladding and timber detailing."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Low-angle perspective of the completed R+9 residential building, showing the exterior render, balcony configurations, and window openings against an overcast sky.",
-          "caption": "Exterior elevation showing the vertical massing and balcony alignment."
-        },
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
-          "caption": "Facade articulation of the R+9 public promotional housing blocks."
-        }
+        {"src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"},
+        {"src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"}
       ],
       "featured": [
-        {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Low-angle view of an R+9 residential block facade in Sidi Abdallah, showing beige and peach render, recessed balconies with dark metal balustrades, and external lighting.",
-          "caption": "Facade articulation of the R+9 public promotional housing blocks."
-        }
+        {"src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"}
       ]
     }
   }

@@ -4,39 +4,32 @@
   "sourceRevision": "v1-079f0606",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-28d8dc6e6d9c31cf",
+  "revision": "v3-natural-editorial-fr",
   "status": "approved",
-  "updatedAt": "2026-07-12T00:21:28.053Z",
+  "updatedAt": "2026-07-14T22:30:00Z",
   "seo": {
-    "title": "11/41 Villas et travaux de VRD, Staoueli | Portefeuille résidentiel",
-    "description": "Découvrez la galerie, les détails techniques et les notes de site pour le projet 11/41 Villas et Travaux de Réseaux. Ce projet illustre un modèle de livraison résidentiel et mixte.",
-    "socialTitle": "11/41 Villas et travaux de VRD, Staoueli",
-    "socialDescription": "Découvrez la galerie, les détails techniques et les notes de site pour le projet 11/41 Villas et Travaux de Réseaux. Ce projet illustre un modèle de livraison résidentiel et mixte."
+    "title": "11 Villas individuelles, Les Pastorales — Staoueli, Alger",
+    "description": "Réalisation de 11 villas individuelles R+2 au sein du lotissement Les Pastorales à Staoueli — tranche d'un programme de 41 villas, avec VRD intégrés. Livraison 2022.",
+    "socialTitle": "11 Villas individuelles, Les Pastorales — Staoueli",
+    "socialDescription": "11 villas individuelles R+2 aux Pastorales, Staoueli — réalisation TCE et VRD dans le cadre d'un programme de 41 villas. Livraison 2022."
   },
   "content": {
     "slug": "staoueli-11-41-villas",
-    "title": "11/41 Villas et travaux de VRD",
+    "title": "11/41 Villas et travaux de VRD, Les Pastorales, Staoueli",
     "eyebrow": "PROGRAMME RÉSIDENTIEL",
     "summary": [
-      "Réalisation de 11 villas individuelles au sein du lotissement Les Pastorales à Staoueli, associant un volume résidentiel en rez-de-chaussée plus 2 étages (R+2) à des travaux intégrés de voirie et réseaux divers (VRD).",
+      "Réalisation de 11 villas individuelles au sein du lotissement Les Pastorales à Staoueli, associant un volume résidentiel en R+2 à des travaux intégrés de voirie et réseaux divers (VRD).",
       "Cette tranche résidentielle met l'accent sur l'organisation volumétrique de faible hauteur, la circulation sur site et des aménagements extérieurs durables pour instaurer une échelle domestique cohérente."
     ],
     "description": [
       "Les 11 villas constituent une phase spécifique d'un plan de masse global de 41 villas. Le cahier des charges exigeait un enchaînement coordonné des travaux en tous corps d'état (TCE), le traitement des façades et la pose de réseaux divers et de voirie (VRD) pour garantir des raccordements autonomes.",
-      "Construites selon une structure en rez-de-chaussée plus 2 étages (R+2), les villas intègrent des balcons, des garde-corps structurels, des enduits extérieurs et des voies d'accès dédiées afin de structurer le front résidentiel sur rue."
+      "Construites selon une structure en R+2, les villas intègrent des balcons, des garde-corps structurels, des enduits extérieurs et des voies d'accès dédiées afin de structurer le front résidentiel sur rue."
     ],
     "authority": "Une livraison résidentielle caractérisée par une exécution structurelle rigoureuse, des réseaux de viabilisation adaptés au site et des finitions de façade coordonnées.",
-    "seo": "Découvrez la galerie, les détails techniques et les notes de site pour le projet 11/41 Villas et Travaux de Réseaux. Ce projet illustre un modèle de livraison résidentiel et mixte.",
-    "meta": [
-      {
-        "label": "Type de promotion",
-        "value": "Villas promotionnelles libres"
-      }
-    ],
     "details": [
       {
         "label": "Type de promotion",
-        "value": "Villas promotionnelles libres"
+        "value": "Villas individuelles"
       },
       {
         "label": "Localisation",
@@ -82,98 +75,66 @@
       },
       {
         "question": "Quelles sont les caractéristiques architecturales de ces villas ?",
-        "answer": "Chaque villa est développée en rez-de-chaussée plus 2 étages (R+2), présentant un traitement de façade contemporain, des balcons avec garde-corps vitrés et des accès de garage intégrés."
+        "answer": "Chaque villa est développée en R+2, présentant un traitement de façade contemporain, des balcons avec garde-corps vitrés et des accès de garage intégrés."
       }
     ],
     "images": {
       "hero": [
         {
-          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
-          "alt": "Vue extérieure de villas résidentielles nouvellement achevées avec façades claires, accents sombres, balcons vitrés et toitures en tuiles rouges sous un ciel bleu.",
-          "caption": "Villas résidentielles en R+2 achevées, montrant le traitement des façades et les balcons vitrés."
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
-          "alt": "Extérieur d'un bâtiment résidentiel à plusieurs niveaux avec murs blancs et rose clair, détails architecturaux gris foncé, balcons vitrés et auvents en bois sur les entrées du rez-de-chaussée et les portes de garage. Une voie pavée est visible au premier plan.",
-          "caption": "Façade sur rue montrant les auvents d'entrée, les garages intégrés et les voies d'accès pavées."
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
         }
       ],
       "intro": {
-        "src": "/projects/staoueli-11-41-villas/01-staouali-1.webp",
-        "alt": "Un alignement de villas résidentielles modernes de couleur claire avec des accents sombres, des balcons vitrés et des toits en tuiles de terre cuite sous un ciel bleu clair.",
-        "caption": "Alignement volumétrique des villas en R+2 au sein du lotissement Les Pastorales."
+        "src": "/projects/staoueli-11-41-villas/01-staouali-1.webp"
       },
       "mosaic": [
         {
-          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
-          "alt": "Une cuisine nouvellement achevée avec un sol en dalles de marbre sombre et brillant, des éléments bas de couleur crème claire, des plans de travail sombres, une crédence à motifs géométriques gris et blanc, et des éléments hauts en bois brun foncé. Un chiffon bleu est visible sur le sol au premier plan.",
-          "caption": "Travaux de finitions intérieures montrant le mobilier de cuisine et les surfaces carrelées."
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp",
-          "alt": "Une villa résidentielle de plusieurs étages en cours de construction avec des échafaudages sur la façade, du béton brut à la base et deux ouvriers se reposant sur un balcon supérieur.",
-          "caption": "Travaux de finition de façade et gros œuvre en cours sur une villa individuelle."
+          "src": "/projects/staoueli-11-41-villas/08-whatsapp-image-2025-11-10-a-11-58-48-335d33dd.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
-          "alt": "Extérieur d'un bâtiment résidentiel à plusieurs niveaux avec murs blancs et rose clair, détails architecturaux gris foncé, balcons vitrés et auvents en bois sur les entrées du rez-de-chaussée et les portes de garage. Une voie pavée est visible au premier plan.",
-          "caption": "Détail des finitions extérieures, des auvents d'entrée et des circulations au rez-de-chaussée."
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
-          "alt": "Vue extérieure de villas résidentielles nouvellement achevées avec façades claires, accents sombres, balcons vitrés et toitures en tuiles rouges sous un ciel bleu.",
-          "caption": "Élévations des villas achevées avec balcons intégrés et couverture en tuiles de terre cuite."
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
         }
       ],
       "featureGallery": [
         {
-          "src": "/projects/staoueli-11-41-villas/03-staoualii.webp",
-          "alt": "Une cuisine contemporaine en L dans une villa résidentielle, présentant des plans de travail en granit sombre, des éléments bas crème clair, des éléments hauts blancs et des placards muraux effet bois brun foncé. Une plaque de cuisson à gaz, un évier double en acier inoxydable et une crédence en carreaux décoratifs à motifs sont visibles, ainsi qu'un sol en dalles effet marbre sombre.",
-          "caption": "Installation de cuisine achevée illustrant la livraison du second œuvre."
+          "src": "/projects/staoueli-11-41-villas/03-staoualii.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp",
-          "alt": "Extérieur d'une villa résidentielle de plusieurs étages avec des murs beige clair, des cadres de fenêtres sombres et des balcons avec garde-corps en verre et métal. Un toit en tuiles de terre cuite est visible, et une grande poutre en béton obstrue le haut du cadre. Un horodatage '2022.9.21 11:52' est présent en bas à droite.",
-          "caption": "Détail des élévations des étages supérieurs, des vitrages et des garde-corps de balcons."
+          "src": "/projects/staoueli-11-41-villas/04-whatsapp-image-2025-11-10-a-11-58-44-c239f3f3.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
-          "alt": "Extérieur d'un bâtiment résidentiel à plusieurs niveaux avec murs blancs et rose clair, détails architecturaux gris foncé, balcons vitrés et auvents en bois sur les entrées du rez-de-chaussée et les portes de garage. Une voie pavée est visible au premier plan.",
-          "caption": "Points d'accès au rez-de-chaussée et entrées de garage intégrées."
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
-          "alt": "Vue extérieure de villas résidentielles nouvellement achevées avec façades claires, accents sombres, balcons vitrés et toitures en tuiles rouges sous un ciel bleu.",
-          "caption": "Structures des villas en R+2 achevées montrant l'enduit extérieur et les profils de toiture."
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
         }
       ],
       "constructionGallery": [
         {
-          "src": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp",
-          "alt": "Vue extérieure de plusieurs villas résidentielles de plusieurs étages nouvellement construites, présentant des murs blancs, des accents architecturaux gris foncé, des tuiles de terre cuite et des balcons vitrés sous un ciel bleu. Une personne est partiellement visible au rez-de-chaussée à droite.",
-          "caption": "Extérieurs des villas achevés avant la réception finale."
+          "src": "/projects/staoueli-11-41-villas/06-whatsapp-image-2025-11-10-a-11-58-46-3eaf6920.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
-          "alt": "Vue extérieure de villas résidentielles nouvellement achevées avec façades claires, accents sombres, balcons vitrés et toitures en tuiles rouges sous un ciel bleu.",
-          "caption": "Élévations finies montrant l'intégration du verre, du métal et de l'enduit."
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp",
-          "alt": "Extérieur d'un bâtiment résidentiel à plusieurs niveaux avec murs blancs et rose clair, détails architecturaux gris foncé, balcons vitrés et auvents en bois sur les entrées du rez-de-chaussée et les portes de garage. Une voie pavée est visible au premier plan.",
-          "caption": "Voies piétonnes achevées et travaux extérieurs."
+          "src": "/projects/staoueli-11-41-villas/02-staouali-2.webp"
         },
         {
-          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp",
-          "alt": "Une cuisine nouvellement achevée avec un sol en dalles de marbre sombre et brillant, des éléments bas de couleur crème claire, des plans de travail sombres, une crédence à motifs géométriques gris et blanc, et des éléments hauts en bois brun foncé. Un chiffon bleu est visible sur le sol au premier plan.",
-          "caption": "Pose du carrelage intérieur et installation du mobilier dans les zones de cuisine."
+          "src": "/projects/staoueli-11-41-villas/05-whatsapp-image-2025-11-10-a-11-58-45-62e04c7e.webp"
         }
       ],
       "featured": [
         {
-          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp",
-          "alt": "Vue extérieure de villas résidentielles nouvellement achevées avec façades claires, accents sombres, balcons vitrés et toitures en tuiles rouges sous un ciel bleu.",
-          "caption": "Villas résidentielles en R+2 achevées au sein du lotissement Les Pastorales."
+          "src": "/projects/staoueli-11-41-villas/07-whatsapp-image-2025-11-10-a-11-58-47-3c8b6d80.webp"
         }
       ]
     }

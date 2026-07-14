@@ -1,190 +1,147 @@
 {
-  "pageId": "projects/bas-mazagran-200-38-housing",
-  "locale": "tr",
-  "sourceRevision": "v1-ad166423",
-  "schemaVersion": 1,
-  "sourceLocale": "en",
-  "revision": "v1-bb90425c9d0c5744",
-  "status": "approved",
-  "updatedAt": "2026-07-12T00:21:30.608Z",
-  "seo": {
-    "title": "Bas Mazagran | 200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi",
-    "description": "Mostaganem, Bas Mazagran'da 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşan 238 konutluk yerleşim projesinin teknik uygulaması.",
-    "socialTitle": "Bas Mazagran | 200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi",
-    "socialDescription": "Mostaganem, Bas Mazagran'da 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşan 238 konutluk yerleşim projesinin teknik uygulaması."
-  },
-  "content": {
-    "slug": "bas-mazagran-200-38-housing",
-    "title": "200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi, Bas Mazagran",
-    "eyebrow": "KONUT PROJESİ",
-    "summary": [
-      "Mostaganem, Bas Mazagran'da yer alan bu konut projesi, zemin kat ticari alanlarıyla entegre edilmiş, 200 destekli konut ve 38 serbest promosyonel konut ünitesini barındıran yedi taşıyıcı bloktan oluşmaktadır.",
-      "Proje, yapısal kütlesi ve cephe tasarımıyla dikey yoğunluğu optimize ederken, yeni yerleşim alanını desteklemek için özel yaya erişim yolları ile yol ve altyapı şebekelerini (VRD) entegre etmektedir."
-    ],
-    "description": [
-      "Mimari yerleşim, iç sirkülasyonu ve yapısal verimliliği optimize etmek amacıyla her katta dört daire bulunacak şekilde tasarlanmış, yedi betonarme taşıyıcı blok üzerine dağıtılmış 238 daireden oluşmaktadır.",
-      "İnşaat programı; ince yapı işleri, cephe duvar örümü, iç teknik tesisatlar ve yol ile altyapı şebekelerinin (VRD) tamamlanmasına odaklanarak ince işler aşamasında ilerlemektedir."
-    ],
-    "authority": "OFFICE DE PROMOTION ET DE GESTION IMMOBILIÈRE (OPGI)",
-    "seo": "Mostaganem, Bas Mazagran'daki 200 destekli konut ve 38 serbest promosyonel konut ünitesine ait teknik şartnameler, inşaat ilerlemesi ve şantiye detayları.",
-    "meta": [
-      {
-        "label": "İşveren",
-        "value": "OPGI"
-      },
-      {
-        "label": "Proje Tipi",
-        "value": "Destekli ve Promosyonel Konut"
-      }
-    ],
-    "details": [
-      {
-        "label": "Proje Tipi",
-        "value": "Destekli ve Promosyonel Konut"
-      },
-      {
-        "label": "Konum",
-        "value": "Bas Mazagran, Mostaganem"
-      },
-      {
-        "label": "Program",
-        "value": "200 Destekli Konut Ünitesi ve 38 Serbest Promosyonel Konut Ünitesi"
-      },
-      {
-        "label": "Bloklar",
-        "value": "7 Blok (R+5 ila R+9)"
-      },
-      {
-        "label": "Durum",
-        "value": "Devam Ediyor"
-      }
-    ],
-    "facilityGroups": [
-      {
-        "title": "Proje Programı",
-        "items": [
-          "Sosyal ve serbest segmentleri kapsayan 238 programlı konut ünitesi",
-          "Zemin kat artı 5 ila zemin kat artı 9 üst kat (R+5 ila R+9) arasında değişen yedi betonarme taşıyıcı blok",
-          "Zemin kat ticari alanları",
-          "Entegre yol ve altyapı şebekeleri (VRD) ile yaya erişim yolları"
-        ]
-      }
-    ],
-    "nearby": {
-      "title": "Konum Bağlamı",
-      "items": [
-        "Mostaganem, Bas Mazagran kıyı bölgesi (teslim aşamasındaki kıyı yerleşim projesi)"
-      ]
-    },
-    "faq": [
-      {
-        "question": "200 Destekli Konut ve 38 Serbest Promosyonel Konut Ünitesi projesi nedir?",
-        "answer": "Proje, zemin katında ticari alanlar bulunan yedi taşıyıcı blokta dağıtılmış 200 destekli konut ve 38 serbest promosyonel konut ünitesinden oluşmaktadır."
-      },
-      {
-        "question": "Blokların yapısal konfigürasyonu nasıldır?",
-        "answer": "Proje, her katta dört daire olacak şekilde yüksek verimli bir mekansal oran koruyarak, yedi blokta toplam 238 bağımsız dairenin mekansal ve yapısal uygulamasını kapsamaktadır."
-      },
-      {
-        "question": "Bu konut projesinin işvereni kimdir?",
-        "answer": "Proje, bölgedeki konut ihtiyaçlarını karşılamak üzere Office de Promotion et de Gestion Immobilière (OPGI) için inşa edilmektedir."
-      },
-      {
-        "question": "İnşaat çalışmalarının güncel durumu nedir?",
-        "answer": "Proje şu anda yapım aşamasında olup, çalışmalar ince yapı işleri, cephe duvar örümü ve yol ile altyapı şebekelerinin (VRD) kurulumuna odaklanmıştır."
-      }
-    ],
-    "images": {
-      "hero": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi.",
-          "caption": "Betonarme karkas ve tuğla dolgu duvar işlerini gösteren konut bloklarının yapısal uygulaması."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda.",
-          "caption": "Zemin+5 ila Zemin+9 katlı (R+5 ila R+9) konut bloklarının karkas inşaatı sırasında çalışan kule vinç."
-        }
-      ],
-      "intro": {
-        "src": "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp",
-        "alt": "Ön planda büyük toprak yığınlarının, arka planda ise bulutlu bir gökyüzü altında yapım aşamasındaki binaların ve çalışan iki vincin (biri kule, diğeri mobil vinç) yer aldığı şantiye görünümü.",
-        "caption": "Proje sahası genelinde kazı işleri ve alt yapı hazırlığı."
-      },
-      "mosaic": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp",
-          "alt": "Geniş ve kumlu bir kazı çukurunda kazı yapan büyük gri bir HIDROMEK ekskavatörün yer aldığı şantiyenin havadan görünümü. Yakınlarda biri toprak yüklü iki turuncu damperli kamyon park etmiş durumda. Arka planda yapım aşamasındaki betonarme bir bina, uzakta ise konutlar ve tepeler görünüyor. Kamyonların yanında iki inşaat işçisi bulunuyor.",
-          "caption": "Yedi bloğun temelleri için kazı ve saha tesviye çalışmaları."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp",
-          "alt": "Kumlu toprakta derin bir hendek kazan büyük kovalı bir ekskavatör. Hendek yakınında duran iki inşaat işçisi çalışmayı izliyor. Ekskavatör kabininin içinde başka bir işçi görünüyor. Arka planda üstü dikenli telli beton bir duvar var.",
-          "caption": "Yeraltı altyapı şebekelerinin kurulumu için hendek kazısı."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp",
-          "alt": "Toprak sahada inşaat malzemeleri yüklü beyaz bir pikabın yanında iki işçi; arka planda parçalı bulutlu bir gökyüzü altında büyük mavi bir kule vinç ve yapım aşamasındaki çok katlı binalar.",
-          "caption": "Şantiye içi malzeme lojistiği ve ince yapı bileşenlerinin teslimatı."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi.",
-          "caption": "Konut ünitelerinin dış duvar örümü ve taşıyıcı karkaslarındaki ilerleme."
-        }
-      ],
-      "featureGallery": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp",
-          "alt": "Bulutlu bir gökyüzü altında, arka planda kısmen inşa edilmiş betonarme bir binanın yer aldığı kumlu şantiyede bir ekskavatör ve iki damperli kamyon.",
-          "caption": "Yol ve altyapı şebekeleri (VRD) için saha topografyasını hazırlayan hafriyat makineleri."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp",
-          "alt": "Bulutlu bir gökyüzü altında, kazı çukuru ve kısmen inşa edilmiş betonarme bir binanın yer aldığı şantiyede ekskavatör ve damperli kamyonlar.",
-          "caption": "İlk temel kazısı ve yapısal zemin çalışmaları."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi.",
-          "caption": "Çok katlı bloklarda cephe tasarımı ve duvar dolgusu."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda.",
-          "caption": "Beton döküm aşamasında yedi bloğun yapısal kütlesi."
-        }
-      ],
-      "constructionGallery": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp",
-          "alt": "Kolunda 'HIDROMEK' yazısı görünen bir ekskavatör kumlu toprakta derin bir hendek kazıyor. Hendekte iki işçi var ve ekskavatörün yakınında kırmızı tişörtlü başka bir işçi duruyor. Arka planda üstü dikenli telli beton bir duvar var.",
-          "caption": "Altyapı bağlantıları için inşaat mühendisliği işleri ve hendek kazıları."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp",
-          "alt": "Toprak şantiyede, üzerinde inşaat malzemesi torbaları yüklü beyaz bir JMC pikap ve yanında iki adam. Arka planda parçalı bulutlu bir gökyüzü altında büyük mavi bir kule vinç ve yapım aşamasındaki çok katlı binalar görünüyor.",
-          "caption": "Aktif inşaat sektörlerine ince iş malzemelerinin teslimatı."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi.",
-          "caption": "Dış duvar örümü ve pencere boşluklarının uygulanması."
-        },
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp",
-          "alt": "Çeşitli tamamlanma aşamalarında olan çok sayıda betonarme konut yapısının, üst kısımlarından çıkan inşaat demirlerinin ve sol tarafta açık mavi gökyüzüne karşı duran büyük mavi bir kule vincin yer aldığı şantiyenin geniş açılı görünümü. Toprak zemine inşaat malzemeleri dağılmış durumda.",
-          "caption": "Yapım aşamasındaki yedi konut bloğunun genel görünümü."
-        }
-      ],
-      "featured": [
-        {
-          "src": "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp",
-          "alt": "Betonarme taşıyıcı karkasları ve kırmızı tuğla dolgu duvarları görünen, yapım aşamasındaki çok katlı konut binalarının görünümü; üstte açık mavi bir gökyüzü ve ön planda yürüyen bir kişi.",
-          "caption": "Duvar örümü aşamasında Bas Mazagran projesinin taşıyıcı blokları."
-        }
-      ]
-    }
-  }
+    "pageId":  "projects/bas-mazagran-200-38-housing",
+    "locale":  "tr",
+    "sourceRevision":  "v1-ad166423",
+    "schemaVersion":  1,
+    "sourceLocale":  "en",
+    "revision":  "v3-natural-editorial-tr",
+    "status":  "approved",
+    "updatedAt":  "2026-07-13T22:30:00Z",
+    "seo":  {
+                "title":  "Bas Mazagran | 200 Sosyal Konut ve 38 Serbest Satışlı Daire",
+                "description":  "Mostaganem, Bas Mazagran'da 200 sosyal konut ve 38 serbest satışlı prestij daireden oluşan 238 konutluk yerleşim projesinin teknik uygulaması.",
+                "socialTitle":  "Bas Mazagran | 200 Sosyal Konut ve 38 Serbest Satışlı Daire",
+                "socialDescription":  "Mostaganem, Bas Mazagran'da 200 sosyal konut ve 38 serbest satışlı prestij daireden oluşan 238 konutluk yerleşim projesinin teknik uygulaması."
+            },
+    "content":  {
+                    "slug":  "bas-mazagran-200-38-housing",
+                    "title":  "Mazagran Sosyal ve Prestij Konutları",
+                    "eyebrow":  "KONUT VE TİCARET PROJESİ",
+                    "summary":  [
+                                    "Mostaganem, Bas Mazagran bölgesinde yükselen proje; 200 adet sosyal konut ve 38 adet serbest satışlı prestij dairesinden oluşan 7 bloklu bir konut yerleşkesidir. Blokların zemin katları, bölgeye hizmet edecek ticari akslar olarak kurgulanmıştır.",
+                                    "SARL Igloo Yapi'nin üstlendiği taahhüt kapsamı; konut bloklarının yanı sıra tüm çevre düzenlemesini, yaya akslarını ve kentsel yol-altyapı (VRD) şebekelerini içermektedir."
+                                ],
+                    "description":  [
+                                        "Betonarme taşıyıcı sistemle inşa edilen 7 blok genelinde, kat başına 4 daire düşecek şekilde optimize edilmiş homojen bir plan şeması uygulanmıştır. Bu dikey planlama, blok içi sirkülasyon hatlarında maksimum alan verimliliği sağlamaktadır.",
+                                        "İnce inşaat aşamasına geçilen projede; dış cephe duvar örme işlemleri, iç mekan tesisat hatlarının çekilmesi ve şantiye genelindeki altyapı bağlantı çalışmaları eş zamanlı olarak sürdürülmektedir."
+                                    ],
+                    "authority":  "OFFICE DE PROMOTION ET DE GESTION IMMOBILIÈRE (OPGI)",
+                    "details":  [
+                                    {
+                                        "label":  "Proje Tipi",
+                                        "value":  "Sosyal ve Serbest Satışlı Konut"
+                                    },
+                                    {
+                                        "label":  "Konum",
+                                        "value":  "Bas Mazagran, Mostaganem"
+                                    },
+                                    {
+                                        "label":  "Program",
+                                        "value":  "200 Sosyal Konut ve 38 Serbest Satışlı Prestij Daire"
+                                    },
+                                    {
+                                        "label":  "Bloklar",
+                                        "value":  "7 Blok (R+5 ila R+9)"
+                                    },
+                                    {
+                                        "label":  "Durum",
+                                        "value":  "Devam Ediyor"
+                                    }
+                                ],
+                    "facilityGroups":  [
+                                           {
+                                               "title":  "Proje Programı",
+                                               "items":  [
+                                                             "Sosyal ve serbest segmentleri kapsayan 238 programlı konut ünitesi",
+                                                             "Zemin kat artı 5 ila zemin kat artı 9 üst kat (R+5 ila R+9) arasında değişen yedi betonarme taşıyıcı blok",
+                                                             "Zemin kat ticari alanları",
+                                                             "Entegre yol ve altyapı şebekeleri (VRD) ile yaya erişim yolları"
+                                                         ]
+                                           }
+                                       ],
+                    "nearby":  {
+                                   "title":  "Konum Bağlamı",
+                                   "items":  [
+                                                 "Mostaganem, Bas Mazagran kıyı bölgesi (teslim aşamasındaki kıyı yerleşim projesi)"
+                                             ]
+                               },
+                    "faq":  [
+                                {
+                                    "question":  "Bas Mazagran 200 Sosyal Konut ve 38 Serbest Satışlı Daire projesi nedir?",
+                                    "answer":  "Proje, zemin katında ticari alanlar bulunan yedi taşıyıcı blokta dağıtılmış 200 sosyal konut ve 38 serbest satışlı prestij daireden oluşmaktadır."
+                                },
+                                {
+                                    "question":  "Blokların yapısal konfigürasyonu nasıldır?",
+                                    "answer":  "Proje, her katta dört daire olacak şekilde yüksek verimli bir mekansal oran koruyarak, yedi blokta toplam 238 bağımsız dairenin mekansal ve yapısal uygulamasını kapsamaktadır."
+                                },
+                                {
+                                    "question":  "Bu konut projesinin işvereni kimdir?",
+                                    "answer":  "Proje, bölgedeki konut ihtiyaçlarını karşılamak üzere Office de Promotion et de Gestion Immobilière (OPGI) için inşa edilmektedir."
+                                },
+                                {
+                                    "question":  "İnşaat çalışmalarının güncel durumu nedir?",
+                                    "answer":  "Proje şu anda yapım aşamasında olup, çalışmalar ince yapı işleri, cephe duvar örümü ve yol ile altyapı şebekelerinin (VRD) kurulumuna odaklanmıştır."
+                                }
+                            ],
+                    "images":  {
+                                   "hero":  [
+                                                {
+                                                    "src":  "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+                                                },
+                                                {
+                                                    "src":  "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+                                                }
+                                            ],
+                                   "intro":  {
+                                                 "src":  "/projects/bas-mazagran-200-38-housing/04-mostaganem-1.webp"
+                                             },
+                                   "mosaic":  [
+                                                  {
+                                                      "src":  "/projects/bas-mazagran-200-38-housing/08-mostaganem-4.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/bas-mazagran-200-38-housing/05-mostaganem-2.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/bas-mazagran-200-38-housing/06-mostaganem-3.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+                                                  }
+                                              ],
+                                   "featureGallery":  [
+                                                          {
+                                                              "src":  "/projects/bas-mazagran-200-38-housing/09-mostaganem-4.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/bas-mazagran-200-38-housing/02-mostaganem-2.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+                                                          }
+                                                      ],
+                                   "constructionGallery":  [
+                                                               {
+                                                                   "src":  "/projects/bas-mazagran-200-38-housing/01-mostaganem-1.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/bas-mazagran-200-38-housing/07-mostaganem-3.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/bas-mazagran-200-38-housing/11-mostaghanem-3.webp"
+                                                               }
+                                                           ],
+                                   "featured":  [
+                                                    {
+                                                        "src":  "/projects/bas-mazagran-200-38-housing/10-mostaghanem-1.webp"
+                                                    }
+                                                ]
+                               }
+                }
 }

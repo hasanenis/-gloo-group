@@ -28,7 +28,9 @@ export type LocalizedString = {
   tr?: string;
 };
 
-const MOJIBAKE_MARKERS = /(?:Ãƒ.|Ã‚.|Ã¢.|Ã°.|Ã.|Ã‘.|Ã˜.|Ã™.|Ã….|Ã„.|ï¿½)/u;
+// Match both double-encoded text (Ãƒ...) and the more common single-pass
+// UTF-8 mojibake (Ø§, Ù„, Ã¼, etc.) before it reaches the UI.
+const MOJIBAKE_MARKERS = /(?:[ÃÂÄÅØÙâð][^\x00-\x7F]|ï¿½)/u;
 
 function decodeMojibakeOnce(value: string): string | null {
   try {
@@ -77,8 +79,10 @@ function hasForeignSentenceConnectors(value: string) {
 function isUsableForLocale(value: string, locale: Locale) {
   if (!value.trim()) return false;
   if (locale === 'ar-DZ') {
-    const latinWords = value.match(/[A-Za-zÀ-ÿ]+/gu) ?? [];
-    if (latinWords.some((word) => !isAcronymToken(word))) return false;
+    // Arabic copy may legitimately contain company names, people and
+    // technical abbreviations in Latin script. Only reject a value when it
+    // contains no Arabic at all and reads like a foreign sentence.
+    if (!hasArabic(value) && hasMixedArabicLatinWords(value)) return false;
   }
   if (locale === 'tr' && (hasArabic(value) || hasForeignSentenceConnectors(value) > 1)) return false;
   return true;

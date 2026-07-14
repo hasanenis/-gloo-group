@@ -109,6 +109,13 @@ export async function writeJsonAtomic(file, value) {
   }
 }
 
+export async function appendApprovalDecision(decision) {
+  const file = path.join(ROOT_DIR, 'artifacts', 'localization', 'approval-decisions.jsonl');
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  await fs.appendFile(file, `${JSON.stringify({ schemaVersion: 1, ...decision })}\n`, 'utf8');
+  return file;
+}
+
 export async function listContentDocuments() {
   const result = [];
   async function walk(directory, type) {

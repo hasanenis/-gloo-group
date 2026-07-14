@@ -4,39 +4,32 @@
   "sourceRevision": "v1-90b63688",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-c85776c67fd86d39",
+  "revision": "v3-natural-editorial-fr",
   "status": "approved",
-  "updatedAt": "2026-07-12T00:21:27.736Z",
+  "updatedAt": "2026-07-14T22:30:00Z",
   "seo": {
-    "title": "50 logements promotionnels libres",
-    "description": "Détails techniques, exécution structurelle et avancement du chantier des 50 logements promotionnels libres à Sidi Benour, Alger.",
-    "socialTitle": "50 logements promotionnels libres",
-    "socialDescription": "Détails techniques, exécution structurelle et avancement du chantier des 50 logements promotionnels libres à Sidi Benour, Alger."
+    "title": "50 logements en accession libre — Sidi Benour, Mahelma, Alger",
+    "description": "Immeuble résidentiel R+13 de 50 logements en accession libre à Sidi Benour, Mahelma — réalisation TCE et VRD au sein d'un programme de 362 logements. Livraison 2025.",
+    "socialTitle": "50 logements en accession libre — Sidi Benour, Mahelma",
+    "socialDescription": "50 logements en accession libre sur un immeuble R+13 à Sidi Benour — TCE et VRD, livraison 2025."
   },
   "content": {
     "slug": "sidi-benour-50-housing",
-    "title": "50 logements promotionnels libres",
+    "title": "50 logements en accession libre — Sidi Benour",
     "eyebrow": "PROJET RÉSIDENTIEL",
     "summary": [
-      "Une livraison résidentielle en R+13 de 50 logements à Sidi Benour, intégrée dans un programme plus large de 362 logements promotionnels libres.",
-      "Le projet de Sidi Benour répond à la demande résidentielle urbaine par une densification verticale, des réseaux d’utilité publique intégrés et une circulation de site coordonnée."
+      "Une livraison résidentielle en R+13 de 50 logements en accession libre à Sidi Benour, intégrée dans un programme plus large de 362 logements.",
+      "Le projet de Sidi Benour répond à la demande résidentielle urbaine par une densification verticale, des réseaux d'utilité publique intégrés et une circulation de site coordonnée."
     ],
     "description": [
-      "Le périmètre du projet comprend la livraison en tous corps d’état (TCE) et les travaux de voirie et réseaux divers (VRD) pour le bloc résidentiel en R+13, coordonnant l’exécution structurelle, l’articulation des façades, les corps d’état techniques et les aménagements extérieurs.",
-      "L’articulation de la façade se caractérise par des lignes verticales et des balcons en saillie, appuyée par des travaux complets de terrassement, de raccordement aux réseaux et de voies d’accès dédiées."
+      "Le périmètre du projet comprend la livraison en tous corps d'état (TCE) et les travaux de voirie et réseaux divers (VRD) pour le bloc résidentiel en R+13, coordonnant l'exécution structurelle, l'articulation des façades, les corps d'état techniques et les aménagements extérieurs.",
+      "L'articulation de la façade se caractérise par des lignes verticales et des balcons en saillie, appuyée par des travaux complets de terrassement, de raccordement aux réseaux et de voies d'accès dédiées."
     ],
-    "authority": "Un développement résidentiel de grande hauteur où l’ingénierie structurelle, le rythme des façades, les VRD et les systèmes techniques sont intégrés pour répondre aux exigences de l’habitat urbain dense.",
-    "seo": "Détails techniques, exécution structurelle et avancement du chantier des 50 logements promotionnels libres à Sidi Benour, Alger.",
-    "meta": [
-      {
-        "label": "Type de projet",
-        "value": "Logement promotionnel libre (LPL)"
-      }
-    ],
+    "authority": "Un développement résidentiel de grande hauteur où l'ingénierie structurelle, le rythme des façades, les VRD et les systèmes techniques sont intégrés pour répondre aux exigences de l'habitat urbain dense.",
     "details": [
       {
         "label": "Type de projet",
-        "value": "Logement promotionnel libre (LPL)"
+        "value": "Logement en accession libre"
       },
       {
         "label": "Localisation",
@@ -44,7 +37,7 @@
       },
       {
         "label": "Programme",
-        "value": "50 logements au sein d’un programme de 362 logements"
+        "value": "50 logements au sein d'un programme de 362 logements"
       },
       {
         "label": "Livraison",
@@ -56,14 +49,14 @@
       },
       {
         "label": "Travaux",
-        "value": "Livraison en tous corps d’état (TCE) avec voirie et réseaux divers (VRD)"
+        "value": "Livraison en tous corps d'état (TCE) avec voirie et réseaux divers (VRD)"
       }
     ],
     "facilityGroups": [
       {
         "title": "Programme du projet",
         "items": [
-          "50 logements livrés au sein d’un programme de 362 logements",
+          "50 logements livrés au sein d'un programme de 362 logements",
           "Bâtiment résidentiel en rez-de-chaussée plus 13 étages (R+13)",
           "TCE, VRD, lots techniques et accès extérieurs",
           "Achevé en 2025 avec une exécution coordonnée"
@@ -73,107 +66,75 @@
     "nearby": null,
     "faq": [
       {
-        "question": "Quel est le périmètre du projet des 50 logements promotionnels libres ?",
-        "answer": "Une livraison résidentielle en R+13 de 50 logements à Sidi Benour, intégrée dans un programme plus large de 362 logements promotionnels libres."
+        "question": "Quel est le périmètre du projet des 50 logements à Sidi Benour ?",
+        "answer": "Une livraison résidentielle en R+13 de 50 logements en accession libre à Sidi Benour, intégrée dans un programme plus large de 362 logements."
       },
       {
         "question": "Quels travaux de construction ont été exécutés sur ce chantier ?",
         "answer": "Le projet associe la réalisation en TCE et VRD pour un bâtiment résidentiel en R+13, coordonnant la structure, les façades, les lots techniques et les circulations extérieures."
       },
       {
-        "question": "Comment le projet s’intègre-t-il dans le site environnant ?",
-        "answer": "La conception privilégie une volumétrie verticale pour optimiser l’occupation du sol, complétée par des voies d’accès dédiées et des raccordements de réseaux intégrés pour garantir une mise en service complète."
+        "question": "Comment le projet s'intègre-t-il dans le site environnant ?",
+        "answer": "La conception privilégie une volumétrie verticale pour optimiser l'occupation du sol, complétée par des voies d'accès dédiées et des raccordements de réseaux intégrés pour garantir une mise en service complète."
       }
     ],
     "images": {
       "hero": [
         {
-          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
-          "alt": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, présentant une structure en béton armé apparente et un remplissage en briques rouges, sous un ciel nuageux.",
-          "caption": "Bâtiment résidentiel en cours de construction avec remplissage en briques."
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp",
-          "alt": "Vue d’un bâtiment résidentiel de plusieurs étages en cours de construction, montrant de grands voiles de soutènement en béton, des structures de ferraillage complexes et des ouvriers au niveau supérieur, avec une flèche de grue au-dessus et d’autres bâtiments en arrière-plan.",
-          "caption": "Avancement structurel des unités résidentielles à Sidi Benour."
+          "src": "/projects/sidi-benour-50-housing/14-img-20251112-wa0019.webp"
         }
       ],
       "intro": {
-        "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
-        "alt": "Un grand bâtiment résidentiel en cours de construction, présentant une structure en béton apparente, des murs de remplissage en briques rouges et une grue à tour rouge sur fond de ciel bleu clair. Des palettes de briques rouges sont visibles au sol au premier plan.",
-        "caption": "Avancement de la structure des 50 logements à Sidi Benour."
+        "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
       },
       "mosaic": [
         {
-          "src": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp",
-          "alt": "Une grande grue à tour surplombe un bâtiment en béton de plusieurs étages en cours de construction, avec ferraillage apparent et coffrage aux niveaux supérieurs, sous un ciel couvert.",
-          "caption": "Travaux de gros œuvre en cours pour les logements résidentiels."
+          "src": "/projects/sidi-benour-50-housing/03-img-20251112-wa0008.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp",
-          "alt": "Vue extérieure complète d’un grand bâtiment résidentiel moderne de couleur claire avec de nombreux balcons et fenêtres, vu depuis le sol derrière un muret en béton et une zone pavée.",
-          "caption": "Bâtiment résidentiel achevé à Sidi Benour, Alger."
+          "src": "/projects/sidi-benour-50-housing/04-img-20251112-wa0009.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp",
-          "alt": "Un grand bâtiment résidentiel en cours de construction, montrant des poteaux et dalles en béton, des murs en briques rouges et des balcons. Une grande grue de chantier rouge est partiellement visible sur le côté gauche, s’élevant vers le haut. Un ouvrier est visible sur l’un des balcons supérieurs.",
-          "caption": "Travaux de structure et avancement du remplissage en briques sur les unités résidentielles."
+          "src": "/projects/sidi-benour-50-housing/10-img-20251112-wa0015.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
-          "alt": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, présentant une structure en béton armé apparente et un remplissage en briques rouges, sous un ciel nuageux.",
-          "caption": "Bâtiment résidentiel en cours de construction avec remplissage en briques."
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
         }
       ],
       "featureGallery": [
         {
-          "src": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp",
-          "alt": "Une vue aérienne d’un chantier de construction avec une grande dalle de béton et des cages d’armature pour un nouvel étage, une grue à tour rouge sur la gauche et des ouvriers sur la structure. Des bâtiments résidentiels lointains et des collines verdoyantes sont visibles sous un ciel brumeux.",
-          "caption": "Travaux de structure en cours pour les unités résidentielles, montrant le ferraillage et le coffrage."
+          "src": "/projects/sidi-benour-50-housing/15-img-20251112-wa0020.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp",
-          "alt": "Un ouvrier de chantier en t-shirt rayé et casquette se tient entre de grandes piles de briques rouges creuses à l’intérieur d’un bâtiment en cours de construction, avec des bâtiments résidentiels lointains et de la végétation visibles à travers une ouverture.",
-          "caption": "Ouvrier avec des briques sur le chantier de logements de Sidi Benour."
+          "src": "/projects/sidi-benour-50-housing/12-img-20251112-wa0017.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
-          "alt": "Un grand bâtiment résidentiel en cours de construction, présentant une structure en béton apparente, des murs de remplissage en briques rouges et une grue à tour rouge sur fond de ciel bleu clair. Des palettes de briques rouges sont visibles au sol au premier plan.",
-          "caption": "Avancement de la structure des 50 logements à Sidi Benour."
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
-          "alt": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, présentant une structure en béton armé apparente et un remplissage en briques rouges, sous un ciel nuageux.",
-          "caption": "Bâtiment résidentiel en cours de construction avec remplissage en briques."
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
         }
       ],
       "constructionGallery": [
         {
-          "src": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp",
-          "alt": "Un grand bâtiment résidentiel en cours de construction, montrant plusieurs étages avec des structures en béton apparentes et quelques remplissages en briques rouges. Une grande grue à tour est visible en haut à gauche, et le ciel est gris et couvert. Des matériaux de construction sont visibles sur certains balcons.",
-          "caption": "Avancement de la structure des 50 logements à Sidi Benour."
+          "src": "/projects/sidi-benour-50-housing/02-img-20251112-wa0007.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp",
-          "alt": "Une vue en contre-plongée d’un bâtiment en béton de plusieurs étages en cours de construction, montrant des dalles de béton apparentes, des poteaux et des coffrages en bois sur les étages supérieurs. Une flèche de grue est visible en haut à droite, et le soleil brille vivement derrière le bâtiment, créant un effet de silhouette sur un ciel bleu partiellement nuageux.",
-          "caption": "Structure en béton s’élevant vers le ciel."
+          "src": "/projects/sidi-benour-50-housing/01-img-20251112-wa0006.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp",
-          "alt": "Un grand bâtiment résidentiel en cours de construction, présentant une structure en béton apparente, des murs de remplissage en briques rouges et une grue à tour rouge sur fond de ciel bleu clair. Des palettes de briques rouges sont visibles au sol au premier plan.",
-          "caption": "Avancement de la structure des 50 logements à Sidi Benour."
+          "src": "/projects/sidi-benour-50-housing/16-img-20251112-wa0021.webp"
         },
         {
-          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
-          "alt": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, présentant une structure en béton armé apparente et un remplissage en briques rouges, sous un ciel nuageux.",
-          "caption": "Bâtiment résidentiel en cours de construction avec remplissage en briques."
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
         }
       ],
       "featured": [
         {
-          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp",
-          "alt": "Vue extérieure d’un bâtiment résidentiel de plusieurs étages en cours de construction, présentant une structure en béton armé apparente et un remplissage en briques rouges, sous un ciel nuageux.",
-          "caption": "Bâtiment résidentiel en cours de construction avec remplissage en briques."
+          "src": "/projects/sidi-benour-50-housing/09-img-20251112-wa0014.webp"
         }
       ]
     }

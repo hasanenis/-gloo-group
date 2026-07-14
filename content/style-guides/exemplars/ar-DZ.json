@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar-DZ",
+  "status": "editorial-seed",
+  "pairs": [
+    { "id": "rahmania-summary-ar", "archetype": "commercial-fit-out", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "مركزان تجاريان في دويرة، أُنجزا سنة 2025 ضمن برنامج سكني يضم 2 500 مسكن.", "why": ["الترتيب عربي طبيعي", "يحافظ على الموقع والسنة والعدد", "لا يضيف ادعاءً تسويقياً"], "bad": "مشروع تجاري رائد يطوّر الحياة الحضرية في دويرة.", "whyBad": ["يضيف أهمية حضرية غير مثبتة", "لا يذكر نطاق الأشغال"] },
+    { "id": "dely-summary-ar", "archetype": "mixed-use-tower", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "برج سكني متعدد الاستعمالات في دالي إبراهيم يضم 240 مسكناً وثلاثة طوابق تجارية.", "why": ["يعرّف بالموقع والنوع والبرنامج", "يحافظ على الرقم", "يتجنب لغة الإعلان العقاري"], "bad": "برج مميز وفاخر يحسّن الكثافة العمرانية.", "whyBad": ["يضيف أوصافاً غير مدعومة", "ينقل حكماً تخطيطياً غير مثبت"] },
+    { "id": "rouiba-summary-ar", "archetype": "villa-development", "field": "content.summary", "sourceFacts": ["content.title", "content.summary[0]"], "good": "أربع فيلات في الرويبة، مع نطاقي TCE وVRD كما يردان في محتوى المشروع.", "why": ["يحافظ على العدد والموقع والأكواد التقنية", "يفصل نطاق العمل عن اللغة الترويجية"], "bad": "مجمع سكني خاص فاخر ذو أداء عالٍ.", "whyBad": ["يضيف الملكية والأداء والفخامة بلا مصدر"] }
+  ]
+}

@@ -16,7 +16,7 @@ if (!credential.project_id) throw new Error('Google Cloud service account is mis
 process.env.GOOGLE_APPLICATION_CREDENTIALS = credentialPath;
 
 const model = process.env.GEMINI_POLISH_MODEL || 'gemini-2.5-pro';
-const location = process.env.GOOGLE_CLOUD_LOCATION || 'global';
+const location = process.env.GOOGLE_CLOUD_LOCATION || 'us-central1';
 const ai = new GoogleGenAI({ vertexai: true, project: credential.project_id, location, apiVersion: 'v1' });
 const apply = process.argv.includes('--apply');
 const startAt = process.argv.includes('--start') ? Number(process.argv[process.argv.indexOf('--start') + 1]) : 0;

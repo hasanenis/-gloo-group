@@ -4,21 +4,21 @@
   "sourceRevision": "v1-c9a1cef8",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-55dec8b15d442078",
+  "revision": "v3-natural-editorial-fr",
   "status": "approved",
-  "updatedAt": "2026-07-12T00:21:29.075Z",
+  "updatedAt": "2026-07-14T22:30:00Z",
   "seo": {
-    "title": "240 logements promotionnels libres avec locaux commerciaux | Dely Brahim",
-    "description": "Fiches techniques, exécution des structures et plan de masse pour les 240 logements promotionnels libres à Dely Brahim, Alger, avec un front commercial intégré.",
-    "socialTitle": "240 logements promotionnels libres avec locaux commerciaux",
-    "socialDescription": "Fiches techniques, exécution des structures et plan de masse pour les 240 logements promotionnels libres à Dely Brahim, Alger, avec un front commercial intégré."
+    "title": "Tour mixte 33 étages — 240 logements avec locaux commerciaux, Dely Brahim",
+    "description": "Tour mixte de 33 étages à Dely Brahim, Alger — 240 logements en accession libre, trois niveaux de commerces, trois sous-sols et trois entre-sols de parking. En cours.",
+    "socialTitle": "Tour mixte 33 étages — Dely Brahim, Alger",
+    "socialDescription": "240 logements en accession libre du 3e au 33e étage, socle commercial trois niveaux et parking multi-niveaux à Dely Brahim, Alger."
   },
   "content": {
     "slug": "dely-brahim-240-housing",
-    "title": "240 logements promotionnels libres avec locaux commerciaux",
+    "title": "240 logements en accession libre avec locaux commerciaux, Dely Brahim",
     "eyebrow": "PROJET RÉSIDENTIEL ET COMMERCIAL MIXTE",
     "summary": [
-      "Une tour mixte de 33 étages à Dely Brahim, Alger, intégrant 240 logements promotionnels libres avec trois niveaux de commerces, trois sous-sols et trois entre-sols de parking.",
+      "Une tour mixte de 33 étages à Dely Brahim, Alger, intégrant 240 logements en accession libre avec trois niveaux de commerces, trois sous-sols et trois entre-sols de parking.",
       "Ce projet de grande hauteur comprend des unités résidentielles réparties du 3e au 33e étage, reposant sur un socle commercial multi-niveaux et des structures de stationnement souterraines dédiées."
     ],
     "description": [
@@ -26,17 +26,10 @@
       "L'exécution de la structure a exigé une coordination verticale complexe, gérant l'intégration de l'ossature en béton armé, des cages de circulation verticale, des compartiments de sécurité incendie, des lots techniques (électricité, plomberie, CVC) et de la modulation de la façade."
     ],
     "authority": "Un projet mixte de grande hauteur coordonnant la densité résidentielle, un front commercial actif au niveau de la rue et un parking multi-niveaux au sein d'une seule structure verticale.",
-    "seo": "Fiches techniques, exécution des structures et plan de masse pour les 240 logements promotionnels libres à Dely Brahim, Alger, avec un front commercial intégré.",
-    "meta": [
-      {
-        "label": "Type de projet",
-        "value": "Logements promotionnels libres avec locaux commerciaux et services"
-      }
-    ],
     "details": [
       {
         "label": "Type de projet",
-        "value": "Logements promotionnels libres avec locaux commerciaux"
+        "value": "Logements en accession libre avec locaux commerciaux"
       },
       {
         "label": "Localisation",
@@ -82,8 +75,8 @@
     },
     "faq": [
       {
-        "question": "En quoi consiste le projet des 240 logements promotionnels libres avec locaux commerciaux ?",
-        "answer": "Le projet consiste en une tour mixte de 33 étages comprenant 240 logements promotionnels libres, soutenue par un socle commercial de trois niveaux, 03 sous-sols et 03 entre-sols de parking."
+        "question": "En quoi consiste le projet de 240 logements à Dely Brahim ?",
+        "answer": "Le projet consiste en une tour mixte de 33 étages comprenant 240 logements en accession libre, soutenue par un socle commercial de trois niveaux, 03 sous-sols et 03 entre-sols de parking."
       },
       {
         "question": "Comment sont répartis verticalement les espaces résidentiels et commerciaux ?",
@@ -91,98 +84,66 @@
       },
       {
         "question": "Quelles infrastructures de stationnement et de circulation sont intégrées au site ?",
-        "answer": "Le projet de Dely Brahim développe le portefeuille vers le haut : une tour de 33 étages avec les logements du 3e au 33e étage avec 08 logements par étage, 03 niveaux de commerces avec terrasse du RDC au 2e étage, puis 03 sous-sols et 03 entre-sols de parking."
+        "answer": "Le projet de Dely Brahim développe le portefeuille vers le haut : une tour de 33 étages avec les logements du 3e au 33e étage, 03 niveaux de commerces du RDC au 2e étage, puis 03 sous-sols et 03 entre-sols de parking."
       }
     ],
     "images": {
       "hero": [
         {
-          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
-          "alt": "Vue nocturne d'un bâtiment mixte contemporain avec balcons résidentiels éclairés, vitrines commerciales dynamiques et un parking souterrain multi-niveaux, le long d'une rue avec voitures en mouvement et arbres.",
-          "caption": "Vue nocturne de la tour mixte montrant les balcons résidentiels éclairés et le front commercial actif."
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
-          "alt": "Un bâtiment moderne de plusieurs étages la nuit, présentant des vitrines commerciales brillamment éclairées au rez-de-chaussée avec des personnes à l'intérieur, et des unités résidentielles avec balcons au-dessus. Les voitures sont floues sur la rue, et un piéton passe à côté.",
-          "caption": "Détail du front commercial actif au niveau de la rue et des balcons résidentiels supérieurs la nuit."
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp"
         }
       ],
       "intro": {
-        "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
-        "alt": "Un grand bâtiment résidentiel contemporain avec des balcons brillamment éclairés et des espaces commerciaux au rez-de-chaussée, sur fond de ciel de soirée bleu foncé avec des arbres et une route au premier plan.",
-        "caption": "Vue en élévation de la tour de 33 étages montrant la transition verticale entre le socle commercial et les niveaux résidentiels."
+        "src": "/projects/dely-brahim-240-housing/04-final-4.webp"
       },
       "mosaic": [
         {
-          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain illuminé la nuit, doté de multiples balcons et de bandes lumineuses verticales lumineuses sur sa façade. Le rez-de-chaussée abrite des commerces brillamment éclairés avec de grandes vitrines, et une rue avec des lumières de voitures floues passe devant. Des arbres encadrent le bâtiment, et un ciel nocturne étoilé est visible au-dessus.",
-          "caption": "Modulation de la façade et éléments d'éclairage vertical sur l'élévation résidentielle."
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
-          "alt": "Vue nocturne d'un bâtiment mixte contemporain avec balcons résidentiels éclairés, vitrines commerciales dynamiques et un parking souterrain multi-niveaux, le long d'une rue avec voitures en mouvement et arbres.",
-          "caption": "Intégration de la structure de stationnement multi-niveaux et du socle commercial."
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain avec des balcons brillamment éclairés et des espaces commerciaux au rez-de-chaussée, sur fond de ciel de soirée bleu foncé avec des arbres et une route au premier plan.",
-          "caption": "Profil de la tour sur fond de ciel de soirée, mettant en valeur les volumes résidentiels."
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
-          "alt": "Un bâtiment moderne de plusieurs étages la nuit, présentant des vitrines commerciales brillamment éclairées au rez-de-chaussée avec des personnes à l'intérieur, et des unités résidentielles avec balcons au-dessus. Les voitures sont floues sur la rue, et un piéton passe à côté.",
-          "caption": "Perspective piétonne des vitrines commerciales vitrées."
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp"
         }
       ],
       "featureGallery": [
         {
-          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain illuminé la nuit, doté de multiples balcons et de bandes lumineuses verticales lumineuses sur sa façade. Le rez-de-chaussée abrite des commerces brillamment éclairés avec de grandes vitrines, et une rue avec des lumières de voitures floues passe devant. Des arbres encadrent le bâtiment, et un ciel nocturne étoilé est visible au-dessus.",
-          "caption": "Vue nocturne montrant l'éclairage vertical intégré dans les panneaux de façade."
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
-          "alt": "Vue nocturne d'un bâtiment mixte contemporain avec balcons résidentiels éclairés, vitrines commerciales dynamiques et un parking souterrain multi-niveaux, le long d'une rue avec voitures en mouvement et arbres.",
-          "caption": "Relation entre le socle commercial actif et la tour résidentielle supérieure."
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain avec des balcons brillamment éclairés et des espaces commerciaux au rez-de-chaussée, sur fond de ciel de soirée bleu foncé avec des arbres et une route au premier plan.",
-          "caption": "Vue extérieure des balcons résidentiels et de l'ossature structurelle."
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
-          "alt": "Un bâtiment moderne de plusieurs étages la nuit, présentant des vitrines commerciales brillamment éclairées au rez-de-chaussée avec des personnes à l'intérieur, et des unités résidentielles avec balcons au-dessus. Les voitures sont floues sur la rue, et un piéton passe à côté.",
-          "caption": "Vue au niveau du sol des vitrages commerciaux et des accès piétons."
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp"
         }
       ],
       "constructionGallery": [
         {
-          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
-          "alt": "Vue nocturne d'un bâtiment mixte contemporain avec balcons résidentiels éclairés, vitrines commerciales dynamiques et un parking souterrain multi-niveaux, le long d'une rue avec voitures en mouvement et arbres.",
-          "caption": "Enveloppe structurelle finalisée et travaux extérieurs."
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/01-final-1.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain illuminé la nuit, doté de multiples balcons et de bandes lumineuses verticales lumineuses sur sa façade. Le rez-de-chaussée abrite des commerces brillamment éclairés avec de grandes vitrines, et une rue avec des lumières de voitures floues passe devant. Des arbres encadrent le bâtiment, et un ciel nocturne étoilé est visible au-dessus.",
-          "caption": "Finitions de la façade et installation de l'éclairage extérieur."
+          "src": "/projects/dely-brahim-240-housing/01-final-1.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/04-final-4.webp",
-          "alt": "Un grand bâtiment résidentiel contemporain avec des balcons brillamment éclairés et des espaces commerciaux au rez-de-chaussée, sur fond de ciel de soirée bleu foncé avec des arbres et une route au premier plan.",
-          "caption": "Structure porteuse achevée et revêtement extérieur."
+          "src": "/projects/dely-brahim-240-housing/04-final-4.webp"
         },
         {
-          "src": "/projects/dely-brahim-240-housing/02-final-2.webp",
-          "alt": "Un bâtiment moderne de plusieurs étages la nuit, présentant des vitrines commerciales brillamment éclairées au rez-de-chaussée avec des personnes à l'intérieur, et des unités résidentielles avec balcons au-dessus. Les voitures sont floues sur la rue, et un piéton passe à côté.",
-          "caption": "Détail de l'enveloppe commerciale finalisée au rez-de-chaussée."
+          "src": "/projects/dely-brahim-240-housing/02-final-2.webp"
         }
       ],
       "featured": [
         {
-          "src": "/projects/dely-brahim-240-housing/03-final-3.webp",
-          "alt": "Vue nocturne d'un bâtiment mixte contemporain avec balcons résidentiels éclairés, vitrines commerciales dynamiques et un parking souterrain multi-niveaux, le long d'une rue avec voitures en mouvement et arbres.",
-          "caption": "La tour mixte de 33 étages intégrant les niveaux résidentiels, commerciaux et de stationnement."
+          "src": "/projects/dely-brahim-240-housing/03-final-3.webp"
         }
       ]
     }

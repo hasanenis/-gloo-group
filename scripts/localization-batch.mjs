@@ -13,7 +13,8 @@ const has = (name) => args.includes(name);
 const stage = option('--stage', 'source');
 const target = option('--locale', '');
 const dryRun = has('--dry-run') || has('--offline');
-const concurrency = Math.max(1, Math.min(4, Number(option('--concurrency', '1')) || 1));
+const concurrency = Math.max(1, Math.min(2, Number(option('--concurrency', '1')) || 1));
+const jobPrefix = option('--job-prefix', 'batch').replace(/[^a-zA-Z0-9_-]/g, '-');
 const defaultPages = [
   'home', 'about', 'contact', 'projects-index', 'not-found',
   'projects/boudouaou-70-10-housing',
@@ -79,7 +80,7 @@ async function worker() {
   while (cursor < pages.length) {
     const pageId = pages[cursor++];
     const slug = pageId.replaceAll('/', '-');
-    const jobId = `batch-${Date.now().toString(36)}-${stage}-${target || 'en'}-${slug}`;
+    const jobId = `${jobPrefix}-${Date.now().toString(36)}-${stage}-${target || 'en'}-${slug}`;
     const scriptArgs = ['--page', pageId, '--job-id', jobId];
     if (stage === 'target') scriptArgs.push('--target', target);
     if (dryRun) scriptArgs.push(stage === 'source' ? '--dry-run' : '--offline');
@@ -97,5 +98,5 @@ if (failures.length) {
   console.error(JSON.stringify({ stage, target: target || 'en', failures }, null, 2));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ stage, target: target || 'en', pages: pages.length, concurrency, dryRun }, null, 2));
+    console.log(JSON.stringify({ stage, target: target || 'en', pages: pages.length, concurrency, dryRun, jobPrefix }, null, 2));
 }

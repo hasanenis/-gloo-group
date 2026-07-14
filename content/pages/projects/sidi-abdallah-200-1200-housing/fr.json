@@ -4,39 +4,32 @@
   "sourceRevision": "v1-1261b9dd",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-72d8a746118c899d",
+  "revision": "v3-natural-editorial-fr",
   "status": "approved",
-  "updatedAt": "2026-07-12T00:21:28.344Z",
+  "updatedAt": "2026-07-14T22:30:00Z",
   "seo": {
-    "title": "200/1200 Logements Publics Promotionnels (LPP) | Sidi Abdallah",
-    "description": "Découvrez la galerie, les détails techniques et les notes de localisation du projet de 200/1200 Logements Publics Promotionnels. Ce projet illustre un modèle de livraison résidentiel et mixte.",
-    "socialTitle": "200/1200 Logements Publics Promotionnels (LPP) | Sidi Abdallah",
-    "socialDescription": "Découvrez la galerie, les détails techniques et les notes de localisation du projet de 200/1200 Logements Publics Promotionnels. Ce projet illustre un modèle de livraison résidentiel et mixte."
+    "title": "200/1200 Logements sociaux publics — Sidi Abdallah, Mahelma",
+    "description": "200 logements sociaux publics livrés dans le cadre d'un plan de masse de 1 200 unités à Sidi Abdallah — blocs R+9 avec appartements F3/F4 et locaux commerciaux. Livraison 2022.",
+    "socialTitle": "200/1200 Logements sociaux publics — Sidi Abdallah",
+    "socialDescription": "200 logements sociaux publics sur blocs R+9 à Sidi Abdallah — locaux commerciaux au rez-de-chaussée, second œuvre, livraison 2022."
   },
   "content": {
     "slug": "sidi-abdallah-200-1200-housing",
-    "title": "200/1200 Logements Publics Promotionnels (LPP)",
+    "title": "200/1200 Logements sociaux publics, Sidi Abdallah",
     "eyebrow": "DÉVELOPPEMENT RÉSIDENTIEL MIXTE",
     "summary": [
-      "Livraison de 200 unités résidentielles au sein du programme d’aménagement global de 1 200 logements à Sidi Abdallah, intégrant des logements publics promotionnels (LPP) avec des locaux commerciaux et professionnels au rez-de-chaussée.",
-      "Le projet introduit des blocs résidentiels à haute densité configurés en rez-de-chaussée plus 9 étages (R+9), accueillant des typologies d’appartements F3 et F4 ainsi qu’un front commercial actif au niveau de la rue."
+      "Livraison de 200 unités résidentielles au sein du programme d'aménagement global de 1 200 logements à Sidi Abdallah, intégrant des logements sociaux publics avec des locaux commerciaux et professionnels au rez-de-chaussée.",
+      "Le projet introduit des blocs résidentiels à haute densité configurés en R+9, accueillant des typologies d'appartements F3 et F4 ainsi qu'un front commercial actif au niveau de la rue."
     ],
     "description": [
-      "Le périmètre des travaux s’est concentré sur l’exécution du second œuvre et des aménagements intérieurs pour ces blocs résidentiels denses. L’articulation des façades, les noyaux de circulation interne et les lots techniques ont été coordonnés pour s’aligner sur les contraintes structurelles et spatiales du plan de masse.",
-      "En intégrant des commerces et des espaces professionnels au rez-de-chaussée, directement sous la volumétrie résidentielle en R+9, la configuration architecturale établit un profil d’usage mixte fonctionnel qui soutient l’activité économique locale au sein du pôle urbain."
+      "Le périmètre des travaux s'est concentré sur l'exécution du second œuvre et des aménagements intérieurs pour ces blocs résidentiels denses. L'articulation des façades, les noyaux de circulation interne et les lots techniques ont été coordonnés pour s'aligner sur les contraintes structurelles et spatiales du plan de masse.",
+      "En intégrant des commerces et des espaces professionnels au rez-de-chaussée, directement sous la volumétrie résidentielle en R+9, la configuration architecturale établit un profil d'usage mixte fonctionnel qui soutient l'activité économique locale au sein du pôle urbain."
     ],
-    "authority": "Un projet de logement public où le second œuvre, les locaux de services et la densité en R+9 s’associent pour soutenir un nouveau quartier urbain.",
-    "seo": "Découvrez la galerie, les détails techniques et les notes de localisation du projet de 200/1200 Logements Publics Promotionnels. Ce projet illustre un modèle de livraison résidentiel et mixte.",
-    "meta": [
-      {
-        "label": "Type de programme",
-        "value": "Logement Public Promotionnel (LPP)"
-      }
-    ],
+    "authority": "Un projet de logement public où le second œuvre, les locaux de services et la densité en R+9 s'associent pour soutenir un nouveau quartier urbain.",
     "details": [
       {
         "label": "Type de programme",
-        "value": "Logement Public Promotionnel (LPP)"
+        "value": "Logement social public"
       },
       {
         "label": "Localisation",
@@ -44,7 +37,7 @@
       },
       {
         "label": "Consistance du programme",
-        "value": "200 logements au sein d’un plan de masse de 1 200 logements"
+        "value": "200 logements au sein d'un plan de masse de 1 200 logements"
       },
       {
         "label": "Année de réception",
@@ -63,8 +56,8 @@
       {
         "title": "Programme du projet",
         "items": [
-          "200 unités résidentielles LPP livrées au sein d’un plan de masse de 1 200 logements",
-          "Blocs résidentiels en R+9 comprenant des typologies d’appartements F3 et F4",
+          "200 unités de logements sociaux publics au sein d'un plan de masse de 1 200 logements",
+          "Blocs résidentiels en R+9 comprenant des typologies d'appartements F3 et F4",
           "Locaux commerciaux et professionnels au rez-de-chaussée",
           "Réceptionné en 2022 conformément aux normes techniques nationales"
         ]
@@ -73,107 +66,75 @@
     "nearby": null,
     "faq": [
       {
-        "question": "Quelle est la consistance du projet de logements 200/1200 LPP ?",
-        "answer": "Il comprend la livraison de 200 unités de logements publics promotionnels (LPP), configurées avec des espaces commerciaux au rez-de-chaussée, au sein d’un aménagement urbain plus large de 1 200 unités à Sidi Abdallah."
+        "question": "Quelle est la consistance du projet de 200/1200 logements à Sidi Abdallah ?",
+        "answer": "Il comprend la livraison de 200 unités de logements sociaux publics, configurées avec des espaces commerciaux au rez-de-chaussée, au sein d'un aménagement urbain plus large de 1 200 unités à Sidi Abdallah."
       },
       {
         "question": "Quels travaux de construction ont été exécutés sur ce site ?",
-        "answer": "Le marché comprenait les travaux de second œuvre et d’aménagement intérieur pour les blocs résidentiels en R+9, à l’exclusion du lot voirie et réseaux divers (VRD)."
+        "answer": "Le marché comprenait les travaux de second œuvre et d'aménagement intérieur pour les blocs résidentiels en R+9, à l'exclusion du lot voirie et réseaux divers (VRD)."
       },
       {
         "question": "Comment sont configurés les bâtiments résidentiels ?",
-        "answer": "Les bâtiments sont structurés en rez-de-chaussée plus 9 étages (R+9), abritant des appartements de type F3 et F4 conçus pour s’intégrer au pôle urbain environnant."
+        "answer": "Les bâtiments sont structurés en R+9, abritant des appartements de type F3 et F4 conçus pour s'intégrer au pôle urbain environnant."
       }
     ],
     "images": {
       "hero": [
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Vue en contre-plongée de la façade d’un bloc résidentiel en R+9 à Sidi Abdallah, montrant un enduit beige et pêche, des balcons en retrait avec garde-corps métalliques sombres et un éclairage extérieur.",
-          "caption": "Articulation de la façade des blocs de logements publics promotionnels en R+9."
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Perspective en contre-plongée du bâtiment résidentiel en R+9 achevé, montrant l’enduit extérieur, la configuration des balcons et les ouvertures des fenêtres sous un ciel couvert.",
-          "caption": "Élévation extérieure montrant la volumétrie verticale et l’alignement des balcons."
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
         }
       ],
       "intro": {
-        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-        "alt": "Hall d’entrée intérieur d’un bloc résidentiel LPP, caractérisé par un habillage mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité métallique décorative.",
-        "caption": "Aménagement intérieur du hall d’entrée montrant l’habillage en pierre et les détails en bois."
+        "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
       },
       "mosaic": [
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp",
-          "alt": "Espace de circulation commune à l’intérieur du bâtiment résidentiel, montrant la cage d’ascenseur, les boîtes aux lettres intégrées en bois, les finitions murales en pierre et les garde-corps métalliques décoratifs.",
-          "caption": "Noyau de circulation interne et boîtes aux lettres intégrées."
+          "src": "/projects/sidi-abdallah-200-1200-housing/03-sidi-abdullah-lpp-1.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp",
-          "alt": "Vue large de several blocs d’appartements en R+9 durant les phases finales de construction, avec des travaux de terrassement, des conduites de réseaux et des engins de chantier visibles au premier plan.",
-          "caption": "Blocs résidentiels lors de la coordination finale du site et des travaux extérieurs."
+          "src": "/projects/sidi-abdallah-200-1200-housing/07-whatsapp-image-2025-11-10-a-11-58-47-08af6033.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Hall d’entrée intérieur d’un bloc résidentiel LPP, caractérisé par un habillage mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité métallique décorative.",
-          "caption": "Aménagement intérieur du hall d’entrée montrant l’habillage en pierre et les détails en bois."
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Perspective en contre-plongée du bâtiment résidentiel en R+9 achevé, montrant l’enduit extérieur, la configuration des balcons et les ouvertures des fenêtres sous un ciel couvert.",
-          "caption": "Élévation extérieure montrant la volumétrie verticale et l’alignement des balcons."
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
         }
       ],
       "featureGallery": [
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp",
-          "alt": "Deux blocs résidentiels achevés en R+9 avec des façades blanches, bleues et pêche, vus depuis une zone de chantier non revêtue contenant des matériaux de construction.",
-          "caption": "Blocs résidentiels achevés avant le nettoyage final du site."
+          "src": "/projects/sidi-abdallah-200-1200-housing/02-13.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Hall d’entrée intérieur d’un bloc résidentiel LPP, caractérisé par un habillage mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité métallique décorative.",
-          "caption": "Aménagement intérieur du hall d’entrée montrant l’habillage en pierre et les détails en bois."
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Perspective en contre-plongée du bâtiment résidentiel en R+9 achevé, montrant l’enduit extérieur, la configuration des balcons et les ouvertures des fenêtres sous un ciel couvert.",
-          "caption": "Élévation extérieure montrant la volumétrie verticale et l’alignement des balcons."
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Vue en contre-plongée de la façade d’un bloc résidentiel en R+9 à Sidi Abdallah, montrant un enduit beige et pêche, des balcons en retrait avec garde-corps métalliques sombres et un éclairage extérieur.",
-          "caption": "Articulation de la façade des blocs de logements publics promotionnels en R+9."
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
         }
       ],
       "constructionGallery": [
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp",
-          "alt": "Portail d’entrée d’un bloc résidentiel nouvellement achevé, comprenant une porte de sécurité métallique sombre, des encadrements habillés de pierre et un revêtement de sol intérieur en carrelage.",
-          "caption": "Portail d’entrée achevé et contrôle d’accès au rez-de-chaussée."
+          "src": "/projects/sidi-abdallah-200-1200-housing/06-whatsapp-image-2025-11-10-a-11-58-45-208aa771.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp",
-          "alt": "Hall d’entrée intérieur d’un bloc résidentiel LPP, caractérisé par un habillage mural en pierre, des éléments verticaux en bois, une jardinière intégrée et un sol en marbre à motifs menant à une porte de sécurité métallique décorative.",
-          "caption": "Aménagement intérieur du hall d’entrée montrant l’habillage en pierre et les détails en bois."
+          "src": "/projects/sidi-abdallah-200-1200-housing/04-sidi-abdullah-lpp-2.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp",
-          "alt": "Perspective en contre-plongée du bâtiment résidentiel en R+9 achevé, montrant l’enduit extérieur, la configuration des balcons et les ouvertures des fenêtres sous un ciel couvert.",
-          "caption": "Élévation extérieure montrant la volumétrie verticale et l’alignement des balcons."
+          "src": "/projects/sidi-abdallah-200-1200-housing/01-1.webp"
         },
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Vue en contre-plongée de la façade d’un bloc résidentiel en R+9 à Sidi Abdallah, montrant un enduit beige et pêche, des balcons en retrait avec garde-corps métalliques sombres et un éclairage extérieur.",
-          "caption": "Articulation de la façade des blocs de logements publics promotionnels en R+9."
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
         }
       ],
       "featured": [
         {
-          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp",
-          "alt": "Vue en contre-plongée de la façade d’un bloc résidentiel en R+9 à Sidi Abdallah, montrant un enduit beige et pêche, des balcons en retrait avec garde-corps métalliques sombres et un éclairage extérieur.",
-          "caption": "Articulation de la façade des blocs de logements publics promotionnels en R+9."
+          "src": "/projects/sidi-abdallah-200-1200-housing/05-sidi-abdullah-lpp-3.webp"
         }
       ]
     }

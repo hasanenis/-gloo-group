@@ -1,177 +1,142 @@
 {
-  "pageId": "projects/rouiba-4-promotional-villas",
-  "locale": "tr",
-  "sourceRevision": "v1-18f98b9e",
-  "schemaVersion": 1,
-  "sourceLocale": "en",
-  "revision": "v1-1097d6e2c7de6a37",
-  "status": "approved",
-  "updatedAt": "2026-07-12T00:21:29.969Z",
-  "seo": {
-    "title": "4 Promosyonel Villa ve Altyapı İşleri | Rouiba",
-    "description": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi.",
-    "socialTitle": "4 Promosyonel Villa ve Altyapı İşleri | Rouiba",
-    "socialDescription": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi."
-  },
-  "content": {
-    "slug": "rouiba-4-promotional-villas",
-    "title": "4 Promosyonel Villa ve Altyapı İşleri",
-    "eyebrow": "KONUT GELİŞTİRME",
-    "summary": [
-      "Rouiba'da, yollar ve altyapı şebekeleri (VRD) dahil olmak üzere eksiksiz bir tüm gruplar (TCE) paketi kapsamında yürütülen 4 özel promosyonel villadan oluşan konut projesi.",
-      "Proje kapsamı, uyumlu bir konut alanı oluşturmak amacıyla kaba yapı işlerini, cephe detaylandırmasını ve entegre saha altyapısını içermektedir."
-    ],
-    "description": [
-      "Proje; betonarme kaba yapı işleri, iç ve dış ince işler, mekanik-elektrik-tesisat (MEP) kurulumları ile yollar ve altyapı şebekelerini (VRD) kapsayan eksiksiz bir saha paketi olarak yürütülmüştür.",
-      "Mimari kütle tasarımı, özel konut alanları ile entegre araç ve yaya sirkülasyon ağlarını dengeleyen modern hacimler kullanmaktadır."
-    ],
-    "authority": "İlk kazı işlerinden nihai teslime kadar yapısal dayanıklılık ile saha altyapısının uyum içinde yürütüldüğü titiz bir konut programı.",
-    "seo": "Rouiba'daki 4 promosyonel villanın, kapsamlı bir tüm gruplar (TCE) ve altyapı (VRD) sözleşmesi kapsamında teslim edilen teknik uygulama detayları ve inşaat galerisi.",
-    "meta": [
-      {
-        "label": "Program Tipi",
-        "value": "Villas promotionnelles libres"
-      }
-    ],
-    "details": [
-      {
-        "label": "Proje Tipi",
-        "value": "Özel Promosyonel Villalar"
-      },
-      {
-        "label": "Konum",
-        "value": "Rouiba, Cezayir"
-      },
-      {
-        "label": "Ölçek",
-        "value": "4 adet müstakil villa"
-      },
-      {
-        "label": "Tamamlanma Yılı",
-        "value": "2023"
-      },
-      {
-        "label": "Sözleşme Kapsamı",
-        "value": "Tüm Gruplar Anahtar Teslim (TCE) ve Yollar ve Altyapı Şebekeleri (VRD)"
-      },
-      {
-        "label": "Birincil Kullanım",
-        "value": "Özel Konut"
-      }
-    ],
-    "facilityGroups": [
-      {
-        "title": "Teknik Kapsam",
-        "items": [
-          "4 adet özel promosyonel villa",
-          "Özel yaya erişimine sahip entegre yollar ve altyapı şebekeleri (VRD)",
-          "Modern cephe detaylarına sahip betonarme taşıyıcı sistemler",
-          "2023 yılında tamamlanan eksiksiz tüm gruplar teslimi (TCE)"
-        ]
-      }
-    ],
-    "nearby": null,
-    "faq": [
-      {
-        "question": "4 Promosyonel Villa ve Altyapı İşleri projesi nedir?",
-        "answer": "Proje, eksiksiz tüm gruplar (TCE) inşaat işleri ve entegre saha altyapısı ile birlikte teslim edilen 4 adet özel promosyonel villadan oluşmaktadır."
-      },
-      {
-        "question": "Sahada hangi inşaat çalışmaları yürütüldü?",
-        "answer": "Çalışma kapsamı; betonarme yapı mühendisliği, iç ve dış ince işler, mekanik-elektrik-tesisat (MEP) kurulumları ile yollar ve altyapı şebekelerini (VRD) içermektedir."
-      },
-      {
-        "question": "Saha içi sirkülasyon nasıl yapılandırılmıştır?",
-        "answer": "Vaziyet planı, 4 konut birimi arasında net bir sirkülasyon ve mahremiyet sağlamak amacıyla özel araç ve yaya erişim yollarını entegre etmektedir."
-      }
-    ],
-    "images": {
-      "hero": [
-        {
-          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
-          "alt": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
-          "alt": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi.",
-          "caption": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
-        }
-      ],
-      "intro": {
-        "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
-        "alt": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü.",
-        "caption": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
-      },
-      "mosaic": [
-        {
-          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
-          "alt": "Rouiba villa şantiyesinde devam eden betonarme kaba yapı işleri ve kolon kalıp çalışmaları.",
-          "caption": "Sahada taşıyıcı betonarme imalatı."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
-          "alt": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi.",
-          "caption": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
-          "alt": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü.",
-          "caption": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
-          "alt": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
-        }
-      ],
-      "featureGallery": [
-        {
-          "src": "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp",
-          "alt": "Arka planda kule vincin yer aldığı, cephe bitirme işlerinin son aşamalarındaki bir promosyonel villanın dış görünümü.",
-          "caption": "Devam eden cephe bitirme işleri."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
-          "alt": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi.",
-          "caption": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
-          "alt": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü.",
-          "caption": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
-          "alt": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
-        }
-      ],
-      "constructionGallery": [
-        {
-          "src": "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp",
-          "alt": "Dış sıva ve saha temizliği işlerinin son aşamalarında olan çok katlı bir villa yapısı.",
-          "caption": "Dış cephe bitirme ve saha hazırlık işleri."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp",
-          "alt": "Rouiba'da tamamlanmış çok katlı bir promosyonel villanın, gömme cam cepheleri ve dekoratif pergolaları gösteren dış cephesi.",
-          "caption": "Bir promosyonel villanın tamamlanmış cephe detaylandırması."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp",
-          "alt": "Rouiba'da tamamlanan villa grubunun düz çatı hatlarını ve balkon yapılarını gösteren üstten görünümü.",
-          "caption": "Rouiba'da tamamlanan ve modern kütle tasarımını sergileyen villa grubu."
-        },
-        {
-          "src": "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp",
-          "alt": "Rouiba villa şantiyesinde devam eden betonarme kaba yapı işleri ve kolon kalıp çalışmaları.",
-          "caption": "Sahada taşıyıcı betonarme imalatı."
-        }
-      ],
-      "featured": [
-        {
-          "src": "/projects/rouiba-4-promotional-villas/01-draw.webp",
-          "alt": "Rouiba'daki promosyonel villaların mimari cephe çizimi."
-        }
-      ]
-    }
-  }
+    "pageId":  "projects/rouiba-4-promotional-villas",
+    "locale":  "tr",
+    "sourceRevision":  "v1-18f98b9e",
+    "schemaVersion":  1,
+    "sourceLocale":  "en",
+    "revision":  "v3-natural-editorial-tr",
+    "status":  "approved",
+    "updatedAt":  "2026-07-13T22:30:00Z",
+    "seo":  {
+                "title":  "Rouiba'da 4 Özel Villa | Konut Geliştirme Projesi",
+                "description":  "Rouiba'da anahtar teslim olarak inşa ve teslim edilen 4 adet müstakil özel villa; kaba inşaat, ince işler ve çevre altyapı çalışmaları.",
+                "socialTitle":  "Rouiba'da 4 Özel Villa | Konut Geliştirme Projesi",
+                "socialDescription":  "Rouiba'da anahtar teslim olarak inşa ve teslim edilen 4 adet müstakil özel villa; kaba inşaat, ince işler ve çevre altyapı çalışmaları."
+            },
+    "content":  {
+                    "slug":  "rouiba-4-promotional-villas",
+                    "title":  "Rouiba'da 4 Özel Villa",
+                    "eyebrow":  "KONUT GELİŞTİRME",
+                    "summary":  [
+                                    "Rouiba'da hayata geçirilen bu proje, yollar ve tüm çevre altyapı şebekeleri dahil olmak üzere anahtar teslim olarak teslim edilen 4 adet müstakil özel villadan oluşmaktadır.",
+                                    "İnşaat kapsamı; kaba yapı işleri, cephe detaylandırması ve entegre saha altyapısını bir bütün olarak içermektedir."
+                                ],
+                    "description":  [
+                                        "Proje; betonarme kaba yapı, iç ve dış ince işler, mekanik-elektrik-tesisat sistemleri ile yollar ve çevre altyapı şebekelerini kapsayan eksiksiz bir saha paketi olarak yürütülmüştür.",
+                                        "Mimari kurgu; özel konut alanları ile entegre araç ve yaya sirkülasyon ağlarını dengeleyen modern bir hacimsel organizasyon benimsemektedir."
+                                    ],
+                    "authority":  "İlk kazı işlerinden nihai teslime kadar yapısal dayanıklılık ile saha altyapısının uyum içinde yürütüldüğü bir konut projesi.",
+                    "details":  [
+                                    {
+                                        "label":  "Proje Tipi",
+                                        "value":  "Özel Villalar"
+                                    },
+                                    {
+                                        "label":  "Konum",
+                                        "value":  "Rouiba, Cezayir"
+                                    },
+                                    {
+                                        "label":  "Ölçek",
+                                        "value":  "4 adet müstakil villa"
+                                    },
+                                    {
+                                        "label":  "Tamamlanma Yılı",
+                                        "value":  "2023"
+                                    },
+                                    {
+                                        "label":  "Sözleşme Kapsamı",
+                                        "value":  "Tüm Gruplar Anahtar Teslim (TCE) ve Yollar ve Altyapı Şebekeleri (VRD)"
+                                    },
+                                    {
+                                        "label":  "Birincil Kullanım",
+                                        "value":  "Özel Konut"
+                                    }
+                                ],
+                    "facilityGroups":  [
+                                           {
+                                               "title":  "Proje Kapsamı",
+                                               "items":  [
+                                                             "4 adet müstakil özel villa",
+                                                             "Özel yaya ve araç erişimli entegre yollar ve altyapı şebekeleri",
+                                                             "Modern cephe detaylarıyla betonarme taşıyıcı sistem",
+                                                             "2023 yılında anahtar teslim olarak tamamlandı"
+                                                         ]
+                                           }
+                                       ],
+                    "nearby":  null,
+                    "faq":  [
+                                {
+                                    "question":  "Rouiba villa projesi nedir?",
+                                    "answer":  "Proje, eksiksiz anahtar teslim yapım ve entegre saha altyapısıyla birlikte teslim edilen 4 adet müstakil özel villadan oluşmaktadır."
+                                },
+                                {
+                                    "question":  "Sahada hangi inşaat çalışmaları yürütüldü?",
+                                    "answer":  "Çalışma kapsamı; betonarme yapı, iç ve dış ince işler, mekanik-elektrik-tesisat sistemleri ile yollar ve çevre altyapı şebekelerini içermektedir."
+                                },
+                                {
+                                    "question":  "Saha içi sirkülasyon nasıl kurgulanmıştır?",
+                                    "answer":  "Yerleşim planı, 4 villa arasında net bir sirkülasyon ve mahremiyet sağlamak amacıyla özel araç ve yaya erişim yollarını barındırmaktadır."
+                                }
+                            ],
+                    "images":  {
+                                   "hero":  [
+                                                {
+                                                    "src":  "/projects/rouiba-4-promotional-villas/01-draw.webp"
+                                                },
+                                                {
+                                                    "src":  "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+                                                }
+                                            ],
+                                   "intro":  {
+                                                 "src":  "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+                                             },
+                                   "mosaic":  [
+                                                  {
+                                                      "src":  "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+                                                  },
+                                                  {
+                                                      "src":  "/projects/rouiba-4-promotional-villas/01-draw.webp"
+                                                  }
+                                              ],
+                                   "featureGallery":  [
+                                                          {
+                                                              "src":  "/projects/rouiba-4-promotional-villas/05-whatsapp-image-2025-11-12-at-09-00-03.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+                                                          },
+                                                          {
+                                                              "src":  "/projects/rouiba-4-promotional-villas/01-draw.webp"
+                                                          }
+                                                      ],
+                                   "constructionGallery":  [
+                                                               {
+                                                                   "src":  "/projects/rouiba-4-promotional-villas/03-whatsapp-image-2025-11-12-at-09-00-03-1.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/rouiba-4-promotional-villas/02-whatsapp-image-2025-11-12-at-09-00-02.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/rouiba-4-promotional-villas/06-whatsapp-image-2025-11-12-at-09-00-04.webp"
+                                                               },
+                                                               {
+                                                                   "src":  "/projects/rouiba-4-promotional-villas/04-whatsapp-image-2025-11-12-at-09-00-03-2.webp"
+                                                               }
+                                                           ],
+                                   "featured":  [
+                                                    {
+                                                        "src":  "/projects/rouiba-4-promotional-villas/01-draw.webp"
+                                                    }
+                                                ]
+                               }
+                }
 }

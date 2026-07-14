@@ -114,6 +114,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['R+8 BLOCKS', 'F3 AND F4 HOMES', 'PROFESSIONAL PREMISES'],
       fr: ['BLOCS R+8', 'LOGEMENTS F3 ET F4', 'LOCAUX PROFESSIONNELS'],
+      tr: ['R+8 BLOKLAR', 'F3 VE F4 DAİRELER', 'PROFESYONEL BİRİMLER'],
     },
     infoTopline: text('OUR IMPACT', 'NOTRE IMPACT', 'أثرنا', 'ETKİMİZ'),
     infoEyebrow: text('COASTAL HOUSING', 'HABITAT LITTORAL', 'السكن الساحلي', 'SAHİLDE KONUT PROJESİ'),
@@ -168,7 +169,8 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricLabel: text('HOMES', 'LOGEMENTS', 'منازل', 'KONUT'),
     metricCaptionLines: {
       en: ['WITHIN 1,200 HOMES', 'R+9 BUILDINGS', 'COMMERCIAL PREMISES'],
-      fr: ['DANS 1200 LOGEMENTS', 'BATIMENTS R+9', 'LOCAUX COMMERCIAUX'],
+      fr: ['DANS 1 200 LOGEMENTS', 'BÂTIMENTS R+9', 'LOCAUX COMMERCIAUX'],
+      tr: ['1.200 KONUTLUK PROJEDE', 'R+9 BLOKLAR', 'TİCARİ BİRİMLER'],
     },
     infoTopline: text('URBAN DELIVERY', 'RÉALISATION URBAINE', 'التوصيل داخل المدينة', 'KENTSEL PROJELER'),
     infoEyebrow: text('PUBLIC HOUSING', 'LOGEMENT PUBLIC', 'الإسكان العام', 'KAMU KONUTU'),
@@ -224,6 +226,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['R+2 INDIVIDUAL HOMES', 'VRD INCLUDED', 'STANDING RESIDENTIAL SETTING'],
       fr: ['HABITAT INDIVIDUEL R+2', 'VRD INCLUS', 'CADRE RÉSIDENTIEL DE STANDING'],
+      tr: ['R+2 MÜSTAKİL KONUTLAR', 'VRD DAHİL', 'NİTELİKLİ KONUT ALANI'],
     },
     infoTopline: text('RESIDENTIAL VALUE', 'HABITAT RÉSIDENTIEL', 'القيمة السكنية', 'NİTELİKLİ KONUT'),
     infoEyebrow: text('VILLA DELIVERY', 'RÉALISATION DE VILLAS', 'توصيل إلى الفيلا', 'VİLLA YAPIMI'),
@@ -290,6 +293,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['IN A THRIVING', 'MASTERPLANNED', 'NEIGHBOURHOOD'],
       fr: ['DANS UN QUARTIER', 'RÉSIDENTIEL STRUCTURÉ', 'ET DYNAMIQUE'],
+      tr: ['PLANLI KONUT', 'TİCARİ BİRİMLER', 'GÜNLÜK HİZMETLER'],
     },
     infoTopline: text4('OUR IMPACT', 'NOTRE IMPACT', 'أثرنا', 'BÖLGEYE KATKIMIZ'),
     infoEyebrow: text4('PROXIMITY SERVICES', 'SERVICES DE PROXIMITÉ', 'خدمات الجوار', 'YAKIN ÇEVRE HİZMETLERİ'),
@@ -351,6 +355,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['5 RESIDENTIAL BLOCKS', '3 COMMERCIAL ENTRE-SOLS', '1 BASEMENT PARKING LEVEL'],
       fr: ['5 BLOCS RÉSIDENTIELS', '3 ENTRE-SOLS COMMERCIAUX', '1 SOUS-SOL DE PARKING'],
+      tr: ['5 KONUT BLOĞU', '3 TİCARİ ARA KAT', '1 BODRUM OTOPARK'],
     },
     infoTopline: text('MIXED PROGRAMME', 'PROGRAMME MIXTE', 'برنامج متنوع', 'KARMA PROJE'),
     infoEyebrow: text('HOUSING + COMMERCE', 'LOGEMENT + COMMERCE', 'السكن + التجارة', 'KONUT + TİCARET'),
@@ -415,7 +420,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricLabel: text4('VILLAS', 'VILLAS', 'فيلات', 'VİLLALAR'),
     metricCaptionLines: {
       en: ['INDIVIDUAL HOMES', 'TCE + VRD', 'CONTEMPORARY FACADES'],
-      fr: ['HABITAT INDIVIDUEL', 'TCE + VRD', 'FACADES CONTEMPORAINES'],
+      fr: ['HABITAT INDIVIDUEL', 'TCE + VRD', 'FAÇADES CONTEMPORAINES'],
       'ar-DZ': ['بيوت مستقلة', 'TCE + VRD', 'واجهات معاصرة'],
       tr: ['MÜSTAKİL KONUTLAR', 'TCE + VRD', 'ÇAĞDAŞ CEPHELER'],
     },
@@ -476,7 +481,8 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricLabel: text('HOMES', 'LOGEMENTS', 'منازل', 'KONUT'),
     metricCaptionLines: {
       en: ['R+13 BUILDING', 'TCE + VRD', 'HIGH-RISE RESIDENTIAL'],
-      fr: ['BATIMENT R+13', 'TCE + VRD', 'HABITAT EN HAUTEUR'],
+      fr: ['BÂTIMENT R+13', 'TCE + VRD', 'HABITAT EN HAUTEUR'],
+      tr: ['R+13 BLOK', 'TCE + VRD', 'YÜKSEK KATLI KONUT'],
     },
     infoTopline: text('VERTICAL HOUSING', 'HABITAT VERTICAL', 'الإسكان العمودي', 'ÇOK KATLI KONUT'),
     infoEyebrow: text('R+13 RESIDENCE', 'RÉSIDENCE R+13', 'مبنى سكني (أرضي + 13 طابقاً)', 'Zemin + 13 Katlı Konut'),
@@ -533,6 +539,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['33-STOREY TOWER', '8 HOMES PER FLOOR', 'SERVICES + PARKING'],
       fr: ['TOUR DE 33 ÉTAGES', '8 LOGEMENTS PAR ÉTAGE', '3 SOUS-SOLS + 3 ENTRE-SOLS'],
+      tr: ['33 KATLI KULE', 'KATTA 8 KONUT', 'HİZMETLER + OTOPARK'],
     },
     infoTopline: text('HIGH-RISE SCOPE', 'PROJET VERTICAL', 'نطاق المباني الشاهقة', 'YÜKSEK YAPI KAPSAMI'),
     infoEyebrow: text('TOWER DELIVERY', 'CONSTRUCTION DE TOUR', 'تسليم البرج', 'Kule Yapımı'),
@@ -587,6 +594,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['7 BLOCKS', 'R+5 AND R+9', 'DELIVERY PHASE'],
       fr: ['7 BLOCS', 'R+5 ET R+9', 'PHASE DE LIVRAISON'],
+      tr: ['7 BLOK', 'R+5 VE R+9', 'TESLİM AŞAMASI'],
     },
     infoTopline: text('DELIVERY PHASE', 'PHASE DE LIVRAISON', 'مرحلة التسليم', 'TESLİM AŞAMASI'),
     infoEyebrow: text('BAS MAZAGRAN', 'BAS MAZAGRAN', 'باس مازاغران', 'BAS MAZAGRAN'),
@@ -642,6 +650,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['7 R+9 BLOCKS', 'F3 AND F4 HOMES', 'COMMERCIAL + CONCIERGE'],
       fr: ['7 BLOCS R+9', 'LOGEMENTS F3 ET F4', 'COMMERCES + CONCIERGERIES'],
+      tr: ['7 R+9 BLOK', 'F3 VE F4 KONUTLAR', 'TİCARİ ALANLAR + DANIŞMA'],
     },
     infoTopline: text('RESIDENTIAL COMPLETION', 'Achèvement résidentiel', 'إنجاز المشروع السكني', 'Konut Yapımı'),
     infoEyebrow: text('RENT-TO-OWN HOUSING', 'Location-vente', 'سكن بنظام الإيجار المنتهي بالتملك', 'Satın Alma Opsiyonlu Konut'),
@@ -697,6 +706,7 @@ export const projectEditorialContent: Record<string, ProjectEditorialContent> = 
     metricCaptionLines: {
       en: ['70 LPA + 10 LPL', '3 RESIDENTIAL BLOCKS', '10 PROFESSIONAL PREMISES'],
       fr: ['70 LPA + 10 LPL', '3 BLOCS RÉSIDENTIELS', '10 LOCAUX PROFESSIONNELS'],
+      tr: ['70 LPA + 10 LPL', '3 KONUT BLOĞU', '10 PROFESYONEL BİRİM'],
     },
     infoTopline: text('MIXED RESIDENTIAL', 'Résidentiel mixte', 'سكني مختلط', 'Karma Kullanım'),
     infoEyebrow: text('BOUDOUAOU', 'Boudouaou', 'بودواو', 'BOUDOUAOU'),

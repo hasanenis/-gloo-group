@@ -4,47 +4,40 @@
   "sourceRevision": "v1-a14e2a8f",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v1-09f6117f",
+  "revision": "v3-natural-editorial-en",
   "status": "approved",
-  "updatedAt": "2026-07-11T22:10:06.169Z",
+  "updatedAt": "2026-07-13T22:30:00Z",
   "seo": {
-    "title": "Mixed Real Estate Complex with 202 Free Promotional Housing",
-    "description": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
-    "socialTitle": "Mixed Real Estate Complex with 202 Free Promotional Housing",
-    "socialDescription": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units."
+    "title": "Said Hamdine Mixed-Use Development — 202 Apartments | Algiers",
+    "description": "Five-block mixed-use development in Said Hamdine, Algiers — 202 market-rate apartments on a steeply sloping site, with three commercial mezzanine levels and basement parking. Completed 2023.",
+    "socialTitle": "Said Hamdine Mixed-Use Development — 202 Apartments",
+    "socialDescription": "202 market-rate apartments across five blocks in Said Hamdine, with three commercial mezzanine levels and basement parking on a steeply sloping site. Completed 2023."
   },
   "content": {
     "slug": "said-hamdine-mixed-real-estate",
-    "title": "Mixed Real Estate Complex with 202 Free Promotional Housing",
+    "title": "Said Hamdine Mixed-Use Development — 202 Apartments",
     "eyebrow": "MIXED-USE PROJECT",
     "summary": [
-      "A five-block mixed-use development in Said Hamdine, integrating 202 residential units on a steeply sloping site with one basement parking level and three commercial mezzanine floors.",
-      "The scheme resolves complex site topography by stepping the massing, integrating active street-level commercial frontage with secure subterranean parking and residential circulation."
+      "A five-block mixed-use development in Said Hamdine, Algiers, delivering 202 market-rate apartments on a steeply sloping site, with three commercial mezzanine levels and one basement parking level.",
+      "The most demanding engineering challenge was the site topography: the massing was stepped across the slope to create active street-level commercial frontage and secure underground parking."
     ],
     "description": [
-      "This urban development comprises five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and a single basement parking level. The structural execution was engineered to negotiate a steeply sloping site in Algiers, requiring specialized retaining structures and precise foundation engineering.",
-      "The scope of works was executed under an all-trades package (TCE - Tout Corps d'État), including structural concrete, facade articulation, glazing systems, and integrated roads and utility networks (VRD - Voirie et Réseaux Divers) to manage site drainage and vehicular circulation."
+      "Five residential blocks rise over three commercial mezzanine levels and a single basement parking level. The steeply sloping site required specialist retaining structures and precise foundation engineering to resolve level changes across the development.",
+      "The project was executed under a full all-trades contract, covering structural concrete, facade works, glazing systems, and integrated site roads and utility networks. Completed in 2023."
     ],
     "authority": "A mixed-use urban development defined by structural engineering, integrated circulation, and complex site-grading execution.",
-    "seo": "Technical specifications, structural execution, and site constraints for the mixed-use development in Said Hamdine, Algiers, featuring 202 free promotional housing units.",
-    "meta": [
-      {
-        "label": "Project type",
-        "value": "Mixed real-estate complex"
-      }
-    ],
     "details": [
       {
-        "label": "Project type",
-        "value": "Mixed real-estate complex"
+        "label": "Project Type",
+        "value": "Mixed-use — residential and commercial"
       },
       {
         "label": "Location",
         "value": "Said Hamdine, Bir Mourad Rais, Algiers"
       },
       {
-        "label": "Housing units",
-        "value": "202 free promotional housing units"
+        "label": "Housing Units",
+        "value": "202 market-rate apartments"
       },
       {
         "label": "Blocks",
@@ -55,8 +48,8 @@
         "value": "1 basement parking level"
       },
       {
-        "label": "Site challenge",
-        "value": "Steeply sloping site; 3 commercial mezzanine levels"
+        "label": "Site Challenge",
+        "value": "Steeply sloping site with 3 commercial mezzanine levels"
       },
       {
         "label": "Completion",
@@ -65,125 +58,63 @@
     ],
     "facilityGroups": [
       {
-        "title": "Project programme",
+        "title": "Project Programme",
         "items": [
-          "Five-block mixed-use structural delivery",
-          "202 free promotional housing units",
+          "Five-block mixed-use development",
+          "202 market-rate apartments",
           "Three commercial mezzanine levels",
           "One basement parking level"
         ]
       }
     ],
     "nearby": {
-      "title": "Nearby places",
+      "title": "Nearby",
       "items": [
         "Local commercial district"
       ]
     },
     "faq": [
       {
-        "question": "What is Mixed Real Estate Complex with 202 Free Promotional Housing?",
-        "answer": "The development consists of five residential blocks containing 202 free promotional housing units, built over three commercial mezzanine levels and one basement parking level."
+        "question": "What is the Said Hamdine Mixed-Use Development?",
+        "answer": "Five residential blocks containing 202 market-rate apartments, built over three commercial mezzanine levels and one basement parking level on a steeply sloping site in Said Hamdine."
       },
       {
         "question": "How did the site topography influence the engineering?",
-        "answer": "The project brings together five residential blocks, 202 free promotional homes, three commercial entre-sols with mezzanine and one basement parking level on a steeply sloping Algerian site."
+        "answer": "The steeply sloping site required specialist retaining structures and precision foundation engineering. The massing was stepped across the slope to create active street-level commercial frontage and secure basement parking."
       },
       {
         "question": "What was the scope of the construction contract?",
-        "answer": "The project was delivered under an all-trades package (TCE), encompassing structural concrete works, facade articulation, glazing, and integrated roads and utility networks (VRD)."
+        "answer": "The project was delivered under an all-trades contract, covering structural concrete, facade articulation, glazing systems, and integrated site roads and utility networks."
       }
     ],
     "images": {
       "hero": [
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
-          "alt": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
-          "caption": "Structural slab reinforcement and rebar installation on site."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp",
-          "alt": "Low-angle view of two modern high-rise buildings featuring balconies, a mix of white, beige, and grey facades, and a reflective glass ground floor.",
-          "caption": "Facade articulation and glazed commercial frontage."
-        }
+        {"src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/02-sidi-yahia-1.webp"}
       ],
       "intro": {
-        "src": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp",
-        "alt": "Construction workers on a building site at sunset, preparing a concrete slab with a dense rebar grid and a concrete pump in the background.",
-        "caption": "Reinforcement works for the concrete floor slab."
+        "src": "/projects/said-hamdine-mixed-real-estate/07-sidi-yahia-2.webp"
       },
       "mosaic": [
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
-          "alt": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
-          "caption": "Foundation excavation and reinforcement grid installation."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
-          "alt": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
-          "caption": "Residential balcony detailing with glass balustrades."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp",
-          "alt": "View from below of a tall, modern residential building featuring balconies with glass railings and a reflective glass commercial ground floor, set against a clear blue sky with a faint moon. A green tree partially frames the right side.",
-          "caption": "Elevation showing residential balconies and ground-level glazing."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
-          "alt": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
-          "caption": "Slab reinforcement works in progress."
-        }
+        {"src": "/projects/said-hamdine-mixed-real-estate/01-12.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/05-sidi-yahia-5.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"}
       ],
       "featureGallery": [
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
-          "alt": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
-          "caption": "Foundation reinforcement within the excavated site."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp",
-          "alt": "View of a clean, empty hallway with white walls, dark brown glossy tiled floor, and several open doors leading to other rooms, including a dining area and a bedroom.",
-          "caption": "Internal circulation and apartment hallway finishes."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
-          "alt": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
-          "caption": "Substructure works and foundation reinforcement."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp",
-          "alt": "A clean, modern balcony with wood-look tiled flooring, a glass railing, a small round table, and three dark chairs. In the background, other apartment buildings are visible.",
-          "caption": "Balcony detailing and external tiling."
-        }
+        {"src": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/04-sidi-yahia-3.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/01-12.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/03-sidi-yahia-2.webp"}
       ],
       "constructionGallery": [
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp",
-          "alt": "A multi-story building under construction, showing concrete slabs, columns, and red brick walls. Yellow debris chutes run down the side, and construction materials are visible on lower floors. A crane is in the background.",
-          "caption": "Structural frame execution and brickwork infill."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp",
-          "alt": "A tall building under construction, featuring a concrete skeleton, partially completed red brick walls, and yellow debris chutes, set against a cloudy sky.",
-          "caption": "Reinforced concrete frame and masonry envelope under construction."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/01-12.webp",
-          "alt": "Overhead view of a construction site showing a large excavation pit with a concrete slab base. Numerous workers in orange safety vests are meticulously placing and tying rebar grids for the building's foundation. The steep, stabilized earth walls of the pit are visible in the background.",
-          "caption": "Excavation and foundation slab preparation."
-        },
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp",
-          "alt": "Construction workers in safety vests installing steel rebar for a large building foundation within a deep excavation pit, with retaining walls visible.",
-          "caption": "Substructure reinforcement installation."
-        }
+        {"src": "/projects/said-hamdine-mixed-real-estate/06-sidi-yahia-1.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/10-whatsapp-image-2025-11-10-a-11-58-42-fb5a4508.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/01-12.webp"},
+        {"src": "/projects/said-hamdine-mixed-real-estate/09-whatsapp-image-2025-11-10-a-11-58-42-7f866443.webp"}
       ],
       "featured": [
-        {
-          "src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp",
-          "alt": "View from above a concrete slab reinforced with rebar, showing construction workers, a concrete pump, and residential buildings in the background during a sunset.",
-          "caption": "Slab reinforcement and concrete pouring preparation."
-        }
+        {"src": "/projects/said-hamdine-mixed-real-estate/08-whatsapp-image-2025-11-10-a-11-58-42-119fe026.webp"}
       ]
     }
   }
