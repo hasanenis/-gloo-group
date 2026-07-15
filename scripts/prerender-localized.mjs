@@ -91,7 +91,20 @@ try {
       });
       await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 60_000 });
       await page.locator('main').first().waitFor({ state: 'attached', timeout: 15_000 }).catch(() => {});
-      await page.waitForTimeout(500);
+      const expectedLocale = contentLocales[locale];
+      const expectedCanonical = `${siteUrl}/${locale}${route ? `/${route}` : '/'}`;
+      await page.waitForFunction(
+        ({ locale: expectedDocumentLocale, canonical: expectedCanonicalUrl }) => {
+          const canonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute('href');
+          return (
+            document.documentElement.lang === expectedDocumentLocale &&
+            canonical === expectedCanonicalUrl &&
+            document.head.querySelector('script[data-seo-schema]')
+          );
+        },
+        { locale: expectedLocale, canonical: expectedCanonical },
+        { timeout: 30_000 },
+      );
       const html = await page.content();
       const output = outputFile(locale, route);
       await fs.mkdir(path.dirname(output), { recursive: true });
