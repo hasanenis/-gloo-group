@@ -35,7 +35,7 @@ export type ProjectRecord = {
 
 export const companyProfile = {
   name: 'SARL Igloo Yapi Construction',
-  address: 'N° 8, Rue Krouch Slimane, Closan JeanLot n° 1-31, RDC, Bir Khadem – Alger',
+  address: 'No. 8, Rue Krouch Slimane, Closan Jean Lot no. 1-31, RDC, Bir Khadem - Algiers',
   phones: ['+213 542 819 461', '+90 542 479 5700'],
   email: 'info@igloogroupe.com',
   foundedYear: 2018,

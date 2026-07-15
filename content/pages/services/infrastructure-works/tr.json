@@ -1,0 +1,11 @@
+{
+  "pageId": "services/infrastructure-works",
+  "locale": "tr",
+  "sourceRevision": "v1-seo-infrastructure-works-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-infrastructure-works-tr-20260714",
+  "status": "approved",
+  "seo": { "title": "Cezayir Altyapi ve VRD Isleri | Igloo Construction", "description": "Igloo Construction, Cezayir'de konut ve gelisim sahalari icin yol, altyapi sebekeleri ve VRD isleri teslim eder.", "socialTitle": "Cezayir Altyapi ve VRD Isleri | Igloo Construction", "socialDescription": "Yapilari genel gelismeye baglayan saha altyapisi." },
+  "content": { "eyebrow": "Altyapi isleri", "heading": "Yapi cevresindeki sebekeler ve erisim de onemlidir.", "lead": "Igloo Construction; konut ve karma kullanimli gelisimlerin kullanima hazir olmasi icin yol, altyapi sebekeleri ve saha islerini koordine eder.", "paragraphs": ["Proje kayitlarimizda Staoueli villalari, Douaouda konut programi ve Cezayir bolgesindeki diger konut sahalarinin yol ve sebekeleri yer alir.", "Altyapi teslimatin bir parcasi olarak planlanir: yapilar ve cevre alanlariyla arayuzler, siralama ve saha hazirligi birlikte koordine edilir."], "scope": ["Yol ve erisim isleri", "Altyapi sebekeleri ve VRD paketleri", "Saha hazirligi ve gelisim arayuzleri"], "proofSlugs": ["staoueli-11-41-villas", "douaouda-300-500-housing"], "cta": "Altyapi islerini konusalim" }
+}

@@ -1,0 +1,11 @@
+{
+  "pageId": "services/residential-construction",
+  "locale": "tr",
+  "sourceRevision": "v1-seo-residential-construction-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-residential-construction-tr-20260714",
+  "status": "approved",
+  "seo": { "title": "Cezayir Konut Insaat Firmasi | Igloo Construction", "description": "Igloo Construction, Cezayir ve Cezayir merkezinde konut programlari, villa ve konut insaati teslim eder.", "socialTitle": "Cezayir Konut Insaat Firmasi | Igloo Construction", "socialDescription": "Tamamlanan Cezayir projelerine dayanan konut, villa ve karma kullanim deneyimi." },
+  "content": { "eyebrow": "Konut insaati", "heading": "Konut ve villalarda disiplinli saha uygulamasi.", "lead": "Igloo Construction; konut programlari, villalar ve konut ortamlarinda tasiyici sistem, ikincil isler, erisim ve sebekeleri birlikte koordine eder.", "paragraphs": ["Konut deneyimimiz Douaouda'daki 300/500 konut programini, Sidi Abdallah'daki kamu konutlarini ve Staoueli'deki villa programlarini kapsar.", "Her proje; yapinin kendisi, cevresindeki arayuzler ve yerlesimi kullanilabilir kilan altyapiyla birlikte tam bir saha olarak ele alinir."], "scope": ["Konut ve karma konut programlari", "Villa insaati ve ikincil isler", "Erisim, sebekeler ve saha hazirligi"], "proofSlugs": ["douaouda-300-500-housing", "staoueli-11-41-villas"], "cta": "Konut projesi planlayin" }
+}

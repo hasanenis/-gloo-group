@@ -1,0 +1,27 @@
+{
+  "pageId": "services",
+  "locale": "en",
+  "sourceRevision": "v1-seo-services-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-services-en-20260714",
+  "status": "approved",
+  "seo": {
+    "title": "Construction Services in Algeria | Igloo Construction",
+    "description": "Igloo Construction provides general contracting, residential, commercial and infrastructure works in Algeria from Bir Khadem, Algiers.",
+    "socialTitle": "Construction Services in Algeria | Igloo Construction",
+    "socialDescription": "General contracting and construction delivery by SARL Igloo Yapi Construction across Algeria."
+  },
+  "content": {
+    "eyebrow": "Services",
+    "heading": "Construction delivery shaped around the project.",
+    "lead": "Igloo Construction coordinates engineering, procurement, site teams and secondary works for residential, commercial and infrastructure programmes in Algeria.",
+    "cards": [
+      { "slug": "general-contracting", "title": "General contracting", "summary": "One coordinated delivery structure for complex construction programmes." },
+      { "slug": "residential-construction", "title": "Residential construction", "summary": "Housing, villas and mixed-use residential delivery with disciplined site execution." },
+      { "slug": "commercial-construction", "title": "Commercial construction", "summary": "Commercial centres, retail environments and fit-out packages connected to real programmes." },
+      { "slug": "infrastructure-works", "title": "Infrastructure works", "summary": "Roads, networks and VRD works that prepare sites for lasting use." }
+    ],
+    "cta": "Discuss a construction programme"
+  }
+}

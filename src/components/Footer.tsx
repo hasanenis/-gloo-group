@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
 import { companyProfile } from '../data/projects';
 import { homepageContent, localize } from '../data/homepageContent';
-import { useLocale } from '../i18n';
+import { localizedPath, useLocale } from '../i18n';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
 import iglooLogo from '../assets/branding/igloo-intro-logo.png';
@@ -137,6 +137,7 @@ export default function Footer() {
               <a href="/" onClick={navigateTo('/')} data-home-text-reveal data-home-text-reveal-mode="block">{t('home')}</a>
               <a href="/about" onClick={navigateTo('/about')} data-home-text-reveal data-home-text-reveal-mode="block">{t('company')}</a>
               <a href="/projects" onClick={navigateTo('/projects')} data-home-text-reveal data-home-text-reveal-mode="block">{t('projects')}</a>
+              <a href={localizedPath(locale, '/services')} onClick={navigateTo('/services')} data-home-text-reveal data-home-text-reveal-mode="block">{t('services')}</a>
               <a href="/#proof" onClick={navigateTo('/#proof')} data-home-text-reveal data-home-text-reveal-mode="block">{localize({ en: 'Proof', fr: 'Preuves', dz: 'الدليل', tr: 'Kanıt' }, locale)}</a>
               <a href="/#services" onClick={navigateTo('/#services')} data-home-text-reveal data-home-text-reveal-mode="block">{localize({ en: 'Process', fr: 'Processus', dz: 'المراحل', tr: 'Süreç' }, locale)}</a>
               <a href="/contact" onClick={navigateTo('/contact')} data-home-text-reveal data-home-text-reveal-mode="block">{t('contact')}</a>

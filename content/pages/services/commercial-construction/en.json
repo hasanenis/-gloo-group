@@ -1,0 +1,11 @@
+{
+  "pageId": "services/commercial-construction",
+  "locale": "en",
+  "sourceRevision": "v1-seo-commercial-construction-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-commercial-construction-en-20260714",
+  "status": "approved",
+  "seo": { "title": "Commercial Construction in Algeria | Igloo Construction", "description": "Commercial centres, retail environments and mixed-use construction delivered by Igloo Construction in Algeria.", "socialTitle": "Commercial Construction in Algeria | Igloo Construction", "socialDescription": "Commercial and mixed-use delivery connected to real housing and urban programmes." },
+  "content": { "eyebrow": "Commercial construction", "heading": "Commercial spaces that work within the wider programme.", "lead": "Igloo Construction delivers commercial centres and connected mixed-use packages with the same attention to structure, circulation, finishing and everyday use.", "paragraphs": ["The Rahmania commercial centres and the Said Hamdine mixed real estate complex show how our commercial scope sits inside larger residential and urban developments.", "We coordinate the interfaces between commercial areas, housing, access, parking and site services so the finished environment is practical as well as buildable."], "scope": ["Commercial centres and retail spaces", "Mixed-use construction packages", "Finishing, circulation and site interfaces"], "proofSlugs": ["rahmania", "said-hamdine-mixed-real-estate"], "cta": "Discuss a commercial programme" }
+}

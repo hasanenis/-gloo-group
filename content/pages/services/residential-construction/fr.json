@@ -1,0 +1,11 @@
+{
+  "pageId": "services/residential-construction",
+  "locale": "fr",
+  "sourceRevision": "v1-seo-residential-construction-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-residential-construction-fr-20260714",
+  "status": "approved",
+  "seo": { "title": "Construction residentielle en Algerie | Igloo Construction", "description": "Programmes de logements, villas et construction residentielle par Igloo Construction a Alger et en Algerie.", "socialTitle": "Construction residentielle en Algerie | Igloo Construction", "socialDescription": "Une experience fondee sur des programmes de logements et des villas realises en Algerie." },
+  "content": { "eyebrow": "Construction residentielle", "heading": "Des logements et des villas livres avec rigueur.", "lead": "Igloo Construction intervient sur des programmes de logements, des villas et des environnements residentiels, en coordonnant structure, lots secondaires, acces et reseaux.", "paragraphs": ["Notre experience residentielle comprend le programme 300/500 a Douaouda, des logements publics a Sidi Abdallah et des programmes de villas a Staoueli.", "Chaque projet est traite comme un site complet: le batiment, ses interfaces et les infrastructures pratiques qui rendent le developpement fonctionnel."], "scope": ["Programmes de logements et residentiels mixtes", "Construction de villas et travaux secondaires", "Acces, reseaux et preparation du site"], "proofSlugs": ["douaouda-300-500-housing", "staoueli-11-41-villas"], "cta": "Planifier un projet residentiel" }
+}

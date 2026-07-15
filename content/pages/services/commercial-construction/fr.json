@@ -1,0 +1,11 @@
+{
+  "pageId": "services/commercial-construction",
+  "locale": "fr",
+  "sourceRevision": "v1-seo-commercial-construction-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-commercial-construction-fr-20260714",
+  "status": "approved",
+  "seo": { "title": "Construction commerciale en Algerie | Igloo Construction", "description": "Centres commerciaux, espaces de vente et construction mixte realises par Igloo Construction en Algerie.", "socialTitle": "Construction commerciale en Algerie | Igloo Construction", "socialDescription": "Une execution commerciale et mixte liee a de vrais programmes residentiels et urbains." },
+  "content": { "eyebrow": "Construction commerciale", "heading": "Des espaces commerciaux integres au programme global.", "lead": "Igloo Construction realise des centres commerciaux et des lots mixtes en portant la meme attention a la structure, aux circulations, aux finitions et aux usages quotidiens.", "paragraphs": ["Les centres commerciaux de Rahmania et le complexe immobilier mixte de Said Hamdine montrent comment notre expertise commerciale s'insere dans des developpements residentiels et urbains plus larges.", "Nous coordonnons les interfaces entre commerces, logements, acces, stationnement et services du site pour un environnement pratique et constructible."], "scope": ["Centres commerciaux et espaces de vente", "Lots de construction a usage mixte", "Finitions, circulations et interfaces du site"], "proofSlugs": ["rahmania", "said-hamdine-mixed-real-estate"], "cta": "Parler d'un programme commercial" }
+}

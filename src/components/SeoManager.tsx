@@ -2,12 +2,13 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getPageContent, getProjectPage, type ContentLocale, type PageDocument } from '../content';
 import { localeFromPathname, localizedPath, LOCALE_CODES, useLocale, type Locale } from '../i18n';
-import { companyProfile, projects } from '../data/projects';
+import { brandEntity, DEFAULT_SOCIAL_IMAGE, isServiceSlug, localeHreflang, SERVICE_SLUGS, SITE_URL } from '../data/siteSeo';
+import { projects } from '../data/projects';
 
-const SITE_NAME = 'Igloo Construction';
-const DEFAULT_SITE_URL = 'https://igloogroupe.com';
-const SITE_URL = (import.meta.env.VITE_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/u, '');
-const DEFAULT_IMAGE = `${SITE_URL}/homepage/company-profile-showcase.png`;
+type SeoContent = {
+  heading?: string;
+  lead?: string;
+};
 
 function setMeta(selector: string, attributes: Record<string, string>) {
   let element = document.head.querySelector<HTMLMetaElement>(selector);
@@ -22,15 +23,35 @@ function pagePath(pathname: string) {
   return pathname.replace(/^\/(?:en|fr|tr|ar)(?=\/|$)/u, '') || '/';
 }
 
-function documentFor(pathname: string, locale: Locale): PageDocument | undefined {
+function localizedSeoPath(locale: Locale, route: string) {
+  const value = localizedPath(locale, route);
+  return route === '/' ? `${value}/` : value;
+}
+
+function pageDocumentFor(pathname: string, locale: Locale): PageDocument<SeoContent> | undefined {
   const route = pagePath(pathname);
   const projectSlug = route.match(/^\/projects\/([^/]+)\/?$/u)?.[1];
+  const serviceSlug = route.match(/^\/services\/([^/]+)\/?$/u)?.[1];
+
   try {
     if (projectSlug && projects.some((project) => project.slug === projectSlug)) {
-      return getProjectPage(projectSlug, locale as ContentLocale);
+      return getProjectPage<SeoContent>(projectSlug, locale as ContentLocale);
     }
-    const pageId = route === '/about' ? 'about' : route === '/contact' ? 'contact' : route === '/projects' ? 'projects-index' : route === '/404' ? 'not-found' : 'home';
-    return getPageContent(pageId, locale as ContentLocale);
+    if (serviceSlug && isServiceSlug(serviceSlug)) {
+      return getPageContent<SeoContent>(`services/${serviceSlug}`, locale as ContentLocale);
+    }
+    const pageId = route === '/about'
+      ? 'about'
+      : route === '/contact'
+        ? 'contact'
+        : route === '/projects'
+          ? 'projects-index'
+          : route === '/services'
+            ? 'services'
+            : route === '/404'
+              ? 'not-found'
+              : 'home';
+    return getPageContent<SeoContent>(pageId, locale as ContentLocale);
   } catch {
     return undefined;
   }
@@ -47,6 +68,134 @@ function setStructuredData(value: unknown) {
   script.text = JSON.stringify(value);
 }
 
+function postalAddress() {
+  return {
+    '@type': 'PostalAddress',
+    streetAddress: brandEntity.address.streetAddress,
+    addressLocality: brandEntity.address.addressLocality,
+    addressRegion: brandEntity.address.addressRegion,
+    addressCountry: brandEntity.address.addressCountry,
+  };
+}
+
+const breadcrumbLabels: Record<Locale, { projects: string; services: string }> = {
+  en: { projects: 'Projects', services: 'Services' },
+  fr: { projects: 'Projets', services: 'Services' },
+  tr: { projects: 'Projeler', services: 'Hizmetler' },
+  'ar-DZ': { projects: '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639', services: '\u0627\u0644\u062e\u062f\u0645\u0627\u062a' },
+};
+
+function breadcrumbItems(route: string, locale: Locale, pageName: string) {
+  const items: Array<Record<string, unknown>> = [
+    { '@type': 'ListItem', position: 1, name: brandEntity.brandName, item: `${SITE_URL}${localizedSeoPath(locale, '/')}` },
+  ];
+  const segments = route.split('/').filter(Boolean);
+  if (segments[0] === 'projects') {
+    items.push({ '@type': 'ListItem', position: 2, name: breadcrumbLabels[locale].projects, item: `${SITE_URL}${localizedSeoPath(locale, '/projects')}` });
+  } else if (segments[0] === 'services') {
+    items.push({ '@type': 'ListItem', position: 2, name: breadcrumbLabels[locale].services, item: `${SITE_URL}${localizedSeoPath(locale, '/services')}` });
+  }
+  if (segments.length > 1) {
+    items.push({ '@type': 'ListItem', position: items.length + 1, name: pageName });
+  } else if (segments.length === 1) {
+    items.push({ '@type': 'ListItem', position: 2, name: pageName });
+  }
+  return items;
+}
+
+export function buildSeoGraph({
+  canonicalUrl,
+  description,
+  locale,
+  pageName,
+  project,
+  route,
+  serviceSlug,
+  title,
+}: {
+  canonicalUrl: string;
+  description: string;
+  locale: Locale;
+  pageName: string;
+  project?: (typeof projects)[number];
+  route: string;
+  serviceSlug?: string;
+  title: string;
+}) {
+  const organization = {
+    '@type': ['Organization', 'LocalBusiness', 'GeneralContractor'],
+    '@id': `${SITE_URL}/#organization`,
+    name: brandEntity.legalName,
+    alternateName: [brandEntity.brandName, ...brandEntity.alternateNames],
+    url: brandEntity.url,
+    logo: { '@type': 'ImageObject', url: brandEntity.logo },
+    sameAs: brandEntity.sameAs,
+    email: brandEntity.email,
+    telephone: brandEntity.telephone,
+    foundingDate: '2018',
+    areaServed: brandEntity.areaServed,
+    address: postalAddress(),
+    contactPoint: brandEntity.telephone.map((telephone) => ({
+      '@type': 'ContactPoint',
+      telephone,
+      contactType: 'customer service',
+      areaServed: 'DZ',
+    })),
+  };
+  const website = {
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: brandEntity.brandName,
+    alternateName: brandEntity.alternateNames,
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    inLanguage: locale,
+  };
+  const page: Record<string, unknown> = {
+    '@type': route === '/contact' ? 'ContactPage' : route === '/projects' || route === '/services' ? 'CollectionPage' : 'WebPage',
+    '@id': `${canonicalUrl}#webpage`,
+    url: canonicalUrl,
+    name: title,
+    description,
+    inLanguage: locale,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    about: { '@id': `${SITE_URL}/#organization` },
+    breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` },
+  };
+
+  if (route === '/contact') page.mainEntity = { '@id': `${SITE_URL}/#organization` };
+  if (project) {
+    page.mainEntity = {
+      '@type': 'CreativeWork',
+      '@id': `${canonicalUrl}#project`,
+      name: project.title,
+      description: project.summary,
+      locationCreated: { '@type': 'Place', name: project.location },
+      image: project.images,
+    };
+  }
+
+  const graph: Array<Record<string, unknown>> = [organization, website, page, {
+    '@type': 'BreadcrumbList',
+    '@id': `${canonicalUrl}#breadcrumb`,
+    itemListElement: breadcrumbItems(route, locale, pageName),
+  }];
+
+  if (serviceSlug && SERVICE_SLUGS.includes(serviceSlug as (typeof SERVICE_SLUGS)[number])) {
+    graph.push({
+      '@type': 'Service',
+      '@id': `${canonicalUrl}#service`,
+      name: pageName,
+      description,
+      provider: { '@id': `${SITE_URL}/#organization` },
+      areaServed: brandEntity.areaServed,
+      serviceType: pageName,
+    });
+  }
+
+  return { '@context': 'https://schema.org', '@graph': graph };
+}
+
 export default function SeoManager() {
   const { pathname } = useLocation();
   const { locale } = useLocale();
@@ -54,25 +203,38 @@ export default function SeoManager() {
   useEffect(() => {
     const urlLocale = localeFromPathname(pathname) ?? locale;
     const route = pagePath(pathname);
-    const slug = route.match(/^\/projects\/([^/]+)\/?$/u)?.[1];
-    const project = slug ? projects.find((item) => item.slug === slug) : undefined;
-    const pageDocument = documentFor(pathname, urlLocale);
-    const title = pageDocument?.seo.title || (project ? `${project.title} | ${SITE_NAME}` : `${SITE_NAME} | Building for Algeria`);
-    const description = pageDocument?.seo.description || project?.summary || 'Igloo Construction delivers residential and mixed-use construction projects in Algeria.';
+    const projectSlug = route.match(/^\/projects\/([^/]+)\/?$/u)?.[1];
+    const serviceSlug = route.match(/^\/services\/([^/]+)\/?$/u)?.[1];
+    const project = projectSlug ? projects.find((item) => item.slug === projectSlug) : undefined;
+    const pageDocument = pageDocumentFor(pathname, urlLocale);
+    const pageName = pageDocument?.content.heading || project?.title || (route === '/services' ? 'Construction services' : route === '/projects' ? 'Projects' : brandEntity.brandName);
+    const title = pageDocument?.seo.title || `${pageName} | ${brandEntity.brandName}`;
+    const description = pageDocument?.seo.description || pageDocument?.content.lead || project?.summary || 'Igloo Construction, SARL Igloo Yapi Construction, delivers residential, commercial and infrastructure construction projects in Algeria.';
     const canonicalPath = project ? `/projects/${project.slug}` : route;
-    const canonicalUrl = `${SITE_URL}${localizedPath(urlLocale, canonicalPath)}`;
-    const image = project?.images[0] || DEFAULT_IMAGE;
+    const canonicalUrl = `${SITE_URL}${localizedSeoPath(urlLocale, canonicalPath)}`;
+    const image = project?.images[0] || DEFAULT_SOCIAL_IMAGE;
+    const isNoIndex = route === '/404';
 
     document.title = title;
     setMeta('meta[name="description"]', { name: 'description', content: description });
-    setMeta('meta[name="robots"]', { name: 'robots', content: 'index, follow, max-image-preview:large' });
+    setMeta('meta[name="robots"]', { name: 'robots', content: isNoIndex ? 'noindex, follow' : 'index, follow, max-image-preview:large' });
     setMeta('meta[property="og:title"]', { property: 'og:title', content: pageDocument?.seo.socialTitle || title });
     setMeta('meta[property="og:description"]', { property: 'og:description', content: pageDocument?.seo.socialDescription || description });
     setMeta('meta[property="og:type"]', { property: 'og:type', content: project ? 'article' : 'website' });
     setMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
     setMeta('meta[property="og:image"]', { property: 'og:image', content: image });
-    setMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: SITE_NAME });
+    setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: `${brandEntity.brandName} - ${pageName}` });
+    setMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: brandEntity.brandName });
     setMeta('meta[property="og:locale"]', { property: 'og:locale', content: urlLocale.replace('-', '_') });
+    document.head.querySelectorAll('meta[data-seo-og-locale]').forEach((element) => element.remove());
+    LOCALE_CODES.filter((alternateLocale) => alternateLocale !== urlLocale).forEach((alternateLocale) => {
+      const hreflang = localeHreflang(alternateLocale);
+      setMeta(`meta[data-seo-og-locale="${hreflang}"]`, {
+        property: 'og:locale:alternate',
+        content: hreflang.replace('-', '_'),
+        'data-seo-og-locale': hreflang,
+      });
+    });
     setMeta('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' });
     setMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
     setMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: description });
@@ -86,48 +248,23 @@ export default function SeoManager() {
     }
     canonical.href = canonicalUrl;
 
-    document.head.querySelectorAll('link[data-seo-hreflang]').forEach((element) => element.remove());
+    document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((element) => element.remove());
     for (const alternateLocale of LOCALE_CODES) {
       const link = document.createElement('link');
       link.rel = 'alternate';
-      link.hreflang = alternateLocale === 'ar-DZ' ? 'ar-DZ' : alternateLocale;
-      link.href = `${SITE_URL}${localizedPath(alternateLocale, canonicalPath)}`;
+      link.hreflang = localeHreflang(alternateLocale);
+      link.href = `${SITE_URL}${localizedSeoPath(alternateLocale, canonicalPath)}`;
       link.dataset.seoHreflang = 'true';
       document.head.appendChild(link);
     }
     const xDefault = document.createElement('link');
     xDefault.rel = 'alternate';
     xDefault.hreflang = 'x-default';
-    xDefault.href = `${SITE_URL}${localizedPath('en', canonicalPath)}`;
+    xDefault.href = `${SITE_URL}${localizedSeoPath('en', canonicalPath)}`;
     xDefault.dataset.seoHreflang = 'true';
     document.head.appendChild(xDefault);
 
-    setStructuredData({
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'Organization',
-          '@id': `${SITE_URL}/#organization`,
-          name: companyProfile.name,
-          url: SITE_URL,
-          email: companyProfile.email,
-          telephone: companyProfile.phones[0],
-          foundingDate: String(companyProfile.foundedYear),
-          address: { '@type': 'PostalAddress', addressLocality: 'Algiers', addressCountry: 'DZ' },
-        },
-        {
-          '@type': project ? 'Project' : 'WebPage',
-          '@id': `${canonicalUrl}#webpage`,
-          url: canonicalUrl,
-          name: title,
-          description,
-          inLanguage: urlLocale,
-          isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, name: SITE_NAME, url: SITE_URL },
-          about: { '@id': `${SITE_URL}/#organization` },
-          ...(project ? { locationCreated: { '@type': 'Place', name: project.location } } : {}),
-        },
-      ],
-    });
+    setStructuredData(buildSeoGraph({ canonicalUrl, description, locale: urlLocale, pageName, project, route, serviceSlug, title }));
   }, [locale, pathname]);
 
   return null;

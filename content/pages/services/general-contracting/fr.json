@@ -1,0 +1,11 @@
+{
+  "pageId": "services/general-contracting",
+  "locale": "fr",
+  "sourceRevision": "v1-seo-general-contracting-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-general-contracting-fr-20260714",
+  "status": "approved",
+  "seo": { "title": "Entreprise generale en Algerie | Igloo Construction", "description": "Igloo Construction realise des lots coordonnes pour des programmes residentiels, mixtes et commerciaux en Algerie.", "socialTitle": "Entreprise generale en Algerie | Igloo Construction", "socialDescription": "Une structure d'execution coordonnee par SARL Igloo Yapi Construction." },
+  "content": { "eyebrow": "Entreprise generale", "heading": "Une structure responsable pour l'ensemble du chantier.", "lead": "De la coordination initiale a la livraison du site, Igloo Construction rassemble ingenierie, achats, conduite de travaux et lots secondaires dans un meme rythme d'execution.", "paragraphs": ["Notre offre d'entreprise generale s'appuie sur des programmes residentiels, mixtes et commerciaux reels livres par les equipes Igloo en Algerie.", "Le mode d'execution s'adapte au programme: coordination des corps d'etat, phasage du chantier, controles qualite et livraison conforme au besoin."], "scope": ["Coordination du programme et du site", "Ingenierie, achats et interfaces des corps d'etat", "Qualite, reception et travaux secondaires"], "proofSlugs": ["said-hamdine-mixed-real-estate", "rahmania"], "cta": "Parler a Igloo Construction" }
+}

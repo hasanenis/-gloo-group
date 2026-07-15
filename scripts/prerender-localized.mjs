@@ -10,10 +10,14 @@ const locales = ['en', 'fr', 'tr', 'ar'];
 const contentLocales = { en: 'en', fr: 'fr', tr: 'tr', ar: 'ar-DZ' };
 
 async function pageRoutes() {
-  const result = ['', 'about', 'contact', 'projects', '404'];
+  const result = ['', 'about', 'contact', 'projects', 'services', '404'];
   const projectRoot = path.join(root, 'content', 'pages', 'projects');
   for (const entry of await fs.readdir(projectRoot, { withFileTypes: true })) {
     if (entry.isDirectory()) result.push(`projects/${entry.name}`);
+  }
+  const serviceRoot = path.join(root, 'content', 'pages', 'services');
+  for (const entry of await fs.readdir(serviceRoot, { withFileTypes: true })) {
+    if (entry.isDirectory()) result.push(`services/${entry.name}`);
   }
   return result;
 }
@@ -50,12 +54,13 @@ async function startPreview() {
 }
 
 async function writeSitemap(routes) {
+  const escapeXml = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;').replaceAll("'", '&apos;');
   const entries = [];
   for (const route of routes.filter((value) => value !== '404')) {
     const canonicalRoute = route ? `/${route}` : '/';
-    const alternates = locales.map((locale) => `${siteUrl}/${locale}${canonicalRoute === '/' ? '' : canonicalRoute}`);
+    const alternates = locales.map((locale) => `${siteUrl}/${locale}${canonicalRoute === '/' ? '/' : canonicalRoute}`);
     locales.forEach((locale, index) => {
-      entries.push(`  <url>\n    <loc>${alternates[index]}</loc>\n${locales.map((alternateLocale, alternateIndex) => `    <xhtml:link rel="alternate" hreflang="${contentLocales[alternateLocale]}" href="${alternates[alternateIndex]}" />`).join('\n')}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${alternates[0]}" />\n  </url>`);
+      entries.push(`  <url>\n    <loc>${escapeXml(alternates[index])}</loc>\n${locales.map((alternateLocale, alternateIndex) => `    <xhtml:link rel="alternate" hreflang="${contentLocales[alternateLocale]}" href="${escapeXml(alternates[alternateIndex])}" />`).join('\n')}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(alternates[0])}" />\n  </url>`);
     });
   }
   await fs.writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`, 'utf8');

@@ -1,0 +1,11 @@
+{
+  "pageId": "services/general-contracting",
+  "locale": "tr",
+  "sourceRevision": "v1-seo-general-contracting-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-general-contracting-tr-20260714",
+  "status": "approved",
+  "seo": { "title": "Cezayir Genel Taahhut Firmasi | Igloo Construction", "description": "Igloo Construction, Cezayir'de konut, karma kullanimli ve ticari programlar icin koordineli genel taahhut paketleri sunar.", "socialTitle": "Cezayir Genel Taahhut Firmasi | Igloo Construction", "socialDescription": "SARL Igloo Yapi Construction tarafindan koordine edilen insaat teslim modeli." },
+  "content": { "eyebrow": "Genel taahhut", "heading": "Tum yapi icin tek sorumlu koordinasyon.", "lead": "Ilk koordinasyondan saha teslimine kadar Igloo Construction; muhendislik, satin alma, saha yonetimi ve ikincil isleri tek bir teslim ritminde birlestirir.", "paragraphs": ["Genel taahhut kapsamimiz, Igloo ekiplerinin Cezayir'de tamamladigi gercek konut, karma kullanim ve ticari programlara dayanir.", "Teslim modeli programa gore uyarlanir: ekiplerin koordinasyonu, saha siralamasi, kalite kontrolleri ve sonucun ihtiyaca uygun teslimi birlikte yonetilir."], "scope": ["Program ve saha koordinasyonu", "Muhendislik, satin alma ve ekip arayuzleri", "Kalite, teslim ve ikincil isler"], "proofSlugs": ["said-hamdine-mixed-real-estate", "rahmania"], "cta": "Igloo Construction ile gorusun" }
+}

@@ -21,6 +21,8 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const ProjectsDemo = lazy(() => import('./pages/ProjectsDemo'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const Services = lazy(() => import('./pages/Services'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 
 const INTRO_VEIL_HOLD_MS = 250;
 const INTRO_VEIL_SLIDE_MS = 1150;
@@ -75,6 +77,8 @@ function AppShellContent() {
     void import('./pages/ProjectsDemo');
     void import('./pages/ProjectDetail');
     void import('./pages/Contact');
+    void import('./pages/Services');
+    void import('./pages/ServiceDetail');
   }, []);
 
   // Translated copy (FR/TR/AR) runs longer than the English the layout was
@@ -230,6 +234,8 @@ function AppShellContent() {
           <Route path="/:locale/contact" element={<LocaleGuard><Contact /></LocaleGuard>} />
           <Route path="/:locale/projects" element={<LocaleGuard><ProjectsDemo /></LocaleGuard>} />
           <Route path="/:locale/projects/:slug" element={<LocaleGuard><ProjectDetail /></LocaleGuard>} />
+          <Route path="/:locale/services" element={<LocaleGuard><Services /></LocaleGuard>} />
+          <Route path="/:locale/services/:slug" element={<LocaleGuard><ServiceDetail /></LocaleGuard>} />
           <Route path="/:locale/404" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
           <Route path="/:locale/*" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
 
@@ -239,6 +245,8 @@ function AppShellContent() {
           <Route path="/contact" element={<LegacyRouteRedirect />} />
           <Route path="/projects" element={<LegacyRouteRedirect />} />
           <Route path="/projects/:slug" element={<LegacyRouteRedirect />} />
+          <Route path="/services" element={<LegacyRouteRedirect />} />
+          <Route path="/services/:slug" element={<LegacyRouteRedirect />} />
           <Route path="/projects1" element={<LegacyRouteRedirect />} />
           <Route path="/bat-demo/*" element={<LegacyRouteRedirect />} />
           <Route path="*" element={<LegacyRouteRedirect />} />
@@ -269,14 +277,19 @@ function LegacyRouteRedirect() {
   const { locale } = useLocale();
   const location = useLocation();
   const projectMatch = location.pathname.match(/^\/projects\/([^/]+)\/?$/);
+  const serviceMatch = location.pathname.match(/^\/services\/([^/]+)\/?$/);
   const target = projectMatch
     ? `/projects/${projectMatch[1]}`
-    : location.pathname === '/about'
-      ? '/about'
+    : serviceMatch
+      ? `/services/${serviceMatch[1]}`
+      : location.pathname === '/about'
+        ? '/about'
       : location.pathname === '/contact'
         ? '/contact'
         : location.pathname === '/projects'
           ? '/projects'
+          : location.pathname === '/services'
+            ? '/services'
           : '/404';
   return <Navigate replace to={localizedPath(locale, target)} />;
 }

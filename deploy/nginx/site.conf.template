@@ -3,33 +3,42 @@ server {
     listen [::]:80;
     server_name {{DOMAIN}} {{WWW_DOMAIN}};
 
+    if ($host = {{WWW_DOMAIN}}) {
+        return 308 https://{{DOMAIN}}$request_uri;
+    }
+
     root /var/www/{{SITE_SLUG}}/current/dist;
     index index.html;
 
     access_log /var/log/nginx/{{SITE_SLUG}}.access.log;
     error_log /var/log/nginx/{{SITE_SLUG}}.error.log;
 
-    # React Router — tüm bilinmeyen path'lar index.html'e.
-    # Not: $uri/ kasıtlı olarak yok — public/projects/<slug>/ gibi statik
-    # varlık klasörleri React route'larıyla (ör. /projects/<slug>) aynı ada
-    # sahip; $uri/ denemesi o klasörü bulup index.html'siz 403 dönüyordu.
+    # Locale-prefixed prerendered pages are served directly. Unknown paths
+    # retain an SPA fallback for client-side navigation.
+    location = / { return 308 /en/; }
+    location = /about { return 308 /en/about; }
+    location = /contact { return 308 /en/contact; }
+    location = /projects { return 308 /en/projects; }
+    location = /services { return 308 /en/services; }
+    location ~ ^/projects/(.+)$ { return 308 /en/projects/$1; }
+    location ~ ^/services/(.+)$ { return 308 /en/services/$1; }
+
     location / {
-        try_files $uri /index.html;
+        try_files $uri $uri/index.html /index.html;
     }
 
-    # Statik varlıklar — uzun süreli cache, immutable
+    # Static assets - long-lived immutable cache.
     location ~* \.(js|css|woff2?|ttf|otf|svg|ico)$ {
         expires 1y;
         add_header Cache-Control "public, immutable";
     }
 
-    # Görseller ve video — 1 yıl cache ama immutable değil (güncellenebilir)
+    # Images and video - long-lived cache without immutable semantics.
     location ~* \.(png|jpe?g|webp|gif|avif|mp4|webm)$ {
         expires 1y;
         add_header Cache-Control "public, max-age=31536000";
     }
 
-    # 404 yanıtları cache'lenmez — Chrome 404'leri bellekte tutmasın
     error_page 404 /index.html;
     add_header Cache-Control "no-store" always;
 

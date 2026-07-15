@@ -261,6 +261,9 @@ export default function Header() {
           <NavUnderlineItem to={localizedPath(locale, '/projects')} onNavigate={() => goTo(localizedPath(locale, '/projects'))}>
             {t('projects')}
           </NavUnderlineItem>
+          <NavUnderlineItem to={localizedPath(locale, '/services')} onNavigate={() => goTo(localizedPath(locale, '/services'))}>
+            {t('services')}
+          </NavUnderlineItem>
           <NavUnderlineItem to={localizedPath(locale, '/contact')} onNavigate={() => goTo(localizedPath(locale, '/contact'))}>
             {t('contact')}
           </NavUnderlineItem>

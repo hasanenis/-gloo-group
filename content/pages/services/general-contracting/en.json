@@ -1,0 +1,11 @@
+{
+  "pageId": "services/general-contracting",
+  "locale": "en",
+  "sourceRevision": "v1-seo-general-contracting-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-general-contracting-en-20260714",
+  "status": "approved",
+  "seo": { "title": "General Contractor in Algeria | Igloo Construction", "description": "Igloo Construction delivers coordinated general contracting packages for residential, mixed-use and commercial programmes in Algeria.", "socialTitle": "General Contractor in Algeria | Igloo Construction", "socialDescription": "A coordinated construction delivery structure by SARL Igloo Yapi Construction." },
+  "content": { "eyebrow": "General contracting", "heading": "One accountable structure for the whole build.", "lead": "From early coordination to site completion, Igloo Construction brings engineering, procurement, site management and secondary works into one delivery rhythm.", "paragraphs": ["Our general contracting scope is grounded in real residential, mixed-use and commercial programmes delivered by the Igloo team across Algeria.", "The delivery model adapts to the programme: coordinating trades, sequencing site activities, maintaining quality controls and keeping the built result aligned with the brief."], "scope": ["Programme and site coordination", "Engineering, procurement and trade interfaces", "Quality, handover and secondary works"], "proofSlugs": ["said-hamdine-mixed-real-estate", "rahmania"], "cta": "Talk to Igloo Construction" }
+}

@@ -1,0 +1,11 @@
+{
+  "pageId": "services/infrastructure-works",
+  "locale": "en",
+  "sourceRevision": "v1-seo-infrastructure-works-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-infrastructure-works-en-20260714",
+  "status": "approved",
+  "seo": { "title": "Infrastructure and VRD Works in Algeria | Igloo Construction", "description": "Roads, utility networks and VRD works delivered by Igloo Construction for housing and development sites in Algeria.", "socialTitle": "Infrastructure and VRD Works in Algeria | Igloo Construction", "socialDescription": "Site infrastructure that connects buildings to the wider development." },
+  "content": { "eyebrow": "Infrastructure works", "heading": "The networks and access around the building matter.", "lead": "Igloo Construction coordinates roads, utility networks and supporting site works so residential and mixed-use developments are ready for real use.", "paragraphs": ["Our project record includes road and network works for the Staoueli villas, the Douaouda housing programme and other residential sites across the Algiers region.", "Infrastructure is planned as part of the delivery: interfaces, sequencing and site readiness are coordinated with the buildings and public realm around them."], "scope": ["Roads and access works", "Utility networks and VRD packages", "Site preparation and development interfaces"], "proofSlugs": ["staoueli-11-41-villas", "douaouda-300-500-housing"], "cta": "Discuss infrastructure works" }
+}

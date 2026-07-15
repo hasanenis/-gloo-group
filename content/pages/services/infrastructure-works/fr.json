@@ -1,0 +1,11 @@
+{
+  "pageId": "services/infrastructure-works",
+  "locale": "fr",
+  "sourceRevision": "v1-seo-infrastructure-works-20260714",
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "v1-seo-infrastructure-works-fr-20260714",
+  "status": "approved",
+  "seo": { "title": "Travaux d'infrastructure et VRD en Algerie | Igloo Construction", "description": "Voiries, reseaux et travaux VRD realises par Igloo Construction pour des sites de logements et de developpement en Algerie.", "socialTitle": "Travaux d'infrastructure et VRD en Algerie | Igloo Construction", "socialDescription": "Des infrastructures qui relient les batiments au developpement global." },
+  "content": { "eyebrow": "Travaux d'infrastructure", "heading": "Les reseaux et les acces autour du batiment comptent.", "lead": "Igloo Construction coordonne voiries, reseaux et travaux de site pour que les developpements residentiels et mixtes soient prets a l'usage.", "paragraphs": ["Notre experience comprend les travaux de voirie et de reseaux des villas de Staoueli, du programme de logements de Douaouda et d'autres sites residentiels de la region d'Alger.", "L'infrastructure est planifiee avec le chantier: interfaces, phasage et preparation du site sont coordonnes avec les batiments et les espaces exterieurs."], "scope": ["Voiries et acces", "Reseaux et lots VRD", "Preparation du site et interfaces du developpement"], "proofSlugs": ["staoueli-11-41-villas", "douaouda-300-500-housing"], "cta": "Parler des travaux d'infrastructure" }
+}
