@@ -7,20 +7,36 @@
   "revision": "v1-seo-services-tr-20260714",
   "status": "approved",
   "seo": {
-    "title": "Cezayir Insaat Hizmetleri | Igloo Construction",
-    "description": "Igloo Construction, Bir Khadem Cezayir merkezli olarak genel taahhut, konut, ticari yapi ve altyapi isleri sunar.",
-    "socialTitle": "Cezayir Insaat Hizmetleri | Igloo Construction",
-    "socialDescription": "SARL Igloo Yapi Construction tarafindan Cezayir genelinde koordineli insaat teslimi."
+    "title": "Cezayir'de İnşaat Hizmetleri | İgloo Yapı – İgloo Groupe",
+    "description": "İgloo Yapı – İgloo Groupe (SARL Igloo Yapi Construction); Bir Khadem, Cezayir merkezli genel müteahhitlik, konut, ticari yapı ve altyapı hizmetleri sunar.",
+    "socialTitle": "Cezayir'de İnşaat Hizmetleri | İgloo Yapı – İgloo Groupe",
+    "socialDescription": "İgloo Yapı – İgloo Groupe (SARL Igloo Yapi Construction); Bir Khadem, Cezayir merkezli genel müteahhitlik, konut, ticari yapı ve altyapı hizmetleri sunar."
   },
   "content": {
     "eyebrow": "Hizmetler",
     "heading": "Her projeye gore sekillenen insaat teslimi.",
     "lead": "Igloo Construction, Cezayir'deki konut, ticari yapi ve altyapi programlari icin muhendislik, satin alma, saha ekipleri ve ikincil isleri koordine eder.",
     "cards": [
-      { "slug": "general-contracting", "title": "Genel taahhut", "summary": "Karmasik insaat programlari icin tek koordineli teslim yapisi." },
-      { "slug": "residential-construction", "title": "Konut insaati", "summary": "Konut, villa ve karma kullanimli konut projelerinde disiplinli saha uygulamasi." },
-      { "slug": "commercial-construction", "title": "Ticari yapi", "summary": "Gercek programlara bagli ticari merkez, perakende ve fit-out isleri." },
-      { "slug": "infrastructure-works", "title": "Altyapi isleri", "summary": "Sahayi kullanima hazirlayan yol, sebekeler ve VRD uygulamalari." }
+      {
+        "slug": "general-contracting",
+        "title": "Genel taahhut",
+        "summary": "Karmasik insaat programlari icin tek koordineli teslim yapisi."
+      },
+      {
+        "slug": "residential-construction",
+        "title": "Konut insaati",
+        "summary": "Konut, villa ve karma kullanimli konut projelerinde disiplinli saha uygulamasi."
+      },
+      {
+        "slug": "commercial-construction",
+        "title": "Ticari yapi",
+        "summary": "Gercek programlara bagli ticari merkez, perakende ve fit-out isleri."
+      },
+      {
+        "slug": "infrastructure-works",
+        "title": "Altyapi isleri",
+        "summary": "Sahayi kullanima hazirlayan yol, sebekeler ve VRD uygulamalari."
+      }
     ],
     "cta": "Insaat programinizi konusalim"
   }

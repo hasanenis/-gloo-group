@@ -7,20 +7,36 @@
   "revision": "v1-seo-services-fr-20260714",
   "status": "approved",
   "seo": {
-    "title": "Services de construction en Algerie | Igloo Construction",
-    "description": "Igloo Construction assure le gros oeuvre, les programmes residentiels, commerciaux et les travaux d'infrastructure depuis Bir Khadem, Alger.",
-    "socialTitle": "Services de construction en Algerie | Igloo Construction",
-    "socialDescription": "Une execution coordonnee par SARL Igloo Yapi Construction a travers l'Algerie."
+    "title": "Services de construction en Algérie | Igloo Bâtiment – Igloo Groupe",
+    "description": "Igloo Bâtiment – Igloo Groupe (SARL Igloo Yapi Construction) assure le gros oeuvre, les programmes résidentiels, commerciaux et les travaux d'infrastructure depuis Bir Khadem, Alger.",
+    "socialTitle": "Services de construction en Algérie | Igloo Bâtiment – Igloo Groupe",
+    "socialDescription": "Igloo Bâtiment – Igloo Groupe : une exécution coordonnée à travers l'Algérie."
   },
   "content": {
     "eyebrow": "Services",
     "heading": "Une execution de construction adaptee a chaque projet.",
     "lead": "Igloo Construction coordonne l'ingenierie, les achats, les equipes de chantier et les travaux secondaires pour les programmes residentiels, commerciaux et d'infrastructure en Algerie.",
     "cards": [
-      { "slug": "general-contracting", "title": "Entreprise generale", "summary": "Une structure de livraison coordonnee pour les programmes de construction complexes." },
-      { "slug": "residential-construction", "title": "Construction residentielle", "summary": "Logements, villas et programmes residentiels mixtes executes avec rigueur." },
-      { "slug": "commercial-construction", "title": "Construction commerciale", "summary": "Centres commerciaux, espaces de vente et lots d'amenagement lies a des programmes reels." },
-      { "slug": "infrastructure-works", "title": "Travaux d'infrastructure", "summary": "Voiries, reseaux et travaux VRD pour preparer des sites durables." }
+      {
+        "slug": "general-contracting",
+        "title": "Entreprise generale",
+        "summary": "Une structure de livraison coordonnee pour les programmes de construction complexes."
+      },
+      {
+        "slug": "residential-construction",
+        "title": "Construction residentielle",
+        "summary": "Logements, villas et programmes residentiels mixtes executes avec rigueur."
+      },
+      {
+        "slug": "commercial-construction",
+        "title": "Construction commerciale",
+        "summary": "Centres commerciaux, espaces de vente et lots d'amenagement lies a des programmes reels."
+      },
+      {
+        "slug": "infrastructure-works",
+        "title": "Travaux d'infrastructure",
+        "summary": "Voiries, reseaux et travaux VRD pour preparer des sites durables."
+      }
     ],
     "cta": "Parler de votre programme de construction"
   }
