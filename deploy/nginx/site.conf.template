@@ -80,7 +80,6 @@ server {
     }
 
     error_page 404 /index.html;
-    add_header Cache-Control "no-store" always;
 
     location = /favicon.ico {
         log_not_found off;
