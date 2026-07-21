@@ -2,9 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { ArrowRight } from 'lucide-react';
 import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
 import { heroSlides } from '../data/projects';
+import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
+import SiteLink from './SiteLink';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +39,7 @@ export default function HeroBanner() {
     t('homeHeroPhraseCraft'),
     t('homeHeroPhraseDream'),
   ];
-  const heroTitle = heroPhrases[0];
+  const heroHeading = localize(homepageContent.hero.title, locale);
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -266,6 +269,10 @@ export default function HeroBanner() {
             <img
               src={HERO_POSTER}
               alt=""
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
               className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
             />
           ) : (
@@ -278,7 +285,7 @@ export default function HeroBanner() {
               muted
               loop
               playsInline
-              preload="auto"
+              preload="metadata"
               onLoadedData={() => setVideoReady(true)}
             />
           )}
@@ -289,12 +296,12 @@ export default function HeroBanner() {
           className="pointer-events-none absolute bottom-0 right-0 h-28 w-28 bg-[radial-gradient(circle_at_100%_100%,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.84)_22%,rgba(0,0,0,0.28)_54%,rgba(0,0,0,0)_78%)] md:h-32 md:w-32"
         />
 
-        <div className="relative z-20 flex h-[100svh] w-full items-center justify-center px-4 py-28 text-center">
+        <div className="relative z-20 flex h-[100svh] w-full flex-col items-center justify-center px-4 py-28 text-center">
           <h1
             ref={textRef}
-            aria-label={heroTitle}
             className="hero-loop-title inline-flex max-w-[calc(100vw-2rem)] items-center justify-center gap-x-[0.18em] font-nav text-[clamp(2.28rem,0.8rem+7.4vw,3.75rem)] font-light leading-none tracking-normal text-white sm:text-[5rem] md:text-[7.25rem] lg:text-[8.75rem] xl:text-[9.5rem] 2xl:text-[10rem]"
           >
+            <span className="sr-only">{heroHeading}</span>
             <span
               className="hero-loop-mask relative inline-block h-[1.06em] min-w-[8.8em] max-w-[92vw] overflow-hidden align-baseline"
               aria-hidden="true"
@@ -327,6 +334,21 @@ export default function HeroBanner() {
               ))}
             </span>
           </h1>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <SiteLink
+              to="/projects"
+              className="inline-flex min-h-12 items-center gap-2 bg-[#c22026] px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#a81b21]"
+            >
+              {localize(homepageContent.hero.primaryCta, locale)}
+              <ArrowRight className="h-4 w-4" strokeWidth={2.2} />
+            </SiteLink>
+            <SiteLink
+              to="/contact"
+              className="inline-flex min-h-12 items-center border border-white/55 px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:border-white hover:bg-white/10"
+            >
+              {localize(homepageContent.hero.secondaryCta, locale)}
+            </SiteLink>
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useRef } from 'react';
 import { ArrowRight, BadgeCheck, Building2, MapPin, UsersRound } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { companyProfile, projects, type ProjectRecord } from '../data/projects';
 import { localize, type HomepageText } from '../data/homepageContent';
 import { pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 import { usePageContent } from '../content';
+import SiteLink from '../components/SiteLink';
+import { useEditorialReveal } from '../hooks/useEditorialReveal';
 
 const Footer = lazy(() => import('../components/Footer'));
 
@@ -170,37 +171,41 @@ function SectionFallback({ minHeight = '20rem' }: { minHeight?: string }) {
 }
 
 function AboutIntro() {
+  const introRef = useRef<HTMLDivElement>(null);
   const { locale } = useLocale();
   const copy = getCopy(locale);
 
+  useEditorialReveal(introRef, [locale]);
+
   return (
-    <>
+    <div ref={introRef}>
       <section className="bg-white px-5 pb-12 pt-36 text-[#111] md:px-10 md:pb-16 md:pt-44 xl:px-16">
         <div className="mx-auto max-w-[1500px]">
-          <p className="text-[14px] font-semibold text-[#c22026]">{copy.eyebrow}</p>
+          <p className="text-[14px] font-semibold text-[#c22026]" data-editorial-reveal="label">{copy.eyebrow}</p>
 
           <div className="mt-7 grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] lg:items-end">
-            <h1 className="max-w-[980px] font-nav text-[48px] font-semibold leading-[0.98] tracking-normal sm:text-[58px] md:text-[68px] lg:text-[76px] xl:text-[88px]">
+            <h1 className="max-w-[980px] font-nav text-[48px] font-semibold leading-[0.98] tracking-normal sm:text-[58px] md:text-[68px] lg:text-[76px] xl:text-[88px]" data-editorial-reveal="display">
               {companyProfile.name}
             </h1>
 
             <div className="pb-1">
-              <p className="max-w-[42ch] text-[17px] leading-[1.7] text-black/66 md:text-[19px]">
+              <p className="max-w-[42ch] text-[17px] leading-[1.7] text-black/66 md:text-[19px]" data-editorial-reveal="copy">
                 {copy.heroLead}
               </p>
-              <Link
+              <SiteLink
                 to="/contact"
                 className="mt-7 inline-flex min-h-11 items-center gap-2 border-b border-black pb-1 text-[14px] font-semibold text-black transition-colors hover:border-[#c22026] hover:text-[#c22026]"
+                data-editorial-reveal="action"
               >
                 {copy.contact}
                 <ArrowRight className="h-4 w-4" strokeWidth={2} />
-              </Link>
+              </SiteLink>
             </div>
           </div>
 
-          <dl className="mt-14 grid border-y border-black/14 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-14 grid border-y border-black/14 sm:grid-cols-2 lg:grid-cols-4" data-editorial-reveal-group="stats">
             {facts.map((fact) => (
-              <div key={fact.label.en} className="border-b border-black/10 py-5 sm:px-5 sm:first:pl-0 lg:border-b-0 lg:border-r lg:last:border-r-0">
+              <div key={fact.label.en} className="border-b border-black/10 py-5 sm:px-5 sm:first:pl-0 lg:border-b-0 lg:border-r lg:last:border-r-0" data-editorial-reveal-item>
                 <dt className="text-[13px] leading-[1.45] text-black/50">{localize(fact.label, locale)}</dt>
                 <dd className="mt-2 text-[25px] font-semibold leading-none text-black">{localize(fact.value, locale)}</dd>
               </div>
@@ -210,11 +215,13 @@ function AboutIntro() {
       </section>
 
       <section className="bg-white px-5 pb-16 md:px-10 md:pb-24 xl:px-16">
-        <figure className="mx-auto max-w-[1500px]">
+        <figure className="mx-auto max-w-[1500px]" data-editorial-reveal="panel">
           <div className="aspect-[16/7] min-h-[330px] overflow-hidden bg-[#e9e9e7]">
             <img
               src={LEAD_IMAGE}
               alt={copy.imageCaption}
+              width={1600}
+              height={700}
               className="h-full w-full object-cover object-center"
               loading="eager"
               decoding="async"
@@ -226,35 +233,38 @@ function AboutIntro() {
           </figcaption>
         </figure>
       </section>
-    </>
+    </div>
   );
 }
 
 function CompanyProfile() {
+  const sectionRef = useRef<HTMLElement>(null);
   const { locale } = useLocale();
   const copy = getCopy(locale);
   const pageContent = usePageContent<{ eyebrow: string; heading: string; body: string }>('about', locale);
   const profileParagraphs = [pageContent.content.body, copy.profileParagraphs[1]];
 
+  useEditorialReveal(sectionRef, [locale]);
+
   return (
-    <section className="bg-[#111] px-5 py-20 text-white md:px-10 md:py-28 xl:px-16">
+    <section ref={sectionRef} className="bg-[#111] px-5 py-20 text-white md:px-10 md:py-28 xl:px-16">
       <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[minmax(300px,0.7fr)_minmax(0,1.3fr)] lg:gap-24">
         <div>
-          <p className="text-[14px] font-semibold text-[#e82a2e]">{copy.profileLabel}</p>
-          <h2 className="mt-6 max-w-[13ch] font-nav text-[38px] font-medium leading-[1.05] tracking-normal md:text-[50px] lg:text-[58px]">
+          <p className="text-[14px] font-semibold text-[#e82a2e]" data-editorial-reveal="label">{copy.profileLabel}</p>
+          <h2 className="mt-6 max-w-[13ch] font-nav text-[38px] font-medium leading-[1.05] tracking-normal md:text-[50px] lg:text-[58px]" data-editorial-reveal="heading">
             {copy.profileTitle}
           </h2>
         </div>
 
         <div>
-          <div className="grid gap-7 text-[17px] leading-[1.8] text-white/68 md:grid-cols-2 md:text-[18px]">
+          <div className="grid gap-7 text-[17px] leading-[1.8] text-white/68 md:grid-cols-2 md:text-[18px]" data-editorial-reveal-group="copy">
             {profileParagraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={paragraph} data-editorial-reveal-item>{paragraph}</p>
             ))}
           </div>
 
-          <dl className="mt-12 border-t border-white/18">
-            <div className="grid gap-4 border-b border-white/18 py-6 md:grid-cols-[200px_1fr]">
+          <dl className="mt-12 border-t border-white/18" data-editorial-reveal-group="columns">
+            <div className="grid gap-4 border-b border-white/18 py-6 md:grid-cols-[200px_1fr]" data-editorial-reveal-item>
               <dt className="flex items-center gap-3 text-[14px] font-semibold text-white">
                 <BadgeCheck className="h-5 w-5 text-[#e82a2e]" strokeWidth={1.8} />
                 {copy.qualificationLabel}
@@ -263,7 +273,7 @@ function CompanyProfile() {
                 {localize(companyProfile.qualificationStatement, locale)} · {localize(companyProfile.classificationBadge, locale)}
               </dd>
             </div>
-            <div className="grid gap-4 border-b border-white/18 py-6 md:grid-cols-[200px_1fr]">
+            <div className="grid gap-4 border-b border-white/18 py-6 md:grid-cols-[200px_1fr]" data-editorial-reveal-item>
               <dt className="flex items-center gap-3 text-[14px] font-semibold text-white">
                 <UsersRound className="h-5 w-5 text-[#e82a2e]" strokeWidth={1.8} />
                 {copy.teamLabel}
@@ -280,28 +290,32 @@ function CompanyProfile() {
 }
 
 function Capabilities() {
+  const sectionRef = useRef<HTMLElement>(null);
   const { locale } = useLocale();
   const copy = getCopy(locale);
 
+  useEditorialReveal(sectionRef, [locale]);
+
   return (
-    <section className="bg-white px-5 py-20 text-black md:px-10 md:py-28 xl:px-16">
+    <section ref={sectionRef} className="bg-white px-5 py-20 text-black md:px-10 md:py-28 xl:px-16">
       <div className="mx-auto max-w-[1500px]">
         <div className="grid gap-8 pb-12 lg:grid-cols-[0.55fr_1fr]">
-          <p className="text-[14px] font-semibold text-[#c22026]">{copy.capabilitiesLabel}</p>
-          <h2 className="max-w-[25ch] font-nav text-[34px] font-medium leading-[1.08] tracking-normal md:text-[46px]">
+          <p className="text-[14px] font-semibold text-[#c22026]" data-editorial-reveal="label">{copy.capabilitiesLabel}</p>
+          <h2 className="max-w-[25ch] font-nav text-[34px] font-medium leading-[1.08] tracking-normal md:text-[46px]" data-editorial-reveal="heading">
             {copy.capabilitiesTitle}
           </h2>
         </div>
 
-        <div className="border-b border-black/14">
+        <div className="border-b border-black/14" data-editorial-reveal-group="cards">
           {capabilities.map((capability, index) => {
             const project = projects.find((candidate) => candidate.slug === capability.projectSlug);
 
             return (
-              <Link
+              <SiteLink
                 key={capability.title.en}
                 to={`/projects/${capability.projectSlug}`}
                 className="group grid gap-4 border-t border-black/14 py-7 transition-colors hover:text-[#c22026] md:grid-cols-[52px_minmax(220px,0.7fr)_minmax(0,1fr)_220px_24px] md:items-start"
+                data-editorial-reveal-item
               >
                 <span className="text-[13px] text-black/38 group-hover:text-[#c22026]/70">
                   {String(index + 1).padStart(2, '0')}
@@ -315,7 +329,7 @@ function Capabilities() {
                   {project?.location ?? copy.exampleProject}
                 </span>
                 <ArrowRight className="hidden h-4 w-4 md:block" strokeWidth={2} />
-              </Link>
+              </SiteLink>
             );
           })}
         </div>
@@ -325,36 +339,42 @@ function Capabilities() {
 }
 
 function SelectedWork() {
+  const sectionRef = useRef<HTMLElement>(null);
   const { locale } = useLocale();
   const copy = getCopy(locale);
 
+  useEditorialReveal(sectionRef, [locale]);
+
   return (
-    <section className="bg-[#f1f1ef] px-5 py-20 text-black md:px-10 md:py-28 xl:px-16">
+    <section ref={sectionRef} className="bg-[#f1f1ef] px-5 py-20 text-black md:px-10 md:py-28 xl:px-16">
       <div className="mx-auto max-w-[1500px]">
         <div className="flex flex-col gap-8 border-b border-black/14 pb-10 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-[14px] font-semibold text-[#c22026]">{copy.workLabel}</p>
-            <h2 className="mt-5 max-w-[18ch] font-nav text-[36px] font-medium leading-[1.06] tracking-normal md:text-[50px]">
+            <p className="text-[14px] font-semibold text-[#c22026]" data-editorial-reveal="label">{copy.workLabel}</p>
+            <h2 className="mt-5 max-w-[18ch] font-nav text-[36px] font-medium leading-[1.06] tracking-normal md:text-[50px]" data-editorial-reveal="heading">
               {copy.workTitle}
             </h2>
           </div>
-          <Link
+          <SiteLink
             to="/projects"
             className="inline-flex min-h-11 items-center gap-2 self-start border-b border-black pb-1 text-[14px] font-semibold transition-colors hover:border-[#c22026] hover:text-[#c22026] md:self-auto"
+            data-editorial-reveal="action"
           >
             {copy.allProjects}
             <ArrowRight className="h-4 w-4" strokeWidth={2} />
-          </Link>
+          </SiteLink>
         </div>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-3 md:gap-5">
+        <div className="mt-10 grid gap-10 md:grid-cols-3 md:gap-5" data-editorial-reveal-group="cards">
           {showcaseProjects.map(({ project, image }) => (
-            <Link key={project.slug} to={`/projects/${project.slug}`} className="group block">
+            <SiteLink key={project.slug} to={`/projects/${project.slug}`} transitionImage={image} className="group block" data-editorial-reveal-item>
               <figure>
                 <div className="aspect-[4/5] overflow-hidden bg-[#dededb]">
                   <img
                     src={image}
                     alt={`${project.title}, ${project.location}`}
+                    width={1200}
+                    height={1500}
                     className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.025]"
                     loading="lazy"
                     decoding="async"
@@ -373,7 +393,7 @@ function SelectedWork() {
                   </div>
                 </figcaption>
               </figure>
-            </Link>
+            </SiteLink>
           ))}
         </div>
       </div>

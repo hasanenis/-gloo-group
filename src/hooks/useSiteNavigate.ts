@@ -6,6 +6,8 @@ import { getProjectHeroImage } from '../data/projectHeroImage';
 import { getManualProjectHeroSettings } from '../data/manualProjectImages';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { runBatPageTransition } from '../transitions/batPageTransition';
+import { getRouteTransitionKind } from '../transitions/routeTransitionPolicy';
+import { runSitePageTransition } from '../transitions/sitePageTransition';
 import { localizedPath, useLocale } from '../i18n';
 
 function getPathname(path: string) {
@@ -25,13 +27,6 @@ function decodeSlug(slug: string) {
   } catch {
     return slug;
   }
-}
-
-// Only individual project pages get the cinematic hero transition;
-// every other route uses the plain white wipe.
-function isProjectDetailPath(pathname: string) {
-  return /^\/(?:en|fr|tr|ar)(?:\/)?(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname)
-    || /^\/(?:bat-demo\/)?projects\/[^/]+\/?$/.test(pathname);
 }
 
 function resolveTransitionProject(pathname: string) {
@@ -94,17 +89,31 @@ export function useSiteNavigate() {
         return;
       }
 
-      const isProjectDetail = isProjectDetailPath(targetPathname);
+      const transitionKind = getRouteTransitionKind(targetPathname);
 
-      void runBatPageTransition({
+      // Project destinations stay on the established BAT transition runner.
+      // Its geometry, crop handoff and ProjectDetail entry event are intentionally
+      // isolated from the general site transition below.
+      if (transitionKind !== 'site') {
+        const isProjectDetail = transitionKind === 'project-detail';
+        void runBatPageTransition({
+          targetPath: localizedTargetPath,
+          variant: isProjectDetail ? 'hero' : 'plain',
+          imageSrc: isProjectDetail
+            ? imageSrc ?? getProjectTransitionImage(targetPathname)
+            : undefined,
+          imageSettings: isProjectDetail
+            ? getProjectTransitionImageSettings(targetPathname)
+            : undefined,
+          reducedMotion: prefersReducedMotion,
+          lenis,
+          navigate,
+        });
+        return;
+      }
+
+      void runSitePageTransition({
         targetPath: localizedTargetPath,
-        variant: isProjectDetail ? 'hero' : 'plain',
-        imageSrc: isProjectDetail
-          ? imageSrc ?? getProjectTransitionImage(targetPathname)
-          : undefined,
-        imageSettings: isProjectDetail
-          ? getProjectTransitionImageSettings(targetPathname)
-          : undefined,
         reducedMotion: prefersReducedMotion,
         lenis,
         navigate,

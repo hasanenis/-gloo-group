@@ -79,13 +79,87 @@ type AssistantContent = {
   answers: PreAnswer[];
 };
 
+type AssistantChromeLabels = {
+  launcher: string;
+  openAssistant: string;
+  resetConversation: string;
+  preparedAnswers: string;
+  chatTopics: string;
+  sendMessage: string;
+  email: string;
+  call: string;
+  emailProjectDesk: string;
+  callProjectDesk: string;
+  mobileNavigation: string;
+  inputLabel: string;
+};
+
+const assistantChromeLabels: Record<Locale, AssistantChromeLabels> = {
+  en: {
+    launcher: 'Can I help?',
+    openAssistant: 'Open Igloo assistant',
+    resetConversation: 'Restart conversation',
+    preparedAnswers: 'Prepared answers',
+    chatTopics: 'Chat topics',
+    sendMessage: 'Send message',
+    email: 'Email',
+    call: 'Call',
+    emailProjectDesk: 'Email project desk',
+    callProjectDesk: 'Call project desk',
+    mobileNavigation: 'Mobile navigation',
+    inputLabel: 'Write your project question',
+  },
+  fr: {
+    launcher: "Besoin d'aide ?",
+    openAssistant: "Ouvrir l'assistant Igloo",
+    resetConversation: 'Recommencer la conversation',
+    preparedAnswers: 'Réponses préparées',
+    chatTopics: 'Sujets de discussion',
+    sendMessage: 'Envoyer le message',
+    email: 'E-mail',
+    call: 'Appeler',
+    emailProjectDesk: 'Écrire au bureau projets',
+    callProjectDesk: 'Appeler le bureau projets',
+    mobileNavigation: 'Navigation mobile',
+    inputLabel: 'Écrivez votre question sur le projet',
+  },
+  'ar-DZ': {
+    launcher: 'نقدر نعاونك؟',
+    openAssistant: 'افتح مساعد Igloo',
+    resetConversation: 'أعد بدء المحادثة',
+    preparedAnswers: 'إجابات جاهزة',
+    chatTopics: 'مواضيع المحادثة',
+    sendMessage: 'أرسل الرسالة',
+    email: 'البريد الإلكتروني',
+    call: 'اتصل',
+    emailProjectDesk: 'راسل مكتب المشاريع',
+    callProjectDesk: 'اتصل بمكتب المشاريع',
+    mobileNavigation: 'قائمة التنقل على الهاتف',
+    inputLabel: 'اكتب سؤالك عن المشروع',
+  },
+  tr: {
+    launcher: 'Nasıl yardımcı olabilirim?',
+    openAssistant: 'Igloo asistanını aç',
+    resetConversation: 'Sohbeti yeniden başlat',
+    preparedAnswers: 'Hazır yanıtlar',
+    chatTopics: 'Sohbet konuları',
+    sendMessage: 'Mesaj gönder',
+    email: 'E-posta',
+    call: 'Ara',
+    emailProjectDesk: 'Proje ekibine e-posta gönder',
+    callProjectDesk: 'Proje ekibini ara',
+    mobileNavigation: 'Mobil menü',
+    inputLabel: 'Proje sorunuzu yazın',
+  },
+};
+
 const assistantProfile: { name: string; role: LocalizedString; image: string } = {
   name: 'Lina',
   role: {
-    en: 'Algeria project desk',
-    fr: 'Bureau projets Algérie',
-    'ar-DZ': 'مكتب مشاريع الجزائر',
-    tr: 'Cezayir proje masası',
+    en: 'Algeria project advisor',
+    fr: 'Bureau des projets en Algérie',
+    'ar-DZ': 'مستشارة مشاريع الجزائر',
+    tr: 'Cezayir proje danışmanı',
   },
   image: '/assistant/igloo-assistant-lina.png',
 };
@@ -529,11 +603,11 @@ const buildAssistantContent = (
   fr: {
     labels: {
       title: 'Assistant Igloo',
-      eyebrow: 'Assistant projet client',
+      eyebrow: 'Assistant de projet',
       launcher: "Besoin d'aide ?",
-      placeholder: 'Question sur projet, devis, localisation...',
-      chooseTopic: 'Choisissez un sujet client ou écrivez votre question projet.',
-      chooseAnswer: 'Choisissez une réponse préparée ci-dessous.',
+      placeholder: 'Posez une question sur un projet, un devis ou une localisation…',
+      chooseTopic: 'Choisissez un sujet ou écrivez directement votre question.',
+      chooseAnswer: 'Choisissez l’une des réponses ci-dessous.',
       preparedAnswer: 'Réponse préparée',
       notSureTitle: 'Bureau projets',
       fallback:
@@ -927,20 +1001,20 @@ const buildAssistantContent = (
 const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): AssistantContent => ({
   labels: {
     title: 'Igloo Asistan',
-    eyebrow: 'Proje danışma masası',
+    eyebrow: 'Proje danışmanınız',
     launcher: 'Nasıl yardımcı olabilirim?',
-    placeholder: 'Projeniz, teklif veya konum hakkında sorun…',
-    chooseTopic: 'Bir konu seçin veya sorunuzu yazın.',
-    chooseAnswer: 'Aşağıdaki başlıklardan birini seçin.',
+    placeholder: 'Proje, teklif veya proje konumu hakkında sorun…',
+    chooseTopic: 'Bir konu seçin ya da proje sorunuzu doğrudan yazın.',
+    chooseAnswer: 'Aşağıdaki hazır yanıtlardan birini seçin.',
     preparedAnswer: 'Hazır yanıt',
-    notSureTitle: 'Proje danışma masası',
-    fallback: 'Sorunuzu tam olarak eşleştiremedim. Proje türünü, konumu ve ihtiyacınızı kısaca yazabilir ya da aşağıdaki başlıklardan birini seçebilirsiniz.',
+    notSureTitle: 'Proje danışmanı',
+    fallback: 'Sorunuzu tam olarak anlayamadım. Proje türünü, konumunu ve ihtiyacınızı kısaca yazabilir veya aşağıdaki başlıklardan birini seçebilirsiniz.',
   },
   topics: [
     {
       id: 'newProject',
-      label: 'Yeni proje ve teklif',
-      description: 'İlk görüşme için gereken proje bilgilerini hazırlayın.',
+      label: 'Yeni proje / teklif talebi',
+      description: 'İlk değerlendirme için gereken proje bilgilerini hazırlayın.',
       answerIds: ['tr-quote-info'],
       keywords: ['teklif', 'fiyat', 'yeni proje', 'maliyet', 'başlamak'],
     },
@@ -953,21 +1027,21 @@ const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): Ass
     },
     {
       id: 'commercial',
-      label: 'Ticari ve karma kullanım',
+      label: 'Ticari / karma kullanım',
       description: 'Ticaret merkezleri, dükkânlar, ofisler ve karma projeler.',
       answerIds: ['tr-commercial-scope'],
       keywords: ['ticari', 'karma kullanım', 'dükkan', 'dükkân', 'ofis', 'mağaza'],
     },
     {
       id: 'infrastructure',
-      label: 'Yol ve altyapı',
+      label: 'Yollar ve altyapı',
       description: 'Saha yolları, şebekeler, erişim ve çevre düzenlemesi.',
       answerIds: ['tr-infrastructure'],
       keywords: ['yol', 'altyapı', 'şebeke', 'vrd', 'çevre düzenleme'],
     },
     {
       id: 'process',
-      label: 'Çalışma süreci',
+      label: 'Proje süreci',
       description: 'İlk temastan saha uygulamasına kadar izlenen adımlar.',
       answerIds: ['tr-process'],
       keywords: ['süreç', 'takvim', 'süre', 'aşama', 'nasıl çalışıyor'],
@@ -988,7 +1062,7 @@ const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): Ass
     },
     {
       id: 'contact',
-      label: 'İletişim',
+      label: 'Proje danışmanına ulaşın',
       description: 'Proje ekibine e-posta veya telefonla ulaşın.',
       answerIds: ['tr-contact'],
       keywords: ['iletişim', 'telefon', 'e-posta', 'adres', 'ulaşmak'],
@@ -1073,6 +1147,333 @@ const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): Ass
   ],
 });
 
+const buildArabicAssistantContent = (emailHref: string, phoneHref: string): AssistantContent => ({
+  labels: {
+    title: 'مساعد Igloo',
+    eyebrow: 'مساعد مشاريع العملاء',
+    launcher: 'نقدر نعاونك؟',
+    placeholder: 'اسأل عن مشروع أو عرض سعر أو موقع…',
+    chooseTopic: 'اختَر موضوعًا يخص مشروعك أو اكتب سؤالك مباشرة.',
+    chooseAnswer: 'اختر إحدى الإجابات الجاهزة أدناه.',
+    preparedAnswer: 'إجابة جاهزة',
+    notSureTitle: 'مكتب المشاريع',
+    fallback:
+      'ما قدرتش نطابق سؤالك بالضبط. إذا عندك طلب مشروع، أرسل اسمك ورقم هاتفك ونوع المشروع وموقعه وموضوعه. ويمكنك أيضًا اختيار أحد المواضيع أدناه.',
+  },
+  topics: [
+    {
+      id: 'newProject',
+      label: 'بدء مشروع / طلب عرض سعر',
+      description: 'جهّز المعلومات الأولى التي تحتاجها Igloo لدراسة مشروع سكني أو تجاري أو متعدد الاستعمالات.',
+      answerIds: ['quote-info', 'quote-documents', 'site-visit'],
+      keywords: ['عرض سعر', 'عرض أسعار', 'تسعيرة', 'سعر', 'تقدير', 'مشروع جديد', 'بدء مشروع', 'التكلفة', 'devis'],
+    },
+    {
+      id: 'residential',
+      label: 'سكن، فيلات وشقق',
+      description: 'اسأل عن العمارات السكنية، الفيلات، المجمعات، المواقف، المحلات في الطابق الأرضي وأشغال الموقع.',
+      answerIds: ['housing-scope', 'villa-network', 'apartment-mixed'],
+      keywords: ['سكن', 'فيلا', 'شقة', 'سكني', 'إقامة', 'logement', 'villa', 'appartement'],
+    },
+    {
+      id: 'commercial',
+      label: 'تجاري / متعدد الاستعمالات',
+      description: 'للمراكز التجارية، المحلات والخدمات، المشاريع المختلطة، التشطيبات والمساحات المفتوحة للعموم.',
+      answerIds: ['commercial-scope', 'mixed-use', 'finishing-works'],
+      keywords: ['تجاري', 'مختلط', 'محل', 'مكتب', 'مركز', 'commerce', 'commercial', 'mixte'],
+    },
+    {
+      id: 'infrastructure',
+      label: 'الطرق والشبكات',
+      description: 'لأشغال الطرق، شبكات الخدمات، الوصول إلى الموقع، الأشغال الخارجية والبنية التحتية.',
+      answerIds: ['roads-networks', 'site-infrastructure'],
+      keywords: ['طرق', 'شبكات', 'بنية تحتية', 'مياه', 'صرف', 'شبكة', 'routes', 'réseaux', 'vrd'],
+    },
+    {
+      id: 'process',
+      label: 'كيف تسير مراحل المشروع؟',
+      description: 'تعرّف على التواصل الأول، مراجعة المشروع، الوثائق، المدة، التنسيق وما يسبق العرض الرسمي.',
+      answerIds: ['first-call', 'timeline', 'quality-safety'],
+      keywords: ['مراحل', 'عملية', 'مدة', 'كيف', 'أجل', 'تنسيق', 'process', 'délai'],
+    },
+    {
+      id: 'portfolio',
+      label: 'أمثلة من المشاريع',
+      description: 'تصفّح أمثلة عن مشاريع Igloo المنجزة والجارية في الجزائر العاصمة ومناطق جزائرية أخرى.',
+      answerIds: ['projects-summary', 'current-projects'],
+      keywords: ['مشاريع', 'أمثلة', 'محفظة', 'مراجع', 'مشروع', 'projets', 'portfolio'],
+    },
+    {
+      id: 'company',
+      label: 'الشركة وقدراتها',
+      description: 'تعرّف على Igloo وما تبنيه وأنواع المشاريع التي يمكن للفريق مناقشتها مع العملاء.',
+      answerIds: ['why-choose-igloo', 'company-profile', 'capabilities'],
+      keywords: ['الشركة', 'قدرات', 'Igloo', 'فريق', 'من نحن', 'entreprise', 'capacités'],
+    },
+    {
+      id: 'contact',
+      label: 'التواصل مع مستشار مشروع',
+      description: 'اعرف أسرع طريقة لإرسال ملخص مشروع إلى Igloo عبر البريد أو الهاتف أو نموذج التواصل.',
+      answerIds: ['contact-office', 'contact-brief'],
+      keywords: ['تواصل', 'هاتف', 'بريد', 'اتصال', 'عنوان', 'contact', 'téléphone', 'email'],
+    },
+  ],
+  answers: [
+    {
+      id: 'quote-info',
+      topicId: 'newProject',
+      label: 'ما المعلومات المطلوبة لإعداد عرض سعر؟',
+      answer: 'أرسل موقع المشروع، نوع المبنى، المساحة التقريبية، المرحلة الحالية، المخططات إن وُجدت، موعد البدء المستهدف ونطاق الأشغال المطلوب من Igloo.',
+      nextStep: 'يكفي ملخص قصير للمراجعة الأولى. وإذا توفرت لديك مخططات أو صور أو معلومات عن الأرض أو وضعية الرخص، أرفقها أيضًا.',
+      actions: [
+        { label: 'أرسل ملخص المشروع', href: emailHref },
+        { label: 'اتصل بمكتب المشاريع', href: phoneHref },
+      ],
+      keywords: ['عرض سعر', 'سعر', 'تكلفة', 'ميزانية', 'معلومات', 'devis', 'prix'],
+    },
+    {
+      id: 'quote-documents',
+      topicId: 'newProject',
+      label: 'ما الوثائق المفيدة؟',
+      answer: 'من المفيد إرسال المخططات المعمارية، معلومات الأرض أو الموقع، وضعية الرخص، البرنامج المستهدف، صور الموقع، نطاق الأشغال والقيود المعروفة.',
+      nextStep: 'لا تملك مخططات بعد؟ أرسل الموقع، نوع المشروع، حجمه التقريبي ووصفًا قصيرًا لما تريد بناءه.',
+      actions: [
+        { label: 'أرسل الوثائق', href: emailHref },
+        { label: 'شاهد المشاريع', path: '/projects' },
+      ],
+      keywords: ['وثائق', 'مخططات', 'رخصة', 'صور', 'ملف', 'plans', 'documents'],
+    },
+    {
+      id: 'site-visit',
+      topicId: 'newProject',
+      label: 'هل يمكن طلب معاينة للموقع؟',
+      answer: 'نعم. لطلب معاينة، شارك الموقع بدقة، ظروف الوصول، نوع المشروع، وضعية الموقع الحالية والوقت المناسب للتواصل معك.',
+      nextStep: 'بعد ذلك يحدد الفريق ما إذا كانت الخطوة الأولى الأنسب هي مكالمة أو مراجعة وثائق أو نقاشًا في الموقع.',
+      actions: [
+        { label: 'اطلب معاينة', href: emailHref },
+        { label: 'تواصل معنا', path: '/#contact' },
+      ],
+      keywords: ['معاينة', 'زيارة الموقع', 'تفقد', 'الموقع', 'site visit', 'visite'],
+    },
+    {
+      id: 'housing-scope',
+      topicId: 'residential',
+      label: 'ما نطاق مشاريع السكن؟',
+      answer: 'يمكن لـ Igloo مناقشة مشاريع العمارات السكنية، الشقق، الفيلات، المجمعات المختلطة، المواقف، المحلات في الطابق الأرضي، الطرق والشبكات.',
+      nextStep: 'شارك عدد الوحدات، موقع الأرض، المساحة المبنية، مرحلة التصميم وما إذا كانت الطرق والشبكات ضمن النطاق.',
+      actions: [
+        { label: 'أرسل ملخصًا سكنيًا', href: emailHref },
+        { label: 'شاهد المشاريع', path: '/projects' },
+      ],
+      keywords: ['سكن', 'عمارات', 'شقق', 'وحدات', 'فيلات', 'logement', 'résidentiel'],
+    },
+    {
+      id: 'villa-network',
+      topicId: 'residential',
+      label: 'أشغال الفيلات والشبكات',
+      answer: 'في مشاريع الفيلات، أرسل عدد الفيلات، موقع القطعة، طرق الوصول، احتياجات الشبكات، أشغال الحدود ونطاق التسليم المطلوب.',
+      nextStep: 'تجعل الصور ومخطط الموقع ومعلومات الشبكات المراجعة الأولى أدق وأسرع.',
+      actions: [
+        { label: 'أرسل معلومات الفيلات', href: emailHref },
+        { label: 'اتصل بنا', href: phoneHref },
+      ],
+      keywords: ['فيلا', 'فيلات', 'شبكات', 'طرق', 'قطعة', 'villa', 'réseaux'],
+    },
+    {
+      id: 'apartment-mixed',
+      topicId: 'residential',
+      label: 'شقق أو مشروع سكني مختلط',
+      answer: 'للمشاريع السكنية أو المختلطة، أرسل عدد الوحدات والعمارات، مستويات المواقف، المساحات التجارية، الخدمات ومتطلبات التنفيذ على مراحل.',
+      nextStep: 'اذكر ما إذا كنت تحتاج إلى البناء الكامل أو الأشغال الثانوية أو البنية التحتية أو حزمة محددة.',
+      actions: [
+        { label: 'أرسل بيانات المشروع', href: emailHref },
+        { label: 'شاهد أمثلة المشاريع', path: '/projects' },
+      ],
+      keywords: ['شقة', 'سكني مختلط', 'موقف', 'تجاري', 'عمارة', 'appartement', 'mixte'],
+    },
+    {
+      id: 'commercial-scope',
+      topicId: 'commercial',
+      label: 'ما نطاق المشروع التجاري؟',
+      answer: 'يمكن لـ Igloo دراسة المراكز التجارية، المحلات والخدمات، التشطيبات، الشبكات التقنية، حركة الدخول والخروج وربط المساحات التجارية بالمشاريع السكنية.',
+      nextStep: 'أرسل الموقع، المساحة، الاستعمال المقصود، حالة الهيكل، موعد الافتتاح المطلوب ونطاق الأشغال.',
+      actions: [
+        { label: 'أرسل ملخصًا تجاريًا', href: emailHref },
+        { label: 'تواصل معنا', path: '/#contact' },
+      ],
+      keywords: ['تجاري', 'محل', 'مركز', 'خدمات', 'مساحة', 'commercial', 'commerce'],
+    },
+    {
+      id: 'mixed-use',
+      topicId: 'commercial',
+      label: 'مشروع متعدد الاستعمالات',
+      answer: 'في المشاريع متعددة الاستعمالات، اذكر الوحدات السكنية، المساحات التجارية، المواقف، المداخل، مناطق الخدمات وقيود التنفيذ على مراحل.',
+      nextStep: 'ينبغي أن توضح المراجعة الأولى ما يخص الهيكل، وما يخص التشطيبات، وما يخص البنية التحتية.',
+      actions: [
+        { label: 'أرسل ملخص المشروع المختلط', href: emailHref },
+        { label: 'شاهد أمثلة', path: '/projects' },
+      ],
+      keywords: ['متعدد الاستعمالات', 'مختلط', 'سكني تجاري', 'مواقف', 'خدمات', 'mixed use', 'mixte'],
+    },
+    {
+      id: 'finishing-works',
+      topicId: 'commercial',
+      label: 'التشطيبات والأشغال الثانوية',
+      answer: 'للتشطيبات أو الأشغال الثانوية، أرسل وضعية الموقع، المخططات، توقعاتك للمواد، الشبكات التقنية، الكميات والآجال.',
+      nextStep: 'إذا كان الهيكل قائمًا، فستكون الصور وملاحظات الحالة الحالية مفيدة جدًا.',
+      actions: [
+        { label: 'أرسل نطاق الأشغال', href: emailHref },
+        { label: 'اتصل بمكتب المشاريع', href: phoneHref },
+      ],
+      keywords: ['تشطيبات', 'أشغال ثانوية', 'واجهة', 'داخلية', 'مواد', 'finitions', 'second œuvre'],
+    },
+    {
+      id: 'roads-networks',
+      topicId: 'infrastructure',
+      label: 'الطرق وشبكات الخدمات',
+      answer: 'بالنسبة للطرق والشبكات، أرسل مخطط الموقع، متطلبات الوصول، تصريف المياه، احتياجات الخدمات، أطوال الطرق، نقاط الربط وقيود التنسيق.',
+      nextStep: 'يمكن للفريق تحديد ما إذا كانت هذه الأشغال جزءًا من حزمة أعمال إنشائية أكبر أو نطاقًا مستقلًا.',
+      actions: [
+        { label: 'أرسل ملخص البنية التحتية', href: emailHref },
+        { label: 'شاهد المشاريع', path: '/projects' },
+      ],
+      keywords: ['طرق', 'شبكات', 'تصريف', 'خدمات', 'ربط', 'routes', 'réseaux', 'vrd'],
+    },
+    {
+      id: 'site-infrastructure',
+      topicId: 'infrastructure',
+      label: 'البنية التحتية حول المشروع',
+      answer: 'اذكر طرق الوصول، المنصات، الأشغال الخارجية، شبكات الخدمات، المواقف، المساحات العامة وأي قيود مرتبطة بالجهات الإدارية.',
+      nextStep: 'ينبغي شرح نطاق البناء والبنية التحتية معًا بوضوح في الملخص الأول.',
+      actions: [
+        { label: 'أرسل معلومات الموقع', href: emailHref },
+        { label: 'تواصل معنا', path: '/#contact' },
+      ],
+      keywords: ['بنية تحتية', 'أشغال خارجية', 'مواقف', 'وصول', 'منصة', 'infrastructure', 'voirie'],
+    },
+    {
+      id: 'first-call',
+      topicId: 'process',
+      label: 'ما الخطوة الأولى؟',
+      answer: 'تتمثل الخطوة الأولى عادةً في مراجعة قصيرة لملخص المشروع: الموقع، النوع، المساحة، المخططات، النطاق، الجدول الزمني وبيانات التواصل مع العميل.',
+      nextStep: 'بعد ذلك تقترح Igloo مواصلة النقاش عبر مكالمة أو مراجعة وثائق أو اجتماع للمشروع.',
+      actions: [
+        { label: 'أرسل الملخص', href: emailHref },
+        { label: 'اتصل بنا', href: phoneHref },
+      ],
+      keywords: ['الخطوة الأولى', 'مراحل', 'اجتماع', 'مكالمة', 'première étape', 'process'],
+    },
+    {
+      id: 'timeline',
+      topicId: 'process',
+      label: 'متى يمكن أن ترد Igloo؟',
+      answer: 'تتوقف سرعة الرد على وضوح المعلومات. يساعد توفر الموقع والمخططات والنطاق والتواريخ المستهدفة على تسريع المراجعة الأولى.',
+      nextStep: 'في الطلبات المستعجلة، أرسل الملخص عبر البريد واتصل بالمكتب مع ذكر المرجع نفسه للمشروع.',
+      actions: [
+        { label: 'أرسل بريدًا الآن', href: emailHref },
+        { label: 'اتصل بالمكتب', href: phoneHref },
+      ],
+      keywords: ['متى', 'المدة', 'عاجل', 'سريع', 'أجل', 'délai', 'urgent'],
+    },
+    {
+      id: 'quality-safety',
+      topicId: 'process',
+      label: 'الجودة والتنسيق',
+      answer: 'تعتمد Igloo على التسليم المنسق للمشروع، والمراجعة التقنية، وإدارة الموقع، والتواصل الواضح بين العميل وفريق التصميم والتنفيذ.',
+      nextStep: 'في الطلبات الجادة، شارك المخططات ومستوى الجودة المطلوب مبكرًا حتى يكون نطاق الأشغال واضحًا للجميع.',
+      actions: [
+        { label: 'قسم الشركة', path: '/#about' },
+        { label: 'تواصل مع الفريق', path: '/#contact' },
+      ],
+      keywords: ['جودة', 'تنسيق', 'إدارة الموقع', 'سلامة', 'تواصل', 'qualité', 'coordination'],
+    },
+    {
+      id: 'projects-summary',
+      topicId: 'portfolio',
+      label: 'أرني أمثلة من المشاريع',
+      answer: 'يضم فهرس المشاريع مساكن وفيلات ومشاريع متعددة الاستعمالات ومراكز تجارية وطرقًا وشبكات وأمثلة عن مشاريع قيد الإنجاز في مناطق جزائرية مختلفة.',
+      nextStep: 'افتح فهرس المشاريع لمقارنة النوع والحالة والموقع ونطاق الأشغال.',
+      actions: [
+        { label: 'افتح المشاريع', path: '/projects' },
+        { label: 'اطلب عرض سعر', href: emailHref },
+      ],
+      keywords: ['مشاريع', 'أمثلة', 'محفظة', 'مراجع', 'projets', 'portfolio'],
+    },
+    {
+      id: 'current-projects',
+      topicId: 'portfolio',
+      label: 'الأعمال الحالية والمنجزة',
+      answer: 'تعرض Igloo مشاريع منجزة وأخرى قيد الإنجاز، تشمل السكن، السكن الترقوي، المحلات التجارية وأشغال البنية التحتية المنسقة.',
+      nextStep: 'إذا كان أحد المشاريع قريبًا من مشروعك، اذكره في رسالتك ليعرف الفريق المرجع الذي تنطلق منه.',
+      actions: [
+        { label: 'شاهد فهرس المشاريع', path: '/projects' },
+        { label: 'أرسل مرجع المشروع', href: emailHref },
+      ],
+      keywords: ['حالية', 'منجزة', 'قيد الإنجاز', 'مشابه', 'مرجع', 'projets en cours'],
+    },
+    {
+      id: 'why-choose-igloo',
+      topicId: 'company',
+      label: 'لماذا تختار Igloo؟',
+      answer: 'اختر Igloo إذا كنت تبحث عن فريق بناء مقره الجزائر، ويمكنه جمع المباني والطرق والشبكات وتنسيق الموقع والتواصل مع العميل في متابعة عملية واحدة للمشروع.',
+      nextStep: 'شارك نوع المشروع وموقعه وحجمه ومرحلته الحالية وتاريخه المستهدف. وستوجّه Lina طلبك إلى مستشار المشروع المناسب.',
+      actions: [
+        { label: 'شاهد المشاريع', path: '/projects' },
+        { label: 'راسل مكتب المشاريع', href: emailHref },
+      ],
+      keywords: ['لماذا Igloo', 'لماذا تختار', 'اختيار', 'فريق بناء', 'why choose', 'pourquoi choisir'],
+    },
+    {
+      id: 'company-profile',
+      topicId: 'company',
+      label: 'من هي Igloo؟',
+      answer: `يقع مقر SARL Igloo Yapi Construction في بئر خادم بالجزائر العاصمة، وتعمل الشركة في السكن، والمشاريع المختلطة، والطرق، والشبكات وتنفيذ المشاريع وإدارة الورشات بتنسيق متكامل.`,
+      nextStep: 'يمكنك مراجعة قسم الشركة أو إرسال طلب للحديث عن مشروعك.',
+      actions: [
+        { label: 'قسم الشركة', path: '/#about' },
+        { label: 'أرسل طلبًا', href: emailHref },
+      ],
+      keywords: ['من هي Igloo', 'الشركة', 'ملف الشركة', 'من نحن', 'qui est igloo'],
+    },
+    {
+      id: 'capabilities',
+      topicId: 'company',
+      label: 'ماذا يمكن أن تبني Igloo؟',
+      answer: 'يمكن لـ Igloo مناقشة المساكن والفيلات والعقار المختلط والمحلات التجارية والأشغال الثانوية والطرق والشبكات والبنية التحتية للموقع.',
+      nextStep: 'لمشروع محدد، أرسل الموقع والنوع والحجم والمخططات والجدول الزمني المستهدف.',
+      actions: [
+        { label: 'شاهد المشاريع', path: '/projects' },
+        { label: 'تواصل معنا', path: '/#contact' },
+      ],
+      keywords: ['قدرات', 'ماذا تبني', 'خدمات', 'نطاق', 'capacités', 'services'],
+    },
+    {
+      id: 'contact-office',
+      topicId: 'contact',
+      label: 'بيانات مكتب المشاريع',
+      answer: `العنوان: ${companyProfile.address}. الهاتف: ${companyProfile.phones[0]}. البريد الإلكتروني: ${companyProfile.email}.`,
+      nextStep: 'في طلب المشروع، أضف نوع المشروع وموقعه وحجمه التقريبي وطريقة التواصل المفضلة لديك.',
+      actions: [
+        { label: 'اتصل بالمكتب', href: phoneHref },
+        { label: 'راسل المكتب', href: emailHref },
+      ],
+      keywords: ['تواصل', 'هاتف', 'بريد', 'عنوان', 'مكتب', 'contact', 'téléphone'],
+    },
+    {
+      id: 'contact-brief',
+      topicId: 'contact',
+      label: 'ماذا أكتب في رسالتي؟',
+      answer: 'اذكر الاسم، ورقم الهاتف، والبريد الإلكتروني، ونوع المشروع، والموقع، والمساحة، والمرحلة الحالية، والموعد المطلوب، وأي مخططات أو صور متوفرة.',
+      nextStep: 'يساعد ذلك Lina على توجيه طلبك إلى الشخص المناسب من دون أن نطلب منك المعلومات الأساسية مرة أخرى.',
+      actions: [
+        { label: 'أرسل بريدًا', href: emailHref },
+        { label: 'اتصل بنا', href: phoneHref },
+      ],
+      keywords: ['رسالتي', 'ماذا أكتب', 'معلومات الطلب', 'ملخص المشروع', 'message', 'brief'],
+    },
+  ],
+});
+
 const makeBotMessage = (
   body: string,
   options: Omit<ChatMessage, 'id' | 'role' | 'body'> = {},
@@ -1146,30 +1547,24 @@ export default function AssistantDock() {
   const emailHref = `mailto:${companyProfile.email}`;
   const assistantContent = useMemo(() => {
     if (locale === 'tr') return buildTurkishAssistantContent(emailHref, phoneHref);
+    if (locale === 'ar-DZ') return buildArabicAssistantContent(emailHref, phoneHref);
     const content = buildAssistantContent(emailHref, phoneHref);
     return content[legacyLocale(locale)] ?? content.en;
   }, [emailHref, locale, phoneHref]);
   const { labels, topics, answers } = assistantContent;
-  const launcherLabel = pickLocaleText(locale, {
-    en: 'Can I help?',
-    fr: "Besoin d'aide ?",
-    'ar-DZ': 'نقدر نعاونك؟',
-    tr: 'Nasıl yardımcı olabilirim?',
-  });
-  const openAssistantLabel = pickLocaleText(locale, {
-    en: 'Open Igloo assistant',
-    fr: "Ouvrir l'assistant Igloo",
-    'ar-DZ': 'افتح مساعد Igloo',
-    tr: 'Igloo asistanını aç',
-  });
+  const chromeLabels = assistantChromeLabels[locale];
+  const launcherLabel = chromeLabels.launcher;
+  const openAssistantLabel = chromeLabels.openAssistant;
   const selectedTopic = selectedTopicId
     ? topics.find((topic) => topic.id === selectedTopicId) ?? null
     : null;
 
-  const introBody =
-    locale === 'fr'
-      ? `Bonjour, je suis ${assistantProfile.name}, votre assistant projet Igloo en Algérie. ${labels.chooseTopic}`
-      : `Hi, I'm ${assistantProfile.name}, your Igloo project assistant in Algeria. ${labels.chooseTopic}`;
+  const introBody = pickLocaleText(locale, {
+    en: `Hi, I'm ${assistantProfile.name}, your Igloo project assistant in Algeria. ${labels.chooseTopic}`,
+    fr: `Bonjour, je suis ${assistantProfile.name}, votre assistant projet Igloo en Algérie. ${labels.chooseTopic}`,
+    'ar-DZ': `مرحبًا، أنا ${assistantProfile.name}، مساعدتك في مشاريع Igloo بالجزائر. ${labels.chooseTopic}`,
+    tr: `Merhaba, ben ${assistantProfile.name}. Cezayir’deki Igloo projeleri için size yardımcı oluyorum. ${labels.chooseTopic}`,
+  });
 
   const navigateAndClose = (path: string) => {
     setPanelMode(null);
@@ -1256,8 +1651,8 @@ export default function AssistantDock() {
         title: labels.notSureTitle,
         topicIds: topics.map((topic) => topic.id),
         actions: [
-          { label: locale === 'fr' ? 'Envoyer email' : 'Email project desk', href: emailHref },
-          { label: locale === 'fr' ? 'Appeler' : 'Call project desk', href: phoneHref },
+          { label: chromeLabels.emailProjectDesk, href: emailHref },
+          { label: chromeLabels.callProjectDesk, href: phoneHref },
         ],
         tone: 'system',
       }),
@@ -1340,7 +1735,7 @@ export default function AssistantDock() {
       .filter((answer): answer is PreAnswer => Boolean(answer));
 
     return (
-      <div className="assistant-panel__quick-list assistant-panel__quick-list--answers" aria-label="Prepared answers">
+      <div className="assistant-panel__quick-list assistant-panel__quick-list--answers" aria-label={chromeLabels.preparedAnswers}>
         {relatedAnswers.map((answer) => (
           <button key={answer.id} type="button" onClick={() => handleAnswerSelect(answer)}>
             {answer.label}
@@ -1356,7 +1751,7 @@ export default function AssistantDock() {
       : topics).filter((topic): topic is AssistantTopic => Boolean(topic));
 
     return (
-      <div className="assistant-panel__quick-list assistant-panel__quick-list--topics" aria-label="Chat topics">
+      <div className="assistant-panel__quick-list assistant-panel__quick-list--topics" aria-label={chromeLabels.chatTopics}>
         {topicList.map((topic) => (
           <button
             key={topic.id}
@@ -1390,7 +1785,7 @@ export default function AssistantDock() {
               onClick={openAssistant}
             >
               <span className="assistant-floating__avatar" aria-hidden="true">
-                <img src={assistantProfile.image} alt="" />
+                <img src={assistantProfile.image} alt="" width={72} height={72} loading="lazy" decoding="async" />
               </span>
               <span className="assistant-floating__label">{launcherLabel}</span>
               <MessageCircle className="assistant-floating__icon h-4 w-4" strokeWidth={2.3} />
@@ -1400,7 +1795,7 @@ export default function AssistantDock() {
         </Tooltip>
       </TooltipProvider>
 
-      <nav className="mobile-bottom-nav" aria-label={pickLocaleText(locale, { en: 'Mobile navigation', fr: 'Navigation mobile', 'ar-DZ': 'التنقل عبر الهاتف', tr: 'Mobil menü' })}>
+      <nav className="mobile-bottom-nav" aria-label={chromeLabels.mobileNavigation}>
         <button
           type="button"
           className={cn(isHomeActive && 'is-active')}
@@ -1451,10 +1846,10 @@ export default function AssistantDock() {
       </nav>
 
       <Dialog open={panelMode === 'assistant'} onOpenChange={(open) => setPanelMode(open ? 'assistant' : null)}>
-        <DialogContent tone="dock" className="assistant-panel" aria-label="Igloo assistant">
+        <DialogContent tone="dock" className="assistant-panel" aria-label={labels.title}>
           <div className="assistant-panel__top">
             <div className="assistant-panel__avatar" aria-hidden="true">
-              <img src={assistantProfile.image} alt="" />
+              <img src={assistantProfile.image} alt="" width={72} height={72} loading="lazy" decoding="async" />
             </div>
             <div className="assistant-panel__identity">
               <p>{labels.title}</p>
@@ -1463,7 +1858,7 @@ export default function AssistantDock() {
             <button
               type="button"
               className="assistant-panel__reset"
-              aria-label={locale === 'fr' ? 'Recommencer la conversation' : 'Restart conversation'}
+              aria-label={chromeLabels.resetConversation}
               onClick={restartChat}
             >
               <RotateCcw className="h-4 w-4" strokeWidth={2.1} />
@@ -1503,11 +1898,11 @@ export default function AssistantDock() {
           <div className="assistant-panel__actions">
             <a href={emailHref}>
               <Mail className="h-4 w-4" strokeWidth={2} />
-              <span>Email</span>
+              <span>{chromeLabels.email}</span>
             </a>
             <a href={phoneHref}>
               <Phone className="h-4 w-4" strokeWidth={2} />
-              <span>{locale === 'fr' ? 'Appeler' : 'Call'}</span>
+              <span>{chromeLabels.call}</span>
             </a>
             <button type="button" onClick={() => navigateAndClose('/#contact')}>
               <Send className="h-4 w-4" strokeWidth={2} />
@@ -1518,12 +1913,13 @@ export default function AssistantDock() {
           <form className="assistant-panel__input" onSubmit={handleSendMessage}>
             <Input
               type="text"
+              aria-label={chromeLabels.inputLabel}
               placeholder={labels.placeholder}
               value={draft}
               onChange={(event) => setDraft(event.target.value)}
               className="h-auto border-0 bg-transparent px-0 py-0 text-[13px] shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
             />
-            <button type="submit" aria-label="Send message">
+            <button type="submit" aria-label={chromeLabels.sendMessage}>
               <Send className="h-4 w-4" strokeWidth={2.2} />
             </button>
           </form>

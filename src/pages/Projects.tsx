@@ -22,7 +22,7 @@ import {
   type ProjectRecord,
 } from '../data/projects';
 import { useLenis } from '../components/SmoothScrollProvider';
-import { pickLocaleText, useLocale, type Locale } from '../i18n';
+import { localizedPath, pickLocaleText, useLocale, type Locale } from '../i18n';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -491,7 +491,7 @@ export default function Projects() {
                 <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
               </a>
               <a
-                href="/contact"
+                href={localizedPath(locale, '/contact')}
                 className="inline-flex items-center gap-2 border border-black/15 px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
               >
                 {pickLocaleText(locale, { en: 'Contact', fr: 'Contact', dz: 'اتصال', tr: 'İletişim' })}
@@ -616,7 +616,7 @@ export default function Projects() {
         <div className="pointer-events-auto mx-auto flex max-w-6xl flex-col gap-4 border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_45px_rgba(0,0,0,0.08)] backdrop-blur-xl md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
             <Link
-              to="/"
+              to={localizedPath(locale, '/')}
               className="inline-flex h-11 w-11 items-center justify-center border border-black/10 text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"
             >
               <Home className="h-4 w-4" strokeWidth={2} />
@@ -636,7 +636,7 @@ export default function Projects() {
           </div>
 
           <a
-            href="/contact"
+            href={localizedPath(locale, '/contact')}
             data-cursor-card
             data-cursor-label={pickLocaleText(locale, { en: 'CONTACT', fr: 'CONTACT', dz: 'اتصال', tr: 'İLETİŞİM' })}
             className="inline-flex items-center justify-center gap-2 border border-black/10 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.24em] text-[#111] transition-colors hover:border-[#c22026] hover:text-[#c22026]"

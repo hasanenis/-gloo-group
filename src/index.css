@@ -138,7 +138,7 @@ body {
   max-width: calc(100vw - 36px);
   border: 0;
   border-radius: 999px;
-  background: #e82a2e;
+  background: #b91c1c;
   color: #fff;
   padding: 5px 9px 5px 5px;
   box-shadow: 0 16px 42px rgba(194, 32, 38, 0.34);
@@ -149,7 +149,7 @@ body {
 
 .assistant-floating:hover {
   transform: translateY(-2px);
-  background: #c22026;
+  background: #991b1b;
   box-shadow: 0 20px 52px rgba(194, 32, 38, 0.42);
 }
 
@@ -176,6 +176,7 @@ body {
   font-size: 13px;
   font-weight: 900;
   line-height: 1;
+  color: #fff;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

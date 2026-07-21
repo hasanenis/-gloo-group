@@ -13,6 +13,17 @@ server {
     access_log /var/log/nginx/{{SITE_SLUG}}.access.log;
     error_log /var/log/nginx/{{SITE_SLUG}}.error.log;
 
+    # Baseline browser hardening. The policy deliberately allows HTTPS media,
+    # fonts and map resources used by the marketing site while blocking plugin
+    # content and cross-origin framing.
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
+    add_header Cross-Origin-Opener-Policy "same-origin-allow-popups" always;
+    add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; object-src 'none'; img-src 'self' https: data: blob:; media-src 'self' https: blob:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; connect-src 'self' https: wss:; worker-src 'self' blob:;" always;
+
     # Locale-prefixed prerendered pages are served directly. Unknown paths
     # retain an SPA fallback for client-side navigation.
     location = / { return 308 /en/; }
@@ -27,16 +38,45 @@ server {
         try_files $uri $uri/index.html /index.html;
     }
 
+    location = /robots.txt {
+        default_type text/plain;
+        expires 1h;
+    }
+
+    location = /sitemap.xml {
+        default_type application/xml;
+        expires 1h;
+    }
+
+    location = /llms.txt {
+        default_type text/markdown;
+        expires 1h;
+    }
+
     # Static assets - long-lived immutable cache.
     location ~* \.(js|css|woff2?|ttf|otf|svg|ico)$ {
         expires 1y;
         add_header Cache-Control "public, immutable";
+        add_header Strict-Transport-Security "max-age=31536000" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-Frame-Options "SAMEORIGIN" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
+        add_header Cross-Origin-Opener-Policy "same-origin-allow-popups" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; object-src 'none'; img-src 'self' https: data: blob:; media-src 'self' https: blob:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; connect-src 'self' https: wss:; worker-src 'self' blob:;" always;
     }
 
     # Images and video - long-lived cache without immutable semantics.
     location ~* \.(png|jpe?g|webp|gif|avif|mp4|webm)$ {
         expires 1y;
         add_header Cache-Control "public, max-age=31536000";
+        add_header Strict-Transport-Security "max-age=31536000" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-Frame-Options "SAMEORIGIN" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
+        add_header Cross-Origin-Opener-Policy "same-origin-allow-popups" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; object-src 'none'; img-src 'self' https: data: blob:; media-src 'self' https: blob:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; connect-src 'self' https: wss:; worker-src 'self' blob:;" always;
     }
 
     error_page 404 /index.html;

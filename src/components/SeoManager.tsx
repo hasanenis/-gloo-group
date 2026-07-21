@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { getPageContent, getProjectPage, type ContentLocale, type PageDocument } from '../content';
 import { localeFromPathname, localizedPath, LOCALE_CODES, useLocale, type Locale } from '../i18n';
 import { brandEntity, DEFAULT_SOCIAL_IMAGE, isServiceSlug, localeHreflang, SERVICE_SLUGS, SITE_URL } from '../data/siteSeo';
-import { projects } from '../data/projects';
+import { localizedProjectTitle, projects } from '../data/projects';
 
 type SeoContent = {
   heading?: string;
@@ -97,7 +97,7 @@ function breadcrumbItems(route: string, locale: Locale, pageName: string) {
   }
   if (segments.length > 1) {
     items.push({ '@type': 'ListItem', position: items.length + 1, name: pageName });
-  } else if (segments.length === 1) {
+  } else if (segments.length === 1 && segments[0] !== 'projects' && segments[0] !== 'services') {
     items.push({ '@type': 'ListItem', position: 2, name: pageName });
   }
   return items;
@@ -129,7 +129,7 @@ export function buildSeoGraph({
     alternateName: [brandEntity.brandName, ...brandEntity.alternateNames],
     url: brandEntity.url,
     logo: { '@type': 'ImageObject', url: brandEntity.logo },
-    sameAs: brandEntity.sameAs,
+    ...(brandEntity.sameAs.length > 0 ? { sameAs: brandEntity.sameAs } : {}),
     email: brandEntity.email,
     telephone: brandEntity.telephone,
     foundingDate: '2018',
@@ -139,7 +139,7 @@ export function buildSeoGraph({
       '@type': 'ContactPoint',
       telephone,
       contactType: 'customer service',
-      areaServed: 'DZ',
+      areaServed: telephone.startsWith('+213') ? 'DZ' : 'International',
     })),
   };
   const website = {
@@ -160,7 +160,7 @@ export function buildSeoGraph({
     inLanguage: locale,
     isPartOf: { '@id': `${SITE_URL}/#website` },
     about: { '@id': `${SITE_URL}/#organization` },
-    breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` },
+    ...(route !== '/' ? { breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` } } : {}),
   };
 
   if (route === '/contact') page.mainEntity = { '@id': `${SITE_URL}/#organization` };
@@ -168,18 +168,43 @@ export function buildSeoGraph({
     page.mainEntity = {
       '@type': 'CreativeWork',
       '@id': `${canonicalUrl}#project`,
-      name: project.title,
+      name: pageName,
       description: project.summary,
+      url: canonicalUrl,
+      creator: { '@id': `${SITE_URL}/#organization` },
+      inLanguage: locale,
       locationCreated: { '@type': 'Place', name: project.location },
       image: project.images,
     };
   }
 
-  const graph: Array<Record<string, unknown>> = [organization, website, page, {
-    '@type': 'BreadcrumbList',
-    '@id': `${canonicalUrl}#breadcrumb`,
-    itemListElement: breadcrumbItems(route, locale, pageName),
-  }];
+  const graph: Array<Record<string, unknown>> = [organization, website, page];
+
+  if (route !== '/') {
+    graph.push({
+      '@type': 'BreadcrumbList',
+      '@id': `${canonicalUrl}#breadcrumb`,
+      itemListElement: breadcrumbItems(route, locale, pageName),
+    });
+  }
+
+  if (route === '/projects') {
+    const itemListId = `${canonicalUrl}#itemlist`;
+    page.mainEntity = { '@id': itemListId };
+    graph.push({
+      '@type': 'ItemList',
+      '@id': itemListId,
+      name: pageName,
+      numberOfItems: projects.length,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      itemListElement: projects.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: localizedProjectTitle(item, locale),
+        url: `${SITE_URL}${localizedSeoPath(locale, `/projects/${item.slug}`)}`,
+      })),
+    });
+  }
 
   if (serviceSlug && SERVICE_SLUGS.includes(serviceSlug as (typeof SERVICE_SLUGS)[number])) {
     graph.push({

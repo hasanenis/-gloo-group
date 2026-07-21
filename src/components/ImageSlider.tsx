@@ -99,6 +99,10 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
             src={image}
             alt=""
             aria-hidden="true"
+            width={1600}
+            height={1000}
+            loading="lazy"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
             style={{ opacity: index === 0 ? 1 : 0, objectPosition: getObjectPosition(image) }}
           />

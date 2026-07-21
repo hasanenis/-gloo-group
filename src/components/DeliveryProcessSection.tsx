@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { CalendarCheck, ClipboardCheck, DraftingCompass, HardHat, KeyRound } from 'lucide-react';
 import { homepageContent, localize, type HomepageProcessStep } from '../data/homepageContent';
 import { useLocale } from '../i18n';
-import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
+import { useEditorialReveal } from '../hooks/useEditorialReveal';
 
 const DRAW_IMAGE = '/projects/rouiba-4-promotional-villas/01-draw.webp';
 
@@ -19,7 +19,7 @@ export default function DeliveryProcessSection() {
   const { locale } = useLocale();
   const content = homepageContent.process;
 
-  useHomeTextReveal(sectionRef, [locale]);
+  useEditorialReveal(sectionRef, [locale]);
 
   return (
     <section
@@ -33,8 +33,7 @@ export default function DeliveryProcessSection() {
           <div className="process-header relative z-10 max-w-[42rem] pt-2">
             <span
               className="inline-flex text-[11px] font-semibold uppercase tracking-[0.34em] text-[#c22026]"
-              data-home-text-reveal
-              data-home-text-reveal-mode="block"
+              data-editorial-reveal="label"
             >
               {localize(content.eyebrow, locale)}
             </span>
@@ -43,16 +42,14 @@ export default function DeliveryProcessSection() {
             <h2
               id="delivery-process-title"
               className="mt-8 max-w-[14ch] font-serif text-[clamp(2.2rem,4.8vw,5.9rem)] font-normal leading-[0.92] tracking-[-0.035em] text-balance text-black md:max-w-[10.5ch] md:text-[clamp(3rem,4.8vw,5.9rem)] md:leading-[0.96]"
-              data-home-text-reveal
-              data-home-text-reveal-start="top 84%"
+              data-editorial-reveal="display"
             >
               {localize(content.title, locale)}
             </h2>
 
             <p
               className="mt-7 max-w-[34rem] text-pretty text-[15px] leading-[1.72] text-black/58 md:text-[16px]"
-              data-home-text-reveal
-              data-home-text-reveal-start="top 88%"
+              data-editorial-reveal="copy"
             >
               {localize(content.lead, locale)}
             </p>
@@ -67,15 +64,20 @@ export default function DeliveryProcessSection() {
               src={DRAW_IMAGE}
               alt=""
               aria-hidden="true"
+              width={1600}
+              height={1200}
               className="relative z-10 w-full select-none object-contain drop-shadow-[0_30px_42px_rgba(0,0,0,0.045)]"
-              loading="eager"
+              loading="lazy"
               decoding="async"
             />
           </figure>
         </div>
 
         <div className="process-rail relative mt-0 md:mt-16 xl:mt-20">
-          <div className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-5 xl:gap-0">
+          <div
+            className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-5 xl:gap-0"
+            data-editorial-reveal-group="steps"
+          >
             {content.steps.map((step, index) => {
               const Icon = STEP_ICONS[step.id];
               const stepNumber = String(index + 1).padStart(2, '0');
@@ -84,11 +86,10 @@ export default function DeliveryProcessSection() {
                 <article
                   key={step.id}
                   className="process-step relative min-h-[156px] overflow-hidden border border-black/[0.06] bg-white px-4 py-5 md:min-h-[214px] md:px-6 md:py-6 xl:min-h-[390px] xl:px-6 xl:py-16"
+                  data-editorial-reveal-item
                 >
                   <span className="absolute left-4 top-4 text-[20px] font-light leading-none tracking-[-0.04em] text-black/26 md:left-5 md:top-5 md:text-[22px] xl:left-6 xl:top-8 xl:text-[26px]">
-                    <span data-home-text-reveal data-home-text-reveal-mode="block">
-                      {stepNumber}
-                    </span>
+                    <span>{stepNumber}</span>
                   </span>
 
                   <div className="mt-6 flex justify-center md:mt-8 xl:mt-0">
@@ -99,8 +100,6 @@ export default function DeliveryProcessSection() {
 
                   <h3
                     className="mx-auto mt-4 max-w-[13ch] text-center font-serif text-[clamp(1.05rem,1.8vw,1.95rem)] font-normal leading-[1.04] tracking-[-0.02em] text-balance text-black md:mt-6 md:text-[clamp(1.2rem,1.8vw,1.95rem)]"
-                    data-home-text-reveal
-                    data-home-text-reveal-start="top 88%"
                   >
                     {localize(step.title, locale)}
                   </h3>
@@ -109,8 +108,6 @@ export default function DeliveryProcessSection() {
 
                   <p
                     className="mx-auto mt-2.5 max-w-[18rem] text-center text-pretty text-[12px] leading-[1.5] text-black/62 md:max-w-[17rem] md:text-[14px] md:leading-[1.65] xl:text-[15px] xl:leading-[1.72]"
-                    data-home-text-reveal
-                    data-home-text-reveal-start="top 88%"
                   >
                     {localize(step.body, locale)}
                   </p>

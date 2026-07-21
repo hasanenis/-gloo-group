@@ -40,7 +40,7 @@ import {
   type ResolvedManualImageSettings,
 } from '../data/manualProjectImages';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
+import { localizedPath, pickLocaleText, useLocale, type LocalizedString } from '../i18n';
 import { usePrefersReducedMotion } from '../lib/motion';
 import RahmaniaComparisonSection from '../components/RahmaniaComparisonSection';
 import Footer from '../components/Footer';
@@ -177,6 +177,15 @@ function buildProjectFacts(project: ProjectRecord, contentFacts: ProjectFact[]) 
   return uniqueFacts([...selected, ...remainder]).slice(0, 6);
 }
 
+function getIntrinsicImageSize(aspectRatio: string) {
+  const [widthPart, heightPart] = aspectRatio.split('/').map((part) => Number(part.trim()));
+  const width = 1600;
+  const height = Number.isFinite(widthPart) && Number.isFinite(heightPart) && widthPart > 0 && heightPart > 0
+    ? Math.round(width * (heightPart / widthPart))
+    : 1200;
+  return { width, height };
+}
+
 function ParallaxImage({
   image,
   className = '',
@@ -198,6 +207,7 @@ function ParallaxImage({
 }) {
   const { locale } = useLocale();
   const resolvedFit = settings?.fit ?? fit;
+  const { width, height } = getIntrinsicImageSize(aspectRatio);
 
   return (
     <figure
@@ -210,6 +220,8 @@ function ParallaxImage({
       <img
         src={image.src}
         alt={localized(image.alt, locale)}
+        width={width}
+        height={height}
         loading={loading}
         decoding="async"
         style={settings ? {
@@ -549,7 +561,7 @@ export default function ProjectDetail() {
     return (
       <main className="igloo-editorial-missing">
         <p>{copyFor(locale, { en: 'Project not found', fr: 'Projet introuvable', dz: 'المشروع ما تلقاش', tr: 'Proje bulunamadı' })}</p>
-        <Link to="/projects">{t('allProjects')}</Link>
+        <Link to={localizedPath(locale, '/projects')}>{t('allProjects')}</Link>
       </main>
     );
   }
@@ -573,6 +585,8 @@ export default function ProjectDetail() {
             <img
               src={heroImage.src}
               alt={localized(heroImage.alt, locale)}
+              width={1920}
+              height={1200}
               className="bat-demo-hero__image"
               style={heroImageStyle}
               data-manual-scale={heroImageSettings?.scale ?? 1}
@@ -683,10 +697,12 @@ export default function ProjectDetail() {
                 data-editorial-parallax-to={8}
                 aria-hidden="true"
               >
-                <img
-                  src={infoGraphicSrc}
-                  alt=""
-                  style={infoImageSettings ? {
+                  <img
+                    src={infoGraphicSrc}
+                    alt=""
+                    width={1200}
+                    height={900}
+                    style={infoImageSettings ? {
                     objectFit: infoImageSettings.fit,
                     objectPosition: `${infoImageSettings.positionX}% ${infoImageSettings.positionY}%`,
                   } : undefined}
@@ -736,7 +752,7 @@ export default function ProjectDetail() {
       </section>
 
       <section className="igloo-simple-panorama" data-reveal>
-        <ParallaxImage image={panoramaImage} aspectRatio="3 / 1" loading="eager" from={-10} to={10} settings={panoramaImageSettings} />
+        <ParallaxImage image={panoramaImage} aspectRatio="3 / 1" loading="lazy" from={-10} to={10} settings={panoramaImageSettings} />
       </section>
 
       {relatedProjects.length > 0 && (
@@ -756,7 +772,7 @@ export default function ProjectDetail() {
               const relatedPath = `/projects/${related.slug}`;
               return (
                 <Link
-                  to={relatedPath}
+                  to={localizedPath(locale, relatedPath)}
                   className="igloo-simple-related__card"
                   onClick={(event) => {
                     event.preventDefault();
@@ -772,6 +788,8 @@ export default function ProjectDetail() {
                     <img
                       src={relatedHeroImage.src}
                       alt={related.title}
+                      width={1200}
+                      height={900}
                       loading="lazy"
                       decoding="async"
                       data-editorial-parallax-image

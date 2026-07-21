@@ -241,6 +241,8 @@ export default function Header() {
           <img
             src={logoSrc}
             alt="Igloo Construction"
+            width={420}
+            height={110}
             className="origin-left h-[54px] w-auto object-contain transition-[height,filter] duration-300 drop-shadow-sm md:h-[62px] lg:h-[74px] xl:h-[82px]"
           />
         </Link>

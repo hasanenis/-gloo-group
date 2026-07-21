@@ -9,6 +9,15 @@ const siteUrl = (process.env.VITE_SITE_URL || 'https://igloogroupe.com').replace
 const locales = ['en', 'fr', 'tr', 'ar'];
 const contentLocales = { en: 'en', fr: 'fr', tr: 'tr', ar: 'ar-DZ' };
 
+async function pruneBuildOnlyAssets() {
+  // These are source/editor exports kept under public/ for local curation.
+  // They are not referenced by the application and should never inflate the
+  // production artifact or deployment by gigabytes.
+  for (const relativePath of ['Upscaled', 'projects/_selected-by-project', 'projects/_unused-by-project']) {
+    await fs.rm(path.join(dist, relativePath), { recursive: true, force: true });
+  }
+}
+
 async function pageRoutes() {
   const result = ['', 'about', 'contact', 'projects', 'services', '404'];
   const projectRoot = path.join(root, 'content', 'pages', 'projects');
@@ -64,9 +73,10 @@ async function writeSitemap(routes) {
     });
   }
   await fs.writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`, 'utf8');
-  await fs.writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`, 'utf8');
+  await fs.writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${siteUrl}/sitemap.xml\n`, 'utf8');
 }
 
+await pruneBuildOnlyAssets();
 const routes = await pageRoutes();
 const { url, child } = await startPreview();
 const browser = await chromium.launch({ headless: true });

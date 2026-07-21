@@ -1,0 +1,115 @@
+html.site-route-transitioning,
+html.site-route-transitioning body {
+  overflow: hidden;
+}
+
+.site-page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 999990;
+  overflow: hidden;
+  pointer-events: auto;
+  color: #111;
+  visibility: hidden;
+}
+
+.site-page-transition__grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.site-page-transition__panel {
+  position: relative;
+  min-width: 0;
+  background:
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.035) 1px, transparent 1px) 0 0 / 100% 12.5vh,
+    #f6f5f0;
+  border-inline-start: 1px solid rgba(17, 17, 17, 0.18);
+  will-change: transform;
+}
+
+.site-page-transition__panel:last-child {
+  border-inline-end: 1px solid rgba(17, 17, 17, 0.18);
+}
+
+.site-page-transition__panel::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 14px;
+  top: 14px;
+  width: 5px;
+  height: 5px;
+  background: #c22026;
+}
+
+.site-page-transition__panel:nth-child(even)::before {
+  top: auto;
+  bottom: 14px;
+}
+
+.site-page-transition__signal {
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  height: 1px;
+  background: #c22026;
+  box-shadow: 0 0 18px rgba(194, 32, 38, 0.38);
+  will-change: transform;
+}
+
+.site-page-transition__meta,
+.site-page-transition__brand {
+  position: absolute;
+  z-index: 2;
+  font-family: var(--font-nav);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+}
+
+.site-page-transition__meta {
+  inset-inline-start: clamp(20px, 3.4vw, 54px);
+  top: calc(50% + 24px);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.site-page-transition__index {
+  color: #c22026;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-page-transition__label {
+  max-width: min(64vw, 48rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-page-transition__brand {
+  inset-inline-end: clamp(20px, 3.4vw, 54px);
+  bottom: 24px;
+  color: rgba(17, 17, 17, 0.48);
+}
+
+@media (max-width: 720px) {
+  .site-page-transition__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-page-transition__panel:nth-child(n + 3) {
+    display: none;
+  }
+
+  .site-page-transition__meta,
+  .site-page-transition__brand {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+  }
+}

@@ -150,6 +150,8 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
           <img
             src={iglooIntroLogo}
             alt="igloo Construction"
+            width={860}
+            height={220}
             className="intro-logo-image mb-4 w-[min(48vw,430px)] min-w-[210px] max-w-[430px] object-contain"
           />
           <div className="intro-igloo-line h-px w-28 bg-white/22 md:w-40" />

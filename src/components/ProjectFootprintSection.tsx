@@ -1,5 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowRight, Map as MapIcon, MapPin, Route } from 'lucide-react';
 import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
 import { usePrefersReducedMotion } from '../lib/motion';
@@ -8,8 +7,9 @@ import { projectMapPoints, type ProjectMapPoint } from '../data/projectMap';
 import { projects } from '../data/projects';
 import { getProjectHeroImage } from '../data/projectHeroImage';
 import { cn } from '../lib/utils';
-import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
-import ProjectFootprintMap from './ProjectFootprintMap';
+import { useEditorialReveal } from '../hooks/useEditorialReveal';
+import SiteLink from './SiteLink';
+const ProjectFootprintMap = lazy(() => import('./ProjectFootprintMap'));
 
 type ClusterId = ProjectMapPoint['cluster'];
 
@@ -40,8 +40,27 @@ export default function ProjectFootprintSection() {
 
   const [clusterFilter, setClusterFilter] = useState<ClusterId | 'all'>('all');
   const [activeSlug, setActiveSlug] = useState(projectMapPoints[0]?.slug ?? '');
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const [mapVisible, setMapVisible] = useState(false);
 
-  useHomeTextReveal(sectionRef, [locale]);
+  useEditorialReveal(sectionRef, [locale]);
+
+  useEffect(() => {
+    const node = mapContainerRef.current;
+    if (!node || typeof IntersectionObserver === 'undefined') {
+      setMapVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry?.isIntersecting) return;
+      setMapVisible(true);
+      observer.disconnect();
+    }, { rootMargin: '600px 0px' });
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const visiblePoints = clusterFilter === 'all'
@@ -72,23 +91,20 @@ export default function ProjectFootprintSection() {
           <div>
             <p
               className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#c22026]"
-              data-home-text-reveal
-              data-home-text-reveal-mode="block"
+              data-editorial-reveal="label"
             >
               {localize(copy.eyebrow, locale)}
             </p>
             <h2
               className="text-[2.35rem] font-semibold leading-none tracking-normal text-black md:text-[4rem]"
-              data-home-text-reveal
-              data-home-text-reveal-start="top 84%"
+              data-editorial-reveal="display"
             >
               {localize(copy.title, locale)}
             </h2>
           </div>
           <p
             className="max-w-[42rem] text-[15px] leading-[1.75] text-black/58 md:text-[16px]"
-            data-home-text-reveal
-            data-home-text-reveal-start="top 88%"
+            data-editorial-reveal="copy"
           >
             {localize(copy.lead, locale)}
           </p>
@@ -117,35 +133,42 @@ export default function ProjectFootprintSection() {
 
         <div className="mt-10 grid gap-9 xl:grid-cols-[minmax(0,1fr)_380px] xl:items-start">
           <div className="min-w-0">
-            <div className="igloo-footprint-map relative h-[420px] overflow-hidden bg-white md:h-[560px]">
-              <ProjectFootprintMap
-                activeSlug={activeSlug}
-                clusterFilter={clusterFilter}
-                onSelect={setActiveSlug}
-                prefersReducedMotion={prefersReducedMotion}
-                ariaLabel="Interactive map of Igloo Construction project locations across Algeria"
-              />
+            <div ref={mapContainerRef} className="igloo-footprint-map relative h-[420px] overflow-hidden bg-white md:h-[560px]">
+              {mapVisible && (
+                <Suspense fallback={<div className="h-full w-full bg-[#fafaf8]" aria-hidden="true" />}>
+                  <ProjectFootprintMap
+                    activeSlug={activeSlug}
+                    clusterFilter={clusterFilter}
+                    onSelect={setActiveSlug}
+                    prefersReducedMotion={prefersReducedMotion}
+                    ariaLabel="Interactive map of Igloo Construction project locations across Algeria"
+                  />
+                </Suspense>
+              )}
             </div>
 
-            <div className="mt-5 grid gap-3 md:grid-cols-3">
+            <div
+              className="mt-5 grid gap-3 md:grid-cols-3"
+              data-editorial-reveal-group="stats"
+            >
               {copy.stats.map((stat, index) => {
                 const Icon = STAT_ICONS[index] ?? MapPin;
 
                 return (
-                  <div key={stat.label.en} className="flex items-center gap-3 border border-black/10 bg-white px-4 py-3">
+                  <div
+                    key={stat.label.en}
+                    className="flex items-center gap-3 border border-black/10 bg-white px-4 py-3"
+                    data-editorial-reveal-item
+                  >
                     <Icon className="h-4 w-4 text-[#c22026]" strokeWidth={1.9} />
                     <div className="min-w-0">
                       <div
                         className="text-[20px] font-semibold leading-none text-black"
-                        data-home-text-reveal
-                        data-home-text-reveal-mode="block"
                       >
                         {stat.value}
                       </div>
                       <div
                         className="text-[13px] leading-snug text-black/56"
-                        data-home-text-reveal
-                        data-home-text-reveal-mode="line"
                       >
                         {localize(stat.label, locale)}
                       </div>
@@ -157,32 +180,27 @@ export default function ProjectFootprintSection() {
           </div>
 
           {activePoint && (
-            <aside className="border border-black/10 bg-white p-6 shadow-sm">
+            <aside
+              className="border border-black/10 bg-white p-6 shadow-sm"
+              data-editorial-reveal="panel"
+            >
               <p
                 className="mb-4 text-[11px] font-bold uppercase tracking-[0.20em] text-[#c22026]"
-                data-home-text-reveal
-                data-home-text-reveal-mode="block"
               >
                 {localize(copy.selectedLabel, locale)}
               </p>
               <h3
                 className="mb-1.5 text-[24px] font-semibold leading-tight tracking-normal text-black"
-                data-home-text-reveal
-                data-home-text-reveal-start="top 88%"
               >
                 {activePoint.menuTitle}
               </h3>
               <p
                 className="mb-4 text-[14px] text-black/45"
-                data-home-text-reveal
-                data-home-text-reveal-mode="block"
               >
                 {activePoint.locality} · {activePoint.wilaya}
               </p>
               <p
                 className="mb-5 text-[14px] leading-relaxed text-black/68"
-                data-home-text-reveal
-                data-home-text-reveal-start="top 88%"
               >
                 {activeProof ? localize(activeProof, locale) : activePoint.scope}
               </p>
@@ -190,8 +208,6 @@ export default function ProjectFootprintSection() {
                 <MapPin size={14} strokeWidth={2} className="text-black/45" />
                 <span
                   className="text-black/60"
-                  data-home-text-reveal
-                  data-home-text-reveal-mode="block"
                 >
                   {pickLocaleText(locale, CLUSTER_LABELS[activePoint.cluster])}
                 </span>
@@ -201,8 +217,6 @@ export default function ProjectFootprintSection() {
                     'font-medium',
                     activePoint.status === 'completed' ? 'text-emerald-600' : 'text-amber-600',
                   )}
-                  data-home-text-reveal
-                  data-home-text-reveal-mode="block"
                 >
                   {activePoint.status === 'completed' ? localize(copy.statusCompleted, locale) : localize(copy.statusInProgress, locale)}
                 </span>
@@ -213,24 +227,24 @@ export default function ProjectFootprintSection() {
                   <img
                     src={activeImage.src}
                     alt={pickLocaleText(locale, activeImage.alt)}
+                    width={1200}
+                    height={900}
                     className="aspect-[4/3] w-full object-cover"
                     loading="lazy"
                   />
                 </div>
               )}
 
-              <Link
+              <SiteLink
                 to={`/projects/${activePoint.slug}`}
+                transitionImage={activeImage?.src}
                 className="mt-auto flex items-center justify-center gap-2 rounded-md bg-[#c22026] px-5 py-3 text-[14px] font-semibold text-white transition-colors hover:bg-[#a81b21]"
               >
-                <span
-                  data-home-text-reveal
-                  data-home-text-reveal-mode="block"
-                >
+                <span>
                   {localize(copy.openProject, locale)}
                 </span>
                 <ArrowRight size={16} strokeWidth={2.2} />
-              </Link>
+              </SiteLink>
             </aside>
           )}
         </div>

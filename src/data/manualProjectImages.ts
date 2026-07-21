@@ -96,7 +96,7 @@ export const manualProjectImages: Record<string, ManualProjectImageConfig> = {
     altFr: "Centre commercial Rahmania",
     images: {
       hero: {
-      src: "/projects/rahmania/ChatGPT Image Jul 3, 2026, 09_46_20 PM_upscayl_4x_ultramix-balanced-4x.webp",
+      src: "/projects/rahmania/hero.webp",
       fit: "cover",
       positionX: 50,
       positionY: 50,
@@ -131,7 +131,7 @@ export const manualProjectImages: Record<string, ManualProjectImageConfig> = {
       scale: 0.96,
     },
       panorama: {
-      src: "/projects/rahmania/ChatGPT Image Jul 3, 2026, 09_46_20 PM_upscayl_4x_ultramix-balanced-4x.webp",
+      src: "/projects/rahmania/hero.webp",
       fit: "cover",
       positionX: 50,
       positionY: 50,

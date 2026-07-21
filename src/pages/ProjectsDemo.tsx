@@ -144,6 +144,8 @@ export default function ProjectsDemo() {
                     <img
                       src={heroImage.src}
                       alt={localized(heroImage.alt, locale)}
+                      width={1600}
+                      height={1000}
                       loading={index < 3 ? 'eager' : 'lazy'}
                       decoding="async"
                     />

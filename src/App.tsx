@@ -5,16 +5,14 @@
 
 import { Fragment, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from 'react-router-dom';
-import SiteIntro from './components/SiteIntro';
-import GlobalCursor from './components/GlobalCursor';
 import Header from './components/Header';
-import AssistantDock from './components/AssistantDock';
 import SeoManager from './components/SeoManager';
 import SmoothScrollProvider, { useLenis } from './components/SmoothScrollProvider';
 import { heroSlides } from './data/projects';
 import { LocaleProvider, localizedPath, useLocale } from './i18n';
 import { getPageContent } from './content';
 import { initAutoFitText } from './lib/autoFitText';
+import './styles/site-page-transition.css';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
@@ -23,10 +21,17 @@ const ProjectsDemo = lazy(() => import('./pages/ProjectsDemo'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const Services = lazy(() => import('./pages/Services'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const SiteIntro = lazy(() => import('./components/SiteIntro'));
+const GlobalCursor = lazy(() => import('./components/GlobalCursor'));
+const AssistantDock = lazy(() => import('./components/AssistantDock'));
 
 const INTRO_VEIL_HOLD_MS = 250;
 const INTRO_VEIL_SLIDE_MS = 1150;
 const INTRO_SEEN_KEY = 'igloo:intro-seen';
+
+function isHomeRoute(pathname: string) {
+  return pathname === '/' || /^\/(?:en|fr|tr|ar)\/?$/u.test(pathname);
+}
 
 function ScrollManager() {
   const location = useLocation();
@@ -56,31 +61,23 @@ function AppShellContent() {
   const { locale } = useLocale();
   const [showIntro, setShowIntro] = useState(
     () =>
-      location.pathname === '/' &&
+      isHomeRoute(location.pathname) &&
       sessionStorage.getItem(INTRO_SEEN_KEY) !== 'true',
   );
   const [showIntroVeil, setShowIntroVeil] = useState(false);
   const [introVeilVisible, setIntroVeilVisible] = useState(true);
   const [introVeilTone, setIntroVeilTone] = useState<'black' | 'page'>('black');
+  const [assistantReady, setAssistantReady] = useState(false);
   const previousPathnameRef = useRef(location.pathname);
 
   useEffect(() => {
-    if (location.pathname !== '/' && showIntro) {
+    if (!isHomeRoute(location.pathname) && showIntro) {
       setShowIntro(false);
     }
   }, [location.pathname, showIntro, showIntroVeil]);
 
   // Warm the core route chunks up front so a same-session "→ Home" navigation
   // never has to wait on a fresh dynamic import() before it can reveal.
-  useEffect(() => {
-    void import('./pages/Home');
-    void import('./pages/ProjectsDemo');
-    void import('./pages/ProjectDetail');
-    void import('./pages/Contact');
-    void import('./pages/Services');
-    void import('./pages/ServiceDetail');
-  }, []);
-
   // Translated copy (FR/TR/AR) runs longer than the English the layout was
   // designed for — shrink any text element that overflows its box instead of
   // letting it clip or break the layout. Reacts to locale switches, route
@@ -91,7 +88,11 @@ function AppShellContent() {
     const previousPathname = previousPathnameRef.current;
     previousPathnameRef.current = location.pathname;
 
-    if (location.pathname === '/' && previousPathname !== '/') {
+    if (
+      isHomeRoute(location.pathname)
+      && !isHomeRoute(previousPathname)
+      && !document.documentElement.classList.contains('site-route-transitioning')
+    ) {
       setIntroVeilTone('page');
       setIntroVeilVisible(true);
       setShowIntroVeil(true);
@@ -193,6 +194,19 @@ function AppShellContent() {
   const showGlobalCursor = !isBatDemoRoute && location.pathname !== '/';
 
   useEffect(() => {
+    if (showIntro || isBatDemoRoute) {
+      setAssistantReady(false);
+      return;
+    }
+
+    // The assistant is useful after the page is usable, but it is not part of
+    // the first viewport. Delay its chunk and initialization until the main
+    // content has had a chance to paint.
+    const timer = window.setTimeout(() => setAssistantReady(true), 1200);
+    return () => window.clearTimeout(timer);
+  }, [isBatDemoRoute, showIntro]);
+
+  useEffect(() => {
     if (!isBatDemoRoute) {
       document.documentElement.classList.remove(
         'bat-demo-route-transitioning',
@@ -203,12 +217,14 @@ function AppShellContent() {
   return (
     <Fragment key={locale}>
       <SeoManager />
-      {showGlobalCursor && <GlobalCursor />}
+      <Suspense fallback={null}>
+        {showGlobalCursor && <GlobalCursor />}
+        {!showIntro && !isBatDemoRoute && assistantReady && <AssistantDock />}
+        {isHomeRoute(location.pathname) && showIntro && (
+          <SiteIntro onComplete={handleIntroComplete} />
+        )}
+      </Suspense>
       {!showIntro && !isBatDemoRoute && <Header />}
-      {!showIntro && !isBatDemoRoute && <AssistantDock />}
-      {location.pathname === '/' && showIntro && (
-        <SiteIntro onComplete={handleIntroComplete} />
-      )}
       {showIntroVeil && (
         <div
           className="fixed inset-0 z-[139] pointer-events-none overflow-hidden"

@@ -7,9 +7,9 @@ import { homeProjectCards, localizedProjectCardTitle, localizedProjectScope } fr
 import { localized } from '../data/projectContent';
 import { homepageContent, homepageProjectProofs, localize as localizeHome } from '../data/homepageContent';
 import { getProjectHeroImage } from '../data/projectHeroImage';
-import { pickLocaleText, useLocale } from '../i18n';
+import { localizedPath, pickLocaleText, useLocale } from '../i18n';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
-import { useHomeTextReveal } from '../hooks/useHomeTextReveal';
+import { useEditorialReveal } from '../hooks/useEditorialReveal';
 import { Button } from './ui/button';
 import { IconButton } from './ui/icon-button';
 import { SectionHeader } from './ui/section-header';
@@ -54,7 +54,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   return (
     <Link
       ref={cardRef}
-      to={`/projects/${project.slug}`}
+      to={localizedPath(locale, `/projects/${project.slug}`)}
       className="group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black outline-none focus-visible:ring-2 focus-visible:ring-[#c22026] focus-visible:ring-offset-4"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -67,6 +67,10 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
         <img
           src={image.src}
           alt={localized(image.alt, locale)}
+          width={1600}
+          height={1000}
+          loading="lazy"
+          decoding="async"
           className="project-img absolute inset-0 h-full w-full origin-center object-cover outline outline-1 -outline-offset-1 outline-[oklch(1_0_0_/_0.1)] will-change-transform"
         />
       )}
@@ -75,10 +79,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
 
       <div className="pointer-events-none absolute bottom-0 left-0 z-10 flex h-[70%] w-full flex-col justify-end p-6 md:p-8">
         <div className="mb-3 flex flex-wrap items-center gap-3 text-[10px] font-bold uppercase tracking-[0.18em] text-white/72">
-          <span
-            data-home-text-reveal
-            data-home-text-reveal-mode="block"
-          >
+          <span>
             {project.status === 'current'
               ? pickLocaleText(locale, { en: 'Current', fr: 'En cours', dz: 'في طور الإنجاز', tr: 'Devam ediyor' })
               : pickLocaleText(locale, { en: 'Completed', fr: 'Livré', dz: 'مكمّل', tr: 'Tamamlandı' })}
@@ -86,33 +87,23 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           <span className="h-1 w-1 rotate-45 bg-[#e82a2e]" />
           <span className="inline-flex items-center gap-1.5">
             <MapPin className="h-3 w-3" />
-            <span
-              data-home-text-reveal
-              data-home-text-reveal-mode="block"
-            >
+            <span>
               {project.location}
             </span>
           </span>
         </div>
         <h3
           className="mb-3 max-w-[92%] font-sans text-[21px] font-semibold leading-[1.2] tracking-normal text-balance text-white drop-shadow-sm md:text-[24px]"
-          data-home-text-reveal
-          data-home-text-reveal-start="top 88%"
         >
           {cardTitle}
         </h3>
         <p
           className="text-pretty text-[13px] font-light leading-relaxed text-white/85 md:text-[14px]"
-          data-home-text-reveal
-          data-home-text-reveal-start="top 88%"
         >
           {proof ? localizeHome(proof, locale) : localizedProjectScope(project, locale)}
         </p>
         <span className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-white/85">
-          <span
-            data-home-text-reveal
-            data-home-text-reveal-mode="block"
-          >
+          <span>
             {t('openProject')}
           </span>
           <ArrowRight className="h-3.5 w-3.5" />
@@ -128,7 +119,7 @@ export default function FeaturedProjects() {
   const goTo = useSiteNavigate();
   const content = homepageContent.featuredProjects;
 
-  useHomeTextReveal(sectionRef, [locale]);
+  useEditorialReveal(sectionRef, [locale]);
 
   return (
     <section id="proof" ref={sectionRef} className="w-full bg-white py-20 font-sans md:py-28">
@@ -147,7 +138,7 @@ export default function FeaturedProjects() {
               className="whitespace-nowrap"
             >
               <a
-                href="/projects"
+                href={localizedPath(locale, '/projects')}
                 onClick={(event) => {
                   event.preventDefault();
                   goTo('/projects');

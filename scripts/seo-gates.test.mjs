@@ -57,7 +57,7 @@ test('localized pages expose one canonical and five alternate links', async () =
     const types = schema['@graph'].flatMap((entry) => Array.isArray(entry['@type']) ? entry['@type'] : [entry['@type']]);
     assert.ok(types.includes('Organization'));
     assert.ok(types.includes('WebSite'));
-    assert.ok(types.includes('BreadcrumbList'));
+    if (route !== '') assert.ok(types.includes('BreadcrumbList'));
     if (route.startsWith('services/')) assert.ok(types.includes('Service'));
   }
 });

@@ -60,8 +60,7 @@ function SectionHeader({
           <Badge
             variant={tone === 'inverse' ? 'outline' : 'soft'}
             className={cn('w-fit', tone === 'inverse' && 'border-white/12 bg-white/8 text-white', eyebrowClassName)}
-            data-home-text-reveal={reveal ? '' : undefined}
-            data-home-text-reveal-mode="block"
+            data-editorial-reveal={reveal ? 'label' : undefined}
           >
             {eyebrow ?? eyebrowLabel}
           </Badge>
@@ -74,7 +73,7 @@ function SectionHeader({
               'text-balance',
               titleClassName,
             )}
-            data-home-text-reveal={reveal ? '' : undefined}
+            data-editorial-reveal={reveal ? 'display' : undefined}
           >
             {title}
           </h2>
@@ -86,14 +85,21 @@ function SectionHeader({
                 'text-pretty',
                 descriptionClassName,
               )}
-              data-home-text-reveal={reveal ? '' : undefined}
+              data-editorial-reveal={reveal ? 'copy' : undefined}
             >
               {description}
             </p>
           )}
         </div>
       </div>
-      {action && <div className={cn('shrink-0', actionClassName)}>{action}</div>}
+      {action && (
+        <div
+          className={cn('shrink-0', actionClassName)}
+          data-editorial-reveal={reveal ? 'action' : undefined}
+        >
+          {action}
+        </div>
+      )}
     </header>
   );
 }

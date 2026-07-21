@@ -1,4 +1,25 @@
 {
+  "redirects": [
+    { "source": "/", "destination": "/en/", "permanent": true },
+    { "source": "/about", "destination": "/en/about", "permanent": true },
+    { "source": "/contact", "destination": "/en/contact", "permanent": true },
+    { "source": "/projects", "destination": "/en/projects", "permanent": true },
+    { "source": "/projects/:slug", "destination": "/en/projects/:slug", "permanent": true },
+    { "source": "/services", "destination": "/en/services", "permanent": true },
+    { "source": "/services/:slug", "destination": "/en/services/:slug", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
