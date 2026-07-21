@@ -26,13 +26,13 @@ server {
 
     # Locale-prefixed prerendered pages are served directly. Unknown paths
     # retain an SPA fallback for client-side navigation.
-    location = / { return 308 /en/; }
-    location = /about { return 308 /en/about; }
-    location = /contact { return 308 /en/contact; }
-    location = /projects { return 308 /en/projects; }
-    location = /services { return 308 /en/services; }
-    location ~ ^/projects/(.+)$ { return 308 /en/projects/$1; }
-    location ~ ^/services/(.+)$ { return 308 /en/services/$1; }
+    location = / { return 308 https://igloogroupe.com/en/; }
+    location = /about { return 308 https://igloogroupe.com/en/about; }
+    location = /contact { return 308 https://igloogroupe.com/en/contact; }
+    location = /projects { return 308 https://igloogroupe.com/en/projects; }
+    location = /services { return 308 https://igloogroupe.com/en/services; }
+    location ~ ^/projects/([^/]+)$ { return 308 https://igloogroupe.com/en/projects/$1; }
+    location ~ ^/services/([^/]+)$ { return 308 https://igloogroupe.com/en/services/$1; }
 
     location / {
         try_files $uri $uri/index.html /index.html;
