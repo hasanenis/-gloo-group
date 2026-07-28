@@ -17,11 +17,11 @@ export default function AboutUs() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full overflow-hidden bg-white px-5 pt-0 pb-14 font-sans text-black md:px-10 md:pt-0 md:pb-20 xl:px-16 xl:pt-0 xl:pb-20"
+      className="relative w-full overflow-hidden bg-white px-5 pt-6 pb-14 font-sans text-black md:px-10 md:pt-8 md:pb-20 xl:px-16 xl:pt-10 xl:pb-20"
       aria-label="Company profile"
     >
       <div className="relative z-30 mx-auto max-w-[1600px]">
-        <div className="grid gap-10 border-y border-black/[0.09] py-3 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,0.86fr)] lg:gap-0 lg:py-0">
+        <div className="grid gap-10 border-y border-black/[0.09] py-6 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,0.86fr)] lg:gap-0 lg:py-0">
           <div className="flex min-h-[380px] flex-col justify-start lg:border-r lg:border-black/[0.09] lg:py-12 lg:pr-12 xl:pr-[4.5rem]">
             <div
               className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#c22026] md:text-[13px]"
