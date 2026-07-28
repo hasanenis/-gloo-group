@@ -20,6 +20,11 @@ export type BrandEntity = {
 
 export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://igloogroupe.com').replace(/\/$/u, '');
 
+export type HreflangAlternate = {
+  hreflang: string;
+  locale: Locale;
+};
+
 /** One canonical company entity for every locale and every public brand name. */
 export const brandEntity: BrandEntity = {
   legalName: 'SARL Igloo Yapi Construction',
@@ -52,9 +57,18 @@ export const brandEntity: BrandEntity = {
     addressCountry: 'DZ',
   },
   email: 'info@igloogroupe.com',
-  telephone: ['+213 542 819 461', '+90 542 479 5700'],
+  telephone: ['+213 542 819 461'],
   areaServed: ['Algeria', 'Algiers', 'Tipaza', 'Mostaganem', 'Boumerdes'],
 };
+
+/** Hreflang annotations intentionally include both generic French and French-Algerian variants. */
+export const HREFLANG_ALTERNATES: ReadonlyArray<HreflangAlternate> = [
+  { hreflang: 'en', locale: 'en' },
+  { hreflang: 'fr', locale: 'fr' },
+  { hreflang: 'fr-DZ', locale: 'fr' },
+  { hreflang: 'tr', locale: 'tr' },
+  { hreflang: 'ar-DZ', locale: 'ar-DZ' },
+];
 
 export const DEFAULT_SOCIAL_IMAGE = `${SITE_URL}/homepage/company-profile-showcase.png`;
 
@@ -73,4 +87,9 @@ export function isServiceSlug(value: string | undefined): value is ServiceSlug {
 
 export function localeHreflang(locale: Locale): string {
   return locale === 'ar-DZ' ? 'ar-DZ' : locale;
+}
+
+/** Document-language tag used in the rendered HTML and structured metadata. */
+export function documentLanguageTag(locale: Locale): string {
+  return locale === 'fr' ? 'fr-DZ' : locale;
 }

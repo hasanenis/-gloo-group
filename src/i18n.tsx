@@ -14,6 +14,7 @@ import { uiMessages, type UiMessageKey } from './i18n/messages';
 import { repairMojibake } from './i18n/runtime';
 import { runtimeCatalogs } from './i18n/catalogs.generated';
 import { getSharedContent } from './content';
+import { documentLanguageTag } from './data/siteSeo';
 
 export type Locale = 'en' | 'fr' | 'ar-DZ' | 'tr';
 export type LegacyLocale = 'dz';
@@ -200,7 +201,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, locale);
-    document.documentElement.lang = locale;
+    document.documentElement.lang = documentLanguageTag(locale);
     document.documentElement.dir = RTL_LOCALES.has(locale) ? 'rtl' : 'ltr';
     i18n.activate(locale);
   }, [locale]);
@@ -217,7 +218,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     void loadCatalog(next).then(() => {
       i18n.activate(next);
       localStorage.setItem(STORAGE_KEY, next);
-      document.documentElement.lang = next;
+      document.documentElement.lang = documentLanguageTag(next);
       document.documentElement.dir = RTL_LOCALES.has(next) ? 'rtl' : 'ltr';
       navigate(localizedPath(next, `${location.pathname}${location.search}${location.hash}`));
     });

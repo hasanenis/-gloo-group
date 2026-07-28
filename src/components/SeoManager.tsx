@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getPageContent, getProjectPage, type ContentLocale, type PageDocument } from '../content';
-import { localeFromPathname, localizedPath, LOCALE_CODES, useLocale, type Locale } from '../i18n';
-import { brandEntity, DEFAULT_SOCIAL_IMAGE, isServiceSlug, localeHreflang, SERVICE_SLUGS, SITE_URL } from '../data/siteSeo';
+import { localeFromPathname, localizedPath, useLocale, type Locale } from '../i18n';
+import { brandEntity, DEFAULT_SOCIAL_IMAGE, documentLanguageTag, HREFLANG_ALTERNATES, isServiceSlug, SERVICE_SLUGS, SITE_URL } from '../data/siteSeo';
 import { localizedProjectTitle, projects } from '../data/projects';
 
 type SeoContent = {
@@ -122,6 +122,7 @@ export function buildSeoGraph({
   serviceSlug?: string;
   title: string;
 }) {
+  const pageLanguage = documentLanguageTag(locale);
   const organization = {
     '@type': ['Organization', 'LocalBusiness', 'GeneralContractor'],
     '@id': `${SITE_URL}/#organization`,
@@ -149,7 +150,7 @@ export function buildSeoGraph({
     name: brandEntity.brandName,
     alternateName: brandEntity.alternateNames,
     publisher: { '@id': `${SITE_URL}/#organization` },
-    inLanguage: locale,
+    inLanguage: pageLanguage,
   };
   const page: Record<string, unknown> = {
     '@type': route === '/contact' ? 'ContactPage' : route === '/projects' || route === '/services' ? 'CollectionPage' : 'WebPage',
@@ -157,7 +158,7 @@ export function buildSeoGraph({
     url: canonicalUrl,
     name: title,
     description,
-    inLanguage: locale,
+    inLanguage: pageLanguage,
     isPartOf: { '@id': `${SITE_URL}/#website` },
     about: { '@id': `${SITE_URL}/#organization` },
     ...(route !== '/' ? { breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` } } : {}),
@@ -172,7 +173,7 @@ export function buildSeoGraph({
       description: project.summary,
       url: canonicalUrl,
       creator: { '@id': `${SITE_URL}/#organization` },
-      inLanguage: locale,
+      inLanguage: pageLanguage,
       locationCreated: { '@type': 'Place', name: project.location },
       image: project.images,
     };
@@ -250,16 +251,18 @@ export default function SeoManager() {
     setMeta('meta[property="og:image"]', { property: 'og:image', content: image });
     setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: `${brandEntity.brandName} - ${pageName}` });
     setMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: brandEntity.brandName });
-    setMeta('meta[property="og:locale"]', { property: 'og:locale', content: urlLocale.replace('-', '_') });
+    setMeta('meta[property="og:locale"]', { property: 'og:locale', content: documentLanguageTag(urlLocale).replace('-', '_') });
     document.head.querySelectorAll('meta[data-seo-og-locale]').forEach((element) => element.remove());
-    LOCALE_CODES.filter((alternateLocale) => alternateLocale !== urlLocale).forEach((alternateLocale) => {
-      const hreflang = localeHreflang(alternateLocale);
-      setMeta(`meta[data-seo-og-locale="${hreflang}"]`, {
-        property: 'og:locale:alternate',
-        content: hreflang.replace('-', '_'),
-        'data-seo-og-locale': hreflang,
+    HREFLANG_ALTERNATES
+      .map((alternate) => alternate.hreflang)
+      .filter((alternate) => alternate !== documentLanguageTag(urlLocale))
+      .forEach((alternate) => {
+        setMeta(`meta[data-seo-og-locale="${alternate}"]`, {
+          property: 'og:locale:alternate',
+          content: alternate.replace('-', '_'),
+          'data-seo-og-locale': alternate,
+        });
       });
-    });
     setMeta('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' });
     setMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
     setMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: description });
@@ -274,11 +277,11 @@ export default function SeoManager() {
     canonical.href = canonicalUrl;
 
     document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((element) => element.remove());
-    for (const alternateLocale of LOCALE_CODES) {
+    for (const alternate of HREFLANG_ALTERNATES) {
       const link = document.createElement('link');
       link.rel = 'alternate';
-      link.hreflang = localeHreflang(alternateLocale);
-      link.href = `${SITE_URL}${localizedSeoPath(alternateLocale, canonicalPath)}`;
+      link.hreflang = alternate.hreflang;
+      link.href = `${SITE_URL}${localizedSeoPath(alternate.locale, canonicalPath)}`;
       link.dataset.seoHreflang = 'true';
       document.head.appendChild(link);
     }

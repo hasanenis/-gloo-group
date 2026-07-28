@@ -7,7 +7,14 @@ const root = process.cwd();
 const dist = path.join(root, 'dist');
 const siteUrl = (process.env.VITE_SITE_URL || 'https://igloogroupe.com').replace(/\/$/u, '');
 const locales = ['en', 'fr', 'tr', 'ar'];
-const contentLocales = { en: 'en', fr: 'fr', tr: 'tr', ar: 'ar-DZ' };
+const documentLocales = { en: 'en', fr: 'fr-DZ', tr: 'tr', ar: 'ar-DZ' };
+const hreflangAlternates = [
+  { hreflang: 'en', locale: 'en' },
+  { hreflang: 'fr', locale: 'fr' },
+  { hreflang: 'fr-DZ', locale: 'fr' },
+  { hreflang: 'tr', locale: 'tr' },
+  { hreflang: 'ar-DZ', locale: 'ar' },
+];
 
 async function pruneBuildOnlyAssets() {
   // These are source/editor exports kept under public/ for local curation.
@@ -67,9 +74,10 @@ async function writeSitemap(routes) {
   const entries = [];
   for (const route of routes.filter((value) => value !== '404')) {
     const canonicalRoute = route ? `/${route}` : '/';
-    const alternates = locales.map((locale) => `${siteUrl}/${locale}${canonicalRoute === '/' ? '/' : canonicalRoute}`);
+    const canonicalUrls = locales.map((locale) => `${siteUrl}/${locale}${canonicalRoute === '/' ? '/' : canonicalRoute}`);
+    const alternateUrls = hreflangAlternates.map(({ locale }) => `${siteUrl}/${locale}${canonicalRoute === '/' ? '/' : canonicalRoute}`);
     locales.forEach((locale, index) => {
-      entries.push(`  <url>\n    <loc>${escapeXml(alternates[index])}</loc>\n${locales.map((alternateLocale, alternateIndex) => `    <xhtml:link rel="alternate" hreflang="${contentLocales[alternateLocale]}" href="${escapeXml(alternates[alternateIndex])}" />`).join('\n')}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(alternates[0])}" />\n  </url>`);
+      entries.push(`  <url>\n    <loc>${escapeXml(canonicalUrls[index])}</loc>\n${hreflangAlternates.map(({ hreflang }, alternateIndex) => `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${escapeXml(alternateUrls[alternateIndex])}" />`).join('\n')}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(canonicalUrls[0])}" />\n  </url>`);
     });
   }
   await fs.writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`, 'utf8');
@@ -101,7 +109,6 @@ try {
       });
       await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 60_000 });
       await page.locator('main').first().waitFor({ state: 'attached', timeout: 15_000 }).catch(() => {});
-      const expectedLocale = contentLocales[locale];
       const expectedCanonical = `${siteUrl}/${locale}${route ? `/${route}` : '/'}`;
       await page.waitForFunction(
         ({ locale: expectedDocumentLocale, canonical: expectedCanonicalUrl }) => {
@@ -112,7 +119,7 @@ try {
             document.head.querySelector('script[data-seo-schema]')
           );
         },
-        { locale: expectedLocale, canonical: expectedCanonical },
+        { locale: documentLocales[locale], canonical: expectedCanonical },
         { timeout: 30_000 },
       );
       const html = await page.content();
