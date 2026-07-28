@@ -11,7 +11,7 @@ import SiteLink from './SiteLink';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HERO_VIDEO_URL = '/projects/Untitled%20Project.mp4';
+const HERO_VIDEO_URL = '/media/hero-reel.mp4';
 const HERO_POSTER = heroSlides[0]?.image;
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
