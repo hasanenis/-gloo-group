@@ -57,7 +57,7 @@ export const brandEntity: BrandEntity = {
     addressCountry: 'DZ',
   },
   email: 'info@igloogroupe.com',
-  telephone: ['+213 542 819 461'],
+  telephone: [],
   areaServed: ['Algeria', 'Algiers', 'Tipaza', 'Mostaganem', 'Boumerdes'],
 };
 

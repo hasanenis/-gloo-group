@@ -5,7 +5,6 @@ import {
   Home,
   Mail,
   MessageCircle,
-  Phone,
   RotateCcw,
   Send,
 } from 'lucide-react';
@@ -575,7 +574,7 @@ const buildAssistantContent = (
         id: 'contact-office',
         topicId: 'contact',
         label: 'Office contact',
-        answer: `Office: ${companyProfile.address}. Phone: ${companyProfile.phones[0]}. Email: ${companyProfile.email}.`,
+        answer: `Office: ${companyProfile.address}. Email: ${companyProfile.email}.`,
         nextStep:
           'For a project request, include project type, location, approximate size, and preferred contact method.',
         actions: [
@@ -971,7 +970,7 @@ const buildAssistantContent = (
         id: 'contact-office',
         topicId: 'contact',
         label: 'Contact bureau',
-        answer: `Bureau: ${companyProfile.address}. Téléphone: ${companyProfile.phones[0]}. Email: ${companyProfile.email}.`,
+        answer: `Bureau: ${companyProfile.address}. E-mail: ${companyProfile.email}.`,
         nextStep:
           'Pour une demande projet, ajoutez type, localisation, surface approximative et méthode de contact préférée.',
         actions: [
@@ -1136,7 +1135,7 @@ const buildTurkishAssistantContent = (emailHref: string, phoneHref: string): Ass
       id: 'tr-contact',
       topicId: 'contact',
       label: 'Proje ekibine nasıl ulaşabilirim?',
-      answer: `Bir Khadem ofisine ${companyProfile.email} adresinden veya ${companyProfile.phones[0]} numaralı telefondan ulaşabilirsiniz.`,
+      answer: `Bir Khadem ofisine ${companyProfile.email} adresinden veya iletişim formundan ulaşabilirsiniz.`,
       nextStep: 'Size uygun iletişim kanalını seçin.',
       actions: [
         { label: 'E-posta gönder', href: emailHref },
@@ -1451,7 +1450,7 @@ const buildArabicAssistantContent = (emailHref: string, phoneHref: string): Assi
       id: 'contact-office',
       topicId: 'contact',
       label: 'بيانات مكتب المشاريع',
-      answer: `العنوان: ${companyProfile.address}. الهاتف: ${companyProfile.phones[0]}. البريد الإلكتروني: ${companyProfile.email}.`,
+      answer: `العنوان: ${companyProfile.address}. البريد الإلكتروني: ${companyProfile.email}.`,
       nextStep: 'في طلب المشروع، أضف نوع المشروع وموقعه وحجمه التقريبي وطريقة التواصل المفضلة لديك.',
       actions: [
         { label: 'اتصل بالمكتب', href: phoneHref },
@@ -1542,8 +1541,8 @@ export default function AssistantDock() {
   const [draft, setDraft] = useState('');
   const [scrollRequestId, setScrollRequestId] = useState(0);
 
-  const officePhone = companyProfile.phones[0];
-  const phoneHref = `tel:${officePhone.replace(/\s/g, '')}`;
+  const officePhone = companyProfile.phones[0] ?? '';
+  const phoneHref = officePhone ? `tel:${officePhone.replace(/\s/g, '')}` : '';
   const emailHref = `mailto:${companyProfile.email}`;
   const assistantContent = useMemo(() => {
     if (locale === 'tr') return buildTurkishAssistantContent(emailHref, phoneHref);
@@ -1711,9 +1710,13 @@ export default function AssistantDock() {
   const renderActions = (actions?: AssistantAction[]) => {
     if (!actions?.length) return null;
 
+    const visibleActions = actions.filter((action) => !('href' in action) || Boolean(action.href));
+
+    if (!visibleActions.length) return null;
+
     return (
       <div className="assistant-panel__flow-actions">
-        {actions.map((action) => (
+        {visibleActions.map((action) => (
           'href' in action ? (
             <a key={action.label} href={action.href}>
               {action.label}
@@ -1900,10 +1903,11 @@ export default function AssistantDock() {
               <Mail className="h-4 w-4" strokeWidth={2} />
               <span>{chromeLabels.email}</span>
             </a>
-            <a href={phoneHref}>
-              <Phone className="h-4 w-4" strokeWidth={2} />
-              <span>{chromeLabels.call}</span>
-            </a>
+            {phoneHref ? (
+              <a href={phoneHref}>
+                <span>{chromeLabels.call}</span>
+              </a>
+            ) : null}
             <button type="button" onClick={() => navigateAndClose('/#contact')}>
               <Send className="h-4 w-4" strokeWidth={2} />
               <span>{t('contact')}</span>

@@ -9,7 +9,6 @@ import {
   Images,
   MapPin,
   Menu,
-  Phone,
   Rows3,
   X,
 } from 'lucide-react';
@@ -218,13 +217,6 @@ function BatProjectsFooter() {
                   <Mail className="mr-2 inline h-4 w-4 text-white" />
                   {companyProfile.email}
                 </a>
-                <a
-                  href={`tel:${companyProfile.phones[0].replace(/\s/g, '')}`}
-                  className="hover:text-white"
-                >
-                  <Phone className="mr-2 inline h-4 w-4 text-white" />
-                  {companyProfile.phones[0]}
-                </a>
                 <Link to="/" className="hover:text-white">
                   {t('home')}
                 </Link>
@@ -237,7 +229,7 @@ function BatProjectsFooter() {
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             <span>Igloo Construction</span>
             <span>{companyProfile.email}</span>
-            <span>{companyProfile.phones[0]}</span>
+            {companyProfile.phones.length > 0 ? <span>{companyProfile.phones[0]}</span> : null}
           </div>
           <div className="text-left md:text-right">
             <span>© 2026 Igloo Construction</span>

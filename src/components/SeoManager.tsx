@@ -132,16 +132,20 @@ export function buildSeoGraph({
     logo: { '@type': 'ImageObject', url: brandEntity.logo },
     ...(brandEntity.sameAs.length > 0 ? { sameAs: brandEntity.sameAs } : {}),
     email: brandEntity.email,
-    telephone: brandEntity.telephone,
     foundingDate: '2018',
     areaServed: brandEntity.areaServed,
     address: postalAddress(),
-    contactPoint: brandEntity.telephone.map((telephone) => ({
-      '@type': 'ContactPoint',
-      telephone,
-      contactType: 'customer service',
-      areaServed: telephone.startsWith('+213') ? 'DZ' : 'International',
-    })),
+    ...(brandEntity.telephone.length > 0
+      ? {
+          telephone: brandEntity.telephone,
+          contactPoint: brandEntity.telephone.map((telephone) => ({
+            '@type': 'ContactPoint',
+            telephone,
+            contactType: 'customer service',
+            areaServed: telephone.startsWith('+213') ? 'DZ' : 'International',
+          })),
+        }
+      : {}),
   };
   const website = {
     '@type': 'WebSite',
