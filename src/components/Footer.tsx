@@ -1,5 +1,5 @@
 import { useRef, type MouseEvent } from 'react';
-import { Mail, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
 import { companyProfile } from '../data/projects';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
@@ -53,6 +53,12 @@ export default function Footer() {
               </span>
               <ArrowUpRight className="h-4 w-4" />
             </a>
+            <a href={`tel:${companyProfile.phones[0].replace(/\s/g, '')}`} className="app-footer__cta-link">
+              <span>
+                {localize(content.phoneLabel, locale)}
+              </span>
+              <Phone className="h-4 w-4" />
+            </a>
           </div>
         </div>
 
@@ -74,6 +80,14 @@ export default function Footer() {
               {t('contact')}
             </h3>
             <div className="app-footer__links">
+              {companyProfile.phones.map((phone) => (
+                <a key={phone} href={`tel:${phone.replace(/\s/g, '')}`}>
+                  <Phone className="mr-2 inline h-4 w-4 text-[#e82a2e]" />
+                  <span>
+                    {phone}
+                  </span>
+                </a>
+              ))}
               <a href={`mailto:${companyProfile.email}`}>
                 <Mail className="mr-2 inline h-4 w-4 text-[#e82a2e]" />
                 <span>

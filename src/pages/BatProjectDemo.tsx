@@ -13,6 +13,7 @@ import {
   Mail,
   MapPin,
   Menu,
+  Phone,
   X,
 } from "lucide-react";
 import { gsap } from "gsap";
@@ -707,6 +708,15 @@ function DemoMenu({
                 <span>{companyProfile.email}</span>
                 <Mail className="h-3.5 w-3.5" strokeWidth={2} />
               </a>
+              <a
+                href={`tel:${companyProfile.phones[0].replace(/\s/g, "")}`}
+                className="bat-demo-menu__section-link justify-between"
+                data-bat-cursor-card
+                data-bat-cursor-label="CALL"
+              >
+                <span>{companyProfile.phones[0]}</span>
+                <Phone className="h-3.5 w-3.5" strokeWidth={2} />
+              </a>
             </div>
           </div>
         </div>
@@ -848,7 +858,7 @@ function DemoFooter({
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             <span>Igloo Construction</span>
             <span>{companyProfile.email}</span>
-            {companyProfile.phones.length > 0 ? <span>{companyProfile.phones[0]}</span> : null}
+            <span>{companyProfile.phones[0]}</span>
           </div>
           <div className="text-left md:text-right">
             <span>© 2026 Igloo Construction</span>

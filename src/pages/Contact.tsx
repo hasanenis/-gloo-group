@@ -1,5 +1,5 @@
 import { lazy, Suspense, useRef, type ComponentType, type FormEvent } from 'react';
-import { ArrowRight, ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { companyProfile } from '../data/projects';
 import { useLocale, type UiMessageKey } from '../i18n';
 import { useEditorialReveal } from '../hooks/useEditorialReveal';
@@ -24,6 +24,7 @@ type Translate = (key: UiMessageKey) => string;
 function getChannels(t: Translate): Channel[] {
   return [
     { label: t('contactEmailLabel'), value: companyProfile.email, href: `mailto:${companyProfile.email}`, detail: t('contactEmailDetail'), icon: Mail },
+    { label: t('contactAlgeriaLabel'), value: companyProfile.phones[0], href: `tel:${companyProfile.phones[0].replace(/\s/g, '')}`, detail: t('contactAlgeriaDetail'), icon: Phone },
   ];
 }
 
@@ -124,6 +125,13 @@ function OfficeSection() {
           >
             {copy.openMaps}
             <ArrowUpRight className="h-4 w-4" strokeWidth={2} />
+          </a>
+          <a
+            href={`tel:${companyProfile.phones[0].replace(/\s/g, '')}`}
+            className="inline-flex min-h-12 items-center gap-2 border border-white/24 px-5 text-[14px] font-semibold text-white transition-colors hover:border-[#e82a2e] hover:bg-[#e82a2e]"
+          >
+            {copy.callOffice}
+            <Phone className="h-4 w-4" strokeWidth={2} />
           </a>
         </div>
       </div>
