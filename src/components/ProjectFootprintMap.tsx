@@ -2,7 +2,9 @@ import { useEffect, useRef } from 'react';
 import maplibregl, { type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { projectMapPoints, type ProjectMapPoint } from '../data/projectMap';
-import { useLocale } from '../i18n';
+import { getProjectHeroImage } from '../data/projectHeroImage';
+import { projects } from '../data/projects';
+import { pickLocaleText, useLocale, type Locale } from '../i18n';
 
 type ClusterId = ProjectMapPoint['cluster'];
 
@@ -92,6 +94,29 @@ function buildStyle() {
   };
 }
 
+function escapeHtml(value: string) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  })[character] ?? character);
+}
+
+function buildProjectPreviewMarkup(point: ProjectMapPoint, locale: Locale) {
+  const project = projects.find((record) => record.slug === point.slug);
+  const heroImage = project ? getProjectHeroImage(project) : undefined;
+  const imageMarkup = heroImage
+    ? `<img class="igloo-map-preview__image" src="${escapeHtml(heroImage.src)}" alt="${escapeHtml(pickLocaleText(locale, heroImage.alt))}" width="220" height="132" loading="eager" decoding="async">`
+    : '';
+
+  return `<div class="igloo-map-preview">${imageMarkup}<div class="igloo-map-preview__details">` +
+    `<span class="igloo-map-tooltip-title">${escapeHtml(point.menuTitle)}</span>` +
+    `<span class="igloo-map-tooltip-meta">${escapeHtml(`${point.locality} — ${point.wilaya}`)}</span>` +
+    '</div></div>';
+}
+
 export default function ProjectFootprintMap({
   activeSlug,
   clusterFilter,
@@ -104,6 +129,11 @@ export default function ProjectFootprintMap({
   const markersRef   = useRef<maplibregl.Marker[]>([]);
   const hoveredIdRef = useRef<string | number | null>(null);
   const { locale }   = useLocale();
+  const localeRef    = useRef(locale);
+
+  useEffect(() => {
+    localeRef.current = locale;
+  }, [locale]);
 
   function buildMarkers(map: MapLibreMap) {
     markersRef.current.forEach(m => m.remove());
@@ -128,18 +158,20 @@ export default function ProjectFootprintMap({
         offset: [0, -46],
         closeButton: false,
         closeOnClick: false,
+        maxWidth: '240px',
         className: 'igloo-footprint-popup',
-      }).setHTML(
-        `<span class="igloo-map-tooltip-title">${point.menuTitle}</span>` +
-        `<span class="igloo-map-tooltip-meta">${point.locality} — ${point.wilaya}</span>`,
-      );
+      });
 
-      wrap.addEventListener('mouseenter', () => {
+      const showProjectPreview = () => {
         onSelect(point.slug);
+        popup
+          .setLngLat([point.lng, point.lat])
+          .setHTML(buildProjectPreviewMarkup(point, localeRef.current));
         marker.setPopup(popup);
         popup.addTo(map);
-      });
-      wrap.addEventListener('mouseleave', () => popup.remove());
+      };
+      wrap.addEventListener('pointerenter', showProjectPreview);
+      wrap.addEventListener('pointerleave', () => popup.remove());
       wrap.addEventListener('click', () => {
         onSelect(point.slug);
         map.flyTo({
