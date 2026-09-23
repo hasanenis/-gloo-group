@@ -186,7 +186,7 @@ export default function ProjectFootprintMap({
         const compactViewport = map.getContainer().clientWidth < 768;
         map.flyTo({
           center: [point.lng, point.lat],
-          zoom: 11,
+          zoom: compactViewport ? Math.max(map.getZoom(), 10) : 11,
           pitch: compactViewport ? 0 : INITIAL_PITCH,
           bearing: compactViewport ? 0 : INITIAL_BEARING,
           duration: prefersReducedMotion ? 0 : 900,
