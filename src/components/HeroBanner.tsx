@@ -11,7 +11,9 @@ import SiteLink from './SiteLink';
 gsap.registerPlugin(ScrollTrigger);
 
 const HERO_VIDEO_URL = '/media/hero-reel.mp4';
+const HERO_VIDEO_MOBILE_URL = '/media/hero-reel-mobile.mp4';
 const HERO_POSTER = '/media/hero-poster.webp';
+const HERO_MOBILE_QUERY = '(max-width: 767px)';
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -36,12 +38,23 @@ export default function HeroBanner() {
   const [videoEnabled, setVideoEnabled] = useState(() => (
     typeof window !== 'undefined' && window.sessionStorage.getItem('igloo:intro-seen') === 'true'
   ));
+  const [isMobileViewport, setIsMobileViewport] = useState(() => (
+    typeof window !== 'undefined' && window.matchMedia(HERO_MOBILE_QUERY).matches
+  ));
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
     t('homeHeroPhraseDream'),
   ];
   const heroHeading = localize(homepageContent.hero.title, locale);
+
+  useEffect(() => {
+    const query = window.matchMedia(HERO_MOBILE_QUERY);
+    const syncViewport = () => setIsMobileViewport(query.matches);
+    syncViewport();
+    query.addEventListener('change', syncViewport);
+    return () => query.removeEventListener('change', syncViewport);
+  }, []);
 
   useEffect(() => {
     if (videoEnabled) return;
@@ -118,7 +131,7 @@ export default function HeroBanner() {
         document.removeEventListener(eventName, retryOnFirstGesture),
       );
     };
-  }, [liteMotion, prefersReducedMotion, videoEnabled]);
+  }, [isMobileViewport, liteMotion, prefersReducedMotion, videoEnabled]);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -293,7 +306,7 @@ export default function HeroBanner() {
             <video
               ref={videoRef}
               className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}
-              src={HERO_VIDEO_URL}
+              src={isMobileViewport ? HERO_VIDEO_MOBILE_URL : HERO_VIDEO_URL}
               poster={HERO_POSTER}
               autoPlay
               muted

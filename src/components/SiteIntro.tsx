@@ -3,20 +3,17 @@ import { gsap } from 'gsap';
 import animatedLogo from '../assets/branding/igloo-intro-animated.svg';
 import staticLogo from '../assets/branding/igloo-intro-logo.png';
 import { useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
-import { useLocale } from '../i18n';
-import { Button } from './ui/button';
 
 type SiteIntroProps = {
   onComplete: () => void;
   onReady: () => void;
 };
 
-const LOGO_REVEAL_MS = 4050;
+const LOGO_REVEAL_MS = 6300;
 const HERO_GRACE_MS = 400;
-const HARD_STOP_MS = 6200;
+const HARD_STOP_MS = 8500;
 
 export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
-  const { locale } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
   const liteMotion = useLiteMotion();
   const staticMode = prefersReducedMotion || liteMotion;
@@ -29,14 +26,6 @@ export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
   const heroReadyRef = useRef(false);
   const waitingForHeroRef = useRef(false);
   const [logoFailed, setLogoFailed] = useState(false);
-
-  const skipLabel = locale === 'fr'
-    ? "Passer l'intro"
-    : locale === 'tr'
-      ? 'Girişi geç'
-      : locale === 'ar-DZ'
-        ? 'تخطي المقدمة'
-        : 'Skip intro';
 
   const finish = useCallback(() => {
     if (completedRef.current) return;
@@ -55,7 +44,7 @@ export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
     }
     tweenRef.current = gsap.to(element, {
       autoAlpha: 0,
-      duration: fast || staticMode ? 0.18 : 0.45,
+      duration: fast || staticMode ? 0.18 : 0.7,
       ease: 'power2.inOut',
       onComplete: finish,
     });
@@ -137,15 +126,6 @@ export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
           onLogoReady(true);
         }}
       />
-      <Button
-        type="button"
-        variant="ghost"
-        size="default"
-        className="absolute bottom-6 right-6 z-10 min-h-11 text-xs uppercase tracking-[0.13em] text-white/75 hover:bg-white/10 hover:text-white focus-visible:ring-white md:bottom-8 md:right-10"
-        onClick={() => requestExit(true)}
-      >
-        {skipLabel}
-      </Button>
     </div>
   );
 }
