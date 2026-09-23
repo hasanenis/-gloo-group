@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { ArrowRight } from 'lucide-react';
-import { motionDuration, motionEase, useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
+import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
 import SiteLink from './SiteLink';
@@ -14,6 +14,21 @@ const HERO_VIDEO_URL = '/media/hero-reel.mp4';
 const HERO_VIDEO_MOBILE_URL = '/media/hero-reel-mobile.mp4';
 const HERO_POSTER = '/media/hero-poster.webp';
 const HERO_MOBILE_QUERY = '(max-width: 767px)';
+type NetworkInformation = EventTarget & {
+  effectiveType?: string;
+  saveData?: boolean;
+};
+
+function prefersDataSaving() {
+  if (typeof navigator === 'undefined') return false;
+  const connection = (navigator as Navigator & { connection?: NetworkInformation }).connection;
+  return Boolean(
+    connection?.saveData ||
+    connection?.effectiveType === 'slow-2g' ||
+    connection?.effectiveType === '2g',
+  );
+}
+
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -29,7 +44,6 @@ function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 
 export default function HeroBanner() {
   const { locale, t } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
-  const liteMotion = useLiteMotion();
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaParallaxRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -41,6 +55,7 @@ export default function HeroBanner() {
   const [isMobileViewport, setIsMobileViewport] = useState(() => (
     typeof window !== 'undefined' && window.matchMedia(HERO_MOBILE_QUERY).matches
   ));
+  const [dataSaving, setDataSaving] = useState(prefersDataSaving);
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
@@ -57,6 +72,14 @@ export default function HeroBanner() {
   }, []);
 
   useEffect(() => {
+    const connection = (navigator as Navigator & { connection?: NetworkInformation }).connection;
+    if (!connection) return;
+    const syncDataSaving = () => setDataSaving(prefersDataSaving());
+    connection.addEventListener('change', syncDataSaving);
+    return () => connection.removeEventListener('change', syncDataSaving);
+  }, []);
+
+  useEffect(() => {
     if (videoEnabled) return;
 
     const enableVideo = () => setVideoEnabled(true);
@@ -70,7 +93,7 @@ export default function HeroBanner() {
   }, [videoEnabled]);
 
   useEffect(() => {
-    if (prefersReducedMotion || liteMotion || !videoEnabled) {
+    if (prefersReducedMotion || dataSaving || !videoEnabled) {
       setVideoReady(false);
       return;
     }
@@ -131,7 +154,7 @@ export default function HeroBanner() {
         document.removeEventListener(eventName, retryOnFirstGesture),
       );
     };
-  }, [isMobileViewport, liteMotion, prefersReducedMotion, videoEnabled]);
+  }, [dataSaving, isMobileViewport, prefersReducedMotion, videoEnabled]);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -302,7 +325,7 @@ export default function HeroBanner() {
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
           />
-          {!prefersReducedMotion && !liteMotion && videoEnabled && (
+          {!prefersReducedMotion && !dataSaving && videoEnabled && (
             <video
               ref={videoRef}
               className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}

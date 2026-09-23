@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import animatedLogo from '../assets/branding/igloo-intro-animated.svg';
 import staticLogo from '../assets/branding/igloo-intro-logo.png';
-import { useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
+import { usePrefersReducedMotion } from '../lib/motion';
 
 type SiteIntroProps = {
   onComplete: () => void;
@@ -10,13 +10,13 @@ type SiteIntroProps = {
 };
 
 const LOGO_REVEAL_MS = 6300;
+const STATIC_LOGO_HOLD_MS = 1800;
 const HERO_GRACE_MS = 400;
 const HARD_STOP_MS = 8500;
 
 export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
-  const liteMotion = useLiteMotion();
-  const staticMode = prefersReducedMotion || liteMotion;
+  const staticMode = prefersReducedMotion;
   const containerRef = useRef<HTMLDivElement>(null);
   const timersRef = useRef<number[]>([]);
   const tweenRef = useRef<ReturnType<typeof gsap.to> | null>(null);
@@ -100,7 +100,7 @@ export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
     onReady();
     timersRef.current.push(window.setTimeout(
       () => requestExit(),
-      failed || staticMode ? 550 : LOGO_REVEAL_MS,
+      failed ? 550 : staticMode ? STATIC_LOGO_HOLD_MS : LOGO_REVEAL_MS,
     ));
   };
 
