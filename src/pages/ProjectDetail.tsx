@@ -561,7 +561,11 @@ export default function ProjectDetail() {
       window.clearTimeout(settleRefresh);
       cleanupHeroEntryRelease();
     };
-  }, { scope: rootRef, dependencies: [content?.slug, liteMotion, prefersReducedMotion] });
+  }, {
+    scope: rootRef,
+    dependencies: [content?.slug, liteMotion, prefersReducedMotion],
+    revertOnUpdate: true,
+  });
 
   if (!project || !content || !batModel || !heroImage || !firstImage || !squareImage || !wideImage) {
     return (

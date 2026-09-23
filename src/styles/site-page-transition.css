@@ -3,6 +3,10 @@ html.site-route-transitioning body {
   overflow: hidden;
 }
 
+html.site-route-transitioning {
+  scroll-behavior: auto !important;
+}
+
 .site-page-transition {
   position: fixed;
   inset: 0;

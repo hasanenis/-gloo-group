@@ -80,6 +80,10 @@ html.bat-demo-route-transitioning body {
   overflow: hidden;
 }
 
+html.bat-demo-route-transitioning {
+  scroll-behavior: auto !important;
+}
+
 html.bat-demo-transition-entering .bat-demo-hero__content {
   opacity: 0;
 }
