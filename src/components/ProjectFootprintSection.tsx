@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowRight, Map as MapIcon, MapPin, Route } from 'lucide-react';
-import { pickLocaleText, useLocale, type LocalizedString } from '../i18n';
+import { pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
 import { usePrefersReducedMotion } from '../lib/motion';
 import { homepageContent, homepageProjectProofs, localize } from '../data/homepageContent';
 import { projectMapPoints, type ProjectMapPoint } from '../data/projectMap';
@@ -31,6 +31,13 @@ const CLUSTER_LABELS: Record<ClusterId, LocalizedString> = {
 };
 
 const STAT_ICONS = [MapPin, MapIcon, Route];
+
+const PROJECT_SELECTOR_COPY: Record<Locale, { label: string; ariaLabel: string }> = {
+  en: { label: 'Choose a project', ariaLabel: 'Choose a project on the map' },
+  fr: { label: 'Choisir un projet', ariaLabel: 'Choisir un projet sur la carte' },
+  tr: { label: 'Bir proje seçin', ariaLabel: 'Haritada bir proje seçin' },
+  'ar-DZ': { label: 'اختر مشروعًا', ariaLabel: 'اختر مشروعًا على الخريطة' },
+};
 
 export default function ProjectFootprintSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -131,9 +138,9 @@ export default function ProjectFootprintSection() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-9 xl:grid-cols-[minmax(0,1fr)_380px] xl:items-start">
+        <div className="mt-6 grid gap-6 xl:mt-10 xl:grid-cols-[minmax(0,1fr)_380px] xl:items-start xl:gap-9">
           <div className="min-w-0">
-            <div ref={mapContainerRef} className="igloo-footprint-map relative h-[420px] overflow-hidden bg-white md:h-[560px]">
+            <div ref={mapContainerRef} className="igloo-footprint-map relative h-[300px] overflow-hidden bg-white min-[420px]:h-[320px] sm:h-[380px] md:h-[500px] lg:h-[560px]">
               {mapVisible && (
                 <Suspense fallback={<div className="h-full w-full bg-[#fafaf8]" aria-hidden="true" />}>
                   <ProjectFootprintMap
@@ -147,8 +154,31 @@ export default function ProjectFootprintSection() {
               )}
             </div>
 
+            <label className="mt-3 block md:hidden">
+              <span className="mb-1.5 block text-[11px] font-semibold uppercase tracking-[0.12em] text-black/55">
+                {PROJECT_SELECTOR_COPY[locale].label}
+              </span>
+              <select
+                value={activeSlug}
+                onChange={(event) => {
+                  const point = projectMapPoints.find((candidate) => candidate.slug === event.target.value);
+                  if (!point) return;
+                  setClusterFilter(point.cluster);
+                  setActiveSlug(point.slug);
+                }}
+                className="h-12 w-full rounded border border-black/15 bg-white px-3 text-[14px] text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c22026]/40"
+                aria-label={PROJECT_SELECTOR_COPY[locale].ariaLabel}
+              >
+                {projectMapPoints.map((point, index) => (
+                  <option key={point.slug} value={point.slug}>
+                    {index + 1}. {point.locality} · {point.menuTitle}
+                  </option>
+                ))}
+              </select>
+            </label>
+
             <div
-              className="mt-5 grid gap-3 md:grid-cols-3"
+              className="mt-4 grid gap-3 md:mt-5 md:grid-cols-3"
               data-editorial-reveal-group="stats"
             >
               {copy.stats.map((stat, index) => {
