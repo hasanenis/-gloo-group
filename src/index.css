@@ -574,7 +574,7 @@ body {
 
   .app-main-header {
     justify-content: space-between !important;
-    min-height: 66px;
+    min-height: 78px;
     padding: 6px 14px !important;
   }
 
@@ -598,7 +598,7 @@ body {
   }
 
   .app-main-header .brand-logo img {
-    height: 64px !important;
+    height: 74px !important;
     width: auto !important;
     margin: -12px 0 !important;
     object-fit: contain;

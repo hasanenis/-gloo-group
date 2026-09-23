@@ -243,7 +243,7 @@ export default function Header() {
             alt="Igloo Construction"
             width={420}
             height={110}
-            className="origin-left h-[54px] w-auto object-contain transition-[height,filter] duration-300 drop-shadow-sm md:h-[62px] lg:h-[74px] xl:h-[82px]"
+            className="origin-left h-[66px] w-auto scale-[1.3] object-contain transition-[height,filter,transform] duration-300 drop-shadow-sm md:h-[76px] lg:h-[88px] xl:h-[96px]"
           />
         </Link>
       </div>

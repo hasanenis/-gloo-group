@@ -73,6 +73,7 @@ function postalAddress() {
     '@type': 'PostalAddress',
     streetAddress: brandEntity.address.streetAddress,
     addressLocality: brandEntity.address.addressLocality,
+    postalCode: brandEntity.address.postalCode,
     addressRegion: brandEntity.address.addressRegion,
     addressCountry: brandEntity.address.addressCountry,
   };

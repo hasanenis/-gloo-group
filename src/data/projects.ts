@@ -35,7 +35,8 @@ export type ProjectRecord = {
 
 export const companyProfile = {
   name: 'SARL Igloo Yapi Construction',
-  address: 'No. 8, Rue Krouch Slimane, Closan Jean Lot no. 1-31, RDC, Bir Khadem - Algiers',
+  address: '8 Rue Slimane Kerrouche, Le, Birkhadem 16029, Algeria',
+  mapUrl: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x27774a9633af3173:0xd8e2c09015ee529f?sa=X&ved=1t:8290&ictx=111',
   phones: ['+213 542 819 461'],
   email: 'info@igloogroupe.com',
   foundedYear: 2018,

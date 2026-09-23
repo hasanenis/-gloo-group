@@ -63,9 +63,9 @@ export default function Footer() {
             </h3>
             <address className="app-footer__address">
               <MapPin className="mb-3 h-4 w-4 text-[#e82a2e]" />
-              <div className="not-italic">
+              <a href={companyProfile.mapUrl} target="_blank" rel="noreferrer" className="not-italic underline-offset-4 hover:text-white hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
                 {companyProfile.address}
-              </div>
+              </a>
             </address>
           </div>
 

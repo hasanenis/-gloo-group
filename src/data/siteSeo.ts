@@ -10,6 +10,7 @@ export type BrandEntity = {
   address: {
     streetAddress: string;
     addressLocality: string;
+    postalCode: string;
     addressRegion: string;
     addressCountry: string;
   };
@@ -51,8 +52,9 @@ export const brandEntity: BrandEntity = {
   logo: `${SITE_URL}/brand-logo.svg`,
   sameAs: [],
   address: {
-    streetAddress: 'No. 8, Rue Krouch Slimane, Closan Jean Lot no. 1-31, RDC',
-    addressLocality: 'Bir Khadem',
+    streetAddress: '8 Rue Slimane Kerrouche, Le',
+    addressLocality: 'Birkhadem',
+    postalCode: '16029',
     addressRegion: 'Algiers',
     addressCountry: 'DZ',
   },
