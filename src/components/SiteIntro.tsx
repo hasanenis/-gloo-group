@@ -1,187 +1,151 @@
-import { useEffect, useRef } from 'react';
-import iglooIntroLogo from '../assets/branding/igloo-intro-logo.png';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { usePrefersReducedMotion } from '../lib/motion';
+import animatedLogo from '../assets/branding/igloo-intro-animated.svg';
+import staticLogo from '../assets/branding/igloo-intro-logo.png';
+import { useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
+import { useLocale } from '../i18n';
+import { Button } from './ui/button';
 
 type SiteIntroProps = {
   onComplete: () => void;
   onReady: () => void;
 };
 
-export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
-  const prefersReducedMotion = usePrefersReducedMotion();
-  const containerRef = useRef<HTMLDivElement>(null);
-  const completeRef = useRef(onComplete);
+const LOGO_REVEAL_MS = 4050;
+const HERO_GRACE_MS = 400;
+const HARD_STOP_MS = 6200;
 
-  useEffect(() => {
-    completeRef.current = onComplete;
+export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
+  const { locale } = useLocale();
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const liteMotion = useLiteMotion();
+  const staticMode = prefersReducedMotion || liteMotion;
+  const containerRef = useRef<HTMLDivElement>(null);
+  const timersRef = useRef<number[]>([]);
+  const tweenRef = useRef<ReturnType<typeof gsap.to> | null>(null);
+  const startedRef = useRef(false);
+  const exitingRef = useRef(false);
+  const completedRef = useRef(false);
+  const heroReadyRef = useRef(false);
+  const waitingForHeroRef = useRef(false);
+  const [logoFailed, setLogoFailed] = useState(false);
+
+  const skipLabel = locale === 'fr'
+    ? "Passer l'intro"
+    : locale === 'tr'
+      ? 'Girişi geç'
+      : locale === 'ar-DZ'
+        ? 'تخطي المقدمة'
+        : 'Skip intro';
+
+  const finish = useCallback(() => {
+    if (completedRef.current) return;
+    completedRef.current = true;
+    onComplete();
   }, [onComplete]);
+
+  const fadeOut = useCallback((fast = false) => {
+    if (exitingRef.current) return;
+    exitingRef.current = true;
+    waitingForHeroRef.current = false;
+    const element = containerRef.current;
+    if (!element) {
+      finish();
+      return;
+    }
+    tweenRef.current = gsap.to(element, {
+      autoAlpha: 0,
+      duration: fast || staticMode ? 0.18 : 0.45,
+      ease: 'power2.inOut',
+      onComplete: finish,
+    });
+  }, [finish, staticMode]);
+
+  const requestExit = useCallback((fast = false) => {
+    if (fast || heroReadyRef.current) {
+      fadeOut(fast);
+      return;
+    }
+    if (waitingForHeroRef.current) return;
+    waitingForHeroRef.current = true;
+    timersRef.current.push(window.setTimeout(() => fadeOut(), HERO_GRACE_MS));
+  }, [fadeOut]);
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
-    if (prefersReducedMotion) {
-      const timer = window.setTimeout(onComplete, 700);
-      return () => {
-        window.clearTimeout(timer);
-        document.body.style.overflow = previousOverflow;
-      };
-    }
+    const hero = new Image();
+    const markHeroReady = () => {
+      heroReadyRef.current = true;
+      if (waitingForHeroRef.current) fadeOut();
+    };
+    hero.onload = markHeroReady;
+    hero.onerror = markHeroReady;
+    hero.src = '/media/hero-poster.webp';
+    if (hero.complete) markHeroReady();
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        requestExit(true);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    timersRef.current.push(window.setTimeout(() => requestExit(true), HARD_STOP_MS));
 
     return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      hero.onload = null;
+      hero.onerror = null;
+      timersRef.current.forEach(window.clearTimeout);
+      timersRef.current = [];
+      tweenRef.current?.kill();
       document.body.style.overflow = previousOverflow;
     };
-  }, [onComplete, prefersReducedMotion]);
+  }, [fadeOut, requestExit]);
 
-  useGSAP(() => {
-    if (prefersReducedMotion) {
-      gsap.set('.intro-igloo-lockup', { autoAlpha: 1, display: 'flex' });
-      gsap.set('.intro-logo-image', { y: 0, scale: 1, autoAlpha: 1, filter: 'blur(0px)' });
-      gsap.set('.intro-igloo-line', { scaleX: 1, autoAlpha: 1 });
-      gsap.set('.intro-tag-shell, .intro-tag-dot', { autoAlpha: 0 });
-      onReady();
-      return;
-    }
-
-    gsap.set('.intro-igloo-lockup', {
-      autoAlpha: 1,
-      display: 'flex',
-    });
-    gsap.set('.intro-logo-image', {
-      y: 28,
-      scale: 0.96,
-      autoAlpha: 0,
-      filter: 'blur(4px)',
-    });
-    gsap.set('.intro-igloo-line', {
-      scaleX: 0,
-      autoAlpha: 0,
-      transformOrigin: '50% 50%',
-    });
-    gsap.set('.intro-tag-build, .intro-tag-above', {
-      yPercent: -115,
-      autoAlpha: 0,
-    });
-    gsap.set('.intro-tag-beyond', {
-      yPercent: 115,
-      autoAlpha: 0,
-    });
-    gsap.set('.intro-tag-shell', {
-      autoAlpha: 0,
-    });
-    gsap.set('.intro-tag-dot', {
-      autoAlpha: 0,
-      scale: 0.8,
-    });
-
-    // App keeps a small, synchronous logo gate visible until these initial
-    // animation states are ready, preventing Home from flashing first.
+  const onLogoReady = (failed = false) => {
+    if (startedRef.current) return;
+    startedRef.current = true;
     onReady();
-
-    const tl = gsap.timeline();
-
-    tl.to('.intro-logo-image', {
-      y: 0,
-      scale: 1,
-      autoAlpha: 1,
-      filter: 'blur(0px)',
-      duration: 1.3,
-      ease: 'power3.out',
-    })
-      .to('.intro-igloo-line', {
-        scaleX: 1,
-        autoAlpha: 1,
-        duration: 0.7,
-        ease: 'power2.out',
-      }, '-=0.4')
-      .to({}, { duration: 1.25 })
-      .to('.intro-igloo-lockup', {
-        y: -42,
-        autoAlpha: 0,
-        duration: 0.82,
-        ease: 'power3.inOut',
-      })
-      .set('.intro-igloo-lockup', { display: 'none' })
-      .to({}, { duration: 0.22 })
-      .set('.intro-tag-shell', { autoAlpha: 1 })
-      .to('.intro-tag-dot', {
-        autoAlpha: 1,
-        scale: 1,
-        duration: 0.4,
-        ease: 'power2.out',
-      })
-      .to('.intro-tag-build', {
-        yPercent: 0,
-        autoAlpha: 1,
-        duration: 0.9,
-        ease: 'power4.out',
-      }, '-=0.1')
-      .to('.intro-tag-above', {
-        yPercent: 0,
-        autoAlpha: 1,
-        duration: 0.9,
-        ease: 'power4.out',
-      }, '-=0.7')
-      .to('.intro-tag-beyond', {
-        yPercent: 0,
-        autoAlpha: 1,
-        duration: 0.98,
-        ease: 'power4.out',
-      }, '-=0.76')
-      .to({}, { duration: 0.55 })
-      .to('.intro-tag-shell', {
-        y: -10,
-        autoAlpha: 0,
-        duration: 0.75,
-        ease: 'power2.out',
-      })
-      .to('.intro-tag-dot', {
-        autoAlpha: 0,
-        scale: 0.92,
-        duration: 0.75,
-        ease: 'power2.out',
-      }, '<')
-      .to({}, {
-        duration: 0.3,
-        onComplete: () => {
-          requestAnimationFrame(() => {
-            completeRef.current();
-          });
-        },
-      });
-  }, { scope: containerRef, dependencies: [prefersReducedMotion] });
+    timersRef.current.push(window.setTimeout(
+      () => requestExit(),
+      failed || staticMode ? 550 : LOGO_REVEAL_MS,
+    ));
+  };
 
   return (
-    <div ref={containerRef} className="intro-backdrop fixed inset-0 z-[140] flex items-center justify-center bg-black">
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden px-6">
-        <div className="intro-igloo-lockup absolute inset-0 flex flex-col items-center justify-center">
-          <img
-            src={iglooIntroLogo}
-            alt="igloo Construction"
-            width={860}
-            height={220}
-            className="intro-logo-image mb-4 w-[min(48vw,430px)] min-w-[210px] max-w-[430px] object-contain"
-          />
-          <div className="intro-igloo-line h-px w-28 bg-white/22 md:w-40" />
-        </div>
-
-        <div className="intro-tag-shell absolute inset-x-5 top-1/2 flex w-[calc(100vw-2.5rem)] -translate-y-1/2 flex-col items-start justify-center gap-1 font-sans text-[clamp(3rem,15vw,4.75rem)] font-[350] leading-[0.88] tracking-normal text-white md:left-[3.6vw] md:right-auto md:w-auto md:max-w-none md:flex-row md:items-center md:justify-start md:gap-[0.16em] md:text-[clamp(2.7rem,7vw,5.8rem)] md:leading-none">
-          <div className="overflow-hidden leading-none">
-            <span className="intro-tag-build inline-block">Bâtir.</span>
-          </div>
-          <div className="overflow-hidden leading-none">
-            <span className="intro-tag-above inline-block">Plus haut.</span>
-          </div>
-          <div className="overflow-hidden leading-none">
-            <span className="intro-tag-beyond inline-block text-[#ff3b30]">Plus loin.</span>
-          </div>
-        </div>
-
-        <div className="intro-tag-dot absolute bottom-[4.2vh] right-[4.2vw] h-4 w-4 rounded-full bg-[#ff3b30]" />
-
-      </div>
+    <div
+      ref={containerRef}
+      className="intro-backdrop fixed inset-0 z-[140] flex items-center justify-center bg-black"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Igloo Construction"
+    >
+      <img
+        src={logoFailed || staticMode ? staticLogo : animatedLogo}
+        alt="Igloo Construction"
+        width={452}
+        height={137}
+        fetchPriority="high"
+        decoding="async"
+        className="block h-auto w-[min(84vw,740px)] max-w-full object-contain"
+        onLoad={() => onLogoReady()}
+        onError={() => {
+          setLogoFailed(true);
+          onLogoReady(true);
+        }}
+      />
+      <Button
+        type="button"
+        variant="ghost"
+        size="default"
+        className="absolute bottom-6 right-6 z-10 min-h-11 text-xs uppercase tracking-[0.13em] text-white/75 hover:bg-white/10 hover:text-white focus-visible:ring-white md:bottom-8 md:right-10"
+        onClick={() => requestExit(true)}
+      >
+        {skipLabel}
+      </Button>
     </div>
   );
 }

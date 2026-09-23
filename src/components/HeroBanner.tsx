@@ -36,7 +36,6 @@ export default function HeroBanner() {
   const [videoEnabled, setVideoEnabled] = useState(() => (
     typeof window !== 'undefined' && window.sessionStorage.getItem('igloo:intro-seen') === 'true'
   ));
-  const posterReady = prefersReducedMotion || liteMotion || !videoEnabled;
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
@@ -281,17 +280,16 @@ export default function HeroBanner() {
           className="pointer-events-none absolute inset-x-0 -inset-y-[10%] will-change-transform md:-inset-y-[12%] lg:-inset-y-[14%]"
           aria-hidden="true"
         >
-          {posterReady ? (
-            <img
-              src={HERO_POSTER}
-              alt=""
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              decoding="async"
-              className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
-            />
-          ) : (
+          <img
+            src={HERO_POSTER}
+            alt=""
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
+          />
+          {!prefersReducedMotion && !liteMotion && videoEnabled && (
             <video
               ref={videoRef}
               className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}
