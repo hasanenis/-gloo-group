@@ -1,20 +1,16 @@
-import { useRef, type MouseEvent } from 'react';
+import { type MouseEvent } from 'react';
 import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
 import { companyProfile } from '../data/projects';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
-import { useEditorialReveal } from '../hooks/useEditorialReveal';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import iglooLogo from '../assets/branding/igloo-intro-logo.png';
 import SiteLink from './SiteLink';
 
 export default function Footer() {
-  const footerRef = useRef<HTMLElement>(null);
   const { locale, t } = useLocale();
   const goTo = useSiteNavigate();
   const content = homepageContent.footer;
-
-  useEditorialReveal(footerRef, [locale]);
 
   const navigateTo = (path: string) => (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -22,26 +18,24 @@ export default function Footer() {
   };
 
   return (
-    <footer ref={footerRef} className="app-footer">
+    <footer className="app-footer">
       <div className="app-footer__inner">
         <div className="app-footer__top">
           <div>
             <img src={iglooLogo} alt="Igloo Construction" width={420} height={110} className="app-footer__logo" />
             <h2
               className="app-footer__headline"
-              data-editorial-reveal="display"
             >
               {localize(content.title, locale)}
             </h2>
             <p
               className="app-footer__lead"
-              data-editorial-reveal="copy"
             >
               {localize(content.lead, locale)}
             </p>
           </div>
 
-          <div className="app-footer__cta" data-editorial-reveal="panel">
+          <div className="app-footer__cta">
             <div
               className="app-footer__eyebrow"
             >
@@ -62,8 +56,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="app-footer__middle" data-editorial-reveal-group="columns">
-          <div data-editorial-reveal-item>
+        <div className="app-footer__middle">
+          <div>
             <h3 className="app-footer__heading">
               {t('office')}
             </h3>
@@ -75,7 +69,7 @@ export default function Footer() {
             </address>
           </div>
 
-          <div data-editorial-reveal-item>
+          <div>
             <h3 className="app-footer__heading">
               {t('contact')}
             </h3>
@@ -97,7 +91,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div data-editorial-reveal-item>
+          <div>
             <h3 className="app-footer__heading">
               {t('navigation')}
             </h3>

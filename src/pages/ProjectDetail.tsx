@@ -41,7 +41,7 @@ import {
 } from '../data/manualProjectImages';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { localizedPath, pickLocaleText, useLocale, type LocalizedString } from '../i18n';
-import { usePrefersReducedMotion } from '../lib/motion';
+import { useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
 import RahmaniaComparisonSection from '../components/RahmaniaComparisonSection';
 import Footer from '../components/Footer';
 import { getBatHeroParallaxRange } from '../transitions/batHeroGeometry';
@@ -248,6 +248,7 @@ export default function ProjectDetail() {
   const lenis = useLenis();
   const goTo = useSiteNavigate();
   const prefersReducedMotion = usePrefersReducedMotion();
+  const liteMotion = useLiteMotion();
   const rootRef = useRef<HTMLElement>(null);
   const canonicalSlug = slug ? (LEGACY_PROJECT_SLUGS[slug] ?? slug) : slug;
 
@@ -506,19 +507,24 @@ export default function ProjectDetail() {
         }, 0);
     }
 
-    gsap.utils.toArray<HTMLElement>('[data-reveal]').forEach((element) => {
-      gsap.fromTo(
-        element,
-        { opacity: 0, y: 22 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.72,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: element, start: 'top 86%', once: true },
-        },
-      );
-    });
+    const revealElements = gsap.utils.toArray<HTMLElement>('[data-reveal]');
+    if (liteMotion) {
+      gsap.set(revealElements, { clearProps: 'opacity,transform' });
+    } else {
+      revealElements.forEach((element) => {
+        gsap.fromTo(
+          element,
+          { opacity: 0, y: 22 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.72,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: element, start: 'top 86%', once: true },
+          },
+        );
+      });
+    }
 
     gsap.utils.toArray<HTMLElement>('[data-editorial-parallax-frame]').forEach((frame) => {
       const image = frame.querySelector<HTMLElement>('[data-editorial-parallax-image]');
@@ -555,7 +561,7 @@ export default function ProjectDetail() {
       window.clearTimeout(settleRefresh);
       cleanupHeroEntryRelease();
     };
-  }, { scope: rootRef, dependencies: [content?.slug, prefersReducedMotion] });
+  }, { scope: rootRef, dependencies: [content?.slug, liteMotion, prefersReducedMotion] });
 
   if (!project || !content || !batModel || !heroImage || !firstImage || !squareImage || !wideImage) {
     return (

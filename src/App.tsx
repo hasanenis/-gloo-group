@@ -3,15 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Fragment, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { Fragment, lazy, Suspense, useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from 'react-router-dom';
 import Header from './components/Header';
 import SeoManager from './components/SeoManager';
 import SmoothScrollProvider, { useLenis } from './components/SmoothScrollProvider';
-import { heroSlides } from './data/projects';
 import { LocaleProvider, localizedPath, useLocale } from './i18n';
 import { getPageContent } from './content';
 import { initAutoFitText } from './lib/autoFitText';
+import { usePrefersReducedMotion } from './lib/motion';
+import introLogo from './assets/branding/igloo-intro-logo.png';
 import './styles/site-page-transition.css';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -59,11 +60,15 @@ function ScrollManager() {
 function AppShellContent() {
   const location = useLocation();
   const { locale } = useLocale();
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const introHoldMs = prefersReducedMotion ? 0 : INTRO_VEIL_HOLD_MS;
+  const introSlideMs = prefersReducedMotion ? 0 : INTRO_VEIL_SLIDE_MS;
   const [showIntro, setShowIntro] = useState(
     () =>
       isHomeRoute(location.pathname) &&
       sessionStorage.getItem(INTRO_SEEN_KEY) !== 'true',
   );
+  const [introReady, setIntroReady] = useState(false);
   const [showIntroVeil, setShowIntroVeil] = useState(false);
   const [introVeilVisible, setIntroVeilVisible] = useState(true);
   const [introVeilTone, setIntroVeilTone] = useState<'black' | 'page'>('black');
@@ -107,12 +112,12 @@ function AppShellContent() {
     if (introVeilTone === 'black') {
       const startSlideTimer = window.setTimeout(() => {
         setIntroVeilVisible(false);
-      }, INTRO_VEIL_HOLD_MS);
+      }, introHoldMs);
 
       const removeVeilTimer = window.setTimeout(() => {
         setShowIntroVeil(false);
         setIntroVeilVisible(true);
-      }, INTRO_VEIL_HOLD_MS + INTRO_VEIL_SLIDE_MS);
+      }, introHoldMs + introSlideMs);
 
       return () => {
         window.clearTimeout(startSlideTimer);
@@ -137,7 +142,7 @@ function AppShellContent() {
       const waited = performance.now() - startedAt;
 
       if (ready || waited >= MAX_WAIT_MS) {
-        const holdRemaining = Math.max(0, INTRO_VEIL_HOLD_MS - waited);
+        const holdRemaining = Math.max(0, introHoldMs - waited);
         revealTimer = window.setTimeout(() => {
           if (cancelled) return;
           setIntroVeilVisible(false);
@@ -145,7 +150,7 @@ function AppShellContent() {
             if (cancelled) return;
             setShowIntroVeil(false);
             setIntroVeilVisible(true);
-          }, INTRO_VEIL_SLIDE_MS);
+          }, introSlideMs);
         }, holdRemaining);
         return;
       }
@@ -161,12 +166,14 @@ function AppShellContent() {
       window.clearTimeout(revealTimer);
       window.clearTimeout(removeTimer);
     };
-  }, [showIntroVeil, introVeilTone]);
+  }, [introHoldMs, introSlideMs, showIntroVeil, introVeilTone]);
 
-  const handleIntroComplete = async () => {
+  const handleIntroReady = useCallback(() => setIntroReady(true), []);
+
+  const handleIntroComplete = useCallback(async () => {
     sessionStorage.setItem(INTRO_SEEN_KEY, 'true');
 
-    const firstHeroImage = heroSlides[0]?.image;
+    const firstHeroImage = '/media/hero-poster.webp';
 
     if (!firstHeroImage) {
       setShowIntro(false);
@@ -188,7 +195,8 @@ function AppShellContent() {
     setShowIntro(false);
     setIntroVeilTone('black');
     setShowIntroVeil(true);
-  };
+    window.dispatchEvent(new CustomEvent('igloo:intro-complete'));
+  }, []);
 
   const isBatDemoRoute = location.pathname.startsWith('/bat-demo');
   const showGlobalCursor = !isBatDemoRoute && location.pathname !== '/';
@@ -221,9 +229,26 @@ function AppShellContent() {
         {showGlobalCursor && <GlobalCursor />}
         {!showIntro && !isBatDemoRoute && assistantReady && <AssistantDock />}
         {isHomeRoute(location.pathname) && showIntro && (
-          <SiteIntro onComplete={handleIntroComplete} />
+          <SiteIntro onComplete={handleIntroComplete} onReady={handleIntroReady} />
         )}
       </Suspense>
+      {isHomeRoute(location.pathname) && showIntro && !introReady && (
+        <div
+          className="fixed inset-0 z-[141] flex items-center justify-center bg-black"
+          aria-label="Igloo Construction"
+          role="status"
+        >
+          <img
+            src={introLogo}
+            alt="Igloo Construction"
+            width={860}
+            height={220}
+            fetchPriority="high"
+            decoding="async"
+            className="w-[min(48vw,430px)] min-w-[210px] max-w-[430px] object-contain"
+          />
+        </div>
+      )}
       {!showIntro && !isBatDemoRoute && <Header />}
       {showIntroVeil && (
         <div
@@ -235,7 +260,7 @@ function AppShellContent() {
             style={{
               backgroundColor: introVeilTone === 'black' ? '#000000' : 'var(--igloo-bg)',
               transform: introVeilVisible ? 'translateY(0%)' : 'translateY(-100%)',
-              transitionDuration: `${INTRO_VEIL_SLIDE_MS}ms`,
+              transitionDuration: `${introSlideMs}ms`,
               transitionTimingFunction: 'cubic-bezier(0.65, 0, 0.2, 1)',
             }}
           />

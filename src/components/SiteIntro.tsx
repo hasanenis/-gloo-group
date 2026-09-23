@@ -1,6 +1,4 @@
 import { useEffect, useRef } from 'react';
-import Lottie from 'lottie-react';
-import introAnimation from '../assets/lottie/intro.json';
 import iglooIntroLogo from '../assets/branding/igloo-intro-logo.png';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -8,9 +6,10 @@ import { usePrefersReducedMotion } from '../lib/motion';
 
 type SiteIntroProps = {
   onComplete: () => void;
+  onReady: () => void;
 };
 
-export default function SiteIntro({ onComplete }: SiteIntroProps) {
+export default function SiteIntro({ onComplete, onReady }: SiteIntroProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
   const containerRef = useRef<HTMLDivElement>(null);
   const completeRef = useRef(onComplete);
@@ -37,7 +36,14 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
   }, [onComplete, prefersReducedMotion]);
 
   useGSAP(() => {
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion) {
+      gsap.set('.intro-igloo-lockup', { autoAlpha: 1, display: 'flex' });
+      gsap.set('.intro-logo-image', { y: 0, scale: 1, autoAlpha: 1, filter: 'blur(0px)' });
+      gsap.set('.intro-igloo-line', { scaleX: 1, autoAlpha: 1 });
+      gsap.set('.intro-tag-shell, .intro-tag-dot', { autoAlpha: 0 });
+      onReady();
+      return;
+    }
 
     gsap.set('.intro-igloo-lockup', {
       autoAlpha: 1,
@@ -69,6 +75,10 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
       autoAlpha: 0,
       scale: 0.8,
     });
+
+    // App keeps a small, synchronous logo gate visible until these initial
+    // animation states are ready, preventing Home from flashing first.
+    onReady();
 
     const tl = gsap.timeline();
 
@@ -171,15 +181,6 @@ export default function SiteIntro({ onComplete }: SiteIntroProps) {
 
         <div className="intro-tag-dot absolute bottom-[4.2vh] right-[4.2vw] h-4 w-4 rounded-full bg-[#ff3b30]" />
 
-        <Lottie
-          animationData={introAnimation}
-          loop={false}
-          autoplay
-          className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0"
-          rendererSettings={{
-            preserveAspectRatio: 'xMidYMid meet',
-          }}
-        />
       </div>
     </div>
   );

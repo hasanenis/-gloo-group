@@ -49,10 +49,13 @@ function nextFrame() {
 
 async function waitForDestination(targetPathname: string) {
   const startedAt = performance.now();
+  const isHomeRoute = /^\/(?:en|fr|tr|ar)\/?$/u.test(targetPathname) || targetPathname === '/';
 
   while (performance.now() - startedAt < MAX_DESTINATION_WAIT_MS) {
     const routeReady = window.location.pathname === targetPathname;
-    const pageReady = document.querySelector('main');
+    const pageReady = isHomeRoute
+      ? document.querySelector('[data-guide-section="hero"]')
+      : document.querySelector('main');
 
     if (routeReady && pageReady) {
       await nextFrame();

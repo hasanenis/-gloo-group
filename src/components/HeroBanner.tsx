@@ -3,8 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { ArrowRight } from 'lucide-react';
-import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
-import { heroSlides } from '../data/projects';
+import { motionDuration, motionEase, useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
 import SiteLink from './SiteLink';
@@ -12,7 +11,7 @@ import SiteLink from './SiteLink';
 gsap.registerPlugin(ScrollTrigger);
 
 const HERO_VIDEO_URL = '/media/hero-reel.mp4';
-const HERO_POSTER = heroSlides[0]?.image;
+const HERO_POSTER = '/media/hero-poster.webp';
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -28,12 +27,16 @@ function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 
 export default function HeroBanner() {
   const { locale, t } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
+  const liteMotion = useLiteMotion();
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaParallaxRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoReady, setVideoReady] = useState(false);
-  const posterReady = prefersReducedMotion;
+  const [videoEnabled, setVideoEnabled] = useState(() => (
+    typeof window !== 'undefined' && window.sessionStorage.getItem('igloo:intro-seen') === 'true'
+  ));
+  const posterReady = prefersReducedMotion || liteMotion || !videoEnabled;
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
@@ -42,8 +45,21 @@ export default function HeroBanner() {
   const heroHeading = localize(homepageContent.hero.title, locale);
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      setVideoReady(true);
+    if (videoEnabled) return;
+
+    const enableVideo = () => setVideoEnabled(true);
+    const events = [
+      'igloo:intro-complete',
+      'igloo:site-transition-complete',
+      'bat-demo-page-transition-complete',
+    ];
+    events.forEach((eventName) => window.addEventListener(eventName, enableVideo, { once: true }));
+    return () => events.forEach((eventName) => window.removeEventListener(eventName, enableVideo));
+  }, [videoEnabled]);
+
+  useEffect(() => {
+    if (prefersReducedMotion || liteMotion || !videoEnabled) {
+      setVideoReady(false);
       return;
     }
 
@@ -103,7 +119,7 @@ export default function HeroBanner() {
         document.removeEventListener(eventName, retryOnFirstGesture),
       );
     };
-  }, [prefersReducedMotion]);
+  }, [liteMotion, prefersReducedMotion, videoEnabled]);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -285,7 +301,7 @@ export default function HeroBanner() {
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="none"
               onLoadedData={() => setVideoReady(true)}
             />
           )}

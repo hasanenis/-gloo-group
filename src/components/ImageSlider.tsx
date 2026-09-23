@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -24,6 +24,29 @@ type ImageSliderProps = {
 export default function ImageSlider({ className = '' }: ImageSliderProps) {
   const frameRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const [imagesEnabled, setImagesEnabled] = useState(false);
+
+  useEffect(() => {
+    const frame = frameRef.current;
+    if (!frame || imagesEnabled) return;
+
+    if (!('IntersectionObserver' in window)) {
+      setImagesEnabled(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        setImagesEnabled(true);
+        observer.disconnect();
+      },
+      { rootMargin: '400px 0px' },
+    );
+
+    observer.observe(frame);
+    return () => observer.disconnect();
+  }, [imagesEnabled]);
 
   useGSAP(() => {
     const root = frameRef.current;
@@ -96,7 +119,7 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
           <img
             key={image}
             data-image-slide
-            src={image}
+            src={imagesEnabled ? image : undefined}
             alt=""
             aria-hidden="true"
             width={1600}

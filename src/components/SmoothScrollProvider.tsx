@@ -30,7 +30,9 @@ export default function SmoothScrollProvider({ children }: { children: ReactNode
   }, []);
 
   useEffect(() => {
-    if (prefersReducedMotion) {
+    const useNativeScroll = window.matchMedia('(pointer: coarse)').matches;
+
+    if (prefersReducedMotion || useNativeScroll) {
       setLenis(null);
       return;
     }

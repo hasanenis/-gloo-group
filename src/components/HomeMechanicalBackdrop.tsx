@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { motionDuration, motionEase, motionStagger, usePrefersReducedMotion } from '../lib/motion';
+import { motionDuration, motionEase, motionStagger, useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
 
 const VERTICAL_LINES = [60, 720, 1380] as const;
 const HORIZONTAL_LINES = [72, 690, 1406, 2122, 3196] as const;
@@ -16,6 +16,7 @@ const GRID_MARKS = [
 export default function HomeMechanicalBackdrop() {
   const backdropRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const liteMotion = useLiteMotion();
 
   useGSAP(
     () => {
@@ -26,7 +27,7 @@ export default function HomeMechanicalBackdrop() {
       const lines = Array.from(root.querySelectorAll('[data-home-grid-line]'));
       const marks = Array.from(root.querySelectorAll('[data-home-grid-mark]'));
 
-      if (prefersReducedMotion) {
+      if (prefersReducedMotion || liteMotion) {
         gsap.set(root, { opacity: 1 });
         gsap.set(grid, { opacity: 1, clearProps: 'transform' });
         gsap.set([...lines, ...marks], { opacity: 1, scale: 1, clearProps: 'transform' });
@@ -50,7 +51,7 @@ export default function HomeMechanicalBackdrop() {
           0.22,
         );
     },
-    { scope: backdropRef, dependencies: [prefersReducedMotion] },
+    { scope: backdropRef, dependencies: [liteMotion, prefersReducedMotion] },
   );
 
   return (

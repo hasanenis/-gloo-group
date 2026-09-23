@@ -23,17 +23,9 @@ export const motionStagger = {
   loose: 0.16,
 };
 
-// Android Chrome reports `prefers-reduced-motion: reduce` whenever the OS
-// battery saver is on, which silently stripped the hero video, Lenis and every
-// GSAP animation for those visitors — the site looked broken in Chrome while
-// other browsers on the same phone were fine. The reference experience
-// (bat.archi) never gates on this query, so we deliberately ignore it.
-const HONOR_REDUCED_MOTION = false;
-
 export const prefersReducedMotion = () => (
-  HONOR_REDUCED_MOTION &&
   typeof window !== 'undefined' &&
-  window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+  window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches === true
 );
 
 export const motionDurationFor = (duration: number) => (
@@ -44,7 +36,7 @@ export function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(prefersReducedMotion);
 
   useEffect(() => {
-    if (!HONOR_REDUCED_MOTION || typeof window === 'undefined' || !window.matchMedia) return;
+    if (typeof window === 'undefined' || !window.matchMedia) return;
 
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const handleChange = () => setReduced(mediaQuery.matches);
@@ -55,4 +47,43 @@ export function usePrefersReducedMotion() {
   }, []);
 
   return reduced;
+}
+
+type NetworkInformation = EventTarget & {
+  effectiveType?: string;
+  saveData?: boolean;
+};
+
+function isLiteMotionEnvironment() {
+  if (typeof navigator === 'undefined') return false;
+
+  const device = navigator as Navigator & {
+    connection?: NetworkInformation;
+    deviceMemory?: number;
+  };
+  const connection = device.connection;
+
+  return Boolean(
+    connection?.saveData ||
+    connection?.effectiveType === 'slow-2g' ||
+    connection?.effectiveType === '2g' ||
+    (device.deviceMemory !== undefined && device.deviceMemory <= 2) ||
+    (navigator.hardwareConcurrency > 0 && navigator.hardwareConcurrency <= 4),
+  );
+}
+
+export function useLiteMotion() {
+  const [lite, setLite] = useState(isLiteMotionEnvironment);
+
+  useEffect(() => {
+    const device = navigator as Navigator & { connection?: NetworkInformation };
+    const connection = device.connection;
+    if (!connection) return;
+
+    const update = () => setLite(isLiteMotionEnvironment());
+    connection.addEventListener('change', update);
+    return () => connection.removeEventListener('change', update);
+  }, []);
+
+  return lite;
 }
