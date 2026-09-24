@@ -11,7 +11,7 @@ import { useSectionActivity } from '../hooks/useSectionActivity';
 gsap.registerPlugin(ScrollTrigger);
 
 const HERO_POSTER = '/media/hero-reel-poster.webp';
-const HERO_VIDEO_HIGH = '/media/hero-reel-high-20260924.mp4';
+const HERO_VIDEO_HIGH = '/media/hero-reel-high-20260924.mp4?v=2b50b53';
 const HERO_VIDEO_LOW = '/media/hero-reel-mobile-20260924.mp4?v=e661db2';
 type NetworkInformation = EventTarget & {
   effectiveType?: string;
