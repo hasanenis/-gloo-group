@@ -1,15 +1,11 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import {
-  Building2,
-  FolderOpen,
-  Home,
   Mail,
   MessageCircle,
   Phone,
   RotateCcw,
   Send,
 } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
 import { companyProfile } from '../data/projects';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { legacyLocale, pickLocaleText, useLocale, type Locale, type LocalizedString } from '../i18n';
@@ -1532,11 +1528,12 @@ function findBestTopic(message: string, topics: AssistantTopic[]) {
 
 export default function AssistantDock() {
   const { locale, t } = useLocale();
-  const location = useLocation();
   const goTo = useSiteNavigate();
   const conversationRef = useRef<HTMLDivElement>(null);
   const conversationEndRef = useRef<HTMLDivElement>(null);
-  const [panelMode, setPanelMode] = useState<PanelMode>(null);
+  const [panelMode, setPanelMode] = useState<PanelMode>(() =>
+    window.sessionStorage.getItem('igloo:assistant-open') === 'true' ? 'assistant' : null,
+  );
   const [selectedTopicId, setSelectedTopicId] = useState<AssistantTopicId | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [draft, setDraft] = useState('');
@@ -1574,6 +1571,24 @@ export default function AssistantDock() {
   const openAssistant = () => {
     setPanelMode((mode) => (mode === 'assistant' ? null : 'assistant'));
   };
+
+  useEffect(() => {
+    const open = () => setPanelMode('assistant');
+    const close = () => setPanelMode(null);
+    window.addEventListener('igloo:open-assistant', open);
+    window.addEventListener('igloo:close-assistant', close);
+    return () => {
+      window.removeEventListener('igloo:open-assistant', open);
+      window.removeEventListener('igloo:close-assistant', close);
+    };
+  }, []);
+
+  useEffect(() => {
+    const open = panelMode === 'assistant';
+    if (open) window.sessionStorage.setItem('igloo:assistant-open', 'true');
+    else window.sessionStorage.removeItem('igloo:assistant-open');
+    window.dispatchEvent(new CustomEvent('igloo:assistant-open-state', { detail: open }));
+  }, [panelMode]);
 
   const pushMessages = (nextMessages: ChatMessage[]) => {
     setMessages((current) => [...current, ...nextMessages]);
@@ -1771,11 +1786,6 @@ export default function AssistantDock() {
     );
   };
 
-  const isProjectsActive = location.pathname === '/projects' || location.pathname.startsWith('/projects/');
-  const isHomeActive = location.pathname === '/' && !location.hash;
-  const isCompanyActive = location.pathname === '/about';
-  const isContactActive = location.pathname === '/contact';
-
   return (
     <>
       <TooltipProvider delayDuration={120}>
@@ -1798,56 +1808,6 @@ export default function AssistantDock() {
           <TooltipContent>{openAssistantLabel}</TooltipContent>
         </Tooltip>
       </TooltipProvider>
-
-      <nav className="mobile-bottom-nav" aria-label={chromeLabels.mobileNavigation}>
-        <button
-          type="button"
-          className={cn(isHomeActive && 'is-active')}
-          aria-current={isHomeActive ? 'page' : undefined}
-          onClick={() => navigateAndClose('/')}
-        >
-          <Home className="h-[18px] w-[18px]" strokeWidth={2.1} />
-          <span>{t('home')}</span>
-        </button>
-        <button
-          type="button"
-          className={cn(isCompanyActive && 'is-active')}
-          aria-current={isCompanyActive ? 'page' : undefined}
-          onClick={() => navigateAndClose('/about')}
-        >
-          <Building2 className="h-[18px] w-[18px]" strokeWidth={2.1} />
-          <span>{t('company')}</span>
-        </button>
-        <button
-          type="button"
-          className={cn('mobile-bottom-nav__assistant', panelMode === 'assistant' && 'is-active')}
-          aria-label={openAssistantLabel}
-          aria-expanded={panelMode === 'assistant'}
-          onClick={openAssistant}
-        >
-          <span className="mobile-bottom-nav__assistant-orb">
-            <MessageCircle className="h-6 w-6" strokeWidth={2.25} />
-          </span>
-        </button>
-        <button
-          type="button"
-          className={cn(isProjectsActive && 'is-active')}
-          aria-current={isProjectsActive ? 'page' : undefined}
-          onClick={() => navigateAndClose('/projects')}
-        >
-          <FolderOpen className="h-[18px] w-[18px]" strokeWidth={2.1} />
-          <span>{t('projects')}</span>
-        </button>
-        <button
-          type="button"
-          className={cn(isContactActive && 'is-active')}
-          aria-current={isContactActive ? 'page' : undefined}
-          onClick={() => navigateAndClose('/contact')}
-        >
-          <Mail className="h-[18px] w-[18px]" strokeWidth={2.1} />
-          <span>{t('contact')}</span>
-        </button>
-      </nav>
 
       <Dialog open={panelMode === 'assistant'} onOpenChange={(open) => setPanelMode(open ? 'assistant' : null)}>
         <DialogContent tone="dock" className="assistant-panel" aria-label={labels.title}>

@@ -218,8 +218,8 @@ export default function Header() {
   const unprefixedPath = location.pathname.replace(/^\/(?:en|fr|tr|ar)(?=\/|$)/, '') || '/';
   const useDarkLogo = isScrolled || unprefixedPath === '/about' || unprefixedPath === '/contact';
   const logoSrc = useDarkLogo
-    ? 'https://i.ibb.co/84bV50SH/Chat-GPT-mage-5-May-2026-21-16-47-removebg-preview.png'
-    : 'https://i.ibb.co/fY50LKcW/Chat-GPT-mage-5-May-2026-21-15-03-removebg-preview.png';
+    ? '/igloo-logo-dark.webp'
+    : '/igloo-logo-light.webp';
 
   return (
     <header
@@ -243,6 +243,8 @@ export default function Header() {
             alt="Igloo Construction"
             width={420}
             height={110}
+            fetchPriority="high"
+            decoding="async"
             className="origin-left h-[54px] w-auto object-contain transition-[height,filter] duration-300 drop-shadow-sm md:h-[62px] lg:h-[74px] xl:h-[82px]"
           />
         </Link>

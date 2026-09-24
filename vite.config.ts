@@ -34,15 +34,10 @@ export default defineConfig({
           if (id.includes('maplibre-gl') || id.includes('@maplibre')) {
             return 'vendor-maps';
           }
-          if (
-            id.includes('gsap') ||
-            id.includes('lenis') ||
-            id.includes('motion') ||
-            id.includes('swiper') ||
-            id.includes('lottie-react')
-          ) {
-            return 'vendor-motion';
-          }
+          if (id.includes('gsap')) return 'vendor-gsap';
+          if (id.includes('lenis')) return 'vendor-lenis';
+          if (id.includes('swiper')) return 'vendor-swiper';
+          if (id.includes('framer-motion') || id.includes('/motion/')) return 'vendor-motion';
           return undefined;
         },
       },

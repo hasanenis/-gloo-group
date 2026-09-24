@@ -4,21 +4,21 @@
   "sourceRevision": "v1-dba325a2",
   "schemaVersion": 1,
   "sourceLocale": "en",
-  "revision": "v3-natural-fr",
+  "revision": "v4-seo-algeria-20260924",
   "status": "approved",
-  "updatedAt": "2026-07-12T15:40:00.000Z",
+  "updatedAt": "2026-09-24T00:00:00.000Z",
   "seo": {
-    "title": "Igloo Bâtiment – Igloo Groupe | Entreprise Générale de Construction en Algérie",
-    "description": "Igloo Bâtiment (SARL Igloo Yapi Construction) est une entreprise générale qualifiée Catégorie 6, réalisant des projets résidentiels, commerciaux et d’infrastructures à travers l’Algérie. Groupe Igloo Construction – siège à Bir Khadem, Alger.",
-    "socialTitle": "Igloo Bâtiment | Igloo Groupe – Construction Clés en Main en Algérie",
-    "socialDescription": "Igloo Bâtiment – Igloo Groupe – entreprise générale Catégorie 6 en Algérie, spécialisée dans le résidentiel, le commercial et les infrastructures VRD."
+    "title": "Entreprise de construction à Alger | Igloo Construction",
+    "description": "SARL Igloo Yapi Construction, entreprise générale qualifiée Catégorie 6 basée à Bir Khadem, Alger. Projets résidentiels, commerciaux et travaux VRD en Algérie.",
+    "socialTitle": "Igloo Construction | Entreprise générale à Alger et en Algérie",
+    "socialDescription": "Entreprise générale Catégorie 6 basée à Bir Khadem, Alger, au service des projets résidentiels, commerciaux et VRD en Algérie."
   },
   "content": {
     "hero": {
       "eyebrow": "Igloo Bâtiment – Igloo Groupe",
-      "title": "Construction Fiable et Entreprise Générale Clés en Main en Algérie",
-      "lead": "Nous concrétisons vos projets résidentiels, mixtes et d'infrastructures grâce à une rigueur d'ingénierie, une gestion de chantier performante et un engagement qualité permanent.",
-      "primaryCta": "Découvrir les Projets",
+      "title": "Entreprise de construction à Alger et partout en Algérie",
+      "lead": "Nous accompagnons les promoteurs et maîtres d’ouvrage publics ou privés dans leurs projets résidentiels, commerciaux et d’infrastructures, de la préparation à l’exécution du chantier.",
+      "primaryCta": "Défiler vers le bas",
       "secondaryCta": "Nous Contacter",
       "trustFacts": [
         {
@@ -31,7 +31,7 @@
         },
         {
           "value": "2 500+",
-          "label": "Logements"
+          "label": "Logements dans les programmes"
         },
         {
           "value": "4",
@@ -61,7 +61,7 @@
         },
         {
           "value": "2 500+",
-          "label": "Logements",
+          "label": "Logements dans les programmes",
           "detail": "Programmes résidentiels et mixtes"
         },
         {
@@ -172,8 +172,8 @@
     "footer": {
       "eyebrow": "Contact",
       "title": "Bâtissons Ensemble Votre Prochain Projet",
-      "lead": "Contactez notre bureau technique pour étudier vos projets résidentiels, commerciaux ou d'infrastructures.",
-      "emailLabel": "Envoyer un e-mail au Bureau Technique",
+      "lead": "Présentez la localisation, le programme, la phase d’avancement et les documents disponibles à notre bureau technique pour une première étude.",
+      "emailLabel": "Présenter votre projet au bureau technique",
       "phoneLabel": "Appeler le Siège Social",
       "proofLine": "Igloo Bâtiment – Igloo Groupe • Bir Khadem, Alger • Entreprise Générale Qualifiée Catégorie 6 • Construction Clés en Main & Aménagements VRD"
     }

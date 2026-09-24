@@ -72,6 +72,28 @@ function isLiteMotionEnvironment() {
   );
 }
 
+function isSaveDataEnabled() {
+  if (typeof navigator === 'undefined') return false;
+  const device = navigator as Navigator & { connection?: NetworkInformation };
+  return device.connection?.saveData === true;
+}
+
+export function useSaveDataEnabled() {
+  const [enabled, setEnabled] = useState(isSaveDataEnabled);
+
+  useEffect(() => {
+    const device = navigator as Navigator & { connection?: NetworkInformation };
+    const connection = device.connection;
+    if (!connection) return;
+
+    const update = () => setEnabled(isSaveDataEnabled());
+    connection.addEventListener('change', update);
+    return () => connection.removeEventListener('change', update);
+  }, []);
+
+  return enabled;
+}
+
 export function useLiteMotion() {
   const [lite, setLite] = useState(isLiteMotionEnvironment);
 

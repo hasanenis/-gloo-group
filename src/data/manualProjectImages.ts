@@ -384,7 +384,7 @@ export const manualProjectImages: Record<string, ManualProjectImageConfig> = {
     altFr: "Programme résidentiel et commercial de Dely Brahim",
     images: {
       hero: {
-      src: "/projects/dely-brahim-240-housing/asd.png",
+      src: "/projects/dely-brahim-240-housing/asd-optimized.webp",
       fit: "cover",
       positionX: 50,
       positionY: 70,
@@ -419,7 +419,7 @@ export const manualProjectImages: Record<string, ManualProjectImageConfig> = {
       scale: 1.14,
     },
       panorama: {
-      src: "/projects/dely-brahim-240-housing/asd.png",
+      src: "/projects/dely-brahim-240-housing/asd-optimized.webp",
       fit: "cover",
       positionX: 50,
       positionY: 100,

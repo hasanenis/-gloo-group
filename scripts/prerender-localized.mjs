@@ -99,6 +99,7 @@ try {
       const page = await context.newPage();
       await page.addInitScript((preferredLocale) => {
         localStorage.setItem('igloo:locale', preferredLocale === 'ar' ? 'ar-DZ' : preferredLocale);
+        window.__IGLOO_PRERENDER__ = true;
       }, locale);
       // Prerendering only needs the rendered HTML. Remote media and fonts can
       // keep a marketing page network-busy indefinitely, so skip those assets
@@ -122,6 +123,17 @@ try {
         { locale: documentLocales[locale], canonical: expectedCanonical },
         { timeout: 30_000 },
       );
+      if (!route) {
+        await page.evaluate(async () => {
+          const step = Math.max(480, Math.floor(window.innerHeight * 0.75));
+          for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
+            window.scrollTo(0, y);
+            await new Promise((resolve) => window.setTimeout(resolve, 80));
+          }
+          window.scrollTo(0, 0);
+          await new Promise((resolve) => window.setTimeout(resolve, 120));
+        });
+      }
       const html = await page.content();
       const output = outputFile(locale, route);
       await fs.mkdir(path.dirname(output), { recursive: true });

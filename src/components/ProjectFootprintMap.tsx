@@ -5,6 +5,7 @@ import { projectMapPoints, type ProjectMapPoint } from '../data/projectMap';
 import { getProjectHeroImage } from '../data/projectHeroImage';
 import { projects } from '../data/projects';
 import { pickLocaleText, useLocale, type Locale } from '../i18n';
+import { useSectionActivity } from '../hooks/useSectionActivity';
 
 type ClusterId = ProjectMapPoint['cluster'];
 
@@ -125,6 +126,7 @@ export default function ProjectFootprintMap({
   ariaLabel,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const mapActive = useSectionActivity(containerRef, '100px 0px');
   const mapRef       = useRef<MapLibreMap | null>(null);
   const markersRef   = useRef<maplibregl.Marker[]>([]);
   const hoveredIdRef = useRef<string | number | null>(null);
@@ -457,6 +459,13 @@ export default function ProjectFootprintMap({
     updateMarkers(activeSlug, clusterFilter);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSlug, clusterFilter]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    if (mapActive) map.resize();
+    else map.stop();
+  }, [mapActive]);
 
   useEffect(() => {
     const map = mapRef.current;

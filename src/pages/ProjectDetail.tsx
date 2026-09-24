@@ -186,6 +186,15 @@ function getIntrinsicImageSize(aspectRatio: string) {
   return { width, height };
 }
 
+function getResponsiveImageSrcSet(image: ProjectImage) {
+  const match = image.src.match(/^(\/projects\/dely-brahim-240-housing\/(?:01-final-1|02-final-2|03-final-3|04-final-4))\.webp$/);
+  if (!match) return undefined;
+
+  return [480, 768, 1200, 1400]
+    .map((width) => `${match[1]}-${width}.webp ${width}w`)
+    .join(', ');
+}
+
 function ParallaxImage({
   image,
   className = '',
@@ -208,6 +217,7 @@ function ParallaxImage({
   const { locale } = useLocale();
   const resolvedFit = settings?.fit ?? fit;
   const { width, height } = getIntrinsicImageSize(aspectRatio);
+  const srcSet = getResponsiveImageSrcSet(image);
 
   return (
     <figure
@@ -219,6 +229,8 @@ function ParallaxImage({
     >
       <img
         src={image.src}
+        srcSet={srcSet}
+        sizes={srcSet ? '(max-width: 768px) 100vw, 50vw' : undefined}
         alt={localized(image.alt, locale)}
         width={width}
         height={height}
@@ -561,7 +573,11 @@ export default function ProjectDetail() {
       window.clearTimeout(settleRefresh);
       cleanupHeroEntryRelease();
     };
-  }, { scope: rootRef, dependencies: [content?.slug, liteMotion, prefersReducedMotion] });
+  }, {
+    scope: rootRef,
+    dependencies: [content?.slug, liteMotion, prefersReducedMotion],
+    revertOnUpdate: true,
+  });
 
   if (!project || !content || !batModel || !heroImage || !firstImage || !squareImage || !wideImage) {
     return (
@@ -655,7 +671,7 @@ export default function ProjectDetail() {
           <h2>{tr(introText)}</h2>
         </div>
         <div className="igloo-simple-split__image" data-reveal>
-          <ParallaxImage image={firstImage} aspectRatio="4 / 3" loading="eager" from={-14} to={14} settings={introImageSettings} />
+          <ParallaxImage image={firstImage} aspectRatio="4 / 3" loading="lazy" from={-14} to={14} settings={introImageSettings} />
         </div>
       </section>
 
@@ -679,10 +695,10 @@ export default function ProjectDetail() {
 
       <section className="igloo-simple-duo" aria-label="Project photographs">
         <div data-reveal>
-          <ParallaxImage image={squareImage} aspectRatio="1 / 1" loading="eager" fit="cover" from={-13} to={13} settings={squareImageSettings} />
+          <ParallaxImage image={squareImage} aspectRatio="1 / 1" loading="lazy" fit="cover" from={-13} to={13} settings={squareImageSettings} />
         </div>
         <div data-reveal>
-          <ParallaxImage image={wideImage} aspectRatio="2 / 1" loading="eager" fit="cover" from={-11} to={11} settings={wideImageSettings} />
+          <ParallaxImage image={wideImage} aspectRatio="2 / 1" loading="lazy" fit="cover" from={-11} to={11} settings={wideImageSettings} />
         </div>
       </section>
 

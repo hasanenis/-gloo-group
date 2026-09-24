@@ -419,10 +419,20 @@ export const heroSlides = [
 
 export const homeProjectCards = projects;
 
-export const imageSliderImages = [
-  '/homepage/company-profile-showcase.png',
-  '/projects/dely-brahim-240-housing/04-final-4.webp',
-  '/projects/dely-brahim-240-housing/01-final-1.webp',
-  '/projects/dely-brahim-240-housing/03-final-3.webp',
-  '/projects/dely-brahim-240-housing/02-final-2.webp',
+const imageSliderSources = [
+  '/homepage/company-profile-showcase-optimized.webp',
+  '/projects/dely-brahim-240-housing/04-final-4-optimized.webp',
+  '/projects/dely-brahim-240-housing/01-final-1-optimized.webp',
+  '/projects/dely-brahim-240-housing/03-final-3-optimized.webp',
+  '/projects/dely-brahim-240-housing/02-final-2-optimized.webp',
 ];
+
+export const imageSliderImages = imageSliderSources.map((src) => {
+  const base = src.replace(/-optimized\.webp$/u, '').replace(/\.webp$/u, '');
+  const widths = src.includes('company-profile-showcase') ? [480, 768] : [480, 768, 1200, 1400];
+  return {
+    src,
+    srcSet: widths.map((width) => `${base}-${width}.webp ${width}w`).join(', '),
+    sizes: '(max-width: 768px) 100vw, 50vw',
+  };
+});

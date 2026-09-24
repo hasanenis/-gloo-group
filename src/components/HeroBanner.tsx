@@ -2,16 +2,15 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { ArrowRight } from 'lucide-react';
-import { motionDuration, motionEase, useLiteMotion, usePrefersReducedMotion } from '../lib/motion';
+import { motionDuration, motionEase, useLiteMotion, usePrefersReducedMotion, useSaveDataEnabled } from '../lib/motion';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
-import SiteLink from './SiteLink';
+import { useLenis } from './SmoothScrollProvider';
+import { useSectionActivity } from '../hooks/useSectionActivity';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HERO_VIDEO_URL = '/media/hero-reel.mp4';
-const HERO_POSTER = '/media/hero-poster.webp';
+const HERO_POSTER = '/media/hero-reel-poster.webp';
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -28,15 +27,19 @@ export default function HeroBanner() {
   const { locale, t } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
   const liteMotion = useLiteMotion();
+  const saveDataEnabled = useSaveDataEnabled();
+  const posterOnly = liteMotion && !saveDataEnabled;
+  const lenis = useLenis();
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaParallaxRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionActive = useSectionActivity(containerRef);
   const [videoReady, setVideoReady] = useState(false);
   const [videoEnabled, setVideoEnabled] = useState(() => (
     typeof window !== 'undefined' && window.sessionStorage.getItem('igloo:intro-seen') === 'true'
   ));
-  const posterReady = prefersReducedMotion || liteMotion || !videoEnabled;
+  const posterReady = prefersReducedMotion || posterOnly || !videoEnabled;
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
@@ -58,13 +61,23 @@ export default function HeroBanner() {
   }, [videoEnabled]);
 
   useEffect(() => {
-    if (prefersReducedMotion || liteMotion || !videoEnabled) {
+    if (prefersReducedMotion || posterOnly || !videoEnabled) {
       setVideoReady(false);
+      videoRef.current?.pause();
+      return;
+    }
+
+    if (!sectionActive) {
+      videoRef.current?.pause();
       return;
     }
 
     const video = videoRef.current;
     if (!video) return;
+    const markVideoReady = () => setVideoReady(true);
+    video.addEventListener('loadeddata', markVideoReady);
+    video.addEventListener('playing', markVideoReady);
+    if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) markVideoReady();
 
     // Some mobile browsers only honour autoplay when `muted` is set as a
     // live property (not just the JSX attribute) before the first play()
@@ -72,31 +85,31 @@ export default function HeroBanner() {
     video.muted = true;
 
     const tryPlay = () => {
+      if (!sectionActive || document.visibilityState === 'hidden') return;
       video.muted = true;
       void video.play().catch(() => {
         // Autoplay can be blocked on some browsers; muted playback usually succeeds.
       });
     };
 
-    if (video.readyState >= 2) {
-      tryPlay();
-    } else {
-      video.addEventListener('canplay', tryPlay, { once: true });
-    }
+    // Calling play() also starts the request when preload="none" is set;
+    // waiting for `canplay` first can deadlock on data-saving mobile browsers.
+    tryPlay();
 
     // Backgrounded/hidden tabs can suspend the hero video at the browser
     // level without ever firing our `pause` handler in a way we requested —
     // it just sits frozen on the last frame. Resume it whenever the page
     // becomes visible again (covers tab-switching and route navigations
     // that briefly hide the document).
-    const resumeIfNeeded = () => {
-      if (document.visibilityState === 'visible' && video.paused) {
+    const syncPlayback = () => {
+      if (sectionActive && document.visibilityState === 'visible' && video.paused) {
         tryPlay();
+      } else if ((!sectionActive || document.visibilityState === 'hidden') && !video.paused) {
+        video.pause();
       }
     };
 
-    document.addEventListener('visibilitychange', resumeIfNeeded);
-    video.addEventListener('pause', resumeIfNeeded);
+    document.addEventListener('visibilitychange', syncPlayback);
 
     // Some mobile browsers silently reject the very first autoplay attempt
     // (no error we can act on, it just never starts) and only allow
@@ -104,7 +117,7 @@ export default function HeroBanner() {
     // scroll/click anywhere on the page and nudge playback if it's still
     // sitting paused.
     const retryOnFirstGesture = () => {
-      if (video.paused) tryPlay();
+      if (sectionActive && document.visibilityState === 'visible' && video.paused) tryPlay();
     };
     const gestureEvents: Array<keyof DocumentEventMap> = ['touchstart', 'pointerdown', 'scroll'];
     gestureEvents.forEach((eventName) =>
@@ -112,14 +125,27 @@ export default function HeroBanner() {
     );
 
     return () => {
-      video.removeEventListener('canplay', tryPlay);
-      document.removeEventListener('visibilitychange', resumeIfNeeded);
-      video.removeEventListener('pause', resumeIfNeeded);
+      video.removeEventListener('loadeddata', markVideoReady);
+      video.removeEventListener('playing', markVideoReady);
+      document.removeEventListener('visibilitychange', syncPlayback);
       gestureEvents.forEach((eventName) =>
         document.removeEventListener(eventName, retryOnFirstGesture),
       );
     };
-  }, [liteMotion, prefersReducedMotion, videoEnabled]);
+  }, [posterOnly, prefersReducedMotion, sectionActive, videoEnabled]);
+
+  const scrollToNextSection = () => {
+    const target = document.getElementById('about');
+    if (!target) return;
+
+    if (lenis) {
+      lenis.scrollTo(target, { offset: -90 });
+      return;
+    }
+
+    const top = target.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: Math.max(0, top), behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+  };
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -221,6 +247,17 @@ export default function HeroBanner() {
       );
     }
 
+    const scrollIndicator = containerRef.current?.querySelector<HTMLElement>(
+      '[data-hero-scroll-indicator]',
+    );
+    if (scrollIndicator) {
+      gsap.fromTo(
+        scrollIndicator,
+        { scaleY: 0, transformOrigin: 'top center' },
+        { scaleY: 1, duration: 1.1, ease: 'power2.inOut', repeat: -1, yoyo: true, repeatDelay: 0.15 },
+      );
+    }
+
     if (loopWords.length < 2) return;
 
     const loopTl = gsap.timeline({
@@ -281,29 +318,29 @@ export default function HeroBanner() {
           className="pointer-events-none absolute inset-x-0 -inset-y-[10%] will-change-transform md:-inset-y-[12%] lg:-inset-y-[14%]"
           aria-hidden="true"
         >
-          {posterReady ? (
-            <img
-              src={HERO_POSTER}
-              alt=""
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              decoding="async"
-              className="absolute inset-0 h-full w-full object-cover object-[66%_50%] sm:object-center"
-            />
-          ) : (
+          <img
+            src={HERO_POSTER}
+            alt=""
+            width={1280}
+            height={720}
+            fetchPriority="high"
+            decoding="async"
+            className={`absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${!posterReady && videoReady ? 'opacity-0' : 'opacity-100'}`}
+          />
+          {!posterReady && (
             <video
               ref={videoRef}
               className={`hero-media-kenburns absolute inset-0 h-full w-full object-cover object-[66%_50%] transition-opacity duration-700 sm:object-center ${videoReady ? 'opacity-100' : 'opacity-0'}`}
-              src={HERO_VIDEO_URL}
               poster={HERO_POSTER}
               autoPlay
               muted
               loop
               playsInline
               preload="none"
-              onLoadedData={() => setVideoReady(true)}
-            />
+            >
+              <source src="/media/hero-reel-mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
+              <source src="/media/hero-reel-optimized.mp4" type="video/mp4" />
+            </video>
           )}
         </div>
         <div className="absolute inset-0 bg-black/40" />
@@ -350,22 +387,21 @@ export default function HeroBanner() {
               ))}
             </span>
           </h1>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <SiteLink
-              to="/projects"
-              className="inline-flex min-h-12 items-center gap-2 bg-[#c22026] px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#a81b21]"
-            >
-              {localize(homepageContent.hero.primaryCta, locale)}
-              <ArrowRight className="h-4 w-4" strokeWidth={2.2} />
-            </SiteLink>
-            <SiteLink
-              to="/contact"
-              className="inline-flex min-h-12 items-center border border-white/55 px-6 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:border-white hover:bg-white/10"
-            >
-              {localize(homepageContent.hero.secondaryCta, locale)}
-            </SiteLink>
-          </div>
         </div>
+        <a
+          href="#about"
+          onClick={(event) => {
+            event.preventDefault();
+            scrollToNextSection();
+          }}
+          aria-label={localize(homepageContent.hero.primaryCta, locale)}
+          className="absolute bottom-[calc(env(safe-area-inset-bottom)+6.5rem)] left-1/2 z-30 flex min-h-11 -translate-x-1/2 flex-col items-center justify-center gap-2 whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.22em] text-white/85 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:bottom-8"
+        >
+          <span>{localize(homepageContent.hero.primaryCta, locale)}</span>
+          <span aria-hidden="true" className="block h-6 w-px overflow-hidden bg-white/40">
+            <span data-hero-scroll-indicator className="block h-full w-full origin-top bg-white" />
+          </span>
+        </a>
       </div>
     </div>
   );

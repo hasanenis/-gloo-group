@@ -71,6 +71,10 @@ export default function GlobalCursor() {
 
     const moveX = gsap.quickTo(el, 'x', { duration: 0.16, ease: 'power3.out' });
     const moveY = gsap.quickTo(el, 'y', { duration: 0.16, ease: 'power3.out' });
+    let visible = false;
+    let currentTarget: HTMLElement | null = null;
+    let currentLabel = '';
+    let currentVariant: CursorVariant = 'default';
 
     const expandCard = (text: string, variant: CursorVariant) => {
       const cursorSize = getCursorSize(variant);
@@ -134,11 +138,18 @@ export default function GlobalCursor() {
       const ignored = element?.closest<HTMLElement>('[data-cursor-ignore]');
 
       if (ignored) {
+        currentTarget = null;
         shrink();
         return;
       }
 
       const card = element?.closest<HTMLElement>('[data-cursor-card]');
+      const nextLabel = card?.dataset.cursorLabel ?? 'VIEW';
+      const nextVariant = card?.dataset.cursorVariant === 'slider' ? 'slider' : 'default';
+      if ((card ?? null) === currentTarget && nextLabel === currentLabel && nextVariant === currentVariant) return;
+      currentTarget = card ?? null;
+      currentLabel = nextLabel;
+      currentVariant = nextVariant;
 
       if (card) {
         expandCard(
@@ -153,8 +164,11 @@ export default function GlobalCursor() {
     const onPointerMove = (event: PointerEvent) => {
       moveX(event.clientX);
       moveY(event.clientY);
-      gsap.to(el, { opacity: 1, duration: 0.12, overwrite: 'auto' });
-      syncTarget(event.target);
+      if (!visible) {
+        visible = true;
+        gsap.to(el, { opacity: 1, duration: 0.12, overwrite: 'auto' });
+        syncTarget(event.target);
+      }
     };
 
     const onPointerOver = (event: PointerEvent) => {
@@ -170,10 +184,13 @@ export default function GlobalCursor() {
       const relatedTarget = event.relatedTarget as HTMLElement | null;
       if (relatedTarget && card.contains(relatedTarget)) return;
 
+      currentTarget = null;
       shrink();
     };
 
     const onLeave = () => {
+      visible = false;
+      currentTarget = null;
       shrink();
       gsap.to(el, { opacity: 0, duration: 0.18 });
     };

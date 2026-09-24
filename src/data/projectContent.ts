@@ -133,21 +133,33 @@ function mergeProjectNodes(fallback: unknown, canonical: unknown): unknown {
   return canonical;
 }
 
-const canonicalProjectContent: ProjectContentBySlug = Object.fromEntries(
-  projects.map((project) => [
-    project.slug,
-    mergeProjectNodes(getLegacyProjectContent(project), canonicalProjectNode(project.slug)) as ProjectContent,
-  ]),
-);
+const canonicalProjectContent = new Map<string, ProjectContent>();
 
 export function getProjectContent(project: ProjectRecord) {
-  return canonicalProjectContent[project.slug] ?? getLegacyProjectContent(project);
+  const cached = canonicalProjectContent.get(project.slug);
+  if (cached) return cached;
+  const content = mergeProjectNodes(
+    getLegacyProjectContent(project),
+    canonicalProjectNode(project.slug),
+  ) as ProjectContent;
+  canonicalProjectContent.set(project.slug, content);
+  return content;
 }
 
 export function localized(value: LocalizedText, locale: Locale) {
   return pickLocaleText(locale, value);
 }
 
-export const projectContentBySlug: ProjectContentBySlug = Object.fromEntries(
-  projects.map((project) => [project.slug, getProjectContent(project)]),
-);
+export const projectContentBySlug: ProjectContentBySlug = new Proxy(Object.create(null) as ProjectContentBySlug, {
+  get(_target, slug) {
+    if (typeof slug !== 'string') return undefined;
+    const project = projects.find((item) => item.slug === slug);
+    return project ? getProjectContent(project) : undefined;
+  },
+  ownKeys: () => projects.map((project) => project.slug),
+  getOwnPropertyDescriptor(_target, slug) {
+    if (typeof slug !== 'string') return undefined;
+    const project = projects.find((item) => item.slug === slug);
+    return project ? { configurable: true, enumerable: true, value: getProjectContent(project) } : undefined;
+  },
+});

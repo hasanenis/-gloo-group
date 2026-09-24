@@ -6,6 +6,7 @@
 import { Fragment, lazy, Suspense, useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from 'react-router-dom';
 import Header from './components/Header';
+import MobileBottomNav from './components/MobileBottomNav';
 import SeoManager from './components/SeoManager';
 import SmoothScrollProvider, { useLenis } from './components/SmoothScrollProvider';
 import { LocaleProvider, localizedPath, useLocale } from './i18n';
@@ -22,6 +23,7 @@ const ProjectsDemo = lazy(() => import('./pages/ProjectsDemo'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const Services = lazy(() => import('./pages/Services'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const MapSimpleDemo = lazy(() => import('./pages/MapSimpleDemo'));
 const SiteIntro = lazy(() => import('./components/SiteIntro'));
 const GlobalCursor = lazy(() => import('./components/GlobalCursor'));
 const AssistantDock = lazy(() => import('./components/AssistantDock'));
@@ -215,6 +217,12 @@ function AppShellContent() {
   }, [isBatDemoRoute, showIntro]);
 
   useEffect(() => {
+    const prepareAssistant = () => setAssistantReady(true);
+    window.addEventListener('igloo:open-assistant', prepareAssistant);
+    return () => window.removeEventListener('igloo:open-assistant', prepareAssistant);
+  }, []);
+
+  useEffect(() => {
     if (!isBatDemoRoute) {
       document.documentElement.classList.remove(
         'bat-demo-route-transitioning',
@@ -250,6 +258,7 @@ function AppShellContent() {
         </div>
       )}
       {!showIntro && !isBatDemoRoute && <Header />}
+      {!showIntro && !isBatDemoRoute && <MobileBottomNav />}
       {showIntroVeil && (
         <div
           className="fixed inset-0 z-[139] pointer-events-none overflow-hidden"
@@ -277,6 +286,7 @@ function AppShellContent() {
           <Route path="/:locale/projects/:slug" element={<LocaleGuard><ProjectDetail /></LocaleGuard>} />
           <Route path="/:locale/services" element={<LocaleGuard><Services /></LocaleGuard>} />
           <Route path="/:locale/services/:slug" element={<LocaleGuard><ServiceDetail /></LocaleGuard>} />
+          <Route path="/:locale/map-demo" element={<LocaleGuard><MapSimpleDemo /></LocaleGuard>} />
           <Route path="/:locale/404" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
           <Route path="/:locale/*" element={<LocaleGuard><LocalizedNotFound /></LocaleGuard>} />
 

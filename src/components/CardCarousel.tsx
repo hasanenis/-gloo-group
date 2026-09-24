@@ -48,12 +48,15 @@ export default function CardCarousel<T>({
   const [state, setState] = useState({ activeIndex: 0, canPrev: false, canNext: items.length > 1, progress: 0 });
 
   const sync = (swiper: SwiperInstance) => {
-    setState({
+    const next = {
       activeIndex: swiper.activeIndex,
       canPrev: !swiper.isBeginning,
       canNext: !swiper.isEnd,
       progress: Number.isFinite(swiper.progress) ? Math.min(1, Math.max(0, swiper.progress)) : 0,
-    });
+    };
+    setState((previous) => previous.activeIndex === next.activeIndex
+      && previous.canPrev === next.canPrev && previous.canNext === next.canNext
+      && previous.progress === next.progress ? previous : next);
   };
 
   const carouselState: CardCarouselState = {
@@ -117,12 +120,13 @@ export function CarouselProgressBar({
       return;
     }
 
-    gsap.to(barRef.current, {
+    const tween = gsap.to(barRef.current, {
       scaleX: Math.max(0.03, progress),
       duration: 0.45,
       ease: 'power2.out',
       overwrite: 'auto',
     });
+    return () => { tween.kill(); };
   }, [prefersReducedMotion, progress]);
 
   return (

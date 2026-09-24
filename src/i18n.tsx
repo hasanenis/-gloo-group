@@ -11,8 +11,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { i18n, type Messages } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
 import { uiMessages, type UiMessageKey } from './i18n/messages';
-import { repairMojibake } from './i18n/runtime';
 import { runtimeCatalogs } from './i18n/catalogs.generated';
+import { repairMojibake } from './i18n/runtime';
 import { getSharedContent } from './content';
 import { documentLanguageTag } from './data/siteSeo';
 
@@ -76,13 +76,13 @@ type LocaleContextValue = {
 };
 
 const STORAGE_KEY = 'igloo:locale';
+const loadedLocales = new Set<Locale>();
 const catalogMessagesByLocale: Record<Locale, Messages> = {
   en: runtimeCatalogs.en as unknown as Messages,
   fr: runtimeCatalogs.fr as unknown as Messages,
   'ar-DZ': runtimeCatalogs['ar-DZ'] as unknown as Messages,
   tr: runtimeCatalogs.tr as unknown as Messages,
 };
-const loadedLocales = new Set<Locale>();
 const sharedUiKeys: Partial<Record<UiMessageKey, string>> = {
   home: 'home',
   projects: 'projects',
@@ -150,7 +150,6 @@ export function legacyLocale(locale: Locale): LegacyLocale | Locale {
 
 async function loadCatalog(locale: Locale) {
   if (loadedLocales.has(locale)) return;
-
   i18n.load(locale, repairCatalogValue(catalogMessagesByLocale[locale]) as Messages);
   loadedLocales.add(locale);
 }
@@ -178,11 +177,18 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let cancelled = false;
-    setCatalogReady(false);
-
     const desiredLocale = pathLocale ?? locale;
     if (desiredLocale !== locale) {
+      setCatalogReady(false);
       setLocaleState(desiredLocale);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    const alreadyLoaded = loadedLocales.has(desiredLocale);
+    setCatalogReady(alreadyLoaded);
+    if (alreadyLoaded) {
       return () => {
         cancelled = true;
       };

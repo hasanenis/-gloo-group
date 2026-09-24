@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 import { usePrefersReducedMotion } from '../lib/motion';
+import { requestLayoutRefresh } from '../lib/layoutRefresh';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -234,13 +235,12 @@ export function useEditorialReveal(
       groups.forEach(revealGroup);
     }, root);
 
-    const refresh = requestAnimationFrame(() => ScrollTrigger.refresh());
+    requestLayoutRefresh();
 
     return () => {
-      cancelAnimationFrame(refresh);
       context.revert();
       splits.forEach((split) => split.revert());
-      ScrollTrigger.refresh();
+      requestLayoutRefresh();
     };
   }, [rootRef, prefersReducedMotion, ...dependencies]);
 }

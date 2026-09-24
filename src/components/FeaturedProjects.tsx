@@ -11,6 +11,7 @@ import { localizedPath, pickLocaleText, useLocale } from '../i18n';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { useEditorialReveal } from '../hooks/useEditorialReveal';
 import { Button } from './ui/button';
+import { preloadRoute } from '../lib/preloadRoute';
 import { IconButton } from './ui/icon-button';
 import { SectionHeader } from './ui/section-header';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
@@ -28,6 +29,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   const cardTitle = localizedProjectCardTitle(project, locale);
 
   const handleMouseEnter = () => {
+    preloadRoute(`/projects/${project.slug}`);
     if (!cardRef.current || prefersReducedMotion) return;
     const q = gsap.utils.selector(cardRef.current);
     gsap.to(q('.project-img'), { scale: 1.03, duration: motionDuration.hover, ease: motionEase.soft });
@@ -57,6 +59,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
       to={localizedPath(locale, `/projects/${project.slug}`)}
       className="group relative block h-[58vh] min-h-[340px] max-h-[580px] w-full cursor-pointer overflow-hidden bg-black outline-none focus-visible:ring-2 focus-visible:ring-[#c22026] focus-visible:ring-offset-4"
       onMouseEnter={handleMouseEnter}
+      onFocus={() => preloadRoute(`/projects/${project.slug}`)}
       onMouseLeave={handleMouseLeave}
       onClick={(event) => {
         event.preventDefault();

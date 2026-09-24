@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState, type RefObject } from 'react';
 import { useLocation } from 'react-router-dom';
 import HeroBanner from '../components/HeroBanner';
 import HomeMechanicalBackdrop from '../components/HomeMechanicalBackdrop';
@@ -14,9 +14,39 @@ function SectionFallback({ className = '', minHeight = '20rem' }: { className?: 
   return <div aria-hidden="true" className={className} style={{ minHeight }} />;
 }
 
+function useDeferredSection<T extends HTMLElement>(): [RefObject<T | null>, boolean] {
+  const ref = useRef<T>(null);
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const section = ref.current;
+    if (!section) return;
+    if ((window as Window & { __IGLOO_PRERENDER__?: boolean }).__IGLOO_PRERENDER__) {
+      setReady(true);
+      return;
+    }
+    if (!('IntersectionObserver' in window)) {
+      setReady(true);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry?.isIntersecting) return;
+      setReady(true);
+      observer.disconnect();
+    }, { rootMargin: '700px 0px' });
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+  return [ref, ready];
+}
+
 export default function Home() {
   const location = useLocation();
   const lenis = useLenis();
+  const [aboutRef, aboutReady] = useDeferredSection<HTMLElement>();
+  const [projectsRef, projectsReady] = useDeferredSection<HTMLElement>();
+  const [processRef, processReady] = useDeferredSection<HTMLElement>();
+  const [footprintRef, footprintReady] = useDeferredSection<HTMLElement>();
+  const [footerRef, footerReady] = useDeferredSection<HTMLElement>();
 
   useEffect(() => {
     if (!location.hash) return;
@@ -43,30 +73,20 @@ export default function Home() {
       <section data-guide-section="hero">
         <HeroBanner />
       </section>
-      <section id="about" data-guide-section="about" className="bg-white">
-        <Suspense fallback={<SectionFallback className="bg-white" minHeight="42rem" />}>
-          <AboutUs />
-        </Suspense>
+      <section ref={aboutRef} id="about" data-guide-section="about" className="bg-white">
+        {aboutReady ? <Suspense fallback={<SectionFallback className="bg-white" minHeight="42rem" />}><AboutUs /></Suspense> : <SectionFallback className="bg-white" minHeight="42rem" />}
       </section>
-      <section id="featured-projects" data-guide-section="projects" className="overflow-x-hidden">
-        <Suspense fallback={<SectionFallback className="bg-white" minHeight="34rem" />}>
-          <FeaturedProjects />
-        </Suspense>
+      <section ref={projectsRef} id="featured-projects" data-guide-section="projects" className="overflow-x-hidden">
+        {projectsReady ? <Suspense fallback={<SectionFallback className="bg-white" minHeight="34rem" />}><FeaturedProjects /></Suspense> : <SectionFallback className="bg-white" minHeight="34rem" />}
       </section>
-      <section data-guide-section="process">
-        <Suspense fallback={<SectionFallback className="bg-[#f7f6f1]" minHeight="28rem" />}>
-          <DeliveryProcessSection />
-        </Suspense>
+      <section ref={processRef} data-guide-section="process">
+        {processReady ? <Suspense fallback={<SectionFallback className="bg-[#f7f6f1]" minHeight="28rem" />}><DeliveryProcessSection /></Suspense> : <SectionFallback className="bg-[#f7f6f1]" minHeight="28rem" />}
       </section>
-      <section data-guide-section="footprint">
-        <Suspense fallback={<SectionFallback className="bg-white" minHeight="36rem" />}>
-          <ProjectFootprintSection />
-        </Suspense>
+      <section ref={footprintRef} data-guide-section="footprint">
+        {footprintReady ? <Suspense fallback={<SectionFallback className="bg-white" minHeight="36rem" />}><ProjectFootprintSection /></Suspense> : <SectionFallback className="bg-white" minHeight="36rem" />}
       </section>
-      <section id="contact" data-guide-section="footer">
-        <Suspense fallback={<SectionFallback className="bg-white" minHeight="24rem" />}>
-          <Footer />
-        </Suspense>
+      <section ref={footerRef} id="contact" data-guide-section="footer">
+        {footerReady ? <Suspense fallback={<SectionFallback className="bg-white" minHeight="24rem" />}><Footer /></Suspense> : <SectionFallback className="bg-white" minHeight="24rem" />}
       </section>
     </main>
   );

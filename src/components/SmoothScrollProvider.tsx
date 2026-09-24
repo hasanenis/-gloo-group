@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { usePrefersReducedMotion } from '../lib/motion';
 import 'lenis/dist/lenis.css';
+import { requestLayoutRefresh } from '../lib/layoutRefresh';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,7 +59,7 @@ export default function SmoothScrollProvider({ children }: { children: ReactNode
 
     const refreshTimer = window.setTimeout(() => {
       instance.resize();
-      ScrollTrigger.refresh();
+      requestLayoutRefresh();
     }, 120);
 
     return () => {

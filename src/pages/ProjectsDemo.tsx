@@ -7,7 +7,7 @@ import { getProjectHeroImage } from '../data/projectHeroImage';
 import { localized } from '../data/projectContent';
 import { useSiteNavigate } from '../hooks/useSiteNavigate';
 import { usePrefersReducedMotion } from '../lib/motion';
-import { pickLocaleText, useLocale } from '../i18n';
+import { localizedPath, pickLocaleText, useLocale } from '../i18n';
 import Footer from '../components/Footer';
 import '../styles/projects-bat-grid.css';
 
@@ -122,7 +122,7 @@ export default function ProjectsDemo() {
               style={{ '--pjx-reveal-delay': `${(index % 3) * 90}ms` } as CSSProperties}
             >
               <Link
-                to={targetPath}
+                to={localizedPath(locale, targetPath)}
                 className="pjx-card__link"
                 onPointerEnter={() => {
                   const image = new Image();

@@ -51,10 +51,10 @@ const legacyHomepageContent = {
       tr: "Cezayir'in farklı bölgelerinde, mühendislik disiplini, şantiye kontrolü ve uzun ömürlü kalite anlayışıyla konut ve karma kullanım projeleri inşa ediyoruz.",
     },
     primaryCta: {
-      en: 'Explore projects',
-      fr: 'Découvrir nos projets',
-      dz: 'شوف المشاريع',
-      tr: 'Projeleri İnceleyin',
+      en: 'Scroll',
+      fr: 'Défiler vers le bas',
+      dz: 'اهبط لتحت',
+      tr: 'Aşağı kaydır',
     },
     secondaryCta: {
       en: 'Contact team',
@@ -470,8 +470,14 @@ export const homepageProjectProofs: Record<string, HomepageText> = {
   },
 };
 
+const homeContentByLocale = new Map<Locale, Record<string, unknown>>();
+
 function localizedHomeNode(path: string, locale: Locale): unknown {
-  const content = getPageContent<Record<string, unknown>>('home', locale).content;
+  let content = homeContentByLocale.get(locale);
+  if (!content) {
+    content = getPageContent<Record<string, unknown>>('home', locale).content;
+    homeContentByLocale.set(locale, content);
+  }
   if (!path) return content;
   return path.split('.').reduce<unknown>((current, segment) => {
     if (!current || typeof current !== 'object') return undefined;

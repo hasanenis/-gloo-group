@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { imageSliderImages } from '../data/projects';
 import { motionEase, usePrefersReducedMotion } from '../lib/motion';
+import { useSectionActivity } from '../hooks/useSectionActivity';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,8 +24,11 @@ type ImageSliderProps = {
 
 export default function ImageSlider({ className = '' }: ImageSliderProps) {
   const frameRef = useRef<HTMLDivElement>(null);
+  const timelineRef = useRef<gsap.core.Timeline | null>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const active = useSectionActivity(frameRef, '120px 0px');
   const [imagesEnabled, setImagesEnabled] = useState(false);
+  const [loadedThrough, setLoadedThrough] = useState(1);
 
   useEffect(() => {
     const frame = frameRef.current;
@@ -66,11 +70,16 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
     }
 
     const sliderTimeline = gsap.timeline({ repeat: -1, paused: true });
+    timelineRef.current = sliderTimeline;
 
     slides.forEach((slide, index) => {
       const nextSlide = slides[(index + 1) % slides.length];
       const position = index * HOLD_DURATION;
       const transitionAt = position + HOLD_DURATION - TRANSITION_DURATION;
+
+      sliderTimeline.call(() => {
+        setLoadedThrough((current) => Math.max(current, Math.min(IMAGES.length - 1, index + 2)));
+      }, [], position);
 
       sliderTimeline
         .to(slide, { scale: 1, duration: HOLD_DURATION, ease: 'none' }, position)
@@ -105,9 +114,18 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
       trigger: root,
       start: 'top 85%',
       once: true,
-      onEnter: () => sliderTimeline.play(0),
+      onEnter: () => sliderTimeline.play(),
     });
+    return () => {
+      sliderTimeline.kill();
+      timelineRef.current = null;
+    };
   }, { scope: frameRef, dependencies: [prefersReducedMotion] });
+
+  useEffect(() => {
+    if (active) timelineRef.current?.play();
+    else timelineRef.current?.pause();
+  }, [active]);
 
   return (
     <div
@@ -117,9 +135,11 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
       <div data-image-parallax className="absolute inset-x-0 -inset-y-[6%]">
         {IMAGES.map((image, index) => (
           <img
-            key={image}
+            key={image.src}
             data-image-slide
-            src={imagesEnabled ? image : undefined}
+            src={imagesEnabled && index <= loadedThrough ? image.src : undefined}
+            srcSet={imagesEnabled && index <= loadedThrough ? image.srcSet : undefined}
+            sizes={image.sizes}
             alt=""
             aria-hidden="true"
             width={1600}
@@ -127,7 +147,7 @@ export default function ImageSlider({ className = '' }: ImageSliderProps) {
             loading="lazy"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ opacity: index === 0 ? 1 : 0, objectPosition: getObjectPosition(image) }}
+            style={{ opacity: index === 0 ? 1 : 0, objectPosition: getObjectPosition(image.src) }}
           />
         ))}
       </div>
