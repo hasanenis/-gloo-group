@@ -334,7 +334,7 @@ export default function HeroBanner() {
   return (
     <div
       ref={containerRef}
-      className={`relative w-full overflow-x-clip ${prefersReducedMotion ? 'min-h-[100svh]' : 'min-h-[104svh] md:min-h-[106svh] lg:min-h-[108svh]'}`}
+      className={`relative w-full overflow-x-clip bg-white ${prefersReducedMotion ? 'min-h-[100svh]' : 'min-h-[104svh] md:min-h-[106svh] lg:min-h-[108svh]'}`}
     >
       <div className="sticky top-0 h-[100svh] w-full overflow-hidden bg-zinc-900">
         <div
