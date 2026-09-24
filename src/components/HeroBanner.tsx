@@ -338,7 +338,7 @@ export default function HeroBanner() {
               playsInline
               preload="none"
             >
-              <source src="/media/hero-reel-mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
+              <source src="/media/hero-reel-mobile-20260924.mp4" media="(max-width: 767px)" type="video/mp4" />
               <source src="/media/hero-reel-optimized.mp4" type="video/mp4" />
             </video>
           )}
