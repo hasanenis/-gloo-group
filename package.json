@@ -97,6 +97,7 @@
     "react-simple-maps": "^5.0.5",
     "swiper": "^14.0.0",
     "tailwind-merge": "^3.6.0",
+    "vevet": "^5.10.0",
     "vite": "^6.2.3"
   },
   "devDependencies": {

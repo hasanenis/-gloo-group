@@ -4,7 +4,7 @@ import HeroBanner from '../components/HeroBanner';
 import HomeMechanicalBackdrop from '../components/HomeMechanicalBackdrop';
 import { useLenis } from '../components/SmoothScrollProvider';
 
-const FeaturedProjects = lazy(() => import('../components/FeaturedProjects'));
+const FeaturedProjects = lazy(() => import('../components/FeaturedProjectsShowcase'));
 const DeliveryProcessSection = lazy(() => import('../components/DeliveryProcessSection'));
 const AboutUs = lazy(() => import('../components/AboutUs'));
 const ProjectFootprintSection = lazy(() => import('../components/ProjectFootprintSection'));
