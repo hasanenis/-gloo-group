@@ -125,11 +125,15 @@ function ProjectCarousel({ projects, initialProjectSlug, locale }: {
         {projects.map((project, index) => {
           const image = getProjectHeroImage(project);
           const proof = homepageProjectProofs[project.slug];
+          const cardTitle = localizedProjectCardTitle(project, locale);
           const isActive = index === activeIndex;
           const categories = projectCategories[project.slug] ?? ['residential'];
           const categoryLabel = categories.includes('residential') && categories.includes('commercial')
             ? pickLocaleText(locale, { en: 'Residential & commercial', fr: 'Résidentiel & commercial', dz: 'سكني وتجاري', tr: 'Konut ve ticari' })
             : pickLocaleText(locale, projectFilters.find((filter) => filter.id === categories[0])!.label);
+          const statusLabel = project.status === 'current'
+            ? pickLocaleText(locale, { en: 'Current', fr: 'En cours', dz: 'في طور الإنجاز', tr: 'Devam ediyor' })
+            : pickLocaleText(locale, { en: 'Completed', fr: 'Livré', dz: 'مكمّل', tr: 'Tamamlandı' });
 
           return (
             <article
@@ -143,7 +147,7 @@ function ProjectCarousel({ projects, initialProjectSlug, locale }: {
                 to={localizedPath(locale, '/projects/' + project.slug)}
                 tabIndex={isActive ? 0 : -1}
                 aria-hidden={!isActive}
-                aria-label={localizedProjectCardTitle(project, locale)}
+                aria-label={cardTitle}
                 data-snap-parallax-scale={reducedMotion ? '0' : '-0.1'}
                 data-snap-parallax-scale-abs=""
                 data-snap-parallax-x={reducedMotion ? '0%' : '20%'}
@@ -188,7 +192,10 @@ function ProjectCarousel({ projects, initialProjectSlug, locale }: {
                   data-snap-parallax-opacity-scope="-0.5,0.5"
                 >
                   <span className="projects-section-demo__category">{categoryLabel}</span>
-                  <span className="projects-section-demo__card-title">{localizedProjectShortTitle(project, locale)}</span>
+                  <span className="projects-section-demo__project-meta">
+                    <span>{statusLabel}</span><span aria-hidden="true">·</span><span>{project.location}</span>
+                  </span>
+                  <span className={'projects-section-demo__card-title' + (cardTitle.length > 86 ? ' is-extra-long' : cardTitle.length > 54 ? ' is-long' : '')}>{cardTitle}</span>
                   <span className="projects-section-demo__summary">
                     {proof ? localizeHome(proof, locale) : localizedProjectScope(project, locale)}
                   </span>

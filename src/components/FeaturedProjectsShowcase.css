@@ -49,23 +49,28 @@
 .projects-section-demo__slide.is-active .projects-section-demo__card { box-shadow: 0 12px 24px -14px rgba(32,25,23,.32), 0 34px 60px -34px rgba(32,25,23,.46); }
 .projects-section-demo__image { position: absolute; top: 0; left: -20%; width: 140%; max-width: none; height: 100%; object-fit: cover; filter: grayscale(1); transition: filter 400ms ease; pointer-events: none; }
 .projects-section-demo__slide.is-active .projects-section-demo__image { filter: grayscale(0); }
-.projects-section-demo__shade { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at bottom left, rgba(0,0,0,.98), rgba(0,0,0,.75) 28%, transparent 72%); opacity: 0; transition: opacity 400ms ease; }
+.projects-section-demo__shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to bottom, transparent 14%, rgba(0,0,0,.2) 32%, rgba(0,0,0,.62) 66%, rgba(0,0,0,.86) 100%), radial-gradient(ellipse at bottom left, rgba(0,0,0,.45), transparent 68%); opacity: 0; transition: opacity 400ms ease; }
 .projects-section-demo__slide.is-active .projects-section-demo__shade { opacity: 1; }
-.projects-section-demo__card-content { position: absolute; bottom: 32px; inset-inline-start: 36px; display: flex; flex-direction: column; align-items: flex-start; width: min(47ch, calc(100% - 72px)); color: #fff; pointer-events: none; }
-.projects-section-demo__category { display: flex; align-items: center; gap: .7rem; margin-bottom: 16px; font-size: .65rem; font-weight: 600; letter-spacing: .26em; line-height: 1.3; text-transform: uppercase; }
+.projects-section-demo__card-content { position: absolute; bottom: 32px; inset-inline-start: 36px; display: flex; flex-direction: column; align-items: flex-start; width: min(56ch, calc(100% - 72px)); color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,.6); pointer-events: none; }
+.projects-section-demo__category { display: flex; align-items: center; gap: .7rem; margin-bottom: 8px; font-size: .65rem; font-weight: 600; letter-spacing: .26em; line-height: 1.3; text-transform: uppercase; }
 .projects-section-demo__category::before { content: ''; width: 36px; height: 2px; background: var(--projects-demo-red); flex-shrink: 0; }
-.projects-section-demo__card-title { font-family: var(--font-serif); font-size: clamp(2.15rem, 2.6vw, 3.25rem); line-height: 1.04; font-weight: 400; letter-spacing: -.035em; }
+.projects-section-demo__project-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-bottom: 10px; color: rgba(255,255,255,.86); font-size: .68rem; font-weight: 500; line-height: 1.3; }
+.projects-section-demo__card-title { font-family: var(--font-serif); font-size: clamp(2rem, 2.3vw, 3rem); line-height: 1.08; font-weight: 400; letter-spacing: -.035em; }
+.projects-section-demo__card-title.is-long { font-size: clamp(1.7rem, 1.95vw, 2.55rem); }
+.projects-section-demo__card-title.is-extra-long { font-size: clamp(1.45rem, 1.7vw, 2.2rem); }
 .projects-section-demo__summary { display: block; margin-top: 12px; font-size: clamp(.85rem, .95vw, 1rem); line-height: 1.45; max-width: 43ch; }
 .projects-section-demo__view-link { display: inline-flex; align-items: center; gap: 1rem; margin-top: 20px; font-size: .68rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; }
 .projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__category,
+.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__project-meta,
 .projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__card-title,
 .projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__summary,
 .projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__view-link {
   animation: projects-demo-text-reveal 650ms cubic-bezier(.22, 1, .36, 1) both;
 }
-.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__card-title { animation-delay: 75ms; }
-.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__summary { animation-delay: 145ms; }
-.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__view-link { animation-delay: 210ms; }
+.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__project-meta { animation-delay: 55ms; }
+.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__card-title { animation-delay: 105ms; }
+.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__summary { animation-delay: 175ms; }
+.projects-section-demo__viewport.ready .projects-section-demo__slide.is-active .projects-section-demo__view-link { animation-delay: 240ms; }
 .projects-section-demo__slide.is-active .projects-section-demo__card:hover .projects-section-demo__view-link svg { transform: translateX(5px); }
 .projects-section-demo__view-link svg { transition: transform 240ms ease; }
 @keyframes projects-demo-text-reveal {
@@ -116,9 +121,12 @@
   .projects-section-demo__slide { width: 82vw; }
   .projects-section-demo__card { border-radius: 12px; }
   .projects-section-demo__card-content { inset-inline-start: 20px; bottom: 24px; width: calc(100% - 40px); }
-  .projects-section-demo__category { font-size: .55rem; letter-spacing: .18em; margin-bottom: 12px; }
+  .projects-section-demo__category { font-size: .55rem; letter-spacing: .18em; margin-bottom: 6px; }
   .projects-section-demo__category::before { width: 24px; }
-  .projects-section-demo__card-title { font-size: 2rem; }
+  .projects-section-demo__project-meta { margin-bottom: 8px; font-size: .62rem; }
+  .projects-section-demo__card-title { font-size: 1.8rem; }
+  .projects-section-demo__card-title.is-long { font-size: 1.5rem; }
+  .projects-section-demo__card-title.is-extra-long { font-size: 1.32rem; }
   .projects-section-demo__summary { font-size: .8rem; line-height: 1.45; }
   .projects-section-demo__view-link { font-size: .6rem; margin-top: 16px; letter-spacing: .17em; }
   .projects-section-demo__arrow { width: 40px; height: 40px; top: calc(var(--card-height) / 2 - 20px); }
