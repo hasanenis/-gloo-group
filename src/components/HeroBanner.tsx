@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { motionDuration, motionEase, useLiteMotion, usePrefersReducedMotion, useSaveDataEnabled } from '../lib/motion';
+import { motionDuration, motionEase, usePrefersReducedMotion } from '../lib/motion';
 import { homepageContent, localize } from '../data/homepageContent';
 import { useLocale } from '../i18n';
 import { useLenis } from './SmoothScrollProvider';
@@ -11,6 +11,23 @@ import { useSectionActivity } from '../hooks/useSectionActivity';
 gsap.registerPlugin(ScrollTrigger);
 
 const HERO_POSTER = '/media/hero-reel-poster.webp';
+const HERO_VIDEO_HIGH = '/media/hero-reel-high-20260924.mp4';
+const HERO_VIDEO_LOW = '/media/hero-reel-mobile-20260924.mp4?v=e661db2';
+type NetworkInformation = EventTarget & {
+  effectiveType?: string;
+  downlink?: number;
+};
+
+function prefersLowerBandwidthVideo() {
+  if (typeof navigator === 'undefined') return false;
+  const connection = (navigator as Navigator & { connection?: NetworkInformation }).connection;
+  return Boolean(
+    connection?.effectiveType === 'slow-2g' ||
+    connection?.effectiveType === '2g' ||
+    (typeof connection?.downlink === 'number' && connection.downlink < 1.5),
+  );
+}
+
 function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 : window.innerWidth) {
   if (width >= 1536) {
     return { from: -14, to: 14, scaleFrom: 1.14, scaleTo: 1.08 };
@@ -26,9 +43,6 @@ function getHeroVideoParallaxRange(width = typeof window === 'undefined' ? 1280 
 export default function HeroBanner() {
   const { locale, t } = useLocale();
   const prefersReducedMotion = usePrefersReducedMotion();
-  const liteMotion = useLiteMotion();
-  const saveDataEnabled = useSaveDataEnabled();
-  const posterOnly = liteMotion && !saveDataEnabled;
   const lenis = useLenis();
   const containerRef = useRef<HTMLDivElement>(null);
   const mediaParallaxRef = useRef<HTMLDivElement>(null);
@@ -39,13 +53,23 @@ export default function HeroBanner() {
   const [videoEnabled, setVideoEnabled] = useState(() => (
     typeof window !== 'undefined' && window.sessionStorage.getItem('igloo:intro-seen') === 'true'
   ));
-  const posterReady = prefersReducedMotion || posterOnly || !videoEnabled;
+  const [lowBandwidth, setLowBandwidth] = useState(prefersLowerBandwidthVideo);
+  const posterReady = prefersReducedMotion || !videoEnabled;
   const heroPhrases = [
     t('homeHeroPhraseBuild'),
     t('homeHeroPhraseCraft'),
     t('homeHeroPhraseDream'),
   ];
   const heroHeading = localize(homepageContent.hero.title, locale);
+
+  useEffect(() => {
+    const connection = (navigator as Navigator & { connection?: NetworkInformation }).connection;
+    if (!connection) return;
+
+    const syncConnection = () => setLowBandwidth(prefersLowerBandwidthVideo());
+    connection.addEventListener('change', syncConnection);
+    return () => connection.removeEventListener('change', syncConnection);
+  }, []);
 
   useEffect(() => {
     if (videoEnabled) return;
@@ -61,7 +85,7 @@ export default function HeroBanner() {
   }, [videoEnabled]);
 
   useEffect(() => {
-    if (prefersReducedMotion || posterOnly || !videoEnabled) {
+    if (prefersReducedMotion || !videoEnabled) {
       setVideoReady(false);
       videoRef.current?.pause();
       return;
@@ -132,7 +156,7 @@ export default function HeroBanner() {
         document.removeEventListener(eventName, retryOnFirstGesture),
       );
     };
-  }, [posterOnly, prefersReducedMotion, sectionActive, videoEnabled]);
+  }, [lowBandwidth, prefersReducedMotion, sectionActive, videoEnabled]);
 
   const scrollToNextSection = () => {
     const target = document.getElementById('about');
@@ -337,9 +361,8 @@ export default function HeroBanner() {
               loop
               playsInline
               preload="none"
+              src={lowBandwidth ? HERO_VIDEO_LOW : HERO_VIDEO_HIGH}
             >
-              <source src="/media/hero-reel-mobile-20260924.mp4?v=e661db2" media="(max-width: 767px)" type="video/mp4" />
-              <source src="/media/hero-reel-optimized.mp4" type="video/mp4" />
             </video>
           )}
         </div>
