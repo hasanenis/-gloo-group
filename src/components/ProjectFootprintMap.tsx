@@ -53,7 +53,7 @@ const COUNTRY_LABEL_POINT: [number, number] = [2.0, 35.05];
 const SEA_LABEL_POINT: [number, number] = [2.0, 37.15];
 
 const PIN_HTML = (num: number) => `
-  <div class="igloo-map-pin" style="position:relative;width:34px;height:44px;filter:drop-shadow(0 5px 12px rgba(17,17,17,.40));transform-origin:50% 100%;cursor:pointer;transition:transform 220ms ease,opacity 220ms ease">
+  <div class="igloo-map-pin" style="position:absolute;left:5px;bottom:0;width:34px;height:44px;filter:drop-shadow(0 5px 12px rgba(17,17,17,.40));transform-origin:50% 100%;cursor:pointer;transition:transform 220ms ease,opacity 220ms ease">
     <svg viewBox="0 0 34 44" width="34" height="44" xmlns="http://www.w3.org/2000/svg">
       <path d="M17 2C9.8 2 4 7.8 4 15c0 10 13 27 13 27S30 25 30 15C30 7.8 24.2 2 17 2Z"
         fill="#c22026" stroke="#fff" stroke-width="2"/>
@@ -66,6 +66,7 @@ const PIN_HTML = (num: number) => `
 // hint at the very top edge. Tunisia/Sardinia/Sicily/the wider coast still exist on the
 // map's data layer and reveal themselves as the user pans or zooms out.
 const INITIAL_BOUNDS: [[number, number], [number, number]] = [[-1.0, 35.2], [5.8, 37.7]];
+const MOBILE_INITIAL_BOUNDS: [[number, number], [number, number]] = [[-0.1, 35.7], [3.6, 36.95]];
 const INITIAL_PITCH   = 52;
 const INITIAL_BEARING = -18;
 
@@ -142,8 +143,11 @@ export default function ProjectFootprintMap({
     markersRef.current = projectMapPoints.map((point, i) => {
       const wrap = document.createElement('div');
       wrap.innerHTML = PIN_HTML(i + 1);
-      wrap.style.cssText = 'width:34px;height:44px;cursor:pointer';
+      wrap.style.cssText = 'width:44px;height:52px;cursor:pointer;touch-action:manipulation';
       wrap.dataset.slug = point.slug;
+      wrap.setAttribute('role', 'button');
+      wrap.setAttribute('aria-label', `${point.menuTitle} — ${point.locality}, ${point.wilaya}`);
+      wrap.tabIndex = 0;
 
       // Staggered drop-in animation
       const pin = wrap.querySelector('.igloo-map-pin') as HTMLElement | null;
@@ -155,6 +159,7 @@ export default function ProjectFootprintMap({
       const marker = new maplibregl.Marker({ element: wrap, anchor: 'bottom' })
         .setLngLat([point.lng, point.lat])
         .addTo(map);
+      wrap.setAttribute('aria-label', `${point.menuTitle} — ${point.locality}, ${point.wilaya}`);
 
       const popup = new maplibregl.Popup({
         offset: [0, -46],
@@ -172,18 +177,29 @@ export default function ProjectFootprintMap({
         marker.setPopup(popup);
         popup.addTo(map);
       };
-      wrap.addEventListener('pointerenter', showProjectPreview);
-      wrap.addEventListener('pointerleave', () => popup.remove());
-      wrap.addEventListener('click', () => {
+      wrap.addEventListener('pointerenter', (event) => {
+        if (event.pointerType === 'mouse') showProjectPreview();
+      });
+      wrap.addEventListener('pointerleave', (event) => {
+        if (event.pointerType === 'mouse') popup.remove();
+      });
+      const selectProject = () => {
         onSelect(point.slug);
+        const compactViewport = map.getContainer().clientWidth < 768;
         map.flyTo({
           center: [point.lng, point.lat],
-          zoom: 11,
-          pitch: INITIAL_PITCH,
-          bearing: INITIAL_BEARING,
+          zoom: compactViewport ? Math.max(map.getZoom(), 10) : 11,
+          pitch: compactViewport ? 0 : INITIAL_PITCH,
+          bearing: compactViewport ? 0 : INITIAL_BEARING,
           duration: prefersReducedMotion ? 0 : 900,
           essential: true,
         });
+      };
+      wrap.addEventListener('click', selectProject);
+      wrap.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        selectProject();
       });
 
       return marker;
@@ -227,10 +243,13 @@ export default function ProjectFootprintMap({
     mapRef.current = map;
 
     map.on('load', () => {
-      map.fitBounds(INITIAL_BOUNDS, {
-        padding: { top: 40, bottom: 10, left: 40, right: 40 },
-        pitch: INITIAL_PITCH,
-        bearing: INITIAL_BEARING,
+      const compactViewport = map.getContainer().clientWidth < 768;
+      map.fitBounds(compactViewport ? MOBILE_INITIAL_BOUNDS : INITIAL_BOUNDS, {
+        padding: compactViewport
+          ? { top: 18, bottom: 14, left: 16, right: 16 }
+          : { top: 40, bottom: 10, left: 40, right: 40 },
+        pitch: compactViewport ? 0 : INITIAL_PITCH,
+        bearing: compactViewport ? 0 : INITIAL_BEARING,
         duration: 0,
       });
 
@@ -491,20 +510,26 @@ export default function ProjectFootprintMap({
     const dur = prefersReducedMotion ? 0 : 900;
 
     if (clusterFilter === 'all') {
-      map.fitBounds(INITIAL_BOUNDS, {
-        padding: { top: 40, bottom: 10, left: 40, right: 40 },
-        pitch: INITIAL_PITCH,
-        bearing: INITIAL_BEARING,
+      const compactViewport = map.getContainer().clientWidth < 768;
+      map.fitBounds(compactViewport ? MOBILE_INITIAL_BOUNDS : INITIAL_BOUNDS, {
+        padding: compactViewport
+          ? { top: 18, bottom: 14, left: 16, right: 16 }
+          : { top: 40, bottom: 10, left: 40, right: 40 },
+        pitch: compactViewport ? 0 : INITIAL_PITCH,
+        bearing: compactViewport ? 0 : INITIAL_BEARING,
         duration: dur,
       });
     } else {
       const bounds = CLUSTER_BOUNDS[clusterFilter];
       if (bounds) {
+        const compactViewport = map.getContainer().clientWidth < 768;
         map.fitBounds(bounds, {
-          padding: { top: 60, bottom: 60, left: 60, right: 60 },
-          pitch: 56,
-          bearing: -18,
-          maxZoom: 12,
+          padding: compactViewport
+            ? { top: 24, bottom: 24, left: 20, right: 20 }
+            : { top: 60, bottom: 60, left: 60, right: 60 },
+          pitch: compactViewport ? 0 : 56,
+          bearing: compactViewport ? 0 : -18,
+          maxZoom: compactViewport ? 10.5 : 12,
           duration: dur,
         });
       }

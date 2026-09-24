@@ -13,7 +13,6 @@ import { LocaleProvider, localizedPath, useLocale } from './i18n';
 import { getPageContent } from './content';
 import { initAutoFitText } from './lib/autoFitText';
 import { usePrefersReducedMotion } from './lib/motion';
-import introLogo from './assets/branding/igloo-intro-logo.png';
 import './styles/site-page-transition.css';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -172,31 +171,9 @@ function AppShellContent() {
 
   const handleIntroReady = useCallback(() => setIntroReady(true), []);
 
-  const handleIntroComplete = useCallback(async () => {
+  const handleIntroComplete = useCallback(() => {
     sessionStorage.setItem(INTRO_SEEN_KEY, 'true');
-
-    const firstHeroImage = '/media/hero-poster.webp';
-
-    if (!firstHeroImage) {
-      setShowIntro(false);
-      return;
-    }
-
-    await new Promise<void>((resolve) => {
-      const image = new Image();
-
-      image.onload = () => resolve();
-      image.onerror = () => resolve();
-      image.src = firstHeroImage;
-
-      if (image.complete) {
-        resolve();
-      }
-    });
-
     setShowIntro(false);
-    setIntroVeilTone('black');
-    setShowIntroVeil(true);
     window.dispatchEvent(new CustomEvent('igloo:intro-complete'));
   }, []);
 
@@ -242,20 +219,10 @@ function AppShellContent() {
       </Suspense>
       {isHomeRoute(location.pathname) && showIntro && !introReady && (
         <div
-          className="fixed inset-0 z-[141] flex items-center justify-center bg-black"
+          className="fixed inset-0 z-[141] bg-black"
           aria-label="Igloo Construction"
           role="status"
-        >
-          <img
-            src={introLogo}
-            alt="Igloo Construction"
-            width={860}
-            height={220}
-            fetchPriority="high"
-            decoding="async"
-            className="w-[min(48vw,430px)] min-w-[210px] max-w-[430px] object-contain"
-          />
-        </div>
+        />
       )}
       {!showIntro && !isBatDemoRoute && <Header />}
       {!showIntro && !isBatDemoRoute && <MobileBottomNav />}

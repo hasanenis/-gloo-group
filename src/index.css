@@ -573,7 +573,7 @@ body {
 
   .app-main-header {
     justify-content: space-between !important;
-    min-height: 66px;
+    min-height: 78px;
     padding: 6px 14px !important;
   }
 
@@ -597,7 +597,7 @@ body {
   }
 
   .app-main-header .brand-logo img {
-    height: 64px !important;
+    height: 74px !important;
     width: auto !important;
     margin: -12px 0 !important;
     object-fit: contain;
@@ -1856,6 +1856,13 @@ img {
 
 .igloo-footprint-map .maplibregl-ctrl-group button + button {
   border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+@media (pointer: coarse) {
+  .igloo-footprint-map .maplibregl-ctrl-group button {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .igloo-map-pin {

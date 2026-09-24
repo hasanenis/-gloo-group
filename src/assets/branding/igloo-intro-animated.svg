@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="452" height="137" viewBox="0 0 452 137" role="img" aria-labelledby="logo-title logo-description">
+<!-- SVG created with Arrow, by QuiverAI (https://quiver.ai) -->
+  <title id="logo-title">Igloo Construction</title>
+  <desc id="logo-description">Igloo Construction architectural logo reveal.</desc>
+  <defs>
+    <linearGradient id="dome-red" x1="23" x2="154" y1="105" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#870000" offset="0"/>
+      <stop stop-color="#d90005" offset=".49"/>
+      <stop stop-color="#ff2631" offset="1"/>
+    </linearGradient>
+    <linearGradient id="entrance-red" x1="102" x2="153" y1="124" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ab0000" offset="0"/>
+      <stop stop-color="#fa1421" offset="1"/>
+    </linearGradient>
+    <linearGradient id="infinity-red" x1="326" x2="417" y1="98" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b50000" offset="0"/>
+      <stop stop-color="#e9000d" offset=".5"/>
+      <stop stop-color="#ff2130" offset="1"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2=".2">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".23"/>
+      <stop offset=".64" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="subtitle-reveal">
+      <rect class="subtitle-window" x="278" y="105" width="146" height="27"/>
+    </clipPath>
+    <clipPath id="red-art">
+      <path d="m10 114c0-23 13-51 34-68 16-13 33-18 52-18 25-1 48 12 63 31 12 14 19 28 22 42-9-18-26-30-45-31-27-2-52 17-59 45h-63c-3 0-4 0-4-1z"/>
+      <path d="m91 115c5-22 23-38 44-38 23-1 43 14 48 38z"/>
+      <path d="m378 50c8-11 17-16 29-16 20 0 35 14 35 33s-15 34-34 34c-15 0-24-7-34-19l-17-21c-6-8-11-12-18-12-10 0-17 8-17 18 0 11 7 19 17 19 9 0 16-6 22-14l9 12c-8 11-18 17-31 17-19 0-32-15-32-34 0-18 14-33 33-33 15 0 23 8 33 21l16 20c6 7 11 11 19 11 10 0 18-8 18-19 0-10-8-18-18-18-8 0-14 5-21 14z"/>
+    </clipPath>
+    <style>
+      /* The original artwork is retimed to finish its one-shot reveal in four seconds. */
+      .draft,
+      .guides,
+      .guide-line,
+      #igloo-symbol,
+      #white-lettering,
+      #infinity-symbol,
+      .subtitle-window,
+      .sheen {
+        animation-duration: 100s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(.42,0,.22,1);
+        animation-fill-mode: both;
+      }
+      .draft {
+        stroke: #d5e4eb;
+        stroke-width: .75;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        stroke-opacity: 0;
+        fill-opacity: 0;
+      }
+      #igloo-dome { animation-name: draw-dome; }
+      #igloo-entrance { animation-name: draw-entrance; }
+      #letter-i-stem { animation-name: draw-stem; }
+      #letter-i-dot { animation-name: draw-dot; }
+      #letter-g { animation-name: draw-g; }
+      #letter-l { animation-name: draw-l; }
+      #red-continuous-loop { animation-name: draw-infinity; }
+      .guides {
+        fill: none;
+        stroke: #7695a6;
+        stroke-width: .55;
+        opacity: 0;
+        animation-name: guide-visibility;
+      }
+      .guide-line {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation-name: guide-trace;
+      }
+      .centerlines { stroke-dasharray: 4 3 1 3; }
+      #igloo-symbol,
+      #white-lettering,
+      #infinity-symbol {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      #igloo-symbol { animation-name: settle-igloo; }
+      #white-lettering { animation-name: settle-lettering; }
+      #infinity-symbol { animation-name: settle-infinity; }
+      .subtitle-window {
+        transform-box: fill-box;
+        transform-origin: left center;
+        transform: scaleX(0);
+        animation-name: label-reveal;
+      }
+      .sheen {
+        opacity: 0;
+        animation-name: finishing-sweep;
+      }
+      @keyframes draw-dome {
+        0%, .16% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        .32% { stroke-opacity: .9; }
+        1.2% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        1.92%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-entrance {
+        0%, .4% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        .56% { stroke-opacity: .9; }
+        1.44% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        2.16%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-stem {
+        0%, .56% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        .72% { stroke-opacity: .9; }
+        1.52% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        2.24%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-dot {
+        0%, .64% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        .8% { stroke-opacity: .9; }
+        1.36% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        2.24%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-g {
+        0%, .72% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        .88% { stroke-opacity: .9; }
+        1.92% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        2.56%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-l {
+        0%, .88% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        1.04% { stroke-opacity: .9; }
+        1.84% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        2.56%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes draw-infinity {
+        0%, 1.04% {
+          stroke-dashoffset: 1;
+          stroke-opacity: 0;
+          fill-opacity: 0;
+        }
+        1.2% { stroke-opacity: .9; }
+        2.4% {
+          stroke-dashoffset: 0;
+          stroke-opacity: .9;
+          fill-opacity: 0;
+        }
+        3.04%, 100% {
+          stroke-dashoffset: 0;
+          stroke-opacity: 0;
+          fill-opacity: 1;
+        }
+      }
+      @keyframes guide-trace {
+        0% { stroke-dashoffset: 1; }
+        .96%, 100% { stroke-dashoffset: 0; }
+      }
+      @keyframes guide-visibility {
+        0% { opacity: 0; }
+        .32% { opacity: .4; }
+        .96% { opacity: .3; }
+        1.76% { opacity: .15; }
+        2.24%, 100% { opacity: 0; }
+      }
+      @keyframes settle-igloo {
+        0%, .16% { transform: translateY(4px) scale(.985); }
+        1.92%, 100% { transform: translateY(0) scale(1); }
+      }
+      @keyframes settle-lettering {
+        0%, .48% { transform: translateY(4px) scale(.985); }
+        2.56%, 100% { transform: translateY(0) scale(1); }
+      }
+      @keyframes settle-infinity {
+        0%, 1.04% { transform: translateY(3px) scale(.985); }
+        3.04%, 100% { transform: translateY(0) scale(1); }
+      }
+      @keyframes label-reveal {
+        0%, 2.4% { transform: scaleX(0); }
+        3.36%, 100% { transform: scaleX(1); }
+      }
+      @keyframes finishing-sweep {
+        0%, 4.72% {
+          transform: translateX(-190px);
+          opacity: 0;
+        }
+        4.88% { opacity: 1; }
+        5.76% { opacity: 1; }
+        6%, 100% {
+          transform: translateX(470px);
+          opacity: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .draft {
+          animation: none !important;
+          fill-opacity: 1;
+          stroke: none;
+          stroke-opacity: 0;
+        }
+        .guides, .sheen {
+          animation: none !important;
+          opacity: 0;
+        }
+        .guide-line { animation: none !important; }
+        #igloo-symbol, #white-lettering, #infinity-symbol {
+          animation: none !important;
+          transform: none;
+        }
+        .subtitle-window {
+          animation: none !important;
+          transform: none;
+        }
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <path d="M0 0h452v137H0z" fill="#000"/>
+  </g>
+  <g class="guides" aria-hidden="true">
+    <path class="guide-line" pathLength="1" d="M5 115H447M190 97H446M188 34H447"/>
+    <path class="guide-line" pathLength="1" d="M10 121V21H183V121M193 103V6H295V103M307 106V28H442V106"/>
+    <path class="guide-line" pathLength="1" d="M10 114A86 86 0 0 1 182 114M91 115A46 38 0 0 1 183 115"/>
+    <path class="guide-line" pathLength="1" d="M322 67a17 18 0 1 0 34 0a17 18 0 1 0-34 0M390 67a18 18 0 1 0 36 0a18 18 0 1 0-36 0"/>
+    <path class="centerlines" d="M96 18V124M3 71H186M300 67H449M339 26V108M408 26V108"/>
+    <path class="guide-line" pathLength="1" d="M10 128H183M7 131l6-6M180 131l6-6M10 122v11M183 122v11M311 19H440M308 22l6-6M437 22l6-6M311 14v10M440 14v10"/>
+    <path d="M92 28h8M96 24v8M133 77h8M137 73v8M335 67h8M339 63v8M404 67h8M408 63v8"/>
+  </g>
+  <g id="igloo-symbol">
+    <path id="igloo-dome" class="draft" pathLength="1" d="m10 114c0-23 13-51 34-68 16-13 33-18 52-18 25-1 48 12 63 31 12 14 19 28 22 42-9-18-26-30-45-31-27-2-52 17-59 45h-63c-3 0-4 0-4-1z" fill="url(#dome-red)"/>
+    <path id="igloo-entrance" class="draft" pathLength="1" d="m91 115c5-22 23-38 44-38 23-1 43 14 48 38z" fill="url(#entrance-red)"/>
+  </g>
+  <g id="white-lettering" fill="#fff">
+    <circle id="letter-i-dot" class="draft" pathLength="1" cx="199.5" cy="17.5" r="7.2"/>
+    <path id="letter-i-stem" class="draft" pathLength="1" d="m193 37h13v59h-13z"/>
+    <path id="letter-g" class="draft" pathLength="1" d="m260 37h13v54c0 20-10 32-30 32-9 0-17-2-24-6v-11c7 4 15 7 23 7 13 0 19-7 19-19v-5c-5 6-11 9-19 9-17 0-29-13-29-31s12-31 29-31c8 0 14 3 18 8zm-17 10c-11 0-18 8-18 20s7 20 18 20c10 0 18-8 18-20s-7-20-18-20z" fill-rule="evenodd"/>
+    <path id="letter-l" class="draft" pathLength="1" d="m283 11h12v69c0 5 2 7 7 7h3v10h-7c-10 0-15-6-15-16z"/>
+  </g>
+  <g id="infinity-symbol">
+    <path id="red-continuous-loop" class="draft" pathLength="1" d="m378 50c8-11 17-16 29-16 20 0 35 14 35 33s-15 34-34 34c-15 0-24-7-34-19l-17-21c-6-8-11-12-18-12-10 0-17 8-17 18 0 11 7 19 17 19 9 0 16-6 22-14l9 12c-8 11-18 17-31 17-19 0-32-15-32-34 0-18 14-33 33-33 15 0 23 8 33 21l16 20c6 7 11 11 19 11 10 0 18-8 18-19 0-10-8-18-18-18-8 0-14 5-21 14z" fill="url(#infinity-red)"/>
+  </g>
+  <g clip-path="url(#red-art)" aria-hidden="true" pointer-events="none">
+    <rect class="sheen" x="0" y="20" width="180" height="100" fill="url(#sheen)"/>
+  </g>
+  <g id="construction-subtitle" clip-path="url(#subtitle-reveal)">
+    <text x="279" y="126" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="-.6" lengthAdjust="spacingAndGlyphs" textLength="143">Construction</text>
+  </g>
+</svg>
